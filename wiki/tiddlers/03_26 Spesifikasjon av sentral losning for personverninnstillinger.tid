@@ -1,0 +1,17 @@
+TjenesteID: 40061
+created: 20260217104549684
+modified: 20260505095244792
+revision: 0
+tags: Leveranse 2026 Mars [[Ny tjeneste for å samle og dele tilgangsbegresninger]] [[Personvern og tilgangsstyring]]
+title: 03/26 Spesifikasjon av sentral løsning for personverninnstillinger
+type: text/vnd.tiddlywiki
+
+Det er utarbeidet et utkast til en spesifikasjon av en tjeneste som skal kunne løse bl.a.: 
+
+* Støtte for flere ulike konfigurasjoner av personverninnstillinger
+* Differensiering mellom harde sperrer og sperrer (hhv. sperrer som ikke kan oppheves ved tungtveiende grunner og sperrer som kan oppheves ved tungveiende grunner)
+* Strukturering av en tilgangsbegresning som policy som gjelder en gitt eller et utvalg av helseopplysninger
+* Validering av forretningslogikk i samsvar med relevant kodeverk (ref. 9603)
+* Forenkling av datamodell for en enklere forståelse av hvordan en policy skal tolkes
+* Samling av tilgangsbegresninger i ett endepunkt, fremfor flere spesialiserte endepunkt for underkategorier av tilgangsbegresninger
+* Helsepersonell og innbygger skal kunne sette de samme personverninnstillingene

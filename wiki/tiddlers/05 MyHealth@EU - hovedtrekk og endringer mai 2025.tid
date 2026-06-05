@@ -1,0 +1,35 @@
+created: 20250318071045417
+modified: 20250613072456879
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Tiltaket MyHealth@EU]] [[Styring Tiltak]] 2025 [[Tiltaket MyHealth@EU 2025]] Mai
+title: 05 MyHealth@EU - hovedtrekk og endringer mai 2025
+type: text/vnd.tiddlywiki
+
+<<list-links filter:"[tag[Tiltaket MyHealth@EU]tag[Tiltak]tag[2024]]">>
+
+! Hovedtrekk og endringer
+
+Prosjektet er fortsatt på plan. De viktigste aktivitetene siste periode har vært:
+
+
+*Gjennomføring av PreProductionTest (PPT) for Wave 8
+
+*Pilotaktiviteter. Bodø og Stjørdal er våre pilotkommuner. Vi har fått formell godkjenning fra EU for å kjøre produksjonstesting og "go live" med tjenesten Patient Summary. Testpartnere blir Finland, Latvia, Tsjekkia og Portugal. Integrasjon av vår Søk- og visningsmodul i EPJ systemet til CGM er forsinket pga prioriteringer hos CGM og er forventet å komme i en release i slutten av året Fram til da kan pilotkommunene benytte seg av en frittstående påloggingsløsning.
+
+*Testaktiviteter. Production Environment Test (PET) pågår
+
+*Opplæring gjennomført fysisk på Bodø legevakt. I tillegg har vi i uke 23 spilt inn en opplæringsvideo.
+*Compliance check for Patient Summary er nå godkjent av EU og alle restpunkter er ryddet av veien.
+*Databehandleravtale mellom HDIR og NHN er signert
+*Arbeid pågår for å få bruksvilkår signert
+
+! Prognose på penger og ressurser
+
+
+*Finansiering: Prosjektet finansieres av midler fra EU, HOD (post 70), samt overføringer fra 2024.
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark11acc8bf8ba654e01398">Oversikt MyHealth@EU (Power BI)</a>
+
+
+
+

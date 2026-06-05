@@ -1,0 +1,13 @@
+created: 20241110191216149
+modified: 20250603085941216
+revision: 0
+tags: [[Forbedre kvaliteten på data i e-resept verdikjeden]] Resultat 2025 Reseptformidleren
+title: Valideringer som følge av behov hos utleverere
+type: text/vnd.tiddlywiki
+
+Dårlig datakvalitet gir i en del tilfeller merarbeid i apotek ved utlevering. Noen av de meldte problemstillingene kan løses ved valideringer, men ikke alle.
+
+* Manglende doseringstekst
+* Ugyldig RESH
+* Varenummer og refusjonskode for blå resept må være ihht FEST
+

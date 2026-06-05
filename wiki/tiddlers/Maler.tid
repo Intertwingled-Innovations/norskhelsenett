@@ -1,0 +1,71 @@
+created: 20240703073332458
+modified: 20260512122946055
+revision: 0
+tags: 
+title: Maler
+type: text/vnd.tiddlywiki
+
+! Team
+
+!! Målsettinger
+<<list-links [tag[Målsetting]tag<currentTiddler>]>>
+
+!! Leveranser
+<<list-links [tag[Leveranse]tag<currentTiddler>]>>
+
+
+Informasjonsmøte Digitalt helsekort for gravide
+
+
+Det er i august godkjent 4 nye leverandører ( Oversikt over leverandørarbeid.xlsx (sharepoint.com))
+
+ Det er laget og levert et veikart for leverandørene ( oversikt over samhandlingstjenester Veikart Norsk helsenett samhandlingstjenester 2024.pdf (nhn.no)
+
+Resultat av temperaturmålingen-vi bidro til å ferdigstille intervjuene og utarbeide rapporten
+
+Nye leverandørvillkår er tatt i bruk
+
+
+! Ekstern tjeneste
+
+!! Målsettinger
+
+<<list-links filter:"[tag[Målsetting]tag<currentTiddler>]">>
+
+!! Styring
+!!! 2024
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2024]tag<currentTiddler>]">>
+
+
+! Intern tjeneste
+
+!! Målsettinger
+
+<<list-links filter:"[tag[Målsetting]tag<currentTiddler>]">>
+
+!! Styring
+!!! 2024
+<<list-links filter:"[tag[Styring Intern tjeneste]tag[2024]tag<currentTiddler>]">>
+
+
+! Målsetting
+Beskrivelse?
+
+!! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+!! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>
+
+! Tiltak
+
+!! Oppgaver i 2024
+<$list filter='[tag<currentTiddler>tag[Oppgave]tag[2024]]'>
+<$checkbox tag=Levert/> <$link><$view field='title'/></$link> <br>
+</$list>
+
+!! Styring
+!!! 2024
+<<list-links filter:"[tag[Styring Tiltak]tag[2024]tag<currentTiddler>]">>

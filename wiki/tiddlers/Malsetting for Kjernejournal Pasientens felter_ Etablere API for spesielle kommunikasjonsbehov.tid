@@ -1,0 +1,19 @@
+TjenesteID: 40172
+created: 20260412133233649
+modified: 20260414121714956
+revision: 0
+tags: Målsetting 2026 [[Kjernejournal Pasientens felter]]
+title: Målsetting for Kjernejournal Pasientens felter: Etablere API for spesielle kommunikasjonsbehov
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+
+Tjenesten skal tilgjengeliggjøre et API endepunkt for registrering og lesing av pasientens spesielle kommunikasjonsbehov
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

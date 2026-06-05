@@ -1,0 +1,29 @@
+TjenesteID: 40035
+created: 20240128165204033
+modified: 20260408130101271
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] 2025
+title: Forskrivningsmodulen 2024-2025
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+Forskrivningsmodulen (FM) er en løsning for forskrivning av e-resepter som tilbys leverandører av elektroniske journalsystemer som ønsker å knytte sitt system til E-resept. Forskrivningsmodulen benyttes av ~~fastleger~~, ~~sykehusleger~~, i kommunal pleie og omsorg, samt hos tannleger og legespesialister. FM ble avviklet 31.12.2025. Brukerne skal over på alternative løsninger, fortrinnsvis den nye Sentral forskrivningsmodul (SFM).
+
+! Målsettinger
+
+<<list-links filter:"[tag[Målsetting]tag<currentTiddler>]">>
+
+! Leveranser
+!! 2024
+<<list-links filter:"[tag[Leveranse]tag[2024]tag<currentTiddler>]">>
+
+!! 2025
+<<list-links filter:"[tag[Leveranse]tag[2025]tag<currentTiddler>]">>
+
+! Styring
+!! 2024
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2024]tag<currentTiddler>]">>
+
+!! 2025
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2025]tag<currentTiddler>]">>
+

@@ -1,0 +1,46 @@
+created: 20240128165839998
+modified: 20260327085637829
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Intern tjeneste]] [[Styring Intern tjeneste]]
+title: Selvbetjening - all historikk
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+
+HelseID Selvbetjening setter medlemmer og leverandører i helsenettet i stand til å ta i bruk tjenester i Samhandlingsplatformen uten manuell håndtering. 
+
+
+
+
+! Målsettinger
+!! 2026
+<<list-links filter:"[tag[Målsetting]tag[2026]tag[Selvbetjening]]">>
+
+!! Eldre målsettinger
+<<list-links filter:"[tag[Målsetting]tag[2024]tag[2025]tag[Selvbetjening]]">>
+
+
+! Styring
+!! 2026
+<<list-links filter:"[tag[Styring Intern tjeneste]tag[2026]tag[Selvbetjening]]">>
+
+
+
+
+!! 2025
+<<list-links filter:"[tag[Styring Intern tjeneste]tag[2025]tag[Selvbetjening]]">>
+
+!! 2024
+<<list-links filter:"[tag[Styring Intern tjeneste]tag[2024]tag[Selvbetjening]]">>
+
+
+! Leveranser
+
+!! Leveranser 2026
+<<list-links filter:"[tag[Leveranse]tag[Selvbetjening]tag[2026]]">>
+
+!! Leveranser 2025
+<<list-links filter:"[tag[Leveranse]tag[Selvbetjening]tag[2025]]">>
+
+!! Leveranser 2024
+<<list-links filter:"[tag[Leveranse]tag[Selvbetjening]tag[2024]]">>

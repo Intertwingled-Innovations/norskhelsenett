@@ -1,0 +1,25 @@
+created: 20240908121143145
+modified: 20240908121153469
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] Reseptformidleren [[Styring Ekstern tjeneste]] August
+title: Flytting RF til NHN - hovedtrekk og endringer august
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+Det er nå etablert 4 testmiljøer og et QA miljø i NHN privat sky som driftes av eget driftsteam i divisjon APT. Det er kun et QA miljø og produksjon som gjenstår hos Tietoevry. Flytting av produksjon er planlagt til medio september 2024 med påfølgende avvikling og sanering av de to siste miljøene hos Tietoevry.
+
+! Prognose på penger og ressurser
+
+Prognosen er fortsatt innenfor rammen av tildelte midler til e-resept.
+
+*Finansiering: Tidligere års midler fra forskriftsfestede midler nasjonale e-helseløsninger
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarke78d063cb67c108bdd06">Oversikt Flytting RF til NHN (Power BI)</a>
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+created: 20241206125324641
+modified: 20241208124118475
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] [[Innrapportering av dødsfall og dødsårsak]] [[Styring Ekstern tjeneste]] November
+title: 11 Innrapportering av dødsfall og dødsårsak - hovedtrekk og endringer november
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+* Backend-teamet har jobbet med endringer i samarbeid med skatt for å få ned antallet feil annulleringer.
+* Tjenesten er flyttet til NHN privat sky.
+
+! Prognose på penger og ressurser
+Prognosen for elektronisk dødsmelding er for tiden over budsjett, men innenfor rammen. Timepådrag i siste kvartal har ligget under budsjett, men totalen vil likevel ligge noe over rammen.
+
+Det har i 2024 (og tidligere) vært praktisert å bruke en fordelingsnøkkel for team innrapportering sine timer. Teamet jobber med backend for fødselsmelding, dødsmelding inkludert dødsårsak og melde. Siden det i stor grad er tre selvstendige tjenester vil bruk av fordelingsnøkkel ikke gi et godt nok bilde av timepådrag og dermed forvaltningskosten. Vi går bort fra dette fra 2025.
+
+*Finansiering dødsmelding: Forskriftsfestede midler nasjonale e-helseløsninger, person
+*Finansiering dødsårsak: endringer på bestilling fra FHI
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarkf13b89e8888749880ba0">Oversikt Innrapportering av dødsfall og dødsårsak (Power BI)</a>
+
+

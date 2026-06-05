@@ -1,0 +1,19 @@
+TjenesteID: 40043
+created: 20260412123314581
+modified: 20260416101741506
+revision: 0
+tags: Målsetting 2026 [[Tiltaket digitalt helsekort for gravide]]
+title: Målsetting for DHG: Være pådriver for utvidet utprøving og innføring av digitalt helsekort for gravide
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+
+NHN skal bredde tjenesten til legekontor, helsestasjoner og sykehus for å nå målet om at 50% av alle fastleger og kommunale helsestasjoner/jordmortjenester skal ha tatt tjenesten i bruk, samt at alle regionale helseforetak har startet utprøving 
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

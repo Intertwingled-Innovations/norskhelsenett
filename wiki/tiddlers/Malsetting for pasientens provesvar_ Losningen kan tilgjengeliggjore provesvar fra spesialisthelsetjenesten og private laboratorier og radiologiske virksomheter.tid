@@ -1,0 +1,15 @@
+created: 20240317125442079
+modified: 20260330104413524
+revision: 0
+tags: [[Kjernejournal Pasientens prøvesvar]] 2024 Målsetting
+title: Målsetting for pasientens prøvesvar: Løsningen kan tilgjengeliggjøre prøvesvar fra spesialisthelsetjenesten og private laboratorier og radiologiske virksomheter
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+Det skal være etablert funksjonalitet for å kunne motta svarrapporter for minst 2 laboratorie fagområder samt radiologi fra både private og offentlige aktører.
+
+! Resultat
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+

@@ -1,0 +1,35 @@
+created: 20240503101932128
+modified: 20260408071025187
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] April [[Styring Tiltak]] [[Tiltaket pasientens måledata (OLD)]]
+title: Tiltak pasientens måledata - hovedtrekk og endringer april
+type: text/vnd.tiddlywiki
+
+
+<<list-links filter:"[tag[Tiltaket pasientens måledata]tag[Tiltak]tag[2024]]">>
+
+! Hovedtrekk og endringer
+
+
+!!! Gjennomføre en utprøving av pasientens måledata i helseregon Sør-øst
+* Det er pr april 2024 ikke konkretisert en utprøving. 
+* Det er ikke inngått noen avtale med en leverandør om å utvikle brukergrensesnitt.
+* EPJ-løftet sa nei til å inkludere pasientens måledata i konkurransegrunnlag som skal gå ut i juni. Dette betyr at det foreløpig ikke er noen finansiering til evt EPJ leverandører som ønsker å bli med i utprøvingen.
+
+!!! Oppsummere erfaringer og målinger av nytte fra utprøvingen som innspill til Helsedirektoratets vurdering av nytte
+* Ikke påstartet ettersom en utprøving foreløpig ikke er påstartet.
+
+
+! Prognose på penger og ressurser
+
+*Finansiering: Offentlig tilskudd, PMD, 13 mnok tilfaller vår divisjon og 5 mnok divisjon Innbygger
+
+
+<a href="https://app.powerbi.com/groups/6931f38e-9db9-41f4-a143-ac9ee4a4719c/reports/a03232e0-bd45-4da2-b925-662e476d7ebd/ReportSection343a8851705d1cfe8125?experience=power-bi&bookmarkGuid=Bookmark76496cc890038835a416">Oversikt PMD (Power BI)</a>
+
+* Det pågår rekruttering av ekstra ressurs til team Nilar for å dekke opp for konsulent i avgang
+* Det vurderes å anskaffe team på 2 personer for å etablere en sentral loggaggregeringsfunksjon. Dette for å lette bredding av pasientens journaldokumenter samtidig som kravet om innsynslogg ivaretas. Beslutning om anskaffelse tas så snart vi har en sikrere prognose.
+
+
+
+

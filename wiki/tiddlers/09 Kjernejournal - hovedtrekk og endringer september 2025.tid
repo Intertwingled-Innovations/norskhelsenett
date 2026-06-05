@@ -1,0 +1,52 @@
+created: 20251003095313260
+modified: 20251013194931897
+revision: 0
+tags: [[Divisjon Helsepersonell]] Kjernejournal [[Styring Ekstern tjeneste]] 2025 September
+title: 09 Kjernejournal - hovedtrekk og endringer september 2025
+type: text/vnd.tiddlywiki
+
+
+! Hovedtrekk og endringer
+
+!! Drift og produksjon
+Vi ser på muligheten for å flytte noe driftskostnad over på informasjonstjenestene for bedre å reflektere det reelle kostnadsbildet.
+
+!! Portal
+Vi ser på muligheten for å lage egne API'er for "Om pasienten" og "Besøkshistorikk". Når dette er gjennomført, vil alle informasjonselementer i kjernejournal være tilgjengelig via egne API'er.
+Vertikalisering av legemidler er ferdig, mens vertikalisering av kritisk info blir produksjonssatt 1.november.
+
+!! Informasjonstjenester
+* Pasientens prøvesvar: API er i produksjon fra 4. juni 2025.
+* Pasientens journaldokumenter: 
+** Oslo kommune ble koblet opp som dokumentkilde mandag 6. mai 2025. Det er første kommune som deler journaldokumenter via kjernejournal. 
+** Det pågår arbeid med å etablere et nasjonalt dokumentlager i regi av NHN, mål om å ferdigstille dette i løpet av 2025. Dette vil være aktuelt å bruke for kommuner og avtalespesialister som ikke ønsker å etablere egen XDS infrastruktur.
+** Dips Arena støtter konsumering av journaldokumenter direkte fra API. Dette er produksjonssatt i Helse Vest fra 10. sept 2025. Det innebærer at helsepersonell får tilgang til alle dokumenter fra andre kilder.
+*Kritisk info: 
+** Konsekvenser av overgang til ICD-11 kodeverk blir vurdert og vil pågå utover høsten 2025
+** Det vil være behov for endringer i tjenesten knyttet til avklaringer rundt livsforlengende behandling (oppdrag fra HOD til HDIR). 
+
+
+! Prognose på penger og ressurser
+
+!! Drift og produksjon
+Drift og produksjon er under budsjett. Årsprognosen for KJ drift er 39.7 mnok vs budsjett på 43.6 mnok.
+
+!! Portal
+Forvaltning av kjernejournal portal er over budsjett, mens kjernejournal totalt er under budsjett. Årsprognosen for KJ portal forvaltning er 42.5 mnok vs budsjett på 39.1 mnok.
+
+!! Infotjenester
+Infotjenester har et forbruk ved utgangen av september på 32.2 mnok. Årsprognosen for KJ infotjenester er på 43.7 mnok, vs budsjett på 47 mnok. Dette inkluderer bevilgning for 2025, samt 4 mnok til legemidler (overført fra 2024). 
+
+I tillegg kommer 10 mnok til pasientens prøvesvar (overført fra 2024). Her er det ved utgangen av september forbrukt 7.4 mnok, og en årsprognose på 9.6 mnok.
+
+!!! Ressurser
+
+KJ Portal: En utvikler er fremdeles sykemeldt, en annen har gått over til team Aut & Aut
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarkb92368e492600e8b0b92">Oversikt Kjernejournal total (Power BI)</a>
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark09c84f60ca0c0d0dee2a">Oversikt Kjernejournal Infotjenester (Power BI)</a>
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarke23fe3d1eccd55765405">Oversikt Kjernejournal portal (Power BI)</a>
+
+

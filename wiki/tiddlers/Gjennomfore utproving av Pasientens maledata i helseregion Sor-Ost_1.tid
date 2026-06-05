@@ -1,0 +1,21 @@
+created: 20250217142622968
+modified: 20260408071025186
+revision: 0
+tags: [[Tiltaket pasientens måledata (OLD)]] Oppgave 2025 [[Tiltaket pasientens måledata 2025]] Levert
+title: Gjennomføre utprøving av Pasientens måledata i helseregion Sør-Øst
+type: text/vnd.tiddlywiki
+
+!! NHN Oppgave 2025
+
+Gjennomføre utprøving av tjenesten i helseregion Sør-Øst med utveksling av data mellom helsevirksomheter som samarbeider om pasienten innen andre kvartal 2025. Tjenesten skal kunne ta imot data og konsumere måledata fra den kommunale helse- og omsorgstjenesten og spesialisthelsetjenesten.
+
+Norsk helsenett etablerer infrastrukturen som skal til for at sektor kan hente måledata fra måledata API og gjøre denne tilgjengelig i visningsklienten. I forberedelsene til utprøvingen bygger Sykehuspartner visningsklient for helsepersonell ved bruk av prosessplattformen til Helse Sør-Øst. Denne visningsklienten vil kunne benyttes av flere helseforetak i Helse Sør-Øst.
+For å få til en god utprøving er det nødvendig med tilstrekkelig pasientgrunnlag for å kunne vurdere helsefaglig hytte og få til statistikk over bruk. I tillegg til Vestre Viken HF og Asker og Drammen kommuner foreslår Helse Sør-Øst å inkludere Oslo universitetssykehus og Oslo kommune i utprøvingen.
+
+!! Leveranse
+
+2025 
+
+Utprøving er igang i region Helse Sørøst. Måledata deles mellom Oslo kommune og OUS.  Klinikere ved lungeavdelingen på OUS får tilgang på hjemme målinger for pasienten. Dette gir ett utvidet og forbedret beslutningsgrunnlag for pasientbehandlingen.
+
+<<list-links filter:"[tag[Leveranse]tag[2025]tag<currentTiddler>]">>

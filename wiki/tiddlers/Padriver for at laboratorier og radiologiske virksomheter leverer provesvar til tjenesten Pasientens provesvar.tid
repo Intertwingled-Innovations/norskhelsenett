@@ -1,0 +1,18 @@
+created: 20250217143857877
+modified: 20260114145453216
+revision: 0
+tags: [[Tiltaket pasientens prøvesvar]] Oppgave 2025 [[Tiltaket pasientens prøvesvar 2025]] Levert
+title: Pådriver for at laboratorier og radiologiske virksomheter leverer prøvesvar til tjenesten Pasientens prøvesvar
+type: text/vnd.tiddlywiki
+
+!! NHN Oppgave 2025
+
+Norsk helsenett sin hovedoppgave er utprøvingen av pasientens prøvesvar med formål helsehjelp i løpet av Q2 2025. Det betyr at alle nødvendige aktører som blir med fra start er klare for å sende inn prøvesvar til tjenesten med formål helsehjelp, og at de har nødvendig funksjonalitet for å ivareta pasientsikkerhet og personvern (sperring, nekting og skjerming). Dette vil gjelde både offentlige og private laboratorier, radiologi og patologi. 
+
+!! Leveranse
+
+2025
+
+Alle helseforetak i Helse Vest leverer prøvesvar, og Helse Sør-øst så leverer 5 av 14 helseforetak prøvesvar, og leverer Helse Nord har  1 av 4 helseforetak i gang, og Helse Midt er ikke i produksjon.  I tillegg er det 4 legekontor  i Norge som leverer pasientnære prøvesvar.
+
+<<list-links filter:"[tag[Leveranse]tag[2025]tag<currentTiddler>]">>

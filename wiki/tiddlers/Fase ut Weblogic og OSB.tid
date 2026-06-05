@@ -1,0 +1,17 @@
+TjenesteID: 40033
+created: 20260318115455898
+modified: 20260409113821281
+revision: 0
+tags: [[Kjernejournal portal]] Målsetting 2026
+title: Fase ut Weblogic og OSB
+type: text/vnd.tiddlywiki
+
+
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

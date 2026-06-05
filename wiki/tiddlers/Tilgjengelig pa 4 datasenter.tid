@@ -1,0 +1,15 @@
+created: 20260527123642866
+modified: 20260527124005113
+revision: 1
+tags: 2027 [[Kjernejournal Pasientens journaldokumenter]] [[Vi skal etablere en  forutsigbar og effektiv forvaltning av Pasientens journaldokumenter]] Resultat
+title: Tilgjengelig på 4 datasenter
+type: text/vnd.tiddlywiki
+
+! Resultat
+
+Pasientens journaldokumenter, Pasientens journaldokumenter støttetjenester og NHN dokumentlager skal være tilgjengelig på 4 datasenter.
+
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

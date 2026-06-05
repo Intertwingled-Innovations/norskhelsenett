@@ -1,0 +1,8 @@
+created: 20250224081800943
+modified: 20260302074304720
+revision: 0
+tags: Integrasjonstjenesten Målsetting 2025 2026
+title: 2025-2: Toveis integrasjon for NN saker
+type: text/vnd.tiddlywiki
+
+KD setter sak til 2. linje og det blir produsert sak til topic. Saken blir konsumert av NN saks system og oppretter sak i deres system. Nå det kommer oppdatering på saken i NN saks system, så blir dette lagt i en topic. Dette blir konsumert og gjort tilgjengelig for KD.

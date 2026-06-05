@@ -1,0 +1,29 @@
+TjenesteID: 40025
+created: 20260410115850487
+modified: 20260414122315663
+revision: 0
+tags: Målsetting 2026 [[Testunivers i 2026]]
+title: MVP nedlastbart testunivers
+type: text/vnd.tiddlywiki
+
+Det er identifisert 13 use-cases for et nedlastbart testunivers. Målet for en MVP er at følgende use cases inngår. 
+
+* (nr 1: Selvbetjent nedlasting av testmiljø)
+* nr 3: Versjonering av datasett knyttet til API-versjoner 
+* nr 4: Versjonering av API og Testunivers 
+* nr 6: Rapportere inn feil 
+* (nr 7: Re-teste og utføre regresjonstester )
+* nr 11: Forstå systemkrav for å kjøre nedlastbart Testunivers 
+* nr 12: Tilby nulldagsuttrekk med syntetiske data (50 pasienter, 10 virksomheter, 30 helsepersonell) 
+
+(): er ikke prioritert i 2026
+
+En MVP implementeres for en nasjonal tjeneste. Pasientens prøvesvar er MVP-kandidat.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag[2026]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>

@@ -1,0 +1,33 @@
+created: 20241107095245426
+modified: 20241110152329961
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] Reseptformidleren [[Styring Ekstern tjeneste]] Oktober
+title: Reseptformidleren - hovedtrekk og endringer oktober
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+Vi har hatt stabil drift siden flyttingen den 14-15 september, dette er vi svært fornøyd med. 
+
+Vi nærmer oss å kunne avslutte den løpende oppfølgingen av hendelsen med feil i dosering. Det var en EPJ-løsning som forårsaket de aller fleste reseptene med feil. Leverandøren har nå hjulpet sine kunder med å rette opp samt å oppdatere EPJ versjonen sin. Det er nå 20-30 aktive resepter med feil som gjenstår, rekvirenter som står bak disse følges fortsatt opp. Arbeid med langsiktige tiltak som skjerpede rekvirentkrav og mer validering i reseptformidleren ved mottak av resept vurderes i samarbeid med Helsedirektoratet (dataansvarlig).
+
+Timepådraget for utvikling og test er fortsatt noe lavere enn planlagt hittil i år. Vi vil likevel redusere antall innleide. Vi ser at vi har flere ressurser enn det som er optimalt med hensyn på kodebasen vår. En reduksjon i antall innleide vil redusere leveransefarten noe, men ikke lineært med antall personer som går ut.
+
+
+! Prognose på penger og ressurser 
+
+Finansiering: Tjenesten blir belastet med fellestjenester som har finansiering via medlemsavgiften på 4,1 mnok, resterende finansiering er via forskriftsfestede midler på e-resept.
+
+Takten for drift og forvaltning av reseptformidleren ligger fortsatt totalt sett under tildelt ramme for 2024. Det bør vurderes å betale tilbake overskytende midler ved årsskiftet.
+
+Sluttoppgjør med Tietoevry er avklart og siste fakturaer er mottatt. 
+
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarkab9171eafbc4217a5bac">Oversikt Reseptformidleren (Power BI)</a>
+
+
+
+

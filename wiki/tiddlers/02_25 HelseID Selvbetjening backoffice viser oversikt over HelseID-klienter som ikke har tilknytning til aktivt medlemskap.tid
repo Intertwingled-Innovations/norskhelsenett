@@ -1,0 +1,8 @@
+created: 20250223201412230
+modified: 20250226135918367
+revision: 0
+tags: Leveranse Selvbetjening 2025 Februar [[HelseID skal bidra til å realisere målbilde for tillit]]
+title: 02/25 HelseID Selvbetjening backoffice viser oversikt over HelseID-klienter som ikke har tilknytning til aktivt medlemskap
+type: text/vnd.tiddlywiki
+
+Tidligere har det ikke vært stilt særskilte krav for å kunne opprette en HelseID-klient. Som en forberedelse til å kreve dette vises det nå en liste backoffice av klienter som ikke er tilknyttet et aktivt medlemskap. Dette er en forberedelse til å kreve medlemsskap, slik at klienter i aktiv bruk kan overføres til et gyldig medlemsskap på forhåndt, og tjenester dermed ikke slutter å virke uforbered.

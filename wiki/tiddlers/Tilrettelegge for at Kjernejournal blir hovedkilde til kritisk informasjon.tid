@@ -1,0 +1,22 @@
+created: 20250217134105259
+modified: 20260115144135458
+revision: 0
+tags: [[Tiltaket pasientens kritiske informasjon]] 2025 Oppgave [[Tiltaket pasientens kritiske informasjon 2025]] Levert [[Team verdikjede e-resept]] [[Team Sats]]
+title: Tilrettelegge for at Kjernejournal blir hovedkilde til kritisk informasjon
+type: text/vnd.tiddlywiki
+
+!! NHN Oppgave 2025
+
+NHN skal tilrettelegge for at Kjernejournal blir hovedkilde til kritisk informasjon. Oppgaven innebærer å oppdatere e-reseptkrav og tilrettelegge for at de aktuelle systemene bruker kjernejournal som hovedkilde til legemiddelreaksjoner (kritisk informasjon)
+
+
+!! Overordnet status
+NHN har kravstilt endringen for at legemiddelreaksjoner skal fjernes fra M25.1/PLL, og fulgt opp aktuelle EPJ leverandører for utvikling og produksjonssetting
+
+!! Hva er levert?
+SFM, FM, Pridok og Infodoc har alle tidligere i år avviklet sending av legemiddelreaksjoner via M25.1/PLL
+
+!! Hvilken verdi har dette gitt til sektor?
+I Helse Vest utprøvingen for PLL har dette medført at tidligere utfordring med flere kilder til kritisk informasjon er løst. Helse Vest har nå en kilde til kritisk informasjon via Kjernejournal kritisk informasjon APIet.
+
+<<list-links filter:"[tag[Leveranse]tag[2025]tag<currentTiddler>]">>

@@ -1,0 +1,33 @@
+TjenesteID: 40034
+created: 20240317142739315
+modified: 20260505101347337
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] [[Domene Samhandlingsplattform]] 2026
+title: Reseptformidleren
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+
+Reseptformidleren har en sentral rolle i formidlingen av informasjon mellom aktørene i e-resept. Gjennom sin funksjon som formidler av reseptrelatert informasjon skal reseptformidleren ivareta målet om fritt valg av utleverer. Reseptformidleren har en rolle som tiltrodd aktør knyttet til validering av reseptinformasjon som videreformidles til andre parter. 
+
+Reseptformidleren er database og meldingsformidler for alle aktive resepter, Legemidler i bruk (LIB), Pasientens Legemiddelliste (PLL) og søknader til Legemiddelverket. All informasjon utveksles mellom aktørene i NHN med standardiserte XML meldinger via SMTP/ebXML eller vha. Webservices for synkrone tjenester.
+
+! Målsettinger
+!! 2026
+
+<<list-links filter:"[tag[Målsetting]tag[2026]tag<currentTiddler>]">>
+
+! Resultat
+!! 2026
+
+<<list-links filter:"[tag[Resultat]tag[2026]tag<currentTiddler>]">>
+
+! Leveranser
+!! 2026
+
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>
+
+! Styring
+!! 2026
+
+<<list-links filter:"[tag[Styring]tag[2026]tag<currentTiddler>]">>

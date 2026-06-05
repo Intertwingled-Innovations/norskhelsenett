@@ -1,0 +1,47 @@
+TjenesteID: 40052
+created: 20240128165703052
+modified: 20260327065650535
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Intern tjeneste]] [[Domene Økosystem]] Team 2026
+title: Kundesenteret
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+Team kunde- og driftssenter (KD) har som formål å yte brukerstøtte, medlemsservice og veiledning til NHN's brukere, medlemmer, kunder og leverandører (og innbygger)  for Nasjonal tjenesteleverandør og Tjenester for spesialisthelsetjenesten.
+
+KD skal være en kanal for å identifisere og melde nye behov.
+
+KD skal bidra til å belyse problemer med tjenestene våre tilbake til tjenesteeiere og APO’er
+
+! Målsettinger 
+!!2024
+
+<<NHN-current-liste-levert type:"Målsetting" aar:"2024">>
+
+!!2025
+<<NHN-current-liste-levert type:"Målsetting" aar:"2025">>
+
+!!2026
+<<NHN-current-liste-levert type:"Målsetting" aar:"2026">>
+
+! Styring
+!! 2024
+<<list-links filter:"[tag[Styring Intern tjeneste]tag[2024]tag<currentTiddler>]">>
+
+! Styring
+!! 2025
+<<list-links filter:"[tag[Styring Intern tjeneste]tag[2025]tag<currentTiddler>]">>
+
+!! 2026
+<<list-links filter:"[tag[Styring Intern tjeneste]tag[2026]tag<currentTiddler>]">>
+
+!Leveranser
+
+!! Leveranser 2024
+<<list-links filter:"[tag[Leveranse]tag[2024]tag<currentTiddler>]">>
+
+!! Leveranser 2025
+<<list-links filter:"[tag[Leveranse]tag[2025]tag<currentTiddler>]">>
+
+!! Leveranser 2026
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>

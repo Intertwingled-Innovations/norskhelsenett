@@ -1,0 +1,35 @@
+created: 20241004125034303
+modified: 20241014102540723
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] Reseptformidleren [[Styring Ekstern tjeneste]] September
+title: Reseptformidleren - hovedtrekk og endringer september
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+Applikasjonen reseptformidleren ble flyttet til produksjonsmiljøet i Norsk helsenett den 14-15.september og dermed er flyttingen av driften gjennomført. Avtalen med Tietoevry er sagt opp og vi har bestilt sanering av alle resterende miljøer med tilhørende data.
+
+Kodebasen for for reseptformidleren ligger nå i vårt felles arbeidsverktøy Milliways (basert på Gitlab) og bygg og deploy gjennomføres tilsvarende som for andre tjenester i Norsk helsenett.
+
+Timepådraget for utvikling og test er fortsatt noe lavere enn planlagt hittil i år. 
+Hendelse med feil i doseringsinformasjon har vært arbeidskrevende for både drift, kundesenter og utviklingsteamet. 
+Det har også vært en del arbeid for driftsteamet på grunn av periodevis lange svartider for noen apotek, dette er nå løst.
+
+
+! Prognose på penger og ressurser 
+
+Finansiering: Tjenesten blir belastet med fellestjenester som har finansiering via medlemsavgiften på 4,1 mnok, resterende finansiering er via forskriftsfestede midler på e-resept.
+
+Takten for drift og forvaltning av reseptformidleren ligger fortsatt totalt sett omkring 13 mnok under tildelt ramme for 2024. Det bør vurderes å betale tilbake overskytende midler ved årsskiftet.
+
+Flytting av reseptformidleren til NHN privat sky har gått som planlagt. Avvikling av resterende miljøer hos Tietoevry og sanering av data er bestilt. Avtalen med TietoEvry utløper den 21.november 2024. Det er noe usikkerhet rundt sluttoppgjøret og driftspris i perioden 15.septeber til 21.november.
+
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarkab9171eafbc4217a5bac">Oversikt Reseptformidleren (Power BI)</a>
+
+
+
+

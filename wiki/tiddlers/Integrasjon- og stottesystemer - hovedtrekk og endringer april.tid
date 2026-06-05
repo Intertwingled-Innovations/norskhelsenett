@@ -1,0 +1,32 @@
+created: 20240430102921356
+modified: 20240508114707387
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] [[Integrasjon- og støttesystemer]] April [[Styring Intern tjeneste]]
+title: Integrasjon- og støttesystemer - hovedtrekk og endringer april
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+''Junta/Flow''
+
+* avviklet utdatert funksjonalitet i Junta (terminalkonto, Fjernhjelp v1.0, kunnskapsdatabase)
+* korrigert avvik på Flow DNS
+* jobber med anonymisering av skarpe data i test
+* jobber med å utvikle arkivløsning for Junta
+
+''Integrasjonstjenesten''
+
+* Dialog med APT mhp saksbehandlingssystem.
+* Opplæring i Axual: Planlegging og allokering av personer for kurs.
+* Videre jobbing med formål i forbindelse med DHP systemdesign.
+
+
+
+! Prognose på penger og ressurser
+*Finansiering: Medlemsavgiften
+* Ca. 140 timer over prognose/budsjett i april, som tar igjen litt av manglende produserte timer i Q1, sum ca. 500 timer under budsjett
+<a href="https://app.powerbi.com/groups/6931f38e-9db9-41f4-a143-ac9ee4a4719c/reports/a03232e0-bd45-4da2-b925-662e476d7ebd/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark6966c46e3cd6605ce815">Oversikt Integrasjon- og støttesystemer (Power BI)</a>
+
+

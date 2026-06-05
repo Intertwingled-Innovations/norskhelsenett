@@ -1,0 +1,18 @@
+created: 20240801121401901
+modified: 20260504074437727
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] Målsetting
+title: Ekstern temperaturmåling 2024
+type: text/vnd.tiddlywiki
+
+NHN skal gjennomføre en ekstern temperaturmåling blant toppledere i helsesektoren. Dette utføres som kvalitative intervjuer, og utføres av Kundeteamene i Domene Økosystem. 
+
+Resultatene skal presenteres i en egen rapport som skal presenteres for ledergruppen og styret i NHN i august 2024.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

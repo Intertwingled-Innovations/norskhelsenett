@@ -1,0 +1,13 @@
+created: 20250910194429206
+modified: 20251108173908485
+revision: 0
+tags: [[Modernisering av reseptformidleren]] Leveranse 2025 September Reseptformidleren
+title: Hva kan aktørene i e-resept kjeden forvente ift MyHealth og EHDS
+type: text/vnd.tiddlywiki
+
+Hovedbudskap til aktørene i kjeden nå:
+
+* NHN vil tilby dagens e-resept xml meldinger og fremtidens EHDS API'er i parallell i en overgangsperiode slik at aktørene får god tid til å tilpasse seg.
+* Aktørene behøver ikke å gjøre tilpasninger i sine løsninger for ePresecription og eDispensation i MyHealth@EU. NHN vil håndtere denne utvekslingen.
+* Dagens e-resept meldinger vil ikke støtte IDMP legemiddel grunndata.
+* IDMP legemiddel grunndata må innføres samtidig med innføring av EHDS (hvis det skal innføres).

@@ -1,0 +1,30 @@
+created: 20250411060303978
+modified: 20250411061132102
+revision: 0
+tags: [[Divisjon Helsepersonell]] Testunivers [[Styring Ekstern tjeneste]] 2025 Mars
+title: 03 Testunivers - hovedtrekk og endringer mars 2025
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+__Datasjø og syntetisering av data__
+- Azure datalake er etablert i allmenn sky og det jobbes nå med tilgjengeliggjøring av API som første tilgangsintegrasjon mot datasjøen.
+- Etablering av en datakatalog er under analysering for å finne riktig verktøy.
+- ​Algoritme for produksjon av syntetiske data som etterligner PPS er etablert. Det jobbes nå med å utvikle en ny algoritme som skal trenes på anonymiserte produksjonsdata i fra PPS. 
+- Vi lager ny søknad om dispensasjon fra taushetsplikt som skal sendes HDIR. Dette må til for å utvikle en algoritme for å lage syntetiske data basert på reelle data i fra Kjernejournal. Målet er å kunne starte på denne utviklingen i løpet av mars 2025. 
+- Omprioriteringer i leveranser før årsslutt 2024 i NHN fører til lavere leveransetakt i utvikling av algoritmene, men dette er nå tatt inn igjen.
+- Testuniverset er spilt inn som mulig valideringssystem for EHDS-krav for leverandører i Norge, dette er under utredning. 
+
+Alt arbeid med tiltakene ligger fortsatt innenfor plan for trinnvis tilnærming av løsningene (2024-2026)
+
+! Prognose på penger og ressurser
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection343a8851705d1cfe8125?experience=power-bi&bookmarkGuid=Bookmark6073939a83ecbd0d58cd">Oversikt Tiltak - Spin off miljø i skyen og Syntetisk datalake (Power BI)</a>
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection343a8851705d1cfe8125?experience=power-bi&bookmarkGuid=Bookmark04f8970f121aa863a9e2">Oversikt Testmiljø forvaltning og videreutvikling og Syntetiske data (Power BI)</a>
+
+Prognose på penger og ressurser følger plan sett ut i fra helårseffekt.                   
+*Finansiering: Testunivers består av ulik finansiering. Aktivitet knyttet til syntetisk datalake og spin off miljø i skyen er ufinansiert og utgjør en kostnadsbase for året på 12 mnok. Tildelte interne tjenester som er dekt av medlemsinntekt er på 1,86 mnok. Ekstern fakturering på 0,3 mnok og offentlig tilskudd - post 70 på 0,8 mnok.
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark9025ca7215f00744e172">Oversikt Testunivers (Power BI)</a>
+

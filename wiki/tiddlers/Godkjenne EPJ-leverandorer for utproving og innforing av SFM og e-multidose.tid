@@ -1,0 +1,19 @@
+created: 20240128090924148
+modified: 20250115095323527
+revision: 0
+tags: [[Tiltaket pasientens legemiddelliste]] 2024 Oppgave Levert
+title: Godkjenne EPJ-leverandører for utprøving og innføring av SFM og e-multidose
+type: text/vnd.tiddlywiki
+
+!! NHN Oppgaver 2024
+
+Dette er en løpende oppgave. Leverandører som skal ta i bruk SFM fullversjon eller SFM Basis API må gjennom den etablerte godkjenningsprosessen, herunder fasene som er ytterligere beskrevet på nhn.no. Ressurser i NHN følger opp og bistår leverandørene gjennom denne prosessen.
+NHN prioriterer leverandører som er relevante for PLL, spesielt leverandører som har virksomheter i aktuelle kommuner/områder i helseregion vest og helseregion nord. I tillegg er det målsetning om godkjenning av flere leverandører til fastleger, sykehjem og hjemmetjeneste, samt utprøving og støtte til innføring til disse brukergruppene.
+Team SFM Utprøving har detaljert oversikt over leverandørene og deres planer for når de kommer til godkjenning, og følger opp dette løpende. Status pr leverandør kan vises i rapporteringsmøtene. 
+
+!! Leveranser:
+
+
+<<list-links filter:"[tag[Leveranse]tag[2024]tag<currentTiddler>]">>
+
+

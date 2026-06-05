@@ -1,0 +1,20 @@
+created: 20240809071408200
+modified: 20241211111927722
+revision: 0
+tags: [[Innrapportering av fødselsmelding]] Målsetting 2025
+title: Norsk helsenett overtar løsningen for innrapportering av fødselsmelding
+type: text/vnd.tiddlywiki
+
+Idag sendes det faktura for drift og sekretariatsoppgaver til regionene, men ikke for forvaltning. Det har vist seg vanskelig å opprettholde god nok kvalitet på koden, og det er nødvendig med større forbedringer for å sikre at løsningen tilfredsstiller krav til løsninger i NHN.
+
+Elektronisk fødselsmelding får i 2024 midler gjennom Persontjenesten (under Grunndata). Disse midlene bør dekke en bærekraftig forvaltning som tar høyde for verdibevarende oppdateringer og vedlikehold, men denne finansieringen er ikke tilfredsstillende for tjenesten. Kostnadene blir dessuten fordelt på flere aktører enn de som bruker løsningen.
+
+NHN ønsker å overta løsningen, og tilby elektronisk fødselsmelding som en tjeneste som inkluderer drift, forvaltning og videreutvikling av løsningen. Gjeldende avtale vil da løpe til 31.12.2024.
+
+!! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+!! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

@@ -1,0 +1,14 @@
+TjenesteID: 40171
+created: 20260512123142266
+modified: 20260512124943392
+revision: 0
+tags: 2026 [[Kjernejournal Pasientens journaldokumenter]] [[PJD sine personverninnstillinger er i tråd med Personvern og tilgangsstyring sitt målbilde]] Resultat [[PJD leser og skriver personverninnstillinger til PTS for prøvesvar]]
+title: PJD leser og skriver personverninnstillinger til PTS for prøvesvar
+type: text/vnd.tiddlywiki
+
+Et prøvesvar kan i en overgangsperiode deles både via Pasientens journaldokumenter og Pasientens prøvesvar. Det er derfor viktig at PJD kan  lese og skrive personverninnstillinger fra PTS  for å sikre av satte personverninnstillinger blir etterfulgt.
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>
+

@@ -1,0 +1,14 @@
+created: 20241110191919006
+modified: 20241110200913161
+revision: 0
+tags: [[Modernisering av reseptformidleren]] Resultat 2025 Februar
+title: Skrive innsyn til felles auditlog i samhandlingsplattformen
+type: text/vnd.tiddlywiki
+
+Skrive innsyn i legemiddelopplysninger til felles auditlog i samhandlingsplattformen.
+
+I dagens løsning logges innsyn i egen tabeller i reseptformidlerens database og Helsenorge henter derfra for å vise til innbygger. Når vi skriver til felles auditlog kan Helsenorge hente innsyn i alle tjenester fra samme sted/kilde.
+
+Harmonisere lagringstid med øvrige tjenester.
+
+Dette gjør det også mulig å forenkle prosessen for å blokkere innsyn i legemiddelopplysninger. I dagens løsning må innbygger blokkere innsyn både i reseptformidleren og legemiddelopplysninger i kjernejournal for å være sikker på at blokkert helsepersonell ikke får tilgang.

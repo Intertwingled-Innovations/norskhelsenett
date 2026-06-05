@@ -1,0 +1,40 @@
+created: 20250811085905737
+modified: 20250811090615080
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Styring Ekstern tjeneste]] 2025 [[Verdikjede e-resept]] Juni
+title: 06 E-resept verdikjede - hovedtrekk og endringer Juni 2025
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+
+*  Mottatt systemtest fra Helseplattformen. Verdikjede benytter denne for å planlegge for AT til høsten og utarbeide testcase
+
+*  Teamet har samarbeidet med SFM om differensiering av SFM integrasjonskrav og rekvirentkravstilling overfor leverandør
+
+*  Hendelse for e-resept i slutten av juni ble håndtert av IM. DMP genererte feil i FEST-filen som medførte feil for CGM legekontorene. Feilen ble rettet av DMP og CGM innen få dager.
+
+
+
+! Ferdigstilte leveranser i perioden
+
+<<list-links filter:"[tag[Leveranse]tag[Juni]tag[2025]tag[Verdikjede e-resept]]">>
+
+* Det er besluttet at legemiddelreaksjoner skal fjernes fra M25.1. Det er en enkel endring i rekvirentkrav. Krav som handler om lesing/sending av legemiddelreaksjoner utgår. EPJ leverandører har fått beskjed om å utvikle støtte for å stoppe sending og mottak av legemiddelreaksjoner fra M25.1
+
+! Prognose på penger og ressurser
+Finansiering: Forskriftsfestede midler nasjonale e-helseløsninger, e-resept
+
+* Timepådrag - Underforbruk på godkjenningsprosessen pga. fravær og lavere timeantall enn budsjettert fra ressurser utenfor teamet. 
+* Prognosen for året ligger noe under budsjett. Skal justeres noe ned på timer
+
+
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark4c89bd5ada01ce3dc213">Oversikt E-resept verdikjede (Power BI)</a>
+
+
+
+

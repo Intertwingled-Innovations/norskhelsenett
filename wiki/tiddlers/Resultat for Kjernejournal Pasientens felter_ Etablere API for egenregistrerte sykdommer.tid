@@ -1,0 +1,15 @@
+TjenesteID: 40172
+created: 20260412133826037
+modified: 20260414121824144
+revision: 0
+tags: Resultat 2026 [[Kjernejournal Pasientens felter]] [[Målsetting for Kjernejournal Pasientens felter: Etablere API for egenregistrerte sykdommer]]
+title: Resultat for Kjernejournal Pasientens felter: Etablere API for egenregistrerte sykdommer
+type: text/vnd.tiddlywiki
+
+! Mål
+
+Informasjon om pasientens egenregistrerte sykdommer kan registreres og leses digitalt via API
+
+! Effekt sektoren
+* Innbygger kan enkelt registrere egne sykdommer via helsenorge.no
+* Helsepersonell har enkel tilgang til pasientens egenregistrerte sykdommer

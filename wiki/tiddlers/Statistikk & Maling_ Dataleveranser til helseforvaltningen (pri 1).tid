@@ -1,0 +1,16 @@
+created: 20260407113517252
+modified: 20260408103149133
+revision: 0
+tags: [[Statistikk & måling]] Målsetting 2026
+title: Statistikk & Måling: Dataleveranser til helseforvaltningen (pri 1)
+type: text/vnd.tiddlywiki
+
+Muliggjøre innsamling av metrikker (brukerdata) for alle tjenester i divisjonen. Det skal være mulig for alle tjenester å logge slike data til en felles mekanisme. Leveranser til eksterne datavarehus/interessente, f. eks. HDir, regioner, regionale IT-selskaper.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

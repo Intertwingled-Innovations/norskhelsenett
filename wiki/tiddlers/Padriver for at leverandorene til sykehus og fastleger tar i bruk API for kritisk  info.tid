@@ -1,0 +1,26 @@
+created: 20250217133914142
+modified: 20260115144028273
+revision: 0
+tags: [[Tiltaket pasientens kritiske informasjon]] Oppgave 2025 [[Tiltaket pasientens kritiske informasjon 2025]] Levert [[Team Sats]]
+title: Pådriver for at leverandørene til sykehus og fastleger tar i bruk API for kritisk  info
+type: text/vnd.tiddlywiki
+
+!! NHN Oppgave 2025
+NHN bistår leverandørene for teknisk tilrettelegging  for integrasjon med KJ KI API'et  
+
+
+!! Overordnet status
+NHN har bistått de leverandører og aktører som har vært klar for oppkobling for kritisk info APIet til kjernejournal.
+Flere aktører er noe forsinket i sine planer for oppkobling og bruk av APIet for kritisk informasjon i KJ
+
+
+!! Hva er levert?
+NHN har gitt teknisk bistand for oppkobling til APIet for de leverandører som har vært klar for teknisk oppkobling. Helse Vest har vært i gang med denne tjenesten for kritisk informasjon i DIPS. DIPS Arena er teknisk klar for Helse Nord og HSØ, men er ikke kommet i gang med integrasjon og bruk. Helse Nord kom i slutten av året på KJ KI APIet med 3 foretak. .
+
+Av fastlegeleverandører er Pridok på KJ KI API'et. Pågående arbeid i HDIR/EPJ løftet for en anskaffelse av integrasjon for fastlege leverandører er forsinket.
+
+!! Hvilken verdi har dette gitt til sektor?
+Kritisk info APIet i kjernejournal gir helsepersonell muligheten for å slå opp, lese og registrere kritisk informasjon fra eget pasientjournalsystem. Målet er å sikre at kritisk informasjon følger pasienten og er tilgjengelig der helsehjelpen gis. Formålet er å øke pasientsikkerheten ved å gi helsepersonell rask og sikker tilgang til informasjon de er avhengig av i behandlingssituasjonen. 
+I dag deles kritisk informasjon for sjelden gjennom kjernejournal portal, noe som kan føre til at helsepersonell mangler avgjørende opplysninger i akutte situasjoner. 
+
+<<list-links filter:"[tag[Leveranse]tag[2025]tag<currentTiddler>]">>

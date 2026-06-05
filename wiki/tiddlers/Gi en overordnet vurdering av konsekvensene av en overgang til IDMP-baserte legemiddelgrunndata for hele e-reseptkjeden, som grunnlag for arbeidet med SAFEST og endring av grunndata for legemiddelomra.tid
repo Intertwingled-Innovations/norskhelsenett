@@ -1,0 +1,12 @@
+created: 20240128121133608
+modified: 20250113152322468
+revision: 0
+tags: [[Norsk helsenett SF som nasjonal tjenesteleverandør i 2024]] 2024 Oppgave [[Team verdikjede e-resept]] Levert
+title: Gi en overordnet vurdering av konsekvensene av en overgang til IDMP-baserte legemiddelgrunndata for hele e-reseptkjeden, som grunnlag for arbeidet med SAFEST og endring av grunndata for legemiddelområdet
+type: text/vnd.tiddlywiki
+
+Norsk helsenett SF har ansvar for å vurdere konsekvensene for de nasjonale løsningene av integrasjon mot og overgang til bruk av europeiske standarder for digital informasjonsutveksling. I 2024 er det særlig behov for å vurdere konsekvensene av overgang til IDMP-standarden for legemidler. 
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag[2024]tag<currentTiddler>]">>

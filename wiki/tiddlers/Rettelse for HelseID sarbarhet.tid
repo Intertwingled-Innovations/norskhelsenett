@@ -1,0 +1,10 @@
+created: 20250515084237523
+modified: 20250515084525386
+revision: 0
+tags: [[Stabil og sikker drift av reseptformidleren i Norsk helsenetts private sky.]] 2025 Leveranse April
+title: Rettelse for HelseID sårbarhet
+type: text/vnd.tiddlywiki
+
+Håndtering av en sårbarhet i HelseID krever oppdateringer hos alle brukere. De nødvendige rettelser er implementert i reseptformidleren.
+
+SFM bruker HelseID mot reseptformidleren. Pridok tester dette ut og DIPS har også vist interesse for rekvirentfunksjonalitet med HelseID.

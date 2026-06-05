@@ -1,0 +1,15 @@
+created: 20240704113412275
+modified: 20260330070845619
+revision: 0
+tags: [[Kjernejournal Pasientens journaldokumenter]] Målsetting 2024
+title: Målsetting for pasientens journaldokumenter: Det er etablert nødvendig drift og forvaltning av pasientens journaldokumenter
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+Pasientens journaldokumenter driftes og forvaltes ihht helsesektorens forventninger.
+
+! Resultat
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

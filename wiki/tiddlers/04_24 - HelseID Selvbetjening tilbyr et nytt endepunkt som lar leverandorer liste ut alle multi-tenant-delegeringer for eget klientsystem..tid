@@ -1,0 +1,8 @@
+created: 20240821135819194
+modified: 20240821140206832
+revision: 0
+tags: [[Det skal være mulig å sikre helsedata i multi-tenant systemer med HelseID]] Leveranse April 2024 Selvbetjening
+title: 04/24 - HelseID Selvbetjening tilbyr et nytt endepunkt som lar leverandører liste ut alle multi-tenant-delegeringer for eget klientsystem.
+type: text/vnd.tiddlywiki
+
+HelseID Selvbetjening tilbyr et nytt endepunkt som lar leverandører liste ut alle multi-tenant-delegeringer for eget klientsystem. Multi-tenant leverandører kan dermed forbedre brukeropplevelsen for sine kunder. 

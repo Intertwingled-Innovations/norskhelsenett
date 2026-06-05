@@ -1,0 +1,12 @@
+created: 20241004130654827
+modified: 20260101145018674
+revision: 0
+tags: [[Forbedre kvaliteten på data i e-resept verdikjeden]] Resultat Reseptformidleren 2025
+title: Oversikt over alle rekvirent og utleverer krav som kan valideres
+type: text/vnd.tiddlywiki
+
+Gjennomgå alle rekvirent og utleverer krav for å avdekke hvilke som kan valideres automatisk ved mottak av meldinger i reseptformidleren.
+
+Prioritert rekkefølge for innføring av valideringer slik at vi kan legge opp en proaktiv prosess med alle aktørene som blir berørt.
+
+Denne overordnete planen skal foreligge ila juni 2025 og tas frem i samarbeid mellom team reseptformidleren og verdikjede e-resept.

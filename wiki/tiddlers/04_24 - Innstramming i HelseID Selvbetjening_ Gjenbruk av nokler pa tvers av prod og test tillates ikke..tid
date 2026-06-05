@@ -1,0 +1,8 @@
+created: 20240819135216308
+modified: 20260505053852587
+revision: 0
+tags: [[Tjenesten HelseID skal lukke alle risikoelementer med risikonivå alvorlig]] 2024 Leveranse April Selvbetjening
+title: 04/24 - Innstramming i HelseID Selvbetjening: Gjenbruk av nøkler på tvers av prod og test tillates ikke.
+type: text/vnd.tiddlywiki
+
+Tidligere var det mulig å gjenbruke HelseID-nøkler på tvers mellom prod og test. Det er innført kontrollmekasnismer som gjør at dette ikke lengre tillates. 

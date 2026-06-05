@@ -1,0 +1,38 @@
+created: 20240212113948028
+modified: 20260408085632632
+revision: 0
+tags: [[Forskrivningsmodulen 2024-2025]] Målsetting [[Team FM]] [[Forsvarlig forvaltning av Forskrivningsmodulen]] 2025
+title: Avvikle FM
+type: text/vnd.tiddlywiki
+
+Målsetningen er at NHN skal kunne avvikle forvaltningen av FM. Dette innebærer at
+
+* ingen feil i FM blir rettet
+* NHN gjør ingen kritiske oppdateringer av FM
+* NHN har ikke et "kriseteam" i FM som kan fikse feil
+* Ressurser som arbeider med FM blir satt til å gjøre andre oppgaver
+* Det vil ikke lengre være behov for økonomiske midler til forvaltning av FM
+
+Dato for avvikling er offisielt satt til 30.06.2025. Vi vet at Helse Vest vil ha behov for FM til de er over på DIPS Arena Medikasjon med PLL. Det vil ikke skje før rundt slutten av 2025. Muligens må også Bergen kommune, som også er en PLL-kommune, ha støtte noe ut i Q3. Vi avvikler for andre aktører. 
+I Q2 2024 hadde vi møter med EPJ leverandørene som har flest brukere av FM for å få oversikt over deres planer og samtidig dytte på fremdriften. I tillegg har vi gjennom to år informert EPJ leverandører i leverandørwebinar regelmessing om våre planer om avvikling av FM. Fra og med 2024 er SFM god nok som alternativ løsning for alle aktuelle brukere og det er nå opp til leverandørene å forberede seg i tide. Vi er altså en "pådriver" for at alle aktører skal over på ny løsning med SFM, men avvikler som planlagt om ikke alle er over. Eventuelle brukere med EPJ som ikke har gått over til SFM vil da miste tilgang til e-resept frem til de har ny løsning. Dette anses ikke kritisk for de brukerne det gjelder.
+
+
+
+! Resultat
+
+!! 2024
+
+<<list-links filter:"[tag[Resultat]tag[2024]tag<currentTiddler>]">>
+
+
+!! 2025
+<<list-links filter:"[tag[Resultat]tag[2025]tag<currentTiddler>]">>
+
+
+! Leveranser
+!! 2024
+<<list-links filter:"[tag[Leveranse]tag[2024]tag<currentTiddler>]">>
+
+!! 2025
+<<list-links filter:"[tag[Leveranse]tag[2025]tag<currentTiddler>]">>
+

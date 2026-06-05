@@ -1,0 +1,22 @@
+created: 20260401085141193
+modified: 20260407090852959
+revision: 0
+tags: 2026 [[Divisjon Helsepersonell]] [[Tjeneste oppsummert totalt]]
+title: Tjeneste oppsummert
+type: text/vnd.tiddlywiki
+
+Hver tjeneste har én tiddly som samler all relevant informasjon om tjenesten for 2026. 
+
+''Disse tiddlyene inngår i denne overordnede oppsummeringstiddlien som gir totaloversikt over alle tjenester for 2026.''
+
+Tiddlien pr tjeneste skal oppsummere:
+
+* Beskrivelse av tjenesten
+* Alle målsettinger 
+* Alle resultat 
+* Alle leveranser 
+* Alle månedlige tiddlier på styring
+
+!! Oversikt pr tjeneste med oppsummering:
+
+<<list-links filter:"[tag<currentTiddler>tag[Tjeneste oppsummert]tag[2026]]">>

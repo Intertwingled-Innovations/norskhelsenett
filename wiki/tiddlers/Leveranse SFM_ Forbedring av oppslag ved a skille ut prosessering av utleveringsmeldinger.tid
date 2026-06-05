@@ -1,0 +1,16 @@
+TjenesteID: 40044
+created: 20260306105532096
+modified: 20260416102611263
+revision: 0
+tags: Leveranse [[Team SFM]] 2026 [[Tiltak for ytterligere stabilisering, håndtere økt volum og opprettholde fart i leveranser]] Februar [[Sentral forskrivningsmodul i 2026]]
+title: Leveranse SFM: Forbedring av oppslag ved å skille ut prosessering av utleveringsmeldinger
+type: text/vnd.tiddlywiki
+
+Mål: Implementere forbedringer i arkitektur, implementasjon og deployment - kode, prosesser og ansvar.
+
+Levert:
+
+*Forbedring av oppslag mot RF og KJ ved å skille ut prosessering av utleveringsmeldinger. Dette gir et raskere grensesnitt og en bedre brukeropplevelse.
+
+
+

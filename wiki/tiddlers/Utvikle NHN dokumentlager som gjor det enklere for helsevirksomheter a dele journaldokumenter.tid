@@ -1,0 +1,19 @@
+TjenesteID: 40171
+created: 20260512063806534
+modified: 20260512103626887
+revision: 0
+tags: 2026 Resultat [[Kjernejournal Pasientens journaldokumenter]] [[Flere helsevirksomheter skal dele journaldokumenter gjennom PJD]] [[Utvikle NHN dokumentlager som gjør det enklere for helsevirksomheter å dele journaldokumenter]]
+title: Utvikle NHN dokumentlager som gjør det enklere for helsevirksomheter å dele journaldokumenter
+type: text/vnd.tiddlywiki
+
+! Resultat
+Utvikle NHN dokumentlager som gjør det enklere for helsevirksomheter å dele journaldokumenter
+
+Vi skal utvikle støtte for at helsevirksomheter gjennom en informasjonstjeneste skal kunne lagre journaldokumenter i NHN dokumentlager som da vil bli tilgjengelig via Pasientens journaldokumenter til helsepersonell og innbygger.
+
+Norsk helsenett vil være databehandler på vegne av helsevirksomheten og NHN vil fakturere for tjenesten.
+Tjenesten vil ha en tilgjengelighet på 24/7.
+
+! Leveranser
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>
+

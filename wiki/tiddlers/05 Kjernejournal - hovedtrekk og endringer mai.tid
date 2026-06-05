@@ -1,0 +1,33 @@
+created: 20240531131812015
+modified: 20241009134327185
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] Kjernejournal [[Styring Ekstern tjeneste]] Mai
+title: 05 Kjernejournal - hovedtrekk og endringer mai
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+!! Drift og produksjon
+Økte kostnader for Drift og produksjon skyldtes en økning i optimal lagring pga nyinnkjøpte og driftsatte databaseservere. Det førte til en dobbeltkostnad frem til data ble migrert fra gamle databaser til nye og de gamle ble slått av (utført i starten av mai). Dette ble ikke vurdert ifm budsjett 2024. Det har også kommet ca 5% økning i total infrastruktur kost fra 2023 til 2024.
+
+! Prognose på penger og ressurser
+
+!! Portal
+Forvaltning av kjernejournal portal er litt over budsjett, men innenfor rammen.
+
+!! Infotjenester
+Årsprognosen for KJ infotjenester ligger 19,3 mnok under budsjett. 
+
+!!! Ressurser
+Kollektivet: Vi får inn tre nye utviklere til Kollektivet i august/september. To av utviklerne er p.t i pappa-permisjon, mens en tredje utvikler går ut i mamma-permisjon rett etter sommeren.
+KJ infotjenester: Vi har forespurt APT om ekstra driftsressurs da KJ infotjenesteteamet mener dette vil øke hastigheten på leveransene. Ressursen vil å så fall finansieres av KJ rammen.
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarkb92368e492600e8b0b92">Oversikt Kjernejournal total (Power BI)</a>
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark09c84f60ca0c0d0dee2a">Oversikt Kjernejournal Infotjenester (Power BI)</a>
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarke23fe3d1eccd55765405">Oversikt Kjernejournal portal (Power BI)</a>
+
+

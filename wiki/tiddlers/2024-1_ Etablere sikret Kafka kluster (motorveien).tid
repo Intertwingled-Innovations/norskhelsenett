@@ -1,0 +1,17 @@
+created: 20240904115609006
+modified: 20250331140026061
+revision: 0
+tags: Integrasjonstjenesten 2024 Målsetting
+title: 2024-1: Etablere sikret Kafka kluster (motorveien)
+type: text/vnd.tiddlywiki
+
+Vi skal ha et Kafka cluster med et absolutt skille mellom administrative data og helsedata. Vi kan ikke komme i en situasjon der helsedata blir tilgjengelig slik at de kan lekke ut via feks en svakhet i økonomisystemet. Dvs administrative systemer kan ikke ha tilgang til topics med helsedata. Litt overordnet kan en si at helsedata ikke skal kunne komme på avveie. Opp til nå har vi tenkt at en navnekonvesjon samt den tilgangsstyring vi har i Axual har vært tilstrekkelig. Men siden vi da har en risiko for ved menneskelige feil (gi tilgang til feil topic er mulig), så tenker vi nå dette ikke er godt nok.
+
+En bør også ha med seg at data kan flyte andre veien, dvs topics med administrative data kan bli tilgjengelig for applikasjoner med helsedata. Per i dag har vi ikke noen slike use case som jeg vet om, men kan ikke utelukke at vi kommer dit.
+
+! Delmål
+
+* Avklare bestilling mot APT (ferdig)
+* Avvente ROS fra APT
+* Avvente navne endring på topics
+* Avklare meldings størrelse på topics.

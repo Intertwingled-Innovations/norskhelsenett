@@ -1,0 +1,8 @@
+created: 20260202144218823
+modified: 20260505053852591
+revision: 0
+tags: [[Tjenesten HelseID skal lukke alle risikoelementer med risikonivå alvorlig]] Resultat [[Autentisering og autorisasjon]] 2026
+title: Tjenesten HelseID forhindrer at tjenestenekt-angrep oppdages for sent
+type: text/vnd.tiddlywiki
+
+Manglende overvåkning av trafikk i produksjon gjør at vi oppdager dette først når tjenesten får et problem

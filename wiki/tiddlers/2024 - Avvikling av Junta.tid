@@ -1,0 +1,25 @@
+created: 20240813123604141
+modified: 20260302073932816
+revision: 0
+tags: Junta 2024 Målsetting Integrasjonstjenesten 2026
+title: 2024 - Avvikling av Junta
+type: text/vnd.tiddlywiki
+
+! Bakgrunn
+
+Dialog pågår på tvers i Norsk Helsenett for å få de som har behovene til å selv ta ansvaret for funksjonalitet. Samtidig jobbes det med å bryte opp Junta for å flytte eierskap eller avvikle deler av Junta.
+
+* Nasjonalt nett jobber med å erstatte teknisk sambands dokumentasjon i Junta og egen CMDB som erstatter deres behov for Flow CMDB. De trenger også å flytte ut Hjemmekontor og Video tjenesten. Trenger eget saksbehandlingssystem (samarbeider med APT på SMAX).
+* APT setter opp SMAX for ITIL prosess, saksbehandling og CMDB.
+* Kunde og driftssenter anskaffer nytt support system.
+* Team Melding flytter ut EDI-kontoer og interne e-post kontoer fra Junta.
+* Medlemsinformasjon vil bli levert av Medlemstjenesten (Påvirker Flow Customer, Flow Agresso og Junta).
+* Kundeportal legges ned (har knytninger til Flow og Junta), erstattes delvis av Helsenettet.no.
+
+! Resultater
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+!! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

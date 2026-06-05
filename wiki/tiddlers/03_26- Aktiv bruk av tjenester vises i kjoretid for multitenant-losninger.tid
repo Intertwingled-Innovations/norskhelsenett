@@ -1,0 +1,8 @@
+created: 20260504105507780
+modified: 20260513095039216
+revision: 0
+tags: Selvbetjening Leveranse 2026 [[Tilby verktøy som effektiviserer og kvalitetssikrer bruken av HelseID]] Mars [[HelseID implementerer kjøretidssjekk for multitenant-systemer]]
+title: 03/26- Aktiv bruk av tjenester vises i kjøretid for multitenant-løsninger
+type: text/vnd.tiddlywiki
+
+Systemleverandører kan se via selvbetjenings-APIet hvilke tjenester kundene deres bruker i kjøretid. Her kan leverandørene se hvilke virksomheter som har bestilt tjenesten de bruker og hvilke virksomheter som har tjenester i bruk uten å ha bestilt tjenesten i henhold til nye bestemmelser om medlemskap og tjenestebestilling. 

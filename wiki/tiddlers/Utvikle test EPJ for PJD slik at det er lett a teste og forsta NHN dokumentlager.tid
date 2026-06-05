@@ -1,0 +1,11 @@
+created: 20260512070841041
+modified: 20260512071307548
+revision: 0
+tags: 2026 [[Kjernejournal Pasientens journaldokumenter]] [[Utvikle test EPJ for PJD slik at det er lett å teste og forstå NHN dokumentlager]] [[Flere helsevirksomheter skal dele journaldokumenter gjennom PJD]]
+title: Utvikle test EPJ for PJD slik at det er lett å teste og forstå NHN dokumentlager
+type: text/vnd.tiddlywiki
+
+!Resultat
+Vi har etablert en test EPJ for PJD. Denne skal utvides med funksjonalitet for API NHN dokumentlager. Det gjør det lett og demonstrere og teste løsning uavhengig av eksterne parter. 
+
+!Leveranser

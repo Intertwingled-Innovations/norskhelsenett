@@ -1,0 +1,14 @@
+created: 20241108140932526
+modified: 20260408085632635
+revision: 0
+tags: 2025 [[Forsvarlig forvaltning av Forskrivningsmodulen]] Resultat [[Team FM]] [[Forskrivningsmodulen 2024-2025]]
+title: Levere FM 4.14.1
+type: text/vnd.tiddlywiki
+
+FM takler ikke at cave i PLL har feil format. FM 4.14.1. skal fjerne cave-informasjon i PLL der cave har feil format. 
+
+Planlagt leveranse januar 2025
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

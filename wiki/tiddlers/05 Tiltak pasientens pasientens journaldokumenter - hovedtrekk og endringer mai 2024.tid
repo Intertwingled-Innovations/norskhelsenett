@@ -1,0 +1,49 @@
+created: 20240531130854605
+modified: 20260330070845613
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] [[Styring Tiltak]] [[Tiltaket pasientens journaldokumenter]] Mai [[Kjernejournal Pasientens journaldokumenter]]
+title: 05 Tiltak pasientens pasientens journaldokumenter - hovedtrekk og endringer mai 2024
+type: text/vnd.tiddlywiki
+
+<<list-links filter:"[tag[Tiltaket pasientens journaldokumenter]tag[Tiltak]tag[2024]]">>
+
+! Hovedtrekk og endringer
+
+!!! Det er avklart hvordan avtalespesialister kan dele sine journaldokumenter
+* Dette er en leveranse fra Helsedirektoratet, med innspill fra NHN. Det foreligger et utkast til løsningen, hvor NHNs innspill er tatt inn. Planen er å legge dette fram for aktuelle leverandører på NHNs leverandørmøte i juni.
+* NHN har jobbet videre med muligheten for nasjonalt dokumentlager og demonstrerte dette i sprint review 3. mai og 14. juni.
+
+!!! Det er avklart hvordan kommuner kan dele sine journaldokumenter
+* Dette er en leveranse fra Helsedirektoratet, med innspill fra NHN. Det foreligger et utkast til løsningen, hvor NHNs innspill er tatt inn. 
+* NHN har jobbet med muligheten for nasjonalt dokumentlager og demonstrerte dette i sprint review 3. mai og 14. juni.
+* Oslo kommune estimerer at de vil kunen dele journaldokumenter fra Oslo legevakt Q4'2024.
+
+!!! Helseforetak er kilde og tilgjengeliggjør journaldokumenter (ved bruk av tillitsrammeverket)
+* Alle helseforetak deler journaldokumenter bortsett fra Helse Midt. Helse Midt kommer etter planen på i 2025.
+* Nasjonalt tillitsrammeverk er etablert, og NHN har levert nødvendig funksjonalitet på HelseID og kjernejournal portal. 
+* ~~Det er fortsatt uenighet om hvordan pasientens id skal overføres som en del av nasjonalt tillitsrammeverk. Videre arbeid med tillitsrammeverket løftes ut av Pasientens journaldokumenter.~~ Det er enighet om hvordan dette gjøres for pasientens journaldokumenter, men ikke generelt for andre typer API'er. 
+* Dokumentkildene er i ferd med å tilpasse sin funksjonalitet for utlevering av referanselister og journaldokumenter gitt nasjonalt tillitsrammeverk. Ferdigstilles før sommeren.  
+* Helse Vest vil tilgjengeliggjøre journaldokumenter også for annet helsepersonell enn fastleger fra Q3'2024. 
+
+!!! Helseforetak har tatt i bruk pasientens journaldokumenter som konsument (ved bruk av tillitsrammeverket)
+* Alle helseforetak har tatt i bruk tjenesten bortsett fra Helse Midt. Helse Midt kommer etter planen på som konsument i 2025.
+* Ingen helseforetak konsumerer pr juni 2024 tjenesten ved bruk av tillitsrammeverket, men alle har satt i gang arbeid for å gjøre det. HSØ skulle etter planen produksjonssette i juni, men er forsinket. Det forventes at alle de tre RHF'ene vil være klare i løpet av 2024.
+* Flere leverandører er i gang med å integrere seg mot tjenesten ihht nasjonalt tillitsrammeverk - dette er en forutsetning for videre bredding (CGM, Tietoevry. Dips og Aidn). Det er forventet at integrasjoner vil kunne ferdigstilles i 2024. CGM demonstrerte konsumering av journaldokument via kjernejournal portal med nasjonalt tillitsrammeverk i slutten av april. Det ryktes at også TietoEvry har kommet langt. Oslo kommune har videre oppfølging av CGM og TietoEvry.
+* NHN har levert første versjon av API for dokumentdeling, som også støtter DPOP. Det er opprettet tett dialog med Dips og Aidn. Produksjonssetting vil ikke skje før i Q3'2024.
+
+!!! Inntil 80% av alle fastleger kan få tilgang til pasientens journaldokumenter
+* Dette er oppfylt i den forstand at alle fastleger (pga fastlegesjekken) __kan __få tilgang. Eneste krav er at de signerer bruksvilkår for tjenesten. Pr 1. juni har likevel kun 191 fastlegekontor signert bruksvilkår. Dette er en økning på 3 legekontor siste måned.
+* Tjenesten er tilgjengelig for alle fastleger (via kjernejournal portal), samt annet helsepersonell i Oslo, Bodø og Stavanger kommune.
+
+
+! Prognose på penger og ressurser
+
+*Finansiering: Offentlig tilskudd, PJD, 55,5 mnok tilfaller vår divisjon og 10,5 mnok tilfaller divisjon Innbygger. Prognose for DHP er på 44,2 mnok, dvs 11,3 mnok under tilskuddet. Divisjon Innbygger flagger at noen av leveransene må skyves til 2025 og at dette medfører et mindreforbruk på ca 3,3 mnok.
+
+ <a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection343a8851705d1cfe8125?experience=power-bi&bookmarkGuid=Bookmark96fe5c07b6d0b73a9446">OversiktPJD (Power BI)</a>
+
+* Det vurderes å anskaffe team på 2 personer for å etablere en sentral loggaggregeringsfunksjon. Dette er foreløpig ikke gjort, og vi vil avvente tilbakemeldingene fra HOD på siste statusrapport.
+
+
+
+

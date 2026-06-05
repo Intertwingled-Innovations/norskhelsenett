@@ -1,0 +1,39 @@
+created: 20250211141959362
+modified: 20260330070944489
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] [[Styring Tiltak]] [[Tiltaket pasientens kritiske informasjon]] Desember [[Kjernejournal Pasientens kritiske informasjon]]
+title: 12 Tiltak pasientens kritiske informasjon - hovedtrekk og endringer desember 2024
+type: text/vnd.tiddlywiki
+
+<<list-links filter:"[tag[Tiltaket pasientens kritiske informasjon]tag[Tiltak]tag[2024]]">>
+
+! Hovedtrekk og endringer
+
+
+!!! Bidra i Helsedirektoratets arbeid med en anbefaling om nasjonal håndtering av kritiske legemiddelreaksjoner, herunder en kilde til denne informasjonen
+* Drives av Helsedirektoratet, anbefaling er levert til HOD.
+
+!!! Bidra til at alle EPJ-leverandørene kan registrere og vise kritisk informasjon i kjernejournal via API
+* Nytt API satt i produksjon 7. sept. Oppgaven er ferdigstilt.
+
+!!! Gjennomføre utprøving av API for kritisk informasjon for helseregion Vest og levere oppdaterte planer for innføring av tiltaket for andre aktører
+* Utprøving av API i Helse Vest er ferdig og evalueringsrapport er levert. Kravet om at eksplisitt samtykke må avleveres ved spørring mot API'et fører dessverre til at mange helsepersonell velger ikke å registrere eller hente informasjon fra kritisk info. Det er igangsatt arbeid for å se på om det er mulig å gjøre forenklinger mtp samtykke-kravet.
+* Det pågår arbeid med innføringsplaner for andre aktører
+
+!!! I samarbeid med Helsedirektoratet tilpasse tillitsrammeverket for deling av kritisk informasjon
+* Ferdigstilt, med unntak av endepunkt for DPoP.
+* Arbeid med å etablere DPoP endepunkt for kritisk info er igangsatt, mål om ferdigstilling innen utgangen av november. 
+
+!!! Støtte de regionale helseforetakene med å oppdatere kritisk informasjon i kjernejournal direkte fra EPJ
+* Utføres for Helse Vest i første omgang. Det er avdekket at behovet for å avlevere samtykke skaper problem når kjernejournal api konsumeres direkte. Det jobbes med å endre samtykke-behovet i kjernejournal.
+
+
+! Prognose på penger og ressurser
+
+*Finansiering: Offentlig tilskudd, KI, ramme på 2,7 mnok. Forbruk pr oktober er 0.8 mnok, prognose for året er på 1.1 mnok.
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection343a8851705d1cfe8125?experience=power-bi&bookmarkGuid=Bookmark3c226c177680695291e1">Oversikt Pasientens kritiske informasjon (Power BI)</a>
+
+
+
+

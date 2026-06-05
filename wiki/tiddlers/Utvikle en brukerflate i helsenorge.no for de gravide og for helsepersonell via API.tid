@@ -1,0 +1,16 @@
+created: 20240128092023286
+modified: 20250120100248126
+revision: 0
+tags: [[Tiltaket digitalt helsekort for gravide]] 2024 Oppgave [[Team Sats]] [[Team KJ infotjenester]] Desember
+title: Utvikle en brukerflate i helsenorge.no for de gravide og for helsepersonell via API
+type: text/vnd.tiddlywiki
+
+!! NHN oppgaver 2024
+
+''Oppgaven er ikke ferdigstilt'', og fortsetter gjennom mandat for 2025 med planlagt utprøving fra juni
+NHN utvikler brukerflate på Helsenorge for gravide. NHN finansierer og inngår avtaler med leverandører som utvikler brukerflate og integrasjon med API for helsepersonell.
+
+
+!! Leveranser:
+
+<<list-links filter:"[tag[Leveranse]tag[2024]tag<currentTiddler>]">>

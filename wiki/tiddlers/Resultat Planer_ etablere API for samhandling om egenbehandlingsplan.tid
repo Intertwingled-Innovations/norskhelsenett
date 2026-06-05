@@ -1,0 +1,11 @@
+TjenesteID: 40057
+created: 20260601133913016
+modified: 20260601134523919
+revision: 1
+tags: 2026 [[Pasientens planer]] Resultat
+title: Resultat Planer: etablere API for samhandling om egenbehandlingsplan
+type: text/vnd.tiddlywiki
+
+!Beskrivelse av målsetting
+
+Egenbehandlingsplan kan oppdateres og deles mellom helsepersonell med tjenstlig behov (kommune, fastlege og spesialist) med tilhørende visning av utvalgte måledata.

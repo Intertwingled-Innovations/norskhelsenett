@@ -1,0 +1,8 @@
+created: 20240317062753237
+modified: 20260330104413528
+revision: 0
+tags: 2024 [[Team Nilar]] [[Kjernejournal Pasientens prøvesvar]] [[Leveranseplan for Pasientens prøvesvar i 2024]] Leveranse
+title: Utvikle teknisk funksjonalitet for å filtrere og slette prøvesvar som ikke har helsehjelpsformål
+type: text/vnd.tiddlywiki
+
+Prøvesvar som ikke har helsehjelpsformål skal, ihht kjernejournalforskriften, ikke lagres i pasientens prøvesvar. Dersom pasientens prøvesvar mottar prøvesvar som ikke har helsehjelpsformål, skal disse slettes.

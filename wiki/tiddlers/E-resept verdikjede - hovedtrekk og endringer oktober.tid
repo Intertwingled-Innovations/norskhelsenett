@@ -1,0 +1,34 @@
+created: 20241107094446745
+modified: 20241108134547084
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] Reseptformidleren [[Styring Ekstern tjeneste]] Oktober
+title: E-resept verdikjede - hovedtrekk og endringer oktober
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+* Skissert løsning for å kunne "pause" PLL basert på behovsnotat mottatt fra Helsedirektoratet og gode innspill fra SFM og kjernejournal. Forankres med Hdir i starten av november og sendes videre til HOD. 
+
+* Vi jobber videre med støtte til Helseplattformen, Helse Nord/DIPS og Pridok for å avklare krav til utvikling av funksjonalitet for PLL og eMD. Pridok har kommet lengst og vil etter planen være klar for AT på eMD i november. 
+
+* Startet arbeid med å forberede godkjenning for 2 nye nettbandasjister og 2 nye nettapotek. 
+
+* Helse Vest, Meona med SFM basis API versjonsløft til 4.5 er gjennomført og godkjent 
+
+* Risiko: testlederkompetanse og -kapasitet er identifisert som en stor risiko for å få gjennomført godkjenning av PLL-funksjonalitet hos leverandørene. En ekstra testleder er leid inn fra nyttår (overtatt fra KJ).
+
+* 0.8-versjon av notat om konsekvenser ved innføring av IDMP-baserte legemiddel grunndata er ferdig. Det er svar på oppdrag fra HOD som skal leveres før nyttår. Forankres i PBR med domene Samhandlingsplattformen i november. 
+
+
+! Prognose på penger og ressurser
+Finansiering: Forskriftsfestede midler nasjonale e-helseløsninger, e-resept
+
+* Timepådrag: Marginalt overforbruk på godkjenningsprosessen oppveies av marginalt underforbruk på verdikjede. Prognosen for resten av året er vurdert på nytt og justert noe ned, særlig på ressurser fra andre team.     
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark4c89bd5ada01ce3dc213">Oversikt E-resept verdikjede (Power BI)</a>
+
+
+
+

@@ -1,0 +1,9 @@
+TjenesteID: 40033
+created: 20260316095139763
+modified: 20260409113900276
+revision: 0
+tags: [[Kode for Kritisk Info (brukergrensesnitt) er delt med leverandører]] [[Kjernejournal portal]] Resultat 2026
+title: Gjøre det enklere for leverandør å implementere brukergrensesnitt for Kritisk info
+type: text/vnd.tiddlywiki
+
+Ved å dele vår kode for Kritisk info (brukergrensesnittet) med leverandørene blir det enklere for dem å implementere Kritisk info i brukerens elektroniske pasientjournal-system.

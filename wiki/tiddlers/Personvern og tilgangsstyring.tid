@@ -1,0 +1,37 @@
+TjenesteID: 40061
+created: 20260210123357231
+modified: 20260407130307676
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Relatert tjeneste]] 2026 [[Ekstern tjeneste]]
+title: Personvern og tilgangsstyring
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+
+Samle og tilgjengeliggjøre tilgangsbegrensninger, herunder nekting, utsatt innsyn, skjerming og sperring, i helse- og omsorgssektoren. Dette innebærer at PTS etablerer funksjonalitet for etterlevelse av tilgangsbegrensninger satt av helsepersonell og innbygger, og formidler disse tilgangsbegrensningene mellom virksomhetene i helse- og omsorgssektoren, nasjonale e-helseløsninger og Helsenorge.no. 
+Leveres av [[Team PTS|Team PTS]]
+
+
+
+! Målsettinger
+!! 2026
+<<list-links filter:"[tag[Målsetting]tag[2026]tag<currentTiddler>]">>
+
+
+
+
+! Styring
+!! 2026
+<<list-links filter:"[tag[Styring Relatert tjeneste]tag[2026]tag<currentTiddler>]">>
+
+
+! Leveranser
+
+!! Leveranser 2026
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>tag[2026]]">>
+
+! Resultat
+
+!!Resultat 2026
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>tag[2026]]">>
+

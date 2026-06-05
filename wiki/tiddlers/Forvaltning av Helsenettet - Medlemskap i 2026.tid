@@ -1,0 +1,49 @@
+TjenesteID: 40173
+created: 20240128165451578
+modified: 20260417124417698
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] [[Team Medlemsforvaltning]] 2026
+title: Forvaltning av Helsenettet - Medlemskap i 2026
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+
+​Medlemskapet i Helsenettet er en forutsetning for at helsevirksomheter sikkert og lovlig skal kunne dele helseopplysninger med hverandre. Helsevirksomheter er pålagt å være medlem i Helsenettet. 
+
+Team medlemsforvaltning sikrer at alle involverte i helsenettet overholder sine forpliktelser, og har ansvar å forankre en struktur for medlemshåndtering med tydelig ansvarsplassering på tvers av NHN​. Dette omfatter oppfølging og forvaltning av alle aspekter av medlemskap (juridisk, organisatorisk, økonomisk, sikkerhet). 
+https://confluence.nhn.no/display/SAM/Medlemsforvaltning
+
+
+Overordnet mål for forvaltning av medlemskap i Helsenettet:
+
+# Sikre at kun de som har rett til å være medlem er medlem 
+# Påse at medlemsvilkår følges, og sanksjonere virksomheter som ikke overholder sine forpliktelser
+# Sikre at NHN etterlever sine forpliktelser som f.eks. innsyn og etterkontroll knyttet til medlemskapet
+
+
+Dette forutsetter nødvendig kunnskap og oversikt over medlemskap i Helsenettet og nødvendig funksjonalitet fra https://helsenettet.no og medlemstjenesten. 
+
+
+! Målsettinger
+!! 2026
+<<list-links filter:"[tag[Målsetting]tag[2026]tag<currentTiddler>]">>
+
+
+!Resultat
+!!2026
+<<list-links filter:"[tag[Resultat]tag[2026]tag<currentTiddler>]">>
+
+
+!Leveranser
+
+!! 2026
+<<list-links filter:"[tag[Leveranse]tag[Ekstern tjeneste]tag[2026]tag<currentTiddler>]">>
+
+
+! Styring
+!! 2026
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag<currentTiddler>]">>
+
+
+!! 2025
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2025]tag<currentTiddler>]">>

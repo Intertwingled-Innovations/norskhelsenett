@@ -1,0 +1,19 @@
+TjenesteID: 40026
+created: 20260408082354685
+modified: 20260409120049120
+revision: 0
+tags: Melding Målsetting 2026
+title: Målsetting for Melding: Opprette kapabilitetsregister
+type: text/vnd.tiddlywiki
+
+Vi har mål om å opprette et kapabilitetsregister hvor sektoren kan melde inn sine kapabiliteter, både for testmiljø og for produksjonsmiljø. Målet er å ha et register populert med data for alle kommunikasjonsparter i Adresseregisteret, og gjennom det ha oversikt over hva hver enkelt aktør støtter og ikke støtter. Gjennom kapabilitetsregisteret vil sektoren ha mulighet til å vite hva de kan sende til hvem og få en mer effektiv og tryggere meldingsutveksling.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

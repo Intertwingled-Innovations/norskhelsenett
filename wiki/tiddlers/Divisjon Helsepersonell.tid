@@ -1,0 +1,79 @@
+created: 20240123120011667
+modified: 20260504075615399
+revision: 0
+tags: [[Norsk Helsenett SF]] Divisjon
+title: Divisjon Helsepersonell
+type: text/vnd.tiddlywiki
+
+! Formål
+
+Divisjon helsepersonell skal:
+
+* Fungere som ett tillitsanker for sektoren som gjør det enklere for aktørene å dele helseinformasjon
+* Samle og tilgjengeliggjøre helseinformasjon, slik at aktørene enklere kan etablere behandlingsrettede løsninger
+* Bygge og støtte et økosystem for aktørene, slik at de enklere kan etablere løsninger slik at helsesektoren oppnår sine mål.
+
+! Policy
+
+<<list-links filter:"[tag<currentTiddler>tag[Policy]]">>
+
+! Satsning for fart
+
+<<list-links filter:"[tag[Satsning for fart 2026]tag[2026]]">>
+
+
+
+
+! Mandater
+
+
+<<list-links filter:"[tag[Tiltak]tag[2026]]">>
+
+! Eksterne tjenester
+
+<<list-links filter:"[tag<currentTiddler>tag[Ekstern Tjeneste]tag[2026]]">>
+
+
+! Relaterte tjenester
+
+<<list-links filter:"[tag<currentTiddler>tag[Relatert tjeneste]tag[2026]]">>
+
+
+! Interne tjenester
+
+<<list-links filter:"[tag<currentTiddler>tag[Intern tjeneste]tag[2026]]">>
+
+
+! Oppgaver
+
+<<NHN-current-liste-levert type:"Oppgave" aar:"2024">>
+
+! Målsettinger
+
+<<list-links filter:"[tag<currentTiddler>tag[Målsetting]]">>
+
+! Leveranseplaner
+
+<<list-links filter:"[tag<currentTiddler>tag[Leveranseplan 2024]]">>
+
+
+! Domener og team på divisjonsnivå
+
+<<list-links filter:"[tag<currentTiddler>tag[Domene]]">>
+<<list-links filter:"[tag<currentTiddler>tag[Team]]">>
+
+! Oppsummering pr tjeneste 2026
+<<list-links filter:"[tag<currentTiddler>tag[Tjeneste oppsummert totalt]tag[2026]]">>
+
+
+! Styringsrapporter 2026
+
+<<list-links filter:"[tag<currentTiddler>tag[Oppsummering styring]tag[2026]]">>
+
+! Styringsrapporter 2025
+
+<<list-links filter:"[tag<currentTiddler>tag[Oppsummering styring]tag[2025]]">>
+
+! Styringsrapporter 2024
+
+<<list-links filter:"[tag<currentTiddler>tag[Oppsummering styring]tag[2024]]">>

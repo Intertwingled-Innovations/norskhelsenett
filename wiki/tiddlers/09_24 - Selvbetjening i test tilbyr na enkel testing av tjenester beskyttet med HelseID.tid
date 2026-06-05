@@ -1,0 +1,23 @@
+created: 20240913110435410
+modified: 20260430121836078
+revision: 0
+tags: [[Tilby verktøy som effektiviserer og kvalitetssikrer bruken av HelseID]] Leveranse 2024 Selvbetjening September
+title: 09/24 - Selvbetjening i test tilbyr nå enkel testing av tjenester beskyttet med HelseID
+type: text/vnd.tiddlywiki
+
+Mange har etterspurt en enklere måte å generere access tokens på – til ulike testformål, nå er det lettere å få til dette. Funksjonaliteten er lansert i intern og ekstern slack-kanal.
+
+
+Vi har identifisert 3 behov:
+
+
+* Automatisk testing av egen tjeneste
+
+
+* Integrasjonstester overfor andre tjenester
+
+
+* Enkel utprøving av tjenester uten en fullverdig HelseID-integrasjon
+
+
+

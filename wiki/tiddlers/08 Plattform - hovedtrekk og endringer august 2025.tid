@@ -1,0 +1,23 @@
+created: 20250910102140928
+modified: 20250910104045777
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Styring Intern tjeneste]] Plattform 2025 August
+title: 08 Plattform - hovedtrekk og endringer august 2025
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer
+
+* Stadige forbedringer og mer funksjonalitet på utviklerportal, fokus på bedre struktur, mer intuitiv navigering og mer ensartete presentasjoner, for bedre brukeropplevelse for utviklere og andre. 
+
+* Observability stack (felles logg- og innsynsløsning for tjenester) er i produksjon. 
+
+** Pilot / Proof of concept er gjort i løpet av sommeren, for å teste ut logging av hendelser til flere destinasjoner (Splunk, eksterne abonnenter, Azure Power BI)
+
+! Prognose på penger og ressurser
+
+Ingen endringer er forventet for drift av det etablerte Kafka clusteret.
+
+*Finansiering: Definert som en intern tjeneste som fordeles ut på divisjonens eksterne tjenester.
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ad6307c59006ac4e200e?experience=power-bi&bookmarkGuid=Bookmark0362f6869c5590a01680">Oversikt Plattform (Power BI)</a>
+

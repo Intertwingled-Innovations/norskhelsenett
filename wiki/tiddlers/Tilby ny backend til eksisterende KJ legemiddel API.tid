@@ -1,0 +1,9 @@
+TjenesteID: 40169
+created: 20260223113710499
+modified: 20260503095527432
+revision: 0
+tags: [[Kjernejournal Pasientens legemidler]] 2026 [[Ekstern Tjeneste]] Målsetting
+title: Tilby ny backend til eksisterende KJ legemiddel API
+type: text/vnd.tiddlywiki
+
+Ny backend skal fjerne forsinkelse mellom rf og kj. Ny backend er basert på SQL server, dette bidrar til at vi på sikt kan skrive oss ut av Oracle som er et kostbart produkt.

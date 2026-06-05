@@ -1,0 +1,43 @@
+created: 20260114094853048
+modified: 20260114095108927
+revision: 0
+tags: 
+title: Virksomhetsstyring 2026
+type: text/vnd.tiddlywiki
+
+! Leveranser i 2026
+!! Januar
+<<NHN-liste type:"Leveranse" aar:"2026" maaned:"Januar">>
+!! Februar
+<<NHN-liste type:"Leveranse" aar:"2026" maaned:"Februar">>
+!! Mars
+<<NHN-liste type:"Leveranse" aar:"2026" maaned:"Mars">>
+!! April
+<<NHN-liste type:"Leveranse" aar:"2026" maaned:"April">>
+!! Mai
+<<NHN-liste type:"Leveranse" aar:"2026" maaned:"Mai">>
+!! Juni
+<<NHN-liste type:"Leveranse" aar:"2026" maaned:"Juni">>
+<<NHN-liste type:"Leveranse" aar:"2026" maaned:"juni">>
+!! Juli
+<<NHN-liste type:"Leveranse" aar:"2026" maaned:"Juli">>
+<<NHN-liste type:"Leveranse" aar:"2026" maaned:"juli">>
+!! August
+<<NHN-liste type:"Leveranse" aar:"2026" maaned:"August">>
+<<NHN-liste type:"Leveranse" aar:"2026" maaned:"august">>
+!! September
+<<NHN-liste type:"Leveranse" aar:"2026" maaned:"September">>
+!! Oktober
+<<NHN-liste type:"Leveranse" aar:"2026" maaned:"Oktober">>
+!! November
+<<NHN-liste type:"Leveranse" aar:"2026" maaned:"November">>
+!! Desember
+<<NHN-liste type:"Leveranse" aar:"2026" maaned:"Desember">>
+
+! Oppfølging og rapportering i 2026
+
+<<NHN-liste-levert type:"OppfølgingOgRapportering" aar:"2026">>
+
+! Oppgaver i 2026
+
+<<NHN-liste-liste-levert type:"Tiltak" undertype:"Oppgave" aar:"2026">>

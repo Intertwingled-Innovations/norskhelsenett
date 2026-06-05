@@ -1,0 +1,42 @@
+created: 20260310091804820
+modified: 20260508094635789
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Styring Tiltak]] [[Tiltaket pasientens måledata (OLD)]] 2026 Februar [[Pasientens måledata]]
+title: 02 Tiltak pasientens måledata - hovedtrekk og endringer februar 2026
+type: text/vnd.tiddlywiki
+
+
+<<list-links filter:"[tag[Tiltaket pasientens måledata 2026]tag[Tiltak]tag[2026]]">>
+
+! Hovedtrekk og endringer
+
+!! Gjennomføre en utprøving av pasientens måledata i helseregion Sør-øst
+
+<OKR 2026>
+
+
+* Mål: Fortsette utprøving med deling av måledata i HSØ:
+
+** Øke antall pasienter i deling mellom Oslo kommune og OUS
+*** Inkludere med diabetespasienter og diabetespoliklinilkk
+** Vestre Viken HF ta i bruk PEGA-klient for oppslag mot PMD
+** Koble på Fredrikstad kommune og Sykehuset i Østfold
+** Ta i bruk for CFS (Clinical Frailty Score)
+
+** Forbedre API-tjenesten
+*** Endre/ slett
+*** Statusendepunkt for forbedret brukeropplevelse
+*** Sanere teknisk gjeld (PMD 2.0)
+
+Pasientens måledata vil benyttes i sammenheng med Pasientens planer.
+"Nye VKP" vil også inkludere PMD som en del av tjenestetilbudet for deling internt i en kommune.
+
+Visning av målinger for innbygger satt på vent inntil behovet blir aktuelt.
+
+! Prognose på penger og ressurser
+
+*Finansiering: Offentlig tilskudd, PMD, 8,8 mnok tilfaller vår divisjon og 1 mnok divisjon Innbygger
+* Runrate - 8.3. Prognose må justeres ift kost på drift - ser ut til å være manglende kost på drift (privat sky) - kan ha havnet på Felles journalløft. Gås etter nå når ny kostmodell er på plass og bedre rapporter ned på tjenestenivå nå er gjort tilgjengelig i PowerBI.
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection343a8851705d1cfe8125?experience=power-bi&bookmarkGuid=Bookmark76496cc890038835a416">Oversikt PMD (Power BI)</a>

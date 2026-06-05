@@ -1,0 +1,19 @@
+TjenesteID: 40034
+created: 20260417112219858
+modified: 20260604111402354
+revision: 1
+tags: [[Forenkling og opprydding i dagens løsning (RF)]] 2026 [[Ekstern Tjeneste]] Leveranse Reseptformidleren April Mai
+title: Oppgraderinger og rydding Q2 2026
+type: text/vnd.tiddlywiki
+
+*Oppgradert til Java 25 i rf admin
+*Oppgradert Quarkus rammeverk til siste versjon i rf admin
+*Forbedret koden som håndterer personverninnstillinger i M9.5 og M9.7
+*Innført nye verktøy for statisk null sjekking i java under bygg 
+*Hasteoppdatering pga sårbarhet i Quarkus rammeverk
+
+Verdien av dette er at vi:
+
+*håndterer sårbarheter løpende
+*blir tryggere på at vi håndterer personvern innstillinger riktig og faren for brudd på personvern reduseres
+*sørger for at koden er lett å vedlikeholde

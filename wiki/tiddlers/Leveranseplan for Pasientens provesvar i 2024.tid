@@ -1,0 +1,14 @@
+created: 20240502102319995
+modified: 20250115152324292
+revision: 0
+tags: [[Tiltaket pasientens prøvesvar]] [[Leveranseplan 2024]] [[Divisjon Helsepersonell]] Leveranseplan
+title: Leveranseplan for Pasientens prøvesvar i 2024
+type: text/vnd.tiddlywiki
+
+Norsk helsenett SF er ansvarlig for teknisk utvikling og utprøving av tiltaket. Norsk helsenett SF er også ansvarlig for drift og forvaltning av løsningen. Følgende oppgaver skal gjennomføres i 2024
+
+<<list-links filter:"[tag<currentTiddler>tag[Leveranse]]">>
+
+! Rapportering leveranseplan
+
+<<list-links filter:"[tag[2024]tag[Leveranse]tag[Rapportering leveranseplan]]">>

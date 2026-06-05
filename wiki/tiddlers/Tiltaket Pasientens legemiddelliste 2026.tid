@@ -1,0 +1,50 @@
+TjenesteID: 40036
+created: 20260310104807059
+modified: 20260513123523124
+revision: 0
+tags: [[Norsk Helsenett SF]] Tiltak Kommune DigitalSamhandling 2026 [[Tiltaket pasientens legemiddelliste]] [[Team SFM]]
+title: Tiltaket Pasientens legemiddelliste 2026
+type: text/vnd.tiddlywiki
+
+Pasientens legemiddelliste (PLL) er en nasjonal, felles digital oversikt over legemidler en pasient faktisk bruker, avtalt mellom pasient og lege. Den deles i sanntid mellom helsepersonell (lege, apotek, sykepleier) og gir økt pasientsikkerhet ved overganger, f.eks. fra sykehus til hjem. PLL er under nasjonal innføring i 2026. 
+
+Pasientens legemiddelliste (PLL) er en del av e-reseptløsningen, og formidles gjennom reseptformidleren og kjernejournal. Journalleverandører legger til rette for pasientens legemiddelliste og e-multidose ved å integrere seg med SFM eller utvikle egen funksjonalitet. NHN utvikler og drifter SFM og kravstiller funksjonelle og tekniske krav for PLL og e-multidose. Norsk helsenett har ansvaret for å koordinere og gjennomføre tiltak som er nødvendig for å sikre at e-multidose (eMD) innføres og fungerer godt i hele samhandlingskjeden. NHN skal koordinere, trekke inn og etterspørre leveranser fra samarbeidende aktører for å opprettholde nødvendig fremdrift. 
+
+!!Resultatmål/ambisjoner
+
+Departementet har lagt en ambisjon om at e-multidose er 100% innført for fastleger ila 2026. I tillegg er målet at SFM og PLL funksjonalitet innført til 70% av alle fastleger. 
+
+!!Effektmål
+
+Elektronisk multidose bidrar til tryggere legemiddelbehandling for pasientene fordi:
+
+*  Legemiddellisten er oppdatert og tilgjengelig.
+
+*  Multidoseansvarlig lege og apotek jobber i en felles legemiddelliste.
+
+*  Det blir færre doble forskrivninger som kan føre til pasientskader.
+
+*  Helsepersonell i andre virksomheter får tilgang til legemiddellisten via reseptformidleren eller Kjernejournal, uavhengig av omsorgsnivå.
+
+
+!! Oppgaver i 2026
+
+<<NHN-current-liste-levert type:"Oppgave" aar:"2026">>
+
+!! Resultater 2026
+
+<<NHN-current-liste-levert type:"Resultat" aar:"2026">>
+
+!! Leveranser 2026
+
+<<NHN-current-liste-levert type:"Leveranse" aar:"2026">>
+
+
+!! PLL mandat 2026
+
+https://nhnkontor.sharepoint.com/:b:/r/sites/Samhandlingsplattformen/Shared%20Documents/Team%20Sats/Mandater%202026/Endelig%20versjon%20230126/Mandat%20for%20pasientens%20legemiddelliste%202026%201.0.pdf?csf=1&web=1&e=LjL7a4
+
+
+! Styring 2026
+
+<<list-links filter:"[tag[Styring Tiltak]tag[2026]tag<currentTiddler>]">>

@@ -1,0 +1,23 @@
+created: 20240128165620607
+modified: 20250515043053287
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] FOT Avvikles
+title: Filoverføringstjenesten ("FOT")
+type: text/vnd.tiddlywiki
+
+Opprinnelig satt opp som en tjeneste som skulle muliggjøre overføring av registerdata (sensitiv informasjon)
+
+Brukes fortsatt til det, men også til å eksportere og flytte journaldumper og diverse annet som vi ikke har kontroll på. Tjenesten har gått ut av finansiering (2021), og er uten support fra leverandør. Ingen reell forvaltning på løsningen og betydelige kvalitetsproblemer ligger til grunn for at vi arbeider med avvikling av løsningen.
+
+Finansiering: Ingen
+
+! Målsettinger
+
+<<list-links filter:"[tag[Målsetting]tag<currentTiddler>]">>
+
+! Styring
+!! 2024
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2024]tag<currentTiddler>]">>
+
+!! 2025
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2025]tag<currentTiddler>]">>

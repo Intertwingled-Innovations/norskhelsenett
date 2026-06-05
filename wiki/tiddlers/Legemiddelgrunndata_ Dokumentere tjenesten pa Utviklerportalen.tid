@@ -1,0 +1,11 @@
+created: 20260420082552717
+modified: 20260420082715909
+revision: 0
+tags: 2026 Målsetting Legemiddelgrunndata
+title: Legemiddelgrunndata: Dokumentere tjenesten på Utviklerportalen
+type: text/vnd.tiddlywiki
+
+Få første versjon av tjenesten ut på utviklerportalen
+
+* Beskrive tjenesten i Umbraco
+* Ha detaljert beskrivelse i git repo i Milliways

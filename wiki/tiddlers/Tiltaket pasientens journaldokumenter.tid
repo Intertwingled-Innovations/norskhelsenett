@@ -1,0 +1,47 @@
+created: 20240119110753807
+creator: DHP
+modified: 20250303132251651
+modifier: DHP
+revision: 0
+tags: [[Norsk Helsenett SF]] 2024 Tiltak [[Tiltaket pasientens journaldokumenter]] DigitalSamhandling
+title: Tiltaket pasientens journaldokumenter
+type: text/vnd.tiddlywiki
+
+Tiltaket pasientens journaldokumenter skal bidra til å styrke pasientsikkerheten og legge til
+rette for mer effektiv ressursbruk. Helsepersonell med tjenestlig behov kan gjøre oppslag i journaldokumenter fra ande virksomheter. Helsepersonell får tilgang til å lese dokumentlisten i Kjernejournal eller via eget EPJ.  Innbygger kan lese journaldokumenter fra virksomheter de har blitt behandlet. Innbygger får tilgang via Helsenorge.
+
+Tiltaket skal i første omgang prøves ut og innføres med helseforetak som kilde, det vil si at
+helseforetak deler journaldokumenter. Helseforetakene vil også være konsumenter, dvs. at
+helseforetakene kan lese hverandres journaldokumenter. Utprøving og innføring av tiltaket
+hos øvrige aktører gjennomføres hos dem som til enhver tid ønsker og er klare til å
+tilrettelegge lokalt og ta tjenesten i bruk. Dette gjelder både som kilde og konsument.
+
+! Effektmål og resultatmål
+* Redusere antall feilbehandlinger som skyldes manglende tilgang til pasientens journaldokumenter i andre helsevirksomheter
+* Redusere tiden helsepersonell bruker på å hente inn informasjon og svare på henvendelser om pasientens journaldokumenter
+
+Pasientens journaldokumenter skal bidra til å styrke pasientsikkerheten og tilrettelegge for mer effektiv ressursbruk.  ved at behandlere som trenger det, kan få tilgjengeliggjort journaldokumenter fra virksomheter hvor pasienten tidligere har fått behandling. Effektene skal oppnås ved å levere på resultatmålene. 
+Norsk helsenett SF er ansvarlig for teknisk utvikling og utprøving av tiltaket. Norsk helsenett SF er også ansvarlig for drift og forvaltning av løsningen.
+
+!! Resultatmål for 2024 (fra HOD mandat)
+
+* Helseforetak er kilde og tilgjengeliggjør journaldokumenter
+* Helseforetak har tatt i bruk pasientens journaldokumenter som konsument
+* Inntil 80% av alle fastleger kan få tilgang til pasientens journaldokumenter
+* De regionale helseforetakene har avklart hvordan det kan tilgjengeliggjøres journaldokumenter fra avtalespesialister
+* KS og kommuner har avklart hvordan det kan tilgjengeliggjøres journaldokumenter fra kommunale tjenester
+
+
+!! NHN sine oppgaver 2024
+
+<<NHN-current-liste-levert type:"Oppgave" aar:"2024">>
+
+!! Leveranseplan 2024
+Leveranseplan sendt til HOD 14.2.2024: https://nhnkontor.sharepoint.com/:b:/r/sites/Samhandlingsplattformen/Shared%20Documents/Behovsteamet/Leveranseplan%202024/Leveranseplan%20til%20HOD%202024/Sendt%20HOD%20140224/Leveranseplan%201.1%202024%20til%20HOD%20140224.pdf?csf=1&web=1&e=ZGYhzo
+
+!! Rapportering leveranseplan 2024
+
+<<list-links filter:"[tag[2024]tag[Leveranse]tag[Rapportering leveranseplan]]">>
+
+! Styring 2024
+<<list-links filter:"[tag[Styring Tiltak]tag[2024]tag<currentTiddler>]">>

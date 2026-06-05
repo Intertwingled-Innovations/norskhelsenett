@@ -1,0 +1,35 @@
+TjenesteID: 40170
+created: 20250228105943952
+modified: 20260409113204781
+revision: 0
+tags: [[Norsk Helsenett SF]] Tiltak [[Tiltaket pasientens prøvesvar]] 2025 DigitalSamhandling
+title: Tiltaket pasientens prøvesvar 2025
+type: text/vnd.tiddlywiki
+
+Tiltaket pasientens prøvesvar i nasjonal kjernejournal skal sikre tilgang til laboratorie- og radiologisvar (prøvesvar), bidra til at informasjon gjenbrukes og at antall prøver, analyser og radiologiske undersøkelser reduseres. Løsningen skal sikre at helsepersonell med tjenstlig behov får tilgang til pasientens laboratorie- og radiologisvar. Hensikten med pasientens prøvesvar er å styrke pasientsikkerheten og tilrettelegge for mer effektiv ressursbruk. I tillegg skal innbyggere få samlet oversikt over egne prøvesvar via helsenorge.
+
+! Effektmål 
+
+!! Effektmål
+
+* Tiltaket skal bidra til å styrke pasientsikkerheten og tilrettelegge for mer effektiv ressursbruk ved at helsepersonell som trenger det, kan få enhetlig tilgang til laboratorie- og radiologisvar, uavhengig av hvor prøvesvaret er analysert  
+* Tiltaket skal bidra til at innbyggere har god og enhetlig tilgang til egne prøvesvar.
+
+Norsk helsenett SF er ansvarlig for teknisk utvikling og utprøving av tiltaket. Norsk helsenett SF er også ansvarlig for drift og forvaltning av løsningen.
+
+
+!! Norsk helsenett sine oppgaver i 2025
+
+<<NHN-current-liste-levert type:"Oppgave" aar:"2025">>
+
+!! Leveranseplan 2025
+https://nhnkontor.sharepoint.com/:b:/r/sites/Samhandlingsplattformen/Shared%20Documents/Team%20Sats/Leveranseplan%202025/Endelig%20versjon/NHN%20leveranseplan%202025%20-%20Digital%20samhandling%201.0.pdf?csf=1&web=1&e=zMTSCS
+
+!! Rapportering leveranseplan 2025
+
+<<list-links filter:"[tag[2025]tag[Leveranse]tag[Rapportering leveranseplan]]">>
+
+!! Styring 2025
+<<list-links filter:"[tag[Styring Tiltak]tag[2025]tag<currentTiddler>]">>
+
+

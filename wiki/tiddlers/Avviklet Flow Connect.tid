@@ -1,0 +1,8 @@
+created: 20240927132902705
+modified: 20250307091234728
+revision: 0
+tags: Flow 2024 Avvikling [[2024 - Avvikling eller overlevering av Flow moduler]] Leveranse September Integrasjonstjenesten [[Integrasjon- og støttesystemer]]
+title: Avviklet Flow Connect
+type: text/vnd.tiddlywiki
+
+Flow Connect modulen var ment å skulle håndtere sambands dokumentasjonen som i dag ligger i Junta, men prosjektet ble stoppet. Det som var ute i produksjon (tegnet opp grafer for samband) er nå fjernet og modulen avviklet.

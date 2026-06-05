@@ -1,0 +1,15 @@
+created: 20240128083137413
+modified: 20250120081540865
+revision: 0
+tags: [[Tiltaket MyHealth@EU]] 2024 Oppgave Desember [[Team Sats]] Levert
+title: Implementere norsk tillitsrammeverk for pålogging i MyHealth@EU søk- og visningsmodul
+type: text/vnd.tiddlywiki
+
+!! NHN Oppgaver 2024
+
+Implementere autentisering med HelseID
+
+!! Leveranser:
+
+
+<<list-links filter:"[tag[Leveranse]tag[2024]tag<currentTiddler>]">>

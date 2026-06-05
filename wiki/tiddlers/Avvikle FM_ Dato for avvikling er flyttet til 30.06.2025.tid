@@ -1,0 +1,18 @@
+created: 20241011133818078
+modified: 20260408085632632
+revision: 0
+tags: [[Revidere og kommunisere ny dato for avvikling av FM]] Leveranse September 2024 [[Forskrivningsmodulen 2024-2025]] [[Avvikle FM]]
+title: Avvikle FM: Dato for avvikling er flyttet til 30.06.2025
+type: text/vnd.tiddlywiki
+
+!! Hva er levert?
+FM teamet har revidert status på avvikling av Forskrivningsmodulen (FM) og satt den til 30.06.2025.
+Forutsetninger knyttet til avviklingen er diskutert og forankret. 
+Etter versjon 4.15 er FM i End of Life og støtter PLL (A og B feil for PLL leger rettes).  For andre brukere (hovedsakelig avtalespesialister) rettes A-feil. 
+Vi følger tett opp aktørene knyttet til utprøving PLL brukere som må over på andre løsninger. 
+For andre brukere gir vi god informasjon, men det er deres ansvar å komme over på versjon med SFM innen fristen.
+
+!! Hvilken verdi gir det sektoren?
+Tydelig informasjon til EPJ leverandører om at de som enda ikke er klare må integrere med SFM og få sin løsning godkjent, for deretter å migrere brukerne til ny løsning med SFM
+Brukerne/kundene kan stille krav til sine EPJ leverandører om å komme over på SFM.
+

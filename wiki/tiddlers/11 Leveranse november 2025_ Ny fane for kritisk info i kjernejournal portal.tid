@@ -1,0 +1,12 @@
+created: 20251110071552509
+modified: 20260330063950299
+revision: 0
+tags: Leveranse 2025 [[Kjernejournal portal]] November
+title: 11 Leveranse november 2025: Ny fane for kritisk info i kjernejournal portal
+type: text/vnd.tiddlywiki
+
+3.november erstattet den nye fanen for kritisk info den tidligere fanen. Den nye fanen har vært i utprøving hos et begrenset antall brukere, men fra 3.november er det kun den nye fanen som er i produksjon.
+
+Visningen er forbedret for å gjøre det enklere å få tilgang til Kritisk informasjon om pasienten. I hovedsak er det utseende som er nytt, og tanken er at det skal være lettere for helsepersonell å se kritisk info raskere. Og at man skal slippe å klikke seg rundt for å få denne livsviktige informasjonen.
+
+Vi har også gjort en større endring som betyr at dersom en pasient har Kritisk informasjon (dvs. at Kjernejournal-knappen i journalsystemet er rødt), så kommer man direkte inn på Kritisk info i portalen. (I gammel løsning må man trykke på fanen i tillegg). Dette betyr at man får tilgang til Kritisk info med ett klikk, i motsetning til opptil flere i gammel løsning.

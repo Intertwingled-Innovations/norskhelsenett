@@ -1,0 +1,27 @@
+created: 20240402130513836
+modified: 20240702112909427
+revision: 0
+tags: Styring 2024 [[Divisjon Helsepersonell]] Mars Person
+title: Person - hovedtrekk og endringer mars
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+I henhold til plan, jobber med rekruttering for å få inn en fast ansatt. 
+
+- Det jobbes aktivt med å få sektor over fra PREG til Persontjenesten
+Pr 31.03.2024 har 281 virksomheter tatt i bruk Persontjenesten, og det ble gjort 62 millioner kall mot 110 millioner i februar
+
+- Det etableres georedundans, slik at tjenesten blir mer robust og vi kan gjøre vedlikehold uten at vi belaster sektor med forventet nedetid unødvendig. 
+
+- Felles hjelpenummer er under etablering i Persontjenesten, med muligheter for også å kunne koble disse mot fødselsnummer eller D-nummer.
+
+- Det er stort behov for fortrolige adresser som en del av datasettet i persontjensten. Det jobbes med et grunnlag for å synliggjøre dette.
+
+
+! Prognose på penger og ressurser
+*Finansiering: 3,2 mnok offentlig tilskudd - restanse MF Helse, finansiering via medlemsavgiften på 3 mnok for belastning av medlemsfinansierte fellestjenester, rest er finansiert over forskriftsfestede midler nasjonale e-helseløsninger - person
+<a href="https://app.powerbi.com/groups/6931f38e-9db9-41f4-a143-ac9ee4a4719c/reports/a03232e0-bd45-4da2-b925-662e476d7ebd/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark0eb3b30158bdab9401a7">Oversikt Person (Power BI)</a>
+
+

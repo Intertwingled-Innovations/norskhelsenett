@@ -1,0 +1,10 @@
+created: 20250515083034598
+modified: 20250515083434803
+revision: 0
+tags: [[Stabil og sikker drift av reseptformidleren i Norsk helsenetts private sky]] Resultat
+title: Avvikle all støtte for utdaterte kryptoalgoritmer samt SAH1
+type: text/vnd.tiddlywiki
+
+Støtten for SHA1 og utdaterte kryptoalgoritmer ble avviklet for asynkron kommunikasjon tidligere. Det ble imidlertid ikke gjennomført samme endring for synkron kommunikasjon. Det er ingen grunn til at det skal være forskjell mellom synkron og asynkron kommunikasjon og dette er et sikkerhetsavvik.
+
+Denne støtten avvikles også for synkron kommunikasjon i juni 2025.

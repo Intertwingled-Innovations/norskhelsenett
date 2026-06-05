@@ -1,0 +1,48 @@
+TjenesteID: 40053
+created: 20251031131721054
+modified: 20260518171359381
+revision: 0
+tags: [[Integrasjon- og støttesystemer]] Integrasjonstjenesten [[Divisjon Helsepersonell]] [[Intern tjeneste]] 2026
+title: Integrasjonstjenesten
+type: text/vnd.tiddlywiki
+
+!Beskrivelse av teamet
+
+Formålet til teamet er å legge til rette for effektiv flyt mellom støttesystemer i NHN ved å tilgjengeliggjøre hendelser og utvikle skreddersydde løsninger der det ikke finnes hyllevare som møter våre behov.
+
+''Dette teamet har ansvaret for:''
+
+* [[Integrasjonstjenesten (det interne kafka navet) |https://tiddlywiki.plattform.nhn.no/#Integrasjonstjenesten]]
+
+* [[Flow plattformen med tilhørende moduler (DNS, CMDB, tjenestekatalog, kundeoversikt...)|https://tiddlywiki.plattform.nhn.no/#Flow]]
+
+* [[Junta (Intern saksbehandling, ITIL, sambandsdokumentasjon...)|https://tiddlywiki.plattform.nhn.no/#Junta]]
+
+https://confluence.nhn.no/x/apjjE
+
+! Målsettinger
+
+!! 2024
+<<list-links filter:"[tag[Målsetting]tag<currentTiddler>tag[2024]]">>
+
+!! 2025
+<<list-links filter:"[tag[Målsetting]tag<currentTiddler>tag[2025]]">>
+
+!! 2026
+<<list-links filter:"[tag[Målsetting]tag<currentTiddler>tag[2026]]">>
+
+
+! Styring
+!! 2025
+<<list-links filter:"[tag[Styring Intern tjeneste]tag[2025]tag<currentTiddler>]">>
+
+!! 2026
+<<list-links filter:"[tag[Styring Intern tjeneste]tag[2026]tag<currentTiddler>]">>
+
+
+! Leveranser
+!! 2025
+<<list-links filter:"[tag[Leveranse]tag[2025]tag<currentTiddler>]">>
+
+!! 2026
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>

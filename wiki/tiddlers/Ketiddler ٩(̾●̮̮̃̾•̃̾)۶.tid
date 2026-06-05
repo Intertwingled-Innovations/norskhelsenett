@@ -1,0 +1,69 @@
+created: 20250515074745908
+modified: 20260409111126727
+revision: 0
+tags: Ketil
+title: Ketiddler ٩(̾●̮̮̃̾•̃̾)۶
+type: text/vnd.tiddlywiki
+
+<style>
+.ketiddlertable, .ketiddlertable td
+{
+    border: none;    
+}
+
+.ketiddlertable td#text-area {
+    width: 80%;
+}
+
+.ketiddlertable td.face {
+    text-align: right;
+    padding-left: 2em;
+    width: 20%;
+}
+
+</style>
+
+
+<table class="ketiddlertable" style="width: 100%">
+<tr style="vertical-align: top">
+<td id="text-area">
+
+! 2026
+
+* [[Melding]] <<list-links  filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag[Melding]!limit[1]] ">>
+
+* [[Plattform]] <<list-links  filter:"[tag[Styring Intern tjeneste]tag[2026]tag[Plattform]!limit[1]] ">>
+
+*[[Statistikk & måling]] <<list-links  filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag[Statistikk & måling]!limit[1]] ">>
+
+*[[Fjernhjelp]] <<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag[Fjernhjelp]!limit[1]]">>
+
+<!-- * [[Navet]] <<list-links  filter:"[tag[Styring Intern tjeneste]tag[2026]tag[Navet]!limit[1]] ">> -->
+<!--
+! 2025
+
+
+* [[Melding]] <<list-links  filter:"[tag[Styring Ekstern tjeneste]tag[2025]tag[Melding]!limit[1]] ">>
+
+* [[Plattform]] <<list-links  filter:"[tag[Styring Intern tjeneste]tag[2025]tag[Plattform]!limit[1]] ">>
+
+* [[Navet]] <<list-links  filter:"[tag[Styring Intern tjeneste]tag[2025]tag[Navet]!limit[1]] ">>
+-->
+<!--
+* [[Innrapportering av dødsfall og dødsårsak]] <<list-links  filter:"[tag[Styring Ekstern tjeneste]tag[2025]tag[Innrapportering av dødsfall og dødsårsak]!limit[1]] ">>
+
+* [[Innrapportering av fødselsmelding]] <<list-links  filter:"[tag[Styring Ekstern tjeneste]tag[2025]tag[Innrapportering av fødselsmelding]!limit[1]] ">>
+
+* [[Melde.no]] <<list-links  filter:"[tag[Styring Ekstern tjeneste]tag[2025]tag[Melde.no]!limit[1]] ">>
+-->
+
+</td>
+<td class="face" style="text-align: right;padding-left: 2em;" title="The Ketiddler!">
+[img[whoami]]
+</td>
+</tr>
+</table>
+
+Gå til: [[Maler]]
+
+Todos (kanskje ikke aktuelle lenger?): [[Ketil Parow]]

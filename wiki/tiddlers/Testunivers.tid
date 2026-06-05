@@ -1,0 +1,54 @@
+TjenesteID: 40025
+created: 20240128165850685
+modified: 20260409061107459
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Domene Samhandlingsplattform]] [[Relatert tjeneste]]
+title: Testunivers
+type: text/vnd.tiddlywiki
+
+Testuniverset skal være en bærekraftig Nasjonal sandkasse med utviklings- og testmiljøer, API'er og syntetiske data fra ulike helsesystemer.
+Testuinverset er til for forskning, utvikling, tidlig utprøving og testing av helseteknologi for helsepersonell.
+
+__Testuniverset skal__;
+*  legge til rette for å kunne gjennomføre nødvendig utvikling, test og kvalitetssikring og utprøving av eksisterende eller nye tjenester og produkter for helsepersonell. 
+*  ivareta personvern perspektivet gjennom bruk av kun syntetiske data i sine tjenester samt kunne tilby syntetiske data som egen tjeneste. 
+*  bidra med å skape verdi for og sammen med deltakerne i sektorens økosystem.
+
+__Verdien Testuniverset gir sektor er bl.a__.:
+* Norsk Helsenett SF som Nasjonal tjenesteleverandør tilbyr en robust, skalerbar og bærekraftig sandkasse, for utvikling, innovasjon og kvalitetssikring av helsesystemer for helsepersonell.
+* Sandkassen med sin syntetiske datasjø tilbys hele sektoren å populeres med data mot at de kan konsumere tilbake for utvikling og testing av AI/ML modeller til forskning og innovasjon.
+* Testuniverset understøtter, forenkler og legger til rette for at økosystemet og dets aktører tar i bruk NHN sine tjenester.
+* Bruk av syntetiske data, fremfor reelle data, har fokus på å understøtte personvernet ved at de ikke inneholder personidentifiserbar informasjon.
+
+__Tjenester testuniverset leverer__:
+
+__SyntPop__
+ er en selvbetjeningsløsning for å enkelt finne, opprette og redigere egne syntetiske testpersoner, tilpasset test og kvalitetssikring av digitale tjenester i helsesektoren.
+
+Den syntetiske populasjonen i SyntPop hentes fra Persontjenesten og er strukturert etter informasjonsmodellen til det moderniserte folkeregisteret. Bruk av den syntetiske populasjonen forutsetter derfor tilpasninger i egne systemer for å kunne håndtere dette formatet. Dette inkluderer blant annet at fødselsdato hentes fra eget felt.
+
+__SkyLab__
+ er en virtuell skybasert testinfrastruktur, som vi tilbyr alle kunder og tredjepartsleverandører i Helsenettet. Formålet er effektiv etablering og drift av infrastruktur som brukes til test og kvalitetssikring av applikasjoner og digitale tjenester i helsesektoren.
+
+Tjenesten kan redusere behovet for egen testinfrastruktur hos våre kunder og samarbeidspartnere, og dermed også redusere kostnader. Tjenesten kan benyttes til formål som opplæring i tillegg til hovedformålet som er test og kvalitetssikring.
+
+__DrWho:__
+Testverktøy som kan sees på som en mini-forskrivningsmodul med ekstra funksjonalitet for bl.a. å teste Reseptformidleren sine web services, samt negativ- og sikkerhetstesting.​
+
+__Datasjø:__
+Vi tilbyr syntetiske data, bade strukturerte og ustrukturerte til NHN og helsenettets medlemmer og til leverandørmarkedet. Dette til bruk i utvikling av nye tjenester til sektoren eller til innovasjon , test og kvalitetssikring og forberedende/innledende forskning.
+
+! Målsettinger
+Testuniverset skal være en bærekraftig Nasjonal sandkasse med utviklings- og testmiljøer, API'er og syntetiske data fra ulike helsesystemer. Testuinverset skal være til for forskning, utvikling, tidlig utprøving og testing av helseteknologi for helsepersonell.
+
+! Tiltak 2024:
+Testuniverset gjennomfører i 2024 tiltak for å kunne generere syntetiske testdata ved hjelp av maskinlæring og kunstig intelligens. Datakilder for tiltakene i 2024 er Pasientens prøvesvar og deler av Kjernejournal.
+Et viktig og krevende arbeid for å få dette til, er gjennomføringen av de juridiske vurderingene. Disse skal legge til rette for tilgang og bruk av reelle data for utarbeidelsen av nødvendige algoritmer. 
+
+De syntetiske dataene lagres i Azure Datalake og tilhørende datakatalog administreres og forvaltes gjennom Microsoft Purview. 
+
+<<list-links filter:"[tag[Målsetting]tag<currentTiddler>]">>
+
+! Styring
+!! 2024
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2024]tag<currentTiddler>]">>

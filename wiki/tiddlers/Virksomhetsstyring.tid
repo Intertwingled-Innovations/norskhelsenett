@@ -1,0 +1,40 @@
+created: 20240704074114956
+modified: 20240821063147866
+revision: 0
+tags: 
+title: Virksomhetsstyring
+type: text/vnd.tiddlywiki
+
+! Leveranser i 2024
+!! Januar
+<<NHN-liste type:"Leveranse" aar:"2024" maaned:"Januar">>
+!! Februar
+<<NHN-liste type:"Leveranse" aar:"2024" maaned:"Februar">>
+!! Mars
+<<NHN-liste type:"Leveranse" aar:"2024" maaned:"Mars">>
+!! April
+<<NHN-liste type:"Leveranse" aar:"2024" maaned:"April">>
+!! Mai
+<<NHN-liste type:"Leveranse" aar:"2024" maaned:"Mai">>
+!! Juni
+<<NHN-liste type:"Leveranse" aar:"2024" maaned:"Juni">>
+!! Juli
+<<NHN-liste type:"Leveranse" aar:"2024" maaned:"Juli">>
+!! August
+<<NHN-liste type:"Leveranse" aar:"2024" maaned:"August">>
+!! September
+<<NHN-liste type:"Leveranse" aar:"2024" maaned:"September">>
+!! Oktober
+<<NHN-liste type:"Leveranse" aar:"2024" maaned:"Oktober">>
+!! November
+<<NHN-liste type:"Leveranse" aar:"2024" maaned:"November">>
+!! Desember
+<<NHN-liste type:"Leveranse" aar:"2024" maaned:"Desember">>
+
+! Oppfølging og rapportering i 2024
+
+<<NHN-liste-levert type:"OppfølgingOgRapportering" aar:"2024">>
+
+! Oppgaver i 2024
+
+<<NHN-liste-liste-levert type:"Tiltak" undertype:"Oppgave" aar:"2024">>

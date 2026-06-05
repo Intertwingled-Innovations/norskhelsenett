@@ -1,0 +1,31 @@
+TjenesteID: 40067
+created: 20251013181512475
+modified: 20260511194327235
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Relatert tjeneste]] 2026
+title: Innsyn
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+
+Som dataansvarlig har NHN en plikt til å tilgjengeliggjøre informasjon til innbygger om hvem som har gjort oppslag i innbyggers data, samt på hvilket tjenstlig grunnlag.
+NHN tilbyr derfor en egen tjeneste for å tilgjengeliggjøre denne informasjonen digitalt for innbygger via Helsenorge. 
+
+! Målsettinger
+!! 2026
+<<list-links filter:"[tag[Målsetting]tag[2026]tag<currentTiddler>]">>
+
+
+
+! Styring
+!! 2026
+<<list-links filter:"[tag[Styring Relatert tjeneste]tag[2026]tag<currentTiddler>]">>
+
+
+
+
+! Leveranser
+
+!! Leveranser 2026
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>tag[2026]]">>
+

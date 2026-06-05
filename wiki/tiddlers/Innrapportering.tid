@@ -1,0 +1,18 @@
+created: 20240128165753774
+modified: 20240703075037770
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Intern tjeneste]] [[Innrapportering av fødselsmelding]] [[Innrapportering av dødsfall og dødsårsak]] Melde.no
+title: Innrapportering
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+
+<<list-links filter:"[tag[Innrapportering]!tag[Målsetting]]">>
+
+! Målsettinger
+
+<<list-links filter:"[tag[Målsetting]tag<currentTiddler>]">>
+
+! Styring
+!! 2024
+<<list-links filter:"[tag[Styring Intern tjeneste]tag[2024]tag<currentTiddler>]">>

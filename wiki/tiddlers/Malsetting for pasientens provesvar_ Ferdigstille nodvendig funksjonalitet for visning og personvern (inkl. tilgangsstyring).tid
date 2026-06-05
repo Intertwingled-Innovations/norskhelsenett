@@ -1,0 +1,15 @@
+TjenesteID: 40170
+created: 20260406184605789
+modified: 20260409112837730
+revision: 0
+tags: [[Kjernejournal Pasientens prøvesvar]] Målsetting [[Tiltaket pasientens prøvesvar]] 2026
+title: Målsetting for pasientens prøvesvar: Ferdigstille nødvendig funksjonalitet for visning og personvern (inkl. tilgangsstyring)
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+Pasientens prøvesvar skal ha støtte for nødvendige personvernmekanismer både for pasient og helsepersonell
+! Resultat
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

@@ -1,0 +1,10 @@
+created: 20250901085147843
+modified: 20250901085926140
+revision: 0
+tags: [[Stabil og sikker drift av reseptformidleren i Norsk helsenetts private sky]] 2025 August Leveranse Reseptformidleren
+title: Lukket avvik knyttet til publisering av statistikk fra reseptformidleren
+type: text/vnd.tiddlywiki
+
+Det ble i juni 2025 oppdaget et avvik der et .Net API for å publisere statistikk fra reseptformidleren var satt opp på en Azure server. Vi hadde ikke kildekoden til API'et (det var utviklet av en tidligere ansatt som ikke var utvikler), det benyttet utdaterte versjon av .Net og OS på Azure serveren var utdatert. API'et hadde heller ikke adekvat sikkerhet slik at eksterne også kunne poste statistikk via dette API'et.
+
+Det er laget et nytt API i Java med tilfredsstillende sikkerhet og kodebase som forvaltes av team rf. Azure serveren er avviklet og API'et kjører på intern server som blir vedlikeholdt.

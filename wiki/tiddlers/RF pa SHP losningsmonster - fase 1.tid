@@ -1,0 +1,25 @@
+TjenesteID: 40034
+created: 20260324162524741
+modified: 20260414123117332
+revision: 0
+tags: Målsetting 2026 Reseptformidleren [[Ekstern Tjeneste]]
+title: RF på SHP løsningsmønster - fase 1
+type: text/vnd.tiddlywiki
+
+Reseptformidleren skal ta i bruk felleskomponenter i samhandlingsplattformen:
+
+*Ta i bruk etterkontroll tjenesten
+*Flytte asynkron meldingshåndtering til EDI 2.0
+
+Reseptformidleren skal migrere til samhandlingsplattformens løsningsmønster:
+
+*PoC 1 der en M1 flyter gjennom nytt løsningsmønster der det er et klart skille mellom les og skriv operasjoner. Kjører i Kubernetes i test.
+*PoC 2 der data flyter fra dagens rf til lesetjenester etablert på nytt løsningsmønster. PoC 2 skal kunne benyttes som lesetjenester i produksjon.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

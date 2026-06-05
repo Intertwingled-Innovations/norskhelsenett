@@ -1,0 +1,15 @@
+TjenesteID: 40172
+created: 20260412134055664
+modified: 20260414121908170
+revision: 0
+tags: Resultat 2026 [[Kjernejournal Pasientens felter]] [[Målsetting for Kjernejournal Pasientens felter: Etablere API for spesielle kommunikasjonsbehov]]
+title: Resultat for Kjernejournal Pasientens felter: Etablere API for spesielle kommunikasjonsbehov
+type: text/vnd.tiddlywiki
+
+! Mål
+
+Informasjon om pasientens spesielle kommunikasjonsbehov kan registreres og leses digitalt via API
+
+! Effekt sektoren
+* Innbygger kan enkelt registrere spesielle kommunikasjonsbehov via helsenorge.no
+* Helsepersonell har enkel tilgang til pasientens spesielle kommunikasjonsbehov

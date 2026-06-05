@@ -1,0 +1,14 @@
+created: 20260505101218849
+modified: 20260505101757646
+revision: 0
+tags: [[Ny tjeneste for å samle og dele tilgangsbegresninger]] 2026 Leveranse [[Personvern og tilgangsstyring]] Oktober
+title: 10/26 PTS-API som støtter å lese gjeldende personverninnstillinger
+type: text/vnd.tiddlywiki
+
+PTS-API som støtter å lese alle gjeldende personverninnstillinger, enten innstillingene er satt av innbygger på Helsenorge eller innstillingen er satt av helsepersonell på vegne av innbyggeren. 
+Løsningen må fungere for Pasienten prøvesvar, og omfatte følgende innstillinger, i tillegg til sperre informasjonselement/ressrurs for alt helsepersonell:
+
+* Sperre alt helsepersonell for alle prøvesvar (hard - innstillingen kan ikke oppheves når akutt/samtykke)
+* Sperre alt helsepersonell for alle prøvesvar (myk - Innstillingen kan oppheves når akutt/samtykke)
+* Reservasjon mot Kjernejournal
+* Reservasjon mot Pasientens prøvesvar 

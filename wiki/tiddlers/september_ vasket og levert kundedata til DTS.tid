@@ -1,0 +1,8 @@
+created: 20251001112904739
+modified: 20251001113122289
+revision: 0
+tags: [[2025-3: Flow Customer deler kundeopplysninger på topic slik at Nasjonalt nett kan konsumere disse]] 2025 Integrasjonstjenesten September Leveranse
+title: september: vasket og levert kundedata til DTS
+type: text/vnd.tiddlywiki
+
+Tatt uttrekk av kundedata, vasket disse mot Brreg og levert de til DTS. Nå har de egen kundedatabase og kan knytte samband opp mot det. Da trenger de ikke lengre Junta for det.

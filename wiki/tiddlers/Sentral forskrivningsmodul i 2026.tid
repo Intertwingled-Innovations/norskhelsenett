@@ -1,0 +1,32 @@
+TjenesteID: 40044
+created: 20260320074352014
+modified: 20260409063124509
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] [[Domene Brukerflater]] 2026
+title: Sentral forskrivningsmodul i 2026
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+
+Sentral Forskrivningsmodul (SFM) er en løsning for forskrivning av e-resepter som tilbys leverandører av elektroniske journalsystemer som ønsker å knytte sitt system til E-resept. SFM benyttes av fastleger, sykehusleger, i kommunal pleie og omsorg, samt hos tannleger og legespesialister. Tjenesten tilbys gjennom et basis API eller ved bruk av en fullversjon med en brukerflate. 
+
+! Målsettinger
+
+<<list-links filter:"[tag[Målsetting]tag[2026]tag<currentTiddler>]">>
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag[2026]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>
+
+! Styring
+
+!!!Ekstern tjeneste
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag<currentTiddler>]">>
+
+!!!Tiltak
+<<list-links filter:"[tag[Styring Tiltak]tag[2026]tag<currentTiddler>]">>
+

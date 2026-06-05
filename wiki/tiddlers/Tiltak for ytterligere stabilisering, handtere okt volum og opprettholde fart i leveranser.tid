@@ -1,0 +1,17 @@
+TjenesteID: 40044
+created: 20260209174246789
+modified: 20260416102510335
+revision: 0
+tags: Målsetting [[Tiltaket pasientens legemiddelliste]] 2026 [[Sentral forskrivningsmodul i 2026]]
+title: Tiltak for ytterligere stabilisering, håndtere økt volum og opprettholde fart i leveranser
+type: text/vnd.tiddlywiki
+
+Målsetting: Ytterligere forbedringer i arkitektur, implementasjon og deployment. Dette inkluderer forbedringer i kode, arbeidsprosesser og ansvar i produktutviklingen.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag[2026]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>

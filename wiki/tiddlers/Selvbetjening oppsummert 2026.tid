@@ -1,0 +1,41 @@
+created: 20260326105024485
+modified: 20260401092243923
+revision: 0
+tags: [[Divisjon Helsepersonell]] 2026 [[Tjeneste oppsummert]]
+title: Selvbetjening oppsummert 2026
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+
+
+<<list-links filter:"[tag[Ekstern tjeneste]tag[2026]tag[MAL Tjenestenavn 2026]tag[Divisjon Helsepersonell]]">>
+
+! Målsettinger
+
+
+
+<<list-links filter:"[tag[Målsetting]tag[2026]tag[MAL Tjenestenavn 2026]]">>
+
+
+! Resultat
+
+
+<<list-links filter:"[tag[Resultat]tag[2026]tag[MAL Tjenestenavn 2026]]">>
+
+
+
+! Leveranser
+
+
+
+<<list-links filter:"[tag[Leveranse]tag[2026]tag[MAL Tjenestenavn 2026]]">>
+
+
+! Styring
+
+
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag[MAL Tjenestenavn 2026]]">>
+
+
+
+

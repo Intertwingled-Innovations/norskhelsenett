@@ -1,0 +1,16 @@
+created: 20240508110105602
+modified: 20260330063950302
+revision: 0
+tags: 2024 [[Kjernejournal portal]] Målsetting
+title: Kjernejournal portal logger inn med helsepersonells attest
+type: text/vnd.tiddlywiki
+
+Produksjonssette innlogging med helsepersonells attest som også muliggjør single sign on til produkter med HelseID
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

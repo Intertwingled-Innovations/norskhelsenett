@@ -1,0 +1,22 @@
+created: 20260504051850142
+modified: 20260504055246589
+revision: 0
+tags: Kundesenteret Målsetting 2026
+title: Realisere selvbetjeningsløsning for henvendelser
+type: text/vnd.tiddlywiki
+
+! Resultat
+(Gjenstår å lage resultatkort på disse)
+
+* Redusere antall henvendelser til KD med 10% pr mnd innen utgangen av 2026. 
+* Automatisere saksflyt for henvendelser som skal direkte til andre team (dispatching). 
+* Tilby versjon 1 av KD-wiki. 
+
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

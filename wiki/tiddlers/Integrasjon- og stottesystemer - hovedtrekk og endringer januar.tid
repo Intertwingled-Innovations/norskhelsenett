@@ -1,0 +1,32 @@
+created: 20250224074937450
+modified: 20250224085028179
+revision: 0
+tags: 2025 [[Divisjon Helsepersonell]] [[Integrasjon- og støttesystemer]] [[Styring Intern tjeneste]] Januar Integrasjonstjenesten
+title: Integrasjon- og støttesystemer - hovedtrekk og endringer januar
+type: text/vnd.tiddlywiki
+
+
+! Hovedtrekk og endringer
+
+''Junta/Flow''
+
+* Jobbet med å flytte ut EDI-kontoer fra Junta, for å avlaste team melding. Ny frontend ligger her i test: https://edi-accounts.iu.test.nhn.no/
+* Startet opp arbeidet med å flytte ut e-post-kontoer fra Junta for APT. Ny frontend ligger her i test: https://email-accounts.iu.test.nhn.no/
+* Rullet ut Flow API i test, for håndtering av API tilganger. Løser sikkerhetsavvik.
+* Jobbet med Nasjonalt nett for å skille sambandsdokumentasjon og hjemmekontor ut fra Junta. De ønsker ikke at vi flytter dette ut, men jobber med nye løsninger og vil ta ansvaret for Junta videre dersom de ikke er ute innen 2025.
+* Avklart med Video hva vi kan bistå med, slik at vi kan avvikle Flow VIOP.
+* Fortsatt arbeid med flytt av Flow DNS til privat sky.
+* Håndtert personopplysninger i Junta testmiljø. Personvernavvik.
+* Ferdigstilt avvikling av Flow SMS, Flow Telemator, Flow PRTG, Flow SMAX, Flow Connect, Flow Comment, Flow Attachment, Flow DNS2.
+* Startet på avvikling av Flow Account.
+
+''Integrasjonstjenesten''
+
+* Fulgt opp bestilling med APT. Startet med ukentlig møteserie for å følge opp leveranse.
+* Jobbing med mål og målstyring.
+* Jobbe med å ta KD ut av Junta.
+
+! Prognose på penger og ressurser
+*Finansiering: Medlemsavgiften
+* Timeforbruk er 7-800 timer over budsjett for året. Dette skyldes i hovedsak bistand fra personer utenfor teamet, som ikke var allokert til teamet i budsjettet (tjenesteeier og scrum master). Ifht. prognose resten forventes det en reduksjon i overforbuk, pga. bistand til divisjon APOT (ifbm. flytting av ansvar og etablering av Flow DNS i APT)
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ad6307c59006ac4e200e?experience=power-bi&bookmarkGuid=Bookmark6966c46e3cd6605ce815">Oversikt Integrasjon- og støttesystemer (Power BI)</a>

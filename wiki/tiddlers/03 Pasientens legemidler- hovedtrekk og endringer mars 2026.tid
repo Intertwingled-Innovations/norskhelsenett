@@ -1,0 +1,22 @@
+created: 20260407071724363
+modified: 20260503094430914
+revision: 0
+tags: [[Kjernejournal Pasientens legemidler]] 2026 [[Forretningsmessig endring:1]] [[Styring Ekstern tjeneste]] Mars
+title: 03 Pasientens legemidler- hovedtrekk og endringer mars 2026
+type: text/vnd.tiddlywiki
+
+!Hovedtrekk og endringer
+
+Ny backend er i test og ser ut til å fungere fint. Alle som benytter rf test2 går mot ny backend, både interne og eksterne brukere.
+
+Migrering av historiske data i produksjon fra gammel backend pågår i samarbeid med Kollektivet. Utfordringer med historiske nøkler ser ut til å være løst.
+
+Data deles fra reseptformidleren i produksjon. Det er en feil ved innlesing av disse data fra topic'en pt.
+
+Når data er migrert og strømmen fra reseptformidleren fungerer, vil det være en periode med "skyggeproduksjon" der alle kall til eksisterende API også sendes til ny backend og vi sammenligner at gammel og ny backend gir samme svar på kallet.
+
+!Prognose på penger og ressurser
+Foreløpig innenfor rammen, men det brukes mer tid på backend delen (fase 1) enn planlagt.
+Det er tilgjengelig tilstrekkelig med ressurser, vi vil vurdere tidspunkt for utfasing av innleid konsulent.
+
+https://app.powerbi.com/Redirect?action=OpenReport&appId=6b2c0868-17a5-4050-a66c-e55f8a394c78&reportObjectId=2d7d01c3-db91-4731-bb68-8724b49c798a&ctid=e3dac4b3-9b0b-4f41-8623-9392d0d566dc&reportPage=ab265f40bbbad51c5a74&pbi_source=appShareLink&portalSessionId=7bac47ee-43a7-4011-9bc0-0f83f2c5ac36

@@ -1,0 +1,21 @@
+created: 20240508102933847
+modified: 20240829103005403
+revision: 0
+tags: [[Team Integrasjon og støttesystemer]] Målsetting
+title: Målsetting: Avvikling av Flow og Junta
+type: text/vnd.tiddlywiki
+
+! Overordnet mål
+Avvikle Flow moduler og Junta uten at det går ut over våre kunder. 
+
+!! Beskrivelse
+Dialog pågår innad i organisasjonen for å få de som har behovene til å selv ta ansvaret for funksjonalitet. Flow moduler som viser seg å ha livets rett, som f.eks. Flow DNS, vil bli overlevert til andre team i organisasjonen som sitter på behovet for disse. Team Integrasjon og støttesystemer bistår med transisjon ut av Flow og Junta samtidig som vi legger til rette for at organisasjonen kan ta i bruk Integrasjonstjenesten for å støtte opp om en ny hendelses basert arkitektur.
+
+* Nasjonalt nett jobber med å erstatte teknisk sambands dokumentasjon i Junta og egen CMDB som erstatter deres behov for Flow CMDB. De trenger også å flytte ut Hjemmekontor og Video tjenesten. Trenger eget saksbehandlingssystem (samarbeider med APT på SMAX).
+* APT setter opp SMAX for ITIL prosess, saksbehandling og CMDB.
+* Kunde og driftssenter anskaffer nytt support system.
+* Team Melding flytter ut EDI-kontoer og interne e-post kontoer fra Junta.
+* Medlemsinformasjon vil bli levert av Medlemstjenesten (Påvirker Flow Customer).
+* Kundeportal legges ned (har knytninger til Flow og Junta), erstattes delvis av Helsenettet.no.
+
+

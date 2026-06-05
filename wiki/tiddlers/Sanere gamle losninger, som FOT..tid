@@ -1,0 +1,16 @@
+created: 20240701074119128
+modified: 20260123101329531
+revision: 0
+tags: Melding Målsetting 2024
+title: Sanere gamle løsninger, som FOT.
+type: text/vnd.tiddlywiki
+
+Beskrivelse?
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

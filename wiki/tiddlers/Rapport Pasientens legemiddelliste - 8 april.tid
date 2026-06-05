@@ -1,0 +1,692 @@
+created: 20240222121246451
+library: 
+modified: 20240809084919898
+revision: 0
+tags: [[Rapportering til HOD april 2024]] [[Leveranseplan 2024]] [[Tiltaket pasientens legemiddelliste]] [[Godkjenne EPJ-leverandører for utprøving og innføring av SFM og e-multidose]] [[Rapportering leveranseplan]]
+title: Rapport Pasientens legemiddelliste - 8 april
+type: text/vnd.tiddlywiki
+
+! Overordnet status
+(Kort vurdering av hvordan tiltaket ligger an på tid, kost og kvalitet sett opp i mot leveranseplan. Hvilke konkrete leveranser er ferdigstilt siden sist. Om vi ligger bak tidskjema bør dette beskrives kort med årsak )
+
+!!Leveranser:
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .color-selector {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 8px;
+    }
+
+    .color-selector label {
+      cursor: pointer;
+    }
+
+    .progress-bar {
+      height: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .progress-bar div {
+      flex: 1;
+      height: 100%;
+    }
+
+    .red {
+      background-color: #ff8c8c; /* Rød farge for høy risiko */
+    }
+
+    .yellow {
+      background-color: #ffd966; /* Gul farge for middels risiko */
+    }
+
+    .green {
+      background-color: #a2eb8b; /* Grønn farge for lav risiko */
+    }
+
+    .open-textarea {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<table>
+  <thead>
+    <tr>
+      <th>Leveranse</th>
+      <th>Fremdrift/Tid</th>
+      <th>Kvalitet/Omfang</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><textarea class="open-textarea" placeholder="Legg inn fritekst"></textarea></td>
+      <td>
+        <div class="color-selector">
+          <label><input type="radio" name="progress" value="red"> Rød</label>
+          <label><input type="radio" name="progress" value="yellow"> Gul</label>
+          <label><input type="radio" name="progress" value="green"> Grønn</label>
+        </div>
+      </td>
+      <td>
+        <div class="color-selector">
+          <label><input type="radio" name="quality" value="red"> Rød</label>
+          <label><input type="radio" name="quality" value="yellow"> Gul</label>
+          <label><input type="radio" name="quality" value="green"> Grønn</label>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3"><textarea class="open-textarea" placeholder="Legg inn fritekst"></textarea></td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
+
+''Beskrivelse:'' [[Godkjenne EPJ-leverandører for utprøving og innføring av SFM|Godkjenne EPJ-leverandører for utprøving og innføring av SFM og e-multidose]]
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .color-selector {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 8px;
+    }
+
+    .color-selector label {
+      cursor: pointer;
+    }
+
+    .progress-bar {
+      height: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .progress-bar div {
+      flex: 1;
+      height: 100%;
+    }
+
+    .red {
+      background-color: #ff8c8c; /* Rød farge for høy risiko */
+    }
+
+    .yellow {
+      background-color: #ffd966; /* Gul farge for middels risiko */
+    }
+
+    .green {
+      background-color: #a2eb8b; /* Grønn farge for lav risiko */
+    }
+
+    .open-textarea {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<table>
+  <thead>
+    <tr>
+      <th>Leveranse</th>
+      <th>Fremdrift/Tid</th>
+      <th>Kvalitet/Omfang</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><textarea class="open-textarea" placeholder="Legg inn fritekst"></textarea></td>
+      <td>
+        <div class="color-selector">
+          <label><input type="radio" name="progress" value="red"> Rød</label>
+          <label><input type="radio" name="progress" value="yellow"> Gul</label>
+          <label><input type="radio" name="progress" value="green"> Grønn</label>
+        </div>
+      </td>
+      <td>
+        <div class="color-selector">
+          <label><input type="radio" name="quality" value="red"> Rød</label>
+          <label><input type="radio" name="quality" value="yellow"> Gul</label>
+          <label><input type="radio" name="quality" value="green"> Grønn</label>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3"><textarea class="open-textarea" placeholder="Legg inn fritekst"></textarea></td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
+
+''Beskrivelse:'' [[Planlegge og lage avtaler med aktørene som skal delta i utprøving og innføring av SFM og e-multidose|Planlegge og lage avtaler med aktørene som skal delta i utprøving og innføring av SFM og e-multidose]]
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .color-selector {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 8px;
+    }
+
+    .color-selector label {
+      cursor: pointer;
+    }
+
+    .progress-bar {
+      height: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .progress-bar div {
+      flex: 1;
+      height: 100%;
+    }
+
+    .red {
+      background-color: #ff8c8c; /* Rød farge for høy risiko */
+    }
+
+    .yellow {
+      background-color: #ffd966; /* Gul farge for middels risiko */
+    }
+
+    .green {
+      background-color: #a2eb8b; /* Grønn farge for lav risiko */
+    }
+
+    .open-textarea {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<table>
+  <thead>
+    <tr>
+      <th>Leveranse</th>
+      <th>Fremdrift/Tid</th>
+      <th>Kvalitet/Omfang</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><textarea class="open-textarea" placeholder="Legg inn fritekst"></textarea></td>
+      <td>
+        <div class="color-selector">
+          <label><input type="radio" name="progress" value="red"> Rød</label>
+          <label><input type="radio" name="progress" value="yellow"> Gul</label>
+          <label><input type="radio" name="progress" value="green"> Grønn</label>
+        </div>
+      </td>
+      <td>
+        <div class="color-selector">
+          <label><input type="radio" name="quality" value="red"> Rød</label>
+          <label><input type="radio" name="quality" value="yellow"> Gul</label>
+          <label><input type="radio" name="quality" value="green"> Grønn</label>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3"><textarea class="open-textarea" placeholder="Legg inn fritekst"></textarea></td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
+
+''Beskrivelse:'' [[Videreutvikle sentral forskrivningsmodul (SFM) for fastlege og sykehus, samt fortsette utvikling av funksjonalitet for sykehjem, hjemmetjeneste og legevakt|Videreutvikle sentral forskrivningsmodul (SFM) for fastlege og sykehus, samt fortsette utvikling av funksjonalitet for sykehjem, hjemmetjeneste og legevakt]]
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .color-selector {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 8px;
+    }
+
+    .color-selector label {
+      cursor: pointer;
+    }
+
+    .progress-bar {
+      height: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .progress-bar div {
+      flex: 1;
+      height: 100%;
+    }
+
+    .red {
+      background-color: #ff8c8c; /* Rød farge for høy risiko */
+    }
+
+    .yellow {
+      background-color: #ffd966; /* Gul farge for middels risiko */
+    }
+
+    .green {
+      background-color: #a2eb8b; /* Grønn farge for lav risiko */
+    }
+
+    .open-textarea {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<table>
+  <thead>
+    <tr>
+      <th>Leveranse</th>
+      <th>Fremdrift/Tid</th>
+      <th>Kvalitet/Omfang</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><textarea class="open-textarea" placeholder="Legg inn fritekst"></textarea></td>
+      <td>
+        <div class="color-selector">
+          <label><input type="radio" name="progress" value="red"> Rød</label>
+          <label><input type="radio" name="progress" value="yellow"> Gul</label>
+          <label><input type="radio" name="progress" value="green"> Grønn</label>
+        </div>
+      </td>
+      <td>
+        <div class="color-selector">
+          <label><input type="radio" name="quality" value="red"> Rød</label>
+          <label><input type="radio" name="quality" value="yellow"> Gul</label>
+          <label><input type="radio" name="quality" value="green"> Grønn</label>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3"><textarea class="open-textarea" placeholder="Legg inn fritekst"></textarea></td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
+
+''Beskrivelse:'' [[Være pådriver for nasjonal utprøving og innføring av SFM og e-multidose, der helseregion Vest og helseregion Nord er prioritert|Være pådriver for nasjonal utprøving og innføring av SFM og e-multidose, der helseregion Vest og helseregion Nord er prioritert]]
+
+!! Risikomatrise
+
+<div class="risk-matrix">
+  <style>
+    /* Legg til CSS-stiler for risikomatrisen */
+    .risk-matrix-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .risk-matrix-table th, .risk-matrix-table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+
+    .risk-matrix-table th {
+      background-color: #f2f2f2;
+    }
+
+    .risk-matrix-table td {
+      background-color: #fff;
+    }
+
+    .risk-matrix-table td.High {
+      background-color: #ff8c8c; /* Rød farge for høy risiko */
+    }
+
+    .risk-matrix-table td.Medium {
+      background-color: #ffd966; /* Gul farge for middels risiko */
+    }
+
+    .risk-matrix-table td.Low {
+      background-color: #a2eb8b; /* Grønn farge for lav risiko */
+    }
+
+    .risk-level-select {
+      width: 100%;
+    }
+
+    .risk-level-select-color {
+      width: 100%;
+      padding: 0;
+      border: none;
+    }
+
+    .risk-level-select-color option.High {
+      background-color: #ff8c8c; /* Rød farge for høy risiko */
+      color: #fff;
+    }
+
+    .risk-level-select-color option.Medium {
+      background-color: #ffd966; /* Gul farge for middels risiko */
+      color: #000;
+    }
+
+    .risk-level-select-color option.Low {
+      background-color: #a2eb8b; /* Grønn farge for lav risiko */
+      color: #000;
+    }
+  </style>
+
+  <table class="risk-matrix-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Risikobeskrivelse</th>
+        <th>Sannsynlighet</th>
+        <th>Konsekvens</th>
+        <th>Risikovurdering</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td><textarea class="open-textarea" placeholder="Legg inn fritekst"></textarea></td>
+        <td class="risk-level-select-color">
+          <select>
+            <option class="Low" value="Low">Lav</option>
+            <option class="Medium" value="Medium">Middels</option>
+            <option class="High" value="High">Høy</option>
+          </select>
+        </td>
+        <td class="risk-level-select-color">
+          <select>
+            <option class="Low" value="Low">Lav</option>
+            <option class="Medium" value="Medium">Middels</option>
+            <option class="High" value="High">Høy</option>
+          </select>
+        </td>
+        <td class="risk-level-select-color">
+          <select>
+            <option class="Low" value="Low">Lav</option>
+            <option class="Medium" value="Medium">Middels</option>
+            <option class="High" value="High">Høy</option>
+          </select>
+        </td>
+      </tr>
+      <!-- Legg til flere rader etter behov -->
+    </tbody>
+  </table>
+</div>
+
+<div class="risk-matrix">
+  <style>
+    /* Legg til CSS-stiler for risikomatrisen */
+    .risk-matrix-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .risk-matrix-table th, .risk-matrix-table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+
+    .risk-matrix-table th {
+      background-color: #f2f2f2;
+    }
+
+    .risk-matrix-table td {
+      background-color: #fff;
+    }
+
+    .risk-matrix-table td.High {
+      background-color: #ff8c8c; /* Rød farge for høy risiko */
+    }
+
+    .risk-matrix-table td.Medium {
+      background-color: #ffd966; /* Gul farge for middels risiko */
+    }
+
+    .risk-matrix-table td.Low {
+      background-color: #a2eb8b; /* Grønn farge for lav risiko */
+    }
+
+    .risk-level-select {
+      width: 100%;
+    }
+
+    .risk-level-select-color {
+      width: 100%;
+      padding: 0;
+      border: none;
+    }
+
+    .risk-level-select-color option.High {
+      background-color: #ff8c8c; /* Rød farge for høy risiko */
+      color: #fff;
+    }
+
+    .risk-level-select-color option.Medium {
+      background-color: #ffd966; /* Gul farge for middels risiko */
+      color: #000;
+    }
+
+    .risk-level-select-color option.Low {
+      background-color: #a2eb8b; /* Grønn farge for lav risiko */
+      color: #000;
+    }
+  </style>
+
+  <table class="risk-matrix-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Risikobeskrivelse</th>
+        <th>Sannsynlighet</th>
+        <th>Konsekvens</th>
+        <th>Risikovurdering</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2</td>
+        <td><textarea class="open-textarea" placeholder="Legg inn fritekst"></textarea></td>
+        <td class="risk-level-select-color">
+          <select>
+            <option class="Low" value="Low">Lav</option>
+            <option class="Medium" value="Medium">Middels</option>
+            <option class="High" value="High">Høy</option>
+          </select>
+        </td>
+        <td class="risk-level-select-color">
+          <select>
+            <option class="Low" value="Low">Lav</option>
+            <option class="Medium" value="Medium">Middels</option>
+            <option class="High" value="High">Høy</option>
+          </select>
+        </td>
+        <td class="risk-level-select-color">
+          <select>
+            <option class="Low" value="Low">Lav</option>
+            <option class="Medium" value="Medium">Middels</option>
+            <option class="High" value="High">Høy</option>
+          </select>
+        </td>
+      </tr>
+      <!-- Legg til flere rader etter behov -->
+    </tbody>
+  </table>
+</div>
+
+!! Disponering av midler
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Legg til CSS-stiler for tabellen */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .textarea-col {
+      width: 100%;
+      height: 100px; /* Juster høyden etter behov */
+    }
+  </style>
+</head>
+<body>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Beskrivelse</th>
+        <th>Estimat MNOK i 2024</th>
+        <th>MNOK hittil i år</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><textarea class="textarea-col" placeholder="Beskrivelse"></textarea></td>
+        <td><textarea class="textarea-col" placeholder="Estimat MNOK i 2024"></textarea></td>
+        <td><textarea class="textarea-col" placeholder="MNOK hittil i år"></textarea></td>
+      </tr>
+      <tr>
+        <td><textarea class="textarea-col" placeholder="Beskrivelse"></textarea></td>
+        <td><textarea class="textarea-col" placeholder="Estimat MNOK i 2024"></textarea></td>
+        <td><textarea class="textarea-col" placeholder="MNOK hittil i år"></textarea></td>
+      </tr>
+      <tr>
+        <td><textarea class="textarea-col" placeholder="Beskrivelse"></textarea></td>
+        <td><textarea class="textarea-col" placeholder="Estimat MNOK i 2024"></textarea></td>
+        <td><textarea class="textarea-col" placeholder="MNOK hittil i år"></textarea></td>
+      </tr>
+      <tr>
+        <td><textarea class="textarea-col" placeholder="Beskrivelse"></textarea></td>
+        <td><textarea class="textarea-col" placeholder="Estimat MNOK i 2024"></textarea></td>
+        <td><textarea class="textarea-col" placeholder="MNOK hittil i år"></textarea></td>
+      </tr>
+      <tr>
+        <td><textarea class="textarea-col" placeholder="Beskrivelse"></textarea></td>
+        <td><textarea class="textarea-col" placeholder="Estimat MNOK i 2024"></textarea></td>
+        <td><textarea class="textarea-col" placeholder="MNOK hittil i år"></textarea></td>
+      </tr>
+      <tr>
+        <td><textarea class="textarea-col" placeholder="Beskrivelse"></textarea></td>
+        <td><textarea class="textarea-col" placeholder="Estimat MNOK i 2024"></textarea></td>
+        <td><textarea class="textarea-col" placeholder="MNOK hittil i år"></textarea></td>
+      </tr>
+      <tr>
+        <td><textarea class="textarea-col" placeholder="Beskrivelse"></textarea></td>
+        <td><textarea class="textarea-col" placeholder="Estimat MNOK i 2024"></textarea></td>
+        <td><textarea class="textarea-col" placeholder="MNOK hittil i år"></textarea></td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
+
+
+
+

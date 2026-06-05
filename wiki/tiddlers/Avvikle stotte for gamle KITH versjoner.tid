@@ -1,0 +1,21 @@
+TjenesteID: 40034
+created: 20260222155213021
+modified: 20260414123301366
+revision: 0
+tags: Reseptformidleren 2026 [[Ekstern Tjeneste]] Resultat [[Forenkling og opprydding i dagens løsning (RF)]]
+title: Avvikle støtte for gamle KITH versjoner
+type: text/vnd.tiddlywiki
+
+Det har ikke tidligere vært avviklet støtte for gamle versjoner av KITH meldinger når nye kom. 
+Dette fører til at det er mye duplisert kode som må vedlikeholdes selv om endringene fra versjon til versjon er små.
+
+Det er merarbeid både ift å holde koden oppdatert og ikke minst ift å teste.
+
+Versjoner som skal avvikles er:
+M9.1 - 2013
+M9.5 - 2015
+M9.7 - 2015
+(M9.11 - 2014 - bortfaller: det er avklart at denne må leve videre inntil videre etter tilbakemelding fra sektor)
+M9.21 - 2013
+
+Se også https://confluence.nhn.no/x/Hc6eG

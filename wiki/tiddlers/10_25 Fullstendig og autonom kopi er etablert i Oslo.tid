@@ -1,0 +1,9 @@
+TjenesteID: 40030
+created: 20260407212356865
+modified: 20260512072808588
+revision: 0
+tags: Person [[Team Person]] Leveranse [[Leveranse EksternTjeneste]] [[Persontjenesten med automatisk failover til OSL]] [[12/26 Persontjenesten i autonome regioner]] 2025
+title: 10/25 Fullstendig og autonom kopi er etablert i Oslo
+type: text/vnd.tiddlywiki
+
+Ful kopi av ut-database til Persontjenesten er etablert i Oslo, og det er etablert en automatisk failover mellom lokasjon Oslo og Trondheim som går begge veier.

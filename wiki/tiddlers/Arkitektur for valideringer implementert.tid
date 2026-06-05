@@ -1,0 +1,10 @@
+created: 20250728131833136
+modified: 20250728131929797
+revision: 0
+tags: [[Modernisering av reseptformidleren]] Leveranse Juni Reseptformidleren
+title: Arkitektur for valideringer implementert
+type: text/vnd.tiddlywiki
+
+Det er gjort store strukturelle endringer for å legge til rette for flere valideringer fremover. Valideringer er samlet i egne komponenter. Dette gir en skalerbar arkitektur slik at god ytelse kan ivaretas.
+
+Det har vært et omfattende testbehov ifm denne endringen.

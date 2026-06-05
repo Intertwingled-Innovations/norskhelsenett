@@ -1,0 +1,16 @@
+created: 20240703200109739
+modified: 20260408085632635
+revision: 0
+tags: [[Forsvarlig forvaltning av Forskrivningsmodulen]] Resultat [[Team FM]] 2025 [[Forskrivningsmodulen 2024-2025]]
+title: Levere FM 4.15.0
+type: text/vnd.tiddlywiki
+
+Vi må lage FM 4.15 med følgende planlagt innhold:
+Oppdateringer av rammeverk (ref. ROS)
+Støtte for syntetiske testpersoner for å være uavhengig av PREG test innen PREG test avvikles
+
+Planlagt leveranse Q1 2025
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

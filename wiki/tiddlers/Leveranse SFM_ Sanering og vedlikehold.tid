@@ -1,0 +1,16 @@
+created: 20241101090701260
+modified: 20241101091137565
+revision: 0
+tags: [[Sentral forskrivningsmodul]] Leveranse [[Team SFM]] [[Stabilisering og forbedring av tjenesten for å kunne håndtere produksjon for alle fastlegekontorer]] [[Resultat SFM: Stabilisering og forbedring av tjenesten for å kunne håndtere produksjon for alle fastlegekontorer]] 2024 Oktober
+title: Leveranse SFM: Sanering og vedlikehold
+type: text/vnd.tiddlywiki
+
+Mål: Stabilisering og forbedring av tjenesten for å kunne håndtere produksjon for alle fastlegekontorer
+
+Levert:
+
+*Sanert gammel Test 3 miljø
+*Sanert versjon 2.12
+*Flyttet alle produksjonsdatabaser over til ny database host
+*Utviklet "helsesjekk" for å verifisere tilstanden til produksjonsmiljøene
+

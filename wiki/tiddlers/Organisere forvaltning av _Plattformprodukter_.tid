@@ -1,0 +1,15 @@
+created: 20260407094215269
+modified: 20260506083953223
+revision: 0
+tags: Plattform Målsetting 2026
+title: Organisere forvaltning av "Plattformprodukter"
+type: text/vnd.tiddlywiki
+
+* Rendyrke Team Plattform som en rådgiver-/communitytjeneste 
+* Observability-stack og CI/CD pipelines rendyrkes som egne produkter i et nytt leveranseteam
+* Et annet nytt leveranseteam får ansvar for videreutvikling og forvaltning av utviklerportalen.
+
+!Leveranser 
+
+!!2026
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>

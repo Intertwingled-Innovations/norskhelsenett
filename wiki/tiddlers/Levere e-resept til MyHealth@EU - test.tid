@@ -1,0 +1,15 @@
+TjenesteID: 40034
+created: 20260222154653298
+modified: 20260414123705649
+revision: 0
+tags: Reseptformidleren 2026 Resultat [[MyHealth@EU ePrescription og eDispensation - test]]
+title: Levere e-resept til MyHealth@EU - test
+type: text/vnd.tiddlywiki
+
+En pasient som har fått en resept hos en norsk lege/rekvirent skal kunne få utlevert legemidler i EU og utleveringsmelding skal mottas slik at reseptformidleren har riktig status og gjenværende mengde på resepten.
+
+Vi skal levere en ferdig oversatt resept til MyHealth@EU slik at innbygger kan få utlevert legemidler på en sikker og trygg måte i EU land.
+
+Dette øker pasientsikkerheten og gir innbygger frihet.
+
+M1 -> ePrescription

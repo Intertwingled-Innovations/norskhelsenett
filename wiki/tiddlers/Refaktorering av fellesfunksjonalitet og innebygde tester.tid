@@ -1,0 +1,12 @@
+created: 20250910192754826
+modified: 20260401105002550
+revision: 0
+tags: [[Øke andelen innebygde/automatiske tester]] 2025 September Leveranse Reseptformidleren [[Modernisering av reseptformidleren]]
+title: Refaktorering av fellesfunksjonalitet og innebygde tester
+type: text/vnd.tiddlywiki
+
+Viktige fellesmoduler er nå refaktorert(ryddet opp i) og det er bygget inn tester som kjøres automatisk.
+
+Dette gir oss et bedre utgangspunkt for å lett kunne innføre endringer/høyere endringstakt:
+* All fellesfunksjonalitet i RF er tydelig inndelt i enheter med testbart grensesnitt
+* All fellesfunksjonalitet kan mockes ut under enhetstesting av tjenester/batcher som bruker fellesfunksjonaliteten

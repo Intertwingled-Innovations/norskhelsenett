@@ -1,0 +1,42 @@
+created: 20240402142215432
+modified: 20240503113650913
+revision: 0
+tags: Styring 2024 [[Divisjon Helsepersonell]] Mars Reseptformidleren
+title: E-resept verdikjede - hovedtrekk og endringer mars
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+Tre store godkjenningsprosesser er i gang: Pridok med eMD og PLL, DIPS Arena for Helse Nord og versjonsløft SFM Basis API for Helseplattformen.
+
+Foruten selve AT er det lagt ned et stort arbeid med forberedelse av test og testdata, avklaringer samt prosessledelse. Det er en målsetning å effektivisere denne prosessen. 
+
+Testaktiviteter for apoteksiden har dessverre måttet nedprioriteres i mars pga manglende kapasitet. 
+
+Det kommer mange bestillinger på testdata fra aktører i e-reseptkjeden til teamet. Målsetningen er at aktørene skal bli selvhjulpne, men det krever en del videreutvikling av den interne applikasjonen Dr. Who. Ansvaret ligger hos Testunivers. Nyrekruttert ressurs starter 1.mai og må læres opp. 
+
+Det er press på ressurser med testkompetanse på hele e-resept/legemiddelområdet. 
+
+Verdikjede e-resept bistår RF-teamet med manuell oppfølging av testresepter i produksjon og reelle resepter med feil opplysninger. Det er tidkrevende og medfører behov for tilgang til persondata. Reseptene vises også i KJ og på Helsenorge. Det er jobbet med en juridisk vurdering av muligheten til å avvise slike resepter før de tas inn i RF. 
+
+Det kommer mange spørsmål om tilgang til statistikk på ulike variabler i e-resept, men det er usikkerhet rundt hjemler for hva man kan hente ut og hvem det kan vises for. Vi jobber derfor sammen med juridisk med en avklaring. Ideelt sett kan vi legge ut alt i Power BI løsningen slik at interessenter kan hente ut tall selv. 
+
+Teamet jobber sammen med Apotekforeningen for å finne en løsning på håndtering av resepter som av ulike årsaker holdes lenge under ekspedering i apotek. Slike resepter skaper problemer for PLL. Workshop avholdt i mars. 
+
+Første versjon av utlevererkrav for multidose er oversendt Apotekforeningen for kommentarer. 
+
+E-resept Endringsforum gjennomført. 
+
+NHN har fått en oppgave fra foretaksmøtet om å gi en overordnet vurdering av konsekvensene av en overgang til IDMP-baserte legemiddelgrunndata for hele e-reseptkjeden. Ulike alternativer er identifisert, og konsekvensvurdering av disse er i gang. NHN vil sammen med Hdir vurdere hvordan sektor skal involveres i arbeidet. 
+! Prognose på penger og ressurser
+*Finansiering: Forskriftsfestede midler nasjonale e-helseløsninger, e-resept
+
+Timepådraget er på plan. Det mangler en del timer i mars pga feilføring på SFM og for sen timerapportering. Konsekvensen av ny modell for felleskostnader er usikker og må ses på når alle tall er inne.  
+
+<a href="https://app.powerbi.com/groups/6931f38e-9db9-41f4-a143-ac9ee4a4719c/reports/a03232e0-bd45-4da2-b925-662e476d7ebd/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark4c89bd5ada01ce3dc213">Oversikt E-resept verdikjede (Power BI)</a>
+
+
+
+

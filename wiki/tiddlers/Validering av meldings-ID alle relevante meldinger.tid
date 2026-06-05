@@ -1,0 +1,8 @@
+created: 20250213091402190
+modified: 20250213091709844
+revision: 0
+tags: [[Forbedre kvaliteten på data i e-resept verdikjeden]] Resultat Reseptformidleren
+title: Validering av meldings-ID alle relevante meldinger
+type: text/vnd.tiddlywiki
+
+Validering av msgID skal innføres i alle relevante meldinger - finnes kun validering av msgID på M1, M25.1, M10, M3, M14 (planlagt høst 2025, krever tid pga behov for forberedelser i sektoren).

@@ -1,0 +1,40 @@
+created: 20241107081220425
+modified: 20260408071025188
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] [[Styring Tiltak]] [[Tiltaket pasientens måledata (OLD)]] Oktober
+title: Tiltak pasientens måledata - hovedtrekk og endringer oktober
+type: text/vnd.tiddlywiki
+
+
+<<list-links filter:"[tag[Tiltaket pasientens måledata]tag[Tiltak]tag[2024]]">>
+
+! Hovedtrekk og endringer
+
+
+!!! Gjennomføre en utprøving av pasientens måledata i helseregon Sør-øst
+* Vestre Viken HF, Drammen kommune og Asker kommune: Kommunene overtar ansvar for oppfølging av pasienter med DHO fra sykehuset
+* Helsepersonell ved sykehuset ønsker å få tilgang til måledata for pasienter samlet og delt fra kommunen 
+* Brukergrensesnitt (oppslag mot PMD-API + visning) realiseres på prosessplattform (PEGA)
+* Etablert feature-team med ulike ansvar
+** Spor 1 - funksjonalitet for helsepersonell hos Vestre Viken HF
+** Spor 2 - realisere teknisk løsning - API (NHN) og klient for oppslag/ visning (Sykehuspartner)
+** Spor 3 - Standardisering og fremtidsbehov (NHN, HDIR, HSØ, VVHF)
+
+
+!!! Oppsummere erfaringer og målinger av nytte fra utprøvingen som innspill til Helsedirektoratets vurdering av nytte
+* Ikke påstartet ettersom en utprøving foreløpig ikke er påstartet.
+
+
+! Prognose på penger og ressurser
+
+*Finansiering: Offentlig tilskudd, PMD, 13 mnok tilfaller vår divisjon og 5 mnok divisjon Innbygger
+* Prognose 5.7 mnok på DHP - en god del mindre enn rammen, hovedsaklig pga. mindre aktivitet/ treghet med å få i gang utprøving
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection343a8851705d1cfe8125?experience=power-bi&bookmarkGuid=Bookmark76496cc890038835a416">Oversikt PMD (Power BI)</a>
+
+* Ansvar for tjeneste flyttet fra team NILAR til team KOMLINK. Ny APO Bjørnar Selvén. Team KOMLINK leverer Felles Journalløft-tjenestene (Oversikt over kommunale tjenester og NEWS2) i tillegg til Pasientens Måledata.
+
+
+
+

@@ -1,0 +1,31 @@
+created: 20240402142659873
+modified: 20240412141138477
+revision: 0
+tags: Styring 2024 [[Divisjon Helsepersonell]] Mars [[Sentral forskrivningsmodul]]
+title: SFM drift og forvaltning - hovedtrekk og endringer mars
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+* Vi jobber fortsatt hardt med å gå fra prosjekt til produktorganisasjon. Store fremskritt og snev av optimisme i teamene
+* Hovedfokus på stabilitet og overgang til privatsky – har en 10 på topp liste
+* Leverer ny integrasjon mot vedtaksspørringen/Helfo i Q2 – utsatt så lenge at det ble smertefullt
+* Ustabilitet i RabbitMQ forsåker nesten ulykker, teknologi oppgraderes i Q2
+* Samarbeid med drift er bedre, men til tider utfordrende. For mye leverandørtankegang
+* Gjort betydelige forbedringer rundt logging og feilhåndtering
+
+
+! Prognose på penger og ressurser
+
+* Se også PLL
+* Glemte å legge på 5% margin når vi ba HOD om tilleggsmidler
+* Noen begynte å sette opp privat sky i 2023 uten en plan. Medfører dobbel kost enkelte steder
+*Kostnadsnivået er for høyt i forhold til våre tildelte rammer. Vi må ned med ''5,6'' mnok for å levere en margin på 5%. Det jobbes videre med kostnadsbasen. Timer er pr nå tatt ned med ca 3800 timer fra budsjett. Prognosen viser høyere belastning av infrastruktur (ref. kommentar over), interne tjenester fra divisjonen og felleskostnader fra NHN. 
+*Finansiering: Inntektsramme er på 48,8 mnok og består av offentlig tilskudd og omfordelte midler fra tidligere år samt finansiering på 2,6 mnok medlemsinntekt for å dekke de interne tjenestene som er belastet på SMF og som skal dekkes av medlemsinntekt.
+<a href="https://app.powerbi.com/groups/6931f38e-9db9-41f4-a143-ac9ee4a4719c/reports/a03232e0-bd45-4da2-b925-662e476d7ebd/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark653d46c1659b4733c1ea">Oversikt SFM drift og forvaltning (Power BI)</a>
+
+
+
+

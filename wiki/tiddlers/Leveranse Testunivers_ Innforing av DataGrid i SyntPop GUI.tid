@@ -1,0 +1,19 @@
+TjenesteID: 40025
+created: 20260508082723515
+modified: 20260508082820049
+revision: 0
+tags: Leveranse 2026 [[Testunivers i 2026]] Mars
+title: Leveranse Testunivers: Innføring av DataGrid i SyntPop GUI
+type: text/vnd.tiddlywiki
+
+Levert:
+
+Innføring av DataGrid i SyntPop GUI 
+Det gjelder søkeresultat, reserverte personer og , lister
+
+Effekt: Erstattet faste tabeller i søk, reserverte personer og lister med DataGrid. Gir bedre ytelse, bedre brukeropplevelse med avansert filtrering/struktur, og et skalerbart UI fundament for videre utvikling. Ved å innføre MUI X DataGrid (Pro) som standard tabellkomponent i SyntPop (søkeresultater, reserverte personer og lister), la vi til rette for å dekke avanserte brukerbehov mer skalerbart med mye ferdig funksjonalitet “out of the box” – i stedet for å bygge alt selv i dagens tabellkomponent.
+
+
+
+
+

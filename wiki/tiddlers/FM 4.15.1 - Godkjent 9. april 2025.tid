@@ -1,0 +1,13 @@
+created: 20250409072729982
+modified: 20260408085632634
+revision: 0
+tags: [[Levere patcher til FM ved behov]] Leveranse 2025 April [[Forsvarlig forvaltning av Forskrivningsmodulen]] [[Forskrivningsmodulen 2024-2025]]
+title: FM 4.15.1 - Godkjent 9. april 2025
+type: text/vnd.tiddlywiki
+
+!! Hva er levert?
+Oppdatert integrasjon med HelseID for å støtte HelseID v5.9 som lukker en kjent sårbarhet.
+
+
+!! Hvilken nytte gir det?
+Med denne patchen vil Forskrivningsmodulen fortsatt kunne gjøre kall til Kjernejournal etter oppdateringen av HelseID.

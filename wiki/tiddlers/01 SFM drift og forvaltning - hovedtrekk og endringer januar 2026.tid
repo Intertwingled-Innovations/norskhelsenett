@@ -1,0 +1,43 @@
+created: 20260209173839200
+modified: 20260410115251270
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Styring Ekstern tjeneste]] 2026 Januar [[Sentral forskrivningsmodul i 2026]]
+title: 01 SFM drift og forvaltning - hovedtrekk og endringer januar 2026
+type: text/vnd.tiddlywiki
+
+
+! Hovedtrekk og endringer 
+*Status leveranser: God fart på godkjenningsprosessen av leverandører 
+*Status leveranser: Vi leverer releaser jevnlig. På fovaltningssiden er det fokus på ytterligere stabilisering og videreutvikling av eksisterende funksjonalitet.
+*Fokus: Ytterligere stabilisering og påstartet kompetanseoverføring fra Island til Norge
+*Risiko: FM leverandørene har meldt seg på veldig sent til godkjenning. Utrulling av virksomheter vil garantert fortsette i 2026
+
+
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag[Januar]tag[2026]tag[Sentral forskrivningsmodul i 2026]]">>
+
+! Prognose på penger og ressurser (runrate 12mnd, uten medlemsavgift)
+
+Inntekter
+
+* Finansiering: Inntektsramme for SFM på 64,4mnok. Budsjett 61,2 mnok. 
+* Runrate  helår basert på regnskap 58,0 
+* Prognose helår på 63,8 mnok. 
+ 
+Kostnader:
+
+* Initielt budsjett: 58,17 mnok
+* Runrate basert på regnskap: 55,9mnok
+* Prognose helår 60,6 mnok
+
+Vi har et avvik på 2,5mnok i økte kostnader. Interne tjenester er ned 300k mens plattformkosten er økt med 20% tilsvarende 2,8 mnok. Dette pga ny prismodell som ikke var tatt høyde for i høst.
+Kapasiteten ellers i teamet er som forventet.
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark653d46c1659b4733c1ea">Oversikt SFM drift og forvaltning (Power BI)</a>
+
+
+
+

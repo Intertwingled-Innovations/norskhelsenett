@@ -1,0 +1,26 @@
+created: 20260527124847111
+modified: 20260527125508887
+revision: 3
+tags: 
+title: Norsk Helsenett SF 2024
+type: text/vnd.tiddlywiki
+
+Vi gjør helseinformasjon og digitale tjenester tilgjengelig – trygt, enkelt og relevant
+
+Slik hjelper vi innbyggerne med å mestre sin egen helsehverdag, helsesektoren til å yte gode helsetjenester, forskerne til å utvikle ny kunnskap og næringslivet til å levere sine tjenester for bedre helse. Vi forenkler arbeidsdagen til helseforvaltningen slik at de kan samle seg om sitt samfunnsoppdrag.
+
+! Rolle 2024
+<<list-links filter:"[tag[Rolle]tag[2024]]">>
+
+!Tiltak 2024
+<<list-links filter:"[tag[Tiltak]tag[2024]]">>
+
+! Oppfølging og Rapportering 2024
+<<NHN-current-liste-levert type:"OppfølgingOgRapportering" aar:"2024">>
+
+!Satsning for fart 2024
+<<list-links filter:"[tag[Satsning for fart 2024]tag[2024]]">>
+
+!Fora
+<<list-links filter:"[tag[Fora]tab<current§>]">>
+* SamUT er avviklet. Det arbeides med å sette opp en ny arena for kommunikasjon/diskusjon rundt meldingsutveksling i helsenettet . Vi konsulterer med Legeforeningen, Leverandører og Helsedirektoratet for å finne et format som gir mening. Work in progress!

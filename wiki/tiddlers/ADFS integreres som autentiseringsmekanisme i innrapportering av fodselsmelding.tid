@@ -1,0 +1,19 @@
+created: 20240805123236418
+modified: 20241211112006800
+revision: 0
+tags: [[Innrapportering av fødselsmelding]] 2024 Målsetting
+title: ADFS integreres som autentiseringsmekanisme i innrapportering av fødselsmelding
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+Dagens innlogging er basert på ADFS og dette er en løsning som eies og administreres av helseforetakene.
+
+Ved separering av frontend og backend er det behov for endringer knyttet til autentiseringen i backend.
+
+!! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+!! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

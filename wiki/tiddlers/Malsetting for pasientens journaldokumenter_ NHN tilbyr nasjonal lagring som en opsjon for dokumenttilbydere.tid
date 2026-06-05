@@ -1,0 +1,15 @@
+created: 20250707090234051
+modified: 20260330070845619
+revision: 0
+tags: [[Kjernejournal Pasientens journaldokumenter]] Målsetting 2025
+title: Målsetting for pasientens journaldokumenter: NHN tilbyr nasjonal lagring som en opsjon for dokumenttilbydere
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+Dokumenttilbydere skal kunne dele sine journaldokumenter via opplasting til et nasjonalt dokumentlager
+
+! Resultat
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

@@ -1,0 +1,8 @@
+created: 20240805123525455
+modified: 20241211112043620
+revision: 0
+tags: [[Web-grensesnittet for innrapportering av fødselsmelding baseres på rammeverket React]] Resultat
+title: Resultat for innrapportering av fødselsmelding: Koden for Web-grensesnittet blir enklere og billigere å vedlikeholde
+type: text/vnd.tiddlywiki
+
+Når koden blir skrevet og modernisert i et kjent rammeverk blir det enklere å få ulike utviklere til å forvalte løsningen. Det vil dermed være mulig å foreta raskere endringer , og forvaltningen blir billigere.

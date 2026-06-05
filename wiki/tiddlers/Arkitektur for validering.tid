@@ -1,0 +1,11 @@
+created: 20241110191617190
+modified: 20250515084953098
+revision: 0
+tags: [[Modernisering av reseptformidleren]] Resultat 2025 Februar
+title: Arkitektur for validering
+type: text/vnd.tiddlywiki
+
+Når det skal innføres mange nye valideringer må det være utarbeidet en arkitektur som håndterer dette på en skalerbar måte slik at krav til ytelse/svartider overholdes.
+
+Valideringer må samles, i dagens løsning er valideringer spredt i kodebasen og enkelte valideringer er kodet flere ganger. Dette skal det ryddes opp i.
+

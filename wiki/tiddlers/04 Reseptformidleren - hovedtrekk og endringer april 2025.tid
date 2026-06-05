@@ -1,0 +1,35 @@
+created: 20250505083302434
+modified: 20250619131332320
+revision: 0
+tags: Reseptformidleren [[Styring Ekstern tjeneste]] 2025 April
+title: 04 Reseptformidleren - hovedtrekk og endringer april 2025
+type: text/vnd.tiddlywiki
+
+Hovedtrekk og endringer
+
+Vi har hatt mindre to mindre leveranser ("mellomleveranser") i april. Mellomleveranser medfører ikke nedetid eller driftsforstyrrelser.
+
+Modernisering
+
+* Videre arbeid med valideringer pågår både internt og i samarbeid med aktørene, med hovedfokus på pasientsikkerhet.
+* Modernisert valideringskomponent er i test og leveres i hovedleveranse 2 den 14.juni. Denne legger til rette for at det er lett å legge til nye valideringer fremover. Flere nye validering har fått leveransedato.
+* Vi har startet arbeidet med å ta i bruk auditlog tjenesten i samhandlingsplattformen og har etablert et fokusteam for dette arbeidet. Juridiske avklaringer går i parallell med ROS og arbeid med løsningsbeskrivelse.
+* Pasientens legemidler skal sørge for utfasing av eksisterende KJ infotjenester legemiddel API så raskt som mulig. Det er backend delen som blir erstattet først. Fokusteamet har en full gjennomgang for å sørge for at prioriteringene støtter dette.
+* Kubernetes - reseptformidleren er testet i Kubernetes med godt resultat. Vi vil arbeide videre med et beslutningsgrunnlag for veien videre. Dette gjør vi i tett samarbeid med APT og driftsteamet.
+* Bidrag til svar på læringsrapport fra A-2/Safetec om hendelse med feil i dosering.
+
+Sikkerhet
+
+* Vi vil avvikle støtte for eldre kryptoalgoritmer og SHA1 før sommeren.
+* Fiks for å håndtere sårbarhet i HelseID ble prodsatt den 30.april.
+* Forbedret validering av utleverere. Dette skal innføres i november 2025, apotek stiller spørsmål ved om det er nødvendig. Vi har utarbeidet et grundig svar. Bandasjister er positive.
+
+Prognose på penger og ressurser
+
+Pådrag forvaltning takter noe under rammen, men dette er som forventet pt. Drift ligger foreløpig over budsjett, men det er iverksatt en rekke tiltak ift lagring for å redusere driftskost. Dette er forventet å få effekt fra april/mai, men drift vil fortsatt ligge noe over budsjett.
+
+Arbeidet med å ta frem beslutningsgrunnlag for en eventuell migrering til Kubernetes plattform vil øke pådraget noe, dette blir et samarbeid med driftsteamet og APT fagressurser.
+
+Totalt vil drift og forvaltning være godt innenfor rammen for året og det kan bli aktuelt med tilbakebetaling.
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarkab9171eafbc4217a5bac">Oversikt Reseptformidleren (Power BI)</a>
+

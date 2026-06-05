@@ -1,0 +1,14 @@
+created: 20251218083928583
+modified: 20260430093446816
+revision: 0
+tags: 2025 [[Autentisering og autorisasjon]] [[Tilby verktøy som effektiviserer og kvalitetssikrer bruken av HelseID]] Leveranse
+title: 11/25 -Forenklet bredding av digitale tjenester. HelseID innfører biblioteker
+type: text/vnd.tiddlywiki
+
+HelseID-biblioteket er en samling kodebiblioteker utviklet for å forenkle integrasjon med HelseID, spesielt for utviklere som jobber med autentisering og autorisasjon i helsesektoren. 
+
+Bibliotekene støtter protokoller som OAuth2 og OpenID Connect, og er laget for å håndtere utvidelser og bruksmønstre som ikke nødvendigvis støttes direkte i alle språkplattformer.
+Bibliotekene gjør det  lettere å kode riktig og sikkert i kommunikasjon mot HelseID.
+
+Å benytte biblioteket vil redusere tidsbruk og kost hos leverandører samtidig som sikkerheten styrkes, dette fører også til enklere kodegjennomgang med HelseID"
+

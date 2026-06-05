@@ -1,0 +1,30 @@
+TjenesteID: 40027
+created: 20240128165343202
+modified: 20260511184612298
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] [[Domene Samhandlingsplattform]] Virksomhet 2026
+title: Virksomhet
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+
+Team Virksomhet er et leveranseteam bestående av 4 utviklere og en lærling som i samarbeid med team Personell jobber på Grunndataplattformen. Grunndata er et sett av registre og en forutsetning for elektronisk samhandling i Helse-Norge. Tilgang til registrene skjer primært gjennom API, men det er også mulig å søke og oppdatere informasjon via webgrensesnitt.
+
+Virksomhet har ansvar for de registrene som inneholder virksomhetsrelatert informasjon, bl.a. gjennom adresseregisteret, organisasjonsregisteret, lokasjonsregisteret og register for enheter i spesialhelsetjenesten (RESH). 
+
+Grunndataplattformen er etablert på egne fysiske servere med en felles database, men går nå gjennom en transisjon der de ulike registrene løsrives fra felles plattform med API-tilgang basert på SOAP-API. Det etableres nå dedikerte mikrotjenester for de ulike behovene som baserer seg på containerteknologi i privat sky. Tilgang til registrene skal primært skje via REST-API. Mye av jobben med å fornye registerplattformen er å vurdere hvilket register som er primærkilde for data, og hvilken informasjon man kan og bør berike andre registre med og i motsatt fall hvilke data skal man ikke lenger utlevere gjennom de ulike API'ene.
+
+! Målsettinger
+<<list-links filter:"[tag[Målsetting]tag<currentTiddler>]">>
+
+!Leveranser
+!! 2026
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>
+
+! Styring
+!! 2026
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag<currentTiddler>]">>
+
+!! 2024
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2024]tag<currentTiddler>]">>

@@ -1,0 +1,28 @@
+created: 20260310132112340
+modified: 20260508101345117
+revision: 0
+tags: [[Velferdsteknologisk knutepunkt]] [[Divisjon Helsepersonell]] [[Styring Ekstern tjeneste]] 2026 Februar
+title: 02 Velferdsteknologisk knutepunkt - hovedtrekk og endringer februar 2026
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+Arbeidet med å skrive om VKP til frittstående informasjonstjenester i full gang.
+
+3 utviklere (team KOMSAT) jobber full tid med dette arbeidet, fullt fokus på Journalføringstjenesten og prod med Bodø i uke 16.
+
+Team VKP server eksisterende VKP-kommuner, og bistår i arbeid med reverse-proxy løsning for å slippe endringer på VFT/DHO systemsiden samtidig med EPJ-siden.
+
+
+
+! Prognose på penger og ressurser
+*Finansiering: Medlemsinntekt
+* Ramme: 28,4 MNOK
+
+På track ift budsjett og ramme.
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarkfeea3d895ff89eaee682">Oversikt VKP (Power BI)</a>
+
+

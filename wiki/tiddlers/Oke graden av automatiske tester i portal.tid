@@ -1,0 +1,15 @@
+TjenesteID: 40023
+created: 20260331084242953
+modified: 20260409115249259
+revision: 0
+tags: [[Melde.no oppsummert 2026]] Målsetting 2026 Melde.no
+title: Øke graden av automatiske tester i portal
+type: text/vnd.tiddlywiki
+
+For å sikre kvaliteten i portalen vil vi øke graden av automatisk tester.
+
+! Resultat
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

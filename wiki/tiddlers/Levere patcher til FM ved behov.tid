@@ -1,0 +1,12 @@
+created: 20250206111517364
+modified: 20260408085632635
+revision: 0
+tags: [[Forsvarlig forvaltning av Forskrivningsmodulen]] 2025 [[Forskrivningsmodulen 2024-2025]] Resultat [[Team FM]]
+title: Levere patcher til FM ved behov
+type: text/vnd.tiddlywiki
+
+FM versjon 4.15 er siste planlagte versjon av FM. Etter det vil det bli noen leveranser der vi retter produksjonssaker og eventuelle feil ved behov frem til avvikling.
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

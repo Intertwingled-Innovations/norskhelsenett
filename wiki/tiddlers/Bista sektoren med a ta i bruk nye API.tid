@@ -1,0 +1,18 @@
+TjenesteID: 40029
+created: 20260331083512571
+modified: 20260409123407500
+revision: 0
+tags: Personell 2026 Målsetting
+title: Bistå sektoren med å ta i bruk nye API
+type: text/vnd.tiddlywiki
+
+Vi bistår sektoren med å ta i bruk nye REST-API etterhvert som disse tilgjengeliggjøres. 
+
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranse
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

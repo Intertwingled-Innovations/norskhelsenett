@@ -1,0 +1,30 @@
+TjenesteID: 40055
+created: 20260430073640820
+modified: 20260506055533808
+revision: 0
+tags: [[Divisjon Helsepersonell]] 2026 Utviklerportalen [[Intern tjeneste]] [[Styring Intern tjeneste]] April
+title: 04 Utviklerportalen - hovedtrekk og endringer april 2026
+type: text/vnd.tiddlywiki
+
+<<list-links filter:"[tag[]tag[Tiltak]]">>
+
+! Hovedtrekk og endringer
+
+* Umbraco oppgradert til versjon 17.3.0 — oppdatering av CMS-plattformen til nyeste versjon for forbedret stabilitet og sikkerhet, inkludert ny bygg av backoffice-dashbordkomponentene                              * Forbedret CORS-varsling i Swagger-verktøyet — CORS-sjekk utføres nå automatisk ved sidelast, med bedre layout på varslingen og validering av teststi-input for å hindre ugyldige oppslag                           * Fiks av DPoP-autorisasjonsfeil — rettet bug der scope inneholdt https:-prefiks, som forårsaket feil ved bruk av testtokenverktøyet mot API-er med DPoP-krav
+* Forbedringer i pipeline og avhengigheter — dashbord-bygg er flyttet inn i CI/CD-pipeline, oppdatert CI-template, og lagt til sikkerhetshåndtering for Handlebars-sårbarhet (CVE)
+ * Fortalte om støtte for flere språk på Utviklerportalen i "Åpen fredag"
+
+MÅLSETTING
+
+
+
+RESULTAT
+
+
+
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 3''
+
+Konsekvens av forretningsmessig endring: 1
+
+

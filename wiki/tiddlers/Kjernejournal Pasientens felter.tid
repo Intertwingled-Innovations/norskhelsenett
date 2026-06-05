@@ -1,0 +1,39 @@
+TjenesteID: 40172
+created: 20260412132351578
+modified: 20260414121435007
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] [[Domene Samhandlingsplattform]] 2026 [[team HIT]]
+title: Kjernejournal Pasientens felter
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+Pasientens felter er en informasjonstjeneste under kjernejournal som gir følgende informasjon om pasienten:
+* Pasientens donorkort
+* Pasientens spesielle kommunikasjonsbehov
+* Pasientens egenregistrerte sykdommer
+* Pasientens kontaktpersoner
+
+! Målsettinger
+!! 2026
+
+<<list-links filter:"[tag[Målsetting]tag[2026]tag<currentTiddler>]">>
+
+
+! Resultat
+!! 2026
+
+<<list-links filter:"[tag[Resultat]tag[2026]tag<currentTiddler>]">>
+
+
+
+! Leveranser
+!! 2026
+
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>
+
+
+! Styring
+!! 2026
+!!! Ekstern tjeneste
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag<currentTiddler>]">>
+

@@ -1,0 +1,20 @@
+TjenesteID: 40060
+created: 20260326092344225
+modified: 20260504111022929
+revision: 0
+tags: [[Divisjon Helsepersonell]] 2026 [[Intern tjeneste]]
+title: DHP-Satsninger
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+
+Satsninger er Departementets Satsning Digital samhandling og Norsk helsenett sin Satsning for fart.
+Digital samhandling har i 2026 fem tiltak pluss Digitalt helsekort for gravide, og departementet lager årlige mandater.
+Satsning for fart har i 2026 fire tiltak.
+Satsningene følges opp av Team sats ved et sørge for-ansvar.
+
+! Målsettinger
+Målsettinger for Satsning Digital samhandling settes av departementet, og av NHN for Satsning for fart.
+
+<<list-links filter:"[tag[Målsetting]tag[2026]tag<currentTiddler>]">>
+

@@ -1,0 +1,26 @@
+TjenesteID: 40056
+created: 20260407212942486
+modified: 20260508095601111
+revision: 0
+tags: [[Divisjon Helsepersonell]] 2026 Mandater [[Pasientens måledata]] Tiltak
+title: Pasientens måledata 2026
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+
+Tiltaket pasientens måledata skal samle og tilgjengeliggjøre måledata for pasienter som mottar digital oppfølging i helse- og omsorgstjenesten. Tjenesten skal sikre helsepersonell enkel tilgang til oppdatert informasjon om pasientens status og dermed skape bedre informasjonsflyt på tvers av helsepersonell og ulike helsevirksomheter som samarbeider om en pasient. Tiltaket prøves ut i helsefellesskap der spesialisthelsetjenesten, kommunehelsetjenesten og fastlege samarbeider om pasienter som mottar digital oppfølging.
+
+Pasientens måledata vil benyttes i sammenheng med Pasientens planer.
+"Nye VKP" vil også inkludere PMD som en del av tjenestetilbudet for deling internt i en kommune.
+
+!Målsettinger
+<<list-links filter:"[tag[Målsetting]tag[Pasientens måledata]tag[2026]]">>
+
+!Resultater
+<<list-links filter:"[tag[Resultat]tag[Pasientens måledata]tag[2026]]">>
+
+!Leveranser
+<<list-links filter:"[tag[Leveranse]tag[Pasientens måledata]tag[2026]]">>
+
+!Styringsrapporter
+<<list-links filter:"[tag[Styring Tiltak]tag[Pasientens måledata]tag[2026]]">>

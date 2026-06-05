@@ -1,0 +1,8 @@
+created: 20250515062446791
+modified: 20260505053852588
+revision: 0
+tags: [[Tjenesten HelseID skal lukke alle risikoelementer med risikonivå alvorlig]] Leveranse [[Autentisering og autorisasjon]] 2025 Mai
+title: 05/25 - Sikkerheten i HelseID økes - støtter ikke lengre klienter som ikke benytter PKCE
+type: text/vnd.tiddlywiki
+
+Etter tett oppfølging av leverandører kan vi endelig avvise HelseID-klienter som ikke har støtte for PKCE. PKCE (Proof Key for Code Exchange) er sikkerhetsmekanisme som forhindrer uautoriserte parter fra å få tilgang til sensitive opplysninger, noe som er avgjørende for å opprettholde tillit og sikkerhet i våre tjenester.

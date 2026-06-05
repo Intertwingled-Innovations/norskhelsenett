@@ -1,0 +1,16 @@
+created: 20240206092459032
+modified: 20240702120239438
+revision: 0
+tags: [[Sentral forskrivningsmodul]] 2024 Målsetting [[Team SFM]] [[Tiltaket pasientens legemiddelliste]]
+title: Stabilisering og forbedring av tjenesten for å kunne håndtere produksjon for alle fastlegekontorer
+type: text/vnd.tiddlywiki
+
+Dette innebærer forbedringer i arkitektur, implementasjon og deployment - kode, prosesser og ansvar.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

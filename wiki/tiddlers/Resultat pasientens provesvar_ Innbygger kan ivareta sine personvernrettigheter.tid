@@ -1,0 +1,23 @@
+created: 20240816085655535
+modified: 20260330104413527
+revision: 0
+tags: Resultat [[Kjernejournal Pasientens prøvesvar]] [[Målsetting for pasientens prøvesvar: Innbyggere kan se sine prøvesvar i helsenorge, inkludert sette tilgangsbegrensninger]]
+title: Resultat pasientens prøvesvar: Innbygger kan ivareta sine personvernrettigheter
+type: text/vnd.tiddlywiki
+
+Mål: Etablere funksjonalitet for oppstart helsehjelp av pasientens prøvesvar
+
+Levert:
+
+* Innbygger kan via helsenorge reservere seg mot at prøvesvar blir lagret i kjernejournal
+* Innbygger kan via helsenorge sperre prøvesvar fra å bli tilgjengelig for alt helsepersonell
+* Innbygger kan via helsenorge sperre prøvesvar tatt i en gitt periode fra å bli tilgjengelig for alt helsepersonell
+* Innbygger kan via helsenorge blokkere prøvesvar fra å bli tilgjengelig for spesifikt helsepersonell
+* Innbygger kan se innsynslogg for prøvesvar i helsenorge
+
+
+Ikke levert:
+
+Effekt sektoren: 
+
+* Pasienten kan ivareta sine perosnvernrettigheter ved å logge inn på helsenorge.no

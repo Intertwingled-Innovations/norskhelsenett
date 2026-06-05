@@ -1,0 +1,50 @@
+created: 20260306095038808
+modified: 20260407091338666
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Styring Ekstern tjeneste]] 2026 Februar [[Sentral forskrivningsmodul i 2026]]
+title: 02 SFM drift og forvaltning - hovedtrekk og endringer februar 2026
+type: text/vnd.tiddlywiki
+
+
+! Hovedtrekk og endringer 
+*Status leveranser: God fart på godkjenningsprosessen av leverandører  og utviklingen av funksjonalitet i 2026 er godt i gang
+*Status teknisk: Modernisering og etablering av nytt design for løsningsmønster er påstartet
+*Status personell: En del sykdom i forvaltningsteamet. Påstartet anskaffelse av to konsulenter for å starte kompetanseoverføringen til Norge
+*Fokus: Ytterligere stabilisering og påstartet kompetanseoverføring fra Island til Norge
+*Risiko: FM leverandørene har meldt seg på veldig sent til godkjenning. Utrulling av virksomheter vil garantert fortsette i 2026
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag[Februar]tag[2026]tag[Sentral forskrivningsmodul i 2026]]">>
+
+! Prognose på penger og ressurser (runrate 12mnd, uten medlemsavgift)
+
+Inntekter
+
+* Finansiering: Inntektsramme for SFM på 64,4mnok. Budsjett 61,2 mnok. 
+* Runrate helår basert på regnskap 59,9 mnok 
+* Forrige runrate helår basert på regnskap 58,0 
+* Prognose helår på 63,7 mnok. 
+* Forrige prognose helår på 63,8 mnok. 
+
+ 
+Kostnader:
+
+* Initielt budsjett: 58,17 mnok
+* Runrate basert på regnskap: 57,9mnok
+* Forrige runrate basert på regnskap: 55,9mnok
+* Prognose helår 60,5 mnok
+* Forrige prognose helår 60,6 mnok
+
+Runrate opp 2mnok, prognose er stabil. Vi har en ytterligere økning av drifsplattform. Og dette ser ut som er ute av kontroll. tjenesten er blitt fakurert for OpenBao i Januar og februar, odet er er ikke justert. Videre har prognosen ikke tatt høyde for at vi nå er ute av Vault. Dette tilsvarer 4 mnok.
+
+''Vi har altså en økning i plattform på nærmere 35 %''
+
+Kapasiteten ellers i teamet er som forventet.
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark653d46c1659b4733c1ea">Oversikt SFM drift og forvaltning (Power BI)</a>
+
+
+
+

@@ -1,0 +1,8 @@
+created: 20260204115635153
+modified: 20260513095001681
+revision: 0
+tags: [[Autentisering og autorisasjon]] Selvbetjening 2026 Resultat [[Tilby verktøy som effektiviserer og kvalitetssikrer bruken av HelseID]]
+title: HelseID implementerer kjøretidssjekk for multitenant-systemer
+type: text/vnd.tiddlywiki
+
+Det skal være mulig for tjenesteeiere i Norsk helsenett å sjekke i kjøretid hvilke av medlemmene som har bestilt tilgang til deres APIer og hvilke av eksisterende brukere av tjenestene som har tilgang, men ikke har gjennomført bestilling av tjenesten etter nye vilkår. 

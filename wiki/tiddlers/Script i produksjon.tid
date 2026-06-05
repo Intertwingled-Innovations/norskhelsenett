@@ -1,0 +1,9 @@
+created: 20260512075628751
+modified: 20260512081840770
+revision: 0
+tags: [[Virksomheter skal kunne hente ut oversikt over hvem som har lest hvilke journaldokumenter fra helsevirksomheten]] [[Kjernejournal Pasientens journaldokumenter]] 2026 Juni Leveranse [[Script i produksjon]]
+title: Script i produksjon
+type: text/vnd.tiddlywiki
+
+!Leveranse
+Det er etablert et script som kjøres i produksjon. Scriptet er etablert i dialog med sektor og inneholder algoritmer for å avdekke mistenkelige oppslag.

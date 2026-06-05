@@ -1,0 +1,57 @@
+created: 20250214080802758
+modified: 20260112161336374
+revision: 0
+tags: [[Tiltaket pasientens legemiddelliste]] 2025 Oppgave [[Tiltaket pasientens legemiddelliste 2025]] Levert
+title: Være en pådriver for at helsetjenesten og prøver ut og innfører SFM
+type: text/vnd.tiddlywiki
+
+!! NHN Oppgave 2025
+
+Norsk helsenett er en pådriver for utprøving og innføring av SFM ved å  
+
+* 1) videreutvikle SFM slik at den kan godkjennes for innføring i kommunal pleie og omsorg. 
+* 2) tilrettelegge for test og godkjenning av leverandører etter hvert som de er klare. 
+* 3) kontinuerlig videreutvikle og forbedre prosessene for integrasjon med SFM og godkjenning av leverandører.
+
+!! Leveranser:
+
+
+1) Status videreutvikling av SFM:
+SFM har allerede utviklet funksjonalitet for kommunal pleie- og omsorgstjeneste som er i utprøving i noen kommuner.  
+NHN videreutvikler funksjonalitet skjer løpende i hht prioritert behov.
+
+
+
+2) Status test og godkjenning av leverandører:
+Norsk helsenett tilrettelegger for test og godkjenning av leverandører etter hvert som de er klare:
+
+__Sykehus:__ 
+DIPS Arena Medikasjon med PLL ble godkjent av NHN i Q1 - Alle sykehus i Helse Nord er nå over på denne versjonen av DIPS, og i gang med PLL utprøvingen. I Helse Vest breddes er samme versjon innført for sykehus, og benyttes for PLL i Bergensområdet.
+
+Helseplattformen som benytter SFM BasisAPI har fra august til desember gjennomført en stor test og godkjenning for e-multidose, sammen med NHN.
+
+__Fastleger:__ 
+Alle EPJ-leverandører for fastleger er nå godkjent for SFM fullversjon. I tillegg er Pridoc nå godkjent med funksjonalitet for e-multidose og PLL. Kun Webmed har innført SFM for alle sine fastlegekontorer, mens de andre leverandørene er i oppstart for utprøving/innføring for sine virksomheter. 
+
+__Kommuner:__ 
+Alle EPJ leverandører som leverer til kommunene er godkjent for bruk av SFM. Innføring av SFM er ikke kommet godt i gang for kommunene ennå. To av leverandørene er i utprøving i noen kommuner, og den tredje er teknisk klar for utprøving i en kommune i nord.
+
+Det gjenstår fortsatt migrering fra den gamle forskrivningsmodulen (FM) til SFM for tre kommuner, inn mot en EPJ leverandør. Dette vil først kunne gjennomføres når EPJ leverandøren har videreutvikling tilpasninger for migreringen.
+
+
+
+
+3) Norsk helsenett forbedrer kontinuerlig prosessen for test og godkjenning av SFM.
+
+<<list-links filter:"[tag[Leveranse]tag[2025]tag<currentTiddler>]">>
+
+
+!! Hva er levert:
+
+I tillegg til test og godkjenning for SFM er det levert veiledning og opplæringsmateriell for SFM til leverandørene. De har ansvaret for opplæring av aktuelle legekontorer for ibruktagelse av SFM.
+
+
+!! Hvilken verdi har dette gitt til sektoren:
+
+Ved tilgang til og bruk av SFM får virksomhetene en nasjonal  legemiddelmodul som gir helsepersonell en sentralisert og oppdatert oversikt over pasientens legemiddelbehandling, direkte i journalsystemet. Helsepersonell får god støtte i legemiddelhåndteringen, trygt og sikkert. SFM inneholder også funksjonalitet for e-multidose og pasientens legemiddelliste (PLL)
+

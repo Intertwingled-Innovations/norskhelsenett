@@ -1,0 +1,37 @@
+created: 20260505103717945
+modified: 20260505104244899
+revision: 0
+tags: [[Tjeneste oppsummert]] [[Kjernejournal Pasientens legemidler]] 2026
+title: Kjernejournal Pasientens legemidler oppsummert 2026
+type: text/vnd.tiddlywiki
+
+!Beskrivelse av tjenesten
+
+[[Kjernejournal Pasientens legemidler|Kjernejournal Pasientens legemidler]]
+
+! Målsettinger
+
+
+
+<<list-links filter:"[tag[Målsetting]tag[2026]tag[Kjernejournal Pasientens legemidler]]">>
+
+
+! Resultat
+
+
+<<list-links filter:"[tag[Resultat]tag[2026]tag[Kjernejournal Pasientens legemidler]]">>
+
+
+
+! Leveranser
+
+
+
+<<list-links filter:"[tag[Leveranse]tag[2026]tag[Kjernejournal Pasientens legemidler]]">>
+
+
+! Styring
+
+
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag[Kjernejournal Pasientens legemidler]]">>
+

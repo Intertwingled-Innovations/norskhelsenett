@@ -1,0 +1,30 @@
+TjenesteID: 40034
+created: 20260212065928463
+modified: 20260503104018996
+revision: 0
+tags: Reseptformidleren [[Styring Ekstern tjeneste]] 2026 Januar Styring
+title: 01 Reseptformidleren - hovedtrekk og endringer januar 2026
+type: text/vnd.tiddlywiki
+
+!Hovedtrekk og endringer
+
+
+Tilgang til apotekløsning er fortsatt ikke etablert og vi kan dermed ikke gjennomføre ende til ende tester ved nye leveranser. Dette medfører en noe høyere risiko. Vi har fått tilbud på et EIK testmiljø, men mangler en utleverer løsning. Vi har dialog med Sykehusapotekene som er positive til å la oss bruke sin løsning (Orion). Det er imidlertid vanskelig å få fremdrift i saken hos Sykehusapotekene.
+
+
+!Modernisering
+*Pasientens legemidler (PLM) skal sørge for utfasing av eksisterende KJ infotjenester legemiddel API så raskt som mulig. Det er backend delen som blir erstattet først. Fase 1 vil fase ut komponenter basert på Oracle Service Bus og var planlagt levert i oktober 2025. Dette krever ikke endringer hos konsumentene (som er SFM og HP i hovedsak). Feil avdekket i akseptansetest medfører at vi er ytterligere forsinket og vil ikke være i produksjon ila 2025. Ny dato må fastsettes, mål om tidlig 2026.
+* Arbeid med å ta i bruk Etterkontroll tjenesten pågår, vi har behov for noen tilpasninger som vi er i dialog med etterkontroll tjenesten om. Vi har ikke tilstrekkelig detaljerte opplysninger i vår historikk til at vi kan migrere det året med innsyn vi har i rf til etterkontroll tjenesten. Det kan bety at vi må kjøre dobbelt inntil 1 år hvis tilbudet ikke skal bli dårligere enn idag.
+*Data til sekundærbruk. Vi har fått et oppdrag om å etablere en slik løsning der vi deler anonyme data.
+*Hdir opprettholder sin bestilling på statistikk/rapporter de ønsker om forskrivningspraksis og status innføring av PLL. Majoriteten av behovene forutsetter spørringer på et fullt datasett fra reseptformidleren. Vi tar frem løsningsalternativ med tilhørende kost for etablering og drift.
+*Vi jobber videre med systemdesign iht løsningsmønster i samhandlingsplattformen etter avstemming med PO Odd Martin før jul.
+*EHDS - forslag til forretningsregler for oversetting fra en resept (M1) til en ePrescription i samarbeid verdikjede e-resept er under arbeid og ble diskutert med Hdir før jul.
+
+
+!Sikkerhet
+*Alle tekniske krav og sikkerhetskrav til aktører som vil ta i bruk reseptformidleren er gjennomgått og er samlet på ett sted; utviklerportalen.
+*Validering av utleverers sertifikat er ikke aktivert som planlagt den 15.november 2025. Apotek 1 er nå klare og valideringen vil aktiveres den 28/2.
+
+
+!Prognose på penger og ressurser 
+

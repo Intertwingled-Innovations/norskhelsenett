@@ -1,0 +1,34 @@
+TjenesteID: 40066
+created: 20260325131242853
+modified: 20260414110730491
+revision: 0
+tags: Styring [[Divisjon Helsepersonell]] 2026 [[Styring Relatert tjeneste]] Etterkontroll Mars [[Forretningsmessig endring:1]]
+title: 03 Etterkontroll - hovedtrekk og endringer mars 2026
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+*Ny implementasjon av tjenesten skrevet om til .Net prodsettes nå. Dette er utgangspunktet for å kunne tilby API for å motta etterkontroll-data fra eksterne
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 1''
+
+Konsekvens av forretningsmessig endring: Ingen vesentlige endringer.
+
+! Prognose på penger og ressurser
+
+* Er en relatert tjeneste som finansieres med forskriftsfestede midler hentet fra alle nasjonale e-helseløsninger innad i divisjon Helsepersonell.
+* Budsjett 7,6 mnok
+* Opprinnelig ramme: 7,5 mnok. Her har vi muligheter til å utvide ramme da vi har handlingsrom innenfor tjenestene. Ingen overskridelser totalt sett på de nasjonale e-helseløsningene. Likevel usikkert om det blir nødvendig, 
+* Prognose for året: 8,4 mnok
+* Runrate for året: 9,2 mnok
+* Noe høyere timepådrag enn budsjettert. Forventer at det justeres i forbindelse med pappapermisjon. 
+* Langt høyere plattformkostnader enn budsjettert, må ettergå om dette er riktig.
+* Aktiviteten hittil i år er som planlagt, med fokus på omskriving av tjenesten til .Net. 
+* Det er planlagt pappapermisjon både på en utvikler og på APO. Planlegger ikke vikarbruk i forbindelse med dette. Ellers er teamet bemannet som ønsket. 
+
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=0fd501ad513bcd1afd12">Oversikt Etterkontroll</a>
+

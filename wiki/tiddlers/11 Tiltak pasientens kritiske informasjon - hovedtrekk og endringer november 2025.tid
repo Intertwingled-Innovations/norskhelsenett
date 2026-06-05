@@ -1,0 +1,33 @@
+created: 20251210071431461
+modified: 20260330070944489
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Styring Tiltak]] [[Tiltaket pasientens kritiske informasjon]] 2025 [[Tiltaket pasientens kritiske informasjon 2025]] [[Kjernejournal Pasientens kritiske informasjon]] November
+title: 11 Tiltak pasientens kritiske informasjon - hovedtrekk og endringer november 2025
+type: text/vnd.tiddlywiki
+
+<<list-links filter:"[tag[Tiltaket pasientens kritiske informasjon]tag[Tiltak]tag[2024]]">>
+
+! Hovedtrekk og endringer
+
+
+!!! Være pådriver for at leverandørene til sykehus og fastleger tar i bruk API for kritisk info
+* Gjennomføres på kontinuerlig basis og er tett knyttet som arbeidet som gjøres i ordinær forvaltning. 
+** Funksjonalitet er implementert i Dips Arena og produksjonssatt i Helse Vest
+** Pridok er foreløpig eneste fastlegeleverandør som har integrert mot tjenesten og er i produksjon
+** Aidn er foreløpig eneste kommuneleverandør som har integrert mot tjenesten og er i produksjon
+
+
+!!! Tilrettelegge for at kjernejournal blir hovedkilde til kritisk informasjon
+* Dette innebærer at kjernejournal blir hovedkilde for legemiddelreaksjoner.
+** SFM har utvilet integrasjon mot API'et. Det betyr at alle legemiddelreaksjoner hentes av SFM fra kritisk info, samt at alle legemiddelreaksjoner som registreres i SFM blir registrert i kritisk info
+
+
+! Prognose på penger og ressurser
+
+* Divisjon Helsepersonell har brukt 0.2 mnok. Prognose for året nedjusteres til 0.5 mnok vs en ramme på 5.3 mnok. Årsaken er at oppgavene i mandatet i stor grad overlapper med oppgaver som utføres i ordinær drift og forvaltning.
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection343a8851705d1cfe8125?experience=power-bi&bookmarkGuid=Bookmark3c226c177680695291e1">Oversikt Pasientens kritiske informasjon (Power BI)</a>
+
+
+
+

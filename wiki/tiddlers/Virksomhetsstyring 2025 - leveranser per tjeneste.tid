@@ -1,0 +1,65 @@
+created: 20251014072734948
+modified: 20251014131802838
+revision: 0
+tags: 
+title: Virksomhetsstyring 2025 - leveranser per tjeneste
+type: text/vnd.tiddlywiki
+
+
+! Eksterne tjenester
+
+<<list-links tag:"Styring Ekstern Tjeneste">>
+
+! Interne tjenester
+
+<<list-links tag:"Styring Intern tjeneste">>
+
+
+!! Eksterne tjenester
+<<list filter="[tag[Ekstern tjeneste]sort[title]]">>
+
+!! Interne tjenester
+<<list filter="[tag[Intern tjeneste]sort[title]]">>
+
+
+!! Leveranser for Melde.no
+<<list filter="[tag[Melde.no]tag[Leveranse]sort[created]]">>
+<<list filter="[tag[Leveranse]]">>
+
+
+! Leveranser i 2025
+!! Januar
+<<NHN-liste type:"Leveranse" aar:"2025" maaned:"Januar">>
+!! Februar
+<<NHN-liste type:"Leveranse" aar:"2025" maaned:"Februar">>
+!! Mars
+<<NHN-liste type:"Leveranse" aar:"2025" maaned:"Mars">>
+!! April
+<<NHN-liste type:"Leveranse" aar:"2025" maaned:"April">>
+!! Mai
+<<NHN-liste type:"Leveranse" aar:"2025" maaned:"Mai">>
+!! Juni
+<<NHN-liste type:"Leveranse" aar:"2025" maaned:"Juni">>
+<<NHN-liste type:"Leveranse" aar:"2025" maaned:"juni">>
+!! Juli
+<<NHN-liste type:"Leveranse" aar:"2025" maaned:"Juli">>
+<<NHN-liste type:"Leveranse" aar:"2025" maaned:"juli">>
+!! August
+<<NHN-liste type:"Leveranse" aar:"2025" maaned:"August">>
+<<NHN-liste type:"Leveranse" aar:"2025" maaned:"august">>
+!! September
+<<NHN-liste type:"Leveranse" aar:"2025" maaned:"September">>
+!! Oktober
+<<NHN-liste type:"Leveranse" aar:"2025" maaned:"Oktober">>
+!! November
+<<NHN-liste type:"Leveranse" aar:"2025" maaned:"November">>
+!! Desember
+<<NHN-liste type:"Leveranse" aar:"2025" maaned:"Desember">>
+
+! Oppfølging og rapportering i 2025
+
+<<NHN-liste-levert type:"OppfølgingOgRapportering" aar:"2025">>
+
+! Oppgaver i 2025
+
+<<NHN-liste-liste-levert type:"Tiltak" undertype:"Oppgave" aar:"2025">>

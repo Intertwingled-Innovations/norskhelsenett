@@ -1,0 +1,10 @@
+created: 20241110200940608
+modified: 20260101152216966
+revision: 0
+tags: [[Forbedre kvaliteten på data i e-resept verdikjeden]] Resultat 2025 [[Team verdikjede e-resept]] Reseptformidleren
+title: Validere utleveres sertifikat
+type: text/vnd.tiddlywiki
+
+Det er i dag mulig å bruke et sertifikat der virksomhetens navn ikke er korrekt. Dette er utbredt i test, men tidligere sjekker har vist at dette også kan forekomme i produksjon. Spesielt for apotekkjeder det der kan være forbyttet sertifikat mellom apotek i kjeden. Validering av utleverervirksomhetens sertifikat var opprinnelig planlagt til høst 2024, men er flyttet til sommer 2025 grunnet behov i sektoren.
+
+At denne valideringen mangler er en svakhet ift sikkerhet.

@@ -1,0 +1,16 @@
+TjenesteID: 40048
+created: 20240816112240577
+modified: 20260416105637489
+revision: 0
+tags: [[Støtte og hjelp til kommune]] Målsetting 2026
+title: Kommunenes behov og utfordringer er kjent i Norsk helsenett, og ansatte opplever det som enkelt å få kontakt med kommunene
+type: text/vnd.tiddlywiki
+
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>tag[2026]]">>

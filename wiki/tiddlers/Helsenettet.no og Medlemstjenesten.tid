@@ -1,0 +1,47 @@
+TjenesteID: 40174
+created: 20241220135003904
+modified: 20260524082909113
+revision: 2
+tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] 2026
+title: Helsenettet.no og Medlemstjenesten
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+
+Medlemstjenesten identifiserer, lagrer og sørger for vedlikehold av potensielle og eksisterende medlemskap i Helsenettet, og tilgjengeliggjør disse for interne og eksterne tjenester.
+
+Helsenettet.no er en portal og en selvbetjeningsløsning hvor eksterne brukere raskt og enkel kan signere medlemsvilkår, be om tilgang til og signere bruksvilkår for tjenester, og administrere virksomhetens systemintegrasjoner i Helsenettet. 
+
+
+! Målsettinger
+!! 2026
+<<list-links filter:"[tag[Målsetting]tag[2026]tag<currentTiddler>]">>
+
+!! 2024-2025
+<<list-links filter:"[tag[Målsetting]tag[2025]tag<currentTiddler>]">>
+<<list-links filter:"[tag[Målsetting]tag[2024]tag<currentTiddler>]">>
+
+
+! Resultat
+!! 2026
+<<list-links filter:"[tag[Resultat]tag[2026]tag<currentTiddler>]">>
+
+!! 2024-2025
+<<list-links filter:"[tag[Resultat]tag[2025]tag<currentTiddler>]">>
+<<list-links filter:"[tag[Resultat]tag[2024]tag<currentTiddler>]">>
+
+
+
+! Leveranser
+!! 2026
+
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>
+
+!! 2024-2025
+
+<<list-links filter:"[tag[Leveranse]tag[2025]tag<currentTiddler>]">>
+<<list-links filter:"[tag[Leveranse]tag[2024]tag<currentTiddler>]">>
+
+! Styring
+!! 2026
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag<currentTiddler>]">>

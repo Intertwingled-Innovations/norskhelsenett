@@ -1,0 +1,34 @@
+created: 20240801090757264
+modified: 20260204120515911
+revision: 0
+tags: [[Autentisering og autorisasjon]] Målsetting 2024 Selvbetjening 2025
+title: Det skal være mulig å sikre helsedata i multi-tenant systemer med HelseID
+type: text/vnd.tiddlywiki
+
+Helsesektoren er i bevegelse, fra et landskap der de fleste systemer kjører "single-tenant" på hver lokasjon, til å være skybasert, der systemer kjører "multi-tenant" der mange kunder logger på, leser og lagrer sine data i en felles løsning med logiske skiller mellom de ulike aktørene. Slike systemer vil være en viktig premiss for  breddig av digitale helsetjenester i sektoren, og det er viktig at det både er mulig og enklest mulig å sikre slike systemer med HelseID. 
+
+!! Resultat 2026
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>tag[2026]]">>
+
+
+!! Resultat 2025
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>tag[2025]]">>
+
+
+!! Resultat 2025
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>tag[2025]]">>
+
+
+! Leveranser
+
+!! Leveranser 2026
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>tag[2026]]">>
+
+!! Leveranser 2025
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>tag[2025]]">>
+
+!! Leveranser 2024
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>tag[2024]]">>

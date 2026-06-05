@@ -1,0 +1,21 @@
+TjenesteID: 40025
+created: 20260410121748043
+modified: 20260429063019690
+revision: 0
+tags: Leveranse 2026 [[MVP nedlastbart testunivers]] [[Testunivers i 2026]] April
+title: Leveranse Testunivers: Utarbeidet 5 hoved use case for nedlastbart testunivers
+type: text/vnd.tiddlywiki
+
+Levert:
+
+Det er utarbeidet 5 hoved use-case for nedlastbart testunivers. Dette er forfinet i 13 utvidede use cases.
+
+Det beskriver funksjonelle krav, versjonshåndtering, testtyper, systemkrav, og innovasjonsmuligheter for ulike brukere som EPJ-leverandører, utviklere og integrasjonspartnere. 
+
+* Selvbetjent nedlasting av testmiljø: EPJ- og EHR-leverandører ønsker å laste ned komplette testmiljøer uten manuell koordinering for effektiv utvikling og testing, som skalerer bedre enn dagens faste eksterne testmiljø.  
+* Versjonshåndtering og historikk: Utviklere og leverandører ønsker versjonering av datasett, API og Testunivers, samt tilgang til arkiv med tidligere versjoner for kompatibilitet og feilsøking.  
+* Testtyper og kvalitetssikring: Leverandører og utviklere skal kunne rapportere feil, utføre regresjonstester, integrasjonstester, verdikjedetester og simulere feilscenarier for å sikre robusthet og kvalitet.  
+* Systemkrav og innovasjon: Leverandører trenger klar dokumentasjon på systemkrav, NHN tilbyr standardiserte syntetiske datasett, og innovatører skal kunne teste uten sikkerhetsbarrierer for å fremme rask utvikling. 
+
+
+

@@ -1,0 +1,16 @@
+created: 20240814112913513
+modified: 20260216110808621
+revision: 0
+tags: Kundesenteret Målsetting 2024 Levert
+title: Øke løsningsgrad i 1. linje med 5% innen utgangen av året
+type: text/vnd.tiddlywiki
+
+I Junta får vi ikke brutt tallene ned til løsningsgrad pr tjeneste, så inntil videre er dette totalt for alle tjenester. 5% økning, ikke 5 prosentpoeng. 
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

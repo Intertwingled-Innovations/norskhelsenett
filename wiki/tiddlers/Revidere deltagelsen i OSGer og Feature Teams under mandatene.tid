@@ -1,0 +1,12 @@
+created: 20240710111314870
+modified: 20250121092714960
+revision: 0
+tags: [[Team Sats]] Målsetting 2024 OMS
+title: Revidere deltagelsen i OSGer og Feature Teams under mandatene
+type: text/vnd.tiddlywiki
+
+Basert på erfaringene og hvordan OSGer og team har blitt etablert er det ønskelig å gjøre en revidering av hvem som sitter i de ulike teamene.
+
+!! Leveranser:
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

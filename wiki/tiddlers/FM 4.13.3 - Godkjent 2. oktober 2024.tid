@@ -1,0 +1,15 @@
+created: 20241011140401004
+modified: 20260408085632634
+revision: 0
+tags: [[Forskrivningsmodulen 2024-2025]] Oktober 2024 Leveranse [[Forsvarlig forvaltning av Forskrivningsmodulen]]
+title: FM 4.13.3 - Godkjent 2. oktober 2024
+type: text/vnd.tiddlywiki
+
+!Hva er levert?
+Versjonen retter feil som ble introdusert i 4.13.2. Feilen medførte at det feilaktig ble opprettet PLLer automatisk. 
+
+! Hvilken nytte for sektoren?
+Feilrettingen var viktig for å begrense omfang av feilaktig opprettelse av PLLer og for at leger med PLL kunne fortsette å bruke PLL. Situasjonen kunne også medføre pasientrisiko.
+Feilen ble oppdaget om morgenen 1. oktober. Norsk helsenett fikk raskt levert feilretting som ble installert om kvelden 2. oktober (FM versjon 4.13.3). 
+
+Feilen er bekreftet løst. 

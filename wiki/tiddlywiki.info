@@ -1,6 +1,8 @@
 {
 	"description": "NHN Experiments",
 	"plugins": [
+		"tiddlywiki/tiddlyweb",
+		"tiddlywiki/filesystem"
 	],
 	"themes": [
 		"tiddlywiki/vanilla",

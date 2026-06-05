@@ -1,0 +1,19 @@
+created: 20260512094507800
+modified: 20260512100135667
+revision: 0
+tags: 2026 [[Ingen portaler skal konsumere XCA]] [[Kjernejournal Pasientens journaldokumenter]] Leveranse Oktober [[Kjernejournal konsumerer PJD API]] November
+title: Kjernejournal konsumerer PJD API
+type: text/vnd.tiddlywiki
+
+! Målsetting
+
+
+<<list-links filter:"[tag[Målsetting]tag<currentTiddler>]">>
+
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Beskrivelse
+Kjernejournal konsumer PJD API.

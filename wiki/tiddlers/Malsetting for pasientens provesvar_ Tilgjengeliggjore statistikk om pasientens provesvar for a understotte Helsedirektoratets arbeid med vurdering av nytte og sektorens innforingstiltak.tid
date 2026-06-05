@@ -1,0 +1,15 @@
+created: 20250707074850888
+modified: 20260330104413525
+revision: 0
+tags: [[Kjernejournal Pasientens prøvesvar]] Målsetting 2025 [[Tiltaket pasientens prøvesvar]]
+title: Målsetting for pasientens prøvesvar: Tilgjengeliggjøre statistikk om pasientens prøvesvar for å understøtte Helsedirektoratets arbeid med vurdering av nytte og sektorens innføringstiltak
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+Statistikk om tjenesten skal tilgjengeliggjøres på tilsvarende måte som statistikk om øvrige nasjonale e-helseløsninger blir tilgjengeliggjort.
+
+! Resultat
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

@@ -1,0 +1,8 @@
+created: 20240508064043047
+modified: 20240702115439208
+revision: 0
+tags: 2024 [[Modernisering av reseptformidleren]] Resultat
+title: Autentisering med HelseID for rekvirenter
+type: text/vnd.tiddlywiki
+
+Reseptformidleren skal gjøre det mulig for rekvirenter å kunne autentisere seg med HelseID

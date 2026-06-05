@@ -1,0 +1,8 @@
+created: 20260513114055932
+modified: 20260513114852706
+revision: 0
+tags: 2026 Mai Selvbetjening Leveranse [[Tilby verktøy som effektiviserer og kvalitetssikrer bruken av HelseID]]
+title: 05/26- Ny funksjonalitet knyttet til kodegjennomganger i HelseID. Krav til dokumentasjon
+type: text/vnd.tiddlywiki
+
+Forenklingen av dokumentasjonssteget i produksjonssettingsflyten i selvbetjeningsportalen viser seg å resultere i at team HelseID (Aut&Aut) ikke får med tilstrekkelig dokumentasjon som medfølger før kodegjennomgang. Funksjonaliteten er laget på spek fra team Aut&Aut. 

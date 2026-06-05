@@ -1,0 +1,42 @@
+TjenesteID: 9999
+created: 20260407133038654
+modified: 20260421082155164
+revision: 0
+tags: [[Divisjon Helsepersonell]] 2026 [[Ekstern Tjeneste]]
+title: Tillitsskapende mekanismer i Helsenettet
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+
+Norsk helsenett har en etablert rolle i helsesektoren som nasjonal tjenesteleverandør. 
+For å møte økende krav til sikker og effektiv samhandling mellom aktører i sektoren, er det nødvendig å videreutvikle denne rollen og etablere Norsk helsenett som en fullverdig tiltrodd tredjepart.
+En tiltrodd tredjepart kan bidra til å forenkle og styrke samhandlingen i helsetjenesten ved å sikre trygg utveksling og tilgjengeliggjøring av helseopplysninger på tvers av virksomheter, samtidig som krav til sikkerhet, personvern og kontroll ivaretas. 
+For at dette skal være mulig, må den tekniske arkitekturen og systemdesignet være fleksibelt, skalerbart og gjenbrukbart slik at den ikke er begrenset til spesifikke formål eller virksomheters individuelle behov.
+
+Norsk helsenett etablerer og vedlikeholder i dag tillit mellom aktørene som samhandler. 
+Tilliten bygges ved å tilby tillitsskapende mekanismer i form av tjenester som kan benyttes av partene som samhandler. I tillegg reguleres forpliktelser i vilkår for medlemskap av helsenettet, bruksvilkår og leverandørvilkår. 
+
+Som tiltrodd tredjepart er det avgjørende at Norsk helsenett ivaretar informasjonssikkerhet, er transparent og leverer høy kvalitet på sine tjenester. 
+Eksempler på oppgaver som Norsk helsenett utfører som tiltrodd tredjepart er:
+
+-	Regulere bruk av helsenettet og tjenester i vilkår, med forpliktelser som følges opp, håndheves og sanksjoneres 
+-	Å verifisere og kontrollere nødvendige identiteter på vegne av aktørene
+
+-	Å utstede nødvendige identifikasjonsmidler til virksomhetene som samhandler ved bruk av nasjonal infrastruktur (f.eks. krypteringsnøkler til programvare som benytter HelseID)
+
+-	Å sikre at tilgang til helseopplysninger bare gis til virksomheter og helsepersonell med gyldig behandlingsgrunnlag
+
+-	Å etablere og vedlikeholde felles løsninger som sikrer at innbyggerens rettigheter blir ivaretatt på en god måte
+
+-	Å etablere og vedlikeholde løsninger og tjenester som ivaretar felles behov for sporbarhet og etterkontroll ved deling på tvers
+
+-	Å tilby løsninger som lar aktørene tilgjengeliggjøre helseopplysninger til andre virksomheter på en måte som ivaretar alle underliggende krav
+
+
+Hvilke tillitsskapende mekanismer som skal tilbys for den enkelte tjeneste må identifiseres basert på det rettslige grunnlaget for løsningen og hvilke funksjonaliteter løsningen skal ha. 
+
+! Målsettinger
+(Kan være målsetninger NHN har selv, eller kommer fra oppdragsbrev, mandater)
+
+<<list-links filter:"[tag[Målsetting]tag[2026]tag<currentTiddler>]">>
+

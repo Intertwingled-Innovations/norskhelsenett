@@ -1,0 +1,10 @@
+created: 20250815082648378
+modified: 20250815083613976
+revision: 0
+tags: [[2025-1: Toveis integrasjon med APT SMAX for KD saker]] 2025 Leveranse Integrasjonstjenesten Mai
+title: Mai: KD sakshåndterings verktøy kommet i produksjon
+type: text/vnd.tiddlywiki
+
+KD sakshåndterings verktøy kommet i produksjon - https://saku.nhn.no/. Vil midlertidig dekke KD sitt behov før nytt system kommer opp.
+Bruker forøvrig Integrasjonstjenesten (Kafka) for å kommunisere med APT
+KD gjennomfører opplæring nå for å gå helt vekk fra Junta.

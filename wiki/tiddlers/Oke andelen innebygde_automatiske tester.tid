@@ -1,0 +1,10 @@
+created: 20241004132227821
+modified: 20241004132516879
+revision: 0
+tags: [[Modernisering av reseptformidleren]] 2024 Resultat
+title: Øke andelen innebygde/automatiske tester
+type: text/vnd.tiddlywiki
+
+For å kunne levere hyppig er det nødvendig med en stor grad av automatiserte/innebygde tester  på alle nivåer; enhetstest, integrasjonstest og verdikjede test.
+
+De automatiske testene må teste en stor andel av koden og kjøres hyppig.

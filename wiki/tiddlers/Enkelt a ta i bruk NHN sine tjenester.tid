@@ -1,0 +1,17 @@
+created: 20260330110445259
+modified: 20260509141125770
+revision: 0
+tags: [[Oppsummert målsetting team leverandør 2026]] 2026 [[Divisjon Helsepersonell]] [[Domene Økosystem]] Målsetting [[Støtte og hjelp til leverandører]]
+title: Enkelt å ta i bruk NHN sine tjenester
+type: text/vnd.tiddlywiki
+
+!Resultat
+* Bidra til at NHNs tjenester tas raskere i bruk og avlaster helsepersonell.​
+* All dokumentasjon på nhn.no leverandørsider på engelsk, for å forenkle for engelskspråklige utviklere og virksomheter.​
+* Forbedre beskrivelse på nhn.no av hvordan komme i gang med å bli leverandør hos NHN og å komme i gang med integrasjon med tjenester 
+* Fortsette det gode samarbeid på tvers internt basert på innspill fra leverandørmarkedet om hva som kan bli enklere 
+* Sammen med Kundeteam, Medlemsforvaltning, APO og Utviklerportal og kommunikasjon
+
+!Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>tag[2026]]">> 

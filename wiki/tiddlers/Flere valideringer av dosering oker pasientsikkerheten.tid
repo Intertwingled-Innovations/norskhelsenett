@@ -1,0 +1,15 @@
+TjenesteID: 40034
+created: 20260309114135059
+modified: 20260414124420478
+revision: 0
+tags: [[Valideringer av dosering]] Leveranse 2026 [[Ekstern Tjeneste]] Mars Reseptformidleren [[Bedre datakvalitet i rf]]
+title: Flere valideringer av dosering øker pasientsikkerheten
+type: text/vnd.tiddlywiki
+
+For å øke pasientsikkerheten avvises nå M1 dersom:
+
+*Enten tidsområde (eks: morgen) eller klokkeslett (eks: 0900) skal oppgis. Hvis begge eller ingen er oppgitt skal M1 avvises.
+*"DoseEtterBehov" skal ikke benyttes. Hvis denne er oppgitt skal M1 avvises.
+*"Infusjonshastighet" skal ikke benyttes. Hvis denne er oppgitt skal M1 avvises.
+*"Doseringsregel" skal ikke benyttes. Hvis denne er oppgitt skal M1 avvises.
+*Hvis det er lagt inn tilleggstekst i dosering i meldingsutvidelsen for M1 skal verken strukturert dosering eller kortdose sendes med i mld M1.

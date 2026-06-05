@@ -1,0 +1,30 @@
+created: 20240416132220307
+modified: 20240909120713360
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Intern tjeneste]]
+title: Flow
+type: text/vnd.tiddlywiki
+
+!Beskrivelse av tjenesten
+
+Flow er en plattform for å levere støttefunksjoner for NHNs ansatte. Plattformen lar oss kjøre moduler som er spesialisert mot de ulike behovene internt i NHN. I sin tid var denne tenkt som en løsning for å modulisere funksjonaliteten i Junta. 
+Noe funksjonalitet ble flyttet over, men prosjektet ble stoppet ved innføring av SMAX som skulle håndtere alle behovene. Det viste seg å ikke fungere som tiltenkt og i dag har vi derfor dekt behovene våre med funksjonaliteter som er splittet mellom Flow, Junta og SMAX.
+
+Link til grensesnitt for tjenesten: [[https://flow.nhn.no/home|https://flow.nhn.no/home]]
+
+Dokumentasjon: [[https://confluence.nhn.no/display/FLOW/Flow+Home]]
+
+
+! 2024
+
+!! Målsettinger
+
+<<list-links filter:"[tag[Målsetting]tag<currentTiddler>]">>
+
+!! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>
+
+!! Styring
+<<list-links filter:"[tag[Styring Intern tjeneste]tag[2024]tag[Integrasjon- og støttesystemer]]">>
+

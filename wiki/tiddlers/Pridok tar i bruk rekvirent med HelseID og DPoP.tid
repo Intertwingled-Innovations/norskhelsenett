@@ -1,0 +1,10 @@
+created: 20251108173941999
+modified: 20251108174315279
+revision: 0
+tags: [[Modernisering av reseptformidleren]] [[Stabil og sikker drift av reseptformidleren i Norsk helsenetts private sky]] Oktober Reseptformidleren Leveranse
+title: Pridok tar i bruk rekvirent med HelseID og DPoP
+type: text/vnd.tiddlywiki
+
+Pridok tar i bruk rekvirent webservice beskyttet med HelseID og DPoP. Teamet har bistått Pridok i prosessen. 
+
+Dette vil redusere antall oppslag hos Buypass med transaksjonspris og vi forventer at kost til Buypass reduseres som en følge av dette.

@@ -1,0 +1,50 @@
+created: 20260308130110135
+modified: 20260330063950296
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Styring Ekstern tjeneste]] 2026 Februar Kjernejournal [[Kjernejournal portal]]
+title: 02 Kjernejournal - hovedtrekk og endringer februar 2026
+type: text/vnd.tiddlywiki
+
+
+! Hovedtrekk og endringer
+
+!! Drift og produksjon
+Vi ønsker å fordele driftskostnad mellom portal og informasjonstjenestene for bedre å reflektere det reelle kostnadsbildet.
+
+!! Portal
+Det lages eget API for "Om pasienten", og det vurderes om det skal lages et for "Besøkshistorikk" også. Når dette er gjennomført, vil alle informasjonselementer i kjernejournal være tilgjengelig via egne API'er.
+
+!! Informasjonstjenester
+* Pasientens prøvesvar: API er i produksjon fra 4. juni 2025.
+* Pasientens journaldokumenter: 
+** Oslo kommune ble koblet opp som dokumentkilde mandag 6. mai 2025. Det er første kommune som deler journaldokumenter via kjernejournal. 
+** Nasjonalt lager (NHN dokumentlager) skal produksjonssettes i Q1'2026 med Oslo kommune som første kunde. Nasjonalt lager vil være aktuelt å bruke for kommuner og avtalespesialister som ikke ønsker å etablere egen XDS infrastruktur.
+*Kritisk info: 
+** Konsekvenser av overgang til ICD-11 kodeverk igangsettes etter påske
+** Det vil være behov for endringer i tjenesten knyttet til avklaringer rundt livsforlengende behandling (oppdrag fra HOD til HDIR). Oppstart sannsynligvis etter påske.
+
+
+! Prognose på penger og ressurser
+
+!! Drift og produksjon
+Prognosen for drift og produksjon ligger 0,3 mnok under budsjett etter februar-regnskapet.
+
+!! Portal
+Prognosen for kjernejournal portal ligger 0,2 mnok under budsjett etter februar-regnskapet.
+
+!! Infotjenester
+Infotjenester har brukt 7.8 mnok ved utgangen av februar mot et budsjett på 41.4 mnok. 
+
+!!! Ressurser
+
+Kjernejournal portal: En utvikler er i barselpermisjon til august 2026.
+
+To ressurser i team HIT og to ressurser i team dokumentdeling vil inngå i to separate vaktteam sammen med ressurser fra drift. Det betyr at vi kan miste noe fart ift videreutviklingsoppgaver. I tillegg vil en ressurs fra team HIT bidra inn på Pasientens planer med 50% av timene fram til sommeren.
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarkb92368e492600e8b0b92">Oversikt Kjernejournal total (Power BI)</a>
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark09c84f60ca0c0d0dee2a">Oversikt Kjernejournal Infotjenester (Power BI)</a>
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarke23fe3d1eccd55765405">Oversikt Kjernejournal portal (Power BI)</a>
+
+

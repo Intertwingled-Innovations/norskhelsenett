@@ -1,0 +1,19 @@
+TjenesteID: 40035
+created: 20260320120026407
+modified: 20260504120634735
+revision: 0
+tags: [[Divisjon Helsepersonell]] 2026 [[Ekstern tjeneste]] Forskrivningsmodulen [[Ekstern Tjeneste]]
+title: Forskrivningsmodulen
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+
+Forskrivningsmodulen (FM) er en løsning for forskrivning av e-resepter som tilbys leverandører av elektroniske pasientjournalsystemer (EPJ), som ønsker å knytte sitt system til E-resept. Forskrivningsmodulen benyttes av ~~fastleger~~, ~~sykehusleger~~, kommunal pleie og omsorg, tannleger og legespesialister.
+
+''FM ble endelig avviklet 31.12.2025 og NHN tilbyr ingen form for support eller bistand i 2026.'' Helsevirksomheter som fremdeles benytter FM i produksjon på eget ansvar skal, i samarbeid med sin EPJ-leverandør, over på alternative løsninger, fortrinnsvis Sentral forskrivningsmodul (SFM).
+
+! Målsettinger
+(Kan være målsetninger NHN har selv, eller kommer fra oppdragsbrev, mandater)
+
+<<list-links filter:"[tag[Målsetting]tag[2026]tag<currentTiddler>]">>
+

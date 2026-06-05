@@ -1,0 +1,15 @@
+TjenesteID: 40041
+created: 20260331083110568
+modified: 20260409110958199
+revision: 0
+tags: [[Innrapportering av dødsfall og dødsårsak oppsummert 2026]] Målsetting 2026 [[Innrapportering av dødsfall og dødsårsak]]
+title: Holde koden for portal for dødsmelding oppdatert
+type: text/vnd.tiddlywiki
+
+Vi vil ha som mål å holde koden for portalen løpende oppdatert.
+
+! Resultat
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

@@ -1,0 +1,49 @@
+created: 20240503102145726
+modified: 20260330070845612
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] April [[Styring Tiltak]] [[Tiltaket pasientens journaldokumenter]] [[Kjernejournal Pasientens journaldokumenter]]
+title: 04 Tiltak pasientens pasientens journaldokumenter - hovedtrekk og endringer april 2024
+type: text/vnd.tiddlywiki
+
+<<list-links filter:"[tag[Tiltaket pasientens journaldokumenter]tag[Tiltak]tag[2024]]">>
+
+! Hovedtrekk og endringer
+
+!!! Det er avklart hvordan avtalespesialister kan dele sine journaldokumenter
+* Dette er en leveranse fra Helsedirektoratet, med innspill fra NHN. Det foreligger et utkast til løsningen, hvor NHNs innspill er tatt inn. Planen er å legge dette fram for aktuelle leverandører på NHNs leverandørmøte i juni.
+* NHN har jobbet med muligheten for nasjonalt dokumentlager og demonstrerte dette i sprint review 3. mai.
+
+!!! Det er avklart hvordan kommuner kan dele sine journaldokumenter
+* Dette er en leveranse fra Helsedirektoratet, med innspill fra NHN. Det foreligger et utkast til løsningen, hvor NHNs innspill er tatt inn. Planen er å legge dette fram for aktuelle leverandører på NHNs leverandørmøte i juni.
+* NHN har jobbet med muligheten for nasjonalt dokumentlager og demonstrerte dette i sprint review 3. mai.
+
+!!! Helseforetak er kilde og tilgjengeliggjør journaldokumenter (ved bruk av tillitsrammeverket)
+* Alle helseforetak deler journaldokumenter bortsett fra Helse Midt. Helse Midt kommer etter planen på i 2025.
+* Nasjonalt tillitsrammeverk er etablert, og NHN har levert nødvendig funksjonalitet på HelseID og kjernejournal portal. 
+* ~~Det er fortsatt uenighet om hvordan pasientens id skal overføres som en del av nasjonalt tillitsrammeverk. Dette må landes i Q2'2024.~~ Det er enighet om hvordan dette gjøres for pasientens journaldokumenter, men ikke generelt for andre typer API'er. Dette spørsmålet ble diskutert i OSG 7. mai. NHN har en oppgave å skrive notat som beskriver målbildet for tillitsrammeverket og hvilke steg som kan og bør tas på vei mot målbildet.
+* Dokumentkildene er i ferd med å tilpasse sin funksjonalitet for utlevering av referanselister og journaldokumenter gitt nasjonalt tillitsrammeverk.  
+* Helse Vest vil tilgjengeliggjøre journaldokumenter også for annet helsepersonell enn fastleger fra medio juni. 
+
+!!! Helseforetak har tatt i bruk pasientens journaldokumenter som konsument (ved bruk av tillitsrammeverket)
+* Alle helseforetak har tatt i bruk tjenesten bortsett fra Helse Midt. Helse Midt kommer etter planen på som konsument i 2025.
+* Ingen helseforetak konsumerer pr april 2024 tjenesten ved bruk av tillitsrammeverket, men alle har satt i gang arbeid for å gjøre det. Det forventes at de tre RHF'ene vil være klare i løpet av 2024.
+* ~~Det er fortsatt uenighet om hvordan pasientens id skal overføres som en del av nasjonalt tillitsrammeverk. Dette må landes i Q2'2024.~~
+* Flere leverandører er i gang med å integrere seg mot tjenesten ihht nasjonalt tillitsrammeverk - dette er en forutsetning for videre bredding (CGM, Tietoevry. Dips og Aidn). Det er forventet at integrasjoner vil kunne ferdigstilles i 2024. CGM demonstrerte konsumering av journaldokument via kjernejournal portal med nasjonalt tillitsrammeverk i slutten av april. 
+* NHN har levert første versjon av API for dokumentdeling, som også støtter DPOP. Det er opprettet tett dialog med Dips og Aidn. Fokus i Q2 blir å få dette ut i produksjon.
+
+!!! Inntil 80% av alle fastleger kan få tilgang til pasientens journaldokumenter
+* Dette er oppfylt i den forstand at alle fastleger (pga fastlegesjekken) __kan __få tilgang. Eneste krav er at de signerer bruksvilkår for tjenesten. Pr 1. mai har likevel kun 188 fastlegekontor signert bruksvilkår. Dette er en økning på 18 legekontor siste måned og skyldes hovedsaklig informasjon fra Oslo kommune til legekontorene i kommunen, samt NHNs stand under Vårkonferansen for fastleger 24. april i Trondheim.
+* Tjenesten er tilgjengelig for alle fastleger (via kjernejournal portal), samt annet helsepersonell i Oslo, Bodø og Stavanger kommune.
+
+
+! Prognose på penger og ressurser
+
+*Finansiering: Offentlig tilskudd, PJD, 55,5 mnok tilfaller vår divisjon og 10,5 mnok tilfaller divisjon Innbygger. Prognose for DHP er på 44,2 mnok, dvs 11,3 mnok under tilskuddet. 
+
+ <a href="https://app.powerbi.com/groups/6931f38e-9db9-41f4-a143-ac9ee4a4719c/reports/a03232e0-bd45-4da2-b925-662e476d7ebd/ReportSection343a8851705d1cfe8125?experience=power-bi&bookmarkGuid=Bookmark96fe5c07b6d0b73a9446">OversiktPJD (Power BI)</a>
+
+* Det vurderes å anskaffe team på 2 personer for å etablere en sentral loggaggregeringsfunksjon. Dette er for å lette bredding av pasientens journaldokumenter samtidig som kravet om innsynslogg ivaretas. Oppdatert prognose tilsier at det er økonomisk handlerom for dette.
+
+
+
+

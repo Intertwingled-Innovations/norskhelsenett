@@ -1,0 +1,32 @@
+created: 20241107095322772
+modified: 20241108154940690
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] [[Sentral forskrivningsmodul]] [[Styring Ekstern tjeneste]] Oktober
+title: SFM drift og forvaltning - hovedtrekk og endringer oktober
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+* Hovedfokus på stabilitet og overgang til privatsky - Task force hos APT er etablert
+* v4.5 levert med diverse feilrettinger og forbedret funksjonalitet (Se under)
+* RISIKO: Bygging av privat sky går for sakte og drift org for mottak er under oppbygging
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag[Oktober]tag[Sentral forskrivningsmodul]]">>
+
+
+! Prognose på penger og ressurser
+
+* Prosjektet begynte å sette opp privat sky i 2023 uten en plan. Medfører dobbel kost enkelte steder, øker utover da flere miljøer kommer på plass
+* Finansiering: Inntektsramme er på 48,8 mnok og består av offentlig tilskudd og omfordelte midler fra tidligere år samt finansiering på 2,6 mnok medlemsinntekt for å dekke de interne tjenestene som er belastet på SMF og som skal dekkes av medlemsinntekt.
+* Kostnadsprognosen har ligget rett under rammen som tilsier at vi har klart oss med inntektsrammen på 48,8 mnok. Det er tatt en vurdering på oppgaver som er utført i 2024 og som gjelder oppretting/forbedring av arbeid som NHN har gjort for dårlig i tidligere arbeid på tjenesten. Det er snakk om ca 18,7 mnok totalt for 2024 som NHN nå tar på egen kappe. Det vil si at vi velger å dekke denne kostnaden selv og har redusert inntekten med 18,7 mnok.
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark653d46c1659b4733c1ea">Oversikt SFM drift og forvaltning (Power BI)</a>
+
+
+
+

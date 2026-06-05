@@ -1,0 +1,27 @@
+created: 20260428062431895
+modified: 20260506115607772
+revision: 0
+tags: [[Støtte og hjelp til RHF]] Målsetting 2026
+title: Strategiske og taktiske møter med aktørene. God dialog er en forutsetning for digital samhandling
+type: text/vnd.tiddlywiki
+
+Planlegge og gjennomføre faste og ad hoc-møter med de ulike IKT-selskapene og RHF'ene.
+
+
+! ''Resultat''
+
+!! HSØ
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>tag[2026]tag[HSØ RHF]]">>
+
+!! Helse Vest RHF
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>tag[2026]tag[Helse Vest RHF]]">>
+
+!! Helse Midt RHF
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>tag[2026]tag[Helse Midt RHF]]">>
+
+!! Helse Nord RHF
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>tag[2026]tag[Helse Nord RHF]]">>
+
+
+! ''Leveranse''
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>tag[2026]]">>

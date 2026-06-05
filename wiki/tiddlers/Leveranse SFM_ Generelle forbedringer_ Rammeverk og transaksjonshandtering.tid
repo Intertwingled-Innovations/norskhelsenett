@@ -1,0 +1,15 @@
+created: 20240913061446195
+modified: 20240925114257493
+revision: 0
+tags: [[Sentral forskrivningsmodul]] Leveranse [[Team SFM]] [[Stabilisering og forbedring av tjenesten for å kunne håndtere produksjon for alle fastlegekontorer]] [[Resultat SFM: Stabilisering og forbedring av tjenesten for å kunne håndtere produksjon for alle fastlegekontorer]] August 2024
+title: Leveranse SFM: Generelle forbedringer: Rammeverk og transaksjonshåndtering
+type: text/vnd.tiddlywiki
+
+Mål: Stabilisering og forbedring av tjenesten for å kunne håndtere produksjon for alle fastlegekontorer
+
+Levert:
+
+*Rammeverksoppgradering av .net
+*Konsept rundt transaksjonshåndtering omskrevet og fobedret
+
+

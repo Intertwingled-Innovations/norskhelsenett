@@ -1,0 +1,8 @@
+created: 20251001104252973
+modified: 20260430093446816
+revision: 0
+tags: 2025 Leveranse Selvbetjening [[Tilby verktøy som effektiviserer og kvalitetssikrer bruken av HelseID]]
+title: 09/25  Det er nå mulig å kjøre samsvarstesting for klientmaler
+type: text/vnd.tiddlywiki
+
+Dette betyr at leverandører selv kan sjekke om de tilfredsstiller HelseID sin sikkerhetsprotokoll. På denne måten vil leverandørene kunne stille godt forberedt til kodegjennomganger og systemene som tilbyr nasjonale tjenester vil bli enklere å få i produksjon.

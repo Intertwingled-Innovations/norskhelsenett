@@ -1,0 +1,16 @@
+TjenesteID: 40044
+created: 20260306095724804
+modified: 20260503163932969
+revision: 0
+tags: Leveranse [[Team SFM]] 2026 [[Forvalte SFM i 2026 for alle segmenter]] Februar [[Sentral forskrivningsmodul i 2026]]
+title: Leveranse SFM: Byttet hemmlighetsverktøy til OpenBao
+type: text/vnd.tiddlywiki
+
+Mål: Implementere forbedringer i arkitektur, implementasjon og deployment - kode, prosesser og ansvar.
+
+Levert:
+
+*Overgang fra HashiCorp Vault til OpenBao. Dette er bytte av hemmlighetsverktøy og gir besparelse på ca 2 mnok i driftskost. Dette er TBU-midler som vi da kan disponere til utvikling i stedet.
+
+
+

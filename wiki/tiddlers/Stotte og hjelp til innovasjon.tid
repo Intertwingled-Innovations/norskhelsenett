@@ -1,0 +1,16 @@
+TjenesteID: 40048
+created: 20260505085552546
+modified: 20260505091603480
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] 2026 [[Domene Økosystem]]
+title: Støtte og hjelp til innovasjon
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+
+
+Se også confluence for mer informasjon: 
+
+! Målsettinger
+
+<<list-links filter:"[tag[Målsetting]tag<currentTiddler>tag[2026]]">>

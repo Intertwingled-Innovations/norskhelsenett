@@ -1,0 +1,44 @@
+TjenesteID: 40034
+created: 20260325095722116
+modified: 20260503104159912
+revision: 0
+tags: Reseptformidleren [[Styring Ekstern tjeneste]] 2026 Mars [[Forretningsmessig endring:1]] [[Divisjon Helsepersonell]] Styring
+title: 03 Reseptformidleren - hovedtrekk og endringer mars 2026
+type: text/vnd.tiddlywiki
+
+!Hovedtrekk og endringer
+
+Datatilsynet har sendt forhåndsvarsel om vedtak til Hdir ifm hendelsen i november 2025 der vi oppdaget at personverninnstillingene til et stort antall personer var gått tapt i reseptformidleren sin lokale kopi. Vi har dermed delt legemiddelopplysninger som ikke skulle vært delt for 2396 personer over en periode på ca 6 måneder. Det fremgår ikke av brevet hva slags vedtak de vil fatte. Vi har utarbeidet et svar i samarbeid med Hdir, der vi har beskrevet hva som har skjedd, hvordan vi jobber, hva som har sviktet og hvilke tiltak vi har iverksatt for å forhindre at slike feil oppstår.
+
+Vi oppdager jevnlig nye situasjoner der dårlig datakvalitet og manglende etterlevelse av krav skaper feilsituasjoner. Dette krever mye ressurser å analysere og håndtere.
+
+Tilgang til apotekløsning er fortsatt ikke etablert og vi kan dermed ikke gjennomføre ende til ende tester ved nye leveranser. Dette medfører en noe høyere risiko. Det er fortsatt vanskelig å få fremdrift i saken hos Sykehusapotekene, de overholder ikke tidsfrister de setter selv. Vi bør vurdere å la være å gjøre dette. Kan vårt ansvar strekke seg fra hva som kommer inn i rf til hva som går ut av rf?
+
+
+!Modernisering
+* Arbeid med å ta i bruk Etterkontroll tjenesten pågår. Etterkontroll tjenesten ønsker ikke å ta imot ufullstendige data. Det betyr at vi ikke kan migrere historikk fra rf sin egen løsning for innsyn. Det betyr at vi må kjøre dobbelt inntil 1 år hvis tilbudet til innbygger ikke skal bli dårligere enn idag. Eventuelt at Helsenorge må hente fra begge kilder, men det virker uhensiktsmessig. Plan nå er å produksjonssette denne funksjonaliteten i juni (i en hovedleveranse pga stort testbehov).
+*Data til sekundærbruk. Vi har fått et oppdrag om å etablere en slik løsning der vi deler anonyme data. Vi må leie inn ressurs(er) for å ta studentenes arbeid videre. Studentene har jobbet med å plukke informasjonselementer fra M1 og M25.1.
+*Vi har startet arbeidet med en PoC av M1 (resept) på samhandlingsplattformens løsningsmønster. 
+*Status "under ekspedering" må fases ut og sentral beregning av gjenværende mengde må innføres. Det vil forenkle e-resept verdikjeden og forhindre feilsituasjoner. Det legger til rette for krav i MyHealth@EU og EHDS og gjør det enklere å skille les og skriv. Det er verdikjede e-resept som skal drive denne dialogen med apotek og EPJ (sentral beregning av gjenværende mengde).
+*EHDS - forslag til forretningsregler for oversetting fra en resept (M1) til en ePrescription i samarbeid verdikjede e-resept er under arbeid og ble diskutert med Hdir før jul.
+
+
+!Sikkerhet
+*Det var planlagt å avvikle støtte for utdaterte kryptoalgoritmer for asynkrone meldinger den 7.mars. Det var imidlertid flere aktører som ikke hadde gjort nødvendige tiltak og dette er derfor ikke aktivert. Vi vil sette ny dato til 1.juni. 
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 1''
+
+Konsekvens av forretningsmessig endring:
+
+
+!Prognose på penger og ressurser
+* Finansiering: Forskriftsfestet pasientjournal E-resept, ramme 2026 92,9 MNOK.
+* Årsprognose 2026 (pr. mars) 75,8 MNOK, Runrate 11 mnd. (pr. mars) 61,5 MNOK 
+* For å nå de mål vi har satt for migrering til samhandlingsplattformens løsningsmønster i 2026, må vi frigjøre sentrale ressurser fra andre oppgaver slik at vi får økt fart på disse oppgavene.
+*Pr mars ligger vi under rammen på forvaltning og har heller ikke tilstrekkelig fart og fremdrift på planlagte aktiviteter. Dette skyldes både at vi har brukt mye ressurser på håndtering av alvorlige hendelser de siste 4-6 mnd og forsinkelse ift anskaffelse av konsulenter.
+* Vi lyser ut minikonkurranse for inntil 4 utviklere over påske. Prioriterte områder for disse konsulentene vil være løsning for deling av anonyme rådata til statistikk formål samt å flytte asynkron meldingshåndtering til EDI 2.0.
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarkab9171eafbc4217a5bac">Oversikt Reseptformidleren</a>
+
+

@@ -1,0 +1,9 @@
+created: 20240808072640401
+modified: 20260505053852589
+revision: 0
+tags: [[Tjenesten HelseID skal lukke alle risikoelementer med risikonivå alvorlig]] Resultat [[Autentisering og autorisasjon]] 2026
+title: Alle systemer med tilgang til nasjonale tjenester skal støtte PKCE
+type: text/vnd.tiddlywiki
+
+PEGA støtter ikke PKCE. Svakheten misbrukes og gir tilgang til nasjonale API-er.  Det som kan skje er at en intern angriper i nettet til virksomheter med systemer som ikke støtter PKCE får tilgang til å lese og/eller endre alle helseopplysningene i en gitt tjeneste.
+Avviket kan utnyttes til å gjennomføre tjenestenektangrep mot HelseID, og vil i verste konsekvens kunne ta ned hele tjenesten. Resultatmålet er nådd, da tiltak er gjennomført på aktuelle systemer.

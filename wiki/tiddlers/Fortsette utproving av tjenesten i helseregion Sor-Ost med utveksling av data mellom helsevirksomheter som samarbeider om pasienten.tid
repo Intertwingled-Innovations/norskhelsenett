@@ -1,0 +1,9 @@
+created: 20260507104343913
+modified: 20260507105324270
+revision: 0
+tags: Målsetting 2026 [[Pasientens måledata]]
+title: Fortsette utprøving av tjenesten i helseregion Sør-Øst med utveksling av data mellom helsevirksomheter som samarbeider om pasienten
+type: text/vnd.tiddlywiki
+
+! Resultat
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>

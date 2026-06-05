@@ -1,0 +1,18 @@
+created: 20250217142919668
+modified: 20260408071025186
+revision: 0
+tags: [[Tiltaket pasientens måledata (OLD)]] Oppgave 2025 [[Tiltaket pasientens måledata 2025]] Levert
+title: Gi innbygger tilgang til måledata og logg gjennom Helsenorge
+type: text/vnd.tiddlywiki
+
+!! NHN Oppgave 2025
+
+Innbyggere skal få anledning til å ivareta sine personvernsrettigheter på Helsenorge og se sine måledata på Helsenorge. For begrenset utprøving må det være funksjonalitet for personverninnstillinger og innsynslogg. Etter det vil Norsk helsenett videreutvikle løsningen basert på erfaring fra utprøving og bruk. 
+
+!! Leveranse
+
+2025
+
+Utviklingen på Helsenorge er gjennomført slik at pasienten kan ivareta sine personvernrettigheter. Visning av måledata på Helsenorge avventes da pasienten har tilgang på måledata fra kommunen sitt Digitale hjemmeoppfølgning løsning.
+
+<<list-links filter:"[tag[Leveranse]tag[2025]tag<currentTiddler>]">>

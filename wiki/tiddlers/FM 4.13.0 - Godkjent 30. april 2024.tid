@@ -1,0 +1,13 @@
+created: 20240701134132650
+modified: 20260408085632634
+revision: 0
+tags: [[Levere FM 4.13.0]] Leveranse 2024 April [[Forsvarlig forvaltning av Forskrivningsmodulen]] [[Forskrivningsmodulen 2024-2025]]
+title: FM 4.13.0 - Godkjent 30. april 2024
+type: text/vnd.tiddlywiki
+
+Versjon 4.13 ble godkjent 30. april 2024.
+
+Levert verdi:
+Viktig leveranse med PLL funksjonalitet som understøtter utprøving i Vest ved at PLL kan breddes videre på Haukeland. Versjonen gir i tillegg feilretting for andre brukere av FM.
+
+I juni har det blitt avdekket noen få PLL feil. Noe ligger i FM og vi planlegger for en patch. Men må avvente en feilretting til før vi lager patch og er enig med Vest om at patch da lages i løpet av sommeren. 

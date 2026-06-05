@@ -1,0 +1,18 @@
+created: 20260302074930311
+modified: 20260302080103049
+revision: 0
+tags: 2026 Integrasjonstjenesten Målsetting
+title: 2026-1: Avklare riktig organisering av Integrasjonstjenesten
+type: text/vnd.tiddlywiki
+
+Etter vi nå har avviklet Junta, så er det et godt tidspunkt å evaluere om vi bruker resursene riktig. I den forbindelse, er det en mulighet å flytte Integrasjonstjenesten til forretningsområde Skytjenester
+
+Hvorfor flytte?
+- Samle kompetanse rundt Kafka en plass
+- Integrasjonstjenesten er ikke mye utvikling, så ikke bruke utviklingsresurser på det?
+- Vi har laget styrende dokumenter for Integrasjonstjenesten
+- Det har ikke vært så mye trykk ennå på Integrasjonstjenesten
+
+Gjennomføring
+- Overføre risiko og styrende dokumenter til Skytjenester
+- Legge plan for og gjennomføre handover møter

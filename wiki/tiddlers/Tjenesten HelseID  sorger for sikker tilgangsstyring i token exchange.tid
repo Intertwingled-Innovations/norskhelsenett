@@ -1,0 +1,8 @@
+created: 20260504085824045
+modified: 20260505102329184
+revision: 0
+tags: [[Tjenesten HelseID skal lukke alle risikoelementer med risikonivå alvorlig]] Resultat 2026 [[Autentisering og autorisasjon]]
+title: Tjenesten HelseID  sørger for sikker tilgangsstyring i token exchange
+type: text/vnd.tiddlywiki
+
+Manglende tilgangsstyring i token exchange gjør at vi utleverer data til klienter som ikke skulle hatt tilgang til det. En klient som kan gjøre token exchange, kan bytte på vegne av alle klienter.

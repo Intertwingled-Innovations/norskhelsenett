@@ -1,0 +1,32 @@
+TjenesteID: 40171
+created: 20260505132612390
+modified: 20260521090358402
+revision: 0
+tags: 2026 [[Styring Ekstern tjeneste]] [[Divisjon Helsepersonell]] [[Forretningsmessig endring:1]] April [[Kjernejournal Pasientens journaldokumenter]]
+title: 04 KJ Pasientens journaldokumenter - hovedtrekk og endringer april 2026
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer
+* NHN dokumentlager er produksjonssatt som intern dokumentkilde. Forsinkelser i etablering av tjenestetilbudet har ført til at signering av Oslo kommune er forsinket og ennå ikke utført. Det er fortsatt er mål at Oslo kommune blir første kunde, sannsynlig oppstart i mai
+* Tilbakemeldinger om at det er vanskelig å ta i bruk tjenesten via kjernejournal portal. Det er vanskelig for multi-tenant leverandører å bistå sine kunder.
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 1''
+
+Konsekvens av forretningsmessig endring: Ingen
+
+
+! Prognose på penger og ressurser
+
+* Tjenesten er en del av den nasjonale e-helseløsningen under Kjernejournal og  finansieres over forskriftsfestede midler.
+* DHG har brukt 7.1 mnok av en total inntektsramme for 2026 på 20,5 mnok
+* Budsjett 2026: 19,4 mnok
+* Prognose for året: 21.5 mnok
+* Runrate for året (11 mnd) basert på regnskap pr april: 19.4 mnok. 
+* Framdrift er stort sett ihht plan
+* Teamet har nødvendig kapasitet. En innleid konsulent forlenges.
+
+! Leveranser
+<<list-links filter:"[tag[Leveranse]tag[KJ Pasientens journaldokumenter]tag[2026]tag[April]]">>
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=56573aa0b28de9e08460">Oversikt KJ Pasientens journaldokumenter (Power BI)</a>
+

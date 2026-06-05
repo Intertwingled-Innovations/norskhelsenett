@@ -1,0 +1,27 @@
+created: 20250317134044293
+modified: 20250317135035327
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Tiltaket digitalt helsekort for gravide]] [[Styring Tiltak]] 2025 [[Tiltaket digitalt helsekort for gravide 2025]] Februar
+title: 02 Digitalt helsekort for gravide - hovedtrekk og endringer februar 2025
+type: text/vnd.tiddlywiki
+
+<<list-links filter:"[tag[Tiltaket digitalt helsekort for gravide]tag[Tiltak]tag[2024]]">>
+
+! Hovedtrekk og endringer
+* NHN holder på API-First strategi - det er besluttet å ikke implementere grensesnitt for helsepersonell
+* 4 kommuner skal delta i utprøvingen (Asker, Bærum, Drammen og Stavanger kommune). Det er inngått avtaler om frikjøp av helsepersonell i disse kommunene med en total ramme på opptil 3 mnok i 2025.
+* Det er inngått avtaler med 6 leverandører om å etablere integrasjon mot DHG (Visma, Helseplattformen, Webmed, Pridok, Infodoc og CGM). Av disse skal alle bortsett fra CGM levere funksjonalitet til oppstart i juni 2025. Totalt 22 mnok er satt av til å finansiere leverandørene.
+* HSØ håndterer brukergrensesnitt mot spesialist
+
+! Prognose på penger og ressurser
+
+*Finansiering: Offentlig tilskudd, helsekort for gravide
+* Prognose på divisjon helsepersonell er 18.8 mnok vs en ramme på 19.8 mnok. I tillegg har divisjon helsepersonell en ramme på 12 mnok.
+* Inntil 25 MNOK av interne midler er avsatt for å finansiere leverandører til å bidra i med utvikling av brukergrensesnitt for begrenset utprøving og utvidet utprøving, samt frikjøp av helseperosnell til å delta i utprøvingen
+
+! Leveranser
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark939bcb60b56e4d11e018">Oversikt Elektronisk helsekort for gravide (Power BI)</a>
+
+
+

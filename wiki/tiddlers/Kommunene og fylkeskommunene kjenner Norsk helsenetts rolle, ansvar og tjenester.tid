@@ -1,0 +1,15 @@
+TjenesteID: 40048
+created: 20240806112507169
+modified: 20260508102635459
+revision: 0
+tags: [[Støtte og hjelp til kommune]] Målsetting 2026 [[Domene Økosystem]] [[Team Kommune]]
+title: Kommunene og fylkeskommunene kjenner Norsk helsenetts rolle, ansvar og tjenester
+type: text/vnd.tiddlywiki
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>tag[2026]]">>

@@ -1,0 +1,10 @@
+created: 20251001102059575
+modified: 20251001103815087
+revision: 0
+tags: 2025 Leveranse September Selvbetjening
+title: 09/25 Forbedret brukeropplevelse i selvbetjening- Administrasjon av nasjonale tjenester har fått nytt forbedret design
+type: text/vnd.tiddlywiki
+
+
+Eiere av APIene har fått forbedret liste over hvem som har tilgang til API-er, med bl.a. filtrering, bedre søk, bedre statusvisning og utlisting av hvilke virksomheter som har bestilt tjenestene.
+API-eier kan se tjenestebestillinger som er relevante  for API-et de har ansvar for. Dette vil hjelpe eiere av APIene til å veilede virksomheter som trenger bistand, eller til å søke etter informasjon dersom virksomhetene har utfordringer med å få tilgang til bestilte tjenester.

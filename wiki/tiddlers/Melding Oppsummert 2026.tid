@@ -1,0 +1,25 @@
+created: 20260408085505072
+modified: 20260408090903324
+revision: 0
+tags: Melding [[Divisjon Helsepersonell]] [[Tjeneste oppsummert]] 2026
+title: Melding Oppsummert 2026
+type: text/vnd.tiddlywiki
+
+Beskrivelse av tjenesten: [[Melding]]
+
+! Målsettinger
+
+<<list-links filter:"[tag[Målsetting]tag[2026]tag[Melding]]">>
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag[2026]tag[Melding]]">>
+
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag[2026]tag[Melding]]">>
+
+! Styring
+
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag[Melding]]">>

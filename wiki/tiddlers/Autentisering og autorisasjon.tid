@@ -1,0 +1,29 @@
+TjenesteID: 40031
+created: 20250603141226340
+modified: 20260513082209964
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] 40031 2026
+title: Autentisering og autorisasjon
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+
+HelseID er en felles påloggingsløsning for helse- og omsorgssektoren. Den legger til rette for enklere pålogging for helsepersonell, og styrket informasjonssikkerhet ved digital samhandling i sektoren. Dette skjer blant annet gjennom funksjonalitet for autentisering av brukere, systemer og virksomheter, samt beskyttelse av systemer.
+
+
+! Målsettinger
+!! 2026
+<<list-links filter:"[tag[Målsetting]tag[2026]tag<currentTiddler>]">>
+
+
+! Styring
+!! 2026
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag<currentTiddler>]">>
+
+!! Resultater 2026
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>tag[2026]]">>
+
+
+!! Leveranser 2026
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>tag[2026]]">>
+

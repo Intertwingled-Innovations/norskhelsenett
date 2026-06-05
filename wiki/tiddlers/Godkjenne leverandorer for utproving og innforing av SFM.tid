@@ -1,0 +1,34 @@
+created: 20250214081217931
+modified: 20260113115441221
+revision: 0
+tags: [[Tiltaket pasientens legemiddelliste]] 2025 Oppgave [[Tiltaket pasientens legemiddelliste 2025]] Levert HF [[Team Sats]]
+title: Godkjenne leverandører for utprøving og innføring av SFM
+type: text/vnd.tiddlywiki
+
+!! NHN Oppgave 2025
+
+Godkjenne leverandører for utprøving og innføring av SFM, samt være en pådriver for at leverandørene til fastleger, avtalespesialister, sykehus, sykehjem, legevakt og ØHD/KAD tar i bruk SFM
+
+* Team e-resept verdikjede godkjenner leverandører som lager egen integrasjon med e-resept og de som tar i bruk SFM basis API.
+* Team SFM bredding godkjenner leverandører som integrerer med SFM fullversjon.
+
+!! Overordnet statusvurdering:
+Alle PLO- og fastlege EPJ'er har nå en godkjent SFM-fullversjon integrasjon.  De er i produksjon og i en god posisjon for å fortsette utrulling i 2026
+
+!! Hva er levert:
+Detaljene på hvem som er godkjent og innføringshastighet er listet opp under. Norsk helsenett har levert ressurser til gjennomføring av godkjenningsprosessen og støtte og support i innføringsløpet.
+
+!! Hvilken verdi har det gitt til sektor:
+Ved å ta i bruk SFM som har funksjonalitet for e-resept, elektronisk multidose og pasientens legemiddelliste (PLL) får helsepersonell mulighet til å samhandle om pasientens legemiddelbehandling.
+
+!! Leveranser:
+
+Listen nedenfor viser de relevante leveransene for godkjenning av leverandører fra Team SFM og Team E-resept verdikjede
+
+Leveranser fra Team SFM (godkjenning av leverandører med SFM Fullversjon):
+
+<<list-links filter:"[tag[Leveranse]tag[2025]tag[Team SFM]tag<currentTiddler>]">>
+
+Leveranser fra Team Verdikjede e-resept (godkjenning av leverandører med SFM Basis API og leverandører som lager egen løsning):
+
+<<list-links filter:"[tag[Leveranse]tag[2025]tag[Verdikjede e-resept]tag<currentTiddler>]">>

@@ -1,0 +1,8 @@
+created: 20250808102230881
+modified: 20260430093446817
+revision: 0
+tags: [[Tilby verktøy som effektiviserer og kvalitetssikrer bruken av HelseID]] Resultat 2025
+title: Leverandører kan selv teste om deres kode er i henhold til sikkerhetsprofilen
+type: text/vnd.tiddlywiki
+
+Leverandører kan selv teste om deres kode er i henhold til HelseID sin sikkerhetsprofil. De får hensiktsmessige feilmeldinger og rettledning om riktig implementasjon. De kan dermed selv raskt og effektivt forbedre sin kode på de punkter der den ikke tilfredsstiller sikkerhetsprofilen, og vil stille bedre forberedt til kodegjennomgang. Kodegjennomgangen blir mer effektiv både for NHN og for leverandører.

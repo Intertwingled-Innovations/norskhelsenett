@@ -1,0 +1,8 @@
+created: 20240809123304621
+modified: 20251031124433672
+revision: 0
+tags: [[Forsvarlig forvaltning av Forskrivningsmodulen]] 2024 Resultat [[Team FM]]
+title: Levere FM 4.12.7
+type: text/vnd.tiddlywiki
+
+Patch på 4.12 som varsler etter incident med doseringsfeil.

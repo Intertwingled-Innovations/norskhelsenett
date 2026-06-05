@@ -1,0 +1,20 @@
+created: 20240813120017946
+modified: 20250113093627546
+revision: 0
+tags: Testunivers Tiltak Målsetting 2024 Leveranse Desember
+title: Etablere algoritmer for syntetisering av data
+type: text/vnd.tiddlywiki
+
+Målsetningen er 
+- å lage algoritmer ved bruk av AI/ML for å kunne lage syntetiske data av samme kvalitet og med samme egenskaper som de reelle data, men uten personidentifiserende informasjon.
+
+! Resultat
+Algoritme for produksjon av syntetiske data for Pasientens prøvesvar er etablert.
+Juridisk vurdering for tilgang til Kjernejournal data er gjennomført og "tillater" oss å behandle reelle data for utvikling av algoritme for syntetisering av Kjernejournal data. Hdir har i etterkant bedt oss om å skrive en søknad om dispensasjon fra taushetsplikten. Denne er skrevet og oversendt Hdir for behandling.
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+* Å syntetisere data i fra Pasientens prøvesvar og å legge dette over i datasjøen.
+* Å syntetisere data i fra Kjernejournal. Første datasett blir Kritisk info. og å legge dette over i datasjøen.
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

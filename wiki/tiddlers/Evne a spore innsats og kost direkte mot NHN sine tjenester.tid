@@ -1,0 +1,17 @@
+created: 20240123150247112
+modified: 20250814080702914
+revision: 0
+tags: Målsetting 2024 Kundesenteret
+title: Evne å spore innsats og kost direkte mot NHN sine tjenester
+type: text/vnd.tiddlywiki
+
+
+
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

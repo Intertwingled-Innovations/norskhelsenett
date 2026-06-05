@@ -1,0 +1,26 @@
+TjenesteID: 40066
+created: 20260310082440274
+modified: 20260409105752086
+revision: 0
+tags: Styring [[Divisjon Helsepersonell]] 2026 [[Styring Relatert tjeneste]] Etterkontroll Februar
+title: 02 Etterkontroll - hovedtrekk og endringer februar 2026
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+*Ny implementasjon av tjenesten skrevet om til .Net prodsettes nå. Dette er utgangspunktet for å kunne tilby API for å motta etterkontroll-data fra eksterne
+
+! Prognose på penger og ressurser
+
+
+* Noe høyere timepådrag enn budsjettert. Forventer at det justeres i forbindelse med pappapermisjon. 
+* Langt høyere plattformkostnader enn budsjettert, må ettergå om dette er riktig.
+* Det er fortsatt for tidlig å si hvordan drift og plattformkostnader treffer etter omorganiseringen. Ellers som forventet.
+
+
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi">Oversikt Etterkontroll</a>
+

@@ -1,0 +1,31 @@
+TjenesteID: 40046
+created: 20260326110837312
+modified: 20260414112835989
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Styring Intern tjeneste]] Plattform 2026 Mars
+title: 03 Plattform - hovedtrekk og endringer mars 2026
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer
+
+* Stadige forbedringer og mer funksjonalitet på utviklerportal, fokus på bedre struktur, mer intuitiv navigering og mer ensartete presentasjoner, for bedre brukeropplevelse for utviklere og andre. 
+
+* Observability stack (felles logg- og innsynsløsning for tjenester) er i produksjon. 
+
+** Pilot / Proof of concept er gjort i løpet av sommeren, for å teste ut logging av hendelser til flere destinasjoner (Splunk, eksterne abonnenter, Azure Power BI)
+
+Forretingsmessig endring: 1
+
+! Prognose på penger og ressurser
+
+* Finansieringskilde: Dette er en intern tjeneste som fordeles ut på de eksterne tjenestene i divisjon Helsepersonell.
+* Kostnadsbudsjett 2026: 22,3 MNOK
+* Hvordan ligger vi an hittil i år opp i mot prognoser og planlagte oppgaver?
+* Årsprognose (pr. mars) 23,1 MNOK. Runrate 20,1 MNOK
+* Prognose ligger over budsjett i hovedsak grunnet 3,0 mnok høyere plattformkostnader
+* Status ressursbehov/kapasitet?Ingen endringer er forventet for drift av det etablerte Kafka clusteret.
+
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ad6307c59006ac4e200e?experience=power-bi&bookmarkGuid=Bookmark0362f6869c5590a01680">Oversikt Plattform (Power BI)</a>
+

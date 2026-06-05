@@ -1,0 +1,46 @@
+created: 20250228164510377
+modified: 20260113111115781
+revision: 0
+tags: [[Norsk Helsenett SF]] Tiltak [[Tiltaket pasientens legemiddelliste]] 2025 [[Tiltaket pasientens legemiddelliste 2025]] DigitalSamhandling [[Team Sats]]
+title: Tiltaket pasientens legemiddelliste 2025
+type: text/vnd.tiddlywiki
+
+Målet med tiltaket pasientens legemiddelliste (PLL) er å redusere sannsynligheten for legemiddelfeil, spesielt når flere virksomheter har ansvaret for behandling av pasienten eller pasienten blir overført mellom virksomheter i helse- og omsorgstjenesten. Dette skal oppnås ved at PLL etableres som én felles digital oversikt over legemidlene pasienten bruker. PLL skal også bidra til å redusere tiden helsepersonell bruker på å hente inn informasjon om, og svare på henvendelser knyttet til pasientens legemiddelbehandling.
+
+PLL skal inneholde en samlet og oppdatert oversikt over hvilke reseptbelagte legemidler pasienten bruker. Når det er relevant for videre legemiddelbehandling, kan pasientens legemiddelliste i tillegg inneholde opplysninger om: 1. Legemidler ordinert internt på sykehus, sykehjem mv. og legemidler uten resept; 2. Kosttilskudd; og 3. Legemiddel-reaksjoner, interaksjonsvurderinger og legemiddelgjennomgang.  
+
+Bruken av PLL omfatter både de som har behov for å lese/se legemiddellisten og de som i tillegg skal gjøre endringer i legemiddelbrukene. Innbyggere har innsyn via helsenorge og helsepersonell har lesetilgang via kjernejournal. Konseptet PLL baseres på gjeldende infrastruktur for e-resept og kjernejournal, og bygger på teknisk løsning og funksjonalitet for multidose i e-resept. En viktig forutsetning for realisering av PLL er at fagsystemene i helse- og omsorgstjenesten blir teknisk tilrettelagt for PLL. Norsk helsenett SF utvikler Sentral Forskrivningsmodul (SFM) for å hjelpe helse- og omsorgstjenesten med dette. Helsepersonells oppdateringer og endringer i legemiddellisten må gjøres via SFM. Innføring av både kjernejournal og SFM (inkludert elektronisk multidose) er derfor en forutsetning for realisering av PLL. Tiltak for kvalitet i e-resept er en annen viktig forutsetning. 
+
+Tiltaket PLL består av fire deler: 1) Utprøving av pasientens legemiddelliste i Bergen, som avsluttes i 2024; 2) Videreutvikling av sentral forskrivningsmodul (SFM) som er en legemiddel- og rekvireringsmodul som skal integreres med alle pasientjournalsystemer; 3) Innføring av elektronisk multidose; og 4) Utprøving og innføring av pasientens legemiddelliste for nye områder. 
+
+Bedre bruk av e-resept er viktig for å lykkes med PLL. Dette handler i stor grad om endring av allerede innarbeidede rutiner og måten man jobber på, og krever derfor kulturendring – hvilket tar tid. Hvis alle rekvirenter som gjør endring i legemiddel-behandlingen først kontrollerer hva som står i Reseptformidler, og oppdaterer og tilbakekaller uaktuelle resepter, vil vi være på god vei mot PLL.
+
+For å sikre kvalitet og tillit til legemiddellisten, skal innføring gjennomføres koordinert blant sentrale aktører i opptaksområdene rundt helseforetakene. Det er derfor sentralt for gjennomføring å hente erfaring og læring fra utprøvingene av PLL, samt å få til en raskest mulig innføring av SFM som legger til rette for en nasjonal PLL.
+
+! Effektmål og resultatmål
+Effektmål
+* Redusere antall feil i legemiddelbehandlingen som skyldes feil informasjon om pasientens legemidler
+* Redusere tiden helsepersonell bruker på å hente inn informasjon om, og svare på henvendelser knyttet til pasientens legemiddelbehandling.
+
+!! Norsk helsenett SF sine leveranser
+Norsk helsenett SF har ansvar for å utvikle, innføre og forvalte Sentral forskrivningsmodul (SFM) og e-multidose som skal realisere tiltaket pasientens legemiddelliste. Følgende oppgaver skal gjennomføres:
+
+
+!! Oppgaver 2025
+<<NHN-current-liste-levert type:"Oppgave" aar:"2025">>
+
+!! Leveranseplan 2025
+Leveranseplan sendt til HOD 30.01.2025:
+
+https://nhnkontor.sharepoint.com/:b:/r/sites/Samhandlingsplattformen/Shared%20Documents/Team%20Sats/Leveranseplan%202025/Endelig%20versjon/NHN%20leveranseplan%202025%20-%20Digital%20samhandling%201.0.pdf?csf=1&web=1&e=NP4ug5
+
+
+!! Rapportering leveranseplan 2025
+
+Første rapportering for 2025 er 12. mai
+
+<<list-links filter:"[tag[2025]tag[Leveranse]tag[Rapportering leveranseplan]]">>
+
+
+! Styring
+Det er ingen eksplisitt styring på PLL hos NHN. NHN understøtter PLL med FM, SFM og e-multidose - se styring for de.

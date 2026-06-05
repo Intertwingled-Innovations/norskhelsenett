@@ -1,0 +1,15 @@
+created: 20250708112339610
+modified: 20260330070944492
+revision: 0
+tags: [[Kjernejournal Pasientens kritiske informasjon]] 2024 Leveranse [[Resultat pasientens kritiske informasjon: Nytt API for kritisk info er tilgjengelig]] [[Målsetting for kritisk info: Nytt API for kritisk info er tilgjengelig]] Desember
+title: Nytt API for kritisk info er tilgjengelig
+type: text/vnd.tiddlywiki
+
+! Mål: 
+* Aktører i helsesektoren skal kunne skrive og konsumere kritisk informasjon direkte fra API.
+
+Levert:
+
+* Nytt API sikret med HelseID er etablert og produksjonssatt
+* Dokumentasjon er tilgjengelig på utviklerportal
+* Helse Vest (Dips Arena) har prøvd ut det nye API'et

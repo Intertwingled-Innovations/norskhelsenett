@@ -1,0 +1,44 @@
+created: 20251110131436809
+modified: 20260327130149743
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] [[Team Tillit]]
+title: Forvaltning av Helsenettet - Tillit
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+
+Forvalte og videreutvikle Helsenettet.no og medlemstjenesten. Leverer på målsetning om å sørge for riktig medlemsmasse i Helsenettet.
+
+
+! Målsettinger
+!! 2026
+<<list-links filter:"[tag[Målsetting]tag[2026]tag<currentTiddler>]">>
+
+!! Eldre målsettinger
+<<list-links filter:"[tag[Målsetting]tag[2024]tag[2025]tag<currentTiddler>]">>
+
+
+
+! Styring
+!! 2026
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag<currentTiddler>]">>
+
+her skal det stå om styring 
+
+!! 2025
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2025]tag<currentTiddler>]">>
+
+!! 2024
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2024]tag<currentTiddler>]">>
+
+
+! Leveranser
+
+!! Leveranser 2026
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>tag[2026]]">>
+
+!! Leveranser 2025
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>tag[2025]]">>
+
+!! Leveranser 2024
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>tag[2024]]">>

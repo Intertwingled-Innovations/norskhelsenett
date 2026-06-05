@@ -1,0 +1,15 @@
+created: 20250707075214957
+modified: 20260330104413524
+revision: 0
+tags: [[Kjernejournal Pasientens prøvesvar]] Målsetting 2025 [[Tiltaket pasientens prøvesvar]]
+title: Målsetting for pasientens prøvesvar: Klargjøre tjenesten for drift og forvaltning
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+Tjenesten skal være klargjort for ordinær drift og forvaltning slik at tiltaket kan avsluttes.
+
+! Resultat
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

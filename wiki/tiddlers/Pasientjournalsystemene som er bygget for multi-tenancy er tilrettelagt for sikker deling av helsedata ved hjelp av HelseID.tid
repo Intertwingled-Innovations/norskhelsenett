@@ -1,0 +1,10 @@
+created: 20240806103411131
+modified: 20240816085429681
+revision: 0
+tags: Resultat [[Autentisering og autorisasjon]] [[Gjøre det enkelt for tjenesteeiere å beskytte sine digitale helsetjenester med HelseID]]
+title: Pasientjournalsystemene som er bygget for multi-tenancy er tilrettelagt for sikker deling av helsedata ved hjelp av HelseID
+type: text/vnd.tiddlywiki
+
+Nye aktører (fordel med multi-tenancy?) får mulighet til å tilby sine journalsystemer til tjenesteeiere. 
+
+Tiltak: HelseID-teamet tilrettelegger kjernen i HelseID for at en instans av et journalsystem kan autorisere  flere brukere (kladd)

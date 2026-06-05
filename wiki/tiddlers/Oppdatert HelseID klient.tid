@@ -1,0 +1,8 @@
+created: 20250603072222898
+modified: 20250603072432741
+revision: 0
+tags: [[Stabil og sikker drift av reseptformidleren i Norsk helsenetts private sky]] 2025 Leveranse Mai Reseptformidleren
+title: Oppdatert HelseID klient
+type: text/vnd.tiddlywiki
+
+Det ble avdekket en sårbarhet i HelseID som krevde at alle klienter/brukere gjorde en oppdatering på sin side. Dette er løst i reseptformidleren sin rekvirent webservice. Det er kun rekvirenter som benytter HelseID pt.

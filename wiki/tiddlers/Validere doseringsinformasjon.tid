@@ -1,0 +1,12 @@
+created: 20250213090917301
+modified: 20260101151433944
+revision: 0
+tags: [[Forbedre kvaliteten på data i e-resept verdikjeden]] Reseptformidleren Resultat
+title: Validere doseringsinformasjon
+type: text/vnd.tiddlywiki
+
+Validere doseringsinformasjon, både manglende innsending og tomt felt ved innsending - doseringstekst (planlagt høst 2025, krever tid pga behov for forberedelser i sektoren).
+
+Det er utarbeidet en oversikt over 15-20 mer spesifikke valideringer av dosering som skal innføres ila 2025.
+
+Flere av valideringene krever at reseptformidleren leser inn legemiddel grunndata (FEST).

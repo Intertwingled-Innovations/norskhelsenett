@@ -1,0 +1,19 @@
+TjenesteID: 40027
+created: 20260506161030507
+modified: 20260511184249298
+revision: 0
+tags: 2026 Målsetting Virksomhet
+title: Nytt API for Adresseregisteret (CommunicationParty-API)
+type: text/vnd.tiddlywiki
+
+Nytt API baesrt på REST som tilbyr å lese ut informasjon om virksomheter registrert i Adresseregisteret.
+API'et tilbyr mulighet for å laste ned lokal kopi av AR og varsling av oppdateringer av disse
+ 
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranse
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

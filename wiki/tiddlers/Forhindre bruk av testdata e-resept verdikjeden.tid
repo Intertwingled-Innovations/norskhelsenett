@@ -1,0 +1,18 @@
+created: 20240710104951418
+modified: 20240710114112575
+revision: 0
+tags: [[Team verdikjede e-resept]] Målsetting 2024 OMS
+title: Forhindre bruk av testdata e-resept verdikjeden
+type: text/vnd.tiddlywiki
+
+Ulike aktører har brukt produksjonsmiljøet for verdikjede e-resept som "testmiljø". Dette har medført at enkelt person i Norge sitter med en medisinhistorikk som setter deres liv og helse i fare.
+
+NHN vil innføre strengere reaksjoner mot disse aktørene når det avdekkes, og innføre sjekker for å forhindre dette.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

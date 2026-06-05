@@ -1,0 +1,15 @@
+TjenesteID: 40170
+created: 20260406184906671
+modified: 20260409112920956
+revision: 0
+tags: [[Kjernejournal Pasientens prøvesvar]] Målsetting [[Tiltaket pasientens prøvesvar]] 2026
+title: Målsetting for pasientens prøvesvar: Understøtte aktørene i sektoren som konsumenter, rekvirenter og produsenter
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+NHN skal gi nødvendig støtte til alle aktører som ønsker å ta i bruk Pasientens prøvesvar enten som rekvirent, laboratorie (produsent) eller konsument.
+! Resultat
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

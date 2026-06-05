@@ -1,0 +1,11 @@
+TjenesteID: 40026
+created: 20260407120326819
+modified: 20260409120201065
+revision: 0
+tags: Leveranse 2026 Mars [[Målsetting for Melding: Opprette kapabilitetsregister]] Melding
+title: Kapabilitetsregister - MVP
+type: text/vnd.tiddlywiki
+
+Første versjon i test med mulighet for registrering av støttede kapabiliteter i form av sending og mottak (produce og consume) av medisinske meldinger
+
+Gir leverandører mulighet til å bli kjent med kapabilitetsregister og sette opp egne kapabiliteter for medisinske meldinger for egne testmiljø.

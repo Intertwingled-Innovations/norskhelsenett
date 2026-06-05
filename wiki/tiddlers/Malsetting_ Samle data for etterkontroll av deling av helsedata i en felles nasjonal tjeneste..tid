@@ -1,0 +1,20 @@
+TjenesteID: 40066
+created: 20260407105349470
+modified: 20260409105650140
+revision: 0
+tags: 2026 Målsetting Etterkontroll
+title: Målsetting: Samle data for etterkontroll av deling av helsedata i en felles nasjonal tjeneste.
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av målsetting
+Samle data for deling av helsedata mellom virksomheter og i nasjonale løsninger. Data skal vise hvilke virksomheter som har fått tilgang til 
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag[2026]tag<currentTiddler>]">>
+
+! Leveranse
+
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>
+
+

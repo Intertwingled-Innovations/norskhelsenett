@@ -1,0 +1,14 @@
+created: 20250129202914010
+modified: 20260408085632634
+revision: 0
+tags: [[Forsvarlig forvaltning av Forskrivningsmodulen]] 2025 Leveranse [[Forskrivningsmodulen 2024-2025]] Januar [[Levere FM 4.14.1]]
+title: FM 4.14.1 - Godkjent 29. januar 2025
+type: text/vnd.tiddlywiki
+
+!! Hva er levert?
+
+FM 4.14.1  inneholder en endring for å tolerere (i praksis filtrere ut) mangelfull/ugyldig CAVE i PLL, samt retting av to PLL-relaterte feil som ble avdekket i NHN sin test.
+
+!! Hvilken verdi gir det sektoren?
+
+På grunn av feil i annet system har det kommet en del PLL med CAVE informasjon som ikke følger det riktige formatet. Leger som bruker PLL med Forskrivningsmodulen har hatt problemer med PLLer som har slikt feil format på CAVE informasjonen. Med denne rettelsen vil Forskrivningsmodulen ignorere slik CAVE informasjon og det blir enklere for legene å bruke FM. 

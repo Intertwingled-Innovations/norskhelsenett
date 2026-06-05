@@ -1,0 +1,26 @@
+TjenesteID: 40028
+created: 20260326134919097
+modified: 20260520093755102
+revision: 0
+tags: [[Divisjon Helsepersonell]] 2026 [[Intern tjeneste]]
+title: Samhandlingsplattform felles
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+
+Samhandlingsplattform er en samling av oppgaver som utføres sentralt for divisjonens tjenester. Kostnadene blir fordelt på alle divisjonens øvrige tjenester med timer som fordelingsnøkkel.
+
+I tjenestene inngår:
+
+* Personalledelse (Team menneske)
+* Produktstyring
+* Sikkerhet, juridisk og personvern
+* Økonomi
+* SAKU
+* Noe utredningsarbeid 
+
+! Målsettinger
+(Kan være målsetninger NHN har selv, eller kommer fra oppdragsbrev, mandater)
+
+<<list-links filter:"[tag[Målsetting]tag[2026]tag<currentTiddler>]">>
+

@@ -1,0 +1,26 @@
+created: 20260302070454630
+modified: 20260302072120805
+revision: 0
+tags: 2026 Integrasjonstjenesten [[Integrasjon- og støttesystemer]] [[Styring Intern tjeneste]] Februar Styring
+title: 2 Integrasjon- og støttesystemer - hovedtrekk og endringer februar 2026
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer februar
+
+* Integrasjonstjenesten - Opprettet topics for Statestikk og måling tjenesten på Integrasjonstjenesten.
+* Integrasjonstjenesten - Diskutert organisering av Integrasjonstjenesten - flyttes over til Privat sky?
+* Integrasjonstjenesten - Integrasjon av ESM og Saku er videreutvikling (html visning, støtte for vedlegg og epost utsending fra ESM)
+
+* Organisert teamet mhp Statestikk og måling tjenesten.
+* Bistått DTS med å komme seg ut av Junta (apper i Pub1)
+* Avviklet md03 og md04 - servere som Junta brukte.
+ 
+* SAKU - fått elastic search ut i produksjon.
+* SAKU - roller kan nå forvaltes (før gjordes dette i junta)
+* SAKU - Jobbet videre med avvikling av Flow, flyttet flow  customer og flow catalog visning inn i Saku. Database ennå ikke migrert
+
+!Prognose på penger og ressurser
+
+Finansiering: Medlemsavgiften.
+
+Oversikt Integrasjon- og støttesystemer (Power BI): https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ad6307c59006ac4e200e?experience=power-bi&bookmarkGuid=Bookmark6966c46e3cd6605ce815

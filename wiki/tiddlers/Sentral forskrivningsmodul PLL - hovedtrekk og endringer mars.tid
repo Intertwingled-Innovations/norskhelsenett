@@ -1,0 +1,29 @@
+created: 20240402130727134
+modified: 20240412141917872
+revision: 0
+tags: Styring 2024 [[Divisjon Helsepersonell]] Mars [[Videreutvikle sentral forskrivningsmodul (SFM) for fastlege og sykehus, samt fortsette utvikling av funksjonalitet for sykehjem, hjemmetjeneste og legevakt]]
+title: Sentral forskrivningsmodul PLL - hovedtrekk og endringer mars
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+* Vi jobber fortsatt hardt med å gå fra prosjekt til produktorganisasjon. Store fremskritt og snev av optimisme i teamene
+* Hovedfokus på funksjonalitet er fastlegemarkedet – har en 10 på topp liste
+* Leverer etterlengtet Multitenant sammen med HelseId i Q2
+* 4 mellomversjoner er levert i Q1
+
+
+! Prognose på penger og ressurser
+
+* 7 konsulenter er sagt opp i løpet av Q1 og er allerede ute
+* 2 intern innleide er sagt opp i løpet av Q1 og er allerede ute
+* En fast ansatt flyttes til annet team
+* Vurderer å fjerne to andre konsulenter
+* En fast ansatt i avgang, en ledig stilling
+* Prognosen for året ligger på 61,3 mnok for året. Dette er 1,2 mnok under rammen. Glemte å legge på 5% margin når vi ba HOD om tilleggsmidler
+
+*Finansiering: Offentlig tilskudd, PLL -ramme på 62,5 mnok
+<a href="https://app.powerbi.com/groups/6931f38e-9db9-41f4-a143-ac9ee4a4719c/reports/a03232e0-bd45-4da2-b925-662e476d7ebd/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark2bd56f9db35a6e55a14f">Oversikt Sentral forskrivningsmodul PLL (Power BI)</a>
+
+

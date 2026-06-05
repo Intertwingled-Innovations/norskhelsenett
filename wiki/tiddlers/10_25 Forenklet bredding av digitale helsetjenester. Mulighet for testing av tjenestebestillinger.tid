@@ -1,0 +1,8 @@
+created: 20251029133924177
+modified: 20260430093446816
+revision: 0
+tags: 2025 Leveranse Selvbetjening Oktober [[Tilby verktøy som effektiviserer og kvalitetssikrer bruken av HelseID]]
+title: 10/25 Forenklet bredding av digitale helsetjenester. Mulighet for testing av tjenestebestillinger
+type: text/vnd.tiddlywiki
+
+NHN innfører nå nye krav om at helsevirksomheter som ønsker tilgang til nasjonale tjenester fra Norsk helsenett må  bestille tjenestene på NHN.no. Virksomhetene må også undertegne nye medlemsvilkår. Leverandører som tilbyr tjenestene har behov for å sjekke hvorvidt deres EPJ-løsning fungerer på riktig måte i forhold til disse nye kravene. Selvbetjeningsportalen for HelseID er nå tilrettelagt for slik testing . 

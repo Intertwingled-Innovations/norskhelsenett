@@ -1,0 +1,33 @@
+created: 20240908120555524
+modified: 20240924063529418
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] [[Styring Intern tjeneste]] August [[Integrasjon- og støttesystemer]]
+title: Integrasjon- og støttesystemer - hovedtrekk og endringer august
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+''Junta/Flow''
+
+* Jobbet videre med ny løsning for API brukere som løser et sikkerhetsavvik i Flow Docker
+* Flow DNS - tilpasninger for å redusere kolliderende oppførsel og forbedret feilmeldinger ved opprettelser av soner
+* Tilpasninger for å avvikle eldre kontotyper i Junta
+* Junta Arkivløsning - satt opp front-end og connector i Axual mot Junta database
+* Dialog med Pasientreiser vedr Hjemmekontor-løsning og avvikling av Junta
+* Gjort klar nedstenging av PoP registreringer for Nasjonalt Nett
+
+
+''Integrasjonstjenesten''
+
+* Gjennomført kurs i Kafka-verktøy og C#
+* Videre støtte i diskusjoner i bruk - ref innkjøp av nytt saksbehandlingssystem for kunde- og driftssenteret
+
+
+! Prognose på penger og ressurser
+*Finansiering: Medlemsavgiften
+* Prognose er ca. på budsjett for året.
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ad6307c59006ac4e200e?experience=power-bi&bookmarkGuid=Bookmark6966c46e3cd6605ce815">Oversikt Integrasjon- og støttesystemer (Power BI)</a>
+
+

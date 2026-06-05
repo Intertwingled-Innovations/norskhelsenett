@@ -1,0 +1,19 @@
+created: 20250121143325991
+modified: 20250121143524386
+revision: 0
+tags: [[Sentral forskrivningsmodul]] Målsetting [[Team SFM]] [[Tiltaket pasientens legemiddelliste]] 2025
+title: Godkjenning av leverandører for SFM i kommunemarkedet
+type: text/vnd.tiddlywiki
+
+Målsetningen er 
+
+* Godkjenning av leverandører for SFM i kommunemarkedet
+* Være pådriver for utrulling av SFM til helsevirksomheter via leverandørene
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag[2025]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag[2025]tag<currentTiddler>]">>

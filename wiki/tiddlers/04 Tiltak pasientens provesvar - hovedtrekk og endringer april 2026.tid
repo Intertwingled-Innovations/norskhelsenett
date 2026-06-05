@@ -1,0 +1,40 @@
+TjenesteID: 40170
+created: 20260505132447144
+modified: 20260521090237899
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Styring Tiltak]] [[Kjernejournal Pasientens prøvesvar]] 2026 [[Tiltaket pasientens prøvesvar]] April [[Forretningsmessig endring:2]]
+title: 04 Tiltak pasientens prøvesvar - hovedtrekk og endringer april 2026
+type: text/vnd.tiddlywiki
+
+<<list-links filter:"[tag[Tiltaket pasientens prøvesvar]tag[Tiltak]tag[2025]]">>
+
+! Hovedtrekk og endringer
+  
+!!! Utvide tjenesten med bl.a. prøvesvar på nye fagområder og ferdigstille funksjonalitet for visning og personvern (inkl tilgangsstyring). Frist: 1. april: 
+* Tjenesten støtter alle fagområder med unntak av medisinsk genetikk, samt visse typer patologi.
+* Det er enighet om personverninnstillinger, med unntak av hvem som kan oppheve en nekting. en plan for realisering av personverninnstillinger er lagt fram. 
+!!! Understøtte aktørene i sektoren som konsumenter, rekvirenter og produsenter:
+* Tjenesten breddes til stadig flere rekvirenter, til tross for utfordringer rundt delegering i Altinn og krav om signerte medlemsvilkår. Totalt deler nå over 1720 rekvirenter prøvesvar via PPS, dette er ca 75% av alle rekvirenter.
+* Deling av prøvesvar fra Helse Midt-Norge starter 26. mai
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) '' 2
+
+Konsekvens av forretningsmessig endring: Fortsatt noe uenighet om personvernsinnstillinger.
+
+ 
+
+
+! Prognose på penger og ressurser
+* Tjenesten er ennå ikke en del av den nasjonale e-helseløsningen under Kjernejournal. Men dette er målet på sikt. I 2026 finansieres drift og forvaltning over satsningsmidler og offentlig tilskudd.
+* Inntektsrammen for 2026 er på 20,5 mnok ( 18,1 mnok på API og 2,4 mnok på Portal)
+* Budsjett 2026: 15,2 mnok
+* Divisjon Helsepersonell har brukt 5.1 mnok vs en ramme på 20.5 mnok.
+* Runrate for året ligger nå på 14.0 mnok mot en prognose for året på 16,2 mnok. Avviket skyldes at team Nilar bruker mer tid på pasientens rekvisisjoner i starten av året.
+
+! Leveranser
+<<list-links filter:"[tag[Leveranse]tag[Tiltaket pasientens prøvesvar]tag[2026]tag[April]]">>
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi">Oversikt KJ Pasientens prøvesvar (Power BI)</a>
+
+
+

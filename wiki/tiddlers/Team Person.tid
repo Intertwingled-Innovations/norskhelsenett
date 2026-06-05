@@ -1,0 +1,17 @@
+created: 20240229091514243
+modified: 20240709082928373
+revision: 0
+tags: Team [[Domene Samhandlingsplattform]] [[Team Person]]
+title: Team Person
+type: text/vnd.tiddlywiki
+
+Team Person skal samle og tilgjengeliggjøre folkeregisterinformasjon (ikke helsedata) for norske innbyggere, på vegne av helsesektoren.
+
+Team person forvalter de følgende tjenestene:
+
+* ''Person API'' - Søk og oppslag på innbyggere i Norge, samt nasjonale felles hjelpenummer
+* ''Alternate identification number API'' - Reservere nasjonale felles hjelpenummer
+* ''Reserved testdata API'' - Opprette/oppdatere statiske testpersoner i Persontjenestens testmiljø
+* ''Personregisteret (PREG)'' - Forrige løsning for søk og oppslag på innbyggere i Norge, nå under utfasing
+
+!Ansvar og målsettinger

@@ -1,0 +1,16 @@
+created: 20240702083806245
+modified: 20250422125207221
+revision: 0
+tags: [[Innrapportering av dødsfall og dødsårsak]] Målsetting 2025
+title: Støtte leverandører i å ta i bruk Dødsmelding API
+type: text/vnd.tiddlywiki
+
+Beskrivelse?
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

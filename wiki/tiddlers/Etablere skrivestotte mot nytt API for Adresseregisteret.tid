@@ -1,0 +1,20 @@
+TjenesteID: 40027
+created: 20260506161418051
+modified: 20260511184830964
+revision: 0
+tags: 2026 Målsetting Virksomhet
+title: Etablere skrivestøtte mot nytt API for Adresseregisteret
+type: text/vnd.tiddlywiki
+
+Nytt skrive-API basert på REST vil være en viktig milepæl for å kunne avvikle eksisterende Grunndata API basert på SOAP. 
+Nytt skrive-API vil skrive til en ny database som synker videre til gammel database. Denne vil på sikt overta som primær database for Adresseregisteret. 
+
+
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranse
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

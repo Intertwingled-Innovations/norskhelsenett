@@ -1,0 +1,32 @@
+created: 20251009052305436
+modified: 20251009055618322
+revision: 0
+tags: Reseptformidleren [[Styring Ekstern tjeneste]] 2025 September
+title: 09 Reseptformidleren - hovedtrekk og endringer september 2025
+type: text/vnd.tiddlywiki
+
+!Hovedtrekk og endringer
+
+Vi har hatt stabil drift og ingen utfordringer eller hendelser knyttet til reseptformidleren. Det har vært en ny hendelse med feil i FEST fra DMP og dette påvirker verdikjeden.
+
+Driftsteamet som tidligere var i APT er flyttet over til DHP og inngår i leveranseteamene fra 1.oktober.
+
+Vi har ikke lengre tilgang til apotekløsning slik at vi ikke kan gjennomføre ende til ende tester ved nye leveranser. Dette medfører en noe høyere risiko. Vi ønsker å ha en apotekløsning som del av vårt akseptansetest miljø. Dialog pågår, men saken forventes ikke løst i tide til hovedleveranse den 15.november 2025.
+
+!Modernisering
+*Pasientens legemidler (PLM) skal sørge for utfasing av eksisterende KJ infotjenester legemiddel API så raskt som mulig. Det er backend delen som blir erstattet først. Fase 1 vil fase ut komponenter basert på Oracle Service Bus og planlagt levert i oktober 2025. Dette krever ikke endringer hos konsumentene (som er SFM og HP i hovedsak). Vi er forsinket ift denne planen, men forventer å være i produksjon innen utgangen av 2025.
+* Arbeid med å ta i bruk Etterkontroll tjenesten pågår, vi har behov for noen tilpasninger der som vi er i dialog med tjenesten om. Planlagt å ferdigstille dette arbeidet tidlig 2026.
+*De avtalte valideringene er i utvikling og test. Foreløpig er det kun CGM som melder at de ikke vil kunne håndtere alle disse, det er validering av §3 de mener de ikke rekker. CGM melder at denne valideringen vil medføre forsinkelse i arbeidet med SFM integrasjon og dermed også forsinkelse i PLL i nord.
+*EHDS arbeid med rapport til HOD om gap og konsekvenser for reseptformidleren.
+*Data til sekundærbruk. Hdir har sendt oss en omfattende bestilling på statistikk/rapporter de ønsker om forskrivningspraksis og status innføring av PLL. Vi jobber med å se hvilke rådata vi kan levere slik at Hdir selv kan gjøre sammenstillinger og analyser i sitt datavarehus. Mange av behovene vil ikke kunne dekkes av anonyme rådata fra reseptformidleren fordi de forutsetter at man følger en pasient. Rådata skal strømmes via en ny Statistikk tjeneste som er under etablering.
+
+
+!Sikkerhet
+*Alle tekniske krav og sikkerhetskrav til aktører som vil ta i bruk reseptformidleren er gjennomgått og vil bli samlet på ett sted. Disse kravene har vært spredd utover i dokumentasjonen, noen er også implisitte slik at det er vanskelig for aktørene å få oversikt over hva som kreves. Arbeidet skal kvalitetssikres i teamt og med verdikjede før det publiseres.
+
+!Prognose på penger og ressurser
+Drift ligger over budsjett og ligger høyere enn det gjorde hos TiE. Det er iverksatt en rekke tiltak ift å redusere lagring for å redusere driftskost. Dette var forventet å få effekt fra april/mai, men gjenspeiles ikke i regnskapet. 
+
+Forvaltning ligger godt under rammen og noe under den nedjusterte prognosen. Dette skyldes i hovedsak at vi har lavere bemanning enn opprinnelig planlagt og at konsulenter er erstattet med ansatte.
+
+Oversikt Reseptformidleren (Power BI)

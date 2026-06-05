@@ -1,0 +1,37 @@
+created: 20240430102642929
+modified: 20260408085632629
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] [[Forskrivningsmodulen 2024-2025]] April [[Styring Ekstern tjeneste]]
+title: 04 Forskrivningsmodulen - hovedtrekk og endringer april
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+* [[FM 4.13 - godkjent 30. april 2024]] - Viktig for videre bredding av PLL på Haukeland sykehus 
+* 4.14 blir siste planlagte versjon (i test - ferdigstilles etter sommeren)
+* Avviklet eMD i FM
+* Avviklet FM for fastleger
+* Skal tilnærme oss avvikling av FM segment for segment
+
+
+! Leveranser
+Ferdigstilte leveranser i perioden: 
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>
+
+
+! Prognose på penger og ressurser
+* 2 oppsigelser på testsiden. En ekstra konsulent fra 7. mai. Deles mellom godkjenningsprosess og FM.
+* Har gjennomført første måned med full timeføring på FM (ikke lengre deling med Utprøving PLL). 
+* Har nå for høy fart ift budsjett. Om vi kommer innenfor budsjett avhenger av hvordan vi klarer å dele ressurser til høsten når det er mindre å gjøre på FM (1-2 utviklere med SFM  og testere med godkjenning).
+* Trenger bedre oversikt over hvordan felleskostnadene treffer. Felleskostnader er opp mot 70% av timekostnaden på AOene nå
+
+
+
+*Finansiering: Forskriftsfestede midler nasjonale e-helseløsninger, e-resept
+<a href="https://app.powerbi.com/groups/6931f38e-9db9-41f4-a143-ac9ee4a4719c/reports/a03232e0-bd45-4da2-b925-662e476d7ebd/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark047e6c018241495568dc">Oversikt Forskrivningsmodulen (Power BI)</a>
+
+
+
+

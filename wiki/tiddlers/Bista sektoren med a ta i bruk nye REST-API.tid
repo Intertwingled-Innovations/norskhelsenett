@@ -1,0 +1,19 @@
+TjenesteID: 40027
+created: 20260407212510964
+modified: 20260506164254166
+revision: 0
+tags: 2026 Målsetting Virksomhet
+title: Bistå sektoren med å ta i bruk nye REST-API
+type: text/vnd.tiddlywiki
+
+Etter hvert som vi etablerer nye REST-API som tilbyr tilsvarende leveranser som de gamle SOAP-API'ene vil vi informere og støtte sektoren i å ta i bruk disse. 
+Dette er viktig for å kunne avvikle eldre SOAP-API'er innen rimelig tid.  
+
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranse
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

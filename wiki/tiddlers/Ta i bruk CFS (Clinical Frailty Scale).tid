@@ -1,0 +1,9 @@
+created: 20260507105847327
+modified: 20260508100654273
+revision: 0
+tags: [[Inkludere nye type målinger (ikke begrenset til DHO) i tjenesten]] Resultat 2026 [[Pasientens måledata]]
+title: Ta i bruk CFS (Clinical Frailty Scale)
+type: text/vnd.tiddlywiki
+
+!Leveranser
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

@@ -1,0 +1,38 @@
+created: 20260123135216842
+modified: 20260123135415315
+revision: 0
+tags: [[Plan for kvalitet i e-resept]] 2025 [[Verdikjede e-resept]] Reseptformidleren Resultat August
+title: Plan utarbeidet for kvalitet i e-resept
+type: text/vnd.tiddlywiki
+
+!Plan som beskrevet i målsetning levert i august 2025:
+
+
+Team verdikjede e-resept og Team reseptformidleren planlegger og gjennomfører tiltak innenfor rammene av e-resept forvaltning. Denne planen gir oversikt over planlagte tiltak frem til utgangen av 2026.
+
+Avgrensninger
+
+*Team SATS og SFM jobber kontinuerlig for å få så mange som mulig over på godkjente EPJ-systemer/SFM. Dette vil heve kvaliteten i e-resept da de godkjente systemene ivaretar nødvendige krav
+*Utfordringer i PLL-konseptet følges opp av team Sats og håndteres som en del av leveransene fra aktørene tilknyttet utprøvingene av PLL i Nord og Vest
+
+Tiltak, organisatorisk 
+
+*Forbedret hendelseshåndteringsprosess i samarbeid med HDIR ved klarere ansvarsfordeling ("Avtalt og beskrevet..")
+*Forbedret leverandøroppfølging for bedre å styre endringsprosessene slik at de følger kravene ved produksjonssetting av nye versjoner (Beskriv som leveranse)
+*Revidere og forenkle rekvirentkrav for PLL og eMultidose i tett samarbeid med sektoren, som følge av erfaringene som kommer av PLL-utprøvingen (arbeidsgruppe opprettes) 
+*Justere e-resept sin styringsmodell for å gjøre endringsrådet mer strategisk og gå bort fra konsensusprinsippet, og for å sikre bedre kartlegging og vurdering av forvaltningsbehov
+*Samordne tekniske krav og sikkerhetskrav for å sikre at det er lett for aktørene å forstå hva de må oppfylle slik at vi oppnår ønsket sikkerhetsnivå når vi følger opp de tekniske kravene
+*Harmonisering av regelverk – være pådriver for å få samme regelverk/lovverk for bruk av legemiddelopplysninger (i e-resept og kjernejournal). Det vil heve kvaliteten i legemiddelinformasjonen for helsepersonell (entydig informasjon) (Legg til info om hva vi ønsker å oppnå med harmoniseringen – forskrift skal ikke regulere teknologi, og det skal være 1 regulering)
+
+Tiltak, operativt og teknisk
+
+*Re-etablere verdikjedetest med apotek for bedre å håndtere produksjonshendelser og teste konsekvenser av endringer i verdikjeden før endringene skal i produksjon
+*Effektivisere godkjenningsprosessen for å frigjøre kapasitet til andre oppgaver, bl.a. ved å automatisere tester 
+*Videre bredding av HelseID (både rekvirenter og utlevere) for at vi skal lettere og sikrere identifisere helsepersonell. Helse ID er også en forutsetning for at apotekansatte skal få tilgang til PLL (Kvantifisere)
+*Videre innføring av valideringer i reseptformidleren for å senke risiko for å motta data med dårlig kvalitet som senker kvaliteten i e-resept. Se egen Plan for valideringer (justeres kontinuerlig)
+*Tilby rådata for statistikk for å gi bedre oppfølgingsverktøy til å heve kvaliteten
+*Bistå utprøvingen av PLL og eMultidose ved behov for tekniske avklaringer og endringer i reseptformidleren
+
+Tiltak som er vurdert som ikke nødvendig / ikke aktuelle
+
+*Forbedret validering av rekvirentvirksomheters bruk av sertifikat og rett informasjon i Adresseregisteret prioriteres ikke foreløpig da vi har ansett sikkerheten som tilstrekkelig på rekvirentsiden - brukene må identifisere seg personlig før bruk

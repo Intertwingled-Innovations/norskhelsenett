@@ -1,0 +1,8 @@
+created: 20241013181812846
+modified: 20241013181936589
+revision: 0
+tags: [[Levere en stabil og god tjeneste for innrapportering av dødsfall og dødsårsak]] Leveranse 2024 August
+title: Flytte driften av backend til privat sky
+type: text/vnd.tiddlywiki
+
+Backend av dødsmelding og melding om dødsårsak er flyttet til privat sky.

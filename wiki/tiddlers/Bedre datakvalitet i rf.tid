@@ -1,0 +1,20 @@
+TjenesteID: 40034
+created: 20260324164228101
+modified: 20260414122854647
+revision: 0
+tags: Reseptformidleren Målsetting 2026 [[Ekstern Tjeneste]]
+title: Bedre datakvalitet i rf
+type: text/vnd.tiddlywiki
+
+*Legemiddelreaksjoner skal registreres i Kjernejournal som kritisk informasjon om pasienten. Det skal ikke lengre være en del av PLL.
+*Flere valideringer av doseringsinformasjon.
+
+! Resultat
+!! 2026
+
+<<list-links filter:"[tag[Resultat]tag[2026]tag<currentTiddler>]">>
+
+! Leveranser
+!! 2026
+
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>

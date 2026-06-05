@@ -1,0 +1,10 @@
+created: 20260503100023603
+modified: 20260503100046412
+revision: 0
+tags: [[Tilby ny backend til eksisterende KJ legemiddel API]] Resultat 2026 [[Ekstern Tjeneste]]
+title: Produksjon ny backend
+type: text/vnd.tiddlywiki
+
+Når historiske data er migrert fra dagens KJ legemiddel backend og meldinger fra rf leses inn fortløpende starter en periode med prøveproduksjon/skyggeproduksjon.
+
+Alle kall vil besvares av eksisterende API og backend, men alle kall vil også sendes til ny backend og resultat fra gammel og ny backend vil bli sammenlignet. Avvik vil varsles slik at eventuelle feil kan rettes opp. Først når vi ser at kvaliteten er god nok ny ny backend vil alle kall bli rutet til ny backend.

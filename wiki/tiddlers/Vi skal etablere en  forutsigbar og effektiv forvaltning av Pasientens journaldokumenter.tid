@@ -1,0 +1,18 @@
+TjenesteID: 40171
+created: 20260511121631758
+modified: 20260601070603349
+revision: 1
+tags: [[Kjernejournal Pasientens journaldokumenter]] Målsetting 2026 [[Vi skal etablere en  forutsigbar og effektiv forvaltning av Pasientens journaldokumenter]]
+title: Vi skal etablere en  forutsigbar og effektiv forvaltning av Pasientens journaldokumenter
+type: text/vnd.tiddlywiki
+
+! Beskrivelse 
+Vi skal etablere en forutsigbar og effektiv forvaltning av Pasientens journaldokumenter. Det betyr at det skal være mulig å gjøre endringer og at det skal være enkelt og effektivt å gjennomføre disse endringene.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

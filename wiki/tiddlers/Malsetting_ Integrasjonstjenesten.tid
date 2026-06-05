@@ -1,0 +1,18 @@
+created: 20240508110616845
+modified: 20240701074108665
+revision: 0
+tags: [[Team Integrasjon og støttesystemer]] Målsetting [[Intern tjeneste]]
+title: Målsetting: Integrasjonstjenesten
+type: text/vnd.tiddlywiki
+
+! Overordnet mål
+Få data til å flyte mellom alle relevante interne støttesystemer i NHN.
+
+!! Beskrivelse
+Teamet fungerer som et enabling team for å støtte andre team i å ta i bruk Integrasjonstjenesten (det interne Kafka navet) for å få produsert og konsumert data mellom støttesystemer internt.
+
+!!! Saker det jobbes med:
+* Kompetanseheving av teamet på Kafka mønster og ny plattform fra Axual.
+* Få data (saksgang) til å flyte mellom FTS, APT og KD.
+* Mellomvare som lar systemer som ikke har mulighet for Kafka klient til å benytte tjenesten via REST API.
+* Andre data som skal flyte på intern navet fra Unit4 Agresso, Plexus, Medlemstjenesten.

@@ -1,0 +1,19 @@
+TjenesteID: 40168
+created: 20260412115215871
+modified: 20260414125438992
+revision: 0
+tags: [[Kjernejournal Pasientens kritiske informasjon]] Målsetting 2026
+title: Målsetting for kritisk info: Implementere forbedringer i statistikk
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+
+Implementere forbedringer i statistikk
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

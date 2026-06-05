@@ -1,0 +1,8 @@
+created: 20260602102422533
+modified: 20260602102956155
+revision: 1
+tags: [[Autentisering og autorisasjon]] Leveranse 2026 [[Tjenesten HelseID skal lukke alle risikoelementer med risikonivå alvorlig]] Juni
+title: 06/26-Sikkerheten i HelseID økes-Manglende DPoP-implementasjon avvises i produksjon
+type: text/vnd.tiddlywiki
+
+DPoP er en sikkerhetsmekanisme som gjør at kun den riktige mottakeren av et Access-token kan bruke dette tokenet mot et API, altså at man kan være sikre på at den som ber om tilgang til NHN sine tjenester er den vedkommende gir seg ut for. En mekanisme som hindrer tokentyveri.

@@ -1,0 +1,8 @@
+created: 20260123134030765
+modified: 20260123134221482
+revision: 0
+tags: [[Forbedre kvaliteten på data i e-resept verdikjeden]] 2025 November Resultat Reseptformidleren
+title: Ny egenandelsmodell
+type: text/vnd.tiddlywiki
+
+Endring i logikk for egenandeler innføres 1.januar 2026. Egenandel beregnes pr utlevering hos apotek og ikke pr resept. 

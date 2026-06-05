@@ -1,0 +1,14 @@
+TjenesteID: 40170
+created: 20260508074103891
+modified: 20260508074739212
+revision: 0
+tags: [[Kjernejournal Pasientens prøvesvar]] [[Tiltaket pasientens prøvesvar]] Resultat 2026 [[Målsetting for pasientens prøvesvar: Ferdigstille nødvendig funksjonalitet for visning og personvern (inkl. tilgangsstyring)]]
+title: Resultat for pasientens prøvesvar: Helsepersonell skal kunne sperre for deling med alt helsepersonell, pr prøvesvar
+type: text/vnd.tiddlywiki
+
+! Mål:  
+* Kjernejournal portal skal ha implementert en klinisk forvarslig visning av prøvesvar fra alle fagområder
+* Pasientens prøvesvar skal ha funksjonalitet for at pasienten og helsepersonell kan sette nødvendige personverninnstillinger
+
+! Effekt sektoren
+* Helsepersonell kan bidra til at innbygger kan være trygg på at prøvesvarene ikke deles med relatert helsepersonell, allerede før prøvesvaret lagres i løsningen

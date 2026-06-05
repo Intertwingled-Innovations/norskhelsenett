@@ -1,0 +1,12 @@
+TjenesteID: 40061
+created: 20260407114933969
+modified: 20260505102226235
+revision: 0
+tags: 2026 [[Personvern og tilgangsstyring]] [[Ny tjeneste for å samle og dele tilgangsbegresninger]] Resultat
+title: Produksjonssetting av ny tjeneste for å samle og dele tilgangsbegrensninger (MVP)
+type: text/vnd.tiddlywiki
+
+Produksjonssetting av ny tjeneste for å samle og dele tilgangsbegrensinger ila august 2026 for samling og tilgjengeliggjøring av personverninnstillinger i Pasientens prøvesvar (MVP).
+
+Løsningen skal som minimum kunne tilby funksjonalitet for at helsepersonell, på vegne av innbygger, skal kunne sperre informasjonselement/ressurs (her: svarrapporter) for alt helsepersonell.
+Løsningen skal viidereutvikles med ytterligere funksjonalitet for samling og deling av tilgangsbegreninger.

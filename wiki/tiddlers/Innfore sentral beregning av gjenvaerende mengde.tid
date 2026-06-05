@@ -1,0 +1,15 @@
+TjenesteID: 40034
+created: 20260223085106968
+modified: 20260417114443308
+revision: 0
+tags: Reseptformidleren 2026 [[Ekstern Tjeneste]] Resultat [[Forenkling og opprydding i dagens løsning (RF)]]
+title: Innføre sentral beregning av gjenværende mengde
+type: text/vnd.tiddlywiki
+
+Beregning av gjenværende mengde på en resept beregnes idag både i EPJ systemene og i apotekenes utleverer løsninger. Beregningen kan være kompleks, spesielt ved bytte av produkt som leveres ut. Det er fare for at beregningene gir forskjellig resultat avhengig av hvilken løsning som beregner.
+
+MyHealth forutsetter at gjenværende mengde er en attributt på resepten som følger denne når en "norsk" resept skal ekspederes i et EU land. 
+
+Begrunnelse for å innføre sentral beregning av gjenværende mengde er både for å støtte MyHealth krav (og på sikt også EHDS krav) og for å sikre likt resultat.
+
+Det vil også være en forenkling for både EPJ leverandører og apotekenes utleverer løsninger at de slipper å beregne gjenværende mengde selv.

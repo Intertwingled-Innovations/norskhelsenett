@@ -1,0 +1,16 @@
+TjenesteID: 40044
+created: 20260211094653067
+modified: 20260416102213485
+revision: 0
+tags: Leveranse [[Team SFM]] Januar 2026 [[Forvalte SFM i 2026 for alle segmenter]] [[Sentral forskrivningsmodul i 2026]]
+title: Leveranse SFM: EPJ har ansvar for å sende korrekt PID til SFM, SFM oppdaterer ikke ny PID basert på informasjon fra RF
+type: text/vnd.tiddlywiki
+
+Mål: Implementere forbedringer i arkitektur, implementasjon og deployment - kode, prosesser og ansvar.
+
+Levert:
+
+*EPJ har ansvar for å sende korrekt PID til SFM, SFM oppdaterer ikke ny PID basert på informasjon fra RF. Dette gir en mer robust håndtering i SFM og minker feilsituasjonene rundt PID-bytte
+
+
+

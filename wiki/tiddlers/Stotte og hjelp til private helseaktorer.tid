@@ -1,0 +1,24 @@
+TjenesteID: 40050
+created: 20240625080141249
+modified: 20260407081448262
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] [[Domene Økosystem]] 2024
+title: Støtte og hjelp til private helseaktører
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+
+Teamet jobber strategisk med interesseforeningene og andre private aktører og har jevnlige møtepunkter med disse for å følge opp deres behov samt kommunisere NHN sine aktiviteter. Vi møter dem også på deres egne arenaer for å få bedre kunnskap om kundegruppenes behov og kultur samt synliggjøre NHN for sluttbrukerne. 
+Se Confluence for mer informasjon: https://confluence.nhn.no/pages/viewpage.action?pageId=278004148
+
+
+! Målsettinger
+
+<<list-links filter:"[tag[Målsetting]tag<currentTiddler>]">>
+
+!Leveranser
+<<list-links filter:"[tag[Leveranser]tag<currentTiddler>]">>
+
+! Styring
+!! 2024
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2024]tag<currentTiddler>]">>

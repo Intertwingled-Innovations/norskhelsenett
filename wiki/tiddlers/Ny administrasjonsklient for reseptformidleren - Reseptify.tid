@@ -1,0 +1,16 @@
+created: 20240508082239444
+modified: 20250119172951421
+revision: 0
+tags: Reseptformidleren 2024 Resultat
+title: Ny administrasjonsklient for reseptformidleren - Reseptify
+type: text/vnd.tiddlywiki
+
+Det etableres en ny administrasjonsklient der vesentlige svakheter ift. sikkerhet er håndtert. Dette gir et sikkert brukergrensesnitt med tilpassede roller og tilganger. Brukere er kundesenter, utviklere, testere og driftsteam. Utviklingen av den nye klienten vil også gi verdifull læring om ny plattform (privat sky og Kubernetes) og nye verktøy, denne læringen kan benyttes videre i moderniseringen av reseptformidleren der ett av målene er å ta i bruk felleskomponenter i Samhandlingsplattformen. 
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

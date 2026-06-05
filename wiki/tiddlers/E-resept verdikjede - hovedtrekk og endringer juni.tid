@@ -1,0 +1,34 @@
+created: 20240627124006621
+modified: 20240815132952486
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] Reseptformidleren [[Styring Ekstern tjeneste]] Juni
+title: E-resept verdikjede - hovedtrekk og endringer juni
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+Sykehusapotekene og NMD er godkjent for innføring med Eik. Med dette er alle apotekkjedene godkjent for innføring med Eik. I møte med Apotekforeningen i juni fikk vi skryt for at vi har snudd oss rundt og kjørt godkjenning på en mye mer effektiv måte enn tidligere, og for avholdt kurs i Dr.Who slik at apotek kan lage en del testdata selv. 
+
+Pridok har hatt en MVP-løsning siden pandemien med mange dispensasjoner fra gjeldende rekvirentkrav. De er nå godkjent for basis e-reseptfunksjonalitet. Godkjenning ble gitt under forutsetning av at løsningen brukes uten konfigurasjon for multidosefunksjonalitet og mulighet til å sende PLL. Neste steg er å åpne opp for utprøving for utvalgte kontorer/virksomheter. 
+
+Endringsforum og -råd for Q2 gjennomført. Vi varslet om strengere validering i RF fremover. Apotekforeningen er spesielt opptatt av dette da de sitter i enden av verdikjeden og må rydde opp etter andre. 
+
+Jurdisk avklaring av PLL for apotek er mottatt fra HOD. Møte med Apotekforeningen for å diskutere alternativer er avholdt. 
+
+Det jobbes videre med avklaring av scope for PLL og ansvarsfordeling mellom NHN og Hdir. 
+
+Verdikjede e-resept har vært sentrale i håndteringen av hendelsen med feil i strukturert dosering på e-resepter. Dette har gått ut over fremdrift på en del andre oppgaver. 
+
+
+! Prognose på penger og ressurser
+*Finansiering: Forskriftsfestede midler nasjonale e-helseløsninger, e-resept
+
+Timepådraget er noe under prognosen. Det er et underforbruk på godkjenningsprosessen bla pga mindre etterspørsel etter testdata og noe fravær. Marginalt underforbruk på verdikjede.   
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark4c89bd5ada01ce3dc213">Oversikt E-resept verdikjede (Power BI)</a>
+
+
+
+

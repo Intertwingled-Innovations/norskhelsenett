@@ -1,0 +1,8 @@
+created: 20250303083029446
+modified: 20250303083353985
+revision: 0
+tags: [[ADFS integreres som autentiseringsmekanisme i innrapportering av fødselsmelding]] [[Innrapportering av fødselsmelding]] Leveranse 2025
+title: Elektronisk fødselsmelding: Ny oppdatert ADFS pålogging er i produksjon
+type: text/vnd.tiddlywiki
+
+Ny oppdatert ADFS påloggingen blir 100% satt ut i prod 4.mars 2025. (da endrer vi domene) Har vært ute i prod siden januar, men da på en egen url.

@@ -1,0 +1,38 @@
+created: 20250731065146782
+modified: 20250731073217035
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Sentral forskrivningsmodul]] [[Styring Ekstern tjeneste]] 2025 Juni
+title: 06 SFM drift og forvaltning - hovedtrekk og endringer Juni 2025
+type: text/vnd.tiddlywiki
+
+
+! Hovedtrekk og endringer
+*Status leveranser: God fart på godkjenningsprosessen av leverandører. Planen følges og vi godkjenner fortløpende. Alle FM kunder ligger i planen for godkjenning i løpet av august og september. Ekstra ressurser er midlertidig satt inn for å håndtere FM-påtrykket i Q3 
+*Status leveranser: Vi leverer releaser jevning. På fovaltningssiden er det fokus på ytterligere stabilisering og videreutvikling av eksisterende funksjonalitet.
+*Status kommune: To kommuner er på SFM fullversjon og vi er i rute for godkjenningsprosessen for kommunemarkedet
+*Fokus: Ytterligere stabilisering og ny løsning rundt FEST og Redis
+*Risiko: FM leverandørene har meldt seg på veldig sent til godkjenning. Utrulling av virksomheter vil garantert fortsette i 2026
+
+
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag[Juni]tag[2025]tag[Sentral forskrivningsmodul]]">>
+
+
+! Prognose på penger og ressurser
+
+* Finansiering: Inntektsramme for SFM på 55.6 mnok. Budsjett 44,4 mnok. 
+* Runrate inntekter per juni er på 43,5 mnok (11mnd) (Thula vridning 1mnok for juni er ikke gjort)
+* Prognose inntekter helår på 47,5 mnok. 
+* Kostnader: Runrate 48,2 mnok, prognose 56,8 mnok, budsjett 54,0 mnok. Avviket er primært økte driftskostnader. (runrate 11mnd, uten medlemsavgift på kilde, Thula vridning ikke gjort for Juni)
+* Ressurssiden: To konsulenter starter i august som skal fokusere på automatisering av produksjonslinjer, infrastruktur og tester. 
+* Ressurssiden: Det leies inn en testressurs i påvente av ny ansettelse
+Kapasiteten ellers i teamet er som forventet.
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark653d46c1659b4733c1ea">Oversikt SFM drift og forvaltning (Power BI)</a>
+
+
+
+

@@ -1,0 +1,22 @@
+created: 20240128170642391
+modified: 20240128171538980
+revision: 0
+tags: [[Norsk Helsenett SF]] Divisjon
+title: Divisjon Innbygger
+type: text/vnd.tiddlywiki
+
+! Formål
+
+XXXX
+
+! Eksterne tjenester
+
+<<list-links filter:"[tag[Ekstern Tjeneste]tag[Divisjon Innbygger]]">>
+
+! Interne tjenester
+
+<<list-links filter:"[tag[Intern tjeneste]tag[Divisjon Innbygger]]">>
+
+! Oppgaver
+
+<<list-links filter:"[tag[Oppgave]tag[Divisjon Innbygger]]">>

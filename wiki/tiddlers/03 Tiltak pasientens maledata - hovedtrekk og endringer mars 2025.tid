@@ -1,0 +1,36 @@
+created: 20250411064426346
+modified: 20260408071025184
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Styring Tiltak]] [[Tiltaket pasientens måledata (OLD)]] 2025 [[Tiltaket pasientens måledata 2025]] Mars
+title: 03 Tiltak pasientens måledata - hovedtrekk og endringer mars 2025
+type: text/vnd.tiddlywiki
+
+
+<<list-links filter:"[tag[Tiltaket pasientens måledata 2025]tag[Tiltak]tag[2025]]">>
+
+! Hovedtrekk og endringer
+
+
+!!! Gjennomføre en utprøving av pasientens måledata i helseregon Sør-øst
+
+* Mål: Gjennomføre utprøving med deling av måledata mellom Oslo kommune og OUS i løpet av Q3 2025
+** Oslo kommune planlegger utrulling av DHO til pasienter som sogner til OUS i 2025. Tidsmessig starter dette nå før somneren og forecast er nok pasienter til oppstart utprøving 2025
+** HSØ utvikler visningsklient i Pega (prosessplattform). Denne må bli "god nok" tidsnok til utprøving.
+*** Sannsynlig HelseID-utfordringer som materialiserte seg i DHG
+** NHN ferdigstiller PMD-tjenesten
+*** Avklaringer juridisk grunnlag - særskilt for utprøvingen
+*** Nødvendig funksjonalitet som mangler: Sletting/ endring av målinger, personvernfunksjoner.
+* Vestre Viken HF, Drammen kommune/Asker kommune: Er fortsatt med. Varsler økning i aktuelle pasienter - øker mulighet for at de også blir med på utprøving.
+** Mål: Data i testmiljø fra Drammen kommune med Tellu som DHO-system og kilde til måledata. Viktig kvalitativt for PMD.
+* PMD godt eksponert på DND eHelse 2025 i 3 ulike innlegg på konferansen
+* Måledata signalisert som viktig for AHUS/Ullensaker (MILA) ifm Pasientens Planer
+* Reorganisering fra "spor 1/2/3" til faggrupper som er mer hensiktsmessig i nåværende fase
+* Dialog med HDIR vedrørende statistikk etablert - PMD skal levere statistikk via Observability-stack
+
+! Prognose på penger og ressurser
+
+*Finansiering: Offentlig tilskudd, PMD, 13 mnok tilfaller vår divisjon og 5 mnok divisjon Innbygger
+* Prognose 5.7 mnok på DHP - en god del mindre enn rammen, hovedsaklig pga. mindre aktivitet/ treghet med å få i gang utprøving. Pr mars så viser runrate 4.3 mnok for 2025, men prognosen justeres ikke da det er noen timer som skal overføres fra Felles journalløft til PMD for januar/februar, i tillegg til at vi forventer noe økning i pådrag når 2 ressurser er tilbake fra 80% permisjon.
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection343a8851705d1cfe8125?experience=power-bi&bookmarkGuid=Bookmark76496cc890038835a416">Oversikt PMD (Power BI)</a>

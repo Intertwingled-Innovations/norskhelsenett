@@ -1,0 +1,16 @@
+TjenesteID: 40044
+created: 20250509083841877
+modified: 20260416102703932
+revision: 0
+tags: Leveranse [[Team SFM]] Januar 2026 [[Tiltak for ytterligere stabilisering, håndtere økt volum og opprettholde fart i leveranser]] [[Sentral forskrivningsmodul i 2026]]
+title: Leveranse SFM: Omskriving av hvordan SFM håndterer utleveringsmeldinger på resepter
+type: text/vnd.tiddlywiki
+
+Mål: Implementere forbedringer i arkitektur, implementasjon og deployment - kode, prosesser og ansvar.
+
+Levert:
+
+*Omskriving av hvordan SFM håndterer utleveringsmeldinger på resepter. Dette gir bedre ytelse og dermed bedre brukeropplevelse i SFM
+
+
+

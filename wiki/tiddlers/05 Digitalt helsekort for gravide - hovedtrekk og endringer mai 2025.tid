@@ -1,0 +1,33 @@
+created: 20250613105313329
+modified: 20250613111401642
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Tiltaket digitalt helsekort for gravide]] [[Styring Tiltak]] 2025 [[Tiltaket digitalt helsekort for gravide 2025]] Mai
+title: 05 Digitalt helsekort for gravide - hovedtrekk og endringer mai 2025
+type: text/vnd.tiddlywiki
+
+<<list-links filter:"[tag[Tiltaket digitalt helsekort for gravide]tag[Tiltak]tag[2024]]">>
+
+! Hovedtrekk og endringer
+* NHN holder på API-First strategi - det er besluttet å ikke implementere grensesnitt for helsepersonell
+* 4 kommuner skal delta i utprøvingen (Asker, Bærum, Drammen og Stavanger kommune). Det er inngått avtaler om frikjøp av helsepersonell i disse kommunene med en total ramme på opptil 3 mnok i 2025. 
+* DHG api'et er i produksjon:
+** Fastleger i 4 kommuner er i produksjon (Stavanger, Drammen, Asker og Bærum)
+** Helsestasjoner i Stavanger og Asker er i produksjon. Drammen og Bærum kommer i produksjon etter sommerferien. 
+* Helsenorge sin Gravid tjeneste er i produksjon
+* Pr. 10. juni er det opprettet 14 digitale helsekort, 21 gravide har avgitt samtykke
+* Tekniske avklaringer er ferdigstilt overfor Sykehuspartner. Det er nå ingen tekniske hindringer for at Vestre Viken HF kan koble seg til tjenesten, og det forventes at dette skjer i løpet av juni.
+* Utprøving i Ålesund kommune vil sannsynligvis starte i løpet av juni (Ålesund sykehus + helsestasjon + Borgund fastlegekontor)
+
+! Prognose på penger og ressurser
+*Finansiering: Offentlig tilskudd, helsekort for gravide
+* DIT har ved utgangen av mai brukt 5.5 mnok av en total ramme på 12 mnok. Prognosen på 11.5 mnok for året står seg.
+* DHP har ved utgangen av mai brukt 4.4 mnok av en total ramme på 10 mnok. Prognosen på 9.6 mnok for året står seg.
+* Det er ved utgangen av mai brukt ca 12 mnok på leverandørincentiver. Total ramme er 9.8 mnok (ubrukte midler fra 2024) + 15 mnok i interne midler
+
+! Leveranser
+* API'et for helsekort for gravide er satt i produksjon
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark939bcb60b56e4d11e018">Oversikt Elektronisk helsekort for gravide (Power BI)</a>
+
+
+

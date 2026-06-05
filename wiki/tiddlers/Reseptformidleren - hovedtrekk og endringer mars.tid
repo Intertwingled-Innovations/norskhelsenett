@@ -1,0 +1,36 @@
+created: 20240402124049021
+modified: 20240412124924078
+revision: 0
+tags: Styring 2024 [[Divisjon Helsepersonell]] Mars Reseptformidleren
+title: Reseptformidleren - hovedtrekk og endringer mars
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+Timepådraget for utvikling og test er iht plan og det er god fart i leveransene.
+
+Reseptformidleren tar nå i bruk Personvernkomponenten (PVK) slik at gammel løsning kan avvikles hos Helsenorge og reseptformidleren henter da personverninnstillinger på samme måte som øvrige tjenester i samhandlingsplattformen. Dette er også et tiltak som er beskrevet til Datatilsynet.
+
+Ny administrasjonsklient der vesentlige svakheter ift sikkerhet er håndtert, er i bruk i alle testmiljøene. Innføring i produksjonsmiljøet er nært forestående og dette blir den første komponenten i reseptformidleren som kjører i privat sky med Kubernetes. Også før driften av reseptformidleren er flyttet til NHN vil denne administrasjonsklienten brukes til administrasjonsoppgaver av reseptformidleren i Tietoevry produksjon og QA. Kundesenteret blir brukere av denne klienten i tillegg til utviklere, testere og driftsteam. Kodebasen for denne klienten ligger i Milliways og bygg og deploy gjennomføres tilsvarende som for andre tjenester i NHN.
+
+Dette gir ikke bare et nytt og sikrere grensesnitt for administrasjon av aktører, det har også gitt oss verdifull læring om ny plattform (privat sky) og nye verktøy.
+
+
+
+! Prognose på penger og ressurser
+
+Finansiering: Tjenesten blir belastet med fellestjenester som har finansiering via medlemsavgiften på 4,1 mnok, resterende finansiering er via forskriftsfestede midler på e-resept.
+
+Utvikling og forvaltning er iht budsjett.
+
+For driftskost så er lisenser betydelig redusert, dette skyldes effekten av reduksjon i antall oppslag med transaksjonspris mot Buypass. 
+
+Flytting av driften ligger pt en del over budsjett, men det er avdekket feil ifm belastning av infrastruktur kost. Det er foreløpig ikke avklart om dette forklarer hele overforbruket eller om det også er knyttet til merarbeid.
+
+<a href="https://app.powerbi.com/groups/6931f38e-9db9-41f4-a143-ac9ee4a4719c/reports/a03232e0-bd45-4da2-b925-662e476d7ebd/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarkab9171eafbc4217a5bac">Oversikt Reseptformidleren (Power BI)</a>
+
+
+
+

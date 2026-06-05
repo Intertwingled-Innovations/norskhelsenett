@@ -1,0 +1,18 @@
+created: 20250708111625122
+modified: 20260330070944492
+revision: 0
+tags: [[Kjernejournal Pasientens kritiske informasjon]] Målsetting 2025
+title: Målsetting for kritisk info: Kartlegge konsekvenser for kritisk info ifbm innføring av ICD-11
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+
+ICD-10 kodeverk skal erstattes av ICD-11. Det skal kartlegges hvordan dette påvirker kritisk info og hvilke tiltak som må gjennomføres for å støtte ICD-11.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

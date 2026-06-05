@@ -1,0 +1,17 @@
+created: 20240815081555765
+modified: 20250307090600747
+revision: 0
+tags: Flow 2024 Målsetting Integrasjonstjenesten
+title: 2024 - Minske teknisk gjeld og antall sårbarheter på Flow moduler
+type: text/vnd.tiddlywiki
+
+! Bakgrunn
+Oppetid i Flow er viktig for mange tjenester, deriblant DNS oppslag og Privat sky. Vi sikrer forsvarlig forvaltning i hele levetiden til Flow ved å holde moduler vedlike og holde kompetansenivået oppe i teamet.
+
+! Resultater
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+!! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

@@ -1,0 +1,18 @@
+created: 20260412121230039
+modified: 20260508063906708
+revision: 0
+tags: Målsetting 2026 [[Pasientens rekvisisjoner]]
+title: Målsetting for pasientens rekvisisjoner: Etablere en API-tjeneste for registrering og utlevering av rekvisisjoner
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+
+Etablere en API-tjeneste for registrering av rekvisisjoner fra rekvirent, samt utlevering av rekvisisjoner til prøvetaker og til rekvisrent.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

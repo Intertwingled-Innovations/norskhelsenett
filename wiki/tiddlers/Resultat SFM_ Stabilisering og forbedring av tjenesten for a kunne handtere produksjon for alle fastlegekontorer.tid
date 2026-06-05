@@ -1,0 +1,16 @@
+created: 20240604123810647
+modified: 20250121084740583
+revision: 0
+tags: [[Sentral forskrivningsmodul]] [[Stabilisering og forbedring av tjenesten for å kunne håndtere produksjon for alle fastlegekontorer]] Resultat 2024
+title: Resultat SFM: Stabilisering og forbedring av tjenesten for å kunne håndtere produksjon for alle fastlegekontorer
+type: text/vnd.tiddlywiki
+
+Mål: Stabilisering og forbedring av tjenesten for å kunne håndtere produksjon for alle fastlegekontorer
+
+Effekt for sektoren:
+
+* Skyplattform muliggjør utrulling for Helse Nord i et mer stabilt og driftsikkert miljø
+* RabbitMQ skalerer bedre og tåler større datalast
+* Bedre feilhåndtering fører til bedre ytelse, lettere vedlikehold og økt stabilitet
+* Bedre overvåking fører til bedre ytelse, lettere vedlikehold og økt stabilitet
+* Bedre transaksjonshåndtering minsker datatap og bedrer ytelse

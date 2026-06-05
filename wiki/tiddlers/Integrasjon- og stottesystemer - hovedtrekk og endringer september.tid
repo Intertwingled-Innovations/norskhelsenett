@@ -1,0 +1,39 @@
+created: 20241004121408216
+modified: 20241014121759074
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] [[Styring Intern tjeneste]] [[Integrasjon- og støttesystemer]] September
+title: Integrasjon- og støttesystemer - hovedtrekk og endringer september
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+''Junta/Flow''
+
+Følgende Flow-moduler er fått avviklet i september: 
+
+* Flow Connect
+* Flow Attachment
+* Flow Comment
+* Flow P360
+* Flow Telemator
+* Flow SMAX
+ 
+Det er fjernet sårbarheter på de aller fleste modulene som gjenstår.
+Flow VioIP er avtalt at skal flyttes til videotjenesten
+
+
+''Integrasjonstjenesten''
+
+* Initiert bestilling med APT om kafka med "galvanisert" skille mellom adm data og helsedata
+* Demo for APT SMAX hvordan data fra KD kan hentes fra Kafka
+* Forenklet admin, kun en konto på tvers av Junta og Integrasjonstjenesten.
+
+
+! Prognose på penger og ressurser
+*Finansiering: Medlemsavgiften
+* Prognose er 4-500 timer over budsjett for året. Dette skyldes i hovedsak bistand fra personer utenfor teamet, som ikke var allokert til teamet i budsjettet (tjenesteeier og scrum master).
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ad6307c59006ac4e200e?experience=power-bi&bookmarkGuid=Bookmark6966c46e3cd6605ce815">Oversikt Integrasjon- og støttesystemer (Power BI)</a>
+
+

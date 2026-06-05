@@ -1,0 +1,8 @@
+created: 20240821140542310
+modified: 20241105114243987
+revision: 0
+tags: [[HelseID skal bidra til å realisere målbilde for tillit]] Leveranse 2024 April Selvbetjening
+title: 04/24 - HelseID Selvbetjening har fått støtte for å kreve signering av vilkår for tjenestetilbud
+type: text/vnd.tiddlywiki
+
+Det er nå mulig å sjekke via api fra Helsenettet at vilkår er signert for et gitt tjenestetilbud før en ny klient kan settes opp. 

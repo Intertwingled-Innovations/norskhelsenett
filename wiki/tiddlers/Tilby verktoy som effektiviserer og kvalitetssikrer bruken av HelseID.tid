@@ -1,0 +1,18 @@
+TjenesteID: 40031
+created: 20240801115359022
+modified: 20260505102325142
+revision: 0
+tags: Målsetting [[Autentisering og autorisasjon]] Selvbetjening 2026 40031
+title: Tilby verktøy som effektiviserer og kvalitetssikrer bruken av HelseID
+type: text/vnd.tiddlywiki
+
+For å sikre enkel bredding av digitale helsetjenester er det viktig med god veiledning og gode verktøy for de som skal integrere med digitale helsetjenester beskyttet med HelseID.
+
+!! Resultat 2026
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>tag[2026]]">>
+
+!! Leveranser 2026
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>tag[2026]]">>
+

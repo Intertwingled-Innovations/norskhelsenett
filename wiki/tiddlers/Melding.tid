@@ -1,0 +1,34 @@
+TjenesteID: 40026
+created: 20240128165441729
+modified: 20260504075248098
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] Melding 2026
+title: Melding
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+
+"Melding" består av flere meldingsmekanismer:
+
+* EDI. Ryggraden i all arbeidsflyt / utveksling av kliniske data i sektoren. Forholder seg til standarder for meldingsutveksling (ebXml, signering / kryptering). Basert på smtp/pop (mime/email).
+
+* Ftps ("Stor-Edi"). Løsning som håndterer større meldinger enn EDI, basert på ftp. Lite utbredt i sektoren. Forholder seg til standard for meldingsutveksling, men uvisst om det er slik den brukes. Hovedsakelig trafikk mellom kommuner og kvalitetsregistre.
+
+* EDI 2.0 / Meldingstjener. Et moderne REST API som er designet for enklere utveksling av EDI-meldinger. Spiller sammen med tradisjonell EDI, men skjermer all kompleksitet knyttet til kryptering, ebXml, transportkvitteringer og apprec. Kan validere både konvolutt og fagmelding. Tilbyr rik funksjonalitet for håndtering/feilsøking når noe går galt i meldingsutvekslingen.
+
+! Målsettinger, 2026
+
+<<list-links filter:"[tag[Målsetting]tag[2026]tag<currentTiddler>]">>
+
+! Styring, 2026
+
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag<currentTiddler>]">>
+
+<!--!! 2025
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2025]tag<currentTiddler>]">>
+
+!! 2024
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2024]tag<currentTiddler>]">>
+-->
+
+<a href="https://app.powerbi.com/groups/6931f38e-9db9-41f4-a143-ac9ee4a4719c/reports/a03232e0-bd45-4da2-b925-662e476d7ebd/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarke7bc61a8188a81da0ffc">Oversikt Melding (Power BI)</a>

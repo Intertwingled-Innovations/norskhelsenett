@@ -1,0 +1,6 @@
+created: 20240808074356407
+modified: 20240821123726004
+revision: 0
+tags: [[Det skal være mulig å sikre helsedata i multi-tenant systemer med HelseID]] [[Autentisering og autorisasjon]] Resultat
+title: Helsevirksomheter kan sette opp HelseID-klienter på lavere nivå i organisasjonen, selv om medlemsavtale er inngått på høyeste organisasjoinsnivå.
+type: text/vnd.tiddlywiki

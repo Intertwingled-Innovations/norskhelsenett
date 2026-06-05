@@ -1,0 +1,33 @@
+created: 20260123103018677
+modified: 20260123103526782
+revision: 0
+tags: 2025 Leveranse [[Verdikjede e-resept]] [[Tiltaket pasientens legemiddelliste 2025]]
+title: Revidere og forenkle e-resept og PLL krav
+type: text/vnd.tiddlywiki
+
+
+Norsk helsenett forvalter i dag e-resept kravene (inkl. krav for PLL og eMD) for leverandører. Denne revisjonen av krav skal understøtte erfaring og behov fra utprøvingen av PLL i Nord og Vest samt erfaringer med legemidelhåndtering i Helseplattformen. Helsedirektoratet bistår med  helsefaglige vurderinger. 
+
+For denne leveransen har Norsk helsenett opprette en operativ arbeidsgruppe som har i oppgave å diskutere og forankre behov for endringer av e-resept krav som berører PLL og eMD. Deltakerne innehar klinisk erfaring med bruk av med PLL/eMD. Arbeidsgruppen anbefaler endringer av PLL og eMD krav til e-resept sitt endringsråd, for endelig beslutning. 
+Den operative arbeidsgruppen består av deltakere fra Helse Nord, Helse Vest, Helse Midt/Helseplattformen, Legeforeningen, Helsedirektoratet. Det er ønsket at deltakerne er klinikere (fastlege, kommune og sykehus) med operativ erfaring med PLL.
+Arbeidet med justering av PLL krav startet først i september, da det var behov for å ha erfaring fra utprøving av PLL i nord.
+
+Eventuelle endringer på rekvirent/PLL/eMD krav vil resultere i tilpasninger/utvikling i tilhørende systemer. Norsk helsenett vil tilpasse endringene i sine systemer (SFM, KJ, Helsenorge og evt. Forskrivningsmodulen). Justerte krav må kravstilles for DIPS, Helseplattformen og Pridok.  
+
+
+!! Overordnet status:
+
+Det er gjennomført 4 møter med arbeidsgruppen.  Det har vært gode, men krevende diskusjoner. 
+
+
+!! Hva er levert:
+Frem til nyttår er det diskutert krav til visning og varsling av resepter og PLL. En del krav og beslutninger krever god erfaring med PLL før endelig krav kan besluttes. Denne erfaringen fra utprøvingen i Helse nord mangler per nå, og det er derfor valgt å avvente med disse kravdiskusjonene til nødvendig erfaring fra utprøvingen foreligger. 
+Arbeidet videreføres som oppgave frem til sommeren 2026.
+
+
+!! Hvilken verdi har dette gitt til sektor:
+
+Arbeidsgruppen har blitt enig om generelle behov som rekvirentkravene skal dekke. De aller viktigste er:
+Krav må formuleres på en måte som gjør at leverandør kan finne gode løsninger for å oppnå hensikten. 
+Virksomhetene må forstå hvorfor informasjonen må være tilgjengelig, og hvordan dette påvirker beslutningsstøtte. 
+Legene ønsker å redusere varslinger og begrense unødvendige klikk. 

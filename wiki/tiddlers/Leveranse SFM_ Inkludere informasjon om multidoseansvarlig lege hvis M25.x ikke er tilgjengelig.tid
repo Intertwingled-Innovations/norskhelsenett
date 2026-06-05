@@ -1,0 +1,12 @@
+created: 20240821092327736
+modified: 20240925114323789
+revision: 0
+tags: [[Levere planlagt funksjonalitet i SFM Basis API til oppstart akseptansetest for Helse Nord/DIPS]] [[Sentral forskrivningsmodul]] April Leveranse [[Team SFM]] [[Resultat SFM: SFM Basis API til oppstart akseptansetest for Helse Nord/DIPS]] 2024
+title: Leveranse SFM: Inkludere informasjon om multidoseansvarlig lege hvis M25.x ikke er tilgjengelig
+type: text/vnd.tiddlywiki
+
+Mål: Levere planlagt funksjonalitet i SFM Basis API til oppstart akseptansetest for Helse Nord/DIPS
+
+Levert:
+
+* Inkludere informasjon om multidoseansvarlig lege hvis M25.x ikke er tilgjengelig

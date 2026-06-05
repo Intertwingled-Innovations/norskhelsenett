@@ -1,0 +1,9 @@
+TjenesteID: 40034
+created: 20260324164409697
+modified: 20260414124310938
+revision: 0
+tags: [[Bedre datakvalitet i rf]] Resultat 2026 Reseptformidleren [[Ekstern Tjeneste]]
+title: Validere kritisk informasjon i PLL - logging
+type: text/vnd.tiddlywiki
+
+Steg 1 er å logge hvem som fortsatt sender dette. Avhengig av omfang kan det ta tid å få innført at vi avviser disse M25.1.

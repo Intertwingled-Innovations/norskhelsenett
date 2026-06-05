@@ -1,0 +1,28 @@
+created: 20240531131007240
+modified: 20240613104920135
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] [[Integrasjon- og støttesystemer]] [[Styring Intern tjeneste]] Mai
+title: Integrasjon- og støttesystemer - hovedtrekk og endringer mai
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+''Junta/Flow''
+
+* forberedende aktiviteter ifbm. overføring av Flow DNS til APT
+* startet avvikling av Flow SMAX-integrasjon
+
+''Integrasjonstjenesten''
+
+* Teamet har overtatt og rendyrket privat sky-cluster, til eget formål
+* Gjennomført kurs i Kafka-verktøy og C#
+
+
+! Prognose på penger og ressurser
+*Finansiering: Medlemsavgiften
+* Det er et avvik på 221 timer mellom bokførte og faktisk førte timer i mai, dvs. at antall timer i mai ser kunstig lavt ut. Dette tas igjen i juni. Det er totalt sett for året et lite underforbruk på ca. 170 timer.
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark6966c46e3cd6605ce815">Oversikt Integrasjon- og støttesystemer (Power BI)</a>
+
+

@@ -1,0 +1,16 @@
+created: 20260407114357038
+modified: 20260408101855213
+revision: 0
+tags: [[Statistikk & måling]] Målsetting 2026
+title: Statistikk & Måling: Publisering av metrikker for tjenestene (pri 2)
+type: text/vnd.tiddlywiki
+
+Muliggjøre innsamling av metrikker (brukerdata) for alle tjenester i divisjonen. Det skal være mulig for alle tjenester å logge slike data til en felles mekanisme. PBI brukes default som rapport/graf generator.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

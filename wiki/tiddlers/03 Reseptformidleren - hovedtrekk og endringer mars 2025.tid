@@ -1,0 +1,34 @@
+created: 20250409081804160
+modified: 20250619131216014
+revision: 0
+tags: Reseptformidleren [[Styring Ekstern tjeneste]] 2025 Mars
+title: 03 Reseptformidleren - hovedtrekk og endringer mars 2025
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer
+
+Hovedleveranse den 8.mars levert som planlagt. Vi har også hatt mindre leveranser ("mellomleveranser") levert som planlagt.
+
+''Modernisering''
+
+* Videre arbeid med valideringer pågår både internt og i samarbeid med aktørene, med hovedfokus på pasientsikkerhet.
+* Modernisert valideringskomponent bygges nå og leveres i hovedleveranse 2 den 14.juni. Denne legger til rette for at det er lett å legge til nye valideringer fremover. Flere nye validering har fått leveransedato.
+* Vi har startet arbeidet med å ta i bruk auditlog tjenesten i samhandlingsplattformen og har etablert et fokusteam for dette arbeidet.
+* Pasientens legemidler skal sørge for utfasing av eksisterende KJ infotjenester legemiddel API så raskt som mulig. Fokusteamet har en full gjennomgang for å sørge for at prioriteringene støtter dette. 
+* EHDS: GAP analyse med konsekvenser for reseptformidleren er utarbeidet og arbeid med løsning starter over sommeren.
+* Kubernetes - reseptformidleren er testet i Kubernetes med godt resultat. Vi vil arbeide videre med et beslutningsgrunnlag for veien videre.
+
+''Sikkerhet''
+
+* Vi vil avvikle støtte for eldre kryptoalgoritmer før sommeren. 
+* Fiks for å håndtere sårbarhet i HelseID.
+* Forbedret validering av utleverere.
+
+
+! Prognose på penger og ressurser
+
+Pådrag forvaltning takter noe under rammen, men dette er som forventet pt. Drift ligger foreløpig over budsjett, men det er iverksatt en rekke tiltak ift lagring for å redusere driftskost. Dette er forventet å få effekt fra april/mai, men drift vil ligge noe over budsjett.
+
+Totalt vil drift og forvaltning være godt innenfor rammen for året og det kan bli aktuelt med tilbakebetaling.
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi">Oversikt Reseptformidleren (Power BI)</a>

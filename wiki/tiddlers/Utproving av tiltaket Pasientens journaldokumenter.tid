@@ -1,0 +1,25 @@
+created: 20250115095601214
+modified: 20250121073049460
+revision: 0
+tags: [[Gjennomføre utprøving av tiltaket pasientens journaldokumenter]] 2024 Leveranse [[Tiltaket pasientens journaldokumenter]] Desember
+title: Utprøving av tiltaket Pasientens journaldokumenter
+type: text/vnd.tiddlywiki
+
+!! Hva er levert?
+
+* Pasientens journaldokumenter ble satt i drift i juni 2023, med eksisterende tilganger hos utvalgte konsumenter samt en fastlegesjekk som ga tilgang for fastleger på sine listepasienter.
+* DHP og innbygger har tilpasset sine løsninger til PJD.
+* Gjennom 2024 har kildene HSØ, HV og HN tilpasset sine løsninger til tillitsrammeverk, og de to siste deler med tilnærmet alt helsepersonell som virksomheten de er ansatt i mener de har tjenstlig behov for. HSØ deler til leger og psykologer. 
+* De tre RHFene planla å bestille funksjonalitet av Dips for visning av PJD i brukerflate. I påvente av at dette er ferdigstilt i 2025, er HSØ konsument med tillitsrammeverk og KJ portal. De to andre har planer om å ta det i bruk i Dips sin brukerflate.
+* CGM og Webmed er tilpasset tillitsrammeverk, og bredder sine løsninger til legevakt, fastleger, avtalespesialister og helsestasjoner.
+* Oslo kommune har utsatt sin produksjonsdato som kilde til 2025. Tieto Evry har utviklet sin løsning for kommunene. HM har planlagt produksjonsdato som kilde og konsument Q1 2026.
+* Noen krav må oppfylles for at et helsepersonell kan lese journaldokumenter: Noen av disse er: virksomheten som er konsument må ha signert bruksvilkår. EPJ som benyttes må være tilpasset tillitsrammeverk, helsepersonell må ha autorisasjon som kilde har åpnet for at skal kunne lese, pålogging med HelseID, lokal tilgang til pasient og tilgang til KJ. I tillegg må helsepersonell vurdere tjenestlig behov.
+
+
+!! Hvilken nytte til sektor?
+
+* Helsepersonell som oppfyller kravene, kan selv lese andre virksomheter sine journaldokumenter når de har tjenstlig behov, og behøver ikke etterspørre opplysninger.  
+* Noen virksomheter (legevakt, KAD, avtalespesialister, helsestasjon mfl) er i dag ikke i eksisterende informasjonssløyfer, og får tilgang til informasjon de før ikke fikk eller som det var krevende å få tak i.
+* Fastleger får tilgang til mange flere dokumenter med mye mer informasjon, enn de får som mottaker av elektroniske meldinger
+* Antagelsen er at informasjonen som er tilgjengelig vil øke kvaliteten i beslutningene helsepersonell tar 
+* Bruksstatistikk viser at det er krevende å få virksomheter til å signere slik at de får tilgang til tjenesten. Bruken for de som har tilgang ser ut til å være høy.

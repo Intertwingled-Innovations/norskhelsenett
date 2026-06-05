@@ -1,0 +1,17 @@
+TjenesteID: 40030
+created: 20260407211506128
+modified: 20260512072745715
+revision: 0
+tags: Person Målsetting [[Team Person]] 2026 [[12/26 Persontjenesten i autonome regioner]]
+title: 12/26 Persontjenesten i autonome regioner
+type: text/vnd.tiddlywiki
+
+For å øke robusthet og tilgjengelighet skal Persontjenesten være redundant i alle fire regioner.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

@@ -1,0 +1,28 @@
+created: 20240808112818542
+modified: 20260408085632630
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] [[Forskrivningsmodulen 2024-2025]] Juni [[Styring Ekstern tjeneste]]
+title: 06 Forskrivningsmodulen - hovedtrekk og endringer juni
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer
+* 4.13.1 - Levert patch for varsel ifm incident om doseringsfeil
+* 4.13.2 - Under arbeid - Patch for retting av PLL feil ble utsatt pga arbeid med doseringfeilen. Forventet leveranse 13. sept.
+* 4.14 Feilrettingsversjon - Under arbeid 
+* Webmed har kun ett kontor igjen på FM. Migreres denne uken 
+* Gjennomført møter med tre leverandører som har flest virksomheter på FM (til sammen ca 450 av 600)
+
+
+! Prognose på penger og ressurser
+* Høy fart i mai/juni pga overlapp ressurser etter oppsigelser. 
+* 2 testere sluttet i løpet av sommeren. Har to konsulenter. Deles med godkjenningsprosessen
+* Startet forberedelser til nedskalering av ressursbruk hos Thula. Kontraktuelt arbeid med en form for "beredskap".  
+
+! Leveranser
+Ferdigstilte leveranser i perioden: 
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>
+
+*Finansiering: Forskriftsfestede midler nasjonale e-helseløsninger, e-resept
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark047e6c018241495568dc">Oversikt Forskrivningsmodulen (Power BI)</a>
+

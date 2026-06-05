@@ -1,0 +1,11 @@
+TjenesteID: 40034
+created: 20260525113408848
+modified: 20260525113626272
+revision: 1
+tags: Reseptformidleren 2026 Resultat [[MyHealth@EU ePrescription og eDispensation - test]]
+title: Regler for oversetting av eDispensation til M10 avklart
+type: text/vnd.tiddlywiki
+
+Når vi mottar en utleveringsmelding fra et EU apotek må denne oversettes og berikes slik at det kan opprettes en M10 i rf (så lenge rf trenger M10).
+
+Dette kan også trigge andre hendelser (for eksempel M6 og/eller M8).

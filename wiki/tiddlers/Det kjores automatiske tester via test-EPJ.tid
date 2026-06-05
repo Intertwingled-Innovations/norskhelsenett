@@ -1,0 +1,9 @@
+created: 20260512074130124
+modified: 20260512074614746
+revision: 0
+tags: [[Utvikle test EPJ for PJD slik at det er lett å teste og forstå NHN dokumentlager]] 2026 Mai [[Kjernejournal Pasientens journaldokumenter]] Leveranse
+title: Det kjøres automatiske tester via test-EPJ
+type: text/vnd.tiddlywiki
+
+!Leveranse
+Det er etablert en egen fane hvor det er mulig å kjøre automatiske tester for de mest sentrale forretningsreglene i NHN dokumentlager. Leveranse er forventet i mai/juni 26.

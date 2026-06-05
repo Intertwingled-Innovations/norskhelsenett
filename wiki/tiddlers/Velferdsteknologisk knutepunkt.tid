@@ -1,0 +1,35 @@
+TjenesteID: 40037
+created: 20240128165407861
+modified: 20260508101700136
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] 2026 [[Team VKP]]
+title: Velferdsteknologisk knutepunkt
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+
+Velferdsteknologisk knutepunkt (VKP) er en tjeneste som håndterer informasjonsflyt mellom velferdsteknologiske løsninger (VFT), løsninger for digital hjemmeoppfølging (DHO) og elektronisk pasientjournal (EPJ). 
+
+VKP tilbyr både uthenting av opplysninger fra EPJ og automatisk journalføring i EPJ. Hovedformålet med tjenesten er å bidra til et felles knutepunkt, hvor ulike leverandører kan formidle journalverdige opplysninger mellom systemer som ellers ikke snakker sammen. Dette sparer helsepersonell for mye dobbeltarbeid.
+
+
+!! Mål for VKP som produkt
+
+* Sørge for effektiv ressursbruk i helsetjenestene ved å koble systemer sammen, slik at helsepersonell slipper å bruke tid på å registrere det samme flere steder.
+* Bidra til økt tjenestekvalitet ved at relevant informasjon er tilgjengelig for dem som trenger det, når de trenger det.
+* Støtte opp under markedsinnovasjon og næringsutvikling ved å være en åpen, leverandøruavhengig og nøytral plattform som er lett å koble seg til.
+* Bidra til å utvikle standardiserte profiler for informasjonsinnhold som legger til rette for deling av data innen områdene velferdsteknologi og digital hjemmeoppfølging.
+
+! Målsettinger 2026
+
+<<list-links filter:"[tag[Målsetting]tag[2026]tag<currentTiddler>]">>
+
+! Styring
+!! 2024
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2024]tag<currentTiddler>]">>
+
+!! 2025
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2025]tag<currentTiddler>]">>
+
+!! 2026
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag<currentTiddler>]">>

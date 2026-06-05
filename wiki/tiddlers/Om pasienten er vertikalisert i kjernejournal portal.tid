@@ -1,0 +1,19 @@
+TjenesteID: 40033
+created: 20240508104204551
+modified: 20260409114103758
+revision: 0
+tags: [[Kjernejournal portal]] Målsetting 2026
+title: Om pasienten er vertikalisert i kjernejournal portal
+type: text/vnd.tiddlywiki
+
+Kjernejournal skal bestå av et sett med informasjonstjenester, hver med sitt eget grensesnitt (API) og sin egen database, samt en portal (Kjernejournal portal) som inneholder én fane pr informasjonstjeneste.
+
+Det etableres en egen informasjonstjeneste (Pasientens felter) som skal benyttes i vertikalen Om pasienten.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

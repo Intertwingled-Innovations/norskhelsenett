@@ -1,0 +1,29 @@
+created: 20240402130131900
+modified: 20240415081806467
+revision: 0
+tags: Styring 2024 [[Divisjon Helsepersonell]] Mars Kjernejournal
+title: Kjernejournal - hovedtrekk og endringer mars
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+!! Drift og produksjon
+Økte kostnader for Drift og produksjon skyldes en økning i optimal lagring pga nyinnkjøpte og driftsatte databaseservere som venter på å bli nye databaseservere for kjernejournal. Det betyr en dobbeltkostnad til data er migrert fra gamle databaser til nye og de gamle blir slått av (etter planen i løpet av april). Dette ble ikke vurdert ifm budsjett 2024. Det har også kommet ca 5% økning i total infrastruktur kost fra 2023 til 2024.
+
+! Prognose på penger og ressurser
+
+!! Portal
+Forvaltning av kjernejournal portal er iht budsjett. 
+
+!!! Ressurser
+Kollektivet: En konsulent sluttet 29.februar. Det arbeides for tiden med rekruttering av interne ressurser.
+
+<a href="https://app.powerbi.com/groups/6931f38e-9db9-41f4-a143-ac9ee4a4719c/reports/a03232e0-bd45-4da2-b925-662e476d7ebd/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarkb92368e492600e8b0b92">Oversikt Kjernejournal total (Power BI)</a>
+
+<a href="https://app.powerbi.com/groups/6931f38e-9db9-41f4-a143-ac9ee4a4719c/reports/a03232e0-bd45-4da2-b925-662e476d7ebd/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark09c84f60ca0c0d0dee2a">Oversikt Kjernejournal Infotjenester (Power BI)</a>
+
+<a href="https://app.powerbi.com/groups/6931f38e-9db9-41f4-a143-ac9ee4a4719c/reports/a03232e0-bd45-4da2-b925-662e476d7ebd/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarke23fe3d1eccd55765405">Oversikt Kjernejournal portal (Power BI)</a>
+
+

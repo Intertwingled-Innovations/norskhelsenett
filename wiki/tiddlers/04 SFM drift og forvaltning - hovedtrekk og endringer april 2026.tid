@@ -1,0 +1,48 @@
+TjenesteID: 40044
+created: 20260429062347695
+modified: 20260513070721427
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Styring Ekstern tjeneste]] 2026 [[Sentral forskrivningsmodul i 2026]] April [[Forretningsmessig endring:1]]
+title: 04 SFM drift og forvaltning - hovedtrekk og endringer april 2026
+type: text/vnd.tiddlywiki
+
+
+! Hovedtrekk og endringer 
+*Status leveranser: Vi leverer godt på godkjenning av leverandører for fullversjon. Flere nye leverandører melder seg på så det er forventet godt trykk i 2026 også på dette
+*Status teknisk: Modernisering og etablering av nytt design for løsningsmønster er i gang og de første oppgavene ligger nå i sprintene
+*Status personell: En del sykdom i forvaltningsteamet, men regner med bedring i løpet av Q2. Anskaffelse av to konsulenter er ferdig og forventet oppstart er 4. mai
+*Fokus: Ytterligere stabilisering  av løsningen er fokus og kompetanseoverføring fra Island til Norge. Dette vil få opp fart i Q2
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 1''
+
+Konsekvens av forretningsmessig endring: Ingen
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag[April]tag[2026]tag[Sentral forskrivningsmodul i 2026]]">>
+
+! Prognose på penger og ressurser (runrate 11mnd)
+
+Inntekt:
+
+* Finansieres over forskriftsfestede midler
+* Inntektsramme for SFM på 64,4mnok i 2026.
+* Budsjett 61,2 mnok. 
+* Runrate helår basert på regnskap pr. april 54,2  (Forrige runrate helår basert på regnskap  56,6 mnok)
+* Prognose helår på 60,6 mnok. (Forrige prognose helår på 62,2 mnok.) 
+* Prognose for året er under finansieringsrammen. Runraten er lavere og skyldes at vi i prognosen har tatt inn økte plattformkostnader som ikke reflekteres i runrate basert på regnskap for første kvartal.
+
+Kommentarer:
+
+* Vi har fått 1,8mnok i ekstra kostnad for autonome regioner
+* Etter Q1 hadde vi et overforbruk på 4mnok på driftsplattformen, mye pga nye kostnadsmodeller og Hasicorp vault. Nå er det meste justert og vi er nå 1,5mok bak budsjett der 800 000 er vault lisens om tjenesten i utgangspunktet ikke skulle ha
+* I forhold til planlagte oppgaver er vi på track og timeforbruket er som forventet
+* En konsulent forsvinner ut av teamet i juni. Dette er planlagt
+* En konsulent forlenges ut året. Dette tilsvarer et halv årsverk ekstra i forhold til prognosen
+* To nye konsulenter starter 4. mai. Dette er med i prognosen.
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark653d46c1659b4733c1ea">Oversikt SFM drift og forvaltning (Power BI)</a>
+
+
+
+

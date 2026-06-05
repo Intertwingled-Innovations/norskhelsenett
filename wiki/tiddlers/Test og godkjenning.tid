@@ -1,0 +1,18 @@
+created: 20250120113436192
+modified: 20260123105236559
+revision: 0
+tags: [[Verdikjede e-resept]] 2025 Leveranse
+title: Test og godkjenning
+type: text/vnd.tiddlywiki
+
+Leverandører som skal koble seg på e-reseptkjeden, blir testet og godkjent for å sikre god kvalitet i e-resept, og for ivareta pasientsikkerhet. Reseptformidlerforskriften er tydelig på at den som forvalter tjenesten skal ivareta kontroll av meldingsflyten som formidles gjennom e-reseptkjeden. Detter gjør NHN gjennom en etablert godkjenningsprosess.
+
+!! Leveranser
+
+* 1.	eMD Pridok - godkjent løsning desember 2024 og produksjonssatt våren 2025
+* 2.	Helse Nord/Dips PLL - godkjent løsning april 2025 og produksjonssatt sommer 2025
+* 3.	PLL Pridok - godkjent løsning februar 2025 og produksjonssatt våren 2025
+ * 4.	Coloplast, bandasjist - godkjent løsning februar 2025 og produksjonssatt vinter 2025
+ * 5.	Norengros, bandasjist - godkjent løsning oktober 2025 og produksjonssatt høsten 2025
+ * 6.	Helseplattformen med e-MD-løsning avventer godkjenning desember 2025, neste steg er PLL-godkjenning 2026
+ * 7.	Jevnlige godkjenninger av releaser fra apoteksiden (endringer og feilrettinger i produksjon)

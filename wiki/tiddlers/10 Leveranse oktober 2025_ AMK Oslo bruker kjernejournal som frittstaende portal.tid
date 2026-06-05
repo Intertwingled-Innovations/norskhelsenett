@@ -1,0 +1,12 @@
+created: 20251014102737600
+modified: 20260330063950299
+revision: 0
+tags: Leveranse 2025 [[Kjernejournal portal]] Oktober
+title: 10 Leveranse oktober 2025: AMK Oslo bruker kjernejournal som frittstående portal
+type: text/vnd.tiddlywiki
+
+AMK Oslo bruker, som eneste AMK-sentral i Norge, fremdeles AMIS versjon 2.x. Denne støtter ikke Buypass javafri, slik at AMK Oslo måtte logge seg inn med Buypass java for å få tilgang til kjernejournal via sin EPJ. Alle AMK-sentralene er oppgradert til AMIS 3.x som støtter Buypass javafri – med unntak av AMK Oslo (som ligger under OUS). De har ikke godkjent AMIS 3 for bruk, da den inneholder for mange feil og manglende funksjonalitet for luftambulansen – som AMK Oslo har et større ansvar for. De venter på en ny versjon av AMIS 3, men det er liten tro på at denne versjonen tilfredsstiller deres krav. De har også et håp om å få innført Locus Emergency i H1 2026 – forutsatt at den dekker deres krav.
+
+Det har vært diskutert ulike alternativ, og vi landet på at AMK Oslo skal bruke kjernejournal som frittstående portal. Det lå allerede til rette for det i kjernejournal, men det har aldri vært prøvd i produksjon tidligere. Nå har AMK Oslo definert alle sine brukere av kjernejournal i flik "helsepersonell" i kjernejournals admin-portal, noe som er en forutsetning for at hver enkelt kan åpne kjernejournal direkte i nettleser. Dette alternativet fjerner også en avhengighet til IE11, da kjernejournal nå åpnes i Edge.
+
+Fra 3.november er tilgang til kjernejournal via AMIS 2.x fjernet, og AMK-operatørene åpner kjernejournal via en snarvei i egen arbeidsflate som en frittstående portal - uavhengig av sin EPJ.

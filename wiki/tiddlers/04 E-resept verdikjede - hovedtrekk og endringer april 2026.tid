@@ -1,0 +1,75 @@
+TjenesteID: 40039
+created: 20260505124639277
+modified: 20260603122722456
+revision: 1
+tags: [[Divisjon Helsepersonell]] [[Styring Ekstern tjeneste]] [[Verdikjede e-resept]] 2026 [[Forretningsmessig endring:1]] April [[Prosess for dispensasjon til HMN og HN fra krav om å sende PLL samlet]]
+title: 04 E-resept verdikjede - hovedtrekk og endringer april 2026
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+
+Team verdikjede e-resept skal sørge for funksjonelle og sikkerhetsmessige krav til de fagsystemene som samhandler og inngår i e-reseptkjeden. Dialog, samhandling og koordinering skal sikre at aktørene involveres i forvaltning av e-reseptkjeden. Team verdikjede e-resept skal også bistå i rådgivingen inn mot tiltakene på legemiddelområdet og har ansvaret for test og godkjenning på kravstilling for å sikre kvalitet i verdikjeden
+
+Hovedoppgaver i forvaltningen av e-resept er:
+
+* Kravstilling og dokumentasjon
+
+* Test og godkjenning
+
+* Kvalitet i e-resept
+
+* Utredninger, analyse og rådgivning på e-reseptløsningen
+
+*Endringshåndtering
+
+* Leverandørdialog
+
+* Hendelseshåndtering
+
+
+
+! Leveranser
+!! 2026
+
+<<list-links filter:"[tag[Leveranse]tag[2026]tag[Verdikjede e-resept i 2026]]">>
+
+
+
+TEST og GODKJENNING
+
+* Det er ikke gjennomført test av leverandør i denne perioden
+
+
+KRAVSTILLING
+
+* Pågående diskusjoner i den operative arbeidsgruppen om sentrale PLL krav. Det gjenstår avklaring inn mot Helseplattformen og DIPS på et sentralt PLL krav de til nå har dispensasjon for. HP trenger denne avklaringen for å kunne bestille gjenstående PLL funksjonalitet fra EPIC. Det er forventet at arbeidsgruppen beslutter en videre avklaring ila. april
+
+HENDELSER SISTE PERIODE
+
+* Operativ arbeidsgruppe diskuterte krav om å sende PLL samlet i møte 7.april. Egen prosess for dispensasjon fra krav for HN og HMN igangsatt. Planlagt møte for dispensasjon 4.mai
+
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 1''
+
+Konsekvens av forretningsmessig endring: 1
+
+
+! Prognose på penger og ressurser
+* Finansieringskilde: Forskriftsfestet pasientjournal e-resept. Ramme 2026 29 MNOK 
+* Hvordan ligger vi an hittil i år opp i mot prognoser og planlagte oppgaver?
+* Årsprognose (pr. april) 20,9 MNOK, Runrate 11 mnd (pr. april) 20,6 MNOK. 
+* Hva er årsak til avvik? Timepådrag - Noe underforbruk på timer grunnet sykdom og ferieavvikling. Høy TBU ramme sammenlignet med budsjett
+* Status ressursbehov/kapasitet? Teamet har ikke ressursbehov men prioriterer oppgavene. Avgir kapasitet til SFM og tem eMD. 
+
+
+
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark4c89bd5ada01ce3dc213">Oversikt E-resept verdikjede (Power BI)</a>
+
+
+
+

@@ -1,0 +1,18 @@
+created: 20240317143210088
+modified: 20241208123202537
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]]
+title: Innrapportering av uønsket hendelse
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+Dette er backend for melde.no der meldinger mottas og sendes videre til rett mottager på rett format.
+
+Løsningen er flyttet til privat sky på Kubernetes plattform
+
+! Målsettinger
+<<list-links filter:"[tag[Målsetting]tag<currentTiddler>]">>
+
+! Styring
+!! 2024
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2024]tag<currentTiddler>]">>

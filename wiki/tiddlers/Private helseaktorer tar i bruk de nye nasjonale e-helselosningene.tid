@@ -1,0 +1,20 @@
+created: 20260506112409546
+modified: 20260506112511815
+revision: 0
+tags: 2026 Målsetting [[Støtte og hjelp til private helseaktører 2026]]
+title: Private helseaktører tar i bruk de nye nasjonale e-helseløsningene
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av målsetting
+(Kan være målsetninger NHN har selv, eller kommer fra oppdragsbrev, mandater)
+ bla bla.....
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag[2026]tag<currentTiddler>]">>
+
+! Leveranse
+
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>
+
+

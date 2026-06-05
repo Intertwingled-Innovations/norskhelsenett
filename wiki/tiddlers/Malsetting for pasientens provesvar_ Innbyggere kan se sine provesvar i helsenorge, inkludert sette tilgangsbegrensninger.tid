@@ -1,0 +1,17 @@
+created: 20240704135954986
+modified: 20260330104413524
+revision: 0
+tags: [[Kjernejournal Pasientens prøvesvar]] Målsetting 2024
+title: Målsetting for pasientens prøvesvar: Innbyggere kan se sine prøvesvar i helsenorge, inkludert sette tilgangsbegrensninger
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+NHN skal etablere nødvendig funksjonalitet for å kunne etablere pasientens prøvesvar i produksjon
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

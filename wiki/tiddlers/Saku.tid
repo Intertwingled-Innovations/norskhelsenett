@@ -1,0 +1,28 @@
+created: 20260429074858861
+modified: 20260429081127760
+revision: 0
+tags: 2026 [[Divisjon Helsepersonell]] [[Intern tjeneste]]
+title: Saku
+type: text/vnd.tiddlywiki
+
+!! Beskrivelse av tjenesten
+!! 
+Divisjon helsepersonell sitt verktøy for å dialog med eksterne. Hovedbruker er NHN sin førstelinje, Kunde- og driftsenteret i Tromsø, men også mye brukt av leveranseteamene i DHP. Alle ansatte får tilgang, men videreutvikling er begrenset til DHP sine behov. Saker som tidligere fantes i Junta kan slåes opp her.
+
+URL: saku.nhn.no
+Confluence space: https://confluence.nhn.no/spaces/JA/pages/363497641/SAKU
+
+! Målsettinger
+
+!! 2026
+<<list-links filter:"[tag[Målsetting]tag<currentTiddler>tag[2026]]">>
+
+! Styring
+
+!! 2026
+<<list-links filter:"[tag[Styring Intern tjeneste]tag[2026]tag<currentTiddler>]">>
+
+! Leveranser
+
+!! 2026
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>

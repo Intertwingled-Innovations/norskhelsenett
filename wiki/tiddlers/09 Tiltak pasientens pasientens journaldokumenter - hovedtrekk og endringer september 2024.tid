@@ -1,0 +1,48 @@
+created: 20241004121249919
+modified: 20260330070845615
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] [[Styring Tiltak]] [[Tiltaket pasientens journaldokumenter]] September [[Kjernejournal Pasientens journaldokumenter]]
+title: 09 Tiltak pasientens pasientens journaldokumenter - hovedtrekk og endringer september 2024
+type: text/vnd.tiddlywiki
+
+<<list-links filter:"[tag[Tiltaket pasientens journaldokumenter]tag[Tiltak]tag[2024]]">>
+
+! Hovedtrekk og endringer
+
+!!! Det er avklart hvordan avtalespesialister kan dele sine journaldokumenter
+* Dette er en leveranse fra Helsedirektoratet, med innspill fra NHN. Det foreligger et utkast til løsningen, hvor NHNs innspill er tatt inn. 
+* NHN har etablert funksjonalitet for nasjonalt dokumentlager og har demonstrert dette i flere sprint reviews. Produksjonsetting skjer sannsynligvis ikke før etter nyttår pga behov for å oppgradere software på Siemens XCA løsning før lisenser på dokumentlager kan opprettes.
+
+!!! Det er avklart hvordan kommuner kan dele sine journaldokumenter
+* Dette er en leveranse fra Helsedirektoratet, med innspill fra NHN. Det foreligger et utkast til løsningen, hvor NHNs innspill er tatt inn. 
+* NHN vil etablere nasjonalt dokumentlager, se forrige punkt. Dette vil være et tilbud for kommuner og andre aktører som ikke ønsker å investere i egen infrastruktur.
+* Oslo kommune har mål om å dele journaldokumenter fra Oslo legevakt i løpet av Q4'2024. Det er dog en risiko for at dette kan bli forskjøvet til Q1'2025 grunnet interne forhold hos Oslo kommune. Divisjon Innbygger har en pågående dialog med Oslo kommune om hvordan journaldokumenter fra primærhelsetjenesten skal vises på helsenorge.
+
+!!! Helseforetak er kilde og tilgjengeliggjør journaldokumenter (ved bruk av tillitsrammeverket)
+* Alle helseforetak deler journaldokumenter bortsett fra Helse Midt. Helse Midt starter arbeidet i 2025, men ikke realistisk med prodsetting før i 2026..
+* Nasjonalt tillitsrammeverk er etablert, og NHN har levert nødvendig funksjonalitet på HelseID og kjernejournal portal. 
+* Dokumentkildene er i ferd med å tilpasse sin funksjonalitet for utlevering av referanselister og journaldokumenter gitt nasjonalt tillitsrammeverk. HSØ er ferdig, men det gjenstår fortsatt noe arbeid i HN og HV.  
+* Helse Vest vil tilgjengeliggjøre journaldokumenter også for annet helsepersonell enn fastleger fra Q4'2024. 
+
+!!! Helseforetak har tatt i bruk pasientens journaldokumenter som konsument (ved bruk av tillitsrammeverket)
+* Alle helseforetak har tatt i bruk tjenesten bortsett fra Helse Midt. Helse Midt kommer etter planen på som konsument i 2026.
+* HSØ har implementert mellomvare for tillitsrammeverket, hvilket betyr at helsepersonell konsumerer journaldokumenter via kjernejournal portal ihht tillitsrammeverket. Øvrige RHF (HV og HN) hadde ambisjoner om å få dette på plass i Q4'2024, men det sklir til Q1'2025. Både HV og HN vil ha tilpasset funksjonalitet i Dips Arena, men Dips klarer ikke å levere før i Q1'2025.
+* Flere leverandører er i gang med å integrere seg mot tjenesten ihht nasjonalt tillitsrammeverk - dette er en forutsetning for videre bredding (CGM, Tietoevry. Dips og Aidn). CGM har rullet ut første versjon med støtte for tillitsrammeverket, testet ved Karrestad Legesenter. NHN arrangerte hackaton 16.-17. sept, 7 ulike leverandører deltok med gode tilbakemeldinger. 
+* NHN har levert første versjon av API for dokumentdeling, som også støtter DPOP. Det er opprettet tett dialog med Dips og Aidn. Produksjonssetting vil ikke skje før i Q4'2024.
+
+!!! Inntil 80% av alle fastleger kan få tilgang til pasientens journaldokumenter
+* Dette er oppfylt i den forstand at alle fastleger (pga fastlegesjekken) __kan __få tilgang. Eneste krav er at de signerer bruksvilkår for tjenesten. Pr 1. okt har likevel kun 207 fastlegekontor signert bruksvilkår, dette utgjør ca 15.6% av alle fastlegekontor i Norge. Dette er en økning på kun 3 legekontor siden 1. sept. 
+* Tjenesten er tilgjengelig for alle fastleger (via kjernejournal portal), samt annet helsepersonell i Oslo, Bodø og Stavanger kommune.
+
+
+! Prognose på penger og ressurser
+
+*Finansiering: Offentlig tilskudd, PJD, 48.5 mnok tilfaller vår divisjon og 10.5 mnok tilfaller divisjon Innbygger. Prognose for DHP er på 37.5 mnok, dvs 11 mnok under tilskuddet. Divisjon Innbygger flagger at mange av leveransene må skyves til 2025. Prognosen for divisjon Innbygger er 1.5 mnok, dette medfører et mindreforbruk på ca 9 mnok. Totalt har NHN dermed et mindreforbruk på 20 mnok for 2024.
+
+ <a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection343a8851705d1cfe8125?experience=power-bi&bookmarkGuid=Bookmark96fe5c07b6d0b73a9446">OversiktPJD (Power BI)</a>
+
+
+
+
+
+

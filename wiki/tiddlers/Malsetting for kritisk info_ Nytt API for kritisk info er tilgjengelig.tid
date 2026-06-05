@@ -1,0 +1,18 @@
+created: 20240704133654438
+modified: 20260330070944492
+revision: 0
+tags: [[Kjernejournal Pasientens kritiske informasjon]] Målsetting 2024
+title: Målsetting for kritisk info: Nytt API for kritisk info er tilgjengelig
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+
+Aktører i helsesektoren skal kunne skrive og konsumere kritisk informasjon direkte fra API.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

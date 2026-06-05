@@ -1,0 +1,34 @@
+TjenesteID: 40036
+created: 20260310114019729
+modified: 20260603131101140
+revision: 4
+tags: [[Tiltaket Pasientens legemiddelliste 2026]] Oppgave 2026 [[Planlegge og lage avtaler med aktørene som skal delta i utprøving og innføring av SFM og e-multidose]] [[Nasjonal innføring av e-multidose]] [[Verdikjede e-resept]] Målsetting
+title: Nasjonal innføring av e-multidose i 2026
+type: text/vnd.tiddlywiki
+
+NHN har fått i oppdrag fra HOD gjennom mandatet for PLL å gjennomføre nasjonal innføring av eMD i 2026. Følgende leveranser er detaljert i mandatet:
+
+* Gjennomføre og koordinere nødvendige tiltak for å bidra til at fastleger, multidoseapotek, hjemmetjeneste og sykehjem tar i bruk e-multidose, inkludert å sørge for nødvendige avklaringer og følge opp leveranser fra aktuelle aktører
+
+* Ta ansvaret for dialogen med fastlegeleverandører i samarbeid med med RHF, prosjektledere i kommunene og KS' innføringsnettverk, med mål om forpliktende planer og leveranser for innføring av eMD
+
+* Ta ansvar for dialogen med apotek/multidoseapotek med mål om forpliktende samarbeid, planer og leveranser for innføring av eMD
+
+* koordinere AT av apoteksystem for tilpasset funksjonalitet for eMD mellom multidoseapotek og sykehjem
+
+!! PLL mandat 2026
+
+https://nhnkontor.sharepoint.com/:b:/r/sites/Samhandlingsplattformen/Shared%20Documents/Team%20Sats/Mandater%202026/Endelig%20versjon%20230126/Mandat%20for%20pasientens%20legemiddelliste%202026%201.0.pdf?csf=1&web=1&e=LjL7a4
+
+! Resultat
+!! 2026
+Det er totalt ca 1310 fastlegekontorer registrert for multidose. 
+
+271 av fastlegekontorene som har startet med e-multidose bruker i dag Infodoc Plenario. Alle disse legekontorene må over på Infodoc sin skyløsning med ny legemiddelmodul (SFM). 
+
+<<list-links filter:"[tag[Resultat]tag[2026]tag<currentTiddler>]">>
+
+! Leveranser
+!! 2026
+
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>

@@ -1,0 +1,8 @@
+created: 20241220113726556
+modified: 20260505053852588
+revision: 0
+tags: [[Tjenesten HelseID skal lukke alle risikoelementer med risikonivå alvorlig]] [[Autentisering og autorisasjon]] 2024 Leveranse September
+title: 09/24 - HelseID kjører nå mot en lokal kopi av Persontjenesten
+type: text/vnd.tiddlywiki
+
+HelseID kjører nå mot en lokal kopi av Persontjenesten, denne oppdateres via Kafka. Dersom en person ikke finnes i den lokale kopien vil HelseID gjøre et oppslag i registeret. Dette bidrar til å gjøre HelseID mer motstandsdyktig mot feil i underliggende infrastruktur. 

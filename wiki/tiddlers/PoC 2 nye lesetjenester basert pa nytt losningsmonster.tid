@@ -1,0 +1,9 @@
+TjenesteID: 40034
+created: 20260324163343663
+modified: 20260414123909856
+revision: 0
+tags: [[RF på SHP løsningsmønster - fase 1]] Resultat 2026 Reseptformidleren [[Ekstern Tjeneste]]
+title: PoC 2 nye lesetjenester basert på nytt løsningsmønster
+type: text/vnd.tiddlywiki
+
+Vi skal tilby lesetjenester som henter informasjon fra ny backend. Trafikken kan skrus om gradvis. Konsumentene skal ikke behøve å endre på sin side.

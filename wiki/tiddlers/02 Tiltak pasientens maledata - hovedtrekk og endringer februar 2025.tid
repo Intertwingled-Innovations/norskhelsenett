@@ -1,0 +1,30 @@
+created: 20250317143736375
+modified: 20260408071025184
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Styring Tiltak]] [[Tiltaket pasientens måledata (OLD)]] 2025 [[Tiltaket pasientens måledata 2025]] Februar
+title: 02 Tiltak pasientens måledata - hovedtrekk og endringer februar 2025
+type: text/vnd.tiddlywiki
+
+
+<<list-links filter:"[tag[Tiltaket pasientens måledata 2025]tag[Tiltak]tag[2025]]">>
+
+! Hovedtrekk og endringer
+
+
+!!! Gjennomføre en utprøving av pasientens måledata i helseregon Sør-øst
+
+* Vestre Viken HF, Drammen kommune/Asker kommune: For lite pasientgrunnlag til å kjøre utprøving.
+* OUS, Oslo Kommune ny utprøvingskandidat - utpekt av HSØ.
+* Varslet forsinket utprøving til Q3 2025 pga nye virksomheter
+* Avhengighet til Oslo Kommunes evne til å rulle ut Digital hjemmeoppfølging til pasienter som sogner til OUS - et optimistisk anslag fra Oslo kommune er at de kommer i gang med dette "før sommeren"
+* Demo gjennomført i testmiljø med måling fra Dignio i Oslo kommune --> VKP --> Pasientens måledata --> Klient hos OUS (Pega/prosessplattform)
+* Neste mål: Data overføres i testmiljø fra Drammen kommune med Tellu som DHO-system og kilde til måledata
+
+
+! Prognose på penger og ressurser
+
+*Finansiering: Offentlig tilskudd, PMD, 13 mnok tilfaller vår divisjon og 5 mnok divisjon Innbygger
+* Prognose 5.7 mnok på DHP - en god del mindre enn rammen, hovedsaklig pga. mindre aktivitet/ treghet med å få i gang utprøving
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection343a8851705d1cfe8125?experience=power-bi&bookmarkGuid=Bookmark76496cc890038835a416">Oversikt PMD (Power BI)</a>

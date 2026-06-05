@@ -1,0 +1,15 @@
+created: 20241205190303518
+modified: 20241205190535749
+revision: 0
+tags: [[Sentral forskrivningsmodul]] Leveranse [[Team SFM]] [[Resultat SFM: Godkjenning av SFM for fastlege]] [[Godkjenning av SFM for fastlegesegmentet]] 2024 November
+title: Leveranse SFM: Funksjonalitet i versjon 4.7
+type: text/vnd.tiddlywiki
+
+Mål: Godkjenning av SFM for fastlege
+
+Levert:
+
+*Fjernet påkrevd håndtering ved passert INR-dato og for medisinske varsler når resept er forskrevet av annen lege
+*Minimum reseptgyldighet settes til 10 dager
+*Viser hvem som har opprettet og endret forskrivningsmal
+*Forbedringer i BasisAPI

@@ -1,0 +1,17 @@
+TjenesteID: 40065
+created: 20250515071450761
+modified: 20260417121307374
+revision: 0
+tags: [[Divisjon Helsepersonell]] 2026 [[Relatert tjeneste]]
+title: Statistikk & måling
+type: text/vnd.tiddlywiki
+
+Produksjon og publisering av bruksstatistikk, til internt og eksternt bruk.
+
+!Målsetting
+
+<<list-links filter:"[tag[Målsetting]tag[2026]tag<currentTiddler>]">>
+
+! Styring, 2026
+
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag<currentTiddler>]">>

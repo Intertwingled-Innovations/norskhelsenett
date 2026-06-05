@@ -1,0 +1,13 @@
+created: 20250606104829628
+modified: 20260408085632634
+revision: 0
+tags: [[Levere patcher til FM ved behov]] Leveranse 2025 [[Forsvarlig forvaltning av Forskrivningsmodulen]] [[Forskrivningsmodulen 2024-2025]] Mai
+title: FM 4.15.2 - Godkjent 28. mai 2025
+type: text/vnd.tiddlywiki
+
+!! Hva er levert?
+Rettet avvik i visning av legemidler i LIB i FM vs. legemidler overført til EPJ (f.eks. til administrasjonsmodul).
+
+
+!! Hvilken nytte gir det?
+Med denne patchen vil Forskrivningsmodulen i kommunene (Visma Profil) fungere som forventet og øke pasientsikkerheten.

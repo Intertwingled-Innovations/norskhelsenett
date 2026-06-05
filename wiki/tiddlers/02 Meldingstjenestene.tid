@@ -1,0 +1,33 @@
+created: 20250317135856152
+modified: 20250317142801720
+revision: 0
+tags: [[02 Styringsrapport DHP februar 2025]] [[Divisjon Helsepersonell]] Februar 2025 [[Styring Ekstern tjeneste]]
+title: 02 Meldingstjenestene
+type: text/vnd.tiddlywiki
+
+''EDI 2.0:'' 
+
+* Satt i produksjon. 
+
+* Pr. februar én aktør på tjenesten (i produksjon).
+
+* Flere større aktører kjører testing p.t. og vi regner det som overveiende sannsynlig at Sykehuspartner og/eller NAV kommer opp på EDI 2.0 i løpet av året.
+
+* Regionene flagger også lnteresse igjennom det interregionale integrasjonssamarbeidet.
+
+* Tjenesten undergår fortsatt kvalitative tiltak (robustifisering, skalerbarhet, ytelse, bedre observability og metrikker).
+
+''Tjenestebuss:''
+
+* Ingen tiltak i gang ut over ordinær drift.
+
+'''Legacy' EDI:''
+
+* Ingen tiltak i gang ut over ordinær drift.
+
+'''FOT' (Filoverføringstjenesten)''
+
+* Avvikles før annonsert end-of-life (Q2/Q3) på grunn av vanskeligheter med å vedlikeholde sikkerhets-/autentiseringsmekanismen. Alt tyder på at den går ned i slutten av mars.
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi">Oversikt Meldingstjenestene (Power BI)</a>
+

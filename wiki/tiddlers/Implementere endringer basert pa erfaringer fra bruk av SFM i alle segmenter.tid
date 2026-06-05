@@ -1,0 +1,17 @@
+TjenesteID: 40044
+created: 20260210140754758
+modified: 20260416102242202
+revision: 0
+tags: Målsetting [[Tiltaket pasientens legemiddelliste]] 2026 [[Sentral forskrivningsmodul i 2026]]
+title: Implementere endringer basert på erfaringer fra bruk av SFM i alle segmenter
+type: text/vnd.tiddlywiki
+
+Målsetningen er å implementere endringer basert på erfaringer fra bruk av SFM i alle segmenter. Hovedfokuset for 2026 vil være kommunemarkedet.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag[2026]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>

@@ -1,0 +1,31 @@
+created: 20260320150458015
+modified: 20260408125359584
+revision: 0
+tags: [[Divisjon Helsepersonell]] 2026 [[Tjeneste oppsummert]]
+title: Forskrivningsmodulen oppsummert 2026
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+
+<<list-links filter:"[tag[Ekstern tjeneste]tag[2026]tag[Forskrivningsmodulen]tag[Divisjon Helsepersonell]]">>
+
+
+! Målsettinger
+
+<<list-links filter:"[tag[Målsetting]tag[2026]tag[Forskrivningsmodulen]]">>
+
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag[2026]tag[Forskrivningsmodulen]]">>
+
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag[2026]tag[Forskrivningsmodulen]]">>
+
+
+! Styring
+
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag[Forskrivningsmodulen]]">>
+

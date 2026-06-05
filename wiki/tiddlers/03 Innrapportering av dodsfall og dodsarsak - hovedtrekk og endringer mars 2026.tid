@@ -1,0 +1,30 @@
+TjenesteID: 40041
+created: 20260325124033946
+modified: 20260414130739972
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Innrapportering av dødsfall og dødsårsak]] [[Styring Ekstern tjeneste]] 2026 Mars [[Forretningsmessig endring:1]]
+title: 03 Innrapportering av dødsfall og dødsårsak - hovedtrekk og endringer mars 2026
+type: text/vnd.tiddlywiki
+
+
+! Hovedtrekk og endringer
+I portalen jobbes det med små forbedringer i koden, også med fokus på sikkerhet. Det er ingen større endringer så langt i år.
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 1''
+
+Konsekvens av forretningsmessig endring:
+
+! Prognose på penger og ressurser
+* Finansieringskilde: Forskriftsfestet pasientjournal Grunndata Person. Ramme 2026 11,3 MNOK.
+* Hvordan ligger vi an hittil i år opp i mot prognoser og planlagte oppgaver?
+** Frontend: det er gjort få endringer så langt i år. Årsaken er at vi først ønsker å få etablert nye leverandørvilkår i samarbeid med FHI, slik at videreutviklingen av portalen kan fungere som en reell test av disse nye vilkårene. Vi forventer mer utvikling fra Q3.
+* Årsprognose 5,4 MNOK, Runrate 11 mnd 3,3 MNOK. Årsak til avvik:
+** Frontend: Lav aktivitet i Q1 og Q2, forventer mer i Q3
+* Status ressursbehov/kapasitet? Det er leid inn en ressurs til domene brukerflate for frontend-arbeidet i elektronisk dødsmelding. Backend er i person-tjenesten med Hanne Mari som tjenesteeier.
+
+
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarkf13b89e8888749880ba0">Oversikt Innrapportering av dødsfall og dødsårsak (Power BI)</a>
+
+

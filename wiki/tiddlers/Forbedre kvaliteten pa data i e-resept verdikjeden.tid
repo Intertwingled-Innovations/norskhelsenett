@@ -1,0 +1,25 @@
+created: 20240710104232818
+modified: 20260123132011340
+revision: 0
+tags: [[Team verdikjede e-resept]] Målsetting 2024 [[Team Reseptformidleren]] Reseptformidleren
+title: Forbedre kvaliteten på data i e-resept verdikjeden
+type: text/vnd.tiddlywiki
+
+I dag forholder ikke alle aktører og leverandører seg til de standardene og kravene som stilles for å kunne være påkoblet Reseptformidleren. Norsk helsenett må stramme inn dette og jobbe proaktivt sammen med aktørene for å øke etterlevelse av både funksjonelle og tekniske krav. Det må innføres sanksjoner overfor de som ikke forholder seg til de reglene som gjelder for e-resept verdikjede.
+
+Blant annet Apotekforeningen sliter med at dårlig kvalitet på data driver kost hos deres medlemmer.
+
+Dårlig datakvalitet og feil data knyttet til en person utgjør også en pasientrisiko og potensielt brudd på personvern (integritet).
+
+Alle relevante rekvirent og utleverer krav skal på sikt valideres ved mottak av meldinger.
+
+En uavhengig læringsrapport bestilt av Helsedirektoratet i etterkant av hendelse med feil i dosering sommeren 2024 peker også på økt kontroll som et nødvendig tiltak for å bedre datakvalitet og pasientsikkerhet.
+
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">> 

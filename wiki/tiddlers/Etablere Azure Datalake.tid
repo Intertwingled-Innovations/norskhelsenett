@@ -1,0 +1,17 @@
+created: 20240813114730321
+modified: 20241211091434183
+revision: 0
+tags: Testunivers 2024 Målsetting Leveranse Desember
+title: Etablere Azure Datalake
+type: text/vnd.tiddlywiki
+
+Målsetningen er 
+- å etablere en datasjø hvor vi kan samle både strukturerte og ustrukturerte syntetiske data. 
+
+! Resultat
+Datasjøen er etablert og det jobbes nå med å etablere en datakatalog.
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

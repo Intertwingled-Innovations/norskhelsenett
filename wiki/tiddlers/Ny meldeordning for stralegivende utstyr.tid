@@ -1,0 +1,13 @@
+created: 20241013174512482
+modified: 20241013175122830
+revision: 0
+tags: [[Lage nye meldeordninger etter bestilling fra brukere]] Resultat 2024
+title: Ny meldeordning for strålegivende utstyr
+type: text/vnd.tiddlywiki
+
+Det skal opprettes en ny meldeordning der helsepersonell kan melde om uønskete hendelser knytet til bruke av strålegivende utstyr. De kan melde fra om dette via melde.no eller sitt eget avvikssystem hvis det har tatt i bruk API for dette.
+
+Det er DSA som skal være mottager av meldingen.
+
+!! Leveranser
+<<list-links [tag[Leveranse]tag<currentTiddler>]>>

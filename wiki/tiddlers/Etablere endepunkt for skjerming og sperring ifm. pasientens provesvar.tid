@@ -1,0 +1,8 @@
+created: 20240516101458980
+modified: 20250131102532044
+revision: 0
+tags: 2024 [[Team PTS]] [[Utvikle sentral teknisk løsning for tilgangsbegrensninger, som sperring, nekting, skjerming og utsatt innsyn slik at løsningen kan benyttes i tiltaket pasientens prøvesvar]]
+title: Etablere endepunkt for skjerming og sperring ifm. pasientens prøvesvar
+type: text/vnd.tiddlywiki
+
+Etablere funksjonalitet for etterlevelse av tilgangsbegrensninger satt av helsepersonell og innbygger, og formidler disse tilgangsbegrensningene mellom virksomhetene i helse- og omsorgssektoren, nasjonale e-helseløsninger og Helsenorge.no. 

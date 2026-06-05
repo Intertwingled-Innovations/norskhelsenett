@@ -1,0 +1,8 @@
+created: 20260503100054240
+modified: 20260503100303876
+revision: 0
+tags: [[Tilby ny backend til eksisterende KJ legemiddel API]] Resultat 2026 [[Ekstern Tjeneste]]
+title: Avvikle gammel backend
+type: text/vnd.tiddlywiki
+
+Når alle kall til API går mot ny backend OG interne brukere (KJ portal og Helsenorge) ikke lengre bruker det interne API'et Prescription Drug kan gammel backend avvikles.

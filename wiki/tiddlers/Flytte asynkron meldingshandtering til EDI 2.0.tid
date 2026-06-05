@@ -1,0 +1,9 @@
+TjenesteID: 40034
+created: 20260309080158213
+modified: 20260414123515673
+revision: 0
+tags: Reseptformidleren 2026 [[Ekstern Tjeneste]] Resultat [[RF på SHP løsningsmønster - fase 1]]
+title: Flytte asynkron meldingshåndtering til EDI 2.0
+type: text/vnd.tiddlywiki
+
+Flytte all håndtering av asynkrone e-resept meldinger til EDI 2.0. Da kan store deler av hermes fases ut, mye annen kode kan også sløettes slik at reseptformidleren som applikasjon blir enklere.

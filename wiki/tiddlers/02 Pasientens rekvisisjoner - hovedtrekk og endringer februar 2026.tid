@@ -1,0 +1,28 @@
+created: 20260308191059023
+modified: 20260308191911833
+revision: 0
+tags: [[Divisjon Helsepersonell]] 2026 [[Pasientens rekvisisjoner]] [[Styring Satsning for fart]] Februar
+title: 02 Pasientens rekvisisjoner - hovedtrekk og endringer februar 2026
+type: text/vnd.tiddlywiki
+
+<<list-links filter:"[tag[Pasientens rekvisisjoner]tag[Tiltak]]">>
+
+! Hovedtrekk og endringer
+* Verdikjedetesting er igangsatt i Helse Vest - men noen kritiske feil er avdekket og må rettes.
+* Ny akseptansetest starter 11. mars
+* Ambisjon om oppstart utprøving i siste halvdel av april: Haukeland sykehus med 10-20 fastlegekontor - dette skyves sannsynligvis til mai pga forsinket akseptansetest.
+
+
+! Prognose på penger og ressurser
+*Finansiering: Satsing for fart
+* DIT har ved utgangen av februar brukt 0.3 mnok av en total ramme på 2.7 mnok. 
+* DHP har ved utgangen av februar brukt 2.7 mnok av et budsjett på 8.6 mnok. Runrate vil avta utover året når tjenesten går i produksjon.
+* Det er ved utgangen av januar brukt 0 mnok på leverandørincentiver av et budsjett på 15 mnok. 
+
+! Leveranser
+* API'et er tilgjengelig i test. Mål om produksjon i april.
+
+<a href="https://app.powerbi.com/groups/me/apps/6b2c0868-17a5-4050-a66c-e55f8a394c78/reports/2d7d01c3-db91-4731-bb68-8724b49c798a/ReportSection6057689f1293200062cb?experience=power-bi</a>
+
+
+

@@ -1,0 +1,12 @@
+created: 20240927132326653
+modified: 20250307091248349
+revision: 0
+tags: Flow Avvikling 2024 [[2024 - Avvikling eller overlevering av Flow moduler]] Leveranse Desember Integrasjonstjenesten [[Integrasjon- og støttesystemer]]
+title: Avviklet Flow P360
+type: text/vnd.tiddlywiki
+
+Flow modulen Flow P360 er avviklet. Den ble før brukt til å:
+
+* Opprette nye kunder i Public 360 når de blir opprettet i NHN sitt økonomisystem, Agresso.
+Oppdatere ekisterende kunder i Public 360 med ny informasjon når de blir oppdatert i NHN sitt økonomisystem, Agresso.
+* Arkivere dokumenter i Public 360 fra den automatiske løsningen for prosjektet 1349 - Ny avtalestruktur (Flow.Form)

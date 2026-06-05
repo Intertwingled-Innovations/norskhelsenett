@@ -1,0 +1,17 @@
+TjenesteID: 40023
+created: 20240702102352806
+modified: 20260409115052906
+revision: 0
+tags: Melde.no Målsetting 2026
+title: Ta ned kompleksitet og teknisk gjeld for Melde.no
+type: text/vnd.tiddlywiki
+
+Melde.no er kompleks og vanskelig å vedlikeholde. I tillegg har kodebasen hengt etter på oppdateringer av rammeverk. For å løse disse utfordringene har det vært gjennomført en gjennomgang av kodebasen og identifisert de områdene som trenger oppgradering og refaktorering. 
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

@@ -1,0 +1,19 @@
+TjenesteID: 40172
+created: 20260412133012632
+modified: 20260414121552697
+revision: 0
+tags: Målsetting 2026 [[Kjernejournal Pasientens felter]]
+title: Målsetting for Kjernejournal Pasientens felter: Etablere API for donorkort
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+
+Tjenesten skal tilgjengeliggjøre et API endepunkt for registrering og lesing av donorkort informasjon
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

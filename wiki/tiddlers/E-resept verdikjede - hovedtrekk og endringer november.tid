@@ -1,0 +1,34 @@
+created: 20241206125606210
+modified: 20241209122033794
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] Reseptformidleren [[Styring Ekstern tjeneste]] November
+title: E-resept verdikjede - hovedtrekk og endringer november
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+* Notat med skissert løsning for å kunne "pause" PLL er sendt til HOD.  
+
+* Vi jobber videre med støtte til Helseplattformen, Helse Nord/DIPS og Pridok for å avklare krav til utvikling av funksjonalitet for PLL og eMD. 
+
+* Startet AT av eMD-funksjonalitet med Pridok. Planen er å bli ferdig før jul. 
+
+* 0.9-versjon av notat om konsekvenser ved innføring av IDMP-baserte legemiddel grunndata er ferdig. Det er svar på oppdrag fra HOD som skal leveres før nyttår. Notatet er forankret i PBR med domene Samhandlingsplattformen. Innspill derfra er innarbeidet, og 0.95-versjonen tas opp som orienteringssak i e-resept Endringsråd 11.12.  
+
+* Verdikjede e-resept har besluttet tiltak for å forhindre avvik i doseringsinformasjon mellom strukturert dosering og fritekst. Det gjøres endringer i rekvirentkrav og i SFM. Bakgrunnen er at meldingsutvidelsen som skulle hindre at struktur ble brutt hvis lege la til "forholdsregel ved inntak" fra kodeverk gir mulighet for at lege kan skrive fritekst i tillegg til doseringsteksten. Vi har sett at flere leger benytter dette fritekstfeltet til å skrive ytterligere informasjon om dosering slik at den avviker fra den strukturerte doseringen. Hvis pasient legges inn på sykehus utgjør dette en pasientsikkerhetsrisiko. Det ble nedsatt en arbeidsgruppe etter siste Endringsråd i september som skulle se på tiltak. Rekvirentsiden og Hdir ønsket å beholde mulighet for fritekst, og ønsket mer info om omfang før eventuelle tiltak ble besluttet. NHN mener at omfanget på 20 identifiserte nye resepter med avvik i doseringsinformasjon er tilstrekkelig til å gjøre tiltak, og skar igjennom. Det blir nå krav om at struktur blir brutt dersom det skrives noe i fritekstfeltet. 
+
+
+! Prognose på penger og ressurser
+Finansiering: Forskriftsfestede midler nasjonale e-helseløsninger, e-resept
+
+* Timepådrag - ikke oppdatert: Marginalt overforbruk på godkjenningsprosessen oppveies av marginalt underforbruk på verdikjede. Prognosen for resten av året er vurdert på nytt og justert noe ned, særlig på ressurser fra andre team.    
+
+* Startet rekrutteringsprosess for ressurs som skal erstatte innleid konsulent hvor oppdraget utløper til sommeren. Stillingen er lagt inn i budsjettet fra 1.3.25. Må trolig justeres til 1.4. 
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark4c89bd5ada01ce3dc213">Oversikt E-resept verdikjede (Power BI)</a>
+
+
+
+

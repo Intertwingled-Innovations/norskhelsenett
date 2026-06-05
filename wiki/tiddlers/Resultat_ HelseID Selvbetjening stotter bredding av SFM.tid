@@ -1,0 +1,15 @@
+created: 20240801115735508
+modified: 20240816085429681
+revision: 0
+tags: Resultat Selvbetjening [[Gjøre det enkelt for tjenesteeiere å beskytte sine digitale helsetjenester med HelseID]]
+title: Resultat: HelseID Selvbetjening støtter bredding av SFM
+type: text/vnd.tiddlywiki
+
+!! Oppgaver i 2024
+<$list filter='[tag<currentTiddler>tag[Oppgave]tag[2024]]'>
+<$checkbox tag=Levert/> <$link><$view field='title'/></$link> <br>
+</$list>
+
+!! Styring
+!!! 2024
+<<list-links filter:"[tag[Styring Tiltak]tag[2024]tag<currentTiddler>]">>

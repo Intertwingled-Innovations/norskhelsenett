@@ -1,0 +1,11 @@
+created: 20250226124925356
+modified: 20260505053852588
+revision: 0
+tags: 2024 [[Autentisering og autorisasjon]] Leveranse November [[Tjenesten HelseID skal lukke alle risikoelementer med risikonivå alvorlig]]
+title: 11/24- HelseID Risikoreduserende tiltak
+type: text/vnd.tiddlywiki
+
+* Fjerne gammelt amr-claim (helseID://claims/client/amr)
+* Endre typ-headeren for Access Tokens til at+jwt
+* Fjerner endepunktet clientinfo_endpoint
+* Forespørsel til authorize-endepunktet med implicit-eller hybrid-flyt avvises

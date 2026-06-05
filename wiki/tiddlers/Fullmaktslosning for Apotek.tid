@@ -1,0 +1,17 @@
+created: 20240314124234988
+modified: 20241108125549465
+revision: 0
+tags: [[Team PTS]] 2025 Målsetting
+title: Fullmaktsløsning for Apotek
+type: text/vnd.tiddlywiki
+
+Målsetningen er 
+
+* beskrivelse her
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

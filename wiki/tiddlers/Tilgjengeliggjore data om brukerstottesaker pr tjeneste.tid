@@ -1,0 +1,16 @@
+created: 20240812100630688
+modified: 20240815092253081
+revision: 0
+tags: Kundesenteret Målsetting 2024
+title: Tilgjengeliggjøre data om brukerstøttesaker pr tjeneste
+type: text/vnd.tiddlywiki
+
+
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

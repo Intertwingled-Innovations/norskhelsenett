@@ -1,0 +1,8 @@
+created: 20240821125619591
+modified: 20250307091325272
+revision: 0
+tags: [[2024 - Avvikling eller overlevering av Flow moduler]] 2024 Mars Leveranse Flow Integrasjonstjenesten [[Integrasjon- og støttesystemer]]
+title: Avviklet tjenesten Kunde e-post i Flow DNS
+type: text/vnd.tiddlywiki
+
+Fjernet DNS records for tjenesten Kunde e-post som en del av avvikling av tjenesten.

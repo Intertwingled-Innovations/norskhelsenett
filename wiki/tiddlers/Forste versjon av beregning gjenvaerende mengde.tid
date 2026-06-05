@@ -1,0 +1,11 @@
+created: 20260417113359110
+modified: 20260417113929900
+revision: 0
+tags: [[Innføre sentral beregning av gjenværende mengde]] Leveranse April 2026 Reseptformidleren [[Forenkling og opprydding i dagens løsning (RF)]]
+title: Første versjon av beregning gjenværende mengde
+type: text/vnd.tiddlywiki
+
+Første versjon av beregningen utføres uten å benytte FEST. 
+
+Verdi av leveransen:
+Formålet med denne første versjonen er å bygge erfaring med og kunne måle hvor godt beregningene treffer i forhold til det som faktisk utleveres i apotek basert på den beregning som utføres i apotekløsningen og farmasøytens vurderinger/inngripen.

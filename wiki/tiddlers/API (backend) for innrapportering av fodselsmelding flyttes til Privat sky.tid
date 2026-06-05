@@ -1,0 +1,17 @@
+created: 20240805122638816
+modified: 20250303083701766
+revision: 0
+tags: [[Innrapportering av fødselsmelding]] 2024 Målsetting
+title: API (backend) for innrapportering av fødselsmelding flyttes til Privat sky
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+API er tilknyttet web, og er avhengig av at frontend også flyttes.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

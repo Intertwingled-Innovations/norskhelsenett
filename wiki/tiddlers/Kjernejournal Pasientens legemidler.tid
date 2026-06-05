@@ -1,0 +1,37 @@
+TjenesteID: 40169
+created: 20260223113110897
+modified: 20260504132050589
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] 2026 [[Kjernejournal Pasientens legemidler]]
+title: Kjernejournal Pasientens legemidler
+type: text/vnd.tiddlywiki
+
+Pasientens legemidler (PLM) er en tjeneste som skal tilby lesing av legemiddelinformasjon, foreløpig under kjernejournalforskriften. Tjenesten erstatter KJ infotjenester legemiddel API samt et internt API som benyttes av Kjernejournal portal og Helsenorge (Prescription drug API).
+
+Tjenesten er basert på samhandlingsplattformens løsningsmønster og bruker felleskomponenter. 
+Data deles fra reseptformidleren via navet (en kafka topic).
+
+API for å lese legemiddel informasjon via denne tjenesten er beskyttet av HelseID.
+
+Ny tjeneste gjør at dagens forsinkelse mellom reseptformidleren og kjernejournal elimineres. Vi kan også avvikle gamle løsninger med mye teknisk gjeld.
+
+
+! Målsettinger
+!! 2026
+
+<<list-links filter:"[tag[Målsetting]tag[2026]tag<currentTiddler>]">>
+
+!Resultat
+!! 2026
+
+<<list-links filter:"[tag[Resultat]tag[2026]tag<currentTiddler>]">>
+
+!Leveranser
+!! 2026
+
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>
+
+!Styring 
+!! 2026
+
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag<currentTiddler>]">>

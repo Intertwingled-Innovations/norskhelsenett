@@ -1,0 +1,20 @@
+created: 20260505095313033
+modified: 20260505101148021
+revision: 0
+tags: [[Ny tjeneste for å samle og dele tilgangsbegresninger]] Leveranse [[Personvern og tilgangsstyring]] 2026 September
+title: 09/26 PTS-API som støtter sperre av informasjonselement/ressurs for alt helsepersonell
+type: text/vnd.tiddlywiki
+
+Etablere MVP-løsning for sperre av informasjonselement/ressurs i tråd med 03/26 Spesifikasjon av sentral løsning for personverninnstillinger, med følgende features:
+
+* Støtte nytt kodeverk for tilgangsbegresninger for helsepersonell (9604)
+* PTS-registry og PTS-ledger
+* Kafka-topic
+* Vitistack infrastruktur
+* Forankre datakontrakt internt og eksternt
+* Test, QA og prod
+* Dokumentasjon på Utviklerportal
+* HelseID maskin-til-maskin
+* AKseptansetest med WebMed ifm EPJ-løftet
+
+Løsningen skal fungere i test og produksjon for Pasientens prøvesvar.

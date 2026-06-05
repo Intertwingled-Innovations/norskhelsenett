@@ -1,0 +1,15 @@
+created: 20250707074127096
+modified: 20260330104413523
+revision: 0
+tags: [[Kjernejournal Pasientens prøvesvar]] Målsetting 2025 [[Tiltaket pasientens prøvesvar]]
+title: Målsetting for pasientens prøvesvar: Alle laboratorier og radiologiske virksomheter leverer prøvesvar til tjenesten
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+Alle laboratorier og radiologiske virksomheter skal ha teknisk funksjonalitet for å kunne sende svarrapporter til tjenesten 
+
+! Resultat
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

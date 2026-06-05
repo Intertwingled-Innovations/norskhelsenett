@@ -1,0 +1,59 @@
+created: 20240128091113069
+modified: 20260408071101683
+revision: 0
+tags: [[Norsk Helsenett SF]] 2024 Tiltak Kommune [[Tiltaket pasientens måledata (OLD)]] DigitalSamhandling 2025
+title: Tiltaket pasientens måledata (OLD)
+type: text/vnd.tiddlywiki
+
+Tiltaket pasientens måledata skal samle og tilgjengeliggjøre medisinske måledata for pasienter som er i behandling og har tett oppfølging av ulike aktører på tvers av helse- og omsorgstjenesten. Tjenesten skal sikre helsepersonell enkel tilgang til oppdatert informasjon om pasientens status og dermed skape bedre informasjonsflyt på tvers av helsepersonell og ulike helsevirksomheter som samarbeider om en pasient. Tiltaket skal i første omgang prøves ut i helsefellesskap der helsevirksomheter samarbeider tett om pasienter som har digital hjemmeoppfølging og hvor det er behov for å dele målinger mellom aktørene.
+
+! Effektmål og resultatmål
+!!Effektmål
+* Pasientens måledata skal sikre helsepersonell enkel tilgang til oppdatert informasjon om pasienten og dermed bidra til økt pasientsikkerhet, bedre informasjonsflyt og en mer effektiv ressursbruk.  
+
+Norsk helsenett SF er ansvarlig for teknisk utvikling og utprøving av tiltaket. Norsk helsenett SF er ansvarlig for drift og forvaltning av løsningen. 
+
+!! Resultatmål for 2024
+* Det er gjennomført utprøving der medisinske måledata er utvekslet mellom helsevirksomheter som samarbeider om pasienten.
+
+!! Norsk helsenett sine oppgaver 2024
+
+<<NHN-current-liste-levert type:"Oppgave" aar:"2024">>
+
+!! Leveranseplan 2024
+https://nhnkontor.sharepoint.com/:b:/r/sites/Samhandlingsplattformen/Shared%20Documents/Behovsteamet/Leveranseplan%202024/Leveranseplan%20til%20HOD%202024/Sendt%20HOD%20140224/Leveranseplan%201.1%202024%20til%20HOD%20140224.pdf?csf=1&web=1&e=ZGYhzo
+
+!! Rapportering leveranseplan 2024
+
+<<list-links filter:"[tag[2024]tag[Leveranse]tag[Rapportering leveranseplan]]">>
+
+! Styring 2024
+<<list-links filter:"[tag[Styring Tiltak]tag[2024]tag<currentTiddler>]">>
+
+!! Norsk helsenett sine oppgaver 2025
+
+<<NHN-current-liste-levert type:"Oppgave" aar:"2025">>
+
+!! Leveranseplan 2025
+https://nhnkontor.sharepoint.com/:b:/r/sites/Samhandlingsplattformen/Shared%20Documents/Team%20Sats/Leveranseplan%202025/Endelig%20versjon/NHN%20leveranseplan%202025%20-%20Digital%20samhandling%201.0.pdf?csf=1&web=1&e=zMTSCS
+
+!! Rapportering leveranseplan 2025
+
+<<list-links filter:"[tag[2025]tag[Leveranse]tag[Rapportering leveranseplan]]">>
+
+!! Styring 2025
+<<list-links filter:"[tag[Styring Tiltak]tag[2025]tag<currentTiddler>]">>
+
+!! Norsk helsenett sine oppgaver 2026
+
+<<NHN-current-liste-levert type:"Oppgave" aar:"2026">>
+
+!! Leveranseplan 2026
+https://nhnkontor.sharepoint.com/:b:/r/sites/Samhandlingsplattformen/Shared%20Documents/Team%20Sats/Leveranseplan%202025/Endelig%20versjon/NHN%20leveranseplan%202025%20-%20Digital%20samhandling%201.0.pdf?csf=1&web=1&e=zMTSCS
+
+!! Rapportering leveranseplan 2026
+
+<<list-links filter:"[tag[2026]tag[Leveranse]tag[Rapportering leveranseplan]]">>
+
+!! Styring 2026
+<<list-links filter:"[tag[Styring Tiltak]tag[2026]tag<currentTiddler>]">>

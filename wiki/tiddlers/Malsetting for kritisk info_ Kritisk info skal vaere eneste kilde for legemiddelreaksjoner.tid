@@ -1,0 +1,19 @@
+TjenesteID: 40168
+created: 20260412115259414
+modified: 20260414125415106
+revision: 0
+tags: [[Kjernejournal Pasientens kritiske informasjon]] Målsetting 2026
+title: Målsetting for kritisk info: Kritisk info skal være eneste kilde for legemiddelreaksjoner
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+
+Kritisk info skal være eneste kilde for legemiddelreaksjoner
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

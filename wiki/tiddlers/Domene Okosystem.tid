@@ -1,0 +1,35 @@
+created: 20260504071451186
+modified: 20260508101045310
+revision: 0
+tags: Domene [[Divisjon Helsepersonell]] Divisjon
+title: Domene Økosystem
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av domene
+
+Domenet skal jobbe for økosystemet. Det vil si koble aktørene for å underlette samhandlingen og skape verdi i sektoren, og påse at verdikjedene i sektoren fungerer godt. 
+
+Domene skal prioritere de satsningene som er i divisjonen og resten av NHN
+
+https://confluence.nhn.no/spaces/SAM/pages/283351107/Domene+%C3%B8kosystem
+
+! Målsettinger
+
+<<list-links filter:"[tag[2026][tag[Målsetting]tag<currentTiddler>]">>
+
+''Støtte og hjelp til kommune''
+<<list-links filter:"[tag[Målsetting]tag[Støtte og hjelp til kommune]tag[2026]]">>
+
+''Støtte og hjelp til leverandører''
+<<list-links filter:"[tag[Målsetting]tag[Støtte og hjelp til leverandører]tag[2026]]">>
+
+''Støtte og hjelp til RHF''
+<<list-links filter:"[tag[Målsetting]tag[Støtte og hjelp til RHF]tag[2026]]">>
+
+''Støtte og hjelp til private helseaktører 2026''
+<<list-links filter:"[tag[Målsetting]tag[Støtte og hjelp til private helseaktører 2026]tag[2026]]">>
+
+''Støtte og hjelp til innovasjon''
+<<list-links filter:"[tag[Målsetting]tag[Støtte og hjelp til innovasjon]tag[2026]]">>
+
+

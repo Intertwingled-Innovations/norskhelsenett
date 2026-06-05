@@ -1,0 +1,29 @@
+TjenesteID: 40167
+created: 20250514131829727
+modified: 20260430074513751
+revision: 0
+tags: [[Intern tjeneste]] 2026 [[Divisjon Helsepersonell]]
+title: Utviklerportalen
+type: text/vnd.tiddlywiki
+
+Utviklerportalen er den eksterne og interne dokumentasjonen av våre API, "kom i gang" tutorials, overordnet systemdesign og annen felles dokumentasjon.
+
+! Målsettinger, 2026
+
+<<list-links filter:"[tag[Målsetting]tag[2026]tag<currentTiddler>]">>
+
+! Styring, 2026
+
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag<currentTiddler>]">>
+
+
+! Styring
+
+!! 2026
+<<list-links filter:"[tag[Styring Intern tjeneste]tag[2026]tag<currentTiddler>]">>
+
+
+! Leveranser
+
+!! 2026
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>

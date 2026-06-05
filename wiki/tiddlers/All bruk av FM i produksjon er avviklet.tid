@@ -1,0 +1,21 @@
+TjenesteID: 40035
+created: 20260320120611343
+modified: 20260416095207653
+revision: 0
+tags: 2026 Målsetting Forskrivningsmodulen
+title: All bruk av FM i produksjon er avviklet
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av målsetting
+
+''All bruk av FM i produksjon skal avvikles.'' Etter endelig avvikling av all support og bistand til FM 31.12.2025, var det om lag 500 helsevirksomheter som fortsatte å bruke FM i produksjon __på eget ansvar__. Hver av EPJ-leverandørene må etablere støtte for alternative løsninger, fortrinnsvis integrasjon med SFM, og deretter flytte sin kunder fra FM til SFM (eller en annen løsning).
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag[2026]tag<currentTiddler>]">>
+
+! Leveranse
+
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>
+
+

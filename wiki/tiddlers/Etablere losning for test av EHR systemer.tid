@@ -1,0 +1,18 @@
+created: 20260320144306216
+modified: 20260407063332867
+revision: 0
+tags: [[Sørge for at NHN etablerer løsning for test av EHR systemer]] Resultat 2026 [[Team EHDS]]
+title: Etablere løsning for test av EHR systemer
+type: text/vnd.tiddlywiki
+
+!! Beskrivelse av resultat:
+
+Iht oppdragsbrev skal NHN etablere og forvalte nasjonal tjeneste for test av pasientjournalsystemer i henhold til kravene i helsedataforordningen, jf. artikkel 40 om europeisk digitalt testmiljø og anbefalinger fra Norsk helsenett SF i overordnet konsekvensvurdering av 24. oktober 2025. fra andre EU/EØS-land.
+
+Etableres i løpet av 2026
+
+Team Testuniverset har ansvar for etableringen. Team EHDS har et sørge-for ansvar knyttet til sin rolle som prosessdriver for EHDS.
+
+!! Leveranser:
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>
+

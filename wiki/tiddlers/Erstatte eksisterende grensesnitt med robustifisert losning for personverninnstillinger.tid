@@ -1,0 +1,9 @@
+TjenesteID: 40061
+created: 20260407110941581
+modified: 20260505102006753
+revision: 0
+tags: [[Etablere nytt robust grensesnitt mellom PVK og Samhandlingsplattformen]] [[Personvern og tilgangsstyring]] Resultat 2026
+title: Erstatte eksisterende grensesnitt med robustifisert løsning for personverninnstillinger
+type: text/vnd.tiddlywiki
+
+Erstatte eksisterende grensesnitt (PVK-sync) med nytt grensesnitt og Kafka-løsning (PVK-exchange), for mer robust og sikrere informasjonsflyt av personverninnstillinger mellom PVK og Samhandlingsplattformen

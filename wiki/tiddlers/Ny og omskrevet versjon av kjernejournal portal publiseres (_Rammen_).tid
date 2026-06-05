@@ -1,0 +1,17 @@
+TjenesteID: 40033
+created: 20260317135946874
+modified: 20260409114021547
+revision: 0
+tags: [[Kjernejournal portal]] Målsetting 2026
+title: Ny og omskrevet versjon av kjernejournal portal publiseres ("Rammen")
+type: text/vnd.tiddlywiki
+
+Vi skriver om eksisterende kjernejournal med mål om å ikke videreføre avhengighetene til kjernejournal Classic.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

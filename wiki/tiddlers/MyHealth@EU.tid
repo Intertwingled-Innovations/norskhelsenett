@@ -1,0 +1,23 @@
+TjenesteID: 40038
+created: 20260407212955579
+modified: 20260409145124822
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] [[Domene Samhandlingsplattform]] 2026
+title: MyHealth@EU
+type: text/vnd.tiddlywiki
+
+MyHealth består av følgende områder:
+
+* ''NCPeH'' - Det nasjonale kontaktpunktet for å samhandle og dele helsedata over landegrenser
+* ''NCP-B'' - Det nasjonale kontaktpunktet for å kunne motta helsedata om EU-borgere
+* ''NCP-A'' - Det nasjonale kontaktpunktet for å kunne dele helsedata om norske innbyggere til EU
+
+
+! Målsettinger
+
+
+<<list-links filter:"[tag[Målsetting]tag[2026]tag<currentTiddler>]">>
+
+! Styring
+!! 2026
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag<currentTiddler>]">>

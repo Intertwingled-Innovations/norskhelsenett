@@ -1,0 +1,16 @@
+created: 20240201102739445
+modified: 20260326085345615
+revision: 0
+tags: [[Forvaltning av Medlemskap i Helsenettet]] 2024 Målsetting [[Team Medlemsforvaltning]]
+title: Tillitsfunksjoner knyttet til operasjonalisering av tillitsrammeverket er definert
+type: text/vnd.tiddlywiki
+
+Beskrivelse?
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

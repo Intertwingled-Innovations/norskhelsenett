@@ -1,0 +1,19 @@
+TjenesteID: 40027
+created: 20260506161439124
+modified: 20260506162630562
+revision: 0
+tags: 2026 Målsetting Virksomhet
+title: Avvikle Bedriftsregisteret
+type: text/vnd.tiddlywiki
+
+Bedriftsregisteret benyttes bare av et fåtall aktører, og er primært erstattet av Organisasjonsregisteret. 
+
+
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranse
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

@@ -1,0 +1,15 @@
+created: 20250228085419536
+modified: 20250804132501505
+revision: 0
+tags: [[Norsk Helsenett SF]] OppfølgingOgRapportering Oppgave 2025 Levert
+title: Plan for leveranser og disponering av midlene til  MyHealth@EU
+type: text/vnd.tiddlywiki
+
+!! NHN oppgave 2025:
+Legge fram en plan for leveranser og disponering av midlene til MyHealth@EU over kapittel 701, post 70.
+
+Frist 1. mars
+
+!!Leveranse:
+<<list-links filter:"[tag<currentTiddler>tag[Leveranse]]">>
+

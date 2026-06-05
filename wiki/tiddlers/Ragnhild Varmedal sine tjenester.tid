@@ -1,0 +1,48 @@
+created: 20240702073954206
+modified: 20260513115111646
+revision: 0
+tags: 
+title: Ragnhild Varmedal sine tjenester
+type: text/vnd.tiddlywiki
+
+
+
+
+
+
+!Eksterne tjenester:
+[[Autentisering og autorisasjon|Autentisering og autorisasjon]]
+
+
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[Autentisering og autorisasjon]tag[2026]]">>
+
+
+[[Helsenettet.no|Helsenettet.no]]
+
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[Helsenettet.no]tag[2026]]">>
+
+
+[[Samle og tilgjengeliggjøre fullmakter og samtykker|Samle og tilgjengeliggjøre fullmakter og samtykker]]
+
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[Samle og tilgjengeliggjøre fullmakter og samtykker]tag[2026]]">>
+
+
+
+
+[[Personvern og tilgangsstyring|Personvern og tilgangsstyring]]
+
+
+<<list-links filter:"[tag[Styring Relatert tjeneste]tag[Personvern og tilgangsstyring]tag[2026]]">>
+
+
+
+!Interne tjenester:
+[[Selvbetjening|Selvbetjening]]
+
+[[Selvbetjening oppsummert 2026]]
+
+<<list-links filter:"[tag[Styring Intern tjeneste]tag[Selvbetjening]tag[2026]]">>
+
+
+
+

@@ -1,0 +1,20 @@
+TjenesteID: 40029
+created: 20260219140634020
+modified: 20260409123506472
+revision: 0
+tags: Personell [[Divisjon Helsepersonell]] 2026 [[Styring Ekstern tjeneste]] Januar
+title: 01 Personell - hovedtrekk og endringer januar 2026
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer
+I henhold til plan på leveranser
+
+Det jobbes nå spesielt med endringer på fastlegeregisteret. HelseID-pålogging skal erstatte brukernavn og passord på offentlig web. 
+Det må også etableres en løsning for å hente ned fastlegelister da NAV avvikler sin tjeneste for dette fra 01. mai. 
+
+Det jobbes nå spesielt med løft til privat sky for helsepersonellregistre samt overgang til rest-api.
+Helsepersonellregisteret (HPR) web public er sikret med HelseID.
+Helsepersonell (HPR) er også publisert med sikring fra maskinporten for internetteksponert API.
+
+! Prognose på penger og ressurser
+Finansiering: Finansiert over forskriftsfestede midler nasjonale e-helseløsninger - personell

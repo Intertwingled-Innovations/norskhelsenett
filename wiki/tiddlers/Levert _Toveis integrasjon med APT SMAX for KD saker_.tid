@@ -1,0 +1,11 @@
+created: 20260302072413953
+modified: 20260302073047584
+revision: 0
+tags: [[2025-1: Toveis integrasjon med APT SMAX for KD saker]] 2026 Februar Leveranse Integrasjonstjenesten
+title: Levert "Toveis integrasjon med APT SMAX for KD saker"
+type: text/vnd.tiddlywiki
+
+Levert denne integrasjonen. 
+
+Nå flyter saker mellom KD og ESM gjennom Integrasjonstjenesten. Dette er to-veis flyt, en kan eskalere saker og en kan sende ut e-post til eksterne.
+Før ble dette løst av at alle jobbet på de samme sakene i Junta. Nå er Junta lagt ned.

@@ -1,0 +1,15 @@
+TjenesteID: 40034
+created: 20260222155011042
+modified: 20260505071318580
+revision: 0
+tags: Reseptformidleren 2026 [[Ekstern Tjeneste]] Resultat Juni
+title: Avvikle all bruk av utdaterte kryptoalgoritmer
+type: text/vnd.tiddlywiki
+
+https://utviklerportal.nhn.no/informasjonstjenester/reseptformidleren-og-e-resept/asynk-oppdatering-2026
+
+Tidligere oppgaver med å avvikle utdaterte algoritmer og nøkler (SHA) for asynkrone meldinger har vist seg å ikke være fullstendig. For å opprettholde akseptabel sikkerhet må dette ryddes opp i.
+
+Dokumentasjon på utviklerportalen er oppdatert slik at det er lett for aktørene å forstå hva de må forholde seg til.
+
+Det er ryddet opp for synkrone meldinger i 2025.

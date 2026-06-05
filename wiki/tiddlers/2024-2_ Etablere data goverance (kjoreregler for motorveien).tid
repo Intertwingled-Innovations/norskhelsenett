@@ -1,0 +1,13 @@
+created: 20240729075801823
+modified: 20250331140252411
+revision: 0
+tags: Integrasjonstjenesten 2024 Målsetting
+title: 2024-2: Etablere data goverance (kjøreregler for motorveien)
+type: text/vnd.tiddlywiki
+
+Det er et mål å få på plass en effektiv data governance for tjenesten. I denne sammenhengen betyr data goverance å kunne ha oversikt over hvilke strømmer som finnes, og hvilke tilgangsrettigheter en skal ha for disse. Med effektiv menes å at teamene kan selvbetjene dette i selv.
+Det må etableres rutiner for navngiving av strømmer.
+I løpet av 2024 vil Axual som verktøy etableres i NHN. Det blir en viktig oppgave for teamet å finne ut hvordan Axual best skal brukes for data governance i NHN.
+
+* Etablering av confluence side med retningslinjer (ferdig)
+* Avklare meldings størrelse på topics.

@@ -1,0 +1,12 @@
+TjenesteID: 40034
+created: 20260309135021288
+modified: 20260414124547418
+revision: 0
+tags: [[Rekvirent webservice med HelseID og jwe]] 2026 Leveranse [[Ekstern Tjeneste]] Reseptformidleren Mars [[Forenkling og opprydding i dagens løsning (RF)]]
+title: Rekvirent webservice med HelseID, DPoP og jwe
+type: text/vnd.tiddlywiki
+
+Rekvirent webservice med HelseID, DPoP og jwe. Denne skal tas i bruk av SFM ila mars.
+JWE er et bedre sikkerhetsrammeverk og det tidligere kravet om wss har ført til tungvinte løsninger for EPJ'er som er basert på .Net.
+
+Pridok er også interessert i å ta dette i bruk, ikke konkret tidsplan for dette.

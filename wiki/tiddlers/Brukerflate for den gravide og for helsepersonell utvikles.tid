@@ -1,0 +1,17 @@
+created: 20250120090850933
+modified: 20250120100300780
+revision: 0
+tags: [[Utvikle en brukerflate i helsenorge.no for de gravide og for helsepersonell via API]] Desember 2024 Leveranse
+title: Brukerflate for den gravide og for helsepersonell utvikles
+type: text/vnd.tiddlywiki
+
+!! Hva er levert?
+
+''Oppgaven er ikke ferdigstilt.''
+NHN har startet utvikling av brukerflate for gravide på Helsenorge. Utprøvingen er forsinket, og første versjon av brukerflate for den gravide vil være klar i mars. Basert på læring i utprøvingen, vil løsningen tilpasses gjennom 2025.
+NHN har inngått avtaler med leverandørene til helsepersonell i kommuner og fastleger, som utvikler integrasjon mot API og brukerflate for helsepersonell.
+
+!!Hvilken nytte til sektor?
+
+Helsepersonell får oppdatert informasjon i sin brukerflate ved at de som samhandler om den gravide utveksler data via den nasjonale løsningen. Dobbeltarbeid ved å måtte journalføre og føre informasjon på papirkortet unngås. Helsepersonell fører ikke alltid informasjon på papirkortet, og informasjon tilgjengelig for annet helsepersonell vil derfor være av bedre kvalitet digitalt.
+Innbygger slipper å være informasjonsbærer med et papirkort, og risikoen knyttet til helsehjelp når kortet glemmes, reduseres. Innbygger får tilgang til informasjon om sitt svangerskap på Helsenorge, og kan lettere få innsikt og gi tilbakemelding om mangler. Innbygger får bedre oversikt over hvem som har sett opplysningene, og risiko for opplysninger på avveie reduseres

@@ -1,0 +1,8 @@
+created: 20260513072209894
+modified: 20260513101753229
+revision: 0
+tags: 2026 [[Leveranse EksternTjeneste]] Person [[Persontjenesten med automatisk failover til Bergen]] Leveranse [[12/26 Persontjenesten i autonome regioner]]
+title: 04/26 Ektsternt testmiljø etablert i Bergen
+type: text/vnd.tiddlywiki
+
+Eksternt testmiljø er etablert  Bergen og vi kjørte manuell failover med eksterne slik at alle gjorde kall mot Bergen istedet for Trondheim

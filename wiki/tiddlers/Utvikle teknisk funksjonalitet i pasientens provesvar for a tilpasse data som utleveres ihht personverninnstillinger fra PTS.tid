@@ -1,0 +1,14 @@
+created: 20240317062150366
+modified: 20260330104413528
+revision: 0
+tags: 2024 [[Team Nilar]] [[Kjernejournal Pasientens prøvesvar]] [[Leveranseplan for Pasientens prøvesvar i 2024]] Leveranse
+title: Utvikle teknisk funksjonalitet i pasientens prøvesvar for å tilpasse data som utleveres ihht personverninnstillinger fra PTS
+type: text/vnd.tiddlywiki
+
+Data skal slettes dersom pasienten reserverer seg.
+
+Data skal ikke utleveres til helsepersonell dersom pasienten har satt sperre eller blokkering.
+
+Data skal ikke utleveres til pasient dersom prøvesvar er nektet.
+
+Data skal ikke utleveres til pasient dersom tidspunkt for tilgjengeliggjøring ikke har inntruffet.

@@ -1,0 +1,8 @@
+created: 20250728132446792
+modified: 20250728132617120
+revision: 0
+tags: [[Stabil og sikker drift av reseptformidleren i Norsk helsenetts private sky]] Leveranse 2025 Mai Reseptformidleren
+title: Reseptformidleren i Kubernetest testmiljø
+type: text/vnd.tiddlywiki
+
+Applikasjonen er kjørt opp i et Kubernetes testmiljø. Vi ser behov for noen justeringer, men overordnet så fungerer dette fint.

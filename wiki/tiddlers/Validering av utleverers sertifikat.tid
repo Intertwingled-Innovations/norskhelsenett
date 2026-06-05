@@ -1,0 +1,12 @@
+created: 20260101152220658
+modified: 20260101162725029
+revision: 0
+tags: [[Validere utleveres sertifikat]] 2025 November Leveranse Reseptformidleren [[Stabil og sikker drift av reseptformidleren i Norsk helsenetts private sky.]]
+title: Validering av utleverers sertifikat
+type: text/vnd.tiddlywiki
+
+Det er implementer sjekk på at sertifikat faktisk tilhører den virksomheten som sender/mottar data.
+
+Apotek 1 hadde ikke gjort klar sin multidoseløsning for denne valideringen. Av hensyn til pasientene som får multidose fra Apotek1 er valideringen ikke aktivert ennå.
+
+Apotek1 melder at de vil være klare med sine tilpasninger til den 15.februar 2026. Vi vil aktivere valideringen kort tid etter denne dato.

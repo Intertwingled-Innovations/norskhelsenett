@@ -1,0 +1,18 @@
+created: 20260310084216763
+modified: 20260415125043620
+revision: 0
+tags: [[Team EHDS og Legemiddel grunndata]] [[Team EHDS]] 2026 Målsetting [[Felles europeisk helsedataområde (EHDS)]]
+title: Etablere og vedlikeholde oversikt for "hvem gjør hva når" sammen med sektor
+type: text/vnd.tiddlywiki
+
+!! Beskrivelse av målsetting
+
+Etablere første versjon av oversikt for hvem gjør hva når.
+Oversikten skal vise prioritering av de til enhver tid viktigste tiltak for å realisere EHDS, samt prioritet sett opp mot andre viktige pågående tiltak. Den skal legge til rette for tydelig informasjon og kommunikasjon knyttet til prioriteringen og ansvar. Oversikten skal videreutvikles og oppdateres kontinuerlig basert på erfaring og etter hvert også målbilde og veikart for helsedataforordningen. 
+
+!! Resultat 
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+
+!! Leveranse
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

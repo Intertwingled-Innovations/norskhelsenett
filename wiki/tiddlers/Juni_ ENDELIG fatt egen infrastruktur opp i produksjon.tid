@@ -1,0 +1,9 @@
+created: 20250815083123591
+modified: 20250815083519779
+revision: 0
+tags: [[2024-1: Etablere sikret Kafka kluster (motorveien)]] Leveranse 2025 Juni Integrasjonstjenesten
+title: Juni: ENDELIG fått egen infrastruktur opp i produksjon
+type: text/vnd.tiddlywiki
+
+Har tatt lang tid med mye oppfølging, men har nå endelig en egen instans av integrasjonstjenesten oppe i prod. 
+Foreløpig brukere er Integrasjonstjenesten, Medlemstjenesten og KD-APT integrasjon.

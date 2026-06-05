@@ -1,0 +1,19 @@
+created: 20250221075434286
+modified: 20250515081429072
+revision: 0
+tags: Reseptformidleren Styring 2025 Januar [[Styring Ekstern tjeneste]]
+title: 01 Reseptformidleren - hovedtrekk og endringer januar 2025
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer
+
+* Ila januar er alle innleide utviklere faset ut og insourcingen av utvikling og forvaltning av reseptformidleren er fullført. 
+* Vi vil fortsatt rekruttere 2-3 utviklere i 2025 for å være rustet til det kommende arbeidet med tilpasning til EHDS. Vi trenger spesielt å rekruttere utviklere med høy kompetanse om sikkerhet.
+* Vi har hatt 3 produksjonsettinger ila januar der vi har lukket 2 avvik, gjort mindre endringer og generelt rettet feil.
+* Vi deltar i arbeidet med å kartlegge konsekvenser av EHDS for reseptformidleren.
+* Alle utviklere er nå ute av beredskapsvakt.
+* Bemanningen er lavere enn i 2024 og vi forventer noe lavere tempo, men ikke lineært ift reduksjon i bemanning. Prognosen blir oppdatert iht planlagt bemanning, men rammen for året står fast.
+* Vi planlegger å starte arbeidet med overgang til Kubernetes og vil bruke midler til bistand fra driftsteamet og til nødvendig infrastruktur.
+
+https://app.powerbi.com/Redirect?action=OpenReport&appId=6b2c0868-17a5-4050-a66c-e55f8a394c78&reportObjectId=2d7d01c3-db91-4731-bb68-8724b49c798a&ctid=e3dac4b3-9b0b-4f41-8623-9392d0d566dc&reportPage=ReportSection6057689f1293200062cb&pbi_source=appShareLink&portalSessionId=a9100003-6596-4fae-b879-891d8d0cdd2f
+

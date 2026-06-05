@@ -1,0 +1,14 @@
+TjenesteID: 40168
+created: 20260412120827069
+modified: 20260414125949055
+revision: 0
+tags: [[Kjernejournal Pasientens kritiske informasjon]] Resultat 2026 [[Målsetting for kritisk info: Kritisk info skal være eneste kilde for legemiddelreaksjoner]]
+title: Resultat for kritisk info: Kritisk info skal være eneste kilde for legemiddelreaksjoner
+type: text/vnd.tiddlywiki
+
+! Mål
+
+Legemiddelreaksjoner registreres både i kritisk informasjon og i e-resept kjeden (M25.1 melding), hvilket innebærer at det finnes legemiddelreaksjoner både i kritisk info og i reseptformidleren. Det skal ryddes opp slik at alle legemiddelreaksjoner skal finnes i kritisk info.
+
+! Effekt sektoren
+* Alle leagemiddelreaksjoner kan hentes fra kritisk info. Alle leagemiddelreaksjoner skal registreres til kritisk info.

@@ -1,0 +1,32 @@
+created: 20251110114442993
+modified: 20251110114849979
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Styring Ekstern tjeneste]] Person 2025 Oktober
+title: 10 Person - hovedtrekk og endringer oktober 2025
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+I henhold til plan.
+
+*Det jobbes aktivt med å få sektor over fra PREG til Persontjenesten. Endringer i vaske jobb og editteringsfunksjon i november.
+*Prosjekt med Persontjenesten på tredje lokasjon (HelseVest) er godt i gang og estimeres i pilot i oktober/november
+* Persontjenesten tar i bruk etterkontroll-tjenesten i Q4 2025
+
+
+*Persontjenesten berikes med fortrolige adresser fra septemeber 2025
+*Felles hjelpenummer er i produksjon med eget api fra oktober 2024. 
+*Georedundans er etablert, slik at tjenesten blir mer robust og vi kan gjøre vedlikehold uten at vi belaster sektor med forventet nedetid unødvendig. v3 er gjort tilgjengelig i  eksternt testmiljø (ET) og blir produksjonssatt i juni. 
+*v3 sikret med DPoP er etablert
+
+* Persontjenesten har gått over til å produsere til ny kafka-løsning, men konsumentene har ikke byttet. Dette vil det være fokus på i oktober, slik at vi får avviklet de gamle topics. Vi har nå frikoblet strømmene slik at gammel og ny kafka er uavhengig av hverandre.
+
+* Dødsmelding og Fødselmelding migreres inn i Person fra 1. juli
+
+
+! Prognose på penger og ressurser
+* Finansiert over forskriftsfestede midler nasjonale e-helseløsninger - person
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark0eb3b30158bdab9401a7">Oversikt Person (Power BI)</a>
+
+

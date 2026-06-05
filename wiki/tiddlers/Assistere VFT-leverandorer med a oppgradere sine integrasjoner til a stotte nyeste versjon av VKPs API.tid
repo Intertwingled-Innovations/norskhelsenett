@@ -1,0 +1,17 @@
+TjenesteID: 40037
+created: 20240703070638976
+modified: 20260508101345118
+revision: 0
+tags: [[Velferdsteknologisk knutepunkt]] Målsetting 2024
+title: Assistere VFT-leverandører med å oppgradere sine integrasjoner til å støtte nyeste versjon av VKPs API
+type: text/vnd.tiddlywiki
+
+FHIR R4
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

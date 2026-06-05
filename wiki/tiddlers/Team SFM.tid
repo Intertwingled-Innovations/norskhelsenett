@@ -1,0 +1,22 @@
+created: 20240221095718682
+modified: 20240223162143435
+revision: 0
+tags: Team [[Domene Brukerflater]] [[Sentral forskrivningsmodul]]
+title: Team SFM
+type: text/vnd.tiddlywiki
+
+! Formål
+
+Hva: 
+Team SFM skal bidra til å etablere , forvalte og videreutvikle SFM som tjeneste for helsesektoren i Norge for samhandling om pasientens legemiddelbehandling
+
+Hvordan: 
+Vi gjør dette ved å beskrive behov og har en dialog med Thula som setter de i stand til å implementere denne tjenesten. Samt hjelpe Thula med å oppnå den hensiktsmessige kvaliteten på tjenesten.
+
+Vi beskriver behovene sammen med sektoren og vi kvalitetsikrer underveis i implementeringen. 
+
+Vi har som mål å levere riktig funksjonalitet raskere og med mindre feilrate
+
+! Ansvar & Målsettinger
+
+<<list-links filter:"[tag[Målsetting]tag[Team SFM]]">>

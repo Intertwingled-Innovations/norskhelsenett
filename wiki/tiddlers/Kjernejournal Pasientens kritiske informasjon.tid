@@ -1,0 +1,72 @@
+TjenesteID: 40168
+created: 20240317142422144
+modified: 20260414110408659
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] [[Domene Samhandlingsplattform]] [[Team KJ infotjenester]] 2024 2025 2026
+title: Kjernejournal Pasientens kritiske informasjon
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+
+Deling av kritisk informasjon (alvorlige diagnoser og tilstander) om pasienten er opplysninger som det i en behandlingssituasjon er særskilt viktig at helsepersonell kjenner til og som vil være med å øke pasientsikkerheten. Kritisk informasjon blir oftest registrert i aktørens egne fagsystemer. Kritisk informasjon som i tillegg registreres i kjernejournal blir tilgjengelig for deling mellom aktører nasjonalt, for dem som har innført kjernejournal. Innbyggere får innsyn via helsenorge.
+
+! Målsettinger
+!! 2026
+
+<<list-links filter:"[tag[Målsetting]tag[2026]tag<currentTiddler>]">>
+
+!! 2025
+
+<<list-links filter:"[tag[Målsetting]tag[2025]tag<currentTiddler>]">>
+
+!! 2024
+
+<<list-links filter:"[tag[Målsetting]tag[2024]tag<currentTiddler>]">>
+
+! Resultat
+!! 2026
+
+<<list-links filter:"[tag[Resultat]tag[2026]tag<currentTiddler>]">>
+
+!! 2025
+
+<<list-links filter:"[tag[Resultat]tag[2025]tag<currentTiddler>]">>
+
+!! 2024
+
+<<list-links filter:"[tag[Resultat]tag[2024]tag<currentTiddler>]">>
+
+! Leveranser
+!! 2026
+
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>
+
+!! 2025
+
+<<list-links filter:"[tag[Leveranse]tag[2025]tag<currentTiddler>]">>
+
+!! 2024
+
+<<list-links filter:"[tag[Leveranse]tag[2024]tag<currentTiddler>]">>
+
+! Styring
+2026
+!!! Ekstern tjeneste
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag<currentTiddler>]">>
+
+!!! Tiltak
+<<list-links filter:"[tag[Styring Tiltak]tag[2026]tag<currentTiddler>]">>
+
+!! 2025
+!!! Ekstern tjeneste
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2025]tag<currentTiddler>]">>
+
+!!! Tiltak
+<<list-links filter:"[tag[Styring Tiltak]tag[2025]tag<currentTiddler>]">>
+
+!! 2024!! 
+!!! Ekstern tjeneste
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2024]tag<currentTiddler>]">>
+
+!!! Tiltak
+<<list-links filter:"[tag[Styring Tiltak]tag[2024]tag<currentTiddler>]">>

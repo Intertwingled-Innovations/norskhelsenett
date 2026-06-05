@@ -1,0 +1,36 @@
+TjenesteID: 40031
+created: 20240801122511244
+modified: 20260505112925217
+revision: 0
+tags: Målsetting [[Autentisering og autorisasjon]] 2026 40031
+title: Tjenesten HelseID skal lukke alle risikoelementer med risikonivå alvorlig
+type: text/vnd.tiddlywiki
+
+HelseID er en tjeneste med høy kritikalitet, og det er vurdert som kritisk for sektor at tjenesten er oppe. Det er derfor en målsetting å sikre at tjenesten er motstandsdyktig mot angrep og uhell, at den er risikovurdert, og at risiko er på et akseptabelt nivå. 
+
+!! Resultat 2026
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>tag[2026]]">>
+
+
+
+!! Resultat 2025
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>tag[2025]]">>
+
+
+!! Resultat 2024
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>tag[2024]]">>
+
+
+! Leveranser
+
+!! Leveranser 2026
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>tag[2026]]">>
+
+!! Leveranser 2025
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>tag[2025]]">>
+
+!! Leveranser 2024
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>tag[2024]]">>

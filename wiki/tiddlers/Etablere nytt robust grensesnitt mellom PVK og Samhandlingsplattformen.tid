@@ -1,0 +1,19 @@
+TjenesteID: 40061
+created: 20260217104946163
+modified: 20260505102006752
+revision: 0
+tags: Målsetting 2026 [[Personvern og tilgangsstyring]]
+title: Etablere nytt robust grensesnitt mellom PVK og Samhandlingsplattformen
+type: text/vnd.tiddlywiki
+
+Robustifisering av grensesnitt mellom PVK (Personvernkomponenten Helsenorge) for å sikre stabil informasjonsflyt av personverninnstillinger som gjelder tjenestene i samhandlingsplatttformen, slik at tjenestene har tilstrekkelige forutsetninger for å til enhver tid  etterleve personverninnstillinger som innbygger har satt på Helsenorge. Løsningen skal sikre en sikker synkronisering av personverninnstillinger mellom PVK (Helsenorge) og Samhandlingsplattformen.
+
+!! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>tag[2026]]">>
+
+
+!! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>
+

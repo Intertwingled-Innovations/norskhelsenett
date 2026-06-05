@@ -1,0 +1,8 @@
+created: 20260128134036640
+modified: 20260513095523805
+revision: 0
+tags: [[Tilby verktøy som effektiviserer og kvalitetssikrer bruken av HelseID]] Resultat 2026 [[Autentisering og autorisasjon]]
+title: Leverandører kan selv teste om deres kode samsvarer_del 2
+type: text/vnd.tiddlywiki
+
+Leverandører kan selv teste om deres kode er i henhold til HelseID sin sikkerhetsprofil. De får hensiktsmessige feilmeldinger og rettledning om riktig implementasjon. De kan dermed selv raskt og effektivt forbedre sin kode på de punkter der den ikke tilfredsstiller sikkerhetsprofilen, og vil stille bedre forberedt til kodegjennomgang. Kodegjennomgangen blir mer effektiv både for NHN og for leverandører. Planlagte endringer i Utviklerportalen krever endring hos systemleverandørene og  skal kunne testet i samsvarstest for HelseID

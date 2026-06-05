@@ -1,0 +1,24 @@
+created: 20240128165804469
+modified: 20250514131107605
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Intern tjeneste]]
+title: Navet
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+Navet er den sentrale mekanismen for strømming av hendelser inn og ut av samhandlingsplattformen. Databærende hendelser strømmes på topics, og kan plukkes opp av forskjellige informasjonstjenester som tilbyr disse til sektoren, på nasjonalt eller innenfor kommuner.
+Navet er i all hovedsak en intern infrastruktur, men kan også brukes til å publisere offentlige data, som for eksempel metrikk på tjenestene, statistikker, et.c.
+
+!! Anskaffelse
+<<list-links filter:"[tag[Anskaffelse]tag[Kafka]tag[Axual]]">>
+
+! Målsettinger
+
+<<list-links filter:"[tag[Målsetting]tag<currentTiddler>]">>
+
+! Styring
+!! 2024
+<<list-links filter:"[tag[Styring Intern tjeneste]tag[2024]tag<currentTiddler>]">>
+
+!! 2025
+<<list-links filter:"[tag[Styring Intern tjeneste]tag[2025]tag<currentTiddler>]">>

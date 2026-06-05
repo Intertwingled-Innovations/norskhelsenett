@@ -1,0 +1,8 @@
+created: 20250303083712790
+modified: 20250303083837805
+revision: 0
+tags: [[API (backend) for innrapportering av fødselsmelding flyttes til Privat sky]] [[Innrapportering av fødselsmelding]] Leveranse 2025
+title: Elektronisk fødselsmelding: API (backend) er flyttet til privat sky
+type: text/vnd.tiddlywiki
+
+API er tilknyttet Web, så bruk av det nye APIet ble 100% ute 4.mars 2025. Backend prosessene har stegvis blitt byttet fra desember 2024 til februar 2025

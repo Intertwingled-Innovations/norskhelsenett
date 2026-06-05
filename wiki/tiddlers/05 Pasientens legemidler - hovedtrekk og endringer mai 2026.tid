@@ -1,0 +1,26 @@
+TjenesteID: 40169
+created: 20260604085816898
+modified: 20260604090635207
+revision: 2
+tags: [[Kjernejournal Pasientens legemidler]] [[Styring Ekstern tjeneste]] [[Forretningsmessig endring:1]] 2026 Mai
+title: 05 Pasientens legemidler - hovedtrekk og endringer mai 2026
+type: text/vnd.tiddlywiki
+
+!Hovedtrekk og endringer
+
+*Ny backend har gått i test i rf sitt test2 miljø og benyttes både internt og eksternt uten meldte problemer siden 30.januar.
+*Teamet har møtt på en rekke tekniske problemer i forbindelse med migrering av historikk fra KJ arkiv databasen til ny SQL server database. Det skal migreres 3 års historikk. Det gjenstår pt 20-30 meldinger (som var veldig store) før migreringen av historikk fra KJ er komplett. 
+*Konsumering av meldinger fra rf fungerer nå tilfredsstillende.
+
+
+!Penger og ressurser
+
+Vi har så langt brukt betydelig mer penger på å etablere ny backend enn det som var planlagt, det blir dermed mindre penger igjen til å etablere nytt API. Vi har foreløpig ikke noe estimat for nytt API. Dette vil bli utarbeidet når vi er i produksjon med ny backend. Det er planlagt før sommeren.
+
+Innleid konsulent er sagt opp og slutter 15.mai. Om det er behov for mer ressurser vil dette hentes fra de som jobber med rf.
+
+Foreløpig tror vi at vi vil holde oss innenfor tildelt ramme på 12,1 MNOK i 2026.
+Timepådraget vil øke fra august for vi vil sette på flere ressurser for å utvikle API'ene. Det kan være nye innleide eller ansatte.
+
+
+https://app.powerbi.com/Redirect?action=OpenReport&appId=6b2c0868-17a5-4050-a66c-e55f8a394c78&reportObjectId=2d7d01c3-db91-4731-bb68-8724b49c798a&ctid=e3dac4b3-9b0b-4f41-8623-9392d0d566dc&reportPage=ab265f40bbbad51c5a74&pbi_source=appShareLink&portalSessionId=7bac47ee-43a7-4011-9bc0-0f83f2c5ac36

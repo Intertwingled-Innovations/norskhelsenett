@@ -1,0 +1,28 @@
+created: 20250310071910225
+modified: 20250401113137245
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Innrapportering av fødselsmelding]] [[Styring Ekstern tjeneste]] 2025 Februar
+title: 02 Innrapportering av fødselsmelding - hovedtrekk og endringer februar 2025
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+Det er ferdigstilt ny frontend, slik at koden for backend kan flyttes til privat sky. Dette er nødvendig å fullføre for å håndtere sikkerhetsutfordringer. Ny frontend/webside med tilhørende API er nå i test og vil blir tilgjengelig i produksjon mars 2025.
+
+Eierskapet for elektronisk fødselsmelding er overført fra de regionale helseforetakene til Norsk helsenett, og den gamle avtalen fra 2017 er ikke lenger gjeldende. Det har tidligere kommet en forespørsel til oss fra en privat aktør om muligheten for å ta i bruk løsningen, men dette krever i første omgang avklaringer med Skatt. Vi har tatt kontakt med Skatt for å avklare det, uten at det foreligger en konklusjon.
+
+! Prognose på penger og ressurser
+Prognosen for elektronisk fødselsmelding er litt over budsjett. Dette skyldes at det er denne tjenesten i innrapportering det har vært jobbet mest med i januar og februar. Team innrapportering (backend teamet) har tatt over oppgaven med å ferdigstille ny web front. 
+
+
+*Finansiering: Kundeavtalen med de regionale helseforetakene
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark8313964b2a3d32bbd89c">Oversikt Innrapportering av fødselsmelding (Power BI)</a>
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+created: 20240416132519227
+modified: 20240909124714730
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Intern tjeneste]] Avvikles
+title: Junta
+type: text/vnd.tiddlywiki
+
+!Beskrivelse av tjenesten
+
+Junta er et internt verktøy som håndterer saksbehandling internt og mot kunder, ITIL prosess, brukerkontoer i tjenester, samt teknisk dokumentasjon for forvaltning av samband.
+
+Link til grensesnitt for tjenesten: [[https://junta.nhn.no/]]
+
+Dokumentasjon: [[https://confluence.nhn.no/display/Junta/Junta]]
+
+! Målsettinger
+
+<<list-links filter:"[tag[Målsetting]tag<currentTiddler>]">>
+
+!! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>
+
+! Styring
+!! 2024
+<<list-links filter:"[tag[Styring Intern tjeneste]tag[2024]tag[Integrasjon- og støttesystemer]]">>

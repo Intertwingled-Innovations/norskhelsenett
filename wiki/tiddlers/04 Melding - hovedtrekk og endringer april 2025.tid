@@ -1,0 +1,19 @@
+created: 20250514121839688
+modified: 20250515045159104
+revision: 0
+tags: Melding 2025 [[Styring Ekstern tjeneste]] [[Divisjon Helsepersonell]] April
+title: 04 Melding - hovedtrekk og endringer april 2025
+type: text/vnd.tiddlywiki
+
+!Hovedtrekk og endringer
+* EDI 2.0 er i stabil drift med én aktør som sender og mottar meldinger på vegne av en håndfull virksomheter.
+
+* Meldingstjener er kraftig rustet opp for å kunne skalere for større aktører som vi mener kommer til å gå over på EDI 2.0 i løpet av året. 
+* NAV er en av disse, noe vi ser på som en milepæl, med tanke på de strenge kravene de hadde på sikkerhet, drift, sporbarhet og andre kvalitetskriterier.
+* Avvikling ftps: Ser ut til å bli en større utfordring enn forutsatt. FHI/Helsedirektoratet kommer ikke i gang med ny transport for KPR/NPR.
+
+!Prognose på penger og ressurser
+* EDI2.0 blir finansiert over post 70, utgjør 5 mnok i 2025. Det vil være dobbel drift i 5-6 år fremover og vil utgjøre en totalkostnad på ca 30 mnok
+* Totale drift- og forvaltningskostnader i prognosen er innenfor tildelt ramme. Styrer godt innenfor.
+
+<a href="https://app.powerbi.com/groups/6931f38e-9db9-41f4-a143-ac9ee4a4719c/reports/a03232e0-bd45-4da2-b925-662e476d7ebd/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarke7bc61a8188a81da0ffc">Oversikt Melding (Power BI)</a>

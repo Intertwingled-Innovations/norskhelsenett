@@ -1,0 +1,14 @@
+created: 20251003133616316
+modified: 20260408085632633
+revision: 0
+tags: [[Avvikle FM]] 2025 [[Forskrivningsmodulen 2024-2025]] Resultat
+title: Avvikling av mindre leverandører - Carasent Ad Curis
+type: text/vnd.tiddlywiki
+
+Det kan være virksomheter (og deres leverandører) som ikke kommer over på ny løsning før FM avvikles, men da skal NHN ha informert tydelig om prosess og frist, og leverandørene skal ha fått tilstrekkelig tid til å gjøre integrasjon med SFM og migrering av kundene. Hvis ikke disse leverandørene integrerer med SFM og for migrert virksomhetene før FM avvikles så kan noen virksomheter miste tilgang til e-resept i en periode. Dette vil i så fall kun gjelde leverandører som ha få virksomheter og det vil bli forankret i NHN.
+
+Det gjelder følgende leverandører:
+* Carasent AdCuris (privatsykehus, bedriftshelsetjeneste)
+* Vitec HK Data Velferd (rusbehandling, rehabilitering)
+* CGM Vision (bedriftshelsetjeneste, legevakt)
+* Apertura Apertura-Eye (øyeleger)

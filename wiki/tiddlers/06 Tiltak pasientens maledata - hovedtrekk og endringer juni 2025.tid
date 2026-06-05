@@ -1,0 +1,32 @@
+created: 20250717112348235
+modified: 20260408071025185
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Styring Tiltak]] [[Tiltaket pasientens måledata (OLD)]] 2025 [[Tiltaket pasientens måledata 2025]] Juni
+title: 06 Tiltak pasientens måledata - hovedtrekk og endringer juni 2025
+type: text/vnd.tiddlywiki
+
+
+<<list-links filter:"[tag[Tiltaket pasientens måledata 2025]tag[Tiltak]tag[2025]]">>
+
+! Hovedtrekk og endringer
+
+
+!!! Gjennomføre en utprøving av pasientens måledata i helseregon Sør-øst
+
+* Mål: Gjennomføre utprøving med deling av måledata mellom Oslo kommune og OUS i løpet av Q3 2025
+** Oslo kommune i rute til oppstart September
+** HSØ har ikke søkt dispensasjon til å benytte Token Exchange etter mønster av DHG
+*** Åpnet for Token Exchange i testmiljø
+** Vi er i rute på å få PMD-tjenesten klar til produksjon
+*** Avlevering til innsynslogg implementert
+
+* Vestre Viken HF, Drammen kommune/Asker kommune: Er fortsatt med. Varsler økning i aktuelle pasienter - øker mulighet for at de også blir med på utprøving.
+** Mål: Data i testmiljø fra Drammen kommune med Tellu som DHO-system og kilde til måledata. Viktig kvalitativt for PMD.
+
+! Prognose på penger og ressurser
+
+*Finansiering: Offentlig tilskudd, PMD, 13 mnok tilfaller vår divisjon og 5 mnok divisjon Innbygger
+* Prognose 7.5 mnok på DHP inkl. felleskostnader.  En god del mindre enn rammen, hovedsaklig pga. mindre aktivitet/ treghet med å få i gang utprøving. Pr juni så viser runrate 6.1 mnok for 2025 inkl felleskostnader, men prognosen justeres ikke da vi forventer noe økning i pådrag når 2 ressurser er tilbake fra 80% permisjon.
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection343a8851705d1cfe8125?experience=power-bi&bookmarkGuid=Bookmark76496cc890038835a416">Oversikt PMD (Power BI)</a>

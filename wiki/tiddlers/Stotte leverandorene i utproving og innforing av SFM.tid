@@ -1,0 +1,16 @@
+created: 20260210140308287
+modified: 20260407114929009
+revision: 0
+tags: Målsetting [[Tiltaket pasientens legemiddelliste]] 2026 [[Sentral forskrivningsmodul i 2026]]
+title: Støtte leverandørene i utprøving og innføring av SFM
+type: text/vnd.tiddlywiki
+
+Målsetningen er å støtte nye leverandører i implementeringen av SFM hos sine første virksomheter. Dette inkluderer også godkjenning av løsningene og integrasjonene der det er behov og funksjonell opplæring til leverandørene.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag[2026]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>

@@ -1,0 +1,41 @@
+TjenesteID: 40033
+created: 20260326142446942
+modified: 20260413112517735
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Styring Ekstern tjeneste]] 2026 Kjernejournal [[Kjernejournal portal]] Mars [[Forretningsmessig endring:1]]
+title: 03 Kjernejournal portal - hovedtrekk og endringer mars 2026
+type: text/vnd.tiddlywiki
+
+
+! Hovedtrekk og endringer
+*Fokus i mars har vært arbeid med å gjøre PVK til master og arbeid med PPS, samt etablering av ny portal ("rammen")
+*Et par utviklere har bidratt noe med overføring av legemidler ifm PLM (Pasientens Legemiddel)
+*En driftsressurs har bidratt med nesten 40% av sine timer i mars i arbeidet med en POC for alternativ arbeidsflate
+*Vi jobber jevnt og trutt med å modernisere løsningen, og løsrive oss fra "Classic"
+*Det lages egne API som dekker fliken "Om pasienten", slik at den kan vertikaliseres
+*Det vurderes om det også skal lages et API for "Besøkshistorikk". Når dette er gjennomført, vil alle informasjonselementer i kjernejournal være tilgjengelig via egne API'er.
+*Vi ble rammet av kompromittering av Trivy, noe vi brukte flere dager på å utføre risikoreduserende tiltak.
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 1''
+
+Konsekvens av forretningsmessig endring:
+
+! Prognose på penger og ressurser
+* Finansieringskilde: Pasientjournalloven (71,5 MNOK og offentlig tilskudd (PPS) 2,4 MNOK)
+* Ramme for året: 73,9 MNOK
+** Portal forvaltning: 36,4 MNOK
+** Drift: 37,5 MNOK
+* Hvordan ligger vi an hittil i år opp i mot prognoser og planlagte oppgaver?
+** Portal har mange mål for 2026, og har så langt fremdrift ift planlagte oppgaver
+* Årsprognose: 67 MNOK, Runrate 60,4 MNOK
+**Portal forvaltning: Årsprognose 33,7 MNOK, Runrate 33 MNOK
+**Drift Årsprognose: 33,3 MNOK, Runrate 27,4 MNOK.
+* Hva er runrate for året opp i mot prognose og finansieringsramme for året? Hva er årsak til avvik?
+* Status ressursbehov/kapasitet
+** Portal forvaltning: En utvikler er i barselpermisjon til august 2026
+** Drift: En driftsressurs bidrar i et initiativ hos FTS (POC for alternativ arbeidaflate). En driftsressurs får nye oppgaver hos skytjenester, men jobber med kjernejournal ut april. Vi søker etter flere ressurser til vaktlaget, da to av dagens ressurser ønsker å gå ut
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarke23fe3d1eccd55765405">Oversikt Kjernejournal portal (Power BI)</a>
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=d254075bd5100caba763">Oversikt Kjernejournal Totalt (Power BI)</a>
+

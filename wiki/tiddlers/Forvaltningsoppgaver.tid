@@ -1,0 +1,17 @@
+created: 20240702085412838
+modified: 20241013180245975
+revision: 0
+tags: [[Innrapportering av uønsket hendelse]] Målsetting 2024
+title: Forvaltningsoppgaver
+type: text/vnd.tiddlywiki
+
+Løpende forvaltning inkludert forbedringer innen både sikkerhet (DPoP) og innebgyde tester.
+Støtte for dialogmeldinger med vedlegg.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

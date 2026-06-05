@@ -1,0 +1,18 @@
+TjenesteID: 40029
+created: 20260511191809060
+modified: 20260511193014549
+revision: 0
+tags: 2026 Personell Målsetting
+title: Ny mikrotjeneste for skriving til Fastlegeregister API
+type: text/vnd.tiddlywiki
+
+Etablere en ny FLR-skrive-mikrotjeneste som overtar ansvaret for å skrive FLR-data til den eksistende databasen og publisere FLR-hendelser til Kafka. Palantir sitt eksisterende SOAP skrive-API videresender kall fra FLO synkront til den nye mikrotjenesten. Når dette er gjort vil Palantir fungere som før for FLO, men alle konsumenter som bruker FLR sin Kafka-strøm vil hente data fra en tjeneste som er frakoblet Palantir-monolitten.
+
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranse
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

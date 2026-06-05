@@ -1,0 +1,22 @@
+created: 20250214080902172
+modified: 20260113110749257
+revision: 0
+tags: [[Tiltaket pasientens legemiddelliste]] 2025 Oppgave [[Tiltaket pasientens legemiddelliste 2025]] Levert
+title: Videreutvikle SFM slik at den blir godkjent for innføring til kommunal pleie og omsorg
+type: text/vnd.tiddlywiki
+
+!! NHN Oppgave 2025
+SFM har allerede utviklet funksjonalitet for kommunal pleie- og omsorgstjeneste som er i utprøving i noen kommuner. I samarbeid med aktørene er det påbegynt arbeid for å definere funksjonalitet for forbedring og eventuelt ny funksjonalitet for kommune. Funksjonalitet for videreutvikling skal forankres i SFM sin operativ styringsgruppe (OSG). Funksjonaliteten i SFM skal understøtte arbeidsflyt for e-resept og PLL/eMD for sykehjem, legevakt, ØHD/KAD og hjemmetjenesten.  
+
+!! Overordnet statusvurdering:
+Norsk Helsenett har utviklet og levert avtalt funksjonalitet til kommunemarkedet.  I tillegg er det levert flere stabiliseringstiltak og funksjonalitet for å ytterligere stabilisere løsningen og fjerne operasjonell risiko.  
+
+!! Hva er levert:
+Utvikling av funksjonalitet til kommunene som er avtalt levert ble fullført endelig i november 25. Øvrige prioriteter vil gå inn i backlog for videreutvikling og sannsynligvis bli levert ila første kvartal 2026. Det er også levert en rekke små endringer tilpasset kommunemarkedet.
+
+!! Hvilken verdi har det gitt til sektor:
+Brukere av SFM i kommunene har fått funksjonalitet tilpasset sine behov. Dette forenkler arbeidshverdagen til helsepersonell og øker pasientsikkerheten.
+
+!! Leveranser:
+
+<<list-links filter:"[tag[Leveranse]tag[2025]tag<currentTiddler>]">>

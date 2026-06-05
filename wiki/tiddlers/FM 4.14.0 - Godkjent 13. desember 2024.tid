@@ -1,0 +1,12 @@
+created: 20250113100700752
+modified: 20260408085632634
+revision: 0
+tags: 2024 [[Forskrivningsmodulen 2024-2025]] [[Forsvarlig forvaltning av Forskrivningsmodulen]] Leveranse Desember
+title: FM 4.14.0 - Godkjent 13. desember 2024
+type: text/vnd.tiddlywiki
+
+!Hva er levert?
+4.14 er en versjon som inneholder flere viktige feilrettinger for både PLL-brukere og andre.
+
+! Hvilken nytte for sektoren?
+Denne versjonen inneholder bl.a. støtte for magistrelle H-resepter, samt retting av flere "hard stops" i PLL.

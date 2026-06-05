@@ -1,0 +1,17 @@
+created: 20250225121146735
+modified: 20260408085632634
+revision: 0
+tags: [[Levere FM 4.15.0]] Leveranse [[Forskrivningsmodulen 2024-2025]] 2025 Februar [[Forsvarlig forvaltning av Forskrivningsmodulen]]
+title: FM 4.15.0 - Godkjent 25. februar 2025
+type: text/vnd.tiddlywiki
+
+!! Hva er levert?
+FM v. 4.15 er siste planlagte hovedversjon av FM. Den inneholder
+* Støtte for syntetiske testpersoner - slik at FM kan testes også etter PREG slås av
+* Oppgraderte rammeverk - slik at FM bruker kun rammeverk som er gyldige og har support
+* Funksjonalitet for å "skru av" Cave informasjon i PLL melding (M25.1) både som kommer inn og som sendes ut -  slik at FM da er kompatibel med det
+
+
+!! Hvilken nytte gir det sektor?
+FM versjon 4.15 er nødvendig for at FM skal være kompatibel med kjente fremtidige krav (oppdatert rammeverk, samt støtte for syntetiske testpersoner.) 
+Det at FM legger den til rette for den langsiktige løsningen om at Kjernejournal skal være kilde til kritisk informasjon (cave) kan bidra til både bedre cave informasjon og enklere bruk for for klinikerne.

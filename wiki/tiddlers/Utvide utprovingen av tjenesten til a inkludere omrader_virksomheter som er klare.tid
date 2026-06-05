@@ -1,0 +1,9 @@
+created: 20260507103639921
+modified: 20260507105629897
+revision: 0
+tags: Målsetting 2026 [[Pasientens måledata]]
+title: Utvide utprøvingen av tjenesten til å inkludere områder/virksomheter som er klare
+type: text/vnd.tiddlywiki
+
+! Resultat
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>

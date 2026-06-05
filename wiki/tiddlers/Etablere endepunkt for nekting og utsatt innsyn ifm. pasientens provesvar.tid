@@ -1,0 +1,8 @@
+created: 20240808104409848
+modified: 20250131102535193
+revision: 0
+tags: 2024 [[Team PTS]] [[Utvikle sentral teknisk løsning for tilgangsbegrensninger, som sperring, nekting, skjerming og utsatt innsyn slik at løsningen kan benyttes i tiltaket pasientens prøvesvar]]
+title: Etablere endepunkt for nekting og utsatt innsyn ifm. pasientens prøvesvar
+type: text/vnd.tiddlywiki
+
+Det skal etableres et endepunkt som tar imot nekting og utsatt innsyn satt av helsepersonell

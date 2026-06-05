@@ -1,0 +1,8 @@
+created: 20260511082811778
+modified: 20260511083056163
+revision: 0
+tags: [[Gjennomføre prioriterte tiltak fra ROS for verdikjede e-resept]] Leveranse 2026 [[Verdikjede e-resept]]
+title: ROS tiltak : Avklare avhengigheter hos aktørene ved oppdatering av FEST-fil
+type: text/vnd.tiddlywiki
+
+Trussel: Feil eller mangler i FEST-databasen (var jo ny hendelse i uke 18. Vi har identifisert og startet å jobbe med et nytt tiltak Vi skal avklare avhengigheter hos aktørene ved oppdatering av FEST-fil. Det har blitt mye mer sårbart for følgefeil nå som RF-validerer mot siste FEST-versjon hvis ikke alle får oppdatert samtidig. 

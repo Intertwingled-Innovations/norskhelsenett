@@ -1,0 +1,10 @@
+TjenesteID: 40026
+created: 20260408074732070
+modified: 20260409120320500
+revision: 0
+tags: [[Målsetting for Melding: Videreutvikling (v3) av EDI 2.0 og DEFT]] Resultat 2026 Melding
+title: Validering av meldinger i produksjon
+type: text/vnd.tiddlywiki
+
+Vi vil validere medisinske meldinger (fagmeldinger) i produksjon opp mot kravene som er definert i standardene for å kunne ettergå feil og bedre kvaliteten på meldingsutvekslingen over helsenettet.
+Vi håper skal oppnå første versjon med validering av et subsett av meldinger innen 2026.

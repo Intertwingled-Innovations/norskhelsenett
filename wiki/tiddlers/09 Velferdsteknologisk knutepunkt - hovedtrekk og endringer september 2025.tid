@@ -1,0 +1,33 @@
+created: 20251013224117790
+modified: 20260508101345118
+revision: 0
+tags: [[Velferdsteknologisk knutepunkt]] [[Divisjon Helsepersonell]] [[Styring Ekstern tjeneste]] 2025 September
+title: 09 Velferdsteknologisk knutepunkt - hovedtrekk og endringer september 2025
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+Tidligere prioritering med nødvendige produktforbedringer på nåværende VKP forkastes.
+
+Vi prioriterer opp arbeidet med omskriving til nytt sett av informasjonstjenester med DHPs løsningmønster.
+
+Utviklerne stopper pågående arbeid, re-orienterer seg mot å gjøre "spike" for å implementere en ny informasjonstjeneste med hjelp fra KOMLINK og resultatene fra PMD/OKT.
+
+Hovedårsaken til omprioriteringen er at det tar for lang tid å gjøre produktforbedringer, i tillegg til at vi forventer en "bølge" med nye EPJ-løsninger som skal ut i markedet i 2026 som følge av at mange kommuner anskaffer ny EPJ. Da vil nye aktører som Aidn komme på markedet, i tillegg til at etablerte leverandører kommer med nye versjoner av sine produkter (Visma Flyt, Tieto Lifecare).
+Dette gjør tidspunktet for å realisere større endringer på integrasjonsstrukturen til NÅ.
+
+Konsekvenser: Vi gjør enda mindre på "gammel" VKP. Hva dette betyr for fart ut mot kommunene vet vi ikke p.t.
+Vi ser fortsatt for oss å ha fast "dagvaktsteam" på 2 utviklere.
+
+! Prognose på penger og ressurser
+*Finansiering: Medlemsinntekt
+* Ramme på 26 MNOK - oppjustert til 30 MNOK
+* Kostnadsreduserende tiltak gjennomført på drift på MS Azure - omlag 700.000 i årlig besparelse på dagens drift
+
+Omprioriteringen på oppgaver påvirker ikke prognose da kostbasen ikke endres.
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarkfeea3d895ff89eaee682">Oversikt VKP (Power BI)</a>
+
+

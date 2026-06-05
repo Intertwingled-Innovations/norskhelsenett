@@ -1,0 +1,9 @@
+TjenesteID: 40033
+created: 20260318113820269
+modified: 20260409114038875
+revision: 0
+tags: [[Ny og omskrevet versjon av kjernejournal portal publiseres ("Rammen")]] 2026 Resultat [[Kjernejournal portal]]
+title: Enklere vedlikehold av hele kjernejournal portal
+type: text/vnd.tiddlywiki
+
+Ved å løsrive oss fra kjernejournal classic vil vedlikeholdet i kjernejournal portal bli vesentlig forenklet. Det er noen forutsetninger her, som f.eks at de som skal integrere seg mot den nye "rammen" må benytte ny innlogging.

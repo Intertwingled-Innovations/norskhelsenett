@@ -1,0 +1,38 @@
+TjenesteID: 40039
+created: 20260504113721811
+modified: 20260511074354749
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] [[Domene Samhandlingsplattform]] 2026
+title: Verdikjede e-resept
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten 
+
+E-resept er en samhandlingskjede som omfatter alle aktørene som samhandler om pasientens legemiddelopplysninger fra forskrivning til utlevering, samt økonomisk oppgjør. Dette inkluderer e-resepter, e-multidose og pasientens legemiddelliste (PLL) Løsningen er meldingsbasert. Team verdikjede e-resept forvalter e-reseptkjeden gjennom løpende forvaltning av tekniske og funksjonelle krav til leverandørers integrasjon med e-reseptkjeden, inkl. PLL og e-multidose. NHN skal ha kontroll på dataflyten gjennom kjeden, dvs. at leverandører leverer riktig data i samhandlingen om resepten. Dette gjøres gjennom en etablert test og godkjenningsprosess. Alle leverandører skal ha en godkjent AT/akseptansetest for tilkobling til kjeden samt at de må melde i fra om de skal produksjonssette nye versjoner som vil berøre e-resept. De må da vurderes for evt. ny verdikjedetest.
+NHN forvalter i tillegg en endringsprosess for aktørene i kjeden, med faste møter for Endringsforum (leverandører) og Endringsråd (aktører). Ellers innebærer forvaltningen løpende analyser av feilsituasjoner, saksbehandling av endringsforespørsler fra sektor, høringsuttalelser og andre relevante analyser på legemiddelområdet som berører krav og løsningsvalg.
+
+
+
+! Målsettinger
+<<list-links filter:"[tag[Målsetting]tag<currentTiddler>]">>
+
+
+! Resultat
+!! 2026
+
+<<list-links filter:"[tag[Resultat]tag[2026]tag<currentTiddler>]">>
+
+
+! Leveranser
+!! 2026
+
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>
+
+
+
+! Styring
+
+!! 2026
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag<currentTiddler>]">>
+
+

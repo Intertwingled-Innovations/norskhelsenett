@@ -1,0 +1,9 @@
+TjenesteID: 40023
+created: 20240816062516771
+modified: 20260409115135751
+revision: 0
+tags: [[Ta ned kompleksitet og teknisk gjeld for Melde.no]] Resultat Melde.no 2026
+title: Oppdatere rammeverk og kodebase for melde.no
+type: text/vnd.tiddlywiki
+
+Melde.no består i dag av en utdatert kodebase som baserer seg på gamle rammeverk. Målet er derfor å få oppdatert kodebasen slik at koden blir lettere å forvalte og holder ønsket sikkerhetsnivå.

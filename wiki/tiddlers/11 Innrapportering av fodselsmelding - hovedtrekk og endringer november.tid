@@ -1,0 +1,31 @@
+created: 20241206125357184
+modified: 20241211112529945
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] [[Innrapportering av fødselsmelding]] [[Styring Ekstern tjeneste]] November
+title: 11 Innrapportering av fødselsmelding - hovedtrekk og endringer november
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+Det er jobbet med å ferdigstille ny frontend, slik at koden for backend kan flyttes til privat sky. Dette arbeidet viser seg å være mer tidkrevende enn først antatt. Ny frontend/webside med tilhørende API er nå i test og vil blir tilgjengelig for pilotbrukere i produksjon tidlig i 2025.
+
+Eierskapet for elektronisk fødselsmelding overføres fra de regionale helseforetakene til Norsk helsenett 01.01.2025, og erstatter den gamle avtalen fra 2017. I tillegg ser vi på muligheten for at en privat aktør kan ta i bruk løsningen, dette krever i første omgang avklaringer med Skatt. Vi har tatt kontakt med Skatt for å avklare det, uten at det foreligger en konklusjon.
+
+Det er i november utført pentest for løsningen.
+
+! Prognose på penger og ressurser
+Prognosen for elektronisk fødselsmelding er nå litt over budsjett. Team innrapportering (backend teamet) har tatt over oppgaven med å ferdigstille ny web front. Det er nødvendig å fullføre dette arbeidet for å håndtere sikkerhetsutfordringer.
+
+Det har i 2024 (og tidligere) vært praktisert å bruke en fordelingsnøkkel for team innrapportering sine timer. Teamet jobber med backend for fødselsmelding, dødsmelding inkludert dødsårsak og melde. Siden det i stor grad er tre selvstendige tjenester vil bruk av fordelingsnøkkel ikke gi et godt nok bilde av timepådrag og dermed forvaltningskosten. Vi går bort fra dette fra 2025.
+
+*Finansiering: Forskriftsfestede midler nasjonale e-helseløsninger, person
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark8313964b2a3d32bbd89c">Oversikt Innrapportering av fødselsmelding (Power BI)</a>
+
+
+
+
+
+

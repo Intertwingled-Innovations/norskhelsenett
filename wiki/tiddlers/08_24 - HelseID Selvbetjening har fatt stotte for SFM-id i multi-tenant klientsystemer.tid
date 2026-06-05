@@ -1,0 +1,8 @@
+created: 20240819134409950
+modified: 20240821123726003
+revision: 0
+tags: [[Det skal være mulig å sikre helsedata i multi-tenant systemer med HelseID]] Selvbetjening Leveranse 2024 August
+title: 08/24 - HelseID Selvbetjening har fått støtte for SFM-id i multi-tenant klientsystemer
+type: text/vnd.tiddlywiki
+
+HelseID Selvbetjening har nå fått støtte for oppsett av SFM-id i multi-tenant klientsystemer. Dette gjør at det nå er mulig å sette opp et multi-tenant klientsystem for SFM selvbetjent i stede for at dette må gjøres manuelt i HelseID Admin som tidligere. 

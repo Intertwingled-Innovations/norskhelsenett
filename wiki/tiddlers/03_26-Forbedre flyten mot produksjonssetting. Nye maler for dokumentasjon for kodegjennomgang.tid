@@ -1,0 +1,8 @@
+created: 20260504104810160
+modified: 20260504105428675
+revision: 0
+tags: [[Kvalitet i løsningen. Sikre god driftbarhet og tilgjengelighet]] Leveranse Mars 2026
+title: 03/26-Forbedre flyten mot produksjonssetting. Nye maler for dokumentasjon før kodegjennomgang
+type: text/vnd.tiddlywiki
+
+HelseID selvbetjening har laget nye maler som gjør det lettere for leverandører av systemer og APIer å forstå hva som kreves av dokumentasjon før kodegjennomgang. Malen er lagt inn i produksjonssettingsflyten i selvbetjening.

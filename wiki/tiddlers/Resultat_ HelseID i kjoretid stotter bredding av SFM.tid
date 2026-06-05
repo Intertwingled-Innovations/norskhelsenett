@@ -1,0 +1,15 @@
+created: 20240801121321080
+modified: 20240801121909992
+revision: 0
+tags: Resultat [[Autentisering og autorisasjon]]
+title: Resultat: HelseID i kjøretid støtter bredding av SFM
+type: text/vnd.tiddlywiki
+
+!! Oppgaver i 2024
+<$list filter='[tag<currentTiddler>tag[Oppgave]tag[2024]]'>
+<$checkbox tag=Levert/> <$link><$view field='title'/></$link> <br>
+</$list>
+
+!! Styring
+!!! 2024
+<<list-links filter:"[tag[Styring Tiltak]tag[2024]tag<currentTiddler>]">>

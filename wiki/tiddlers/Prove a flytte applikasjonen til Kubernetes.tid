@@ -1,0 +1,8 @@
+created: 20250223151137452
+modified: 20250223151751356
+revision: 0
+tags: [[Stabil og sikker drift av reseptformidleren i Norsk helsenetts private sky]] 2025 Reseptformidleren Resultat
+title: Prøve å flytte applikasjonen til Kubernetes
+type: text/vnd.tiddlywiki
+
+Sette opp et testmiljø og prøve å flytte hele applikasjonen (alle komponenter).

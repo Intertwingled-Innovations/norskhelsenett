@@ -1,0 +1,37 @@
+created: 20251013223625762
+modified: 20251013223957745
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Bistå KS og kommunene i utprøvingen av Felles journalløft]] [[Styring Tiltak]] 2025 September
+title: 09 Felles journalløft - hovedtrekk og endringer september 2025
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+"Oversikt over kommunale tjenester" realiseres for utprøving i Bodø kommune.
+Gerica skal avlevere alle endringer på hvilke kommunale tjenester pasientene er tildelt til kommunal samhandlingsplattform.
+DNV Imatis sin tavleløsning skal konsumere hvilke tjenester pasienter har for bruk på Bodø legevakt.
+
+Bodø kommune står midt i anskaffelse av nytt journalsystem, og det forventes at utprøving kan bli forsinket som følge av dette - selv om både Tieto og DNV Imatis som leverandører begynner å bli klare til utprøving.
+
+OKT blir gjenstand for FHIR-ifisering gjennom Hackathon ifm EHiN prekonferanse 10. november. HL7 Norge og Bedredelt er initiativtakere til Hackathon - NHN bidrar.
+
+Deling av NEWS2 - målinger - Vinje, Hol og Tysvær kommuner deltar i utprøving.
+Største problemstilling er å få leverandører med på å lage støtte for å dele/ konsumere NEWS2-målinger.
+Arbeides nå fra deltakerkommunenes side målrettet mot Pridok for å få de med på utprøving.
+
+Teknisk så vil vi dele NEWS2-målinger ved å benytte Pasientens Måledata.
+
+Resultat av juridisk arbeid på Pasientens Måledata vil være anvendbart på tjenestene vi tar frem for kommunene. Dette gjør at vi kan benytte PMD til å dele NEWS2.
+Dette vil også kunne gjøre det mulig å gjøre OKT avtalemessig til samme innretning slik at kommunene kan dele hvilke kommunale tjenester en pasient har med sykehus og fastlege. Må vurderes opp mot om dette er helseopplysninger eller administrative opplysninger.
+
+! Prognose på penger og ressurser
+* Prognose 5 MNOK inkl felleskostnader for 2025 - nedjustert med 1.5 MNOK siden forrige prognose
+* Lavere fart i utprøvingene enn forventet, vi har derfor ikke skalert opp team KOMLINK m/ innleie.
+
+*Finansiering: Ingen finansiering, ligger inne som et tiltak
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark9c89f55c045d4c0bcb8a">Oversikt Felles journalløft (Power BI)</a>
+
+
+

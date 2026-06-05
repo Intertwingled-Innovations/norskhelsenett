@@ -1,0 +1,40 @@
+created: 20250606094159112
+modified: 20250606095218921
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Styring Ekstern tjeneste]] 2025 [[Verdikjede e-resept]] Mai
+title: 05 E-resept verdikjede - hovedtrekk og endringer Mai 2025
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+
+*  Godkjent Akseptansetest (AT) med DIPS Arena Medikasjon med PLL. Helse Nord planlegger oppstart på alle sykehus i nord i juni
+
+*  NHN stiller seg ikke bak A2 sin læringsrapport og har svart ut NHN sin tilnærming til hendelsen og forvaltning av e-resept. Vil bli oversendt til HOD, HDIR og tilgjengeliggjort på Intravenøs
+
+* Farmapro fases ut i mai. Etter dette har NHN ikke tilgang til test av et utleverersystem for "end til ende test". NHN har hatt møte med Apotekforeningen og DIFA i april om tilgang til testmiljø for EIK inkl. et bransjesystem (PCA løsning). Ingen løsning per nå. Nytt møte med AF 11.juni
+
+
+
+! Ferdigstilte leveranser i perioden
+
+<<list-links filter:"[tag[Leveranse]tag[Mai]tag[2025]tag[Verdikjede e-resept]]">>
+
+* Det er besluttet at legemiddelreaksjoner skal fjernes fra M25.1. Det er en enkel endring i rekvirentkrav. Krav som handler om lesing/sending av legemiddelreaksjoner utgår. EPJ leverandører har fått beskjed om å utvikle støtte for å stoppe sending og mottak av legemiddelreaksjoner fra M25.1
+
+! Prognose på penger og ressurser
+Finansiering: Forskriftsfestede midler nasjonale e-helseløsninger, e-resept
+
+* Timepådrag - Underforbruk på godkjenningsprosessen pga. fravær og lavere timeantall enn budsjettert fra ressurser utenfor teamet. 
+* Prognosen for året ligger likevel tilnærmet budsjettet grunnet felleskostnader  
+
+
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark4c89bd5ada01ce3dc213">Oversikt E-resept verdikjede (Power BI)</a>
+
+
+
+

@@ -1,0 +1,17 @@
+created: 20260504131645306
+modified: 20260504132113373
+revision: 0
+tags: [[Tilby nytt API for lesing av legemiddel informasjon]] 2026 Resultat [[Ekstern Tjeneste]] [[Kjernejournal Pasientens legemidler]]
+title: Avvikle eksisterende API'er
+type: text/vnd.tiddlywiki
+
+Det finnes idag et eksternt API og et internt API. Dette bør være samme API i fremtiden.
+
+API'et skal være beskyttet av HelseID med DPoP.
+
+Samarbeid med konsumenter om design av nytt API, både KJ portal og SFM.
+
+!Leveranser
+!! 2026
+
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>

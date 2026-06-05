@@ -1,0 +1,60 @@
+created: 20260212081643362
+creator: DHP
+modified: 20260212083906680
+modifier: DHP
+revision: 0
+tags: 2026
+title: Leseveiledning og bruksanvisning v2
+type: text/vnd.tiddlywiki
+
+! Hva inneholder denne wikien?
+
+Denne wikien inneholder en beskrivelse av de målsetningene NHN har med bakgrunn i oppdrag (satsninger) og NHN sine målsetninger i forvaltningen og videreutviklingen av de tjenestene NHN tilbyr til sektoren.
+
+Dette er brekt ned på forretningsområder og tjenester.
+
+! Struktur
+
+De ulike tiddlyene som denne wikien består av er har følgende kategorier:
+
+* ''Forretningsområde''. Beskrivelse av forretningsområder i NHN sitt //formål// og en oversikt over tilhørende //tjenester// i enheten.
+* ''Ekstern tjeneste''. Beskrivelse av tjeneste som NHN leverer til sektoren.
+* ''Intern tjeneste''. Beskrivelse av en intern tjeneste som NHN bruker for å levere en ekstern tjeneste til sektoren.
+* Planlegging ved bruk av OKRer. <br> De 2 typene under brukes for å sette opp planer for tjenester, team, divisjon, etc. Dette er ikke faktiske leveranser - de finnes på Leveranse.
+** ''Målsetting'' (Objective). Beskrivelse av en målsetting på ulikt nivå - dette kan være på aktør, NHN, divisjon, oppdrag, tjeneste, domene og team nivå. Sammen med //resultat// under utgjør dette OKRer for de ulike nivåene.
+** ''Resultat'' (Key Result). Beskrivelse av hvilke resultater man må levere for å oppnå målsettingen. Sammen med //målsetting// over utgjør dette OKRer for de ulike nivåene.
+* ''Leveranse''. Beskrivelse av effekten for aktørene på noe DHP har levert ifht. målsetting, samt hva som er levert. Dette legges inn løpende, slik at det kan hentes ut direkte ved behov - f.eks. statusrapporting til styret. Dette er faktiske leveranser som er gjort . tidfestes med år og måned (tagger)
+* ''Styring''. Dette er en type tiddly som brukes for å samle styringsrapportering.
+
+!! Tagger knyttet til automatisering
+* ''Levert''. Denne taggen brukes ved automatisering ved bruk av sjekkbokser på oppgaver, målsettinger og tema.
+
+[img[TiddlyStruktur v2.png]]
+
+! Hva svarer wikien opp?
+
+Ved å lese denne wikien skal man kunne svare på
+
+* Hva er DHP sine målsettinger på DHP sine tjenester.
+* Hva har DHP levert på tjenester, forretningsområde og NHN nivå - med en beskrivelse av nytte og effekt for sektor
+
+
+Historiske tagger:
+
+* ''Domene''. I Helsepersonell er teamene gruppert i domener.
+* ''Team''. Beskrivelse av Teamene og deres ansvar og målsetninger.
+* ''Aktør''. Beskrivelse av aktøren sine behov, målsetninger og utfordringer.
+* ''Fora''. Beskrivelse av ulike fora (f.eks. OSGer, råd, etc.) som finnes knyttet til ulike enheter og tjenester.
+* ''Tema''. Beskrivelse av tema som er planlagt eller foreslått tatt opp i ulike fora eller ifbm. styringen av divisjoner.
+* ''OppfølgingOgRapportering''. Dette er de delene av oppdragsdokumentet som ikke er direkte knyttet opp mot Tiltak.
+* ''Rolle''. Dette er de oppgaver NHN får som er knyttet opp mot en rolle NHN har, og ikke direkte mot et tiltak.
+* ''Tiltak''. Beskrivelse av oppdrag som blir gitt til NHN fra HOD.
+* ''Oppgave''. Beskrivelse av de oppgavene NHN har fått gjennom tiltakene fra HOD:
+* ''Ekstern tjeneste''. Beskrivelse av tjeneste som NHN leverer til sektoren.
+* ''Intern tjeneste''. Beskrivelse av en intern tjeneste som NHN bruker for å levere en ekstern tjeneste til sektoren.
+* Planlegging ved bruk av OKRer. <br> De 2 typene under brukes for å sette opp planer for tjenester, team, divisjon, etc. Dette er ikke faktiske leveranser - de finnes på Leveranse.
+** ''Målsetting'' (Objective). Beskrivelse av en målsetting på ulikt nivå - dette kan være på aktør, NHN, divisjon, oppdrag, tjeneste, domene og team nivå. Sammen med //resultat// under utgjør dette OKRer for de ulike nivåene.
+** ''Resultat'' (Key Result). Beskrivelse av hvilke resultater man må levere for å oppnå målsettingen. Sammen med //målsetting// over utgjør dette OKRer for de ulike nivåene.
+* ''Leveranse''. Beskrivelse av effekten for aktørene på noe DHP har levert ifht. målsetting, samt hva som er levert. Dette legges inn løpende, slik at det kan hentes ut direkte ved behov - f.eks. statusrapporting til styret. Dette er faktiske leveranser som er gjort . tidfestes med år og måned (tagger)
+* ''Styring''. Dette er en type tiddly som brukes for å samle styringsrapportering.
+

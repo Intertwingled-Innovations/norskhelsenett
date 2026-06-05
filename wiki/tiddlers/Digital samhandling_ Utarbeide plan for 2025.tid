@@ -1,0 +1,19 @@
+created: 20241011142716510
+modified: 20241011150015009
+revision: 0
+tags: Målsetting [[Team Sats]] 2024
+title: Digital samhandling: Utarbeide plan for 2025
+type: text/vnd.tiddlywiki
+
+! Målsetting
+Svare opp oppdrag fra Helse- og omsorgsdepartementet om å levere plan for Norsk helsenett sine oppgaver med Digital samhandling i 2025 innen 15. september.
+
+
+!! Resultat
+Planen utarbeides i samarbeid med sektor.
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+!! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

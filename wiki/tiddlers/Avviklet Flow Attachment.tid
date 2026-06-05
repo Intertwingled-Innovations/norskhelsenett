@@ -1,0 +1,8 @@
+created: 20240927132722750
+modified: 20250307091126580
+revision: 0
+tags: Flow 2024 Avvikling [[2024 - Avvikling eller overlevering av Flow moduler]] Leveranse September Integrasjonstjenesten [[Integrasjon- og støttesystemer]]
+title: Avviklet Flow Attachment
+type: text/vnd.tiddlywiki
+
+Flow modulen Flow Attachment ble brukt til å legge ved vedlegg til objekter i Flow CMDB og Flow DNS. Denne er nå avviklet.

@@ -1,0 +1,14 @@
+created: 20260216112601956
+modified: 20260216112803824
+revision: 0
+tags: Kundesenteret Målsetting 2026
+title: Pilotere samarbeid mellom KD og kundestøtte hos EPJ´er
+type: text/vnd.tiddlywiki
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

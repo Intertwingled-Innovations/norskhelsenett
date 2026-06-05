@@ -1,0 +1,8 @@
+created: 20250910192306073
+modified: 20251108173812397
+revision: 0
+tags: [[Forbedre kvaliteten på data i e-resept verdikjeden]] Leveranse 2025 September Reseptformidleren
+title: FEST legemiddel grunndata
+type: text/vnd.tiddlywiki
+
+Vi har planlagt en rekke nye validering som krever validering mot FEST legemiddel grunndata. Reseptformidleren leser nå inn FEST slik at valideringene kan utvikles og innføres ila høsten 2025.

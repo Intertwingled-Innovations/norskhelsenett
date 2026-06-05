@@ -1,0 +1,15 @@
+created: 20240128082956957
+modified: 20260408173921326
+revision: 0
+tags: 2024 Oppgave [[Team MyHealth@EU]] [[Team Sats]] Desember Levert
+title: Fortsette videreutvikling og test av MyHealth@EU i henhold til avtalen med EU
+type: text/vnd.tiddlywiki
+
+!! NHN Oppgaver 2024
+
+Videreutvikling, test og feilrettinger i ulike SW-miljøer
+
+!! Leveranser:
+
+
+<<list-links filter:"[tag[Leveranse]tag[2024]tag<currentTiddler>]">>

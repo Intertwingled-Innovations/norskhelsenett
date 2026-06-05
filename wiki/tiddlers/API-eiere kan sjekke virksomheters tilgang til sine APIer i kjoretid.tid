@@ -1,0 +1,10 @@
+created: 20260430094726437
+modified: 20260513091108479
+revision: 0
+tags: 2026 [[Autentisering og autorisasjon]] Selvbetjening Resultat [[Tilby verktøy som effektiviserer og kvalitetssikrer bruken av HelseID]]
+title: API-eiere kan sjekke virksomheters tilgang til sine APIer i kjøretid
+type: text/vnd.tiddlywiki
+
+Det skal legges til rette for at eiere av Norsk helsenett sine tjenester kan sjekke hvilke virksomheter som har tilgang til tjenestene i kjøretid. På denne måten vil det være mulig å følge opp virksomheter som ikke har bestilt tjenestene og henvise dem til Helsenettet.no for å bestille aktuelle tjenester for sin virksomhet.
+
+<<list-links filter:"[tag[Mal målsetting1]tag<currentTiddler>tag[2026]]">>

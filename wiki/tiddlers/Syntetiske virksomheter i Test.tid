@@ -1,0 +1,18 @@
+TjenesteID: 40027
+created: 20260511193940607
+modified: 20260511194021812
+revision: 0
+tags: 2026 Målsetting Virksomhet
+title: Syntetiske virksomheter i Test
+type: text/vnd.tiddlywiki
+
+Tilrettelegge for at det kun skal benyttes syntetiske Virksomheter i Testmiljøene til Virksomhetsregistrene
+
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranse
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

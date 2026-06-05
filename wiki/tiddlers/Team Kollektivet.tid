@@ -1,0 +1,20 @@
+created: 20240229121236310
+modified: 20240510065440283
+revision: 0
+tags: [[Domene Brukerflater]] Team Kjernejournal [[Innrapportering av fødselsmelding]] [[Innrapportering av dødsfall og dødsårsak]] Melde.no
+title: Team Kollektivet
+type: text/vnd.tiddlywiki
+
+! Formål
+Team Kollektivet skal forvalte både innrapporterings-portaler og portaler som gir helsepersonell nødvendige opplysninger om pasienter på tvers av virksomheter og roller i helsevesenet
+
+I tillegg skal Kollektivet understøtte NHNs strategi med at vi primært skal levere API’er, og jobbe aktivt ved å ta i bruk nye API-er og teste disse ut i våre portaler før de rulles ut til leverandørene.
+
+De skal tilrettelegge og bistå systemleverandører til å ta API-ene i bruk. Dette gjøres ved å dele erfaringer og kode-eksempler på hvordan API-ene kan integreres i Elektroniske Pasientjournaler.
+
+Som et ledd i dette arbeidet skal kollektivet splitte opp Kjernejournal Portal og eventuelle andre produkter i frittstående deler som kan tas i bruk enkeltvis av leverandører og konsumenter.
+
+Ved akutte behov, skal kollektivet via sine portaler kunne gjøre viktig informasjon tilgjengelig til helsepersonells lokale elektroniske pasientjournaler.
+
+! Tjenester
+<<list-links filter:"[tag[Team Kollektivet]]">>

@@ -1,0 +1,17 @@
+TjenesteID: 40044
+created: 20260210140657207
+modified: 20260416102344903
+revision: 0
+tags: Målsetting [[Tiltaket pasientens legemiddelliste]] 2026 [[Sentral forskrivningsmodul i 2026]]
+title: Implementere kjente endringer knyttet til PLL/eMD
+type: text/vnd.tiddlywiki
+
+Målsetningen er å tilpasse funksjonalitet for elektronisk multidose og PLL i SFM basert på erfaringer fra utprøving.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag[2026]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>

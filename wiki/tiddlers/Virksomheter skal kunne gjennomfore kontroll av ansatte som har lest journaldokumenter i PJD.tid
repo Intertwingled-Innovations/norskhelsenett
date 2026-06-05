@@ -1,0 +1,13 @@
+created: 20260512101605224
+modified: 20260512103044151
+revision: 0
+tags: Resultat [[Kjernejournal Pasientens journaldokumenter]] [[Det gjennomføres jevnlige loggkontroller]] 2026 [[Virksomheter skal kunne gjennomføre kontroll av ansatte som har lest journaldokumenter i PJD]]
+title: Virksomheter skal kunne gjennomføre kontroll av ansatte som har lest journaldokumenter i PJD
+type: text/vnd.tiddlywiki
+
+! Beskrivelse Resultat
+Virksomhetene skal gjennom Etterkontrolltjenesten kunne se ansatte som har lest journaldokumenter i PJD og kunne gjennomføre stikkprøvekontroll av disse. 
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

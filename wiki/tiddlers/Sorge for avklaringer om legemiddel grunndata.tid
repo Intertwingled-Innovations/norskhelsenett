@@ -1,0 +1,24 @@
+created: 20250619150404439
+modified: 20251209121616781
+revision: 0
+tags: Målsetting 2025 [[Team EHDS]] [[Team EHDS og Legemiddel grunndata]] Oppgave Levert
+title: Sørge for avklaringer om legemiddel grunndata
+type: text/vnd.tiddlywiki
+
+
+!! Resultat 
+
+Nasjonal tjeneste for legemiddel grunndata er en forutsetning for at NHN kommer i gang med
+
+* IDMP baserte legemiddel grunndata
+* Kartlegge overgang til ICD-11
+* Fra meldinger til data/API
+
+Som et resultat av samarbeid med sektor og Direktoratet for medisinske produkter (DMP) skal Norsk helsenett få i oppdrag fra HOD om å utvikle ny tjeneste for IDMP baserte legemiddel grunndata. 
+
+
+!! Leveranser
+Team EHDS har fasilitert arbeidet frem til et tydelig ønske om at Norsk helsenett skal utvikle ny løsning for IDMP baserte legemiddel grunndata. Team Sats tar det videre arbeidet med å få oppdrag og etablere tiltaket.
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>
+

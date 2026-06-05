@@ -1,0 +1,42 @@
+TjenesteID: 40025
+created: 20260325145902466
+modified: 20260414055714656
+revision: 0
+tags: [[Divisjon Helsepersonell]] 2026 [[Styring Relatert tjeneste]] Mars [[Forretningsmessig endring:1]] [[Testunivers i 2026]]
+title: 03 Testunivers - hovedtrekk og endringer mars 2026
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer
+__Datasjø og syntetisering av data__
+
+*Hovedfokus på å legge til rette for selvbetjening med syntetiske virksomheter, samt tilgjengeliggjøring av syntetiske helsedata (pasientens prøvesvar).
+*Forberedelse til POC med PMD/VKP
+*Forberedelse til endring av Tjenesteeier fra 1.april
+
+*Azure datalake med API er etablert i allmenn sky. Første versjon av datalake er live.
+*Aktuelt verktøy for etablering av en datakatalog er under vurdering.
+*​Algoritme for produksjon av syntetiske data som etterligner PPS er etablert. 
+*Syntpop berikes nå med informasjon om Helsepersonell-autorisasjon.
+
+Alt arbeid med tiltakene ligger fortsatt innenfor plan for trinnvis tilnærming av løsningene (2024-2026)
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 1''
+
+Konsekvens av forretningsmessig endring:
+
+
+
+! Prognose på penger og ressurser
+
+* Er en relatert tjeneste som finansieres med forskriftsfestede midler hentet fra alle nasjonale e-helseløsninger innad i divisjon Helsepersonell.
+* Budsjett 20,8 mnok
+* Opprinnelig ramme: 20,6 mnok. 
+* Prognose for året: 20,0 mnok. Er på linje med ramme og opprinnelig budsjett.
+* Runrate for året: 22,3 mnok.  (11 mnd) (stabil, svakt stigende)
+* Runrate for året er 22.3 mot prognose som er 20,0. Vi bruker mindre timer enn antatt pga sykdom i teamet. Men er utenfor rammen og budsjett
+* Vi bruker mindre timer enn prognose og jobber ikke på riktige oppgaver. Nedlastbart testunivers er knapt påbegynt
+* Status ressursbehov/kapasitet: Vi har sykdom i teamet som tar ned kapasitet. Det er ikke kritisk for øyeblikket. Det er stilt spørsmål om vi har riktig kompetanse i teamet.
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark9025ca7215f00744e172">Oversikt Testunivers (Power BI)</a>
+

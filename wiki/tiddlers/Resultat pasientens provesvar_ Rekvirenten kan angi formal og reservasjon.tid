@@ -1,0 +1,20 @@
+created: 20240816085116479
+modified: 20260330104413527
+revision: 0
+tags: Resultat [[Kjernejournal Pasientens prøvesvar]] [[Målsetting for pasientens prøvesvar: Teknisk løsning med laboratorie- og radiologisvar fra både offentlige og private aktører er klar slik at en kan starte utprøving med formål helsehjelp]]
+title: Resultat pasientens prøvesvar: Rekvirenten kan angi formål og reservasjon
+type: text/vnd.tiddlywiki
+
+Mål: Rekvirenten av prøvesvar skal kunne angi formålet med revisisjonen samt hvorvidt pasienten reserverer seg mot at prøvesvaret skal lagres i kjernejournal
+Levert:
+
+* Formåls- og reservasjons-API er etablert med tilhørende dokumentasjon på utviklerportalen. Dette gjør at rekvisisjonsløsningene kan avlevere informasjon om formål og reservasjon.
+
+
+Ikke levert:
+
+
+
+Effekt sektoren: 
+
+* Rekvirenten har en mulighet for å angi formålet med rekvisisjonen og tilhørende svarrapport. På den måten kan aktørene i sektoren og NHN overholde kjernejournalforskriftens forpliktelser om at det kun er svarrapporter med helsehjelpsformål som skal lagres i kjernejournal. I tillegg ivaretas pasientens krav på å kunne reservere seg mot at enkelte prøvesvar blir tilgjengelig i kjernejournal.

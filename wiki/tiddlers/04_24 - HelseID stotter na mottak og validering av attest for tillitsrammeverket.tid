@@ -1,0 +1,8 @@
+created: 20240819133253030
+modified: 20240821113207525
+revision: 0
+tags: [[HelseID skal bidra til å realisere målbilde for tillit]] Leveranse 2024 April [[Autentisering og autorisasjon]]
+title: 04/24 - HelseID støtter nå mottak og validering av attest for tillitsrammeverket
+type: text/vnd.tiddlywiki
+
+HelseID v5.0 prodsatt 2. april. Denne støtter mottak og validering av attest for tillitsrammeverket. Dette skal i første omgang benyttes i for Dokumentdeling, i kontekst av Kjernejournal. På sikt også i Dokumentdelig API. Denne versjonen av HelseID har også forbedret håndtering av organisasjonsnummer. 

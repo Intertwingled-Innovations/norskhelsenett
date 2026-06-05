@@ -1,0 +1,18 @@
+TjenesteID: 40044
+created: 20260503163938524
+modified: 20260503164037688
+revision: 0
+tags: Leveranse [[Team SFM]] 2026 [[Forvalte SFM i 2026 for alle segmenter]] [[Sentral forskrivningsmodul i 2026]] April
+title: Leveranse SFM: API'er sikret med DPoP tilgjengelig i test for alle leverandører
+type: text/vnd.tiddlywiki
+
+Mål: Implementere forbedringer i arkitektur, implementasjon og deployment - kode, prosesser og ansvar.
+
+Levert:
+
+*Leveranse: SFM API'er sikret med DPoP tilgjengelig i test for alle leverandører
+
+Effekten av dette vil være økt sikkerhet når leverandørene har gjort sine nødvendige endringer
+
+
+

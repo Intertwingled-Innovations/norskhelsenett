@@ -1,0 +1,27 @@
+created: 20241107095114865
+modified: 20241111112820340
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] [[Styring Ekstern tjeneste]] Person Oktober
+title: Person - hovedtrekk og endringer oktober
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+I henhold til plan.
+*Det jobbes aktivt med å få sektor over fra PREG til Persontjenesten. Endringer i vaske jobb og editteringsfunksjon i november.
+
+*Det etableres georedundans, slik at tjenesten blir mer robust og vi kan gjøre vedlikehold uten at vi belaster sektor med forventet nedetid unødvendig. 
+
+*Felles hjelpenummer er i produksjon med eget api fra oktober 2024.
+
+*Det er vedatt at Persontjenesten skal berikes med fortrolig adresse, noe som de er høyt fokus på. 
+
+* Persontjenesten har gått over til å produsere til ny kafka-løsning, men konsumentene har ikke byttet. Dette vil det være fokus på i oktober, slik at vi får avviklet de gamle topics. Vi har nå frikoblet strømmene slik at gammel og ny kafka er uavhengig av hverandre.
+
+
+! Prognose på penger og ressurser
+*Finansiering: 3,2 mnok offentlig tilskudd - restanse MF Helse, finansiering via medlemsavgiften på 3 mnok for belastning av medlemsfinansierte fellestjenester, rest er finansiert over forskriftsfestede midler nasjonale e-helseløsninger - person
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark0eb3b30158bdab9401a7">Oversikt Person (Power BI)</a>
+
+

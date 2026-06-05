@@ -1,0 +1,17 @@
+TjenesteID: 40037
+created: 20240703070528697
+modified: 20260508101345119
+revision: 0
+tags: [[Velferdsteknologisk knutepunkt]] Målsetting 2024
+title: Utvikle teknisk støtte for effektivt å kunne opprette VKP integrasjoner
+type: text/vnd.tiddlywiki
+
+Videreutvikle VKPs Admin-modul
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

@@ -1,0 +1,9 @@
+created: 20240821135511821
+modified: 20260430093446815
+revision: 0
+tags: [[Tilby verktøy som effektiviserer og kvalitetssikrer bruken av HelseID]] 2024 Leveranse Selvbetjening Juni
+title: 06/24 - HelseID Selvbetjening har fått støtte for konfigurasjonspakker som forenkler manuelt oppsett hos kunder
+type: text/vnd.tiddlywiki
+
+HelseID Selvbetjening har fått støtte for å lage konfigurasjonspakker som kan forenkle oppsett hos kunder som i dag må sette
+opp manuelt. Programvareleverandører kan sette opp flere ulike pakker for sine kunder, og dermed gjøre jobben (og forvirringen) mindre hos den enkelte kunde. 

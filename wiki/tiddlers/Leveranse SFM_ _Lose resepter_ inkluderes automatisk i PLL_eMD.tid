@@ -1,0 +1,16 @@
+TjenesteID: 40044
+created: 20260407083109070
+modified: 20260416102424315
+revision: 0
+tags: Leveranse [[Team SFM]] 2026 [[Implementere kjente endringer knyttet til PLL/eMD]] [[Sentral forskrivningsmodul i 2026]] Mars
+title: Leveranse SFM: "Løse resepter" inkluderes automatisk i PLL/eMD
+type: text/vnd.tiddlywiki
+
+Målsetningen er å tilpasse funksjonalitet for elektronisk multidose og PLL i SFM basert på erfaringer fra utprøving.
+
+Levert:
+
+"Løse resepter" inkluderes automatisk i PLL/eMD. Effekten av dette er spart tid for leger som skal sende oppdatert PLL for sine pasienter
+
+
+

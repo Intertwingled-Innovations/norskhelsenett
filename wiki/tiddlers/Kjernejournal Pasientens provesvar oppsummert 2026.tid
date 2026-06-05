@@ -1,0 +1,42 @@
+created: 20260401063738198
+modified: 20260407092612304
+revision: 0
+tags: [[Divisjon Helsepersonell]] 2026 [[Kjernejournal Pasientens prøvesvar]] [[Tjeneste oppsummert]]
+title: Kjernejournal Pasientens prøvesvar oppsummert 2026
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+
+[[Kjernejournal Pasientens prøvesvar|Kjernejournal Pasientens prøvesvar]]
+
+<<list-links filter:"[tag[Ekstern tjeneste]tag[2026]tag[Kjernejournal Pasientens prøvesvar]tag[Divisjon Helsepersonell]]">>
+
+! Målsettinger
+
+
+
+<<list-links filter:"[tag[Målsetting]tag[2026]tag[Kjernejournal Pasientens prøvesvar]]">>
+
+
+! Resultat
+
+
+<<list-links filter:"[tag[Resultat]tag[2026]tag[Kjernejournal Pasientens prøvesvar]]">>
+
+
+
+! Leveranser
+
+
+
+<<list-links filter:"[tag[Leveranse]tag[2026]tag[Kjernejournal Pasientens prøvesvar]]">>
+
+
+! Styring
+
+
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag[Kjernejournal Pasientens prøvesvar]]">>
+
+
+
+

@@ -1,0 +1,14 @@
+created: 20250708120630838
+modified: 20260330070944493
+revision: 0
+tags: [[Kjernejournal Pasientens kritiske informasjon]] 2025 [[Målsetting for kritisk info: Leverandører til sykehus og fastleger tar i bruk API for kritisk info]] Resultat
+title: Resultat for kritisk info: Leverandører til sykehus og fastleger tar i bruk API for kritisk info
+type: text/vnd.tiddlywiki
+
+! Mål
+
+Aktører i helsesektoren skal kunne skrive og konsumere kritisk informasjon direkte fra API.
+
+! Effekt sektoren
+* Automatisk synkronisering av kritisk info fra lokalt fagsystem til kjernejournal - unngår dobbelregistrering
+* Det blir lettere å registrere kritisk info, som igjen gir bedre datakvalitet

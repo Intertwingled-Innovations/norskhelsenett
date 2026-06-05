@@ -1,0 +1,16 @@
+TjenesteID: 40040
+created: 20240317143136913
+modified: 20260409111134327
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] [[Team Kollektivet]] [[Team Innrapportering]] [[Innrapportering av fødselsmelding]] 2026
+title: Innrapportering av fødselsmelding
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+Elektronisk fødselsmelding (FMS) sørger for at fødselsmeldinger registrert av jordmødrene blir sendt til Folkeregister (FREG) hos Skatteetaten, og at tildelte fødselsnummer fra Folkeregisteret blir formidlet tilbake til sykehusene. Helse Sør-Øst og Helse Nord bruker en web-portal tilhørende løsningen https://fodselsmelding.nhn.no/ for å registrere inn fødsler, mens i Helse Vest og Helse Midt-Norge bruker jordmødrene fagsystemet Natus og/eller Helseplattformen som er integrert med FMS-tjenesten til dette.  Helse Sør-Øst, Helse Nord og Helse Vest bruker web-portalen for å få oversikt over fødsler og tildelte personnummer, Helse Midt bruker ikke denne web-portalen.
+
+<a href="https://confluence.nhn.no/pages/viewpage.action?pageId=35852720">Fødselsmelding (Confluence)</a>
+
+! Målsettinger
+!! 2026
+<<list-links filter:"[tag[Målsetting]tag[2026]tag<currentTiddler>]">>

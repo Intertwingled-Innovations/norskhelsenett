@@ -1,0 +1,18 @@
+TjenesteID: 40027
+created: 20260506161747013
+modified: 20260511185440168
+revision: 0
+tags: 2026 Målsetting Virksomhet
+title: Virksomhetsregistrene autonome i alle regioner
+type: text/vnd.tiddlywiki
+
+For å øke robusthet og tilgjengelighet skal registrene være redundant i alle fire regioner.
+
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranse
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

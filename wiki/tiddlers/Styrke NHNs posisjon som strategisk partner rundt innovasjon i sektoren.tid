@@ -1,0 +1,14 @@
+created: 20260508121955044
+modified: 20260508122058489
+revision: 0
+tags: 2026 [[Domene Økosystem]] Målsetting [[Støtte og hjelp til innovasjon]]
+title: Styrke NHNs posisjon som strategisk partner rundt innovasjon i sektoren
+type: text/vnd.tiddlywiki
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>tag[2026]]">>

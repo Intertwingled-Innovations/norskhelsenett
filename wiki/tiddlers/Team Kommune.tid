@@ -1,0 +1,24 @@
+created: 20240128121749625
+modified: 20240828103533607
+revision: 0
+tags: Team [[Domene Økosystem]] Kommune
+title: Team Kommune
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av teamet
+
+Team kommune har som formål å legge til rette for at kommunene tar i bruk de nasjonale e-helseløsningene, og får verdi av disse. 
+
+Se Confluence for mer info: https://confluence.nhn.no/display/SAM/Team+kommune
+
+! Ansvar og Målsettinger
+
+<<toc-expandable "Team Kommune">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>
+
+! Styring
+
+<<list-links filter:"[tag[Målsetting]tag<currentTiddler>]">>

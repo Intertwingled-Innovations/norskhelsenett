@@ -1,0 +1,19 @@
+created: 20250113120506470
+modified: 20250114205801958
+revision: 0
+tags: [[Gi en overordnet vurdering av konsekvensene av en overgang til IDMP-baserte legemiddelgrunndata for hele e-reseptkjeden, som grunnlag for arbeidet med SAFEST og endring av grunndata for legemiddelområdet]] 2024 Leveranse Desember
+title: Konsekvenser ved overgang til IDMP-baserte legemiddelgrunndata for hele e-reseptkjeden
+type: text/vnd.tiddlywiki
+
+!! Hva ble levert? 
+
+Rapport oversendt til HOD 12.desember 24.  Tittel; Konsekvenser for e-resept kjeden og andre berørte nasjonale e-helseløsninger av en overgang til SAFEST/IDMP-baserte legemiddelgrunndata . 
+
+!! Hva er nytten?
+
+Rapporten anbefaler følgende:
+Norsk helsenett støtter innføringen av en nasjonal legemiddelgrunndatatjeneste med utgangspunkt i SAFEST. SAFEST må utvides til å inneholde all informasjon som er nødvendig for bruk i e-resept kjeden. Dette vil sikre deling av entydige legemiddelopplysninger på tvers av behandlingsnivåer i helse og omsorgstjenesten.  
+Norsk helsenett sin plan er å gå vekk fra forskriftsfestede meldinger og over til å dele data i e-resept kjeden via API'er. Dette legger til rette for å støtte både innføring av IDMP-baserte legemiddelgrunndata og vedtatt samhandling med EU om e-resepter. 
+Det må være obligatorisk å ta i bruk denne nye nasjonale tjenesten. Innføring må skje gradvis slik at alle aktørene får rimelig tid til å tilpasse sine løsninger. Dette kan 
+oppnås ved at reseptformidleren støtter både nye formater og dagens meldingsutveksling i en overgangsperiode. 
+Det må gjøres forskriftsendringer slik at tekniske løsninger og formater ikke lenger reguleres i forskrift. Da vil e-resept kjeden være tilpasningsdyktig uten at det krever forskriftsendringer.  

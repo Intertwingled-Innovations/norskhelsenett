@@ -1,0 +1,35 @@
+created: 20240816101547265
+modified: 20260204112745833
+revision: 0
+tags: [[Autentisering og autorisasjon]] Målsetting 2024 Selvbetjening
+title: Driften av HelseID skal være enkel og effektiv
+type: text/vnd.tiddlywiki
+
+Driften av HelseID bør være så enkel og effektiv som mulig. 
+
+
+!! Resultat 2026
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>tag[2026]]">>
+
+
+
+!! Resultat 2025
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>tag[2025]]">>
+
+
+!! Resultat 2024
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>tag[2024]]">>
+
+! Leveranser
+
+!! Leveranser 2026
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>tag[2026]]">>
+
+!! Leveranser 2025
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>tag[2025]]">>
+
+!! Leveranser 2024
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>tag[2024]]">>

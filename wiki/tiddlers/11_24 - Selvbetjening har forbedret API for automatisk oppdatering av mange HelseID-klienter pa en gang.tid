@@ -1,0 +1,8 @@
+created: 20241121084854805
+modified: 20260430093446816
+revision: 0
+tags: [[Tilby verktøy som effektiviserer og kvalitetssikrer bruken av HelseID]] Leveranse 2024 Selvbetjening November
+title: 11/24 - Selvbetjening har forbedret API for automatisk oppdatering av mange HelseID-klienter på en gang
+type: text/vnd.tiddlywiki
+
+HelseID-klienter kan oppdateres manuelt i Selvbetjening, eller automatisk over Selvbetjening sitt API. Dette API'et har blitt forbedret på flere punkter i løpet av høsten, og disse forbedringene er nå satt i produksjon. Dette betyr at det er enklere for helsevirksomheter å holde sine HelseID-klienter korrekt oppsatte dersom deres EPJ/fagsystemleverandør legger til rette for det. 

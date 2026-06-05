@@ -1,0 +1,17 @@
+TjenesteID: 40033
+created: 20260318115137451
+modified: 20260505112359281
+revision: 0
+tags: [[Kjernejournal portal]] Målsetting 2026
+title: Automatisere tilgangsstyringen til kjernejournal portal
+type: text/vnd.tiddlywiki
+
+Vi har i dag en tung manuell håndtering av tilgangsstyring til kjernejournal portal. Etter at Helsenettet.no blir lansert håper vi at store deler av denne prosessen blir automatisert.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

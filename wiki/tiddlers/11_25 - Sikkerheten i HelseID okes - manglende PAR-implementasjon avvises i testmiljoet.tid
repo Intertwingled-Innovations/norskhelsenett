@@ -1,0 +1,10 @@
+created: 20251029132040475
+modified: 20260505053852589
+revision: 0
+tags: [[Tjenesten HelseID skal lukke alle risikoelementer med risikonivå alvorlig]] Leveranse [[Autentisering og autorisasjon]] 2025 November
+title: 11/25 - Sikkerheten i HelseID økes - manglende PAR-implementasjon avvises i testmiljøet
+type: text/vnd.tiddlywiki
+
+Mekanismen «Pushed Authorization Requests» (PAR) tilrettelegger for økt tillit til identiteten i forespørsler om tilgang til helsedata. Mekanismen tillater HelseID å avvise illegitime forespørsler tidlig.
+Fra og med 3. november 2025 vil HelseID avvise forespørsler uten denne mekanismen i testmiljøet. Dette er første steg, og fra og med 2. februar 2026 vil forespørsler uten PAR-implementasjon bli avvist i produksjon. 
+

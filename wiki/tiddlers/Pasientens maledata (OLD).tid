@@ -1,0 +1,57 @@
+TjenesteID: 40056
+created: 20240317142700744
+modified: 20260408064030977
+revision: 0
+tags: [[Divisjon Helsepersonell]]
+title: Pasientens måledata (OLD)
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+
+Pasientens måledata er en tjeneste for å gjøre resultater av målinger av en pasient tilgjengelige til helsepersonell som trenger tilgang på disse dataene - innenfor samme virksomhet eller på tvers av virksomheter.
+
+Tjenesten skal kunne benyttes i mange ulike sammenhenger og behandlingsforløp. Utprøvingen som skal gjennomføres i 2024 og 2025 fokuserer på digital hjemmeoppfølging (DHO) hvor det er definerte behov for datadeling av målinger mellom virksomheter.
+
+Det typiske eksemplet er oppfølging av KOLS-pasienter, hvor vitale parametre som puls, O,,2,,-opptak, blodtrykk og temperatur måles via utstyr pasienten har hjemme som en del av digital hjemmeoppfølging i kommunen.
+
+Denne pasientgruppen benytter også fastlege og spesialist mye, og det å gjøre disse måledataene tilgjengelig for fastlege og spesialist er nødvendig for en effektiv samhandling om denne typen pasienter.
+
+Måledata i forbindelse med digital hjemmeoppfølging blir typisk behandlet gjennom en verdikjede som omfatter måleutstyr, DHO-løsning/ responssenterløsning, velferdsteknologisk knutepunkt (VKP) og PLO-EPJ. Denne verdikjeden tilhører gjerne virksomheten som gir digital hjemmeoppfølging til pasient (kommunen).
+
+Prinsippet er at det ett sted i verdikjeden avleveres en kopi av måledata til Pasientens Måledata. Pasientens Måledata vil dermed samle måledata - og tilgjengeliggjøre måledata på forespørsel via API.
+
+Ulike anvendelsesområder vil ulike verdikjeder for behandling av måledata.
+
+!!Aktuelle anvendelsesområder for Pasientens Måledata i 2024/2025:
+
+1. Digital Hjemmeoppfølging - som beskrevet over. Se sluttrapport MILA-prosjektet for utprøving av digital hjemmeoppfølging for mer innsikt.
+
+https://www.helsedirektoratet.no/rapporter/digital-hjemmeoppfolging-sluttrapport-fra-nasjonal-utproving-2018-2021/vedlegg-og-lenker/Sluttrapport%20-%20digital%20Hjemmeoppf%C3%B8lging%20-%20Ullensaker%20og%20Gjerdrum.pdf/_/attachment/inline/38024100-8c78-4c69-ae66-d27f4e5de25d:931f2b016df1596b79a3afa7c88361a0fe34c20b/Sluttrapport%20-%20digital%20Hjemmeoppf%C3%B8lging%20-%20Ullensaker%20og%20Gjerdrum.pdf
+
+2. Digitalt helsekort for gravide
+
+En del målinger er viktige i oppfølging av gravide - som f.eks. blodtrykk, vekt, magemål (symfyse-fundusmål).
+Det er ikke hensiktsmessig at det digitale helsekortet utvikler og forvalter samling og tilgjengelgiggjøring av måledata separat - dette bør håndteres av Pasientens Måledata.
+
+3. NEWS2 og deling av NEWS2-scoringer i kommunehelsetjenesten
+
+Som del av felles journalløft for kommunene skal det lages en utprøvingstjeneste for å dele NEWS2-data internt i kommunen i første omgang.
+NEWS2-score er basert på et fast sett av vitale målinger, og vi ser for oss at Pasientens Måledata kan benyttes for å samle og dele disse.
+
+4. Deling av pasientens egne data fra ulike typer utstyr og use-cases
+
+Blodsukker - diabetes
+
+
+
+! Leveranseplan 2024
+
+<<list-links filter:"[tag[Leveranseplan 2024]tag[Pasientens måledata]]">>
+
+! Målsettinger
+
+<<list-links filter:"[tag[Målsetting]tag<currentTiddler>]">>
+
+! Styring
+!! 2024
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2024]tag<currentTiddler>]">>

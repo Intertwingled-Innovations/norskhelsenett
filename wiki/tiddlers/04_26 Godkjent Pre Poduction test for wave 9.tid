@@ -1,0 +1,17 @@
+TjenesteID: 40038
+created: 20260407214732412
+modified: 20260409121119754
+revision: 0
+tags: 2026 Målsetting [[Team MyHealth@EU]] [[04/26 Godkjent Pre Poduction test for wave 9]] MyHealth@EU
+title: 04/26 Godkjent Pre Poduction test for wave 9
+type: text/vnd.tiddlywiki
+
+Norge skal ha bestått Pre Production Test for wave 9
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

@@ -1,0 +1,18 @@
+TjenesteID: 40037
+created: 20240206083203071
+modified: 20260508101345120
+revision: 0
+tags: [[Velferdsteknologisk knutepunkt]] 2024 Målsetting KS
+title: VKP-integrasjon for nye kommuner
+type: text/vnd.tiddlywiki
+
+For å øke bruken av løsningen, ønsker KS og NHN å etablere en plan for å hjelpe mest mulig kommuner på løsningen så raskt som mulig. Som en del av etablering av et "Innføringsnettverk" i KS, opprettes en nasjonal arbeidsgruppe for innføring av VKP i kommunene. Gruppen skal forberede/klargjøre kommuner som ønsker integrasjon med VKP, slik at de er klare, både teknisk og organisasjonsmessig. Da kan NHN effektivt etablere integrasjoner mellom deres VFT- og EPJ-løsning. 
+Gruppen jobber med å sette opp mål for 2. halvår og plan for videre arbeid sammen med NHN. 
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

@@ -1,0 +1,38 @@
+TjenesteID: 40056
+created: 20260504043209061
+modified: 20260512103519342
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Styring Tiltak]] 2026 [[Forretningsmessig endring:2]] [[Pasientens måledata]] April
+title: 04 Tiltak pasientens måledata - hovedtrekk og endringer april 2026
+type: text/vnd.tiddlywiki
+
+
+<<list-links filter:"[tag[Tiltaket pasientens måledata 2026]tag[Tiltak]tag[2026]]">>
+
+! Hovedtrekk og endringer
+
+Etterspørsel etter nytt bruksområde -  deling av skrøpelighetsscore på pasienter - Clinical Frailty Score (CFS).
+
+Konkret løp med Oslo kommune og OUS for deling av CFS-Score via PMD.
+Ikke knyttet til digital hjemmeoppfølging, og det er ønskelig med deling begge veier.
+Oslo kommune involverer sine jurister i vurdering om denne delingen dekkes inn av juridisk vurdering som allerede er gjort.
+PMD er teknisk klart for å ta imot CFS når API for innsending av målinger er på plass.
+
+API for innsending kan benyttes i testmiljø. Innsendte målinger via skrive-API kan leses ut via lese-API. 
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 2''
+
+Konsekvens av forretningsmessig endring:
+
+En bredding i bruk av PMD (deling med NHN som TTP og databehandleravtale) som går ut over digital hjemmeoppfølging og bruksområde fokus har vært på frem til nå. CFS er en sak som har momentum i sektoren, og er utstrakt brukt bl.a. i Helse midt. Dette, sammen med bruk av PMD for målinger innen DHO for tilgang for fastlege gjør at muligheten for reell deling mellom alle behandlingsnivåene øker. Dette øker også behovet for å finne finansieringsmodell for forvaltning som er hensiktsmessig. Fra NHNs side er det ønskelig med en modell som gir "riktig" prising for aktørene som kobler seg på fra dag 1. Konsekvensen av dette er at NHN tar risiko i begynnelsen da forvaltningskostnad vil overstige inntekt inntil utbredelse/ skalering når et break-even. Dette er en finansieringsmodell vi så langt ikke har benyttet i divisjon Helsepersonell.
+
+
+! Prognose på penger og ressurser
+
+* Finansiering: Offentlig tilskudd - PMD, 8,8 mnok tilfaller vår divisjon og 1 mnok divisjon Innbygger
+* Prognose for året på 6,7 mnok.
+* Runrate - 7,1 mnok. Prognose må justeres ift kost på drift - ser ut til å være manglende kost på drift (privat sky) - kan ha havnet på Felles journalløft. Gås etter nå når ny kostmodell er på plass og bedre rapporter ned på tjenestenivå nå er gjort tilgjengelig i PowerBI.
+* Hvordan ligger vi an hittil i år opp i mot prognoser og planlagte oppgaver?
+* Status ressursbehov/kapasitet?
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark76496cc890038835a416">Oversikt PMD (Power BI)</a>

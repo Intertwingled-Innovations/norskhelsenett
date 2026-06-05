@@ -1,0 +1,35 @@
+created: 20250228165341825
+modified: 20250708123618383
+revision: 0
+tags: [[Norsk Helsenett SF]] Tiltak Kommune [[Tiltaket digitalt helsekort for gravide]] 2025 DigitalSamhandling
+title: Tiltaket digitalt helsekort for gravide 2025
+type: text/vnd.tiddlywiki
+
+Målet er å tilby helsepersonell og den gravide digitale informasjonstjenester som støtter forløpet for svangerskap, fødsel og barsel mer helhetlig. Etablering av et digital helsekort for gravide skal bidra til å løfte kvaliteten i svangerskaps- og fødselsomsorgen, gjennom økt digital informasjonsdeling mellom virksomhetene i helse- og omsorgstjenesten. Tiltaket innebærer at informasjon fra dagens papirhelsekort for gravide blir digitalt tilgjengelig for den gravide og for helsepersonell i svangerskaps- og fødselsomsorgen. 
+
+Prosjektet skal i 2024 utvikle en testversjon som kan testes ut med et fåtall aktører. Formålet er å teste teknisk løsning, for å innhente læring og erfaring som kan brukes til å videreutvikle konseptet og forbedre løsningen i samarbeid med helsetjenesten. Dette skal bidra til å redusere risiko, og til at prosjektet er i stand til å starte utprøving i et større geografisk område når nødvendig regelverksutvikling er på plass. Representanter fra alle aktører som følger den gravide skal delta i testen. Erfaringene fra Helseplattformen i Midt-Norge skal benyttes i utvikling av løsningen.
+
+! Effektmål og resultatmål 
+!!Effektmål
+
+Digital helsekort for gravide skal bidra til å øke kvaliteten i svangerskaps- og fødselsomsorgen, samt oppfølgingen av den gravide. Videre skal digitalt helsekort for gravide bedre ressursbruken gjennom økt digital informasjonsdeling og dermed økt samhandling om den gravide, mellom helsepersonell og virksomhetene i helse- og omsorgstjenesten.
+
+
+!! Oppgaver i 2025
+
+<<NHN-current-liste-levert type:"Oppgave" aar:"2025">>
+
+!! Leveranser i 2025
+
+<<list-links filter:"[tag[2025]tag[Leveranse]tag<currentTiddler>]">>
+
+!! Leveranseplan 2025
+https://nhnkontor.sharepoint.com/:b:/r/sites/Samhandlingsplattformen/Shared%20Documents/Team%20Sats/Leveranseplan%202025/Endelig%20versjon/NHN%20leveranseplan%202025%20-%20Digital%20samhandling%201.0.pdf?csf=1&web=1&e=zMTSCS
+
+!! Rapportering leveranseplan 2025
+
+<<list-links filter:"[tag[2025]tag[Leveranse]tag[Rapportering leveranseplan]]">>
+
+! Styring 2025
+
+<<list-links filter:"[tag[Styring Tiltak]tag[2025]tag<currentTiddler>]">>

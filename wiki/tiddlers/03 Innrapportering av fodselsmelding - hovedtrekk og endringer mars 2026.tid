@@ -1,0 +1,33 @@
+TjenesteID: 40040
+created: 20260325123130271
+modified: 20260415063104061
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Innrapportering av fødselsmelding]] [[Styring Ekstern tjeneste]] 2026 Mars [[Forretningsmessig endring:1]]
+title: 03 Innrapportering av fødselsmelding - hovedtrekk og endringer mars 2026
+type: text/vnd.tiddlywiki
+
+
+! Hovedtrekk og endringer
+I portalen jobbes det med små forbedringer i koden, også med fokus på sikkerhet. Det er ingen større endringer så langt i år.
+Vi har også begynt å se på en større forbedring/ombyggng av hele tjenesten.
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 1''
+
+Konsekvens av forretningsmessig endring:
+
+! Prognose på penger og ressurser
+* Finansieringskilde: Avtalefestet tjenestepris. Kundeavtalen med de regionale helseforetakene. Ramme 2026 4,2 MNOK.  
+* Hvordan ligger vi an hittil i år opp i mot prognoser og planlagte oppgaver?
+* Årsprognose 4,2 MNOK, Runrate 11 mnd 3,8 MNOK.
+* Status ressursbehov/kapasitet? Prognosen for elektronisk fødselsmelding er under budsjett. Det er leid inn en ressurs til domene brukerflate for frontend-arbeidet i elektronisk fødselsmelding. Backend er i person-tjenesten med Hanne Mari som tjenesteeier.
+
+
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark8313964b2a3d32bbd89c">Oversikt Innrapportering av fødselsmelding (Power BI)</a>
+
+
+
+
+
+

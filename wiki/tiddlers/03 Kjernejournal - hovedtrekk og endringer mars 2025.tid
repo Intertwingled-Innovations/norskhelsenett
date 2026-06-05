@@ -1,0 +1,44 @@
+created: 20250401113457629
+modified: 20250410202623895
+revision: 0
+tags: [[Divisjon Helsepersonell]] Kjernejournal [[Styring Ekstern tjeneste]] 2025 Mars
+title: 03 Kjernejournal - hovedtrekk og endringer mars 2025
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer
+
+!! Drift og produksjon
+Vi ser på muligheten for å flytte noe driftskostnad over på informasjonstjenestene for bedre å reflektere det reelle kostnadsbildet
+
+!! Portal
+Vi vil etterhvert se på muligheten for å lage egne API'er for "Om pasienten" og "Besøkshistorikk". Når dette er gjennomført, vil alle informasjonselementer i kjernejournal være tilgjengelig via egne API'er.
+Det arbeides med vertikalisering av legemidler og kritisk info.
+
+!! Informasjonstjenester
+* Pasientens prøvesvar: Mål om produksjon fra 12. mai 2025. 
+
+
+! Prognose på penger og ressurser
+
+!! Drift og produksjon
+Drift og produksjon er iht budsjett. Årsprognosen for KJ drift er 40.8 mnok vs budsjett på 43.6 mnok.
+
+!! Portal
+Forvaltning av kjernejournal portal er over budsjett, mens kjernejournal totalt er under budsjett. Årsprognosen for KJ portal forvaltning er 42.5 mnok vs budsjett på 39.1 mnok.
+
+!! Infotjenester
+Årsprognosen for KJ infotjenester er på ca 40.8 mnok, vs budsjett på 40.8 mnok. 
+
+!!! Ressurser
+
+KJ infotjenester: En utvikler slutter ved før sommeren. Det er igangsatt prosess for erstatning, i første omgang internt, deretter evt eksternt.
+
+Kollektivet: En utvikler har sluttet, mens en annen sannsynligvis blir langtidssykemeldt 
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarkb92368e492600e8b0b92">Oversikt Kjernejournal total (Power BI)</a>
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark09c84f60ca0c0d0dee2a">Oversikt Kjernejournal Infotjenester (Power BI)</a>
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarke23fe3d1eccd55765405">Oversikt Kjernejournal portal (Power BI)</a>
+
+

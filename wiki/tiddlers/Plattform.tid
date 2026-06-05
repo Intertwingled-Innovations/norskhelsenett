@@ -1,0 +1,20 @@
+TjenesteID: 40046
+created: 20250514131338638
+modified: 20260506083859203
+revision: 0
+tags: [[Intern tjeneste]] 2026 [[Divisjon Helsepersonell]]
+title: Plattform
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+
+DHP Plattform består av interne tjenester, støttefunksjoner, kompetansearbeid. Team Plattform forvalter felleskomponenter som Observability Stack, Rådgivning, maler for CI/CD i privatsky, intern governance på Navet og kontinuitet i Kafka driftsenheten. 
+
+
+! Målsettinger
+
+!! 2026
+
+<<list-links filter:"[tag[Målsetting]tag[2026]tag<currentTiddler>]">>
+
+

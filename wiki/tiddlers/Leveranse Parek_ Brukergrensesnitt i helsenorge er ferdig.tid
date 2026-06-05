@@ -1,0 +1,12 @@
+created: 20260513081332430
+modified: 20260513081514439
+revision: 0
+tags: Leveranse 2026 April [[Pasientens rekvisisjoner]] [[Resultat for pasientens rekvisisjoner: Innbygger kan via helsenorge hente alle sine rekvisisjoner]] [[Målsetting for pasientens rekvisisjoner: Etablere funksjonalitet for at innbygger via helsenorge skal kunne hente alle sine rekvisisjoner]]
+title: Leveranse Parek: Brukergrensesnitt i helsenorge er ferdig
+type: text/vnd.tiddlywiki
+
+! Mål
+Innbygger får tilgang til egne rekvisisjoner via helsenorge.no
+
+! Levert
+* Brukergrensesnitt i helsenorge er ferdig implementert.

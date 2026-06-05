@@ -1,0 +1,19 @@
+created: 20250619123821344
+modified: 20260105111913447
+revision: 0
+tags: Målsetting 2025 [[Team EHDS]] [[Team EHDS og Legemiddel grunndata]] Oppgave Levert
+title: Levere konsekvensvurdering av EHDS for NHN innen 24. oktober
+type: text/vnd.tiddlywiki
+
+
+!! Resultat
+
+* Levere rapport som konkretiserer konsekvenser av EHDS for NHN (1.0 versjon av konsekvensvurdering)
+* Rapporten skal også dekke hvilke systemer som er EHR systemer, samt tydelige krav til de systemene som ikke er EHR systemer 
+* Norsk helsenett skal samarbeide med Helsedirektoratet om å utrede konsekvenser og muligheter som 
+følger av EHDS forordningen for Norge
+
+
+!! Leveranser
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>
+

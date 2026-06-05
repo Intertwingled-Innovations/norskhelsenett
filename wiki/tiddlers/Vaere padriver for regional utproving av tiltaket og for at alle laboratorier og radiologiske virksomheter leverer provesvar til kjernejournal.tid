@@ -1,0 +1,13 @@
+created: 20240128081857698
+modified: 20250131102153638
+revision: 0
+tags: 2024 [[Leveranseplan for Pasientens prøvesvar i 2024]] Oppgave [[Tiltaket pasientens prøvesvar]] Levert
+title: Være pådriver for regional utprøving av tiltaket og for at alle laboratorier og radiologiske virksomheter leverer prøvesvar til kjernejournal
+type: text/vnd.tiddlywiki
+
+!! NHN oppgaver i 2024:
+NHN skal bidra til at nødvendige regioner får testet både innsending av prøvesvar til kjernejournal, samt visning av prøvesvar fra kjernejournal. 
+
+!! Leveranser
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>
+

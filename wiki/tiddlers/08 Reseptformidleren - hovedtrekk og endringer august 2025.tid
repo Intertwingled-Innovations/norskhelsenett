@@ -1,0 +1,36 @@
+created: 20250910184153056
+modified: 20251009052157031
+revision: 0
+tags: Reseptformidleren [[Styring Ekstern tjeneste]] 2025 August
+title: 08 Reseptformidleren - hovedtrekk og endringer august 2025
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer
+Vi har hatt stabil drift gjennom sommeren og ingen utfordringer eller hendelser knyttet til reseptformidleren (dog en hendelse med feil i FEST fil som rammet en EPJ leverandør).
+
+
+! Modernisering
+* Vi leser nå inn FEST slik at valideringer mot FEST kan innføres som planlagt ila høsten. Dette er validering som forhindrer merarbeid ved utlevering i apotek, valideringer som gir bedre pasientsikkerhet og valideringer som er nødvendig for ny forskrift om blåresept.
+
+* Det er laget en tiltaksplan for kvalitet i e-resept som ble lagt frem for Odd Martin i august. Tiltakene skal innarbeides i rapportering her slik at fremdrift kan dokumenteres/følges opp. 
+
+* Vi har startet arbeidet med å ta i bruk auditlog tjenesten i samhandlingsplattformen og har etablert et fokusteam for dette arbeidet. Sommerstudenter har gjort en god jobb med implementasjon, men det gjenstår noe arbeid. Det gjenstår også avklaringer ift innsyn fra apotek, vi logger pt ikke identiteten til helsepersonell i apotek når de leser helseopplysninger.
+
+* Pasientens legemidler (PLM) skal sørge for utfasing av eksisterende KJ infotjenester legemiddel API så raskt som mulig. Det er backend delen som blir erstattet først. Fase 1 vil fase ut komponenter basert på Oracle Service Bus og planlagt levert i oktober 2025. Dette krever ikke endringer hos konsumentene (som er SFM og HP i hovedsak). Vi er i rute ift denne planen.
+
+* Kubernetes - reseptformidleren er testet i Kubernetes med godt resultat. Vi vil arbeide videre med et beslutningsgrunnlag for veien videre. Dette gjør vi i tett samarbeid med APT og driftsteamet. Vi nedprioriterer denne aktiviteten en periode for å fokusere på kvalitet i e-resept og varslede behov ift PLL. En ny plattform er under etablering - Viti stack, denne kan det være verd å vente på.
+
+* EHDS - vi har nå god oversikt over gap mellom dagens løsning og EHDS spesifikasjoner. Det er viktig å få igang en prosess for å avklare hvordan disse gapene skal løses. Det må også avklares hvordan særnorske forhold skal håndteres. team rf jobber med løsningsdesign innenfor rammen av samhandlingsplattformens løsningsmønster og prinsipper.
+
+! Sikkerhet
+* Utdatert API for publisering av e-reseptstatstikk er implementert på nytt med samme teknologi som rf forøvrig og Azure server er avviklet. 
+ 
+
+! Prognose på penger og ressurser - ikke oppdatert for august
+Drift ligger foreløpig over budsjett, men det er iverksatt en rekke tiltak ift lagring for å redusere driftskost. Dette var forventet å få effekt fra april/mai, det må undersøkes om prognose ikke er oppdatert eller om tiltakene ikke har hatt planlagt effekt. Selv med disse tiltakene vil drift fortsatt ligge noe over budsjett. Følges opp fremover.
+
+Forvaltning ligger godt under rammen og noe under den nedjusterte prognosen. Dette skyldes i hovedsak at vi har lavere bemanning enn opprinnelig planlagt og at konsulenter er erstattet med ansatte. 
+
+Oversikt Reseptformidleren (Power BI)
+
+Oversikt Reseptformidleren (Power BI)

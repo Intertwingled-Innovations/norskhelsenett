@@ -1,0 +1,15 @@
+TjenesteID: 40171
+created: 20260512130153494
+modified: 20260512130557862
+revision: 0
+tags: 2026 Resultat [[Kjernejournal Pasientens journaldokumenter]] [[Nye leverandører som skal ta i bruk NHN dokumentdeling API bruker personverninnstillinger i tråd med PTS målbilde]] [[PJD sine personverninnstillinger er i tråd med Personvern og tilgangsstyring sitt målbilde]]
+title: Nye leverandører som skal ta i bruk NHN dokumentdeling API bruker personverninnstillinger i tråd med PTS målbilde
+type: text/vnd.tiddlywiki
+
+! Resultat beskrivelse
+
+Neste leverandør som skal ta i bruk NHN dokumentlager API er Aidn. Vi må sikre at de deler personverninnstillinger i tråd med målbildet til PTS.
+
+! Leveranser 
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

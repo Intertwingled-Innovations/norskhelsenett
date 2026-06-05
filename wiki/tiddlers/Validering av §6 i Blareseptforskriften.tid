@@ -1,0 +1,14 @@
+created: 20260123133100184
+modified: 20260123133247081
+revision: 0
+tags: [[Forbedre kvaliteten på data i e-resept verdikjeden]] 2025 Leveranse Reseptformidleren November
+title: Validering av §6 i Blåreseptforskriften
+type: text/vnd.tiddlywiki
+
+Funksjonaliteten ble levert i hovedleveranse i november og slått på 1.desember 2025.
+
+Blåreseptforskriften endres pr 1.desember 2025. Innføring av nye koder og utfasing av noen gamle koder, dette er ihht nytt regelverk.
+
+Dette gjelder medisinsk forbruksmateriell.
+
+Valideringen sikrer at sektoren bruker riktige koder. Apotek og bandasjist slipper manuell retting på grunn av feil bruk.

@@ -1,0 +1,14 @@
+TjenesteID: 40171
+created: 20260512074916154
+modified: 20260512103117315
+revision: 0
+tags: [[Kjernejournal Pasientens journaldokumenter]] 2026 Resultat [[Virksomheter skal kunne hente ut oversikt over hvem som har lest hvilke journaldokumenter fra helsevirksomheten]] [[Det gjennomføres jevnlige loggkontroller]]
+title: Virksomheter skal kunne hente ut oversikt over hvem som har lest hvilke journaldokumenter fra helsevirksomheten
+type: text/vnd.tiddlywiki
+
+!Resultat Beskrivelse
+* Helsevirksomheten skal kunne gjennomføre månedlige kontroller over helsepersonell som har lest journaldokumenter delt delt via NHN dokumentlager.
+
+! Leveranse
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

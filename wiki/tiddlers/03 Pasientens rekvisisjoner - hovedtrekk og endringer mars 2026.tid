@@ -1,0 +1,32 @@
+TjenesteID: 40055
+created: 20260325083845383
+modified: 20260505131514664
+revision: 0
+tags: [[Divisjon Helsepersonell]] 2026 [[Pasientens rekvisisjoner]] [[Styring Satsning for fart]] Mars [[Forretningsmessig endring:1]]
+title: 03 Pasientens rekvisisjoner - hovedtrekk og endringer mars 2026
+type: text/vnd.tiddlywiki
+
+<<list-links filter:"[tag[Pasientens rekvisisjoner]tag[Tiltak]]">>
+
+! Hovedtrekk og endringer
+* Akseptansetest gjennomført i Helse Vest - totalt 8 feil må rettes.
+* Askeptansetest fortsetter etter påske
+* Oppstart utprøving tidligst mai/juni som følge av feil: Haukeland sykehus med 10-20 fastlegekontor. I tillegg vil Helse Nord starte utprøving i samme tidsrom.
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 1''
+
+Konsekvens av forretningsmessig endring:
+
+! Prognose på penger og ressurser
+* Finansiering: Satsing for fart og finansiert over NHN sin egenkapital.
+* DIT har brukt 0.3 mnok av en total ramme på 2.7 mnok. 
+* DHP har brukt 3.9 mnok av en prognose på 26,6 mnok. Runrate for året er på 14,1 mnok. Årsak til lavere runrate er at det ikke er betalt ut noen leverandørincentiver av en prognose på 15 mnok. Dette vil bli utbetalt senere i året.
+* Status ressursbehov/kapasitet?
+
+
+! Leveranser
+* API'et er tilgjengelig i test. Mål om produksjon i mai/juni.
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=c685682c0e0e3a08e148">Oversikt Pasientens rekvisisjoner (Power BI)</a>
+
+

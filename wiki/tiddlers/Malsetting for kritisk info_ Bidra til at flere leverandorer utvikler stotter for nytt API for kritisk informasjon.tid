@@ -1,0 +1,19 @@
+TjenesteID: 40168
+created: 20260412114527457
+modified: 20260414125608618
+revision: 0
+tags: [[Kjernejournal Pasientens kritiske informasjon]] Målsetting 2026 Mandater
+title: Målsetting for kritisk info: Bidra til at flere leverandører utvikler støtter for nytt API for kritisk informasjon
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+
+Bidra til at flere leverandører utvikler støtte for nytt API for kritisk informasjon 
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

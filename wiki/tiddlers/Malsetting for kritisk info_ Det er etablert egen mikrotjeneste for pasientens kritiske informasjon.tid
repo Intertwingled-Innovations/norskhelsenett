@@ -1,0 +1,18 @@
+created: 20240704134738343
+modified: 20260330070944491
+revision: 0
+tags: [[Kjernejournal Pasientens kritiske informasjon]] Målsetting 2024
+title: Målsetting for kritisk info: Det er etablert egen mikrotjeneste for pasientens kritiske informasjon
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+
+Kritisk informasjon i kjernejournal skal ekstraheres fra kjernejournal databasen og re-etableres i egen database. Dette vil separere kritisk info fullstendig fra andre kjernejournal informasjonstjenester. Dette vil gjøre det enklere for NHN å drifte og forvalte tjenesten, endringstakten vil kunen økes og kostnaden for drift og forvaltning vil kunne reduseres. 
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

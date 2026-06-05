@@ -1,0 +1,9 @@
+created: 20260507103823171
+modified: 20260507110034253
+revision: 0
+tags: Målsetting 2026 [[Pasientens måledata]]
+title: Støtte nye behov som avdekkes i utprøvingen
+type: text/vnd.tiddlywiki
+
+! Resultat
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>

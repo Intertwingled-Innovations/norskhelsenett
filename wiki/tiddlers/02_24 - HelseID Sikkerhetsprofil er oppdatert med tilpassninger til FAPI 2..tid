@@ -1,0 +1,8 @@
+created: 20240821132111191
+modified: 20260505053852587
+revision: 0
+tags: [[Tjenesten HelseID skal lukke alle risikoelementer med risikonivå alvorlig]] Leveranse [[Autentisering og autorisasjon]] Mars 2024
+title: 02/24 - HelseID Sikkerhetsprofil er oppdatert med tilpassninger til FAPI 2.
+type: text/vnd.tiddlywiki
+
+HelseID Sikkerhetsprofil er oppdatert med tilpassninger til FAPI 2. Dette innebærer blant annet klav om DPoP, PAR og tydeligere krav til sikring av klienthemmeligheter og bruken av disse i distribuerte systemer"

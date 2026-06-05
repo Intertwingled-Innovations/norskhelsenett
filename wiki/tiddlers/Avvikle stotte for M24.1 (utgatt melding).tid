@@ -1,0 +1,17 @@
+TjenesteID: 40034
+created: 20260222155128006
+modified: 20260414123320879
+revision: 0
+tags: Reseptformidleren 2026 [[Ekstern Tjeneste]] Resultat [[Forenkling og opprydding i dagens løsning (RF)]]
+title: Avvikle støtte for M24.1 (utgått melding)
+type: text/vnd.tiddlywiki
+
+M24.1 meldingen har gått ut av standarden og rf gjør ingenting ved mottak av M24.1. Rf svarer bare ok tilbake.
+
+Analyse av logger viser at flere aktører sender M24.1. Dette må ryddes opp slik at den går ut av bruk og kode i rf slettes. Rf sender ikke M24.2.
+
+https://e-resept.atlassian.net/wiki/spaces/ERDOK/pages/953977276/Meldinger+og+meldingsflyt+i+e-resept
+
+M24.1: Melding om, eller sletting av, abonnement for utsendelse av utleveringsrapport fra Reseptformidleren til pasientens fastlege. Denne meldingen er tatt ut av bruk fordi M8 alltid sendes til fastlege basert på informasjon fra fastlegeregisteret.
+
+M24.2: Svar på M24.1, inneholder status på legens abonnement på M8. Denne meldingen er tatt ut av bruk fordi M8 alltid sendes til fastlege basert på informasjon fra fastlegeregisteret.

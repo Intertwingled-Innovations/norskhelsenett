@@ -1,0 +1,19 @@
+created: 20240704134151461
+modified: 20260330070944493
+revision: 0
+tags: Resultat [[Kjernejournal Pasientens kritiske informasjon]] [[Målsetting for kritisk info: Nytt API for kritisk info er tilgjengelig]] 2024 [[Bidra til at alle EPJ-leverandørene kan registrere og vise kritisk informasjon i kjernejournal via API]]
+title: Resultat pasientens kritiske informasjon: Nytt API for kritisk info er tilgjengelig
+type: text/vnd.tiddlywiki
+
+! Mål: 
+* Aktører i helsesektoren skal kunne skrive og konsumere kritisk informasjon direkte fra API.
+
+Levert:
+
+* Nytt API sikret med HelseID er etablert og produksjonssatt
+* Dokumentasjon er tilgjengelig på utviklerportal
+* Helse Vest (Dips Arena) har prøvd ut det nye API'et
+
+
+! Effekt sektoren: 
+* Enklere å skrive og konsumere kritisk informasjon vil gi bedre kvalitet på dataene som eksisterer i tjenesten

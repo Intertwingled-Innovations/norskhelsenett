@@ -1,0 +1,15 @@
+created: 20240704112515778
+modified: 20260330070845619
+revision: 0
+tags: [[Kjernejournal Pasientens journaldokumenter]] Målsetting 2024
+title: Målsetting for pasientens journaldokumenter: Helsevirksomheter skal kunne konsumere journaldokumenter direkte via API
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+Helsevirksomheter som har behov for å hente journaldokumenter fra andre helsevirksomheter skal kunne velge om dette gjøres via kjernejournal portal eller direkte via API. NHN skal derfor etablere et REST-basert API som gjør det mulig å lage direkte integrasjon fra fagsystem til API.
+
+! Resultat
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

@@ -1,0 +1,10 @@
+created: 20250813084113437
+modified: 20260505053852588
+revision: 0
+tags: [[Tjenesten HelseID skal lukke alle risikoelementer med risikonivå alvorlig]] Leveranse [[Autentisering og autorisasjon]] 2025 Juni
+title: 06/25 - Sikkerheten i HelseID økes - sikkerhetshull lukket hos alle aktører i sektor som bruker HelseID
+type: text/vnd.tiddlywiki
+
+I januar offentliggjorde OpenID foundation en sårbarhet i I OpenID Connect. Detaljer om sårbarheten kan leses her: https://www.ietf.org/archive/id/draft-jones-oauth-rfc7523bis-00.html
+
+Etter tett oppfølging av leverandører er det ikke lengre noen helsevirksomheter i sektor som har HelseID-klienter sårbare for dette sikkerhetshullet. 

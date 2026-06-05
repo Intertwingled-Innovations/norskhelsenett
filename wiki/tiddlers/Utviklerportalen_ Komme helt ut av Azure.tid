@@ -1,0 +1,8 @@
+created: 20260420063858906
+modified: 20260420064047727
+revision: 0
+tags: 2026 Utviklerportalen Målsetting
+title: Utviklerportalen: Komme helt ut av Azure
+type: text/vnd.tiddlywiki
+
+I dag bruker Utviklerportalen database på Azure, og har lagring av filer (media katalog) på Azure. Dette er noe vi ønsker å komme bort fra.

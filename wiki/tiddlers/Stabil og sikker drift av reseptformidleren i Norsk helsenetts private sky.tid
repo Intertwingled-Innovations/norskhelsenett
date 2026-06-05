@@ -1,0 +1,25 @@
+created: 20240508062325634
+modified: 20250515083011419
+revision: 0
+tags: 2024 Reseptformidleren Målsetting Oktober 2025
+title: Stabil og sikker drift av reseptformidleren i Norsk helsenetts private sky
+type: text/vnd.tiddlywiki
+
+Drift av reseptformidleren er flyttet til Norsk helsenetts private sky.
+
+* Stabil og sikker drift av reseptformidleren i Norsk helsenetts private sky. Da har Norsk helsenett kontroll over driften og alle sikkerhetstiltak. 
+
+* Prøve å flytte applikasjonen til Kubernetes og legge en plan for en eventuell migrering til Kubernetes. Dette kan kreve endringer i oppsette hos APT.
+
+* Håndheve gjeldende sikkerhetskrav og jobbe proaktivt med å heve sikkerheten i kjeden.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+
+
+!! Leveranser
+<<list-links [tag[Leveranse]tag<currentTiddler>]>>
+
+

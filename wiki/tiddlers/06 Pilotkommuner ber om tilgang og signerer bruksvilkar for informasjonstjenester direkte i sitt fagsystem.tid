@@ -1,0 +1,16 @@
+created: 20260518185445443
+modified: 20260525194942127
+revision: 1
+tags: [[Helsenettet.no og Medlemstjenesten]] 2026 Målsetting
+title: 06 Pilotkommuner ber om tilgang og signerer bruksvilkår for informasjonstjenester direkte i sitt fagsystem
+type: text/vnd.tiddlywiki
+
+Pilotkommuner har tatt i bruk API fra Medlemstjenesten og brukere av deres fagsystem kan bestille tilgang og akseptere bruksvilkår for en eller flere informasjonstjenester, direkte i fagsystemet.  
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+!! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

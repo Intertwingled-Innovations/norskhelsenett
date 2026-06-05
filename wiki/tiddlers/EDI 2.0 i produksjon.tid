@@ -1,0 +1,14 @@
+created: 20241125121659725
+modified: 20250402073327376
+revision: 0
+tags: [[Etablere pilot og videreutvikle EDI 2.0]] Leveranse 2025 Mars
+title: EDI 2.0 i produksjon
+type: text/vnd.tiddlywiki
+
+Første "live" kunde er på EDI2.0 i prod, og har allerede sendt meldinger i løpet av feb/mars 2025. Dette er en EPJ med begrenset volum og foreløpig et ganske lite fotavtrykk i sektoren,
+Videreutvikling av tjenesten fortsetter for fullt utover i 2025 og 2026. Stor interesse fra sektoren, og både regioner og etater er i pipeline for utprøving, med potensiale for store inntjeninger.
+
+EDI 2.0 ble satt i drift i produksjonsmiljø i midten av november. 
+Pilotene har ikke kommet over enda, men de første følger etter ca. jan/feb. 
+Dialog med større aktører pågår, og vi forsøker å "lose dem inn" med lite volum i starten.
+Vi kjører parallelt testing på dedikerte adresser som ikke lager støy for andre.

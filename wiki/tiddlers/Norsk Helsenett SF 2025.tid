@@ -1,0 +1,25 @@
+created: 20260527125001630
+modified: 20260527125524725
+revision: 3
+tags: 
+title: Norsk Helsenett SF 2025
+type: text/vnd.tiddlywiki
+
+Vi gjør helseinformasjon og digitale tjenester tilgjengelig – trygt, enkelt og relevant
+
+Slik hjelper vi innbyggerne med å mestre sin egen helsehverdag, helsesektoren til å yte gode helsetjenester, forskerne til å utvikle ny kunnskap og næringslivet til å levere sine tjenester for bedre helse. Vi forenkler arbeidsdagen til helseforvaltningen slik at de kan samle seg om sitt samfunnsoppdrag.
+
+! Roller 2025
+<<list-links filter:"[tag[Rolle]tag[2025]]">>
+
+!Tiltak 2025
+<<list-links filter:"[tag[Tiltak]tag[2025]]">>
+
+! Oppfølging og Rapportering 2025
+<<NHN-current-liste-levert type:"OppfølgingOgRapportering" aar:"2025">>
+
+!Satsning for fart 2025
+<<list-links filter:"[tag[Satsning for fart 2025]tag[2025]]">>
+
+!Divisjoner
+<<list-links filter:"[tag[Divisjon]]">>

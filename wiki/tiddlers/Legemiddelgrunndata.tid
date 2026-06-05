@@ -1,0 +1,21 @@
+TjenesteID: 40166
+created: 20260420073923085
+modified: 20260506040829684
+revision: 0
+tags: [[Styring Satsning for fart]] 2026 [[Satsning for fart 2026]]
+title: Legemiddelgrunndata
+type: text/vnd.tiddlywiki
+
+Det er behov for én felles nasjonal tjeneste for legemiddelgrunndata, basert på data fra Direktoratet for medisinske produkter (DMP). Norsk helsenett (NHN) som nasjonal tjenesteleverandør etablerer en nasjonal legemiddelgrunndatatjeneste med data fra DMP, og tilrettelegger API’er for aktuelle konsumenter.
+
+Legemiddelinformasjon benyttes i en verdikjede fra utvikling og godkjenning av legemidler, til tilgjengeliggjøring av legemiddelinformasjon, legemiddelbehandling og til slutt sekundærbruk for å forbedre legemiddelbehandlingen.
+
+! Målsettinger, 2026
+
+<<list-links filter:"[tag[Målsetting]tag[2026]tag<currentTiddler>]">>
+
+! Styring, 2026
+
+<<list-links filter:"[tag[Styring Satsning for fart]tag<currentTiddler>tag[2026]]">>
+
+

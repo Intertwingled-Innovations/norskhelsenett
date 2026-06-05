@@ -1,0 +1,17 @@
+created: 20240416083209580
+modified: 20240416083711114
+revision: 0
+tags: Anskaffelse Kafka Axual
+title: Anskaffelse Kafka
+type: text/vnd.tiddlywiki
+
+Anskaffelse av implementasjon av Kafka med støtteverktøy fra Axual ble påstartet i des 23/jan 24, og er omtrent i rute.
+
+* Leverandør: Axual, med Cap som lokal koordinator
+
+* Axual API og web applikasjon for høy grad av selvbetjening av Kafka.
+
+* Støtteverktøy for governance, feilsøking og generelt vedlikehold
+
+* Går live (i produksjon) i løpet av sommeren 24.
+ 

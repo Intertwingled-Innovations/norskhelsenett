@@ -1,0 +1,8 @@
+created: 20260504083021843
+modified: 20260504083231688
+revision: 0
+tags: 2026 [[Autentisering og autorisasjon]] Målsetting
+title: Fokus på sikkerhet. Tjenesten HelseID har en instans som kjører i region vest
+type: text/vnd.tiddlywiki
+
+En instans av HelseID kjører i region vest, og vil fortsatt fungere selv om forbindelsen til omverdenen er brutt.

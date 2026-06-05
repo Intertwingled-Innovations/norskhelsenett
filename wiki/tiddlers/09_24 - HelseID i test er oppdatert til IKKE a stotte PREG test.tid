@@ -1,0 +1,8 @@
+created: 20240911111055325
+modified: 20260505053852588
+revision: 0
+tags: [[Tjenesten HelseID skal lukke alle risikoelementer med risikonivå alvorlig]] [[Autentisering og autorisasjon]] 2024 Leveranse September
+title: 09/24 - HelseID i test er oppdatert til IKKE å støtte PREG test
+type: text/vnd.tiddlywiki
+
+Helseid har lenge støttet persontjenesten i PROD, men har i test hatt fallback til PREG test om noen har logget på med en test-bruker som ikke er i Persontjenesten test. Denne fallback'en er nå skrudd av, og HelseID i test støtter dermed bare pålogging med testbrukere som er i TENOR/SYNTPOP. Dette understøtter overgangen fra PREG til Persontjenesten i sektor. 

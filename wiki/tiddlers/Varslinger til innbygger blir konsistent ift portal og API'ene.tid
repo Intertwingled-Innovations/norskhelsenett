@@ -1,0 +1,9 @@
+TjenesteID: 40033
+created: 20260316125051409
+modified: 20260409114248290
+revision: 0
+tags: [[Varslinger håndteres av ny varslingstjeneste]] 2026 [[Kjernejournal portal]] Resultat
+title: Varslinger til innbygger blir konsistent ift portal og API'ene
+type: text/vnd.tiddlywiki
+
+Varslingen blir konsistent slik at de utløses både fra oppslag i portal og via API. Logikken kan fjernes fra OSB/KJernejournal Classic

@@ -1,0 +1,16 @@
+TjenesteID: 40171
+created: 20260512065727915
+modified: 20260512104042375
+revision: 0
+tags: Leveranse 2026 Mai [[Kjernejournal Pasientens journaldokumenter]] [[Leveranser knyttet til forvaltning av NHN dokumentlager]] [[Etablere forvaltnings av tjenesten NHN dokumentlager]]
+title: Leveranser knyttet til forvaltning av NHN dokumentlager
+type: text/vnd.tiddlywiki
+
+
+! Beskrivelse av leveranser 
+* Det er etablert monotorering av løsningen i test og produksjon
+* Det er etablert monitorering av løsning hos OS
+* Kunder som bruker tjenesten vet hvordan de kontakter NHN ved feil
+* Kontinuitetsplan er publisert
+* Dagvakt er etablert
+* Vaktteam er etablert

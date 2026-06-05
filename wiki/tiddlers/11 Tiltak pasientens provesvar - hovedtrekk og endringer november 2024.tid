@@ -1,0 +1,42 @@
+created: 20241206125023873
+modified: 20260330071026471
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] [[Styring Tiltak]] [[Tiltaket pasientens prøvesvar]] November [[Kjernejournal Pasientens prøvesvar]]
+title: 11 Tiltak pasientens prøvesvar - hovedtrekk og endringer november 2024
+type: text/vnd.tiddlywiki
+
+<<list-links filter:"[tag[Tiltaket pasientens prøvesvar]tag[Tiltak]tag[2024]]">>
+
+! Hovedtrekk og endringer
+
+!!! Fastleger, legevakt og sykehus har prøvd ut tiltaket og er klar for innføring og bruk til helsehjelp:
+* Pasientens prøvesvar er pr november 2024 fortsatt i teknisk utprøving med formål kvalitetssikring. 
+* Vi har pr idag ca 11.5 mill svarrapporter som gjøres tilgjengelig for 67 ulike helsepersonell. Fire private laboratorium sender automatisk prøvesvar, i tillegg mottar vi manuelt innsendte prøvesvar fra ca 10 helseforetak. 
+* Vi jobber mot oppstart helsehjelp i Q2'2025 . Q1'2025 anses ikke realistisk basert på tilbakemelding fra RHF'ene. Årsaken er tid til å implementere nødvendig funksjonalitet i rekvisisjonsløsningene og LIMS/RIS, samt tid til test (~3 mnd). 
+* Blant de 67 som har tilgang er det fastleger og helsepersonell ved sykehus. Hensikten er imidlertid å kvalitetssikre visningen i kjernejournal portal. 
+
+!!! Innbyggere kan se sine prøvesvar i helsenorge:
+* Teknisk er dette på plass, men det er valgt midlertidig å fjerne innbyggers innsyn i egne prøvesvar så lenge utprøvingen pågår. Dette ble gjort for å etterkomme et sterkt ønske fra RHF'ene om ikke å tillate visning for innbygger så lenge det kun er kvalitetssikring.
+* Helsenorge ønsker å gjennomføre en begrenset pilot for utvalgte innbyggere før tjenesten går i produksjon i 2025. Flere helseforetak er imidløertid skeptisk til å akseptere risikoen, og beslutningen er derfor at det ikke vil bli gjennomført ytterligere utprøviong med innbygger før oppstart produksjon i Q2'2025.
+ 
+!!! Løsningen kan tilgjengeliggjøre prøvesvar fra spesialisthelsetjenesten, private laboratorier og radiologiske virksomheter:
+* Teknisk er dette på plass, og vi mottar prøvesvar både fra private og offentlige laboratorier. 
+* NHN har levert API for å kunne motta nekting og utsatt visning. 
+* NHN har levert API for å kunne motta sperring og skjerming. 
+* NHN har levert formåls- og reservasjons API som gjør det mulig for rekvirenten å angi om svarrapporten har helsehjelpsformål (skal inn i pasientens prøvesvar) eller ikke (skal ikke inn i pasientens prøvesvar). 
+
+!!! Starte klinisk utprøving av pasientens prøvesvar med både private og offentlige lab'er:
+* Mål om oppstart i Q2'2025
+* Dips har levert første verjon av ny funksjonalitet i Dips Interactor for å støtte formål og reservasjon i rekvisisjonsmeldingen. Helse Vest har startet test.
+* Helseforetakene følger opp bestilling av funksjonalitet i LIMS/RIS systemene. Unilabs er tilgjengelig i Helse Vest med funksjonalitet for kopimoittaker og håndtering av formål / reservasjon. Unisoft brukes av alle helseforetak i Vest og dekker 5 av 8 fagområder. Denne er nå testet vellykket sammen med rekvirering fra Dips Interactor.
+
+! Prognose på penger og ressurser
+
+*Finansiering: Offentlig tilskudd, PPS,  ramme på 23.6 mnok som tilfaller vår divisjon og 1.4 mnok som tilfaller divisjon Innbygger. Prognosen for året for DHP pr 1. nov tilsier 24.3 mnok, dvs 0.7 mnok over rammen. Timeføringen for teamet er allerede skjøvet mer mot forvaltning av PPS under kjernejournal, vi regner derfor med å kunne treffe rammen.
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection343a8851705d1cfe8125?experience=power-bi&bookmarkGuid=Bookmarkb054aef5571bab1663f9">Oversikt PPS (Power BI)</a>
+
+
+
+
+

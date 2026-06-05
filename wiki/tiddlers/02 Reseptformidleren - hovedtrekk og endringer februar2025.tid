@@ -1,0 +1,34 @@
+created: 20250312105732021
+modified: 20250409090641835
+revision: 0
+tags: Reseptformidleren Styring [[Styring Ekstern tjeneste]] 2025 Februar
+title: 02 Reseptformidleren - hovedtrekk og endringer februar2025
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer
+
+Hovedfokus i februar har vært å ferdigstille hovedleveranse 1 i 2025 med produksjonsdato den 8.mars.
+
+For å være forutsigbare for aktørene i kjeden grupperes endringer som krever nedetid eller samtest med aktørene i kjeden i hovedleveranser. Vi har også hyppige mellomleveranser i tillegg til hovedleveransene.
+
+Viktigste nyhet i denne hovedleveransen er at vi nå tilbyr rekvirentfunksjonalitet beskyttet med HelseID og DPoP.
+
+Det er følgende krav til å ta i bruk denne funksjonaliteten:
+
+* rekvirenten må utføre en aktiv handling for å signere resepten, dette må legges til rette for i EPJ
+* godkjenning av ny versjon av EPJ
+* signering av oppdaterte bruksvilkår
+
+Pridok tester nå den nye tjenesten. SFM planlegger også å ta den i bruk ila første halvår.
+
+Andre viktige områder er arkitektur for valideringer og det å faktisk innføre flere valideringer i 2025.
+
+Vi jobber sammen med verdikjede e-resept om å vurdere konsekvenser av EHDS og de gap som er avdekket til nå.
+
+! Prognose på penger og ressurser
+
+Pådrag takter noe under rammen, men dette er som forventet pt. 
+
+Det starter en nyansatt utvikler i april, vi har plan om å rekruttere 1-2 utviklere til ila 2025.
+
+https://app.powerbi.com/Redirect?action=OpenReport&appId=6b2c0868-17a5-4050-a66c-e55f8a394c78&reportObjectId=2d7d01c3-db91-4731-bb68-8724b49c798a&ctid=e3dac4b3-9b0b-4f41-8623-9392d0d566dc&reportPage=ReportSection6057689f1293200062cb&pbi_source=appShareLink&portalSessionId=ca346f77-fe33-4fca-8f19-6216a7b2cd30

@@ -1,0 +1,8 @@
+created: 20240820073958105
+modified: 20260505053852587
+revision: 0
+tags: [[Tjenesten HelseID skal lukke alle risikoelementer med risikonivå alvorlig]] Leveranse 2024 April [[Autentisering og autorisasjon]]
+title: 04/24 - HelseID har nå en lokal kopi av data fra HPR-registeret, RESH-registeret og Enhetsregisteret
+type: text/vnd.tiddlywiki
+
+HelseID v 5.0 prodsatt 2. april. Denne har en lokal kopi av data fra HPR-registeret, RESH-registeret og Enhetsregisteret. Dette gjør HelseID mer robust mot nedetid på de øvrige tjenestene. 

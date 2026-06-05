@@ -1,0 +1,42 @@
+TjenesteID: 40039
+created: 20260311112737926
+modified: 20260511083134580
+revision: 0
+tags: [[Forbedre kvaliteten på data i e-resept verdikjeden]] [[Verdikjede e-resept]] Målsetting 2026
+title: Gjennomføre prioriterte tiltak fra ROS for verdikjede e-resept
+type: text/vnd.tiddlywiki
+
+E-resept utgjør en nasjonal, digital infrastruktur for forskrivning, formidling og utlevering av legemidler i Norge. Løsningen forvaltes av Norsk Helsenett SF (som Databehandler), og benyttes av fastleger, spesialister, apotek og bandasjister over hele landet.  Helsedirektoratet er dataansvarlig. Systemet er tett integrert med andre nasjonale e-helseløsninger, herunder kjernejournal, Helsenorge og Helsepersonellregisteret.
+Som en kritisk komponent i helsesektorens digitale verdikjede håndterer e-resept store mengder sensitive helseopplysninger og har direkte betydning for pasientsikkerhet, tjenestekontinuitet og tillit til helsetjenesten. Risikovurderingen gjennomføres for å identifisere, vurdere og håndtere trusler og sårbarheter som kan påvirke konfidensialitet, integritet, tilgjengelighet og pasientsikkerhet i e-resept verdikjeden.
+Formålet er å sikre at løsningen oppfyller krav til informasjonssikkerhet, personvern og beredskap i henhold til gjeldende lovverk, nasjonale føringer og anerkjente standarder, herunder Reseptformidlerforskriften, personvernforordningen (GDPR), helseregisterloven, NSMs grunnprinsipper for IKT-sikkerhet, Norm for informasjonssikkerhet og personvern i helse- og omsorgssektoren og ISO/IEC 27001:2022.
+
+Risikovurderingen omfatter hele e-resept verdikjeden, inkludert:
+
+Forskrivningssystemer hos helsepersonell (EPJ/ journalsystemer).
+
+* Utleverersystemer hos apotek/bandasjist.
+
+* Reseptformidleren som nasjonal meldingsformidler.
+
+* Integrasjoner mot nasjonale registre og apotekløsninger.
+
+* Tjenester levert av Norsk Helsenett SF, inkludert infrastruktur og sikkerhetsmekanismer.
+
+* Informasjonsflyt, datahåndtering og identitetsforvaltning knyttet til e-resept.
+
+Vurderingen inkluderer både tekniske, organisatoriske og prosessuelle forhold, og tar hensyn til relevante avhengigheter til andre e-helseløsninger. Den omfatter ikke detaljert vurdering av lokale driftsmiljøer hos noen aktører, med mindre disse utgjør en identifisert kritisk avhengighet i verdikjeden.
+
+! Målsettinger
+!! 2026
+<<list-links filter:"[tag[Målsetting]tag<currentTiddler>]">>
+
+! Resultat
+!! 2026
+
+<<list-links filter:"[tag[Resultat]tag[2026]tag<currentTiddler>]">>
+
+
+! Leveranser
+!! 2026
+
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>

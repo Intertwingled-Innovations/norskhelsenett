@@ -1,0 +1,11 @@
+created: 20251013071147204
+modified: 20251013071437076
+revision: 0
+tags: [[Forbedre kvaliteten på data i e-resept verdikjeden]] 2025 Resultat Reseptformidleren
+title: Samordne tekniske krav og sikkerhetskrav
+type: text/vnd.tiddlywiki
+
+I dagens dokumentasjon for e-resept er tekniske krav og sikkerhetskrav spredt rundt på flere deler av dokumentasjonen. Flere er implisitt beskrevet og det er i noen tilfeller direkte motstrid i dokumentasjonen.
+
+Dette må ryddes opp i slik at det blir lett for aktørene å forstå hvilke tekniske krav og sikkerhetskrav som stilles til en integrasjon med reseptformidleren.
+

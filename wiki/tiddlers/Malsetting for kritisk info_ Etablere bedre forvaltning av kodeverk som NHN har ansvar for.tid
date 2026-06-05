@@ -1,0 +1,19 @@
+TjenesteID: 40168
+created: 20260412115013135
+modified: 20260414125532210
+revision: 0
+tags: [[Kjernejournal Pasientens kritiske informasjon]] Målsetting 2026
+title: Målsetting for kritisk info: Etablere bedre forvaltning av kodeverk som NHN har ansvar for
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+
+Etablere bedre forvaltning av kodeverk som NHN har ansvar for
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

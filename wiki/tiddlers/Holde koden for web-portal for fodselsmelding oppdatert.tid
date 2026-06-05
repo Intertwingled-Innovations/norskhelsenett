@@ -1,0 +1,15 @@
+TjenesteID: 40040
+created: 20260331080538796
+modified: 20260409111157198
+revision: 0
+tags: [[Innrapportering av fødselsmelding oppsummert 2026]] Målsetting 2026 [[Innrapportering av fødselsmelding]]
+title: Holde koden for web-portal for fødselsmelding oppdatert
+type: text/vnd.tiddlywiki
+
+Vi vil ha som mål å holde koden for portalen løpende oppdatert.
+
+! Resultat
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

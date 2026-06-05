@@ -1,0 +1,10 @@
+created: 20260602100829564
+modified: 20260602102239207
+revision: 1
+tags: [[Tilby verktøy som effektiviserer og kvalitetssikrer bruken av HelseID]] Leveranse Mai Selvbetjening [[Leverandører kan selv  teste om deres kode samsvarer_del 2]] 2026
+title: 05/26- HelseID. Selvdeklarasjon som en del av flyten
+type: text/vnd.tiddlywiki
+
+For å gjøre kodegjennomgangen med utviklingsteamet i HelseID mer effektiv har vi automatisert mer av flyten før produksjonssetting. Det er satt fokus på punktene i sikkerhetsprofilen og krav om gjennomført samsvarstest og selvdeklarering i forkant av kodegjennomgangen. 
+• Ved produksjonssetting av klientsystemer kreves selvdeklarasjon av HelseIDs sikkerhetsprofil
+• Samsvarstesten er nå et steg i produksjonssettingsflyten

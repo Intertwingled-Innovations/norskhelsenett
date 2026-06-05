@@ -1,0 +1,40 @@
+created: 20250211144250521
+modified: 20250318142344154
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Styring Ekstern tjeneste]] 2025 Januar [[Verdikjede e-resept]]
+title: 01 E-resept verdikjede - hovedtrekk og endringer januar 2025
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+* Vi jobber videre med støtte til Helseplattformen, Helse Nord/DIPS og Pridok for å avklare krav til utvikling av funksjonalitet for PLL og eMD. 
+
+* Det jobbes også med andre og mindre omfattende godkjenningsprosesser for 2 nye nettbandasjister (Coloplast og Norengros), en ny nettutleverer (Receptum) samt EPJ-løsningen til Aidn. 
+
+* Gjennomført demo av PLL-funksjonalitet i Pridok som forberedelse til akseptansetest i starten av måneden. Selve akseptansetesten startet i slutten av måneden. 
+
+* Helsedirektoratet har engasjert A2 og Safetec for å undersøke hendelsen med doseringsfeil i juni 2024. Det gjøres intervjuer og hentes informasjon fra flere aktører i verdikjeden. Hdir ønsket også deltagelse fra NHN. Vi ba om og fikk spørsmål skriftlig da dette er komplisert og vi ønsket å ha kontroll på det som ble skrevet uten å måtte gå mange runder med korrigeringer. I tillegg ba de om en del informasjon om e-resept og interne prosesser. Skriftlig svar levert 8.1. I tillegg en runde med oppfølgingsspørsmål som ble svart ut skriftlig 21.1 med kommentar fra NHN om at noen av spørsmålene ble vurdert som utenfor formålet "læring og forbedring" tilknyttet selve hendelsen. Rapport skal foreligge innen 1.mars. 
+
+* I januar ble det oppdaget en ny feil/major incident ved bruk av kortdoser i doseringsinformasjon. Verdikjede e-resept følger opp mot leverandøren og Hdir (som data- og helsefaglig ansvarlig). Feilretting pågår. 
+
+* Reseptformidler-teamet og team verdikjede e-resept jobber sammen om å innføre nye valideringer av data som sendes til RF. Dette for å øke kvaliteten i e-resept. 
+
+* Verdikjede e-resept deltar i arbeidet med tilpasning til EHDS og HelseNIM legemiddel. 
+
+* Det pågår et prosjekt i regi av Hdir etter oppdrag fra HOD for å innføre ny egenandelsmodell for resepter fra 1.1.26. Det vil være behov for meldingsendringer og kan innebære forskriftsendring (forskrifter om standarder og nasjonale e-reseptløsninger) siden alle meldinger er forskriftsfestet ned på feltnivå. Hdir som fortolkningsansvarlig må gjøre denne vurderingen. 
+
+
+! Prognose på penger og ressurser
+Finansiering: Forskriftsfestede midler nasjonale e-helseløsninger, e-resept
+
+* Timepådrag - Underforbruk på godkjenningsprosessen pga fravær og lavere timeantall enn budsjettert fra ressurser utenfor teamet.     
+
+* Avsluttet rekrutteringsprosess for ressurs som skal erstatte innleid konsulent hvor oppdraget utløper til sommeren fordi vi ikke lykkes med å finne egnede kandidater. Må trolig ut med nytt anbud for høsten, men ser også etter løsninger internt. 
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark4c89bd5ada01ce3dc213">Oversikt E-resept verdikjede (Power BI)</a>
+
+
+
+

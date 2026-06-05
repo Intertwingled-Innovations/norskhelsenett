@@ -1,0 +1,34 @@
+created: 20260202120216352
+modified: 20260302071502245
+revision: 0
+tags: 2026 [[Integrasjon- og støttesystemer]] Integrasjonstjenesten Styring [[Styring Intern tjeneste]] Januar
+title: 1 Integrasjon- og støttesystemer - hovedtrekk og endringer januar 2026
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer januar
+
+* Jobbet med avvikling junta for DTS og plan for avvikling flow modulene
+* Forbedringer i SAKU for KD og leveranseteam
+* Workshop/Kickoff for Statistikk og måling
+* Forbedringer i SAKU på vegne av KD: 
+ - Forbedret visning av innkommende saker
+ - Enklere å velge e-post mottakere
+ - Multi-action for spam/slette saker
+ - Begrense tilgang til innkommende (Personvern sak)
+ - Støtte for vedlegg for integrasjon mellom ESM og SAKU
+ - Forbedret søk i SAKU,
+ - Elastic search i test.
+* Forbedret for leveranseteam; 
+ - Varsel til leveranseteam i Slack ved nye saker på gitt tjeneste (webhook)
+* Arbeid for DTS (Hjelpe for avvikling av junta for DTS)
+- Utvikling for å erstatte Junta for DTS
+- apper i "Pub1".
+- Uttrekk av samband i Junta,
+- Selvbetjening for sortering av endring på samband for å se hva som sist er endret ifbm migrering.
+- Mer informasjon i sambandsvisning i SAKU-tech
+
+!Prognose på penger og ressurser
+
+Finansiering: Medlemsavgiften.
+
+Oversikt Integrasjon- og støttesystemer (Power BI): https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ad6307c59006ac4e200e?experience=power-bi&bookmarkGuid=Bookmark6966c46e3cd6605ce815

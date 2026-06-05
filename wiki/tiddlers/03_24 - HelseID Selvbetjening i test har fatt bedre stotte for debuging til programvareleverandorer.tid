@@ -1,0 +1,8 @@
+created: 20240821134834179
+modified: 20260430093446815
+revision: 0
+tags: [[Tilby verktøy som effektiviserer og kvalitetssikrer bruken av HelseID]] Leveranse Mars 2024 Selvbetjening
+title: 03/24 - HelseID Selvbetjening i test har fått bedre støtte for debuging til programvareleverandører
+type: text/vnd.tiddlywiki
+
+HelseID Selvbetjening lar programvareleverandører se en helndelseslog for sine systemer i test, slik at de selv får bedre forståelse for og hjelp i feilsøkingsprosessen mens de utvikler en HelseID-integrasjon. Dette reduserer behovet for å spørre om hjelp fra NHN, og øker fremdriften hos den enkelte leverandør. 

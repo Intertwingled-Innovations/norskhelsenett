@@ -1,0 +1,14 @@
+created: 20260216112116747
+modified: 20260216112309090
+revision: 0
+tags: Kundesenteret 2026 Målsetting
+title: Tilgjengeliggjøre statistikk om brukerstøttesaker pr tjeneste
+type: text/vnd.tiddlywiki
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

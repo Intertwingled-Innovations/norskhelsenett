@@ -1,0 +1,39 @@
+created: 20240430103748314
+modified: 20240513104040387
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] Reseptformidleren April [[Styring Ekstern tjeneste]]
+title: Reseptformidleren - hovedtrekk og endringer april
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+Timepådraget for utvikling og test er iht plan og det er god fart i leveransene.
+
+Reseptformidleren tar nå i bruk Personvernkomponenten (PVK) slik at gammel løsning kan avvikles hos Helsenorge og reseptformidleren henter da personverninnstillinger på samme måte som øvrige tjenester i samhandlingsplattformen. Dette er også et tiltak som er beskrevet til Datatilsynet.
+
+Ny administrasjonsklient der vesentlige svakheter ift sikkerhet er håndtert, er i bruk i alle testmiljøene. Innføring i produksjonsmiljøet er nært forestående og dette blir den første komponenten i reseptformidleren som kjører i privat sky med Kubernetes. Også før driften av reseptformidleren er flyttet til NHN vil denne administrasjonsklienten brukes til administrasjonsoppgaver av reseptformidleren i Tietoevry produksjon og QA. Kundesenteret blir brukere av denne klienten i tillegg til utviklere, testere og driftsteam. Kodebasen for denne klienten ligger i Milliways og bygg og deploy gjennomføres tilsvarende som for andre tjenester i NHN.
+
+Dette gir ikke bare et nytt og sikrere grensesnitt for administrasjon av aktører, det har også gitt oss verdifull læring om ny plattform (privat sky) og nye verktøy.
+
+Nye utviklingsaktiviteter i forbindelse med modernisering av reseptformidleren som har startet opp i april er rekvirent med HelseID. 
+
+
+
+! Prognose på penger og ressurser 
+
+Finansiering: Tjenesten blir belastet med fellestjenester som har finansiering via medlemsavgiften på 4,1 mnok, resterende finansiering er via forskriftsfestede midler på e-resept.
+
+Takten totalt sett er tilsvarende som for mars, vi ligger an til 10 mnok under budsjett. Dette skyldes reduksjon av kost til Buypass oppslag (ca 5 mnok), lavere intern timekost (ble redusert med 10%) utgjør ca 3,5 mnok og mindre felleskost ca 1,5 mnok.
+
+Utvikling og forvaltning er noe under budsjett. Flytting av reseptformidleren til NHN privat sky vil gå noe over blant annet siden flyttedato er skjøvet fra mai til september. Underforbruk på forvaltning kan omdisponeres til flytting ved behov.
+
+Drift er som planlagt med unntak av lavere lisenskost (Buypass).
+
+
+<a href="https://app.powerbi.com/groups/6931f38e-9db9-41f4-a143-ac9ee4a4719c/reports/a03232e0-bd45-4da2-b925-662e476d7ebd/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarkab9171eafbc4217a5bac">Oversikt Reseptformidleren (Power BI)</a>
+
+
+
+

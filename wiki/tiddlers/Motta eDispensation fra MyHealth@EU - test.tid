@@ -1,0 +1,13 @@
+TjenesteID: 40034
+created: 20260222154749347
+modified: 20260414123728953
+revision: 0
+tags: Reseptformidleren 2026 Resultat [[MyHealth@EU ePrescription og eDispensation - test]]
+title: Motta eDispensation fra MyHealth@EU - test
+type: text/vnd.tiddlywiki
+
+Motta en utleveringsmelding fra apotek i EU via MyHealth@EU portalen, oversette denne til en M10 og sikre at gjenværende mengde oppdateres.
+
+M10, M8 og M6 skal genereres etter norske regler og sikre at informasjon om hva som er utlevert på resepten i et annet EU land vises korrekt i en "norsk" EPJ.
+
+Dette gir økt pasientsikkerhet og økt frihet for innbygger.

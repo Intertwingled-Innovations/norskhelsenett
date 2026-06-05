@@ -1,0 +1,20 @@
+created: 20240128121923363
+modified: 20240801110427294
+revision: 0
+tags: Domene [[Divisjon Helsepersonell]] [[Domene Samhandlingsplattform]]
+title: Domene Samhandlingsplattform
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av domene
+
+https://confluence.nhn.no/display/SAM/Domene+samhandlingsplattform
+
+! Målsettinger 2024
+
+<<list-links filter:"[tag[Målsetting]tag<currentTiddler>]">>
+
+! Målsettinger for underliggende eksterne tjenester i 2024
+<<NHN-current-liste-liste-levert type:"Ekstern Tjeneste" undertype:"Målsetting" aar:"2024">>
+
+! Team
+<<list-links filter:"[tag[Team]tag[Domene Samhandlingsplattform]]">>

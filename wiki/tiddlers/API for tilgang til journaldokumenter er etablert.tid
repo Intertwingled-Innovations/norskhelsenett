@@ -1,0 +1,12 @@
+created: 20250707101930103
+modified: 20260330070845616
+revision: 0
+tags: [[Kjernejournal Pasientens journaldokumenter]] 2024 [[Målsetting for pasientens journaldokumenter: Helsevirksomheter skal kunne konsumere journaldokumenter direkte via API]] Leveranse Desember [[Resultat for pasientens journaldokumenter: Helsevirksomheter skal kunne konsumere journaldokumenter direkte via API]]
+title: API for tilgang til journaldokumenter er etablert
+type: text/vnd.tiddlywiki
+
+! Mål
+* Helsevirksomheter som har behov for å hente journaldokumenter fra andre helsevirksomheter skal kunne velge om dette gjøres via kjernejournal portal eller direkte via API. NHN skal derfor etablere et REST-basert API som gjør det mulig å lage direkte integrasjon fra fagsystem til API.
+
+! Levert
+* REST-API for konsumering av journaldokumenter er etablert og produksjonssatt. Aidn er første leverandør som tar i bruk API'et og tilgjengeliggjør dermed eksterne journaldokumenter i første omgang til helsepersonell i Vestvågøy kommune.

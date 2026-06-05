@@ -1,0 +1,16 @@
+created: 20260518184208362
+modified: 20260523173043952
+revision: 0
+tags: [[Helsenettet.no og Medlemstjenesten]] Målsetting 2026
+title: 01 Medlemmer i Helsenettet har oversikt og innsyn, og kan enkelt administrere sitt medlemskap i Helsenettet (Helsenettet.no)
+type: text/vnd.tiddlywiki
+
+Helsenettet.no er en medlemsportal og en digital markedsplass for medlemmer i Helsenettet. Her kan brukere får oversikt og innsyn, og administrere virksomhetens avtaler, tjenester og systemtilganger. Videre skal brukere kunne få direkte tilgang til andre selvbetjeningsløsninger i Norsk helsenettet, for eksempel til HelseID selvbetjening. 
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+!! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

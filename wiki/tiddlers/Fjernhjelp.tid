@@ -1,0 +1,18 @@
+TjenesteID: 40072
+created: 20240128165633110
+modified: 20260409110059944
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] 2026 Fjernhjelp
+title: Fjernhjelp
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+Fjernhjelp gir tredjepartsleverandører tilgang til maskiner i Helsenettet, for å gjennomføre support- og driftsoppgaver, uten å være fysisk tilstede hos kunden.
+
+! Målsettinger
+
+[[Avvikling Fjernhjelp]]
+
+! Styring, 2026
+
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag<currentTiddler>]">>

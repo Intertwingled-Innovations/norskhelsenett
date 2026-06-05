@@ -1,0 +1,16 @@
+created: 20260508061601178
+modified: 20260508061904504
+revision: 0
+tags: Resultat 2026 [[Pasientens rekvisisjoner]] [[Målsetting for pasientens rekvisisjoner: Etablere en API-tjeneste for registrering og utlevering av rekvisisjoner]]
+title: Resultat for pasientens rekvisisjoner: Fastlegekontor i piloten skal ha signert ny medlemsavtale, bruksvilkår for tjenesten og ha delegert HelseID rettigheter til Dips
+type: text/vnd.tiddlywiki
+
+! Mål
+
+NHN skal sørge for at alle fastlegekontor som skal delta i utprøvingen har gjennomført følgende:
+* Signert nye medlemsvilkår
+* Signert bruksvilkårfor tjenesten
+* Delegert HelseID rettigheter til sone multitenant leverandører (spesifikt Dips AS)
+
+! Effekt sektoren
+* Fastlegekontorene er klart for utprøving

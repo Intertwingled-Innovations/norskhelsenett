@@ -1,0 +1,27 @@
+created: 20260504154935910
+modified: 20260504160924688
+revision: 0
+tags: [[Verdikjede e-resept]] 2026 Målsetting [[Resultat - GP - Godkjent AT for Coloplast]]
+title: Løpende test og godkjenning
+type: text/vnd.tiddlywiki
+
+Verdikjede e-resept gjennomfører test og godkjenning løpende for EPJ leverandører eller Apoteksystemer når disse trenger godkjenning for e-resept. De må også melde i fra til NHN når de har gjort endringer som kan påvirke verdikjede, og må da gjennomføre ny verdikjedetest. Gjennomføring av AT følger egen prosess.
+
+
+! Målsettinger
+!! 2026
+<<list-links filter:"[tag[Målsetting]tag<currentTiddler>]">>
+
+! Resultat
+!! 2026
+
+<<list-links filter:"[tag[Resultat]tag[2026]tag<currentTiddler>]">>
+
+
+! Leveranser
+!! 2026
+
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>
+
+
+

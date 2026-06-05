@@ -1,0 +1,51 @@
+created: 20240128082524338
+modified: 20260527130734324
+revision: 1
+tags: [[Norsk Helsenett SF]] Tiltak 2024 [[Tiltaket MyHealth@EU]] DigitalSamhandling
+title: Tiltaket MyHealth@EU
+type: text/vnd.tiddlywiki
+
+Målet med MyHealth@EU er å gi innbyggere og helsepersonell i Norge og EU tilgang til trygge digitale helse- og omsorgstjenester på tvers av landegrenser, ved at Norge får koblet seg til EU sin digitale infrastruktur for utveksling av helseopplysninger. I dag kan resepter og oppsummerte pasientopplysninger utveksles via MyHealth@EU. Flere nye tjenester, som utveksling av epikriser, laboratorieresultater og medisinske bilder, er planlagt i de kommende årene. Resultatet fra arbeidet med MyHealth@EU skal være å opprette en nasjonal tjeneste for norsk helsepersonell. Opprettelsen og utvidelsen av tjenesten skal skje stegvis, avhengig av øvrige nasjonale programmer og satsninger, og med bred involvering fra aktører i helse- og omsorgssektoren.
+
+! Effektmål og resultatmål
+
+* Norge er i stand til å motta og vise helsedata fra EU-borgere som oppholder seg i Norge gjennom MyHealth@EU-tjenesten
+* Norge har inngått ny avtale med EU for utvidelse av MyHealth@EU-tjenesten
+
+Norsk helsenett har ansvaret for teknisk utvikling, utprøving og innføring av løsningen MyHealth@EU som en nasjonal tjeneste i Norge. 
+
+!! Resultatmål for 2024
+* Gjennomføre formell Pre-Production Testing
+* Implementere autentiseringsløsning for pålogging (HelseID) 
+* Gjennomført kommunikasjonstiltak, bl.a. informasjonsside på web.
+
+!! Norsk helsenett sine oppgaver i 2024
+
+<<NHN-current-liste-levert type:"Oppgave" aar:"2024">>
+
+!! Leveranseplan 2024
+Leveranseplan sendt til HOD 14.2.2024: https://nhnkontor.sharepoint.com/:b:/r/sites/Samhandlingsplattformen/Shared%20Documents/Behovsteamet/Leveranseplan%202024/Leveranseplan%20til%20HOD%202024/Sendt%20HOD%20140224/Leveranseplan%201.1%202024%20til%20HOD%20140224.pdf?csf=1&web=1&e=ZGYhzo
+
+
+!! Rapportering leveranseplan 2024
+
+<<list-links filter:"[tag[2024]tag[Leveranse]tag[Rapportering leveranseplan]]">>
+
+!! Norsk helsenett sine oppgaver i 2025
+
+<<NHN-current-liste-levert type:"Oppgave" aar:"2025">>
+
+!! Leveranseplan 2025
+https://nhnkontor.sharepoint.com/:b:/r/sites/Samhandlingsplattformen/Shared%20Documents/Team%20Sats/Leveranseplan%202025/Endelig%20versjon/NHN%20leveranseplan%202025%20-%20Digital%20samhandling%201.0.pdf?csf=1&web=1&e=zMTSCS
+
+
+!! Rapportering leveranseplan 2025
+
+<<list-links filter:"[tag[2025]tag[Leveranse]tag[Rapportering leveranseplan]]">>
+
+! Styring
+!! 2024
+<<list-links filter:"[tag[Styring Tiltak]tag[2024]tag<currentTiddler>]">>
+
+!! 2025
+<<list-links filter:"[tag[Styring Tiltak]tag[2025]tag<currentTiddler>]">>

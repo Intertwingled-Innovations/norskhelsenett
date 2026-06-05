@@ -1,0 +1,37 @@
+TjenesteID: 40043
+created: 20260325085514697
+modified: 20260414092829637
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Styring Tiltak]] 2026 [[Tiltaket digitalt helsekort for gravide]] Mars [[Forretningsmessig endring:1]]
+title: 03 Digitalt helsekort for gravide - hovedtrekk og endringer mars 2026
+type: text/vnd.tiddlywiki
+
+<<list-links filter:"[tag[Tiltaket digitalt helsekort for gravide]tag[Tiltak]tag[2024]]">>
+
+! Hovedtrekk og endringer
+* API har vært i produksjon siden 22. mai 2025. Det samme gjelder Gravide tjenesten på helsenorge.
+* Aktører som har tatt i bruk tjenesten: 13 kommuner (helsestasjoner), 70 legekontor og 2 helseforetak
+* Pr. 11. april er det 558 aktive digitale helsekort, 927 gravide har avgitt samtykke. 
+* Kick-off for bredding av DHG ble gjennomført 11. feb 2026. Det er en betydelig økning av legekontor som har signert bruksvilkår og bestilt tjenesten i etterkant av dette.
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 1''
+
+Konsekvens av forretningsmessig endring: Breddingen har skutt fart etter DHG kick-off i februar. Det er nødvendig for å nå målet om 50% av alle fastleger innen utgangen av 2026, 50% av alle kommunale helsestasjon/jordmortjenester innen utgangen av 2026 og alle regionale helseforetak innen utgangen av 2026.
+
+
+! Prognose på penger og ressurser
+* Finansiering: Offentlig tilskudd, helsekort for gravide
+* Finansieringsramme på 14,6 mnok i 2026.
+* DIT har brukt 1.1 mnok av en total ramme på 6,1 mnok. 
+* DHP har brukt 2.4 mnok av en total ramme på 14,6 mnok (hvorav leverandørincentiver utgjør 8 mnok). 
+* Det er brukt 0.9 mnok på leverandørincentiver. Total ramme er 8.0 mnok.
+* Årsprognose pr. mars 13,3 mnok, runrate 11 mnd pr. mars 8,9 mnok. 
+
+! Leveranser
+* Både API'et for helsekort for gravide og Gravid-tjenesten på helsenorge er satt i produksjon
+* Kick-off for bredding av DHG er gjennomført
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark939bcb60b56e4d11e018">Oversikt Elektronisk helsekort for gravide (Power BI)</a>
+
+
+

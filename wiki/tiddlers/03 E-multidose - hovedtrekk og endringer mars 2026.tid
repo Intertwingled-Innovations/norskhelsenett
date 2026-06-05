@@ -1,0 +1,45 @@
+TjenesteID: 40024
+created: 20260325144712478
+modified: 20260603133036861
+revision: 1
+tags: 2026 [[Styring Ekstern tjeneste]] [[Divisjon Helsepersonell]] [[Forretningsmessig endring:1]] Mars [[Tiltaket Pasientens legemiddelliste 2026]] [[Team eMD]]
+title: 03 E-multidose - hovedtrekk og endringer mars 2026
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer
+E-multidose er en elektronisk melding som legen sender til Reseptformidleren for at pasienter som står på mage legemidler skal få sine medisiner pakket i multidoseposer. Dette er funksjonalitet i e-resept og inngår som en del av NHN sitt forvaltningsansvar. I tillegg har NHN nå et oppdrag via mandatet for PLL (digital samhandling) om å koordinere innføringen av e-multidose nasjonalt.
+
+MÅLSETTING
+
+* Ambisjon er 70% nasjonal innføring i 2026
+
+
+
+! Resultat
+!! 2026
+
+<<list-links filter:"[tag[Resultat]tag[2026]tag<currentTiddler>]">>
+
+
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 1''
+
+Konsekvens av forretningsmessig endring: 1
+
+
+! Prognose på penger og ressurser
+
+* Finansieringskilde: Offentlig tilskudd post 21 PLL Multidose. Ramme 2026 6,0 MNOK. 
+
+*Team eMD har 2,8 FTEer. Det er ikke ytterligere ressursbehov per i dag
+
+
+* Hvordan ligger vi an hittil i år opp i mot prognoser og planlagte oppgaver? - Etter plan
+* Årsprognose (pr. mars) 6,1 MNOK, Runrate 11 mnd (pr. mars) 6,0 MNOK - 
+
+
+
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=8edfed4ea6382d43a0a7">Oversikt E-resept Multidose (Power BI)</a>
+

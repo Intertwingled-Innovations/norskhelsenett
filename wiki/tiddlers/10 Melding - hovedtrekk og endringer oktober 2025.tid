@@ -1,0 +1,38 @@
+created: 20251112091303242
+modified: 20251112094342775
+revision: 0
+tags: Melding 2025 [[Styring Ekstern tjeneste]] [[Divisjon Helsepersonell]] Oktober
+title: 10 Melding - hovedtrekk og endringer oktober 2025
+type: text/vnd.tiddlywiki
+
+!Hovedtrekk og endringer
+* EDI 2.0: 
+
+** Sykehuspartner har med hell kjørt tester mot EDI 2.0, med sending/mottak og overvåkning. Vi forventer at de kommer på i løpet av første halvår 2026, men de har så langt ikke gitt en definitiv ETA. Vi vil med stor sannsynlighet kunne "slå av" de første  smtp/pop kontoene i den tradisjonelle EDI-riggen. Vi er i en god dialog med Sykehuspartner om hvordan kjente avvik i helseforetakene skal håndteres.
+
+** "Eksternt" web for monitorering / avvikshåndtering er videreutviklet, noe som gjør brukere (leverandører) som sender meldinger i stand til å ha full oversikt over meldinger som har avvik/feil, leveringshistorikk, tidsforløp, og annet .
+
+
+** Kapabilitetsregister er nå prioritert opp, og kommer til å tilbys til alle aktører som skal sende meldinger over EDI 2.0. Dette vil gjøre: 
+
+*** Sendere i stand til å finne ut at meldinger av en gitt type ikke kommer til å aksepteres av tiltenkt mottaker FØR meldingen sendes. 
+
+*** Oss i stand til å skjerme mottakere fra gitte meldinger, og automatisk sende negativ transportkvittering når vi vet at mottaker ikke har støtte for meldingen. Dette har stor verdi for leverandører som for eksempel ikke har kapabilitet for mer enn kanskje én eller to meldingstyper. Eksempelvis Aidn, som stegvis bygger støtte for arbeidsflyt i en smidig prosess.
+
+** Oppslag mot virksomhetsregisteret er nå implementert i meldingstjener/EDI 2.0 for å kunne håndtere meldinger til en HerID som ikke ligger direkte under HelseID sin "Ansvarlig Organisasjon". Dette har verdi for f.eks. kommuner, som ikke nødvendigvis har sine tjenester direkte under ansvarlig organisasjon. Konkret vil dette i første omgang muliggjøre "bekymringsmelding til fastlege fra barnevernstjenesten" (i regi av KS).
+
+
+
+* Deft (storfiltjeneste): 
+
+** Helse Vest er i ferd med å skrive klient mot denne for å utveksle store datafiler. Ingen ny status i oktober.
+ 
+* Avvikling ftps: Foreløpig nedprioritert. Ingen nye brukere slippes inn. FHI prioriterer ikke innsats for å komme bort fra plattformen. 
+
+!Prognose på penger og ressurser
+
+* EDI2.0 blir finansiert over post 70, utgjør ca. 5 mnok i 2026. Det vil være dobbel drift i 5-6 år fremover og vil utgjøre en totalkostnad på ca 30 mnok
+
+* Totale drift- og forvaltningskostnader i prognosen er innenfor tildelt ramme. Styrer godt innenfor.
+
+<a href="https://app.powerbi.com/groups/6931f38e-9db9-41f4-a143-ac9ee4a4719c/reports/a03232e0-bd45-4da2-b925-662e476d7ebd/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarke7bc61a8188a81da0ffc">Oversikt Melding (Power BI)</a>

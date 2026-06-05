@@ -1,0 +1,15 @@
+created: 20240123125232268
+modified: 20250120082756831
+revision: 0
+tags: [[Tiltaket pasientens journaldokumenter]] 2024 Oppgave [[Team Dokumentdeling]] Levert [[Team Sats]]
+title: Gjennomføre utprøving av tiltaket pasientens journaldokumenter
+type: text/vnd.tiddlywiki
+
+!! NHN Oppgaver 2024
+
+Norsk helsenett skal koordinere deltakerne i utprøvingen og tilpasse NHN sine løsninger slik at utprøving gjennomføres
+
+!! Leveranser:
+
+
+<<list-links filter:"[tag[Leveranse]tag[2024]tag<currentTiddler>]">>

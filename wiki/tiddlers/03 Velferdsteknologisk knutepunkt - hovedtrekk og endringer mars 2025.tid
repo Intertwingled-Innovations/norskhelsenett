@@ -1,0 +1,26 @@
+created: 20250411071951156
+modified: 20260508101345117
+revision: 0
+tags: [[Velferdsteknologisk knutepunkt]] [[Divisjon Helsepersonell]] [[Styring Ekstern tjeneste]] 2025 Mars
+title: 03 Velferdsteknologisk knutepunkt - hovedtrekk og endringer mars 2025
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+* Dialog/ samarbeid KS (innføringsnettverk): Arbeidet med å rulle ut VKP fortsetter stort sett som planlagt. Høy aktivitet.
+* Signaler på at antall kommuner som "står i kø og venter" ikke er så stor som forventet
+* Forbedringer på forvaltning
+** Leveranseteam opplært i ROS-arbeid på Azure DevOps - arbeid med å lempe over fra Confluence starter over påske
+** Utviklere har team-rep på rotasjon som bidrar inn i innføringløp og som er kontaktpunkt for alt operativt som skjer fra dag til dag
+** Forbedret rutine for fakturering, prisjusteringer og prisinfo til kommuner under arbeid
+* Vingmed (medisinskap for sykehjem) har vært i løp med VKP for integrasjon med Helseplattformen (Selbu kommune). Viser seg at dette ikke er riktig type system og de må direkteintegrere mot Helseplattformen. Mulig støy da krav om VKP i utgangspunktet ble ført av Helseplattformen. Burde vært oppdaget tidligere at dette ikke er riktig system.
+
+! Prognose på penger og ressurser
+*Finansiering: Medlemsinntekt
+* Ramme på 26 MNOK - oppjustert til 30 MNOK
+* Signaler på at nedjustering av driftskost kommer (allmenn sky)
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarkfeea3d895ff89eaee682">Oversikt VKP (Power BI)</a>
+
+

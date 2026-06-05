@@ -1,0 +1,12 @@
+created: 20240920083345440
+modified: 20240925114216546
+revision: 0
+tags: [[Sentral forskrivningsmodul]] Leveranse [[Team SFM]] [[Stabilisering og forbedring av tjenesten for å kunne håndtere produksjon for alle fastlegekontorer]] [[Resultat SFM: Stabilisering og forbedring av tjenesten for å kunne håndtere produksjon for alle fastlegekontorer]] September 2024
+title: Leveranse SFM: FM api innkapsling av SFM
+type: text/vnd.tiddlywiki
+
+Mål: Stabilisering og forbedring av tjenesten for å kunne håndtere produksjon for alle fastlegekontorer
+
+Levert:
+
+*Det er laget et FM-API som FM kunder kan bruke for å nå SFM. Det er altså en innkapsling av SFM-apiet

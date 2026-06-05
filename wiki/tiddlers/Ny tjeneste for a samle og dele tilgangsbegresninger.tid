@@ -1,0 +1,20 @@
+TjenesteID: 40061
+created: 20260407112444446
+modified: 20260409123707999
+revision: 0
+tags: [[Personvern og tilgangsstyring]] Målsetting 2026
+title: Ny tjeneste for å samle og dele tilgangsbegresninger
+type: text/vnd.tiddlywiki
+
+Utvikling og etablering av ny tjeneste for å samle og dele tilgangsbegresninger mellom virksomhetene i helse- og omsorgssektoren, nasjonale e-helseløsninger og Helsenorge. Tjenesten skal kunne understøtte alle tilgangsbegrensinger relevante for de nasjonale samhandlingsløsningene, herunder nekting, utsatt innsyn, reservasjon, skjerming og sperring, samt at tilgangsbegresningene skal kunne settes i lokale fagsystemer og at personverninnstillinger skal kunne settes av innbygger selv på Helsenorge.
+
+Løsningen skal i første omgang etableres for Pasientens prøvesvar, men senere breddes til øvrige nasjonale samhandlingsløsninger. Løsningen innebærer et API mot helsevirksomhetene med sine leverandører og en konsolidering av tilgangsbegresninger satt av helsepersonell og personverninnstillinger innbygger selv setter på Helsenorge. Løsningen omtales internt som "PAC".
+
+!! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>tag[2026]]">>
+
+!! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>tag[2026]]">>
+ 

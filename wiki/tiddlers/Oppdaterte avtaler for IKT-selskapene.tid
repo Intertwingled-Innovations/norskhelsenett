@@ -1,0 +1,16 @@
+created: 20240801120127039
+modified: 20240816115316521
+revision: 0
+tags: [[Støtte og hjelp til RHF]] 2024 Resultat
+title: Oppdaterte avtaler for IKT-selskapene
+type: text/vnd.tiddlywiki
+
+Gjennomføre en oppdatering av Kundeavtalene som ble signert med de ulike IKT-selskapene i 2022.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

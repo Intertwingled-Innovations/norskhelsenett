@@ -1,0 +1,24 @@
+created: 20251128110451689
+modified: 20251128112536680
+revision: 0
+tags: 2025 [[Integrasjon- og støttesystemer]] Integrasjonstjenesten [[Styring Intern tjeneste]] Styring November
+title: 11 Integrasjon- og støttesystemer - hovedtrekk og endringer november 2025
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer november
+
+* VI HAR STENGT TILGANGER TIL JUNTA 27 NOVEMBER!
+* Holder åpen en API bruker samt noen enkeltpersoner i DTS ennå noen dager.
+* Bistand DTS slik at DTS kan opprettholde sine tjenester uavhengig av Junta.
+* Bistand DTS med å flytte ut teknisk fane i Junta inn til DTS egne applikasjoner.
+* EDI kontoer flyttet ut fra Junta til egen løsning. Overlevert til Team Melding i DHP.
+* Laget nytt mailmottak i SAKU nå som Junta ikke lengre tar imot mail. KD største bruker.
+* Flytter autorativ kilde for vaktroller fra Junta til ESM. Noen vaktroller ikke flyttet (AMK) pga mangler i ESM.
+* Justeringer på integrasjon mellom SAKU og ESM
+* Integrasjon via Integrasjonstjenesten mellom SAKU og ESM i PROD. Dette er saker fra KD til OS (med flere). Første integrasjonen på Integrasjonstjenesten i prod!
+
+!Prognose på penger og ressurser
+
+Finansiering: Medlemsavgiften.
+
+Oversikt Integrasjon- og støttesystemer (Power BI): https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ad6307c59006ac4e200e?experience=power-bi&bookmarkGuid=Bookmark6966c46e3cd6605ce815

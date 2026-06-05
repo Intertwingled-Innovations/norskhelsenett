@@ -1,0 +1,11 @@
+created: 20241220114114219
+modified: 20260505053852589
+revision: 0
+tags: [[Tjenesten HelseID skal lukke alle risikoelementer med risikonivå alvorlig]] [[Autentisering og autorisasjon]] 2024 2025 Februar
+title: 12/24 -HelseID bygger Minimal Viable Product (MVP) for samsvarstesting
+type: text/vnd.tiddlywiki
+
+HelseID ønsker å automatisere deler av kodegjennomgangen for godkjenning av APIer og klientsystemer med fokus på HelseID-implementasjon
+
+*Arbeid med automatisering av kodegjennomgang for HelseID-implementasjon
+* Conformance-testing i henhold til sikkerhetsprofilen for HelseID

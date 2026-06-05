@@ -1,0 +1,14 @@
+created: 20250120090231624
+modified: 20250120090804201
+revision: 0
+tags: [[I samarbeid med Helsedirektoratet utarbeide en samtykkeløsning til bruk i testen, som gjør det mulig å både gi og trekke tilbake samtykke]] Leveranse 2024 Desember
+title: Funksjonalitet utviklet slik at den gravide kan samtykke på Helsenorge
+type: text/vnd.tiddlywiki
+
+!! Hva er levert?
+
+Det er utviklet funksjonalitet for at den gravide kan samtykke på Helsenorge. Samtykke kan til enhver tid trekke samtykket. Leverandørene til helsepersonellet integrerer seg mot dette, slik at helsepersonell ser oppdatert status på samtykke
+
+!!Hvilken nytte til sektor?
+
+Samtykkeløsningen sikrer juridisk grunnlag for å samle og dele. Løsningen sikrer at den gravide får tilstrekkelig informasjon, kan ta stilling til samtykke og utføre dette digitalt. Informasjonen er oppdatert i helsepersonell sine løsninger

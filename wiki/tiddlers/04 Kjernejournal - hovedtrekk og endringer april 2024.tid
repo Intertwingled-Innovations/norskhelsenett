@@ -1,0 +1,33 @@
+created: 20240430103042520
+modified: 20250505062433795
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] Kjernejournal April [[Styring Ekstern tjeneste]]
+title: 04 Kjernejournal - hovedtrekk og endringer april 2024
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+!! Drift og produksjon
+Økte kostnader for Drift og produksjon skyldtes en økning i optimal lagring pga nyinnkjøpte og driftsatte databaseservere som ventet på å bli nye databaseservere for kjernejournal. Det betyr en dobbeltkostnad til data er migrert fra gamle databaser til nye og de gamle blir slått av. Dette vil utføres i starten av mai. Dette ble ikke vurdert ifm budsjett 2024. Det har også kommet ca 5% økning i total infrastruktur kost fra 2023 til 2024.
+
+! Prognose på penger og ressurser
+
+!! Portal
+Forvaltning av kjernejournal portal er iht budsjett. 
+
+!! Infotjenester
+Årsprognosen for KJ infotjenester ligger 19,3 mnok under budsjett. 
+
+!!! Ressurser
+Kollektivet: Vi har signert to nye ressurser til Kollektivet i april med oppstart august/september. I tillegg vil Ola Haldor Hådi begynne hos oss i august.
+KJ infotjenester: Vi har forespurt APT om ekstra driftsressurs da KJ infotjenesteteamet mener dette vil øke hastigheten på leveransene. Ressursen vil å så fall finansieres av KJ rammen.
+
+<a href="https://app.powerbi.com/groups/6931f38e-9db9-41f4-a143-ac9ee4a4719c/reports/a03232e0-bd45-4da2-b925-662e476d7ebd/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarkb92368e492600e8b0b92">Oversikt Kjernejournal total (Power BI)</a>
+
+<a href="https://app.powerbi.com/groups/6931f38e-9db9-41f4-a143-ac9ee4a4719c/reports/a03232e0-bd45-4da2-b925-662e476d7ebd/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark09c84f60ca0c0d0dee2a">Oversikt Kjernejournal Infotjenester (Power BI)</a>
+
+<a href="https://app.powerbi.com/groups/6931f38e-9db9-41f4-a143-ac9ee4a4719c/reports/a03232e0-bd45-4da2-b925-662e476d7ebd/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarke23fe3d1eccd55765405">Oversikt Kjernejournal portal (Power BI)</a>
+
+

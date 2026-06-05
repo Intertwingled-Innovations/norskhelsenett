@@ -1,0 +1,9 @@
+TjenesteID: 40033
+created: 20260318114449369
+modified: 20260409113623323
+revision: 0
+tags: [[Beredskapsportal etableres]] 2026 [[Kjernejournal portal]] Resultat
+title: Tilgang til helsedata i en beredskapssituasjon
+type: text/vnd.tiddlywiki
+
+En beredskapsportal har sin egen innlogging, slik at den blir uavhengig av innlogging via EPJ. Her kan vi legge inn tjenester som ønsker å bli tilgjengelige i en beredskapssituasjon.

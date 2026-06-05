@@ -1,0 +1,31 @@
+TjenesteID: 40055
+created: 20260526081838107
+modified: 20260526083727682
+revision: 1
+tags: [[Divisjon Helsepersonell]] 2026 Utviklerportalen [[Intern tjeneste]] [[Styring Intern tjeneste]] Mai
+title: 05 Utviklerportalen - hovedtrekk og endringer mai 2026
+type: text/vnd.tiddlywiki
+
+<<list-links filter:"[tag[]tag[Tiltak]]">>
+
+! Hovedtrekk og endringer
+
+* Ny organisering av Utviklerportalen annonsert i Åpen fredag. Ingen nye større oppgaver blir startet på nå. Dette i påvente av nytt team kommer på plass.
+* Noen mindre endringer mhp pipeline kjøring
+* bugfix på hvordan readme.md blir rendret. Sistnevnte hadde et problem med vising av eventuelle refererte bilder, om den ble rendret fra spesiell plass.
+
+
+MÅLSETTING
+
+
+
+RESULTAT
+
+
+
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 1''
+
+Konsekvens av forretningsmessig endring: Ingen.
+
+

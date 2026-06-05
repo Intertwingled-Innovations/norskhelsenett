@@ -1,0 +1,29 @@
+created: 20250318071251633
+modified: 20250819115605951
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Tiltaket MyHealth@EU]] [[Styring Tiltak]] 2025 [[Tiltaket MyHealth@EU 2025]] Juni
+title: 06 MyHealth@EU - hovedtrekk og endringer juli 2025
+type: text/vnd.tiddlywiki
+
+<<list-links filter:"[tag[Tiltaket MyHealth@EU]tag[Tiltak]tag[2024]]">>
+
+! Hovedtrekk og endringer
+
+Prosjektet er fortsatt på plan. De viktigste aktivitetene siste periode har vært:
+
+
+
+*Pilotaktiviteter. Bodø og Stjørdal er våre pilotkommuner. Vi har fått formell godkjenning fra EU for å kjøre produksjonstesting med tjenesten Patient Summary. Integrasjonen av vår Søk- og visningsmodul i EPJsystemet til CGM pågår og er forventet komme i en release i løpet av høsten. Fram til da kan pilotkommunene benyttes sef av en frittstående påloggingsløsning. 
+
+*Gjennomføring av Production Evvironment Test (PET) med Tsjekkia, Finland og Portugal har pågått i juni og juli. "Go Live" med disse tre landene forventes i Q3.
+
+! Prognose på penger og ressurser
+
+
+*Finansiering: I 2025 vil vi motta ca 2 MNOK fra EU. Det resterende finansieres av midler fra HOD, samt overføringer fra 2024.
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark11acc8bf8ba654e01398">Oversikt MyHealth@EU (Power BI)</a>
+
+
+
+

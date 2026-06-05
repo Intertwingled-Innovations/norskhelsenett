@@ -1,0 +1,12 @@
+created: 20240123150825204
+modified: 20240815120511993
+revision: 0
+tags: [[Evne å spore innsats og kost direkte mot NHN sine tjenester]] Resultat 2024
+title: Ta i bruk nytt supportsystem som tillater registrering av medgått tid
+type: text/vnd.tiddlywiki
+
+Nytt system tilgjengeliggjør infomrasjon om:
+
+* medgått tid pr sak => sum tid pr tjeneste
+* når på døgnet benyttes brukerstøtte - dyrere på kveld - opp mot SLA pr tjeneste
+* informasjon blir tilgjengelig i rapporter/dashboard ved et tastetrykk

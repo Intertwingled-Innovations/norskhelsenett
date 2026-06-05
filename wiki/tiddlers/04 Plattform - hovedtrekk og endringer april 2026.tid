@@ -1,0 +1,27 @@
+TjenesteID: 40046
+created: 20260428081032424
+modified: 20260520113329623
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Styring Intern tjeneste]] Plattform 2026 April
+title: 04 Plattform - hovedtrekk og endringer april 2026
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer
+
+* Observability stack for leveranse av metrikker til "Statistikk og Måling". 
+
+Forretingsmessig endring: 1
+
+! Prognose på penger og ressurser
+
+* Finansieringskilde: Dette er en intern tjeneste som fordeles ut på de eksterne tjenestene i divisjon Helsepersonell.
+* Kostnadsbudsjett 2026: 22,3 MNOK
+* Hvordan ligger vi an hittil i år opp i mot prognoser og planlagte oppgaver?
+* Årsprognose (pr. april) 22,1 MNOK. Runrate 19,4 MNOK
+* Prognose ligger på budsjett, til tross for 3,0 mnok høyere plattformkostnader, so oppveies av lavere timekostnader.
+* Status ressursbehov/kapasitet?Ingen endringer er forventet for drift av det etablerte Kafka clusteret.
+
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ad6307c59006ac4e200e?experience=power-bi&bookmarkGuid=Bookmark0362f6869c5590a01680">Oversikt Plattform (Power BI)</a>
+

@@ -1,0 +1,18 @@
+created: 20260412121834259
+modified: 20260412121935463
+revision: 0
+tags: Målsetting 2026 [[Pasientens rekvisisjoner]]
+title: Målsetting for pasientens rekvisisjoner: Gjennomføre en utprøvingspilot
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+
+Pasientens rekvisisjoner skal prøves ut gjennom å sette tjenesten i produksjon i en region eller begrenset område.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

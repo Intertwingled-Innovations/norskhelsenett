@@ -1,0 +1,54 @@
+TjenesteID: 40055
+created: 20260604112655339
+modified: 20260604112759431
+revision: 1
+tags: [[Norsk Helsenett SF]] 2026 [[Satsning for fart]] [[Satsning for fart 2026]]
+title: Pasientens planer
+type: text/vnd.tiddlywiki
+
+Etablere Pasientens rekvisisjoner som en digital løsning for formidling av rekvisisjoner mellom rekvirent og prøvetaker. 
+
+
+! Målsettinger
+!! 2026
+
+<<list-links filter:"[tag[Målsetting]tag[2026]tag<currentTiddler>]">>
+
+
+
+! Resultat
+!! 2026
+
+<<list-links filter:"[tag[Resultat]tag[2026]tag<currentTiddler>]">>
+
+!! 2025
+
+<<list-links filter:"[tag[Resultat]tag[2025]tag<currentTiddler>]">>
+
+
+
+! Leveranser
+!! 2026
+
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>
+
+!! 2025
+
+<<list-links filter:"[tag[Leveranse]tag[2025]tag<currentTiddler>]">>
+
+
+! Styring
+!! 2026
+!!! Ekstern tjeneste
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag<currentTiddler>]">>
+
+!!! Tiltak
+<<list-links filter:"[tag[Styring Tiltak]tag[2026]tag<currentTiddler>]">>
+
+!! 2025
+!!! Ekstern tjeneste
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2025]tag<currentTiddler>]">>
+
+!!! Tiltak
+<<list-links filter:"[tag[Styring Tiltak]tag[2025]tag<currentTiddler>]">>
+

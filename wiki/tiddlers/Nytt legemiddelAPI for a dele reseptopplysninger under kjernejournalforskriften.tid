@@ -1,0 +1,14 @@
+created: 20240508074523196
+modified: 20260101155612809
+revision: 0
+tags: Resultat [[Modernisering av reseptformidleren]] 2026
+title: Nytt legemiddelAPI for å dele reseptopplysninger under kjernejournalforskriften
+type: text/vnd.tiddlywiki
+
+Det skal etableres en ny løsning for deling av reseptopplysninger og PLL som skal erstatte dagens løsning for deling av reseptinformasjon og PLL med kjernejournal. Andre aktører som har behov for å lese reseptinformasjon skal kunne bruke samme API, for eksempel Helsenorge for visning til innbygger.
+
+Komponenter i samhandlingsplattformen som tas i bruk:
+- skrive til Navet (Kafka) for deling av resetopplysninger 
+- lese persontjenesten fra Navet (Kafka)
+- lese personverninnstillinger fra Navet (Kafka)
+- skrive innsynlogg til Navet (Kafka)

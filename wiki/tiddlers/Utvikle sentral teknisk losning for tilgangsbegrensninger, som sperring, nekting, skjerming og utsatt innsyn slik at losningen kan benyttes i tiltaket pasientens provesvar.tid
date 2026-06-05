@@ -1,0 +1,19 @@
+created: 20240128081934261
+modified: 20250131102448191
+revision: 0
+tags: 2024 [[Leveranseplan for Pasientens prøvesvar i 2024]] [[Tiltaket pasientens prøvesvar]] Oppgave
+title: Utvikle sentral teknisk løsning for tilgangsbegrensninger, som sperring, nekting, skjerming og utsatt innsyn slik at løsningen kan benyttes i tiltaket pasientens prøvesvar
+type: text/vnd.tiddlywiki
+
+!! NHN oppgave i 2024
+Helsepersonell skal kunne sette tilgangsbegrensninger på prøvesvar, spesifikt nekte pasienten innsyn, utsette innsyn for pasienten, samt sette sperre for tilgang fra helsepersonell.
+
+
+!! Status
+En del av funksjonaliteten som trengs er levert.  
+Gjennom arbeidet med tiltaket har vi avdekket flere områder som må håndteres, og arbeidet fortsetter i 2025.
+
+
+!! Leveranser
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>
+

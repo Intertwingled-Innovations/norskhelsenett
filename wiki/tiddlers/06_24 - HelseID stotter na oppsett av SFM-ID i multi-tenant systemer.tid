@@ -1,0 +1,8 @@
+created: 20240821101743269
+modified: 20240821123726003
+revision: 0
+tags: [[Det skal være mulig å sikre helsedata i multi-tenant systemer med HelseID]] [[Autentisering og autorisasjon]] Juni 2024 Leveranse
+title: 06/24 - HelseID støtter nå oppsett av SFM-ID i multi-tenant systemer
+type: text/vnd.tiddlywiki
+
+HelseID v5.2 ble prodsatt 5. juni. Denne innehodler blant annet støtte for oppsett av SFM-ID i multi tenant-systemer. Dette er en forutsetning for å kunne rulle ut SFM i multi-tenant systemer. 

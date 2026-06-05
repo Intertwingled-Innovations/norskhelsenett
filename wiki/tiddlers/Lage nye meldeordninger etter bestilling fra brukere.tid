@@ -1,0 +1,26 @@
+created: 20241013171046333
+modified: 20241013175110249
+revision: 0
+tags: [[Innrapportering av uønsket hendelse]] Målsetting 2024 2025
+title: Lage nye meldeordninger etter bestilling fra brukere
+type: text/vnd.tiddlywiki
+
+Det er mange innmeldere og mange mottagere av meldinger om uønsket hendelse.
+
+Det oppstår jevnlig behov for nye meldeordninger.
+
+Innbyggere kan melde fra via Helsenorge, helsepersonell via melde.no eller egne avvikssystem.
+Mottagere er:
+- Direktoratet for medisinske produkter (DMP)
+- Helsetilsynet
+- Mattilsynet
+- Ukom
+- Folkehelseinstituttet (FHI)
+- Direktoratet for samfunnssikkerhet og beredskap (DSA)
+
+!! Leveranser
+<<list-links [tag[Leveranse]tag<currentTiddler>]>>
+
+!! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>

@@ -1,0 +1,30 @@
+created: 20241004121104642
+modified: 20241010130145875
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] [[Videreutvikle sentral forskrivningsmodul (SFM) for fastlege og sykehus, samt fortsette utvikling av funksjonalitet for sykehjem, hjemmetjeneste og legevakt]] [[Styring Tiltak]] [[Sentral forskrivningsmodul]] September
+title: Sentral forskrivningsmodul PLL - hovedtrekk og endringer september
+type: text/vnd.tiddlywiki
+
+
+! Hovedtrekk og endringer
+* Hovedfokus på funksjonalitet er fastlegemarkedet – CAVE og LIB
+* Godkjenningsprosessen  godt i rute, risiko for at vi møter motstand hos HOD hvis incidentene fortsetter
+* Hovedfokus på stabilitet og overgang til privatsky - fremdriften går tregt - vi mangler miljøer på sky
+* v4.4 levert med diverse feilrettinger og funksjonelle endringer (se under)
+* RISIKO: Bygging av privat sky går for sakte
+* Risiko: Incidenter og HOD ifm plikt til betaling
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag[September]tag[Sentral forskrivningsmodul]]">>
+
+
+! Prognose på penger og ressurser
+
+* Finansiering: Offentlig tilskudd, PLL -ramme på 62,5 mnok + Multidose 4,7 -> Tildelt ramme på 67,2. 
+* Til sammen har vi en prognose på 51,0 mnok liggende inne. Takten ser bra ut, vridning av august og september (forvaltningsdel flyttes til tiltaket) vil ta oss nærmere rammen i tillegg til vridning av interne timer
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark2bd56f9db35a6e55a14f">Oversikt Sentral forskrivningsmodul PLL (Power BI)</a>
+
+

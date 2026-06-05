@@ -1,0 +1,41 @@
+TjenesteID: 40036
+created: 20260325090626629
+modified: 20260416103430954
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Styring Tiltak]] 2026 Mars [[Forretningsmessig endring:1]] [[Sentral forskrivningsmodul i 2026]]
+title: 03 Sentral forskrivningsmodul PLL - hovedtrekk og endringer mars 2026
+type: text/vnd.tiddlywiki
+
+
+! Hovedtrekk og endringer 
+
+*Status leveranser: Utviklingen av funksjonalitet i 2026 er godt i gang og de første leveransene er levert i forhold til målsetningene vi har
+*Status leveranser: Vi leverer godt på godkjenning av leverandører for fullversjon. Flere nye leverandører melder seg på, så det er forventet godt trykk i 2026 også på dette
+*Status personell: En del sykdom i forvaltningsteamet, men regner med bedring i løpet av Q2. Anskaffelse av to konsulenter er ferdig og forventet oppstart er 4. mai
+*Risiko: FM leverandørene har meldt seg på veldig sent til godkjenning. Utrulling av virksomheter fortsetter i 2026. 
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 1''
+
+Konsekvens av forretningsmessig endring: Ingen
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag[Mars]tag[2026]tag[Sentral forskrivningsmodul i 2026]]">>
+
+
+! Prognose på penger og ressurser (runrate 11mnd)
+
+* Finansiering: Offentlig tilskudd: PLL 
+* For PLL SFM melder vi til HOD i mars en totalprognose for 2026 på 42 mnok som fordeler seg på PLL SFM 35,5 mnok, 6 mnok på PLL Multidose og 0,5 mnok på PLL Helsenorge. Overskytende ramme på 16,7 mnok kommuniseres som udisponert. Dvs at PLL SFM styrer etter en ramme på 35,5 mnok i 2026.
+* Runrate helår basert på regnskap pr. mars 27,1 mnok
+* Prognose helår på 32,7 mnok. 
+* I prognosen er det lagt inn økt timepådrag i resten av året basert på økt innleie. Dette tilsier at runrate for året vil øke og komme opp til prognose for året. Dette i tillegg til at fakturering fra Thula ikke kommer riktig frem i runrate i forhold til totalprognose.
+
+* I forhold til planlagte oppgaver er vi på track og timeforbruket er som forventet
+* En konsulent forsvinner ut av teamet i juni. Dette er planlagt
+* En konsulent forlenges ut året. Dette tilsvarer et halv årsverk ekstra i forhold til prognosen
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark2bd56f9db35a6e55a14f">Oversikt Sentral forskrivningsmodul PLL (Power BI)</a>
+
+

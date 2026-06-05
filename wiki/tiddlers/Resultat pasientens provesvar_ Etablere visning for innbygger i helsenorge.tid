@@ -1,0 +1,23 @@
+created: 20240704140319622
+modified: 20260330104413526
+revision: 0
+tags: Resultat [[Kjernejournal Pasientens prøvesvar]] [[Målsetting for pasientens prøvesvar: Innbyggere kan se sine prøvesvar i helsenorge, inkludert sette tilgangsbegrensninger]]
+title: Resultat pasientens prøvesvar: Etablere visning for innbygger i helsenorge
+type: text/vnd.tiddlywiki
+
+Mål: Etablere funksjonalitet for oppstart helsehjelp av pasientens prøvesvar
+
+Levert:
+
+* Innbygger kan se sine prøvesvar i helsenorge
+
+
+Ikke levert:
+
+* Innbygger kan se innsynslogg for prøvesvar i helsenorge
+* Innbygger får varsel ved mottak av prøvesvar
+
+
+Effekt sektoren: 
+
+* Pasienten får tilgang til egne prøvesvar og slipper å kontakte helsesektoren. Pasienten får bedre innsikt i egen helsesituasjon.

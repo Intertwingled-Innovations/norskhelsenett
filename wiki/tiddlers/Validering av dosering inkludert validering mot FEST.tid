@@ -1,0 +1,19 @@
+created: 20260101145749365
+modified: 20260101162645876
+revision: 0
+tags: [[Validere doseringsinformasjon]] 2025 Leveranse November Reseptformidleren [[Forbedre kvaliteten på data i e-resept verdikjeden]]
+title: Validering av dosering inkludert validering mot FEST
+type: text/vnd.tiddlywiki
+
+Ikke alle EPJ oppdaterer sine legemiddel grunndata (FEST) så ofte som de skal. Feil/ugyldige legemiddel grunndata kan medføre en risiko for pasienten og det blir i mange tilfeller merarbeid ved utlevering i apotek.
+
+Det er innført flere valideringer, ikke bare mot FEST.
+
+I november ble det innført følgende valideringer:
+
+*12 kortdoser valideres mot FEST
+*Validering av Blåreseptforskriftens §2
+*Dosering skal inneholde enten “Intervall” eller “Fastdose”. Hvis begge eller ingen er oppgitt blir M1 avvist
+*Når "DoseFastTidspunkt" er oppgitt skal "Intervall" reflektere antall døgn mellom hver gang legemiddelet skal tas. Dette valideres mot kodeverk 9088.
+*Doseringstekst til etikett er obligatorisk.
+*Vergeinnsynsreservasjon på resept gjelder bare for barn/ungdom som er 16 år eller yngre. Resepter hvor dette feilaktig er registrert på eldre pasienter vil nå avvises.

@@ -1,0 +1,11 @@
+created: 20250223151313996
+modified: 20250223151720915
+revision: 0
+tags: [[Stabil og sikker drift av reseptformidleren i Norsk helsenetts private sky]] 2025 Reseptformidleren Resultat
+title: Legge en plan for en eventuell migrering til Kubernetes
+type: text/vnd.tiddlywiki
+
+Basert på erfaring fra PoC for å flytte applikasjonen til Kubernetes legger vi en plan for migrering i samarbeid med driftsteamet og APT.
+
+Vi kan migrere enkeltkomponenter for seg eller ta større steg.
+Krav fra BIA kan legge føringer på at det må gjøres tilpasninger i APT sin Kubernetes plattform/sitt Kubernetes tilbud. Idag kjører reseptformidleren aktiv/aktiv i TRD1 og TRD2 samt passiv til db i OSL. TRD2 har pt ikke Kubernetes.

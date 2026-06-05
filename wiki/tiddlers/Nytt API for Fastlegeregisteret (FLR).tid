@@ -1,0 +1,19 @@
+TjenesteID: 40029
+created: 20260331082905714
+modified: 20260511192701918
+revision: 0
+tags: 2026 Personell Målsetting
+title: Nytt API for Fastlegeregisteret (FLR)
+type: text/vnd.tiddlywiki
+
+Det skal etableres et nytt API for Fastlegeregisteret med tilhørende database. 
+Dette vil i første omgang hente data fra gammel database og presentere data ut til konsumenter via et nytt REST-API. På sikt vil dette overta fullt ut for eksisterende SOAP-API.  
+
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranse
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

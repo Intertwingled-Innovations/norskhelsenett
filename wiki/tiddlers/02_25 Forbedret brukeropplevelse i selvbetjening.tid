@@ -1,0 +1,11 @@
+created: 20250226135113789
+modified: 20260430121942474
+revision: 0
+tags: 2025 Selvbetjening Leveranse Februar [[Tilby verktøy som effektiviserer og kvalitetssikrer bruken av HelseID]]
+title: 02/25 Forbedret brukeropplevelse i selvbetjening
+type: text/vnd.tiddlywiki
+
+
+• Forbedret klientimplementasjonsguide med informasjon om vanlige problemer.
+• Hvis man har signert vilkår for multi-tenant-klientsystemer, så trenger man ikke signere vilkår for single-tenant-klientsystemer.
+• Forbedret tilgjengelighet (WCAG-krav), spesielt for skjermlesere

@@ -1,0 +1,15 @@
+created: 20250707085651663
+modified: 20260330070845620
+revision: 0
+tags: [[Kjernejournal Pasientens journaldokumenter]] Målsetting 2025
+title: Målsetting for pasientens journaldokumenter: Tjenesten tas i bruk av alle typer helsevirksomheter
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+Pasientens journaldokumenter tas i bruk av alle typer helsevirksomheter
+
+! Resultat
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

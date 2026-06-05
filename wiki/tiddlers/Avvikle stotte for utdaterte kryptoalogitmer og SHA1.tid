@@ -1,0 +1,8 @@
+created: 20250728132216383
+modified: 20250728132412825
+revision: 0
+tags: [[Stabil og sikker drift av reseptformidleren i Norsk helsenetts private sky]] Leveranse Juni Reseptformidleren 2025
+title: Avvikle støtte for utdaterte kryptoalogitmer og SHA1
+type: text/vnd.tiddlywiki
+
+Synkrone meldinger fra aktører som benytter utdatert kryptoalogoritmer og/eller SHA1 blir nå avvist. Sikkerhetsavvik er lukket.

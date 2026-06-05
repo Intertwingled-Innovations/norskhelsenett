@@ -1,0 +1,80 @@
+TjenesteID: 40171
+created: 20240317131339583
+modified: 20260512104616477
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] [[Kjernejournal Pasientens journaldokumenter]] [[Team Dokumentdeling]] [[Domene Samhandlingsplattform]] 2025 2024 2026
+title: Kjernejournal Pasientens journaldokumenter
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+Pasientens journaldokumenter gir mulighet for å dele journaldokumenter mellom helsevirksomheter. Helsevirksomheter kan tilgjengeliggjøre journaldokumenter for deling, og journaldokumentene blir delt med pasienten selv via helsenorge.no og med helsepersonell via kjernejournal.
+
+!2026
+
+!! Målsettinger
+
+
+<<list-links filter:"[tag[Målsetting]tag[2026]tag<currentTiddler>]">>
+
+!! Resultat
+
+
+<<list-links filter:"[tag[Resultat]tag[2026]tag<currentTiddler>]">>
+
+!! Leveranser
+
+
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>
+
+!2025
+
+<<list-links filter:"[tag[Målsetting]tag[2025]tag<currentTiddler>]">>
+
+!! 2024
+
+<<list-links filter:"[tag[Målsetting]tag[2024]tag<currentTiddler>]">>
+
+! Resultat
+!! 2026
+
+<<list-links filter:"[tag[Resultat]tag[2026]tag<currentTiddler>]">>
+
+!! 2025
+
+<<list-links filter:"[tag[Resultat]tag[2025]tag<currentTiddler>]">>
+
+!! 2024
+
+<<list-links filter:"[tag[Resultat]tag[2024]tag<currentTiddler>]">>
+
+
+
+!! 2025
+
+<<list-links filter:"[tag[Leveranse]tag[2025]tag<currentTiddler>]">>
+
+!! 2024
+
+<<list-links filter:"[tag[Leveranse]tag[2024]tag<currentTiddler>]">>
+
+! Styring
+!! 2026
+!!! Ekstern tjeneste
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag<currentTiddler>]">>
+
+!!! Tiltak
+<<list-links filter:"[tag[Styring Tiltak]tag[2026]tag<currentTiddler>]">>
+
+!! 2025
+!!! Ekstern tjeneste
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2025]tag<currentTiddler>]">>
+
+!!! Tiltak
+<<list-links filter:"[tag[Styring Tiltak]tag[2025]tag<currentTiddler>]">>
+
+!! 2024
+!!! Ekstern tjeneste
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2024]tag<currentTiddler>]">>
+
+!!! Tiltak
+<<list-links filter:"[tag[Styring Tiltak]tag[2024]tag<currentTiddler>]">>

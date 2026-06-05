@@ -1,0 +1,24 @@
+created: 20240229094141121
+modified: 20260210125403750
+revision: 0
+tags: Team [[Domene Samhandlingsplattform]] [[Team PTS]]
+title: Team PTS
+type: text/vnd.tiddlywiki
+
+!Beskrivelse
+
+Samle og tilgjengeliggjøre tilgangsbegrensninger, herunder nekting, utsatt innsyn, skjerming og sperring, i helse- og omsorgssektoren. Dette innebærer at PTS etablerer funksjonalitet for etterlevelse av tilgangsbegrensninger satt av helsepersonell og innbygger, og formidler disse tilgangsbegrensningene mellom virksomhetene i helse- og omsorgssektoren, nasjonale e-helseløsninger og Helsenorge.no. 
+
+!Ansvar og målsetninger
+<<list-links filter:"[tag[Målsetting]tag<currentTiddler>]">>
+*FoRe-api med beskrivelse
+*PTS-api med beskrivelse
+
+
+
+Under her skal flyttes under de riktige sidene på resultat og målsetninger
+
+!Resultat
+
+* Eksponert endepunkt til testmiljø på internett etter ønske fra sektor
+* Etablert endepunkt med funksjonalitet for nekting og utsatt innsyn

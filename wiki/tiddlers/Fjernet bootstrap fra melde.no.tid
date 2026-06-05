@@ -1,0 +1,9 @@
+TjenesteID: 40023
+created: 20240816062912614
+modified: 20260409115111083
+revision: 0
+tags: [[Ta ned kompleksitet og teknisk gjeld for Melde.no]] Leveranse Melde.no 2024 Juni
+title: Fjernet bootstrap fra melde.no
+type: text/vnd.tiddlywiki
+
+Vi har fjernet avhengigheten til bootstrap for å få ned kompleksiteten i meldes kodebase.

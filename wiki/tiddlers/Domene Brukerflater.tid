@@ -1,0 +1,27 @@
+created: 20240128124135308
+modified: 20260504071407169
+revision: 0
+tags: Domene [[Divisjon Helsepersonell]]
+title: Domene Brukerflater
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av domene
+
+https://confluence.nhn.no/display/SAM/Domene+brukerflater
+
+! Målsettinger
+
+<<list-links filter:"[tag[Målsetting]tag<currentTiddler>]">>
+
+SFM
+<<list-links filter:"[tag[Målsetting]tag[Sentral forskrivningsmodul]]">>
+
+FM
+<<list-links filter:"[tag[Målsetting]tag[Forskrivningsmodulen]]">>
+
+Kjernejournal portal
+<<list-links filter:"[tag[Målsetting]tag[Kjernejournal portal]]">>
+
+! Team
+
+<<list-links [tag[Team]tag<currentTiddler>]>>

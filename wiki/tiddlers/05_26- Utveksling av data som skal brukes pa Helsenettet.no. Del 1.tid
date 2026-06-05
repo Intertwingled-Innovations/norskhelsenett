@@ -1,0 +1,8 @@
+created: 20260513115246548
+modified: 20260513120234188
+revision: 0
+tags: 2026 Leveranse Selvbetjening Mai [[Sikre god kvalitet på data som tilbys virksomhetene på Helsenettet.no]]
+title: 05/26- Utveksling av data som skal brukes på Helsenettet.no. Del 1
+type: text/vnd.tiddlywiki
+
+Selvbetjening er master for mye data som vises for medlemmene på Helsenettet.no Data er lagt ut på Kafka-strøm. Eksempler: Systeminformasjon, systemtilganger, kobling mellom virksomhet og system, aktuelle tjenestetilbud for virksomheten,  org-nr på tilbyder og virksomhet, single-eller multitenant-leverandør etc. 

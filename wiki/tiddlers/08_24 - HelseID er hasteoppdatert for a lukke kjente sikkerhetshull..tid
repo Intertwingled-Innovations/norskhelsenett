@@ -1,0 +1,8 @@
+created: 20240821120409260
+modified: 20260505053852588
+revision: 0
+tags: [[Tjenesten HelseID skal lukke alle risikoelementer med risikonivå alvorlig]] [[Autentisering og autorisasjon]] 2024 Leveranse August
+title: 08/24 - HelseID er hasteoppdatert for å lukke kjente sikkerhetshull.
+type: text/vnd.tiddlywiki
+
+Helseid er haste-oppdatert til versjon 5.3.1 for å lukke kjente sårbarheter. Den nye versjonen inneholder nye nuget-pakker, patch fra Duende (7.0.6) og en oppdatering av System.Text.Json fra 8.0.3 til 8.0.4.

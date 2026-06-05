@@ -1,0 +1,9 @@
+created: 20240317063757811
+modified: 20260330104413527
+revision: 0
+tags: 2024 [[Team Nilar]] [[Kjernejournal Pasientens prøvesvar]] [[Leveranseplan for Pasientens prøvesvar i 2024]] Leveranse
+title: Sende varsel om nytt, endret eller kansellert prøvesvar
+type: text/vnd.tiddlywiki
+
+Pasientens prøvesvar skal, ved mottak av nytt, endret eller kansellert prøvesvar sende denne hendelsen på en RMQ topic som identifiserer pasienten og type hendelse. 
+Helsenorge vil abonnere på denne topic'en og sende varsel til pasientens ihht pasientens innstillinger på helsenorge. 

@@ -1,0 +1,25 @@
+created: 20240416072916691
+modified: 20250515042056181
+revision: 0
+tags: Målsetting FOT [[Filoverføringstjenesten ("FOT")]] Mars
+title: Avvikle FOT innen Q4 2025
+type: text/vnd.tiddlywiki
+
+* Avvikles Q3/Q4 2025
+
+** Kan muligens erstattes av allerede eksisterende funksjonalitet i EDI 2.0, gitt at vi får en bestilling og midler til forvaltning av en klient som tilfredsstiller krav til kryptering, logging, metrikke og autentisering.
+
+**Alternativt kan RHF-ene og deres IT-selskaper overta løsningen eller etablere sine egne. 
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>
+
+! Styring
+
+!! 2025
+

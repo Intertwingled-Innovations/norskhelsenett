@@ -1,0 +1,17 @@
+TjenesteID: 40033
+created: 20260316094957389
+modified: 20260409113934347
+revision: 0
+tags: [[Kjernejournal portal]] Målsetting 2026
+title: Kode for Pasientens prøvesvar (brukergrensesnitt) er delt med leverandører
+type: text/vnd.tiddlywiki
+
+Etter hvert som vi vertikaliserer portal og når vi tar i bruk nye tjenester, så skal vi dele kode i utviklerportalen som kan gjøre det enklere for leverandører å implementere våre tjenester i de forskjellige elektroniske pasientjournal-systemene.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

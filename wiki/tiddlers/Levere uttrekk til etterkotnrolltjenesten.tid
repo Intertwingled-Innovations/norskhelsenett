@@ -1,0 +1,17 @@
+created: 20260512102012028
+modified: 20260512102422774
+revision: 0
+tags: 2026 Oktober [[Kjernejournal Pasientens journaldokumenter]] [[Virksomheter skal kunne gjennomføre kontroll av ansatte som har lest journaldokumenter i PJD]] Leveranse [[Levere uttrekk til etterkotnrolltjenesten]]
+title: Levere uttrekk til etterkotnrolltjenesten
+type: text/vnd.tiddlywiki
+
+! Målsetting
+<<list-links filter:"[tag[Målsetting]tag<currentTiddler>]">>
+
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranse Beskrivelse
+Teamet leverer uttrekk til etterkontrolltjenesten på korrekt format

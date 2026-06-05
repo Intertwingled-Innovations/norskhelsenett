@@ -1,0 +1,11 @@
+TjenesteID: 40169
+created: 20260401112432294
+modified: 20260409112617495
+revision: 0
+tags: [[Kjernejournal Pasientens legemidler]] 2026 [[Ekstern Tjeneste]] Målsetting [[All bruk av FM i produksjon er avviklet]]
+title: Tilby nytt API for lesing av legemiddel informasjon
+type: text/vnd.tiddlywiki
+
+Tilby nytt API beskyttet av HelseID med DPoP for alle konsumenter som har behov for å lese legemiddelinformasjon med hjemmel i Kjernejournalforskriften.
+
+Det nye API'et skal erstatte to eksisterende API, ett eksternt og ett internt (konsumeres av KJ Portal).

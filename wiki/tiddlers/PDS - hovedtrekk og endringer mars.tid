@@ -1,0 +1,92 @@
+created: 20240402141829798
+modified: 20240416183106974
+revision: 0
+tags: Styring 2024 [[Divisjon Helsepersonell]] Mars PDS
+title: PDS - hovedtrekk og endringer mars
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+!! Pasientens prøvesvar: 
+!!! Fastleger, legevakt og sykehus har prøvd ut tiltaket og er klar for innføring og bruk til helsehjelp:
+Pasientens prøvesvar er pr april 2024 i teknisk utprøving med formål kvalitetssikring. Vi har pr idag ca 8 mill svarrapporter som gjøres tilgjengelig for ca 50 ulike helsepersonell. Fire private laboratorium sender automatisk prøvesvar, i tillegg mottar vi manuelt innsendte prøvesvar fra ca 10 helseforetak. Vi jobber mot oppstart helsehjelp i Q4'2024 - nødvendig for å utløse betalingsplikt for 2025.
+Blant de 50 som har tilgang er det fastleger og helsepersonell ved sykehus. Hensikten er imidlertid å kvalitetssikre visningen i kjernejournal portal.
+
+!!! Innbyggere kan se sine prøvesvar i helsenorge:
+Teknisk er dette på plass, men det er valgt midlertidig å fjerne innbyggers innsyn i egne prøvesvar så lenge utprøvingen pågår. Dette ble gjort for å etterkomme et sterkt ønske fra RHF'ene om ikke å tillate visning for innbygger så lenge det kun er kvalitetssikring.
+
+!!! Løsningen kan tilgjengeliggjøre prøvesvar fra spesialisthelsetjenesten, private laboratorier og radiologiske virksomheter:
+Teknisk er dette på plass, og vi mottar prøvesvar både fra private og offentlige laboratorier. Det gjenstår imidlertid å etablere følgende tekniske funksjonalitet:
+* NHN skal etablere et helsehjelp-API som gjør det mulig for rekvirenten å angi om svarrapporten har helsehjelpsformål (skal inn i pasientens prøvesvar) eller ikke (skal ikke inn i pasientens prøvesvar). NHN har ambisjon om å ha dette på plass til august 2024. Deretter må rekvisisjonsløsningene etablere integrasjon mot helsehjelp-API'et.
+* NHN skal utvide funksjonalitet i PTS til å kunne motta sperring og skjerming. Dette skal være på plass før sommeren. Deretter må rekvisisjonsløsningene etablere integrasjon mot PTS.
+* NHN har i samråd med sektoren etablert 6 feature team som skal bli enig om en tilstrekkelig god visning i kjernejournal portal. Det er pr april 2024 ingen fagområder hvor det er oppnådd enighet om visningen.
+
+!!! Starte klinisk utprøving av pasientens prøvesvar med både private og offentlige lab'er:
+Pr april 2024 virker en mulig oppstart til å kunne inkludere følgende: svarrapporter fra private lab'er, svarrapporter fra spesialisthelsetjenestens lab'er (kun eksternrekvirerte), kanskje internrekvirerte prøvesvar i Helse Midt. Internrekvirerte prøvesvar fra de andre RHF'ene virker usannsynlig da det vil kreve endringer i Dips AOM (Arena Order Management).
+
+!! Pasientens journaldokumenter: 
+!!! Det er avklart hvordan avtalespesialister kan dele sine journaldokumenter
+* Dette er en leveranse fra Helsedirektoratet, med innspill fra NHN. Det foreligger et utkast til løsningen, hvor NHNs innspill er tatt inn. Planen er å legge dette fram for aktuelle leverandører på NHNs leverandørmøte i juni.
+
+!!! Det er avklart hvordan kommuner kan dele sine journaldokumenter
+* Dette er en leveranse fra Helsedirektoratet, med innspill fra NHN. Det foreligger et utkast til løsningen, hvor NHNs innspill er tatt inn. Planen er å legge dette fram for aktuelle leverandører på NHNs leverandørmøte i juni.
+
+!!! Helseforetak er kilde og tilgjengeliggjør journaldokumenter (ved bruk av tillitsrammeverket)
+* Alle helseforetak deler journaldokumenter bortsett fra Helse Midt. Helse Midt kommer etter planen på i 2025.
+* Nasjonalt tillitsrammeverk er etablert, og NHN har levert nødvendig funksjonalitet på HelseID og kjernejournal portal. 
+* Det er fortsatt uenighet om hvordan pasientens id skal overføres som en del av nasjonalt tillitsrammeverk. Dette må landes i Q2'2024.
+* Dokumentkildene er i ferd med å tilpasse sin funksjonalitet for utlevering av referanselister og journaldokumenter gitt nasjonalt tillitsrammeverk.  
+
+!!! Helseforetak har tatt i bruk pasientens journaldokumenter som konsument (ved bruk av tillitsrammeverket)
+* Alle helseforetak har tatt i bruk tjenesten bortsett fra Helse Midt. Helse Midt kommer etter planen på som konsument i 2025.
+* Ingen helseforetak konsumerer pr april 2024 tjenesten ved bruk av tillitsrammeverket, men alle har satt i gang arbeid for å gjøre det. Det forventes at de tre RHF'ene vil være klare i løpet av 2024.
+* Det er fortsatt uenighet om hvordan pasientens id skal overføres som en del av nasjonalt tillitsrammeverk. Dette må landes i Q2'2024.
+* Flere leverandører er i gang med å integrere seg mot tjenesten ihht nasjonalt tillitsrammeverk - dette er en forutsetning for videre bredding (CGM, Tietoevry. Dips og Aidn). Det er forventet at integrasjoner vil kunen ferdigstilles i 2024.
+* NHN har levert første versjon av API for dokumentdeling. Det er opprettet tett dialog med Dips og Aidn.
+
+!!! Inntil 80% av alle fastleger kan få tilgang til pasientens journaldokumenter
+* Dette er oppfylt i den forstand at alle fastleger (pga fastlegesjekken) __kan __få tilgang. Eneste krav er at de signerer bruksvilkår for tjenesten. Pr 1. april har likevel kun 170 fastlegekontor signert bruksvilkår.
+* Det er løftet til OSG problemstillingen med at ingen har formelt ansvar for å bredde tjenesten til fastlegene. For pasientens kournaldokumenter er det besluttet at Helse Nord RHF vil ta ansvar for fastlegene i Nord-Norge, mens Oslo, Bodø og Stavanger kommune tar ansvar for fastlegene i sine respektive kommuner. I tillegg bidrar NHN med informasjonskampanjer og materiell, bl.a. i flere fora hvor fastleger er tilstede.
+* Tjenesten er tilgjengelig for alle fastleger (via kjernejournal portal), samt annet helsepersonell i Oslo, Bodø og Stavanger kommune.
+
+
+!! Pasientens måledata: 
+!!! Gjennomføre en utprøving av pasientens måledata i helseregon Sør-øst
+* Det er pr april 2024 ikke konkretisert en utprøving. 
+* Det er ikke inngått noen avtale med en leverandør om å utvikle brukergrensesnitt.
+* EPJ-løftet sa nei til å inkludere pasientens måledata i konkurransegrunnlag som skal gå ut i juni. Dette betyr at det foreløpig ikke er noen finansiering til evt EPJ leverandører som ønsker å bli med i utprøvingen.
+
+!!! Oppsummere erfaringer og målinger av nytte fra utprøvingen som innspill til Helsedirektoratets vurdering av nytte
+* Ikke påstartet ettersom en utprøving foreløpig ikke er påstartet.
+
+!! Pasientens kritiske informasjon: 
+!!! Bidra i Helsedirektoratets arbeid med en anbefaling om nasjonal håndtering av kritiske legemiddelreaksjoner, herunder en kilde til denne informasjonen
+* Drives av Helsedirektoratet, ikke påstartet
+
+!!! Bidra til at alle EPJ-leverandørene kan registrere og vise kritisk informasjon i kjernejournal via API
+* Teknisk ferdigstilt, og Helse Vest (Dips Arena) har startet konsumering av kritisk info via API. 
+* API'et er tilgjengelig også for andre EPJ leverandører som måtte ønske det, men det er ikke gjort veldig aktiv markedsføring av API'et.
+
+!!! Gjennomføre utprøving av API for kritisk informasjon for helseregion Vest og levere oppdaterte planer for innføring av tiltaket for andre aktører
+* Utprøving av API i Helse Vest er igangsatt
+* Det er foreløpig ikke laget planer for innføring av tiltaket for andre aktører
+
+!!! I samarbeid med Helsedirektoratet tilpasse tillitsrammeverket for deling av kritisk informasjon
+* Det er besluttet hvordan kritisk informasjon API'et skal benytte tillitsrammeverket, og dette medfører ingen tilpasning av tillitsrammeverket. Det er kun snakk om en tydeliggjøring på hvilke informasjonselementer som kritisk info krever av konsumenten.
+* Det er pr april 2024 ikke etablert funksjonalitet for DPOP
+
+!!! Støtte de regionale helseforetakene med å oppdatere kritisk informasjon i kjernejournal direkte fra EPJ
+* Utføres for Helse Vest i første omgang
+
+
+! Prognose på penger og ressurser
+
+*Finansiering: Offentlig tilskudd, PDS <a href="https://app.powerbi.com/groups/6931f38e-9db9-41f4-a143-ac9ee4a4719c/reports/a03232e0-bd45-4da2-b925-662e476d7ebd/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark4df1f1be6996819d532f">Oversikt PDS (Power BI)</a>
+* Det pågår rekruttering av ekstra ressurs til team Nilar for å dekke opp for konsulent i avgang
+* Det vurderes å anskaffe team på 2 personer for å etablere en sentral loggaggregeringsfunksjon. Dette for å lette bredding av pasientens journaldokumenter samtidig som kravet om innsynslogg ivaretas. Beslutning om anskaffelse tas så snart vi har en sikrere prognose.
+
+
+
+

@@ -1,0 +1,17 @@
+created: 20240303144608798
+modified: 20240821063250764
+revision: 0
+tags: [[Sentral forskrivningsmodul]] Målsetting [[Tiltaket pasientens legemiddelliste]] [[Team SFM]] 2024
+title: Levere planlagt funksjonalitet i SFM Basis API til oppstart akseptansetest for Helse Nord/DIPS
+type: text/vnd.tiddlywiki
+
+Levere planlagt funksjonalitet i SFM Basis API til oppstart akseptansetest for Helse Nord/DIPS 
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>
+

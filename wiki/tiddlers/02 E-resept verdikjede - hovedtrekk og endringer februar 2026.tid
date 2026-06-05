@@ -1,0 +1,62 @@
+created: 20260310101656832
+modified: 20260310145829119
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Styring Ekstern tjeneste]] [[Verdikjede e-resept]] Februar 2026
+title: 02 E-resept verdikjede - hovedtrekk og endringer februar 2026
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+
+Team verdikjede e-resept skal sørge for funksjonelle og sikkerhetsmessige krav til de fagsystemene som samhandler og inngår i e-reseptkjeden. Dialog, samhandling og koordinering skal sikre at aktørene involveres i forvaltning av e-reseptkjeden. Team verdikjede e-resept skal også bistå i rådgivingen inn mot tiltakene på legemiddelområdet og har ansvaret for test og godkjenning på kravstilling for å sikre kvalitet i verdikjeden
+
+Hovedoppgaver i forvaltningen av e-resept er:
+
+* Kravstilling og dokumentasjon
+
+* Test og godkjenning
+
+* Kvalitet i e-resept
+
+* Utredninger, analyse og rådgivning på e-reseptløsningen
+
+*Endringshåndtering
+
+* Leverandørdialog
+
+* Hendelseshåndtering
+
+
+
+! Ferdigstilte leveranser i perioden
+
+TEST og GODKJENNING
+
+* Ny verdikjedetest gjennomført sammen med Helseplattformen i denne perioden. Denne testen har inngått i en ny ROS HP gjennomfører før utprøving av e-multidose som første HF med bruk av SMF Basis API.
+
+* Nettbandasjistløsningen Colonplast med Ardis som fagsystem, ble i siste perioden godkjent etter akseptansetest for e-resept.
+
+KRAVSTILLING
+* NHN sin anbefaling om ny rutine for apotek om "videreføring av papir legemiddelbehandlinger i eMD" er godkjent etter en helsefaglig vurdering fra HDIR. 
+
+HENDELSER SISTE PERIODE
+
+<<list-links filter:"[tag[Leveranse]tag[Juni]tag[2025]tag[Verdikjede e-resept]]">>
+
+
+! Prognose på penger og ressurser
+Finansiering: Forskriftsfestede midler nasjonale e-helseløsninger, e-resept
+
+* Timepådrag - Noe underforbruk på timer grunnet sykdom og ferieavvikling. 
+* Prognosen for året ligger i hht budsjett. 
+
+
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark4c89bd5ada01ce3dc213">Oversikt E-resept verdikjede (Power BI)</a>
+
+
+
+

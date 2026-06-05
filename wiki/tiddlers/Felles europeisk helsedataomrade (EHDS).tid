@@ -1,0 +1,49 @@
+TjenesteID: 40062
+created: 20260326094514244
+modified: 20260415124933314
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Intern tjeneste]] 2026 [[Felles europeisk helsedataområde (EHDS)]]
+title: Felles europeisk helsedataområde (EHDS)
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+
+Sørge for at NHN leverer på oppdrag om Helsedataforordningen (EHDS), herunder kartlegging av våre tjenester sett opp imot kravene fra forordningen og oppdrag om MyHealth@EU. 
+
+Følge opp EHDS og MyHealth@EU på strategisk og taktisk nivå med fokus på både eksterne og interne avhengigheter. Arbeidet med helsedataforordningen skal være i tråd med strategien til NHN og DHP sin systemdesign
+
+Internt i NHN legger teamet opp til involvering og informasjonsflyt knyttet til ansvarsområdet og våre leveranser, herunder koordinerende ansvar på vegne av NHN mot Hdir sitt arbeid med innspill til de tekniske spesifikasjonene for EHDS (Xt-EHR).
+
+Eksternt koordinerer teamet aktørene i sektoren slik at alle får oversikt over hvem gjør hva og når knyttet til EHDS og legemiddel grunndata.
+
+!! Sentrale oppgaver
+
+* Følge med i EHDS og EU gjennom deltakelse i rette fora/nettverk for å (gi innspill til og være støtte for)
+* Sørge for fremdrift og NHN sin prioritering av oppdrag knyttet til EHDS, herunder støtte opp under tjenesteeiere og områdeprodukteiere.
+* Sørge for at NHN leverer på MyHealth@EU som nasjonal tjeneste i Norge.
+* Sørge for avklaringer knyttet til legemiddel grunndata og forberedelser til IDMP, ICD-11 og modernisering av e-resept.
+* Samarbeid med Helsedirektoratet, herunder bidrag fra Norsk helsenett til samfunnsøkonomisk analyse, målbilde og veikart.
+* Tett samarbeid med tjenesteeiere, herunder involvere de i planlegging og løsning.
+* Kontinuerlig løfte utfordringer, hindringer og seiere til ledergruppen.
+* Kontinuerlig utfordre og avklare jurdiske tolkninger og spørsmål knyttet til kravene fra EHDS.
+* Sørge for at NHN er godt forberedt på kravene som følge av EHDS. Dette inkluderer både NHN sine innspill til de tekniske spesifikasjonene (Xt-EHR), at vi gjør de nødvendige endringene i egne systemer, setter føring for løsningsmønster som er i tråd med NHN system design, samt at vi finner gode løsninger og prioriteringer sammen med sektor.
+* Levere en overordnet oversikt for aktørene som blir berørt av EHDS kravene, herunder NHN. Oversikten skal utarbeides sammen med aktørene i sektor og beskrive hvem som gjør hva når, samt viktige prioriteringer. Den er dynamisk og justeres konkretiseres løpende.
+* Sørge for at NHN kommer i gang med våre høyest prioriterte EHDS aktiviteter i 2026 (iht planen i punktet foran)
+
+
+! Målsettinger
+
+<<list-links filter:"[tag[Målsetting]tag[2026]tag<currentTiddler>]">>
+
+
+!! Leveranser 2026
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>
+
+Teamet har sørge-for ansvar knyttet til tiltaket MyHealth@EU, og følger opp hovedoppgavene fra mandatet. Se oppgavene under tiltaket MyHealth@EU.
+
+<<list-links filter:"[tag[Tiltak]tag[2026]tag[DigitalSamhandling]tag[Tiltaket MyHealth@EU]]">>
+
+! Styring
+
+!! Intern tjeneste
+<<list-links filter:"[tag[Styring Intern tjeneste]tag[2026]tag<currentTiddler>]">>

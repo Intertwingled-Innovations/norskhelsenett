@@ -1,0 +1,26 @@
+created: 20251031125342884
+modified: 20251128110525587
+revision: 0
+tags: 2025 Oktober [[Integrasjon- og støttesystemer]] [[Styring Intern tjeneste]] Integrasjonstjenesten
+title: 10 Integrasjon- og støttesystemer - hovedtrekk og endringer oktober 2025
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer oktober
+
+* Klargjort for og begynt nedstegning av tilganger i Junta, bl.a. mulighet til å opprette change.
+* Bistått DTS med å få ut teknisk fanen av junta
+* Nytt mailmottak i test for SAKU
+* Stengt ned mulighet for Junta innlogging til Flow plattformen
+* Bistått /forberedt nedleggelse av Kundeportalen kunde.nhn.no
+* Videreutvikling på SAKU (forvalte roller, tilgangsstyring, egen postboks, API for å opprette sak ved bestillinger)
+* Justeringer på integrasjon mellom SAKU og ESM
+* Begynt på mellomvare for å få Pureservice på Integrasjonstjenesten
+* Kartlagt avhengigheter mellom Junta og Flow
+* Oppdatert navnestandard (revisjon topic) for bruk av Integrasjonstjenesten.
+* Feature toggle for bruk ved migrering av EDI, muligjort stenging av endring av EDI kontoer.
+
+!Prognose på penger og ressurser
+
+Finansiering: Medlemsavgiften.
+
+Oversikt Integrasjon- og støttesystemer (Power BI): https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ad6307c59006ac4e200e?experience=power-bi&bookmarkGuid=Bookmark6966c46e3cd6605ce815

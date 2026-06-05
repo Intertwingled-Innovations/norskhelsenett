@@ -1,0 +1,14 @@
+created: 20250116121506599
+modified: 20250120081619458
+revision: 0
+tags: [[Implementere norsk tillitsrammeverk for pålogging i MyHealth@EU søk- og visningsmodul]] 2024 Desember Leveranse
+title: Implementert norsk tillitsrammeverk for pålogging
+type: text/vnd.tiddlywiki
+
+!!Hva er levert?
+
+Autentisering med HelseID implementert for MyHealth@EU Søk- og visningsmodul
+
+!!Hvilken nytte til sektor?
+
+Sikrer effektiv pålogging og at ingen uvedkommende får tilgang til tjenesten.

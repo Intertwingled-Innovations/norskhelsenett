@@ -1,0 +1,17 @@
+TjenesteID: 40044
+created: 20260225134431978
+modified: 20260416102107434
+revision: 0
+tags: Målsetting 2026 [[Sentral forskrivningsmodul i 2026]]
+title: Forvalte SFM i 2026 for alle segmenter
+type: text/vnd.tiddlywiki
+
+Målsetningen er en fornuftig disponering av TBU-midlene av forvaltningen av SFM i 2026. Her inngår videreutvikling, feilretting og support av SFM. Det inkluderer også videre bredding av SFM.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag[2026]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>

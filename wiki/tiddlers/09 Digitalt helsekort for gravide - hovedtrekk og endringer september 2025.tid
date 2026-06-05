@@ -1,0 +1,30 @@
+created: 20251013191701403
+modified: 20251013192657330
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Tiltaket digitalt helsekort for gravide]] [[Styring Tiltak]] 2025 [[Tiltaket digitalt helsekort for gravide 2025]] September
+title: 09 Digitalt helsekort for gravide - hovedtrekk og endringer september 2025
+type: text/vnd.tiddlywiki
+
+<<list-links filter:"[tag[Tiltaket digitalt helsekort for gravide]tag[Tiltak]tag[2024]]">>
+
+! Hovedtrekk og endringer
+* NHN holder på API-First strategi - det er besluttet å ikke implementere grensesnitt for helsepersonell
+* 5 kommuner deltar i utprøvingen med fastleger og helsestasjoner (Asker, Bærum, Drammen, Stavanger og Ålesund kommune). Det er inngått avtaler om frikjøp av helsepersonell i disse kommunene med en total ramme på opptil 3 mnok i 2025. 
+* Helsenorge sin Gravid tjeneste er i produksjon
+* Pr. 12. oktober det opprettet 87 digitale helsekort, 134 gravide har avgitt samtykke
+* Sykehuspartner er integrert mot tjenesten, Bærum og Drammen sykehus er i produksjon
+
+
+! Prognose på penger og ressurser
+*Finansiering: Offentlig tilskudd, helsekort for gravide
+* DIT har ved utgangen av september brukt 7.7 mnok av en total ramme på 12 mnok. Prognosen nedjusterer til 10 mnok for året.
+* DHP har ved utgangen av september brukt 6.5 mnok av en total ramme på 10 mnok. Prognosen på 9.6 mnok for året står seg.
+* Det er ved utgangen av september brukt 17.2 mnok på leverandørincentiver. Total ramme er 9.8 mnok (ubrukte midler fra 2024) + 15 mnok i interne midler
+
+! Leveranser
+* API'et for helsekort for gravide er satt i produksjon
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark939bcb60b56e4d11e018">Oversikt Elektronisk helsekort for gravide (Power BI)</a>
+
+
+

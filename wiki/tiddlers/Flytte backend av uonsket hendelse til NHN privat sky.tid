@@ -1,0 +1,11 @@
+created: 20240702085226077
+modified: 20241013175748718
+revision: 0
+tags: [[Innrapportering av uønsket hendelse]] 2024 Målsetting
+title: Flytte backend av uønsket hendelse til NHN privat sky
+type: text/vnd.tiddlywiki
+
+Ta i bruk Kubernetes og flytte av løsningen inn i Norsk helsenetts private skyplattform. Dette gir en skalerbar og sikker drift.
+
+!! Leveranser
+<<list-links [tag[Leveranse]tag<currentTiddler>]>>

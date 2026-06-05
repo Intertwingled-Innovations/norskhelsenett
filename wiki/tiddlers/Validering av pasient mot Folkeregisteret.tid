@@ -1,0 +1,16 @@
+created: 20241204093257562
+modified: 20250213084023398
+revision: 0
+tags: [[Forbedre kvaliteten på data i e-resept verdikjeden]] Leveranse November 2024 Reseptformidleren
+title: Validering av pasient mot Folkeregisteret
+type: text/vnd.tiddlywiki
+
+Lørdag 23. november 2024 ble følgende valideringer produksjonssatt:
+
+* Personidentifikator (PID) må finnes i Folkeregisteret – historiske PID godtas ikke, men Reseptformidleren sjekker og leverer feilmelding hvis PID fins i historikken i Folkeregisteret
+* Etternavn må være likt det som står i Folkeregisteret – historiske etternavn godtas
+* Personen må ikke være må være registrert som død i Folkeregisteret
+
+Før valideringen fikk ca 2500 personer hvert år feil resepter. Disse ble også vist i Kjernejournal og på Helsenorge. Valideringene avviser nå disse reseptene. Dette medfører økt datakvalitet og dermed økt pasientsikkerhet. NHN sparer også tid på oppfølging av disse sakene.
+
+Funksjonalitet fungerte som planlagt etter leveransen. De fleste aktørene hadde forstått informasjonen som var gitt. Tre aktører hadde ikke tatt stilling endringene og fikk utfordringer på leveransedatoen. Etter dialog vil de endre sitt EPJ-system slik at de sender rett etternavn. Deres kunder da ikke får avvist resepter grunnet feil etternavn.

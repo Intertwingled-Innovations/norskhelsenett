@@ -1,0 +1,32 @@
+created: 20250211145057566
+modified: 20260408085632631
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] [[Forskrivningsmodulen 2024-2025]] [[Styring Ekstern tjeneste]] Desember
+title: 12 Forskrivningsmodulen - hovedtrekk og endringer desember
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer
+!!Forvaltning:
+* Foreløpig gode tilbakemeldinger fra PLL leger etter feilrettinger FM 4.13.3
+* FM 4.14 er i test
+
+!!Avvikling
+* Stadig tettere oppfølging av status på leverandører som har FM brukere
+* Helse Nord-Trøndelag over på Helseplattformen - FM avviklet i Helse Midt
+* HV og Bergen kommune indikerer (uformelt) behov for FM i to år til - Følger opp!
+* Mangler styringstall i avviklingen av FM pga vi ikke får uttrekk fra RF (ligger hos HOD nå)
+
+
+! Prognose på penger og ressurser
+* Prognose justert fra i overkant av 2mnok over budsjett til 3mnok over budsjett for 2024 nå 15mnok
+* Mer aktivitet på FM i høst som følge av feilsituasjonen i eResept og høy aktivitet på PLL produksjonssaker.
+* Avklart rammer for samarbeid med SFM om Thula i nedskaleringen av FM fra 2025.
+
+! Leveranser
+Ferdigstilte leveranser i perioden 
+
+<<list-links filter:"[tag[Leveranse]tag[November]tag[2024]tag[Forskrivningsmodulen]]">>
+
+Finansiering: Forskriftsfestede midler nasjonale e-helseløsninger, e-resept
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark047e6c018241495568dc">Oversikt Forskrivningsmodulen (Power BI)</a>
+

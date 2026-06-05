@@ -1,0 +1,39 @@
+TjenesteID: 40070
+created: 20260326105529662
+modified: 20260412130555835
+revision: 0
+tags: [[Divisjon Helsepersonell]] 2026 [[Intern tjeneste]]
+title: Varsle
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+
+Varsle en en intern tjeneste for å distribuere hendelser i samhandlingsplattformen til eksterne aktører. Hendelser er f.eks. at pasient x har fått et nytt prøvesvar, at pasient y har fått registrert ny kritisk informasjon osv.
+
+! Målsettinger
+!! 2026
+
+<<list-links filter:"[tag[Målsetting]tag[2026]tag<currentTiddler>]">>
+
+
+! Resultat
+!! 2026
+
+<<list-links filter:"[tag[Resultat]tag[2026]tag<currentTiddler>]">>
+
+
+
+
+! Leveranser
+!! 2026
+
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>
+
+
+! Styring
+!! 2026
+!!! Intern tjeneste
+<<list-links filter:"[tag[Styring intern tjeneste]tag[2026]tag<currentTiddler>]">>
+
+
+

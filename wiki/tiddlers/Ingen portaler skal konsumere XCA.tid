@@ -1,0 +1,17 @@
+created: 20260512093819649
+modified: 20260512100520471
+revision: 0
+tags: [[Vi skal etablere en forutsigbar og effektiv forvaltning av Pasientens journaldokumenter]] [[Ingen portaler skal konsumere XCA]] 2026 [[Kjernejournal Pasientens journaldokumenter]] Resultat
+title: Ingen portaler skal konsumere XCA
+type: text/vnd.tiddlywiki
+
+! Målsetting
+
+<<list-links filter:"[tag[Målsetting]tag<currentTiddler>]">>
+
+! Beskrivelse
+Helsenorge og Kjernejournal konsumer XCA direkte i dag. De skal i stede konsumere PJD API. Det gjør at vi kan legge forretningsregler på ett sted i PJD API og vi slipper og oppdatere flere steder. Det gjør at vi kan gjøre endringer raskere og får en mer sammenhengende tjeneste.
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

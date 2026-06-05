@@ -1,0 +1,43 @@
+created: 20250603065216677
+modified: 20250811084408855
+revision: 0
+tags: Reseptformidleren [[Styring Ekstern tjeneste]] 2025 Mai
+title: 05 Reseptformidleren - hovedtrekk og endringer mai 2025
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer
+
+Vi har hatt en "mellomleveranse" der sikkerhetsoppdatering ifm bruk av HelseID ble løst og mye ny funksjonalitet i den nye administrasjonsklienten gjort tilgjengelig. Dette letter arbeidet i Kunde og driftssenteret og legger til rette for overføring av oppgaver fra driftsteam til Kunde og driftssenteret. Mellomleveranser medfører ikke nedetid eller driftsforstyrrelser.
+
+! Modernisering
+
+* Videre arbeid med valideringer pågår både internt og i samarbeid med aktørene, med hovedfokus på pasientsikkerhet. Modernisert valideringskomponent er i test og leveres i hovedleveranse 2 den 14.juni. Denne legger til rette for at det er lett å legge til nye valideringer fremover. Flere nye validering har fått leveransedato.
+
+* Vi jobber med å lage en overordnet plan for valideringer i samarbeid med team verdikjede. Denne skal legges frem for Odd Martin før sommerferien.
+
+* Vi har startet arbeidet med å ta i bruk auditlog tjenesten i samhandlingsplattformen og har etablert et fokusteam for dette arbeidet. Juridiske avklaringer går i parallell med ROS og arbeid med løsningsbeskrivelse.
+
+* Pasientens legemidler skal sørge for utfasing av eksisterende KJ infotjenester legemiddel API så raskt som mulig. Det er backend delen som blir erstattet først. Fase 1 vil fase ut komponenter basert på Oracle Service Bus og planlagt levert i oktober 2025. Dette krever ikke endringer hos konsumentene (som er SFM og HP i hovedsak).
+
+* Kubernetes - reseptformidleren er testet i Kubernetes med godt resultat. Vi vil arbeide videre med et beslutningsgrunnlag for veien videre. Dette gjør vi i tett samarbeid med APT og driftsteamet, men det vil ikke bli videre aktivitet på dette før i andre halvår.
+
+* EHDS - vi har deltatt i arbeidsgrupper for ePrescription og for tekniske krav til EHR systemer. Dette har gitt god oversikt over krav slik de foreligger nå og hvilke gap som finnes. Arbeidet med løsningsdesign startes opp i teamet nå før sommeren. 
+
+! Sikkerhet
+
+Vi vil avvikle støtte for eldre kryptoalgoritmer og SHA1 før sommeren i hovedleveranse den 14.juni.
+
+Forbedret validering av utleverere med sjekk på at sertifikat som benyttes både er gyldig og tilhører den virksomheten som bruker det. Dette skal innføres i november 2025, apotek stiller spørsmål ved om det er nødvendig. Vi har utarbeidet et grundig svar og har ikke fått noen respons på dette. Vi opprettholder planlagt dato i november for innføringen av dette. Bandasjister er positive.
+
+! Prognose på penger og ressurser 
+
+Pådrag forvaltning takter noe under rammen, men dette er som forventet pt. Drift ligger foreløpig over budsjett, men det er iverksatt en rekke tiltak ift lagring for å redusere driftskost. Dette er forventet å få effekt fra april/mai, men drift vil fortsatt ligge noe over budsjett. Status pr utgangen av mai er at vi ligger omkring 700' over budsjett på drift og runrate for 2025 tilsier at vi vil ligge ca 2,7 mnok over budsjett for drift i 2025. Det er fortsatt ingen tydelig nedgang, vi følger dette opp fremover.
+
+Forvaltning ligger pr utgangen av mai omkring 3,5 mnok under budsjett og runrate for 2025 tilsier at vi vil ligge omkring 6 mnok under budsjett for 2025.
+
+Totalt vil drift og forvaltning være godt innenfor rammen for året.
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarkab9171eafbc4217a5bac">Oversikt Reseptformidleren (Power BI)</a>
+
+
+
+Oversikt Reseptformidleren (Power BI)

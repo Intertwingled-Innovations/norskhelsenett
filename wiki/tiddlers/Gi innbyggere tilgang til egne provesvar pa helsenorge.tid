@@ -1,0 +1,20 @@
+created: 20240808103314742
+modified: 20250131101639418
+revision: 0
+tags: 2024 [[Leveranseplan for Pasientens prøvesvar i 2024]] Oppgave [[Tiltaket pasientens prøvesvar]] [[Målsetting for pasientens prøvesvar: Innbyggere kan se sine prøvesvar i helsenorge, inkludert sette tilgangsbegrensninger]]
+title: Gi innbyggere tilgang til egne prøvesvar på helsenorge
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av oppgaven
+Innbygger skal kunne få tilgang til egne prøvesvar via helsenorge. I tillegg skal innbygger kunne sette personverninnstillinger via helsenorge ( reservere seg mot pasientens prøvesvar, sette sperre eller blokkering for pasientens prøvesvar). Innbygger skal også kunne få tilgang til innsynslogg, dvs hvem har sett på pasientens prøvesvar.
+
+!! Status
+Tiltaket er replanlagt til Q2 2025 slik at nødvendige tilpasninger kommer på plass i løsningene til RHFene i forhold til sperringer, nekting, skjerming, formål helsehjelp, og at risikoen med deling slik sett blir akseptabel for å kunne dele prøvesvarene.
+
+Innbygger skal kunne se egne prøvesvar i Helsenorge og være delaktig i sin egen helse. Innbygger skal kunne ivareta sine personvernrettigheter via Helsenorge (sette reservasjon, sette sperring/blokkering). Innbygger skal kunne se innsynslogg for pasientens prøvesvar i helsenorge.
+
+! Leveranser
+
+Oppgaven er startet, men ikke ferdigstilt. Den er replanlagt til Q2 2025 slik at nødvendige tilpasninger kommer på plass i løsningene til RHFene, herunder sperringer, nekting, skjerming, formål helsehjelp, og at risikoen med deling blir akseptabel for å kunne dele prøvesvarene
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>
+

@@ -1,0 +1,8 @@
+created: 20240815122445953
+modified: 20250307090409624
+revision: 0
+tags: [[2024 - Avvikling eller overlevering av Flow moduler]] 2024 Resultat
+title: Klargjort for overlevering av Flow DNS
+type: text/vnd.tiddlywiki
+
+Kritiske endrings ønsker fra APT er utført. Koden støtter nå "generasjon 3" av DNS infrastruktur og utdatert kode for "generasjon 2" er fjernet for å redusere kompleksitet og feilkilder. Det er da betydelig enklere for andre utviklingsteam å sette seg inn i og overta kodebasen.

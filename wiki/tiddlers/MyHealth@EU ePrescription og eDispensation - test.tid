@@ -1,0 +1,17 @@
+TjenesteID: 40034
+created: 20260324165311919
+modified: 20260414123051794
+revision: 0
+tags: Reseptformidleren Målsetting 2026 [[Ekstern Tjeneste]]
+title: MyHealth@EU ePrescription og eDispensation - test
+type: text/vnd.tiddlywiki
+
+Norge er med i bølge 10 og da skal norsk resept kunne slås opp i et EU land og en utleveringsmelding skal sendes tilbake.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

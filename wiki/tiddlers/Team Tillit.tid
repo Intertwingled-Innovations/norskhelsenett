@@ -1,0 +1,17 @@
+created: 20240206141845681
+modified: 20240701073952292
+revision: 0
+tags: Team [[Domene Samhandlingsplattform]]
+title: Team Tillit
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av team
+https://confluence.nhn.no/display/SAM/Team+tillit
+
+Deling av helseopplysninger digitalt krever at aktørene som samhandler har tillit til hverandre.
+
+Formålet til team tillitsanker er å utarbeide et rammeverk som beskriver oppgavene som må løses for å etablere tilstrekkelig tillit mellom aktørene slik at de kan dele helseopplysninger mellom seg.
+
+! Målsettinger
+
+<<list-links filter:"[tag[Målsetting]tag[Team Tillit]]">>

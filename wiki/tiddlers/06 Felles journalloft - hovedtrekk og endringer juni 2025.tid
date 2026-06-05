@@ -1,0 +1,31 @@
+created: 20250717125537131
+modified: 20250717130829395
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Bistå KS og kommunene i utprøvingen av Felles journalløft]] [[Styring Tiltak]] 2025 Juni
+title: 06 Felles journalløft - hovedtrekk og endringer juni 2025
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+"Oversikt over kommunale tjenester" realiseres for utprøving i Bodø kommune.
+Gerica skal avlevere alle endringer på hvilke kommunale tjenester pasientene er tildelt til kommunal samhandlingsplattform.
+DNV Imatis sin tavleløsning skal konsumere hvilke tjenester pasienter har.
+
+Både TietoEvry og DNV Imatis er godt i gang med arbeid for å avlevere og konsumere til vår API-tjeneste. 
+
+Deling av NEWS2 - målinger - Vinje, Hol og Tysvær kommuner deltar i utprøving.
+Største problemstilling er å få leverandører med på å lage støtte for å dele/ konsumere NEWS2-målinger.
+
+Fra NHNs side så vil den tekniske løsningen bygge på Pasientens Måledata.
+
+! Prognose på penger og ressurser
+* Prognose 6.5 MNOK inkl felleskostnader for 2025
+* Lavere fart i utprøvingene enn forventet, vi har derfor ikke skalert opp team KOMLINK m/ innleie.
+
+*Finansiering: Ingen finansiering, ligger inne som et tiltak
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark9c89f55c045d4c0bcb8a">Oversikt Felles journalløft (Power BI)</a>
+
+
+

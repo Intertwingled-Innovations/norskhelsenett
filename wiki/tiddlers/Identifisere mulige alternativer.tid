@@ -1,0 +1,22 @@
+created: 20240703104935780
+modified: 20240709102221028
+revision: 0
+tags: 2025 [[Avvikle FOT innen Q4 2025]] Resultat
+title: Identifisere mulige alternativer
+type: text/vnd.tiddlywiki
+
+Foreløpig inntrykk:
+Regionene, de regionale IT-selskapene og forvaltningen synes å holde seg til oppfatningen om at "Filoverføring er en nasjonal tjeneste". De mener de skal klare å få på plass finansiering for en slik tjeneste, som kan overta for den eksisterende, som de i utgangspunktet er enige i at den er for dårlig, både forvaltningsmessig og kvalitativt (risikovurdering).
+
+Alternativer:
+
+* Case 1: Flytte FOT over til Felles tjenestesenter, og gjøre det til en betalbar tjeneste.
+
+* Case 2: Erstatte FOT med "noe annet" som FTS kan tilby, fortsatt som en betalbar tjeneste.
+
+* Case 3: Erstatte FOT med "noe annet" som de selv blir enige om, typisk en ekstern skyløsning som tilbyr fildeling (a la JottaCloud, FileMail, etc.).
+
+* Case 4: Erstatte FOT med en nasjonal tjeneste som forvaltes av NHN. Denne må i så fall utvikles av oss, og bruke infrastruktur som allerede finnes ("storfiltjenesten" i EDI 2.0 og S3). Forutsetter at "noen" finner finansiering for en slik tjeneste.
+
+
+ 

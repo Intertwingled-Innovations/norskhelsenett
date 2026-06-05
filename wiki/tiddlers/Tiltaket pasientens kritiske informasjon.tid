@@ -1,0 +1,33 @@
+created: 20240128083334970
+modified: 20250303132307831
+revision: 0
+tags: [[Norsk Helsenett SF]] 2024 Tiltak [[Tiltaket pasientens kritiske informasjon]] DigitalSamhandling
+title: Tiltaket pasientens kritiske informasjon
+type: text/vnd.tiddlywiki
+
+Deling av kritisk informasjon (alvorlige diagnoser og tilstander) om pasienten er opplysninger som det i en behandlingssituasjon er særskilt viktig at helsepersonell kjenner til og som vil være med å øke pasientsikkerheten. Kritisk informasjon blir oftest registrert i aktørens egne fagsystemer. Kritisk informasjon som i tillegg registreres i kjernejournal blir tilgjengelig for deling mellom aktører nasjonalt, for dem som har innført kjernejournal. Innbyggere får innsyn via helsenorge.
+
+Tiltaket skal bidra til å øke registreringsgraden nasjonalt, ved at helsepersonell kan registrere opplysningene i eget fagsystem – samtidig som data overføres automatisk til kjernejournalen. Dette skal bidra til at flere innbyggere får registrert kritisk informasjonen i kjernejournal og dermed redusere risiko for feilbehandling, som for eksempel alvorlige legemiddelreaksjoner. Tiltaket vil også redusere tiden helsepersonell bruker på å lete etter slik informasjon. 
+
+Kritisk informasjon inneholder flere av de samme helseopplysningene som er del av den internasjonale standarden International Patient Summary (IPS) . Flere land globalt   tar i bruk IPS for nasjonale formål for blant annet å tilrettelegge for innovasjon og næringsutvikling, samt for følge internasjonale anbefalinger.
+
+! Effektmål og resultatmål
+Effektmål og resultatmål vil bli presentert som en del av styringsdokumentet for tiltaket pasientens kritiske informasjon som legges frem i 2024.
+
+Norsk helsenett SF er ansvarlig for teknisk utvikling og utprøving av tiltaket. Norsk helsenett SF er også ansvarlig for drift og forvaltning av løsningen. 
+
+!! Oppgaver i 2024
+
+<<NHN-current-liste-levert type:"Oppgave" aar:"2024">>
+
+!! Leveranseplan 2024
+https://nhnkontor.sharepoint.com/:b:/r/sites/Samhandlingsplattformen/Shared%20Documents/Behovsteamet/Leveranseplan%202024/Leveranseplan%20til%20HOD%202024/Sendt%20HOD%20140224/Leveranseplan%201.1%202024%20til%20HOD%20140224.pdf?csf=1&web=1&e=ZGYhzo
+
+!! Rapportering leveranseplan 2024
+
+<<list-links filter:"[tag[2024]tag[Leveranse]tag[Rapportering leveranseplan]]">>
+
+
+! Styring 2024
+
+<<list-links filter:"[tag[Styring Tiltak]tag[2024]tag<currentTiddler>]">>

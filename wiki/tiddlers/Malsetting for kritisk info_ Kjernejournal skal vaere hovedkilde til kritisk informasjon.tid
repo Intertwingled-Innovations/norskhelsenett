@@ -1,0 +1,18 @@
+created: 20250708111440064
+modified: 20260330070944492
+revision: 0
+tags: [[Kjernejournal Pasientens kritiske informasjon]] Målsetting 2025
+title: Målsetting for kritisk info: Kjernejournal skal være hovedkilde til kritisk informasjon
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+
+Kjernejournal skal være hovedkilde til kritisk informasjon. Det innebærer at kritisk informasjon ikke skal utveksles via e-resept meldinger som hovedregel.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

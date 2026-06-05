@@ -1,0 +1,34 @@
+TjenesteID: 40026
+created: 20260407090621300
+modified: 20260409120234129
+revision: 0
+tags: Melding 2026 Målsetting
+title: Målsetting for Melding: Videreutvikling (v3) av EDI 2.0 og DEFT
+type: text/vnd.tiddlywiki
+
+Et antall brukere av EDI 2.0 kjører i stabil produksjon. 
+
+Ny funksjonalitet leveres i løpet av 2026, med målsetting om:
+
+* Enklere meldingshåndtering for produsenter og konsumenter
+* "Realtime" validering (av fagmeldinger)
+* Utvidet konfigurasjon for å kunne håndtere leverandører som har hver sine kunder i en kjede eller annen paraply organisasjon
+
+
+EDI 2.0 har kapabiliteter til å validere fagmeldinger, og kommer over tid til å heve kvaliteten på meldinger som vi i dag vet er utsatt for feil . Mer korrekte meldinger/data betyr økt pasientsikkerhet og spart tid for helsepersonell.
+Erfaringer fra pilotbrukerne viser at vi med denne tjenesten nærmer oss målet om at en tredjepart skal kunne ta Norsk helsenett sine tjenester ved egeninnsats, og med minimal involvering av NHN sitt støtteapparat. 
+
+EDI 2.0 er fortsatt i pilot, og vi arbeider mot produksjonssetting og 24/7 drift i løpet av Q3/Q4.
+Den endelige målsetningen med dette løpet er at EDI 2.0 skal erstatte ftps-tjenesten i løpet av 2-3 år, og til slutt hele den gamle EDI plattformen. Dette har lang horisont, men det bør ha skjedd en betydelig reorientering til ny tjeneste i løpet av 7-15 år.
+
+Det kan være et scenario at EDI 2.0 som brekkstang vil åpne for en raskere evolusjon av hele dette domenet (eksempelvis flere meldingsrettede API-er ute i sektoren), noe som i så fall vil medføre muligheter for enda raskere nyutvikling i sektoren under ett. 
+
+I Utviklerportalen: https://utviklerportal.nhn.no/informasjonstjenester/meldingstjener/
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

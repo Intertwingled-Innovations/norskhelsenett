@@ -1,0 +1,32 @@
+created: 20250211150211834
+modified: 20250211150225860
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] Reseptformidleren [[Styring Ekstern tjeneste]] Desember
+title: Reseptformidleren - hovedtrekk og endringer desember
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+Vi har hatt stabil drift siden flyttingen den 14-15 september, dette er vi svært fornøyd med. Alle miljøer hos Tietoevry er nå avviklet.
+
+Vi har avsluttet den løpende oppfølgingen av hendelsen med feil i dosering. Alle aktive resepter med feil er fulgt opp. Arbeid med langsiktige tiltak som skjerpede rekvirentkrav og mer validering i reseptformidleren ved mottak av resept gjøres i samarbeid med Verdikjede e-resept.
+
+Timepådraget for utvikling og test er fortsatt noe lavere enn planlagt hittil i år. Vi har redusert med tre innleide ila november og har planlagt utfasing av de siste fem innleide fra Netcompany innen utgangen av januar 2025. Vi har da fullført insourcing av reseptformidleren både når det gjelder drift og utvikling/forvaltning. En reduksjon i antall innleide vil redusere leveransefarten noe, men ikke lineært med antall personer som går ut.
+
+Reseptformidleren hadde en stor leveranse 23. november i tillegg til flere små leveranser, og har fått bedre rytme med flere og hyppigere leveranser. Godt samarbeid med driftsteamet i APT. Etter leveransene konsumerer Reseptformidleren personinformasjon fra Persontjenesten via Navet. Flere nye valideringer er innført, blant annet at fødselsnummer og etternavnet i resepten må samsvare med Folkeregisteret (Persontjenesten). I tillegg avvises resepter til personer som er registrert som død og der fødselsnummer ikke finnes i Folkeregisteret/Persontjenesten. Validering av pasient medfører at datakvaliteten i verdikjeden økes. Dette bygger oppunder målsettingen til Reseptformidleren. Økt datakvalitet medfører igjen økt pasientsikkerhet for innbyggerne, og NHN sparer tid på oppfølging av feilsendte resepter. 
+
+
+! Prognose på penger og ressurser 
+
+Finansiering: Tjenesten blir belastet med fellestjenester som har finansiering via medlemsavgiften på 4,1 mnok, resterende finansiering er via forskriftsfestede midler på e-resept.
+
+Takten for drift og forvaltning av reseptformidleren ligger fortsatt totalt sett under tildelt ramme for 2024. Det bør vurderes å betale tilbake overskytende midler ved årsskiftet.
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarkab9171eafbc4217a5bac">Oversikt Reseptformidleren (Power BI)</a>
+
+
+
+

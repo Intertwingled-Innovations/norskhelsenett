@@ -1,0 +1,16 @@
+TjenesteID: 40170
+created: 20260406184331013
+modified: 20260409113003246
+revision: 0
+tags: [[Kjernejournal Pasientens prøvesvar]] Målsetting [[Tiltaket pasientens prøvesvar]] 2026
+title: Målsetting for pasientens prøvesvar: Utvide tjenesten med prøvesvar på nye fagområder
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+Pasientens prøvesvar skal støtte prøvesvar innen patologi og medisinsk genetikk
+
+! Resultat
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

@@ -1,0 +1,11 @@
+TjenesteID: 40034
+created: 20260525112927067
+modified: 20260525113109115
+revision: 1
+tags: [[Tilby anonyme rådata til sektoren]] Resultat [[Produksjonsette CP-API]] 2026 Reseptformidleren [[Ekstern Tjeneste]]
+title: Avvikle statistikk batchen i RF
+type: text/vnd.tiddlywiki
+
+Dagens batch for å etablere grunnlag for statistikk skal avvikles.
+
+Dette gir en bedre og mer robust driftssitusjon.

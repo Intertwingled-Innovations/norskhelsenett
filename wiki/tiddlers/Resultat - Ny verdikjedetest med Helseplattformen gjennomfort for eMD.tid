@@ -1,0 +1,10 @@
+TjenesteID: 40039
+created: 20260311105609292
+modified: 20260504160427728
+revision: 0
+tags: 2026 Resultat [[Verdikjede e-resept]] [[Løpende test og godkjenning]]
+title: Resultat - Ny verdikjedetest med Helseplattformen gjennomført for eMD
+type: text/vnd.tiddlywiki
+
+Bistått Helseplattformen i ny verdikjedetest av legemiddelhåndtering spesielt for eMD funksjonalitet.
+Denne leveransen er en del av et ROS arbeid HP gjennomfører før de starter utprøving av eMD som første virksomhet med SFM BasisAPI

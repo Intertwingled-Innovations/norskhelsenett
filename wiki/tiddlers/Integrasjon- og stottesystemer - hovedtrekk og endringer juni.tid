@@ -1,0 +1,30 @@
+created: 20240627123731856
+modified: 20240703073524267
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] [[Integrasjon- og støttesystemer]] [[Styring Intern tjeneste]] Juni
+title: Integrasjon- og støttesystemer - hovedtrekk og endringer juni
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+''Junta/Flow''
+
+* jobbet med løsning for håndtering av API-brukere i Flow, som løser sikkerhetsavvik
+* fortsatt jobbet med avvikling av funksjonalitet i Junta
+* hjulpet seksjon nasjonalt nett med eksport av data til deres systemer
+* oppgradert til Red Hat Enterprise Linux 8 på infrastrukturen
+
+''Integrasjonstjenesten''
+
+* Gjennomført kurs i Kafka-verktøy og C#
+* Videre støtte i diskusjoner i bruk - ref innkjøp av nytt saksbehandlingssystem for kunde- og driftssenteret
+
+
+! Prognose på penger og ressurser
+*Finansiering: Medlemsavgiften
+* Som antatt ble avviket mellom bokførte og faktisk førte timer i mai tatt igjen i juni. Det er totalt sett for året et underforbruk på 359 timer, ifht. budsjettert.
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ad6307c59006ac4e200e?experience=power-bi&bookmarkGuid=Bookmark6966c46e3cd6605ce815">Oversikt Integrasjon- og støttesystemer (Power BI)</a>
+
+

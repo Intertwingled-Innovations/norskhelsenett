@@ -1,0 +1,36 @@
+created: 20240430101957428
+modified: 20240513114613316
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] Reseptformidleren April [[Styring Ekstern tjeneste]]
+title: E-resept verdikjede - hovedtrekk og endringer april
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+Godkjenning av HP (versjonsløft SFM) er ferdigstilt. Ny versjon ble brukt da Helse Møre Romsdal ble koblet på HP siste helg i april. 
+
+Godkjenning av DIPS med eMD er ferdigstilt. Versjonen skal testes av Helse Nord før den rulles ut der. 
+
+Godkjenning av Pridok og Sykehusapotekene pågår. 
+
+Utredning av mulighet for å avvise testresepter og e-resepter med navn som ikke stemmer med det som er registrert i Persontjenesten er ferdigstilt. RF kan gå i gang med å implementere nødvendig kode for å avvise slike e-resepter. Foreløpig logger vi slike e-resepter for å få oversikt over omfang. 
+
+E-resept Endringsråd for Q1 er gjennomført. 
+
+Helse Vest har bedt om å få bredde Infodoc Plenario til kommuner i Helsefellesskapet Bergensområdet. P.t. er det kun gitt godkjenning til bredding i Bergen kommune som del av utprøving PLL. Verdikjede e-resept har gjennomgått alle kjente feil i løsningen og laget en liste over feil som må rettes før godkjenning kan gis. Listen er forelagt Infodoc og skal diskuteres med klinikere før endelig retteplan settes opp. 
+
+
+! Prognose på penger og ressurser
+*Finansiering: Forskriftsfestede midler nasjonale e-helseløsninger, e-resept
+
+Timepådraget er noe under prognosen. Det er et overforbruk på godkjenningsprosessen og et noe større underforbruk på verdikjede, bla pga ferie og annet fravær.   
+
+En innleid testleder ble rullet av ved utgangen av april. Pga behov for testkapasitet for flere store godkjenningsprosesser vil verdikjede dele en innleid tester/testleder med FM fra medio mai, i første omgang ut året. Pga utlån av ressurser i teamet vil prognostisert timepådrag likevel være innenfor budsjett, dog på en annen AO. Men det vil være en økning av prognosen slik den ligger p.t. 
+
+<a href="https://app.powerbi.com/groups/6931f38e-9db9-41f4-a143-ac9ee4a4719c/reports/a03232e0-bd45-4da2-b925-662e476d7ebd/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark4c89bd5ada01ce3dc213">Oversikt E-resept verdikjede (Power BI)</a>
+
+
+
+

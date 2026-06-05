@@ -1,0 +1,59 @@
+created: 20240704112115124
+modified: 20240709081938289
+revision: 0
+tags: $:/tags/Global/View/Body
+title: NHN Procedures
+type: text/vnd.tiddlywiki
+
+\procedure NHN-current-liste-levert(type, aar)
+<ul>
+   <$list filter='[tag<currentTiddler>tag<type>tag<aar>]'>
+      <li> <$checkbox tag=Levert/> <$link><$view field='title'/></$link> </li> 
+   </$list>
+</ul>
+\end
+
+
+\procedure NHN-current-liste-liste-levert(type, undertype, aar)
+<ul>
+   <$list filter='[tag<currentTiddler>tag<type>]'>
+   <li> <$link><$view field='title'/></$link> </li>
+      <ul>
+         <$list filter='[tag<currentTiddler>tag<undertype>tag<aar>]'>
+            <li> <$checkbox tag=Levert/> <$link><$view field='title'/></$link> </li> 
+         </$list>
+      </ul>
+   </$list>
+</ul>
+\end
+
+\procedure NHN-liste-levert(type, aar)
+<ul>
+   <$list filter='[tag<type>tag<aar>]'>
+      <li> <$checkbox tag=Levert/> <$link><$view field='title'/></$link> </li> 
+   </$list>
+</ul>
+\end
+
+\procedure NHN-liste-liste-levert(type, undertype, aar)
+<ul>
+   <$list filter='[tag<type>]'>
+   <li> <$link><$view field='title'/></$link> </li>
+      <ul>
+         <$list filter='[tag<currentTiddler>tag<undertype>tag<aar>]'>
+            <li> <$checkbox tag=Levert/> <$link><$view field='title'/></$link> </li> 
+         </$list>
+      </ul>
+   </$list>
+</ul>
+\end
+
+\procedure NHN-liste(type, aar, maaned)
+<ul>
+   <$list filter="[tag<type>tag<aar>tag<maaned>]">
+      <li> <$link><$view field='title'/></$link> {{||$:/core/ui/ViewTemplate/tags}} <$transclude/> <br> ---- </li>
+   </$list>
+</ul>
+\end
+
+

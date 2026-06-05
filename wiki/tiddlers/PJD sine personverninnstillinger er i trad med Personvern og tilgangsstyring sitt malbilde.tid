@@ -1,0 +1,17 @@
+TjenesteID: 40171
+created: 20260511121235860
+modified: 20260512131101186
+revision: 0
+tags: 2026 [[Kjernejournal Pasientens journaldokumenter]] Målsetting [[PJD sine personverninnstillinger er i tråd med Personvern og tilgangsstyring sitt målbilde]]
+title: PJD sine personverninnstillinger er i tråd med Personvern og tilgangsstyring sitt målbilde
+type: text/vnd.tiddlywiki
+
+! Beskrivelse målsetting
+Pasientens journaldokumenter skal breddes videre slik at sykehus, kommuner, avtalespesialister og fastleger skal kunne dele journaldokumenter via tjenesten
+
+! Resultat
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

@@ -1,0 +1,14 @@
+created: 20250728133748843
+modified: 20250728134441730
+revision: 0
+tags: [[Modernisering av reseptformidleren]] Resultat 2025
+title: Beregning av gjenværende mengde
+type: text/vnd.tiddlywiki
+
+Pt er det ikke informasjon om gjenværende mengde på en resept. Dette beregnes av alle som trenger det ved å gå gjennom alle meldinger knyttet til resepten. Det kan være utleveringer, annullering av utlevering, tilbakekalling, etc. I enkelte tilfeller kan dette være komplisert og resultat kan bli forskjellig i forskjellige løsninger/tjenester.
+
+Om en resept er utekspedert settes manuelt i apotek. Det kan for eksempel være at det er noe gjenværende mengde, men det finnes ikke riktig pakningsstørrelse. Da kan resepten bli satt til utekspedert.
+
+Både MyHelath@EU og EHDS setter krav om at gjenværende mengde er et informasjonselement knyttet til selve resepten. Reseptformidleren må derfor beregne gjenværende mengde og lagre dette sammen med øvrig resept informasjon.
+
+Dette er nyttig også for andre tjenester, for eksempel legemiddel informasjon i kjernejournal - Pasientens legemidler tjenesten som er under etablering.

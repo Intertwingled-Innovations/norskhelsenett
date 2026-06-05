@@ -1,0 +1,23 @@
+created: 20240118064637267
+modified: 20260527125442350
+revision: 4
+tags: 
+title: Norsk Helsenett SF
+type: text/vnd.tiddlywiki
+
+Vi gjør helseinformasjon og digitale tjenester tilgjengelig – trygt, enkelt og relevant
+
+Slik hjelper vi innbyggerne med å mestre sin egen helsehverdag, helsesektoren til å yte gode helsetjenester, forskerne til å utvikle ny kunnskap og næringslivet til å levere sine tjenester for bedre helse. Vi forenkler arbeidsdagen til helseforvaltningen slik at de kan samle seg om sitt samfunnsoppdrag.
+
+!Tiltak 2026
+<<list-links filter:"[tag[Tiltak]tag[2026]]">>
+
+!Divisjoner
+<<list-links filter:"[tag[Divisjon]]">>
+
+!Fora
+<<list-links filter:"[tag[Fora]tab<current§>]">>
+
+!Tidligere år
+* [[Norsk Helsenett SF 2025]]
+* [[Norsk Helsenett SF 2024]]

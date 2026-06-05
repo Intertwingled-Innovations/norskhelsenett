@@ -1,0 +1,17 @@
+created: 20250807111247641
+modified: 20251214181603975
+revision: 0
+tags: [[Sentral forskrivningsmodul]] Leveranse [[Team SFM]] 2025 [[Godkjenning av SFM for kommunemarkedet]] [[Resultat SFM: Godkjenning av SFM for kommunemarkedet]] Juni Juli [[Videreutvikle SFM slik at den blir godkjent for innføring til kommunal pleie og omsorg]]
+title: Leveranse SFM: Diverse funksjonelle endringer
+type: text/vnd.tiddlywiki
+
+Mål: Godkjenning av SFM for kommunemarkedet
+
+Levert:
+
+*Funksjoner som ikke er relevant for sykepleiere er ikke tilgjengelig i brukergrensesnittet (prioritet fra kommunene)
+*EPJ kan filtrere bort oppgaver som ikke er relevante (prioritet fra kommunene)
+*Endret logikk for modal for låste resepter ved oppslag (ønske fra fastleger)
+*Automatisert deploy til AT-cluster
+
+

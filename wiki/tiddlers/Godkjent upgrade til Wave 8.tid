@@ -1,0 +1,16 @@
+created: 20260407215017737
+modified: 20260408062019678
+revision: 0
+tags: 2026 Målsetting [[Team MyHealth@EU]] [[Godkjent upgrade til Wave 8]] Myhealth@EU
+title: Godkjent upgrade til Wave 8
+type: text/vnd.tiddlywiki
+
+Norge har oppgradert til wave 8
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

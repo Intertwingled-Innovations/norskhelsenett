@@ -1,0 +1,11 @@
+created: 20260512071314525
+modified: 20260512072917988
+revision: 0
+tags: [[Utvikle test EPJ for PJD slik at det er lett å teste og forstå NHN dokumentlager]] 2026 Januar Leveranse
+title: Det er mulig å laste opp journaldokument via https:/epj.pjd.test.nhn.no/
+type: text/vnd.tiddlywiki
+
+!Leveranse
+* Det er mulig å laste opp journaldokumenter.
+
+Levert januar 2026: https://epj.pjd.test.nhn.no/ 

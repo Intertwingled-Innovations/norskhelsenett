@@ -1,0 +1,28 @@
+TjenesteID: 40030
+created: 20240128165322248
+modified: 20260409145050461
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] [[Domene Samhandlingsplattform]] 2026
+title: Person
+type: text/vnd.tiddlywiki
+
+Person består av følgende områder:
+
+* ''Person API'' - Søk og oppslag på innbyggere i Norge, samt nasjonale felles hjelpenummer
+* ''Alternate identification number API'' - Reservere nasjonale felles hjelpenummer
+* ''Reserved testdata API'' - Opprette/oppdatere statiske testpersoner i Persontjenestens testmiljø
+* ''Personregisteret (PREG)'' - Forrige løsning for søk og oppslag på innbyggere i Norge, nå under utfasing
+
+! Målsettinger
+
+<<list-links filter:"[tag[Målsetting]tag<currentTiddler>]">>
+
+! Styring
+!! 2026
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag<currentTiddler>]">>
+
+!! 2025
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2025]tag<currentTiddler>]">>
+
+!! 2024
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2024]tag<currentTiddler>]">>

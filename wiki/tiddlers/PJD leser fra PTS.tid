@@ -1,0 +1,10 @@
+TjenesteID: 40171
+created: 20260512124601545
+modified: 20260512124753296
+revision: 0
+tags: 2026 [[Kjernejournal Pasientens journaldokumenter]] [[PJD leser og skriver personverninnstillinger til PTS for prøvesvar]] [[PJD leser fra PTS]] Leveranse
+title: PJD leser fra PTS
+type: text/vnd.tiddlywiki
+
+! Leveranser
+Pasientens journaldokumenter leser fra PTS  og kan sette personverninnstillinger for prøvesvar. 

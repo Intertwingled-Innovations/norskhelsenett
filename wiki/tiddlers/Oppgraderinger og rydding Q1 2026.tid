@@ -1,0 +1,20 @@
+TjenesteID: 40034
+created: 20260401105708558
+modified: 20260414124518343
+revision: 0
+tags: [[Forenkling og opprydding i dagens løsning (RF)]] 2026 Mars [[Ekstern Tjeneste]] Leveranse Reseptformidleren
+title: Oppgraderinger og rydding Q1 2026
+type: text/vnd.tiddlywiki
+
+*Oppgradert til Java 25
+*Oppgradert Quarkus rammeverk til siste versjon
+*Fjernet kode for egenandel, dette håndteres ikke lengre i RF
+*Fjernet toggles som er "ferdig brukt"
+*Ryddet opp i alarmer med tydelig skille mellom det som skal varsles til OS og RF vakt og det som skal varsles til dagvakten (haster ikke, krever ikke umiddelbar aksjon)
+*Støtte for ny meldingsversjon med nye felt for M9.1/2 2025 Utleverer og MNA9.1/2 2025 Nettutleverer
+
+Verdien av dette er at vi:
+
+*håndterer sårbarheter løpende
+*legger til rette for riktigere og mer automatisert overvåking
+*sørger for at koden er lett å vedlikeholde når gammel/ubrukt kode og "ferdig brukte" toggles ryddes vekk

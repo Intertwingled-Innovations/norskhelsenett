@@ -1,0 +1,15 @@
+created: 20250707090020488
+modified: 20260330070845619
+revision: 0
+tags: [[Kjernejournal Pasientens journaldokumenter]] Målsetting 2025
+title: Målsetting for pasientens journaldokumenter: Kommuner deler journaldokumenter via tjenesten
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+Kommunene i Norge deler journaldokumenter via tjenesten.
+
+! Resultat
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

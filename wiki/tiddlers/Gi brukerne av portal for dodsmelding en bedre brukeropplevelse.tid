@@ -1,0 +1,15 @@
+TjenesteID: 40041
+created: 20260331084545556
+modified: 20260409110915108
+revision: 0
+tags: [[Innrapportering av dødsfall og dødsårsak oppsummert 2026]] Målsetting 2026 [[Innrapportering av dødsfall og dødsårsak]]
+title: Gi brukerne av portal for dødsmelding en bedre brukeropplevelse
+type: text/vnd.tiddlywiki
+
+Vi ønsker å gi brukerne en bedre brukeropplevelse og en mer effektiv bruyk av portal for dødsmelding.
+
+! Resultat
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

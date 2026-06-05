@@ -1,0 +1,17 @@
+TjenesteID: 40027
+created: 20260506161903432
+modified: 20260511184703354
+revision: 0
+tags: 2026 Målsetting Virksomhet
+title: Opprydding i den gamle registerplattformen
+type: text/vnd.tiddlywiki
+
+Etterhvert som løsninger legges over i privat sky er det en del infrastruktur som kan fases ut eller konsolideres. 
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranse
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

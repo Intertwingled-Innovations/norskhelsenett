@@ -1,0 +1,14 @@
+created: 20250116121935733
+modified: 20250120081919868
+revision: 0
+tags: [[Legge til rette for integrasjon med minst ett pasientjournalsystem]] 2024 Desember Leveranse
+title: Tilrettelagt for EPJ integrasjon
+type: text/vnd.tiddlywiki
+
+!!Hva er levert?
+
+CGM leverer EPJ-system til både Bodø- og Stjørdal legevakt. Flere møter er avholdt, og de planlegger å ha dette med i SW versjon 142 som kommer til sommeren 2025
+
+!!Hvilken nytte til sektor?
+
+Helsepersonell slipper egen HelseID-pålogging hvis dette allerede er gjort gjennom EPJ-pålogging. 

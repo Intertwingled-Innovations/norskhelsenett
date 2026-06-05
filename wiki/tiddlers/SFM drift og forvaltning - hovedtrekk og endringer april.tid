@@ -1,0 +1,36 @@
+created: 20240430104218335
+modified: 20240513065838903
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] [[Sentral forskrivningsmodul]] April [[Styring Ekstern tjeneste]]
+title: SFM drift og forvaltning - hovedtrekk og endringer april
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+* Vi jobber kontinuerlig med å gå fra prosjekt til produktorganisasjon. 
+* Hovedfokus på stabilitet og overgang til privatsky
+* Leverer ny integrasjon mot vedtaksspørringen/Helfo i Q2 
+* Leverer etterlengtet Multitenant sammen med HelseId i Q2
+* v3.11 levert og Helseplattformen er oppgradert tilsvarende
+* Utviklingsmiljø privat sky 90% ferdig satt opp
+* v4.0 ETA mai, diverse endringer
+* Ingen driftsstans
+
+! Prognose på penger og ressurser
+
+* En UI designer (konsulent) sagt opp fra 31. mai
+* En fast ansatt slutter 31. mai
+* Ny fast ansatt starter i august
+* Infosec konsulent tatt ned til 50% fra 1. mai
+
+* Prosjektet begynte å sette opp privat sky i 2023 uten en plan. Medfører dobbel kost enkelte steder
+*SFM drift og forvaltning, omfordelte offentlige midler fra tidligere år + ekstra bevilgning: Ramme 48,8 mnok.  Estimatene i prognosen tilsier nå en overskridelse på 14,4 mnok dersom man forutsetter en margin på 5%.SMF drift og forvaltning har et for høyt avvik til at vi klarer å jobbe innenfor rammen med 5% margin. Kjører vi uten margin på SFM drift og forvaltning samt ber om omdisponering av midler fra PPS drift og forvaltning har vi et gjenstående avvik på 4 mnok. Senere innspill tilsier at vi kan klare å ta ned Thula med 2 mnok og resterende 2 mnok på timer. Dette må løftes.
+
+*Finansiering: Inntektsramme er på 48,8 mnok og består av offentlig tilskudd og omfordelte midler fra tidligere år samt finansiering på 2,6 mnok medlemsinntekt for å dekke de interne tjenestene som er belastet på SMF og som skal dekkes av medlemsinntekt.
+<a href="https://app.powerbi.com/groups/6931f38e-9db9-41f4-a143-ac9ee4a4719c/reports/a03232e0-bd45-4da2-b925-662e476d7ebd/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark653d46c1659b4733c1ea">Oversikt SFM drift og forvaltning (Power BI)</a>
+
+
+
+

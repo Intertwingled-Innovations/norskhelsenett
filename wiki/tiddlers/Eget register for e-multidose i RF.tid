@@ -1,0 +1,17 @@
+TjenesteID: 40034
+created: 20260220114832823
+modified: 20260414122925984
+revision: 0
+tags: Reseptformidleren Målsetting 2026 [[Ekstern Tjeneste]]
+title: Eget register for e-multidose i RF
+type: text/vnd.tiddlywiki
+
+Dagens løsning for e-multidose skalerer dårlig og er vanskelig å endre uten at det går utover annen funksjonalitet eller datakvalitet i reseptformidleren. E-multidose og PLL deler samme melding, og det er krevende for helsepersonell å bruke e-multidose på rett måte. Et eget register vil gi mulighet for at helsepersonells leverandører kan tilby en bedre og enklere tjeneste som skalerer bedre. Hvis NHN søker om å hjemle nytt register samt API-tilgang under unntak som gjelder for utprøving vil det være mulig å gå i produksjon med dette i 2026, med leverandører som er villig til å være først ute.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

@@ -1,0 +1,27 @@
+created: 20240128083727072
+modified: 20240506132046563
+revision: 0
+tags: [[Tiltaket pasientens kritiske informasjon]] 2024 Oppgave
+title: I samarbeid med Helsedirektoratet tilpasse tillitsrammeverket for deling av kritisk informasjon
+type: text/vnd.tiddlywiki
+
+Deling av kritisk informasjon er langt på vei tilpasset tillitsrammeverket. 
+Bruksvilkårene for de ulike tjenestene regulerer partenes roller og ansvar, oppgaver og forpliktelser. Før virksomheten kan ta i bruk Kritisk informasjon, skal bemyndiget representant for virksomheten akseptere og signere bruksvilkår for kjernejournal. Virksomhetens aksept av vilkårene vil som prinsipp benyttes som en tilgangsstyring slik at det kun er medlemmene som får tilgang til å ta i bruk kritisk informasjon. Virksomheter som ikke har akseptert vilkår for bruk av tjenesten og for HelseID får ikke tilgang til kritisk informasjon. Forpliktelsene som kunden må akseptere ved å signere på bruksvilkår beskriver også de konkrete tillitsskapende mekanismene som benyttes av den enkelte tjenesten. Dette binder ulike mekanismer fra tillitsrammeverket sammen med bruksvilkårene for den enkelte tjeneste. Kritisk informasjon benytter en del tillitsskapende mekanismer som NHN tilbyr som en del av tillitsrammeverket. Hvilke mekanismer fra tillitsrammeverket som benyttes for kritisk informasjon avhenger av aktørbildet, og hvordan opplysninger utveksles og hvilke opplysninger som inngår. 
+De tillitsskapende mekanismene som er like for samtlige tjenester, herunder også for Kritisk informasjon, er langt på vei harmonisert på tvers av tjenestene. Disse er:
+•	medlemsavtalen i helsenettet, herunder å følge Normen
+•	avtalt ansvars- og oppgavefordeling i felles bruksvilkår som håndheves av NHN
+•	helsepersonellets bruk av eID for tilgang til helseopplysninger, som holder tilstrekkelig høyt sikkerhetsnivå
+•	identifiserings- og autentiseringsløsning i helseID
+•	bruk av Altinn for delegering av fullmakter
+•	innbyggers innsynslogg i helsenorge
+
+For å få tilgang til nasjonale e-helseløsninger som kjernejournal er det stilt krav om autentisering av personell på et høyt sikkerhetsnivå, jf. kjernejournalforskriften § 9 andre ledd. Når taushetsbelagte opplysninger skal deles med andre, og især mellom virksomheter, blir et viktig spørsmål hvilken virksomhet som skal avgjøre hvorvidt vilkårene er oppfylt. I kjernejournalforskriften § 9 om tilgangsstyring er det blant annet bestemt at tilgang til den
+nasjonale kjernejournalen skal skje gjennom autorisasjons- og autentiseringsløsningen i egen virksomhet, jf. første ledd. Det følger videre at hver virksomhet skal etablere nødvendige organisatoriske og tekniske tiltak for tildeling, administrasjon og kontroll av autorisasjoner for tilgang til helseopplysninger i nasjonal kjernejournal. Tilgangsstyringen i «egen virksomhet» skal være i samsvar med pasientjournalforskriften § 13. En autorisasjon skal knyttes til en entydig identifisert person i en bestemt rolle og være tidsbegrenset. Den dataansvarlige for den nasjonale kjernejournalen kan sette vilkår for tilgang, oppbevare oversikt over utstedte autorisasjoner og føre kontroll med at tilgang skjer i samsvar med reglene for tilgangsstyring, jf. § 9 tredje ledd.
+
+Ved bruk av http-tjeneste må det lokale fagsystemet iverksette nødvendig teknisk funksjonalitet for å kunne dokumentere at kravene til tilgangsstyring mv. er ivaretatt i henhold til kjernejournalforskriften. Antall informasjonselementer som fagsystemet til helsepersonellet utleverer ved tilgang til kritisk informasjon er færre enn for eksempel pasientens journaldokumenter. Grunnlaget for tilgangen for opplysninger fra kritisk info må likevel dokumenteres i helsepersonellet fagsystem i sin helhet. For kritisk informasjon må følgende parametere i helsepersonellets attest i henhold til tillitsrammeverket (med unntak av samtykkegrunnlaget) sendes inn av det kliniske fagsystemet:
+
+•	Samtykkegrunnlag (jfr. kjernejournalforskriften) 
+•	Overorganisasjon (legal entity)
+•	Underorganisasjon (Point of care)
+•	Unik identifikator av Helsepersonell (HPR-nr.)
+•	Helsepersonellets autorisasjon («rolle») 

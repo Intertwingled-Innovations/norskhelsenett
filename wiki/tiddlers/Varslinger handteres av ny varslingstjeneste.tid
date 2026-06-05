@@ -1,0 +1,17 @@
+TjenesteID: 40033
+created: 20260316124611330
+modified: 20260409114159370
+revision: 0
+tags: [[Kjernejournal portal]] Målsetting 2026
+title: Varslinger håndteres av ny varslingstjeneste
+type: text/vnd.tiddlywiki
+
+Innbygger kan be om et daglig varsel dersom sperret informasjon åpnes, og de kan be om et månedlig varsel dersom det gjøres oppslag i kjernejournal. I dag håndteres dette gjennom OSB og dagens Smarthost-løsning for utsendelse av e-mail. Det skal etableres en varslingsløsning, slik at innbygger blir varslet gjennom Helsenorge.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

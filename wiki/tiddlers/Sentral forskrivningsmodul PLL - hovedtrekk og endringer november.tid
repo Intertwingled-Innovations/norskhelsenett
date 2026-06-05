@@ -1,0 +1,30 @@
+created: 20241206124900708
+modified: 20241209095331284
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] [[Videreutvikle sentral forskrivningsmodul (SFM) for fastlege og sykehus, samt fortsette utvikling av funksjonalitet for sykehjem, hjemmetjeneste og legevakt]] [[Styring Tiltak]] [[Sentral forskrivningsmodul]] November
+title: Sentral forskrivningsmodul PLL - hovedtrekk og endringer november
+type: text/vnd.tiddlywiki
+
+
+! Hovedtrekk og endringer
+* SFM godkjent for fastlegemarkedet i 2025
+* Hovedfokus på stabilitet og overgang til privatsky - Task force hos APT er etablert
+* v4.7 levert med diverse feilrettinger og funksjonelle endringer (se under)
+* RISIKO: Bygging av privat sky går for sakte og drift org ikke klar for mottak ?
+
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag[November]tag[Sentral forskrivningsmodul]]">>
+
+
+! Prognose på penger og ressurser
+
+* Finansiering: Offentlig tilskudd, PLL -ramme på 62,5 mnok + Multidose 4,7 -> Tildelt ramme på 67,2. 
+* Til sammen har vi en prognose på 53,1 mnok liggende inne. Takten ser bra ut. Vridning av Thula timer for november og desember ( ca 2 mNok) vil ta prognosen noe opp og ta oss nærmere rammen på 62,5 mnok
+* Margin på 5% er fjernet fra prognosen.
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark2bd56f9db35a6e55a14f">Oversikt Sentral forskrivningsmodul PLL (Power BI)</a>
+
+

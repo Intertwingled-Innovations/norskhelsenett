@@ -1,0 +1,16 @@
+created: 20240813120234300
+modified: 20240814075848917
+revision: 0
+tags: Testunivers Tiltak Målsetting Leveranse 2024 Desember
+title: Etablere datakatalogen MS PurView
+type: text/vnd.tiddlywiki
+
+Målsetningen er 
+ - å lage en datastruktur som gjør det mulig å administrere de syntetiske data som skal inn og ut av datasjøen på en effektiv, sikker og brukervennlig måte. Oppstart medio august.
+
+! Resultat
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

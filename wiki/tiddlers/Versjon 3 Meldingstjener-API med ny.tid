@@ -1,0 +1,10 @@
+TjenesteID: 40026
+created: 20260408081137415
+modified: 20260409120341230
+revision: 0
+tags: [[Målsetting for Melding: Videreutvikling (v3) av EDI 2.0 og DEFT]] Resultat 2026 Melding
+title: Versjon 3 Meldingstjener-API med ny
+type: text/vnd.tiddlywiki
+
+Vi skal forenkle API'et for alle brukere av EDI 2.0 ved å åpne for polling av meldinger, redusere antall notifikasjoner og gjøre flyten mer effektiv for leverandører som benytter seg av tjenesten.
+Målet er at v3 er ute i produksjon i Q2 2026.

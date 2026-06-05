@@ -1,0 +1,20 @@
+created: 20250519210406839
+modified: 20250527154838186
+revision: 0
+tags: 
+title: Virksomhetsstyring 2025 - målsetninger
+type: text/vnd.tiddlywiki
+
+! Leveranser i 2025
+!! Målsettinger
+<<NHN-liste type:"Målsetting">>
+<<NHN-liste type:"Målsetting" aar:"2025">>
+<<list-links filter:"[tag[Målsetting]tag[2025]]">>
+
+! Oppfølging og rapportering i 2025
+
+<<NHN-liste-levert type:"OppfølgingOgRapportering" aar:"2025">>
+
+! Oppgaver i 2025
+
+<<NHN-liste-liste-levert type:"Tiltak" undertype:"Oppgave" aar:"2025">>

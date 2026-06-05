@@ -1,0 +1,45 @@
+created: 20240627123653228
+modified: 20260330071026466
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] [[Styring Tiltak]] [[Tiltaket pasientens prøvesvar]] Juni [[Kjernejournal Pasientens prøvesvar]]
+title: 06 Tiltak pasientens prøvesvar - hovedtrekk og endringer juni 2024
+type: text/vnd.tiddlywiki
+
+<<list-links filter:"[tag[Tiltaket pasientens prøvesvar]tag[Tiltak]tag[2024]]">>
+
+! Hovedtrekk og endringer
+
+!!! Fastleger, legevakt og sykehus har prøvd ut tiltaket og er klar for innføring og bruk til helsehjelp:
+* Pasientens prøvesvar er pr juni 2024 fortsatt i teknisk utprøving med formål kvalitetssikring. 
+* Vi har pr idag ca 8 mill svarrapporter som gjøres tilgjengelig for ca 50 ulike helsepersonell. Fire private laboratorium sender automatisk prøvesvar, i tillegg mottar vi manuelt innsendte prøvesvar fra ca 10 helseforetak. Helse Vest har startet automatisk innsending av svarrapporter f.o.m. 12. juni 2024.
+* Målet om oppstart helsehjelp i Q4'2024 - nødvendig for å utløse betalingsplikt for 2025 - synes vanskelig. Alle RHF'ene har uttalt at de anser Q1'2025 som realistisk. Årsaken er tid til å implementere nødvendig funksjonalitet i rekvisisjonsløsningene og LIMS/RIS, samt tid til test (~3 mnd). Det er nå rapportert Q1'2025 som estimert oppstartsdato også til HOD.
+* Blant de 50 som har tilgang er det fastleger og helsepersonell ved sykehus. Hensikten er imidlertid å kvalitetssikre visningen i kjernejournal portal. Det er besluttet å kompensere fastleger for deltakelse i utprøvingen.
+
+!!! Innbyggere kan se sine prøvesvar i helsenorge:
+* Teknisk er dette på plass, men det er valgt midlertidig å fjerne innbyggers innsyn i egne prøvesvar så lenge utprøvingen pågår. Dette ble gjort for å etterkomme et sterkt ønske fra RHF'ene om ikke å tillate visning for innbygger så lenge det kun er kvalitetssikring.
+* Det skal gjennomføres en brukertest blant innbyggere i Q2'2024 for å få tilbakemelding på brukervennligheten.
+* Helsenorge ønsker å gjennomføre en begrenset pilot for utvalgte innbyggere før tjenesten går i produksjon i Q1'2025.
+ 
+!!! Løsningen kan tilgjengeliggjøre prøvesvar fra spesialisthelsetjenesten, private laboratorier og radiologiske virksomheter:
+* Teknisk er dette på plass, og vi mottar prøvesvar både fra private og offentlige laboratorier. Det gjenstår imidlertid å etablere følgende tekniske funksjonalitet:
+* NHN skal etablere et helsehjelp-API som gjør det mulig for rekvirenten å angi om svarrapporten har helsehjelpsformål (skal inn i pasientens prøvesvar) eller ikke (skal ikke inn i pasientens prøvesvar). NHN har ambisjon om å ha dette på plass til august 2024. Spesifikasjonen er klar, og det er juridisk avklart at NHN kan etablere dette og lagre nødvendig informasjon for å oppfylle kjernejournalforskriftens paragraf 5. Team PTS ble oppbemannet fra 13. mai for å håndtere dette, men sliter med sykdom i teamet.
+* NHN skal utvide funksjonalitet i PTS til å kunne motta sperring og skjerming. Dette skal være på plass før sommeren. Både Fürst forum og Dips Interactor er i gang med å integrere seg mot PTS.
+* NHN har i samråd med sektoren etablert 6 feature team som skal bli enig om en tilstrekkelig god visning i kjernejournal portal. Det er pr mai 2024 ingen fagområder hvor det er oppnådd enighet om visningen, men det er besluttet at medisinsk biokjemi og radiologi blir de første fagområdene.
+
+!!! Starte klinisk utprøving av pasientens prøvesvar med både private og offentlige lab'er:
+* NHN presenterte et mulig omfang for oppstart klinisk utprøving i OSG 30. april: svarrapporter fra private lab'er, svarrapporter fra spesialisthelsetjenestens lab'er (kun eksternrekvirerte), kanskje internrekvirerte prøvesvar i Helse Midt. Internrekvirerte prøvesvar fra de andre RHF'ene virker usannsynlig da det vil kreve endringer i Dips AOM (Arena Order Management).
+* Tilbakemelding fra Helse Sørøst og Helse Nord om at de ikke ser det som sannsynlig å få med eksternrekvirerte prøvesvar heller før Q1'2025. Helse Vest ga tilsvarende tilbakemelding i workshop 8. mai.
+* NHN gjennomførte workshop med alle RHF'ene i Oslo 7.-8. mai der detaljene for teknisk løsning for MVP1 og omfanget av MVP1 i stort ble avklart. 
+* Det er ferdigstilt spesifikasjon for rekvisisjonsløsningene. Det er imidlertid ikke lagt en formell bestilling til Dips Interactor ennå, men Helse Nord holder i dette. 
+* Det er ferdigstilt spesifikasjon for LIMS/RIS systemene. Helseforetakene har imidlertid ikke lagt bestilling til sine leverandører ennå, det avhenger av at de kan sikre finansiering. Unntaket er Helse Vest, som håndterer bestilling til Alfasoft (Unilabs) med mål om leveranse i november 2024. Unisoft brukes av alle helseforetak i Vest og dekker 5 av 8 fagområder. 
+
+! Prognose på penger og ressurser
+
+*Finansiering: Offentlig tilskudd, PPS,  ramme på 16,6 mnok som tilfaller vår divisjon og 1,4 mnok som tilfaller divisjon Innbygger. Prognosen for året for DHP pr 1. mai tilsier 26,9 mnok, dvs 10,3 mnok over ramme. Dette gir imidlertid et misvisende bilde da teamet har jobbet all tid de første 4 mnd på PPS og ingenting på PMD (årsprognose 3,1 mnok under ramme) og svært lite på forvaltning (årsprognose 1,7 mnok under ramme). Overforbruket på 10,3 mnok løses ved å overføre 4 MNOK fra mandatet for pasientens journaldokumenter, samt at deler av teamet reallokeres til rekvisisjonshotell.
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection343a8851705d1cfe8125?experience=power-bi&bookmarkGuid=Bookmarkb054aef5571bab1663f9">Oversikt PPS (Power BI)</a>
+
+* Ny fast ansatt rekruttert til team Nilar, oppstart 1. juni. Erstatter konsulent som sluttet tidligere i år. Overforbruk på PPS så langt må justeres ved at teamet også får ansvar for rekvisisjonshotell som ble vedtatt i prioriteringsråd 5. juni 2024.
+
+
+

@@ -1,0 +1,16 @@
+created: 20240128165817892
+modified: 20240703082337958
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Intern tjeneste]]
+title: Produktutviklingsplattform
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+
+! Målsettinger
+
+<<list-links filter:"[tag[Målsetting]tag<currentTiddler>]">>
+
+! Styring
+!! 2024
+<<list-links filter:"[tag[Styring Intern tjeneste]tag[2024]tag<currentTiddler>]">>

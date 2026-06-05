@@ -1,0 +1,19 @@
+TjenesteID: 40048
+created: 20240128165505237
+modified: 20260508064835381
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] [[Team Kommune]] 2026 [[Domene Økosystem]]
+title: Støtte og hjelp til kommune
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+
+Team kommune skal jobbe for at Norsk helsenett fremstår som en tydelig og koordinert tjenesteleverandør, som kommunene opplever det lett å samarbeide med.
+
+For å lese mer om kommunene som kundegruppe, se underside på Intravenøs (intranett). 
+
+Se også confluence for mer informasjon: https://confluence.nhn.no/display/SAM/Team+kommune
+
+! Målsettinger
+
+<<list-links filter:"[tag[Målsetting]tag<currentTiddler>tag[2026]]">>

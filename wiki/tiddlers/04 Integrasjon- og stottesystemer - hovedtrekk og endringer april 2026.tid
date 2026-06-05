@@ -1,0 +1,32 @@
+TjenesteID: 40053
+created: 20260505125431312
+modified: 20260521071313805
+revision: 0
+tags: 2026 Integrasjonstjenesten [[Integrasjon- og støttesystemer]] [[Styring Intern tjeneste]] Styring [[Forretningsmessig endring:1]] April
+title: 04 Integrasjon- og støttesystemer - hovedtrekk og endringer april 2026
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer mars
+
+* Ikke noe aktivitet på Integrasjonstjenesten, den er flyttet over til Sky
+* Nedstengning av Flow modulene fortsetter noenlunde etter planen: 
+* Flow CMDB stengt 10 april, uCMDB tar over.
+* Junta - samband, stenges 10 april. Stor kake servert i Tromsø
+* Saku-tech, historisk sambandsinfo, flyttes til DTS, 10 april
+* Flow VioIP er stengt ned 10 april
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 1''
+
+Konsekvens av forretningsmessig endring:
+
+
+!Prognose på penger og ressurser
+
+* Er definert som en felles tjeneste i NHN hvor kostnadene fordeles ut på aktiviteter i divisjonene basert på fordelingsnøkler.
+* Opprinnelig kostnadsbudsjett var på 10,0 mnok
+* Årsprognosen pr. april viser 3,5 mnok, men her ligger det fortsatt prognose på plattformkostnader ut året. Tjenesten ble avviklet hos DHP pr. 30.04.2026 så prognose skal være lik regnskap pr. april, 3,1 mnok.
+* Ansvaret for tjenesten vil flyttes over til Privat Sky fra 1. mai og vi vil derfor redusere prognosen på tjenesten fra dette tidspunktet. Håvard hos Privat Sky vil være ansvarlig for denne tjenesten fra mai og vil følge opp tjenesten og  prognoser på sitt område.
+* Ressurser fra DHP som har jobbet med tjenesten vil få nye oppgaver, blant annet SAKU, Statistikk og måling samt Legemiddel grunndata DMP.
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ad6307c59006ac4e200e?experience=power-bi&bookmarkGuid=Bookmark6966c46e3cd6605ce815">Oversikt Integrasjon og støttesystemer(Power BI)</a>

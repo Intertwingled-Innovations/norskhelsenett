@@ -1,0 +1,10 @@
+created: 20250224071214504
+modified: 20250224073344366
+revision: 0
+tags: [[Avvikle FOT innen Q4 2025]] Resultat 2025 Mars
+title: FTS og FHI finner "ny løsning"
+type: text/vnd.tiddlywiki
+
+Tentativ End-of-life var kommuinisert til juni, men på grunn av problematikk rundt vedlikehold av nextcloud  blir reell EOL varlset til mars 2025, på grunn av overordnete sikkerhetsvurderinger og nødvendig oppdatering av HelseID.
+Som et resultat av satte vi i gang en hasteprosess mot FHI. FTS ot regionene. Nå viser det seg at FHI hele tiden har hatt nulighet til å ta i bruk et verktøy de allerede har tatt i bruk til andre formål.  HSØ har som forventet generert litt støy rundt dette, og framstår som om de ikke har skjønt, eventuelt ikke tror på, at FOT faktisk vil komme til å gå ned i mars.
+FHI tar forhåpentlig ansvar for at regionene blir med over til SIKT sin løsning (FileSender, aut. Feide)

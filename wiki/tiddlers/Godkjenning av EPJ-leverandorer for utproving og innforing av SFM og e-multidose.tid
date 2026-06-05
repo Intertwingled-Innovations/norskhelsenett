@@ -1,0 +1,18 @@
+created: 20250114215437738
+modified: 20250131104701179
+revision: 0
+tags: [[Godkjenne EPJ-leverandører for utprøving og innføring av SFM og e-multidose]] 2024 [[Tiltaket pasientens legemiddelliste]] Leveranse Desember
+title: Godkjenning av EPJ-leverandører for utprøving og innføring av SFM og e-multidose
+type: text/vnd.tiddlywiki
+
+!! Hva er levert?
+
+3 av 4 leverandører for fastlegemarkedet har i 2024 vært gjennom akseptansetest og godkjenning for SFM. Noen leverandører har deretter gjennomført utprøving for et begrenset antall virksomheter og fått godkjent denne for videre innføring.
+DIPS arena er godkjent for SFM Basis API og har gjennomført utprøving i Helse Nord.
+Helseplattformen er også integrert med SFM Basis API og er godkjent for innføring på flere sykehus, kommuner og to fastlegekontorer
+
+
+!! Verdi til sektor
+
+Godkjent integrasjon med SFM gir EPJ-leverandørene mulighet for å innføre SFM for alle sine virksomheter etter godkjent utprøving. SFM gir bedre kvalitet inn i samhandlingen med e-resept, og har også innebygget funksjonalitet for pasientens legemiddelliste (PLL) og e-multidose. Dvs. at det ligger til rette for å ta i bruk PLL.
+Sykehusene benytter SFM Basis APIet og vil kunne starte PLL etter å ha utviklet egen PLL funksjonalitet i systemets medikasjonsmodul/brukerflate.

@@ -1,0 +1,16 @@
+created: 20240702083633074
+modified: 20250422125134462
+revision: 0
+tags: [[Innrapportering av dødsfall og dødsårsak]] Målsetting 2025
+title: Levere en stabil og god tjeneste for innrapportering av dødsfall og dødsårsak
+type: text/vnd.tiddlywiki
+
+Beskrivelse?
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

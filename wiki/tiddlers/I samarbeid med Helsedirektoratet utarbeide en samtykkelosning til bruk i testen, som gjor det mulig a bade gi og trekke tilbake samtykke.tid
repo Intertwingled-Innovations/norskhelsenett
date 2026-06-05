@@ -1,0 +1,14 @@
+created: 20240128091950736
+modified: 20251209121156132
+revision: 0
+tags: [[Tiltaket digitalt helsekort for gravide]] 2024 Oppgave [[Team Sats]] Desember [[Team KJ infotjenester]] Levert
+title: I samarbeid med Helsedirektoratet utarbeide en samtykkeløsning til bruk i testen, som gjør det mulig å både gi og trekke tilbake samtykke
+type: text/vnd.tiddlywiki
+
+!! NHN oppgaver 2024
+
+NHN utvikler samtykkeløsning, slik at den gravide samtykker på Helsenorge, og helsepersonell får denne informasjonen i sine systemer
+
+!! Leveranser:
+
+<<list-links filter:"[tag[Leveranse]tag[2024]tag<currentTiddler>]">>

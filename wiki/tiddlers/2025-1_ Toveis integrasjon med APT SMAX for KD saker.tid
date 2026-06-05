@@ -1,0 +1,8 @@
+created: 20250224081055123
+modified: 20260302073755828
+revision: 0
+tags: Integrasjonstjenesten Målsetting 2025
+title: 2025-1: Toveis integrasjon med APT SMAX for KD saker
+type: text/vnd.tiddlywiki
+
+KD setter sak til 2. linje og det blir produsert sak til topic. Saken blir konsumert av APT SMAX og oppretter sak i APT SMAX. Nå det kommer oppdatering på saken i APT SMAX, så blir dette lagt i en topic. Dette blir konsumert og gjort tilgjengelig for KD.

@@ -1,0 +1,19 @@
+created: 20240206092638722
+modified: 20250407101018689
+revision: 0
+tags: [[Sentral forskrivningsmodul]] 2024 Målsetting [[Team SFM]] [[Tiltaket pasientens legemiddelliste]]
+title: Godkjenning av SFM for fastlegesegmentet
+type: text/vnd.tiddlywiki
+
+Målsetningen er 
+
+* å etablere en prosess for å kunne godkjenne SFM for fastlegesegementet - slik at denne kan fungere som mal for de andre segmentene
+* få kontroll på scope for fastlegemarkedet samt levere på avtalt scope
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

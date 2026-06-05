@@ -1,0 +1,36 @@
+created: 20250403134218813
+modified: 20260408085632628
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Forskrivningsmodulen 2024-2025]] [[Styring Ekstern tjeneste]] 2025 Mars
+title: 03 Forskrivningsmodulen - hovedtrekk og endringer mars 2025
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer
+!!Forvaltning:
+* Ferdig med alle ordinære leveranser
+* Pågår fortsatt undersøkelser på noen produksjonssaker - rettelser i patch etter hvert
+
+!!Avvikling
+* Fortsatt offisielt budskap om avvikling av FM per 30.06.2025 
+* Ad Curis: De første kundene er migrert - Plan om å ferdigstille før sommeren
+* Helse Vest trenger FM det meste av 2025. De har mer konkrete planer.
+* Kommuner som bruker Visma profil med FM vil trenge FM til høsten 2025.
+* Fulgt opp flere leverandører og de største (Opus og Aspit) er nå på planen til SFM bredding
+
+
+
+!! Prognose på penger og ressurser
+* Etter 4.15 er levert så har vi justert ned prognosen på testressurser og Thula
+* Prognose (kostnad) redusert til ca 8 mnok og kan bli lavere
+* Avgitt testressurser til SFM og Helsenorge mot at vi får låne tilbake ved behov
+* Merker lengre ledetid på ressurser fra Thula, men det er foreløpig tilfredsstillende
+
+!! Ferdigstilte leveranser i perioden:
+
+<<list-links filter:"[tag[Leveranse]tag[Mars]tag[2025]tag[Forskrivningsmodulen]]">>
+
+
+!! Finansiering: 
+Forskriftsfestede midler nasjonale e-helseløsninger, e-resept
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark047e6c018241495568dc">Oversikt Forskrivningsmodulen (Power BI)</a>
+

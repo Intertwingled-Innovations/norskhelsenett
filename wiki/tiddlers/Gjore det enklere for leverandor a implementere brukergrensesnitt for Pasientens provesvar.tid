@@ -1,0 +1,9 @@
+TjenesteID: 40033
+created: 20260316095807948
+modified: 20260409113953678
+revision: 0
+tags: [[Kode for Pasientens prøvesvar (brukergrensesnitt) er delt med leverandører]] [[Kjernejournal portal]] 2026 Resultat
+title: Gjøre det enklere for leverandør å implementere brukergrensesnitt for Pasientens prøvesvar
+type: text/vnd.tiddlywiki
+
+Ved å dele vår kode for Pasientens prøvesvar (brukergrensesnittet) med leverandørene blir det enklere for dem å implementere Pasientens prøvesvar i brukerens elektroniske pasientjournal-system.

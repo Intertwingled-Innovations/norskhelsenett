@@ -1,0 +1,11 @@
+created: 20240508062731090
+modified: 20241013182238545
+revision: 0
+tags: [[Modernisering av reseptformidleren]] 2024 Leveranse Oktober
+title: Ta i bruk personvernkomponenten (PVK) for personverninnstillinger
+type: text/vnd.tiddlywiki
+
+Det skal i 2024 etableres en ny modul for håndtering av personverninnstillinger som kommer fra Helsenorges Personvernkomponent (PVK). Den gamle/eksisterende løsningen skal avvikles og reseptformidleren skal håndtere personverninnstillinger på samme måte som øvrige tjenester i samhandlingsplattformen. 
+
+Dette vil gi en mer oversiktlig drift både for Helsenorge og for reseptformilderen og eventuelle feil kan raskere oppdages og håndteres.
+

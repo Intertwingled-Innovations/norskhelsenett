@@ -1,0 +1,15 @@
+TjenesteID: 40034
+created: 20260525113712873
+modified: 20260525113738630
+revision: 1
+tags: [[Forenkling og opprydding i dagens løsning (RF)]] Resultat 2026 Reseptformidleren [[Ekstern Tjeneste]]
+title: Implementere utfasing av status "under ekspedering"
+type: text/vnd.tiddlywiki
+
+Statusen "under ekspedering" har en rekke problemstillinger knyttet til seg. En slik status støttes ikke i EHDS/MyHealth.
+
+Statusen ble opprinnelig innført for å hindre samtidig utlevering. Dette kan nå håndteres ved at vi innfører sentral beregning av gjenværende mengde. EHDS og MyHealth stiller krav om at gjenværende mengde må følge resepten.
+
+Det er et stort antall resepter som til enhver tid er "under ekspedering". Dette hindrer pasientens frie apotek og bandasjist valg. Det kan se ut til at "under ekspedering" misbrukes for å knytte pasienten til et bestemt apotek og avtale "abonnementsordninger". Det er ikke lov å holde resepter "under ekspedering" bortsett fra i spesielle tilfeller, for eksempel ved ekspederingsanmodning.
+
+Praksisen med å sette en resept "under ekspedering" hindrer rekvirenten i å få satt rett status på resepten. Rekvirenten kan for eksempel tilbakekalle resepten når den er "under ekspedering". Dette vil ikke apotek oppdage hvis ikke de laster resepten ned på nytt ved faktisk ekspedering. Resultatet er at det kan bli levert ut legemidler på en resept som ikke lenger er gyldig for utlevering.

@@ -1,0 +1,23 @@
+TjenesteID: 40034
+created: 20260324163552454
+modified: 20260414123010383
+revision: 0
+tags: Reseptformidleren Målsetting 2026 [[Ekstern Tjeneste]]
+title: Forenkling og opprydding i dagens løsning (RF)
+type: text/vnd.tiddlywiki
+
+*Vi skal fase ut gamle standarder og meldinger som ikke er i bruk.
+*Vi skal avvikle støtte for gamle kryptoalgoritmer.
+*Vi skal fase ut status "under ekspedering".
+*Vi skal innføre sentral beregning av gjenværende mengde.
+*Vi skal holde løsningen oppdatert og fri for sårbarheter.
+*Vi skal øke andelen automatiserte tester.
+*Vi skal slette gammel/ubrukt kode.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

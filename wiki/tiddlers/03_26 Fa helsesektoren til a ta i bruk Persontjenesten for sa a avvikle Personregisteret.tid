@@ -1,0 +1,17 @@
+TjenesteID: 40030
+created: 20240206082651078
+modified: 20260409122419498
+revision: 0
+tags: Person Målsetting [[Team Person]] 2026 [[03/26 Få helsesektoren til å ta i bruk Persontjenesten for så å avvikle Personregisteret]]
+title: 03/26 Få helsesektoren til å ta i bruk Persontjenesten for så å avvikle Personregisteret
+type: text/vnd.tiddlywiki
+
+For å lukke Personvernavvik samt å lukke avviknene med at helsesektoren ikke oppdaterer sine data ontinuerlig er det et mål om å avvikle Personsregisteret (PREG) i Q1 2026. 
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

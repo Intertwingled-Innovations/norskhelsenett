@@ -1,0 +1,11 @@
+TjenesteID: 40034
+created: 20260222154934214
+modified: 20260414123935066
+revision: 0
+tags: Reseptformidleren 2026 Resultat [[Forenkling og opprydding i dagens løsning (RF)]] [[Ekstern Tjeneste]]
+title: Rekvirent webservice med HelseID og jwe
+type: text/vnd.tiddlywiki
+
+Rekvirent webservice med jwe/jwt i stedet for wss som sikkerhetsrammeverk. Autentisering med HelseID og DPoP.
+
+Dette øker sikkerheten i e-resept kjeden og forenkler integrasjonen for EPJ-leverandørene, spesielt de som benytter en .Net plattform (for eksempel SFM og Pridok).

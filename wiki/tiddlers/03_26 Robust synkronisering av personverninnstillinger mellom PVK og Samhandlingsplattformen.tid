@@ -1,0 +1,10 @@
+TjenesteID: 40061
+created: 20260407111544894
+modified: 20260505102006752
+revision: 0
+tags: [[Etablere nytt robust grensesnitt mellom PVK og Samhandlingsplattformen]] 2026 Mars [[Personvern og tilgangsstyring]] Leveranse
+title: 03/26 Robust synkronisering av personverninnstillinger mellom PVK og Samhandlingsplattformen
+type: text/vnd.tiddlywiki
+
+Etablert mer rubust løsning for informasjonsflyt av personverninnstillinger mellom PVK og Samhandlingsplattformen. Leveransen innebærer lavere risiko for avvik som innebærer manglende etterlevelse av personverninnstillinger som innbygger selv setter på Helsenorge (ref. retten til å motsette seg deling av helseopplysninger). 
+Løsningen innebærer at personvcerninnstillinger som settes av innbygger på Helsenorge automatisk synkroniseres til Kafka, slik at aktuelle samhandlingstjenester kan etterleve personverninnstillingene i sine grensesnitt.

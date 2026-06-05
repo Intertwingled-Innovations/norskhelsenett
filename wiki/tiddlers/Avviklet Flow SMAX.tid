@@ -1,0 +1,8 @@
+created: 20240920124629070
+modified: 20250307091300884
+revision: 0
+tags: [[2024 - Avvikling eller overlevering av Flow moduler]] 2024 Flow Leveranse September Integrasjonstjenesten [[Integrasjon- og støttesystemer]]
+title: Avviklet Flow SMAX
+type: text/vnd.tiddlywiki
+
+Flow SMAX var en modul for å synkronisere data fra Flow CMDB til FTS SMAX. Denne er nå avviklet.

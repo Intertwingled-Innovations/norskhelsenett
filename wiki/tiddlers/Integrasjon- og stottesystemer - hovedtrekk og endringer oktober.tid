@@ -1,0 +1,35 @@
+created: 20241107082155044
+modified: 20241108082716469
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] [[Styring Intern tjeneste]] [[Integrasjon- og støttesystemer]] Oktober
+title: Integrasjon- og støttesystemer - hovedtrekk og endringer oktober
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+''Junta/Flow''
+
+* Jobbet med Video for å finne en løsning på fremtiden til Flow VioIP.
+* Jobbet med LDP på flytt av Flow DNS til privat sky.
+* Supportert KD i anskaffelsesarbeid, forhandlingsmøter med leverandører.
+* Fortsatt jobb med avvikling av Flow-komponenter.
+* Fortsatt jobb med avvikling av ubrukt funksjonalitet og kontoer i Junta. (Bl.a. slettet 3000stk "Fjernhjelpskontoer" og "Terminalkontoer".)
+* Endret SMS leverandør fra Linkmobility til STREX i Junta.
+* Junta Arkiv er klar i test med Kafka flyt på plass (https://junta.iu.test.nhn.no/)
+* Flow API klar i test og ROS er klar til godkjening. Trenger PEN testing.
+
+
+''Integrasjonstjenesten''
+
+* Fulgt opp bestilling med APT om kafka med "galvanisert" skille mellom adm data og helsedata
+* Dokumentert Axual oppsett for Debezium benyttet i Junta Arkiv som andre team kan støtte seg på ved bruk av Integrasjonstjenesten.
+* Videre jobb på Junta Arkiv for Juntasaker. Jobbet på ROS og Juntabot (AI søk). Junta Arkiv er klar i test med Kafka flyt på plass
+
+! Prognose på penger og ressurser
+*Finansiering: Medlemsavgiften
+* Timeforbruk er 7-800 timer over budsjett for året. Dette skyldes i hovedsak bistand fra personer utenfor teamet, som ikke var allokert til teamet i budsjettet (tjenesteeier og scrum master). Ifht. prognose resten forventes det en reduksjon i overforbuk, pga. bistand til divisjon APOT (ifbm. flytting av ansvar og etablering av Flow DNS i APT)
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ad6307c59006ac4e200e?experience=power-bi&bookmarkGuid=Bookmark6966c46e3cd6605ce815">Oversikt Integrasjon- og støttesystemer (Power BI)</a>
+
+

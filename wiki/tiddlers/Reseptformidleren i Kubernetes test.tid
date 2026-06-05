@@ -1,0 +1,8 @@
+created: 20250515082453097
+modified: 20260101163304466
+revision: 0
+tags: [[Prøve å flytte applikasjonen til Kubernetes]] 2025 Leveranse April [[Modernisering av reseptformidleren]]
+title: Reseptformidleren i Kubernetes test
+type: text/vnd.tiddlywiki
+
+Reseptformidleren er kjørt opp i et testmiljø og alt tyder på at det fungerer fint. 

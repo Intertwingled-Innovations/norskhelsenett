@@ -1,0 +1,18 @@
+created: 20260412130822792
+modified: 20260412131012191
+revision: 0
+tags: Målsetting 2026 Varsle
+title: Målsetting for Varsle: Innhente behov og krav til eksterne aktører om å motta hendelser fra NHN
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+
+NHN skal gjennom dialog med helseaktører og leverandører kartlegge behovet for og krav til å bli varslet om hendelser fra Samhandlingsplattformen 
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

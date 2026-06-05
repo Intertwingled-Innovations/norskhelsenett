@@ -1,0 +1,30 @@
+TjenesteID: 40171
+created: 20260327095511047
+modified: 20260414115508285
+revision: 0
+tags: 2026 [[Styring Ekstern tjeneste]] [[Divisjon Helsepersonell]] [[Forretningsmessig endring:1]] Mars
+title: 03 KJ Pasientens journaldokumenter - hovedtrekk og endringer mars 2026
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer
+* NHN dokumentlager er produksjonssatt som intern dokumentkilde. Oslo kommune blir første kunde, sannsynlig oppstart i mai
+* Tilbakemeldinger om at det er vanskelig å ta i bruk tjenesten via kjernejournal portal. Det er vanskelig for multi-tenant leverandører å bistå sine kunder.
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 1''
+
+Konsekvens av forretningsmessig endring: Ingen
+
+
+! Prognose på penger og ressurser
+
+* Tjenesten er en del av den nasjonale e-helseløsningen under Kjernejournal og  finansieres over forskriftsfestede midler.
+* DHG har brukt 5.1 mnok av en total inntektsramme for 2026 på 20,5 mnok
+* Budsjett 2026: 19,4 mnok
+* Prognose for året: 19,7 mnok
+* Runrate for året (11 mnd) basert på regnskap pr mars: 18,6 mnok. Hva er årsak til avvik mot prognose?
+* Hvordan ligger vi an hittil i år opp i mot prognoser og planlagte oppgaver?
+* Status ressursbehov/kapasitet?
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=56573aa0b28de9e08460">Oversikt KJ Pasientens journaldokumenter (Power BI)</a>
+

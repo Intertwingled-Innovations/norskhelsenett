@@ -1,0 +1,31 @@
+TjenesteID: 40027
+created: 20260325150209973
+modified: 20260511193911963
+revision: 0
+tags: 2026 [[Styring Ekstern tjeneste]] [[Divisjon Helsepersonell]] [[Forretningsmessig endring:1]] Mars Virksomhet
+title: 03 Virksomhet - hovedtrekk og endringer mars 2026
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer
+
+Team Virksomhet jobber for tiden med å produksjonsette ny versjon av CommunicationParty API basert på REST. Adresseregisteret. Når dette er lansert kan man også planlegge avvikling av gammelt SOAP-API. 
+
+Det gjøres en kartlegging av konsumenter av Bedriftsregisteret (BEDREG) som kjører i gammel Grunndataplattform. Planen er å gå i direkte dialog med disse konsumentene for å kunne avvikle dette registeret tidligere enn 18 mnd som i hovedsak er tidsplan ved nedleggelse av eksisterende funksjonalitet i gammel Grunndataplattform. 
+
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 1''
+
+Konsekvens av forretningsmessig endring:
+
+
+! Prognose på penger og ressurser
+
+* Finansieringskilde: Forskriftsfestes pasientjournal Grunndata Virksomhet. Ramme 2026 25,0 MNOK 
+* Hvordan ligger vi an hittil i år opp i mot prognoser og planlagte oppgaver?
+* Årsprognose (pr. mars) 21,3 MNOK, Runrate 11 mnd (pr. mars) 19,1 MNOK.
+* Noe sykdom i første kvartal har ført til mindre timekost enn planlagt. Det er også usikkert om plattformkostnadene er korrekte.  
+* 1 utvikler i pappaperm fra mars men planlegger ikke å hente inn andre ressurser pr nå. 
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarkd4d9c03128c90515ef17">Oversikt Virksomhet (Power BI)</a>
+

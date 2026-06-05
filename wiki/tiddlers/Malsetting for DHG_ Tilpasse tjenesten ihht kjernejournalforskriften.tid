@@ -1,0 +1,19 @@
+TjenesteID: 40043
+created: 20260412124626550
+modified: 20260511104723292
+revision: 0
+tags: Målsetting 2026 [[Tiltaket digitalt helsekort for gravide]]
+title: Målsetting for DHG: Tilpasse tjenesten ihht kjernejournalforskriften
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+
+HOD har en ambisjon om at DHG tas inn i kjernejournal gjennom revidert kjernejournalforskrift. NHN må etablere noen endringer i tjenesten for å tilpasse den til kjernejournal.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

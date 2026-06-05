@@ -1,0 +1,20 @@
+created: 20250217144100869
+modified: 20260114144931957
+revision: 0
+tags: [[Tiltaket pasientens prøvesvar]] 2025 Oppgave [[Tiltaket pasientens prøvesvar 2025]] Levert
+title: Gi innbygger og helsepersonell skal få tilgang til tjenesten for helsefaglig utprøving
+type: text/vnd.tiddlywiki
+
+!! NHN Oppgave 2025
+
+Visning av prøvesvar for innbygger i Helsenorge og for helsepersonell gjennom Kjernejournal portal. 
+Løsningen for Pasientens prøvesvar vil bli justert basert på erfaring når tjenesten blir satt i produksjon. 
+
+!! Leveranse
+
+2025
+
+Utprøvingen startet før sommeren 225 og nyttårskifte er det delt 3 000 000 svar rapporter fordelt som 550 000 innbyggere i Norge har fått tilgang via Helsenorge og er nå tilgjengelig for alt helsepersonell som har tilgang til kjernejournalportal. 
+
+<<list-links filter:"[tag[Leveranse]tag[2025]tag<currentTiddler>]">>
+

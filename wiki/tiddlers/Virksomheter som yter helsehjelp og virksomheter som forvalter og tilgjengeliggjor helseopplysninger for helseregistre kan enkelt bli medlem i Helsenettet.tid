@@ -1,0 +1,17 @@
+created: 20241220140254611
+modified: 20260523173233683
+revision: 0
+tags: Målsetting [[Helsenettet.no og Medlemstjenesten]] 2025
+title: Virksomheter som yter helsehjelp og virksomheter som forvalter og tilgjengeliggjør helseopplysninger for helseregistre kan enkelt bli medlem i Helsenettet
+type: text/vnd.tiddlywiki
+
+For å sikre enkel bredding av digitale helsetjenester er det viktig at det er enkelt for medlemmer å bestille tjenestene de skal ha.
+
+!! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+!! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>
+

@@ -1,0 +1,31 @@
+created: 20240212113440282
+modified: 20260408085632635
+revision: 0
+tags: [[Forskrivningsmodulen 2024-2025]] 2024 Målsetting [[Team FM]] 2025
+title: Forsvarlig forvaltning av Forskrivningsmodulen
+type: text/vnd.tiddlywiki
+
+Forsvarlig forvaltning innebærer å ivareta henvendelser, utføre nødvendig feilretting, samt sikre at FM ivaretar gjeldende rekvirentkrav og andre tekniske eller juridiske forutsetninger.
+Forvaltningen innebærer også i 2024 at teamet leverer feilrettingsversjonene 4.13 og 4.14. FM 4.15 er en versjon for å støtte syntetiske testpersoner og for å oppgradere rammeverk. Etter 4.15 reduseres forvaltningen til patch ved behov.
+
+! Resultat
+Planlagte leveranser av FM (og patcher ved behov). 
+
+!! 2024:
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>tag[2024]]">>
+
+
+!! 2025:
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>tag[2025]]">>
+
+! Leveranser
+
+!! 2024
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>tag[2024]]">>
+
+!! 2025
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>tag[2025]]">>

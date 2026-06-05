@@ -1,0 +1,35 @@
+created: 20250211145116962
+modified: 20260408085632626
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Forskrivningsmodulen 2024-2025]] [[Styring Ekstern tjeneste]] 2025 Januar
+title: 01 Forskrivningsmodulen - hovedtrekk og endringer januar 2025
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer
+!!Forvaltning:
+* FM 4.14.1 er levert
+* Gode tilbakemeldinger fra PLL brukere
+* Godkjenning av FM 4.15 (siste planlagte versjon) tirsdag 25. februar
+
+!!Avvikling
+* Stadig tettere oppfølging av status på leverandører som har FM brukere. Noen er i godkjenningsprosess nå, men mangler fortsatt et par.
+* Mener fortsatt vi kan ha budskap om avvikling for alle andre 30.06.2025
+* Helse Nord-Trøndelag over på Helseplattformen - FM ble avviklet i Helse Midt i november
+* Helse Vest trenger FM ca ut 2025. De har mer konkrete planer nå.
+* Kommuner som bruker Visma profil med FM vil trenge FM til høsten 2025.
+
+
+! Prognose på penger og ressurser
+* Høy aktivitet i januar og februar (som planlagt) så noe over, men vi reduserer fra mars
+* Justert noe ned på timer til FM test. Ny vurdering når vi har erfaring med 4.15 i produksjon
+* Thula estimat uendret til vi får erfaring etter FM 4.15. Ambisjonen er så lite som mulig. 
+* Avklart rammer for samarbeid med SFM om Thula i nedskaleringen av FM fra 2025.
+
+! Leveranser
+Ferdigstilte leveranser i perioden
+
+<<list-links filter:"[tag[Leveranse]tag[Januar]tag[2025]tag[Forskrivningsmodulen]]">>
+
+Finansiering: Forskriftsfestede midler nasjonale e-helseløsninger, e-resept
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark047e6c018241495568dc">Oversikt Forskrivningsmodulen (Power BI)</a>
+

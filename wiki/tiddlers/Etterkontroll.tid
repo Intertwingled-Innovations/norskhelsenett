@@ -1,0 +1,30 @@
+TjenesteID: 40066
+created: 20250813101053636
+modified: 20260407105715945
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Relatert tjeneste]] 2026
+title: Etterkontroll
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+
+Forvalte og videreutvikle etterkontroll-tjenesten slik at den kan tas i bruk av flere interne og eksterne tjenester. 
+
+! Målsettinger
+
+<<list-links filter:"[tag[Målsetting]tag[2026]tag<currentTiddler>]">>
+
+
+
+! Styring
+
+<<list-links filter:"[tag[Styring Relatert tjeneste]tag[2026]tag<currentTiddler>]">>
+
+
+
+
+! Leveranser
+
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>tag[2026]]">>
+

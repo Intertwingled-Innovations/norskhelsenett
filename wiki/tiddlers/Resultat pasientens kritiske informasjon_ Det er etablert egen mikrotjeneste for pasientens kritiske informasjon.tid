@@ -1,0 +1,23 @@
+created: 20240704135132262
+modified: 20260330070944493
+revision: 0
+tags: Resultat [[Kjernejournal Pasientens kritiske informasjon]] [[Målsetting for kritisk info: Det er etablert egen mikrotjeneste for pasientens kritiske informasjon]]
+title: Resultat pasientens kritiske informasjon: Det er etablert egen mikrotjeneste for pasientens kritiske informasjon
+type: text/vnd.tiddlywiki
+
+Mål: Det er etablert en egen mikrotjeneste for pasientens kritiske informasjon.
+
+Levert:
+
+* Nytt API sikret med HelseID er etablert og produksjonssatt
+* Eksisterende kritisk info i kjernejournal databasen er migrert over til ny database
+* Det er verifisert at ny og gammel tjeneste gir samme data
+
+Ikke levert:
+* Gammelt API er terminert
+* Kritisk informasjon i kjernejournal databasen er slettet
+
+
+Effekt sektoren: 
+
+* Helsesektoren vil oppleve at NHN kan drifte og forvalte tjenesten bedre enn tidligere gjennom raskere endringstakt og redusert drift- og forvaltningskostnad.

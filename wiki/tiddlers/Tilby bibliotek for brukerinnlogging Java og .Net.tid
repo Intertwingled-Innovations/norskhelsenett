@@ -1,0 +1,8 @@
+created: 20260204085925514
+modified: 20260430093446818
+revision: 0
+tags: [[Tilby verktøy som effektiviserer og kvalitetssikrer bruken av HelseID]] Resultat 2026 [[Autentisering og autorisasjon]]
+title: Tilby bibliotek for brukerinnlogging Java og .Net
+type: text/vnd.tiddlywiki
+
+Teamet skal tilby et HelseID-kodebibliotek for leverandører som gjør det enkelt å Implementere Authorization-code-flyten i henhold til HelseID funksjonelle krav og sikkerhetskrav samt hvordan man koder støtte for DPoP, Client Assertion og PAR. Biblioteket krever at man kjører på .Net 9 eller nyere.

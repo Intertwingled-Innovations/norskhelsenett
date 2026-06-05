@@ -1,0 +1,16 @@
+created: 20240703074935554
+modified: 20240703075027870
+revision: 0
+tags: Innrapportering Målsetting 2024
+title: Konsolidere Innrapportering backend og ta i bruk felles komponenter der det er hensiktsmessig
+type: text/vnd.tiddlywiki
+
+Beskrivelse?
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

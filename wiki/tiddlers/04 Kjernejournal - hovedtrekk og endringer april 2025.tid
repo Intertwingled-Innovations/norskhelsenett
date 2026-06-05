@@ -1,0 +1,45 @@
+created: 20250505062118985
+modified: 20250514112758149
+revision: 0
+tags: [[Divisjon Helsepersonell]] Kjernejournal [[Styring Ekstern tjeneste]] 2025 April
+title: 04 Kjernejournal - hovedtrekk og endringer april 2025
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer
+
+!! Drift og produksjon
+Vi ser på muligheten for å flytte noe driftskostnad over på informasjonstjenestene for bedre å reflektere det reelle kostnadsbildet
+
+!! Portal
+Vi vil etterhvert se på muligheten for å lage egne API'er for "Om pasienten" og "Besøkshistorikk". Når dette er gjennomført, vil alle informasjonselementer i kjernejournal være tilgjengelig via egne API'er.
+Vertikalisering av legemidler er ferdig, mens vertikalisering av kritisk info pågår.
+
+!! Informasjonstjenester
+* Pasientens prøvesvar: Mål om produksjon fra 26. mai (utsatt fra 12. mai 2025). Det er fortsatt endel risiko rundt oppstartstidspunkt pga en feil i Dips Interactor. 
+* Pasientens journaldokumenter: Oslo kommune ble koblet opp som dokumentkilde mandag 6. mai 2025. Det er første kommune som deler journaldokumenter via kjernejournal.
+
+
+! Prognose på penger og ressurser
+
+!! Drift og produksjon
+Drift og produksjon er iht budsjett. Årsprognosen for KJ drift er 40.2 mnok vs budsjett på 43.6 mnok.
+
+!! Portal
+Forvaltning av kjernejournal portal er over budsjett, mens kjernejournal totalt er under budsjett. Årsprognosen for KJ portal forvaltning er 42.4 mnok vs budsjett på 39.1 mnok.
+
+!! Infotjenester
+Infotjenester har et forbruk ved utgangen av april på 18.3 mnok. Årsprognosen for KJ infotjenester er på ca 40.8 mnok, vs budsjett på 40.8 mnok. I tillegg kommer ca 10 mnok til pasientens prøvesvar (overført fra 2024) og 4 mnok til legemidler (overført fra 2024).
+
+!!! Ressurser
+
+KJ infotjenester: En utvikler på team HIT slutter før sommeren. Det er igangsatt prosess for erstatning, i første omgang internt, deretter evt eksternt.
+
+KJ Portal: En utvikler er fremdeles sykemeldt 
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarkb92368e492600e8b0b92">Oversikt Kjernejournal total (Power BI)</a>
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark09c84f60ca0c0d0dee2a">Oversikt Kjernejournal Infotjenester (Power BI)</a>
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarke23fe3d1eccd55765405">Oversikt Kjernejournal portal (Power BI)</a>
+
+

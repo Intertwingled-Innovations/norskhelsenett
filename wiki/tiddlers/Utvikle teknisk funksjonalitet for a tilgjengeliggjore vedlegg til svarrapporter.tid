@@ -1,0 +1,8 @@
+created: 20240317063010816
+modified: 20260330104413528
+revision: 0
+tags: 2024 [[Team Nilar]] [[Kjernejournal Pasientens prøvesvar]] [[Leveranseplan for Pasientens prøvesvar i 2024]] Leveranse
+title: Utvikle teknisk funksjonalitet for å tilgjengeliggjøre vedlegg til svarrapporter
+type: text/vnd.tiddlywiki
+
+En svarrapport kan inneholde vedlegg. Pasientens prøvesvar skal kunne motta slike vedlegg og tilgjengeliggjøre disse som en del av svarrapporten når konsumenter spør.

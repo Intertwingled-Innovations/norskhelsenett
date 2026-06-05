@@ -1,0 +1,44 @@
+TjenesteID: 40033
+created: 20260526125855696
+modified: 20260605113656465
+revision: 9
+tags: [[Divisjon Helsepersonell]] [[Styring Ekstern tjeneste]] 2026 Kjernejournal [[Kjernejournal portal]] [[Forretningsmessig endring:1]] Mai
+title: 05 Kjernejournal portal - hovedtrekk og endringer mai 2026
+type: text/vnd.tiddlywiki
+
+Under arbeid
+
+! Hovedtrekk og endringer
+*Fokus i mai har vært arbeid med å gjøre PVK til master og implementere HelseId sitt krav om DPoP-støtte i API
+*Et par utviklere har bidratt med overføring av legemidler ifm PLM (Pasientens Legemiddel)
+*En driftsressurs har bidratt med nesten 40% av sine timer i april i arbeidet med en POC for alternativ arbeidsflate
+*Vi jobber jevnt og trutt med å modernisere løsningen, og løsrive oss fra "Classic"
+*Det lages egne API som dekker fliken "Om pasienten", slik at den kan vertikaliseres
+*Det vurderes om det også skal lages et API for "Besøkshistorikk". Når dette er gjennomført, vil alle informasjonselementer i kjernejournal være tilgjengelig via egne API'er.
+*Vi har sendt ut en spørre-undersøkelse til sektor (og internt) som gjelder behov for kontaktpersoner og uønsket kontakt. Svarfrist: 22.mai
+**Vi har mottatt 8 svar
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 1''
+
+Konsekvens av forretningsmessig endring:
+
+! Prognose på penger og ressurser
+* Finansieringskilde: Pasientjournalloven 71,5 MNOK
+* Ramme for året: 71,5 MNOK
+** Portal forvaltning: 34 MNOK
+** Drift: 37,5 MNOK
+* Hvordan ligger vi an hittil i år opp i mot prognoser og planlagte oppgaver?
+** Portal har mange mål for 2026, og har så langt fremdrift ift planlagte oppgaver
+* Årsprognose: 62,4 MNOK, Runrate 56,4 MNOK
+**Portal forvaltning: Årsprognose 32,2 MNOK, Runrate 28,9 MNOK
+**Drift Årsprognose: 30,3 MNOK, Runrate 27,5 MNOK.
+* Hva er runrate for året opp i mot prognose og finansieringsramme for året? Hva er årsak til avvik?
+**Det har vært noe lavere timeforbruk enn antatt pga ferie-avvikling og sykdom. Det er også påløpt lavere plattform-kostnader og felleskostnader.
+* Status ressursbehov/kapasitet
+** Portal forvaltning: En utvikler er i permisjon til juni 2027
+** Drift: En driftsressurs bidrar i et initiativ hos FTS (POC for alternativ arbeidaflate). Vi har rekruttert 3 ressurser til vaktlaget, da to av dagens ressurser ønsker å gå ut av vaktlaget. Oppstart i august.
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarke23fe3d1eccd55765405">Oversikt Kjernejournal portal (Power BI)</a>
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=d254075bd5100caba763">Oversikt Kjernejournal Totalt (Power BI)</a>
+

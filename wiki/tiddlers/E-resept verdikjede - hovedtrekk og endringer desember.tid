@@ -1,0 +1,33 @@
+created: 20250211144155667
+modified: 20250221115439102
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] Reseptformidleren [[Styring Ekstern tjeneste]] Desember
+title: E-resept verdikjede - hovedtrekk og endringer desember
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+* Vi jobber videre med støtte til Helseplattformen, Helse Nord/DIPS og Pridok for å avklare krav til utvikling av funksjonalitet for PLL og eMD. 
+
+* Pridok er godkjent for full bredding av versjonen med basis e-reseptfunksjonalitet som ble akseptansetestet i juni og har vært i begrenset utprøving i høst. 
+
+*Akseptansetest av eMD-funksjonalitet med Pridok er gjennomført, og versjonen er godkjent for utprøving. 
+
+* Notat om konsekvenser ved innføring av IDMP-baserte legemiddel grunndata er ferdig og ble oversendt til HOD. Det er svar på oppdrag fra HOD. Notatet er forankret i PBR med domene Samhandlingsplattformen. Innspill derfra er innarbeidet, og 0.95-versjonen ble tatt opp som orienteringssak i e-resept Endringsråd 11.12.  
+
+* E-resept Endringsforum med alle aktører i verdikjeden ble avholdt 2.12. E-resept Endringsråd avholdt 11.12. 
+
+* Vi har bistått Hdir i en sak fra Statsforvalteren i Vestfold og Telemark om rekvirering av A- og B-preparater hvor konklusjonen var at løsningen er ihht rekvirentkrav, men krever årvåkenhet av rekvirent for ikke å rekvirere mer enn tiltenkt. 
+
+! Prognose på penger og ressurser
+Finansiering: Forskriftsfestede midler nasjonale e-helseløsninger, e-resept
+
+* Timepådrag - Marginalt underforbruk på godkjenningsprosessen. Verdikjede ihht prognose. For året som helhet godt under budsjett pga fravær, utleie og færre timer fra ressurser utenfor teamet (f.eks juridisk).     
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark4c89bd5ada01ce3dc213">Oversikt E-resept verdikjede (Power BI)</a>
+
+
+
+

@@ -1,0 +1,15 @@
+TjenesteID: 40040
+created: 20260331081004693
+modified: 20260409111236019
+revision: 0
+tags: [[Innrapportering av fødselsmelding oppsummert 2026]] Målsetting 2026 [[Innrapportering av fødselsmelding]] 2027
+title: Web-portal for elektronisk fødselsmelding legges ned
+type: text/vnd.tiddlywiki
+
+Det er et mål at portalen for fødselsmelding legges ned, og at brukeren har funksjonalitet for å melde inn fødsel i egen fødejournal. Det er ikke realistisk at vi når målet i 2026, men vi må jobbe for å nå målet i 2027.
+
+! Resultat
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

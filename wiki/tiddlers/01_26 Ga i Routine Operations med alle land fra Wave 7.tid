@@ -1,0 +1,17 @@
+TjenesteID: 40038
+created: 20260407213958230
+modified: 20260409120832407
+revision: 0
+tags: 2026 Målsetting [[Team MyHealth@EU]] [[01/26 Gå i Routine Operations med alle land fra Wave 7]] MyHealth@EU
+title: 01/26 Gå i Routine Operations med alle land fra Wave 7
+type: text/vnd.tiddlywiki
+
+Norge skal gå i Routine Operations med alle de tre landene vi ble godkjent for.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

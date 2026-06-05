@@ -1,0 +1,28 @@
+created: 20240908121204756
+modified: 20260408085632630
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] [[Forskrivningsmodulen 2024-2025]] [[Styring Ekstern tjeneste]] August
+title: 08 Forskrivningsmodulen - hovedtrekk og endringer august
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer
+* 4.13.2 - Levert (september) - Patch for retting av PLL feil
+* 4.14 Feilrettingsversjon - Under arbeid 
+* Webmed har ingen flere leger på FM. Ingen flere fastleger på FM
+* Må avklare hvilke PLL konsept-justeringer skal implementeres i FM
+
+
+! Prognose på penger og ressurser
+* Prognose ca 2mnok over budsjett nå (14mnok)
+* Har hatt høy fart pga overlapp ressurser etter oppsigelser. Stabilisert, men fortsatt høy PLL aktivitet.
+* Prøve å dele testressurser i høst og i 2025
+* Startet forberedelser til nedskalering av ressursbruk hos Thula fra 2025. Kontraktuelt arbeid med en form for "beredskap".  
+
+! Leveranser
+Ferdigstilte leveranser i perioden: 
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>
+
+*Finansiering: Forskriftsfestede midler nasjonale e-helseløsninger, e-resept
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark047e6c018241495568dc">Oversikt Forskrivningsmodulen (Power BI)</a>
+

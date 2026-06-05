@@ -1,0 +1,27 @@
+TjenesteID: 40032
+created: 20260326105629712
+modified: 20260504104733695
+revision: 0
+tags: [[Divisjon Helsepersonell]] 2026 [[Intern tjeneste]]
+title: Selvbetjening
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+
+HelseID Selvbetjening setter medlemmer og leverandører i helsenettet i stand til å ta i bruk tjenester i Samhandlingsplatformen uten manuell håndtering. 
+
+! Målsettinger
+!! 2026
+<<list-links filter:"[tag[Målsetting]tag[2026]tag<currentTiddler>]">>
+
+
+! Styring
+!! 2026
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag<currentTiddler>]">>
+
+
+! Leveranser
+
+!! Leveranser 2026
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>tag[2026]]">>
+

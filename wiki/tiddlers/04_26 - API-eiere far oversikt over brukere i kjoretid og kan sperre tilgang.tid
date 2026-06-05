@@ -1,0 +1,11 @@
+created: 20260430061538529
+modified: 20260513090332757
+revision: 0
+tags: 2026 Leveranse April [[Autentisering og autorisasjon]] Selvbetjening [[Tilby verktøy som effektiviserer og kvalitetssikrer bruken av HelseID]] API [[API-eiere kan]] [[API-eiere kan sjekke virksomheters tilgang til sine APIer i kjøretid]]
+title: 04/26 - API-eiere får oversikt over brukere i kjøretid og kan sperre tilgang
+type: text/vnd.tiddlywiki
+
+Selvbetjening har nå en brukerflate som viser API-eiere hvilke kunder som bruker APIene aktivt uten å ha undertegnet nye vilkår for bruk. APIeiere har nå mulighet til å stenge tilgangen til sitt API for brukere som ikke har signert vilkår for bruk
+
+!! Resultater 2026
+<<list-links filter:"[tag[Resultat]tag<Tiddler>tag[2026]]">>

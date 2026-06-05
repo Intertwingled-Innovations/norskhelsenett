@@ -1,0 +1,19 @@
+TjenesteID: 40043
+created: 20260412124047153
+modified: 20260416101611019
+revision: 0
+tags: Målsetting 2026 [[Tiltaket digitalt helsekort for gravide]]
+title: Målsetting for DHG: Videreutvikle det digitale helsekort for gravide slik at informasjonen som deles mellom helsepersonell er i tråd med nasjonal faglig retningslinje for svangerskapsomsorgen og læring og erfaring fra utprøvingen
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+
+NHN skal videreutvikle DHG i tråd med nasjonal veileder for svangerskapsomsorgen. Helsedirektoratet har i oppgave å revidere denne i løpet av 2026, og det kan medføre behov for endringer i DHG.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

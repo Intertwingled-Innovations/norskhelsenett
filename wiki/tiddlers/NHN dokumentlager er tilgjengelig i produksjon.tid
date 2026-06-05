@@ -1,0 +1,13 @@
+TjenesteID: 40171
+created: 20260512064442387
+modified: 20260512103655093
+revision: 0
+tags: 2026 Mai Leveranse [[Kjernejournal Pasientens journaldokumenter]] [[Utvikle NHN dokumentlager som gjør det enklere for helsevirksomheter å dele journaldokumenter]]
+title: NHN dokumentlager er tilgjengelig i produksjon
+type: text/vnd.tiddlywiki
+
+! Leveranser
+* API er tilgjengelig i produksjon mai 2026.
+* Det er mulig å bestille tjenesten.
+* Tjenesten har en egen tjenestebeskrivelse på NHN.no
+* Det er etablert forvaltning av API og vi kan monitorere API i test og produksjon

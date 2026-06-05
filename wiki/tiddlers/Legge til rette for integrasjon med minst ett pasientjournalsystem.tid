@@ -1,0 +1,15 @@
+created: 20240128083057708
+modified: 20250120081934752
+revision: 0
+tags: [[Tiltaket MyHealth@EU]] 2024 Oppgave [[Team MyHealth@EU]] [[Team Sats]] Levert
+title: Legge til rette for integrasjon med minst ett pasientjournalsystem
+type: text/vnd.tiddlywiki
+
+!! NHN Oppgaver 2024
+
+Sørge for at minst en EPJ-leverandør er villig til å integrere MyHealth@EU søk og visningsmodul
+
+!! Leveranser:
+
+
+<<list-links filter:"[tag[Leveranse]tag[2024]tag<currentTiddler>]">>

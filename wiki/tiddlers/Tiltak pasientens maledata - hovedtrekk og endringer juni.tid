@@ -1,0 +1,36 @@
+created: 20240627123527463
+modified: 20260408071025188
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] [[Styring Tiltak]] [[Tiltaket pasientens måledata (OLD)]] Juni
+title: Tiltak pasientens måledata - hovedtrekk og endringer juni
+type: text/vnd.tiddlywiki
+
+
+<<list-links filter:"[tag[Tiltaket pasientens måledata]tag[Tiltak]tag[2024]]">>
+
+! Hovedtrekk og endringer
+
+
+!!! Gjennomføre en utprøving av pasientens måledata i helseregon Sør-øst
+* Det er pr april 2024 ikke konkretisert en utprøving. 
+* Det er ikke inngått noen avtale med en leverandør om å utvikle brukergrensesnitt.
+* EPJ-løftet sa nei til å inkludere pasientens måledata i konkurransegrunnlag som skal gå ut i juni. Dette betyr at det foreløpig ikke er noen finansiering til evt EPJ leverandører som ønsker å bli med i utprøvingen.
+
+!!! Oppsummere erfaringer og målinger av nytte fra utprøvingen som innspill til Helsedirektoratets vurdering av nytte
+* Ikke påstartet ettersom en utprøving foreløpig ikke er påstartet.
+
+
+! Prognose på penger og ressurser
+
+*Finansiering: Offentlig tilskudd, PMD, 13 mnok tilfaller vår divisjon og 5 mnok divisjon Innbygger
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection343a8851705d1cfe8125?experience=power-bi&bookmarkGuid=Bookmark76496cc890038835a416">Oversikt PMD (Power BI)</a>
+
+* Det pågår rekruttering av ekstra ressurs til team Nilar for å dekke opp for konsulent i avgang
+* Det vurderes å anskaffe team på 2 personer for å etablere en sentral loggaggregeringsfunksjon. Dette for å lette bredding av pasientens journaldokumenter samtidig som kravet om innsynslogg ivaretas. Beslutning om anskaffelse tas så snart vi har en sikrere prognose.
+* PMD vurderes flyttet fra team NILAR sitt ansvar. PPS + Rekv.hotell kan være god synergi. PMD til "nye infotjenester" - dvs. Felles Journalløft med tjenestene Oversikt over kommunale tjenester og NEWS2 hvor i hvertfall sistnevnte har store synergier med PMD.
+
+
+
+

@@ -1,0 +1,8 @@
+created: 20260513112218967
+modified: 20260513113222722
+revision: 0
+tags: Leveranse 2026 [[Kvalitet i løsningen. Sikre god driftbarhet og tilgjengelighet]] April Selvbetjening
+title: 04/26-Migrere persondelegeringer fra Altinn II til Altinn 3
+type: text/vnd.tiddlywiki
+
+Digitaliseringsdirektoratet avvikler Altinn II i produksjon i juni 2026. HelseID selvbetjening har migrert over sine persondelegeringer til ny plattform. Dette sikrer at delegeringene som er gjort av mange tusen virksomheter fortsetter å fungere i selvbetjening og virksomhetene slipper dermed å delegere på nytt. Persondelegeringene gir tillatelse til å utføre tekniske oppsett i HelseID selvbetjening. Disse er påkrevd for å kunne tilby og ta i bruk tjenester som er sikret med HelseID.

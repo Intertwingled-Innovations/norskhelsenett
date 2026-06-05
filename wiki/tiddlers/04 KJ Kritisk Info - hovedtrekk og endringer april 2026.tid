@@ -1,0 +1,31 @@
+TjenesteID: 40168
+created: 20260505132254230
+modified: 20260521085837789
+revision: 0
+tags: 2026 [[Styring Ekstern tjeneste]] [[Divisjon Helsepersonell]] [[Forretningsmessig endring:1]] April [[Kjernejournal Pasientens kritiske informasjon]]
+title: 04 KJ Kritisk Info - hovedtrekk og endringer april 2026
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer
+* Helsedirektoratet har besluttet endringer som følge av behandlingsavklaringer i livets sluttfase. Implementasjon starter i Q2.
+* Helsedirektoratet har spesifisert hvilke metrikker som de ønsker å få ut av tjenesten. Dette er da statistikk som tjenesten skal presentere.
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 1''
+
+Konsekvens av forretningsmessig endring: Ingen
+
+
+! Prognose på penger og ressurser
+
+* Tjenesten er en del av den nasjonale e-helseløsningen under Kjernejournal og  finansieres over forskriftsfestede midler.
+* DHP har brukt 2.6 mnok av en total inntektsramme for 2026 på 10.6 mnok
+* Budsjett 2026: 10.3 mnok
+* Prognose for året: pr. april 9.29 mnok
+* Runrate for året (11 mnd) basert på regnskap pr april: 7.2 mnok. Årsaken er større pådrag på Kjernejournal pasientens felter, samt at en ressurs en leid ut til Pasientens planer
+* Framdrift er stort sett ihht plan, men vi må ha mer fokus på bredding av api'et.
+* Teamet har nødvendige ressurser
+
+! Leveranser
+<<list-links filter:"[tag[Leveranse]tag[KJ Kritisk Info]tag[2026]tag[April]]">>
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=84fd609ab6392d71d0d4">Oversikt KJ Kritisk Info (Power BI)</a>

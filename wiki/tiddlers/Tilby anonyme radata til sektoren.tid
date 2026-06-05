@@ -1,0 +1,22 @@
+TjenesteID: 40034
+created: 20260222154600321
+modified: 20260414123156704
+revision: 0
+tags: Reseptformidleren Målsetting 2026
+title: Tilby anonyme rådata til sektoren
+type: text/vnd.tiddlywiki
+
+Det er stor etterspørsel etter statistikk og målinger knyttet til e-resept, spesielt ift eMultidose og PLL.
+
+Vi skal etablere en intern tjeneste som plukker ut relevante informasjonselementer om både M1 og M25.1 fra navet (samme Kafka topic som benyttes for å dele data fra reseptformidleren til Pasientens legemidler). Disse opplysningene må være anonyme slik at de kan deles med eksterne via den nye eksterne tjenesten "Statistikk og måling".
+
+Data som vises i NHN Power BI dashboard idag skal komme fra den nye interne tjenesten slik at dagens batch kan avvikles.
+
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

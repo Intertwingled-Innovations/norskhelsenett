@@ -1,0 +1,17 @@
+TjenesteID: 40033
+created: 20260318114103660
+modified: 20260409113607289
+revision: 0
+tags: [[Kjernejournal portal]] Målsetting 2026
+title: Beredskapsportal etableres
+type: text/vnd.tiddlywiki
+
+Vi skal etablere en beredskapsportal som er uavhengig av kjernejournalforskriften. Portalen må ha sin egen innlogging, slik at den blir uavhengig av innlogging via EPJ. Hvis Hdir ønsker kan vi legge inn data fra kjernejournal i beredskapsportalen, men det skal også være mulig for andre tjenester å aksesseres i portalen dersom de har behov for direkte tilgang i en beredskapssituasjon.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

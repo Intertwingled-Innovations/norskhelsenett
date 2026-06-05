@@ -1,0 +1,17 @@
+created: 20240805123136890
+modified: 20250303085726089
+revision: 0
+tags: [[Innrapportering av fødselsmelding]] 2024 Målsetting
+title: Det nye Web-grensesnittet for innrapportering av fødselsmelding tas i bruk med ny versjon av API i Privat sky
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+Når det nye grensesnittet er tilpasset privat sky, og API (backend) er flyttet til privat sky vil Team innrapportering ta i bruk det nye Web-grensesnittet
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

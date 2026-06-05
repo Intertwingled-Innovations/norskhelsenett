@@ -1,0 +1,35 @@
+created: 20240627124625443
+modified: 20240627124637263
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] Reseptformidleren [[Styring Ekstern tjeneste]] Juni
+title: Reseptformidleren - hovedtrekk og endringer juni
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+Timepådraget for utvikling og test er noe lavere enn planlagt hittil i år. Dette skyldes blant annet at personell slutter hos vår samarbeidspartner. Dette påvirker farten negativt. 
+
+Ny administrasjonsklient der vesentlige svakheter ift sikkerhet er håndtert, er i bruk i alle testmiljøene og i produksjon. Dette er den første komponenten i reseptformidleren som kjører i privat sky med Kubernetes. Dette har gitt mye læring for neste tjeneste på ny plattform. Kundesenteret blir brukere av denne klienten i tillegg til utviklere, testere og driftsteam. Kodebasen for denne klienten ligger i Milliways og bygg og deploy gjennomføres tilsvarende som for andre tjenester i NHN.
+
+Nye utviklingsaktiviteter i forbindelse med modernisering av reseptformidleren som har startet opp i mai er nytt legemiddel API til erstatning for dagens grensesnitt for å dele legemiddel opplysninger med Kjernejournal. Det nye API'et skal kunne benyttes av alle som har tjenstlig behov for å lese legemiddelopplysninger, ikke bare fra kjernejournal. Autentisering vil skje med HelseID med DPoP.
+
+
+
+! Prognose på penger og ressurser 
+
+Finansiering: Tjenesten blir belastet med fellestjenester som har finansiering via medlemsavgiften på 4,1 mnok, resterende finansiering er via forskriftsfestede midler på e-resept.
+
+Takten for forvaltning av reseptformidleren ligger totalt sett omkring 13 mnok under budsjett. Dette skyldes reduksjon av kost til Buypass oppslag (ca 5 mnok), lavere intern timekost (ble redusert med 10%) utgjør ca 3,5 mnok og mindre felleskost ca 1,5 mnok. De siste 3 mnok skyldes mangel på kvalifiserte ressurser.
+
+Flytting av reseptformidleren til NHN privat sky vil gå noe over blant annet siden flyttedato er skjøvet fra mai til september. Underforbruk på forvaltning kan omdisponeres til flytting ved behov.
+
+Drift er som planlagt med unntak av lavere lisenskost (Buypass).
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarkab9171eafbc4217a5bac">Oversikt Reseptformidleren (Power BI)</a>
+
+
+
+

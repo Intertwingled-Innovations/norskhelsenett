@@ -1,0 +1,44 @@
+TjenesteID: 40055
+created: 20260430070703280
+modified: 20260511064436293
+revision: 0
+tags: [[Divisjon Helsepersonell]] 2026 [[Styring Satsning for fart]] Legemiddelgrunndata [[Team Sats]] [[Forretningsmessig endring:3]] April
+title: 04 Legemiddelgrunndata - hovedtrekk og endringer april 2026
+type: text/vnd.tiddlywiki
+
+<<list-links filter:"[tag[]tag[Tiltak]]">>
+
+! Hovedtrekk og endringer
+
+* Legemiddelgrunndata – retningsvalg og EPJ-forankring: Gjennomført møter med DIPS, SFM og Helseplattformen og oppnådd bred enighet om REST/JSON-tilnærming fremfor FHIR for distribusjon av H-resept-data. Alle tre store EPJ-aktører er positive til retningen.
+* Første versjon i utviklingsmiljø på utviklerportalen i test.
+* Organisering og teamstruktur: Løpende refleksjon rundt teamsammensetning og ansvarsfordeling på tvers av Oslo/Trondheim/Tromsø. Diskusjon om riktig kapasitet og backlog-modenhet før eventuell skalering av implementasjonsteamet. Onboarding av nye teammedlemmer (Patrick) i implementasjonsteamet.
+
+ 
+MÅLSETTING
+
+* Beslutte og forankre og utvikle for en MVP (første steg) i 2026. H-resept etableres som den første tjenesten på en nasjonal legemiddelgrunndata tjeneste (NOMPD) hos NHN
+* Forankring av MVP må besluttes av prioriteringsrådet og IKT direktørmøtet den 28 april, før endelig beslutning i NHN sin ledelse
+
+
+RESULTAT
+
+* Utkast til første steg (MVP) foreligger etter utreding og avklaring med DMP og Helse Midt RHF/H-reseptprosjektet
+
+* Operativt team er etablert med tjenesteeier og APO. 
+
+
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 3''
+
+Konsekvens av forretningsmessig endring: 3 - Dette er en ny tjeneste, beholdt 3 på denne i april pga holde fokus på organisering.
+
+! Prognose på penger og ressurser
+* Finansiering: Satsing for fart og finansiert over NHN sin egenkapital.
+* Den totale årsprognosen ligger på 5,4 mnok og består i hovedsak av interne timer samt påslag interne tjenester og felleskostnader
+
+
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=f600785091dac1c0030e">Oversikt satsning Legemiddel grunndata (DMP) (Power BI)</a>
+

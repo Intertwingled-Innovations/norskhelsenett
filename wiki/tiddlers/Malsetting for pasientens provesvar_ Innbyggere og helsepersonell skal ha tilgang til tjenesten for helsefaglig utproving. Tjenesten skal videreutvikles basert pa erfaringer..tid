@@ -1,0 +1,15 @@
+created: 20250707074608968
+modified: 20260330104413524
+revision: 0
+tags: [[Kjernejournal Pasientens prøvesvar]] Målsetting 2025 [[Tiltaket pasientens prøvesvar]]
+title: Målsetting for pasientens prøvesvar: Innbyggere og helsepersonell skal ha tilgang til tjenesten for helsefaglig utprøving. Tjenesten skal videreutvikles basert på erfaringer.
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+Innbyggere skal ha tilgang til prøvesvar via helsenorge, og elsepersonell skal ha tilgang til tjenesten via kjernejournal portal eller via eget fagsystem (direkte integrasjon mot API).
+
+! Resultat
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

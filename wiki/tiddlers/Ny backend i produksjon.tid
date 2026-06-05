@@ -1,0 +1,12 @@
+created: 20260504132846364
+modified: 20260504132929697
+revision: 0
+tags: [[Tilby ny backend til eksisterende KJ legemiddel API]] Resultat 2026 [[Kjernejournal Pasientens legemidler]] [[Ekstern Tjeneste]]
+title: Ny backend i produksjon
+type: text/vnd.tiddlywiki
+
+Det etableres en ny backend basert på SQL server.
+Historiske data migreres fra KJ arkiv databasen, de siste 3 år.
+Nye data mottas løpende fra reseptformidleren via en Kafka topic.
+
+Alle kall fra konsumenter går mot ny backend.

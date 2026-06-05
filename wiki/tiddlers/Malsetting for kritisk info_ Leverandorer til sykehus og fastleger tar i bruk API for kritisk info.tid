@@ -1,0 +1,18 @@
+created: 20250708111120932
+modified: 20260330070944492
+revision: 0
+tags: [[Kjernejournal Pasientens kritiske informasjon]] Målsetting 2025
+title: Målsetting for kritisk info: Leverandører til sykehus og fastleger tar i bruk API for kritisk info
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+
+Aktører i helsesektoren skal kunne skrive og konsumere kritisk informasjon direkte fra API.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

@@ -1,0 +1,12 @@
+created: 20240819131934773
+modified: 20260430093446815
+revision: 0
+tags: [[Tilby verktøy som effektiviserer og kvalitetssikrer bruken av HelseID]] Leveranse 2024 Selvbetjening September
+title: 09/24 - Håndtering av nøkler i HelseID Selvbetjening er forenklet
+type: text/vnd.tiddlywiki
+
+Høsten 2024 vil det være behov for å fornye klientnøkkel på en rekke HelseID-klienter, siden det er mange som satte opp klienter for SFM eller Kjernejournal for i underkant av 2 år siden. For å være klare for dette har team Selvbetjenin utviklet og prodsatt en forenklet flyt som skal bidra til at de anskarlige lett kan fornye sine nøkler, og dermed fortsatt ha en fungerende tjeneste. 
+
+* Ny side: 'Nøkkelhåndtering'. Her får du raskt oversikt over dine klienters autentiseringsnøkler og deres utløpsdatoer. Du kan også fornye nøkler ved å laste opp en offentlig nøkkel eller generere et nytt nøkkelpar.
+* Lagt til varsel på landingssiden om utløpte/utløpende autentiseringsnøkler for klienter.
+* Mulighet for å slette autentiseringsnøkler

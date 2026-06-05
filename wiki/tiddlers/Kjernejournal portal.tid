@@ -1,0 +1,17 @@
+TjenesteID: 40033
+created: 20240128165250186
+modified: 20260409113458783
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] [[Domene Brukerflater]] [[Team Kollektivet]] 2026
+title: Kjernejournal portal
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+Kjernejournal er en digital løsning for deling av pasientens helseopplysninger på tvers av virksomheter og nivåer i helsevesenet. I pasientens kjernejournal kan helsepersonell se de samme opplysningene uavhengig av om de jobber som fastlege, på sykehus eller legevakt.
+
+Leveranseplan finnes her: [[https://www.nhn.no/tjenester/kjernejournal/leveranseplaner]]
+
+! Målsettinger
+!! 2026
+
+<<list-links filter:"[tag[Målsetting]tag[2026]tag<currentTiddler>]">>

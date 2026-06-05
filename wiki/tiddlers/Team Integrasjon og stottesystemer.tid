@@ -1,0 +1,27 @@
+created: 20240416130732791
+modified: 20251031131944652
+revision: 0
+tags: [[Domene Støtte]] Team [[Intern tjeneste]]
+title: Team Integrasjon og støttesystemer
+type: text/vnd.tiddlywiki
+
+!Beskrivelse av teamet
+
+Formålet til teamet er å legge til rette for effektiv flyt mellom støttesystemer i NHN ved å tilgjengeliggjøre hendelser og utvikle skreddersydde løsninger der det ikke finnes hyllevare som møter våre behov.
+
+''Dette teamet har ansvaret for:''
+
+* [[Integrasjonstjenesten (det interne kafka navet) |https://tiddlywiki.plattform.nhn.no/#Integrasjonstjenesten]]
+
+* [[Flow plattformen med tilhørende moduler (DNS, CMDB, tjenestekatalog, kundeoversikt...)|https://tiddlywiki.plattform.nhn.no/#Flow]]
+
+* [[Junta (Intern saksbehandling, ITIL, sambandsdokumentasjon...)|https://tiddlywiki.plattform.nhn.no/#Junta]]
+
+https://confluence.nhn.no/x/apjjE
+
+
+! Målsettinger
+
+[[Målsetting: Integrasjonstjenesten]]
+
+[[Målsetting: Avvikling av Flow og Junta]]

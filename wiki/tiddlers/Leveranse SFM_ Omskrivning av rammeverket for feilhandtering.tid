@@ -1,0 +1,16 @@
+TjenesteID: 40044
+created: 20260306105348022
+modified: 20260416102724695
+revision: 0
+tags: Leveranse [[Team SFM]] 2026 [[Tiltak for ytterligere stabilisering, håndtere økt volum og opprettholde fart i leveranser]] Februar [[Sentral forskrivningsmodul i 2026]]
+title: Leveranse SFM: Omskrivning av rammeverket for feilhåndtering
+type: text/vnd.tiddlywiki
+
+Mål: Implementere forbedringer i arkitektur, implementasjon og deployment - kode, prosesser og ansvar.
+
+Levert:
+
+* Omskrivning av rammeverket for feilhåndtering. Effekten av dette er enklere support og forvaltning og raskere hjelp til sluttbrukere og leverandører
+
+
+

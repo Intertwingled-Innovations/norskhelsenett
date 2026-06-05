@@ -1,0 +1,29 @@
+created: 20241004121903884
+modified: 20260408085632630
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] [[Forskrivningsmodulen 2024-2025]] [[Styring Ekstern tjeneste]] September
+title: 09 Forskrivningsmodulen - hovedtrekk og endringer september
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer
+!!Forvaltning:
+* Patch 4.13.2 (og 4.13.3)
+* Oppfølging av problemstillinger med CAVE i PLL utprøvingen i Vest.
+!!Avvikling
+* Etter versjon 4.15 på nyåret skal vi kun rette A(/B) feil
+* FM skal ikke implementere endringer i PLL konseptet
+* Dato for avvikling er satt til 30.06.2025
+
+
+! Prognose på penger og ressurser
+* Prognose i overkant av 2mnok over budsjett nå (14,5mnok)
+* Prøve å dele testressurser i høst og i 2025, men foreløpig høy aktivitet på FM grunnet mange saker knyttet til PLL
+* Startet forberedelser til nedskalering av ressursbruk hos Thula fra 2025.  
+
+! Leveranser
+Ferdigstilte leveranser i perioden
+<<list-links filter:"[tag[Leveranse]tag[2024]tag[Forskrivningsmodulen]tag[September]]">>
+
+Finansiering: Forskriftsfestede midler nasjonale e-helseløsninger, e-resept
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark047e6c018241495568dc">Oversikt Forskrivningsmodulen (Power BI)</a>
+

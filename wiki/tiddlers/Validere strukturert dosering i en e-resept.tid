@@ -1,0 +1,11 @@
+created: 20241004125427054
+modified: 20241004125904202
+revision: 0
+tags: [[Forbedre kvaliteten på data i e-resept verdikjeden]] Leveranse 2024 Juni Reseptformidleren
+title: Validere strukturert dosering i en e-resept
+type: text/vnd.tiddlywiki
+
+Det ble i juni 2024 avdekket feil i bruk av strukturert dosering. Det er primært en spesifikk journal løsning som er kilde til feil i strukturert dosering, men de aller fleste journal løsninger kan videreføre feilen.
+
+Det er innført en validering i reseptformidleren ved mottak av resepter (M1 meldinger). Dersom det er inkonsistens i strukturert dosering så avvises resepten.
+

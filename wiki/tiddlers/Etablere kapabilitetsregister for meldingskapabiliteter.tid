@@ -1,0 +1,16 @@
+created: 20260123102114803
+modified: 20260123102854542
+revision: 0
+tags: Avvikles Melding Målsetting 2025
+title: Etablere kapabilitetsregister for meldingskapabiliteter
+type: text/vnd.tiddlywiki
+
+Målsettingen er å redusere meldingstrafikk som sendes til mottakere som ikke kan håndtere meldingen. Tjenesten kan brukes av alle som sender meldinger i helsenettet, både på smtp-basert EDI og gjennom EDI 2.0.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

@@ -1,0 +1,30 @@
+TjenesteID: 40035
+created: 20260427085541942
+modified: 20260520105021199
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Styring Ekstern tjeneste]] 2026 Forskrivningsmodulen [[Forretningsmessig endring:1]] April
+title: 04 Forskrivningsmodulen - hovedtrekk og endringer april 2026
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer
+* Endelig avvikling av Forskrivningsmodulen ble gjennomført 31.12.2025:
+** Etter 31.12.2025 tilbyr NHN ingen form for support eller bistand, i tråd med beslutning i TBU (ingen finansiering til FM i 2026).
+** Ingen virksomheter vil bli blokkert fra e-resept (Reseptformidleren) etter 31.12.2025, men eventuell bruk i 2026 gjøres på eget ansvar.
+** NHN gir ingen garantier for hvor lenge FM vil fungere etter 31.12.2025.
+** EPJ-leverandørene er informert og de informerer selv egne kunder som bruker FM om avviklingen.
+* Seks leverandører er godkjente for SFM og er i prosess med å flytte sine kunder fra FM til SFM, men det går veldig sakte.
+* To leverandører er fremdeles i godkjenningsprosessen for SFM.
+* Det er ca. 395 virksomheter med FM i produksjon i april 2026, en reduksjon på ca. 10. fra mars.
+
+Forretningsmessig endring (1=ingen, 2=liten, 3=større) 1
+
+! Prognose på penger og ressurser
+* Ingen planlagte aktiviteter på FM, men saker som dukker opp håndteres av TE/APO.
+* Ingen budsjetterte midler til FM i 2026.
+* Påløpt pr. april 0,2 MNOK (205 000,-)
+* Det er utført noe etterarbeid i 2026 (80 timer i januar, 27 i februar, 16 i mars og 24 i april)
+
+ 
+Forskriftsfestede midler nasjonale e-helseløsninger, e-resept
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark047e6c018241495568dc">Oversikt Forskrivningsmodulen (Power BI)</a>
+

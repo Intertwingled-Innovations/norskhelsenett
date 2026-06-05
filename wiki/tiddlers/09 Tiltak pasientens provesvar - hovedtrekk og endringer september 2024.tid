@@ -1,0 +1,43 @@
+created: 20241004121326211
+modified: 20260330071026469
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] [[Styring Tiltak]] [[Tiltaket pasientens prøvesvar]] September [[Kjernejournal Pasientens prøvesvar]]
+title: 09 Tiltak pasientens prøvesvar - hovedtrekk og endringer september 2024
+type: text/vnd.tiddlywiki
+
+<<list-links filter:"[tag[Tiltaket pasientens prøvesvar]tag[Tiltak]tag[2024]]">>
+
+! Hovedtrekk og endringer
+
+!!! Fastleger, legevakt og sykehus har prøvd ut tiltaket og er klar for innføring og bruk til helsehjelp:
+* Pasientens prøvesvar er pr oktober 2024 fortsatt i teknisk utprøving med formål kvalitetssikring. 
+* Vi har pr idag ca 11 mill svarrapporter som gjøres tilgjengelig for 67 ulike helsepersonell. Fire private laboratorium sender automatisk prøvesvar, i tillegg mottar vi manuelt innsendte prøvesvar fra ca 10 helseforetak. Helse Vest har startet automatisk innsending av svarrapporter f.o.m. 12. juni 2024.
+* Vi jobber mot oppstart helsehjelp i Q1'2025 . Overfor HOD er det imidlertid varslet en risiko for at oppstart kan bli forsinket til Q2'2025. Årsaken er tid til å implementere nødvendig funksjonalitet i rekvisisjonsløsningene og LIMS/RIS, samt tid til test (~3 mnd). 
+* Blant de 67 som har tilgang er det fastleger og helsepersonell ved sykehus. Hensikten er imidlertid å kvalitetssikre visningen i kjernejournal portal. 
+
+!!! Innbyggere kan se sine prøvesvar i helsenorge:
+* Teknisk er dette på plass, men det er valgt midlertidig å fjerne innbyggers innsyn i egne prøvesvar så lenge utprøvingen pågår. Dette ble gjort for å etterkomme et sterkt ønske fra RHF'ene om ikke å tillate visning for innbygger så lenge det kun er kvalitetssikring.
+* Det er gjennomført en brukertest blant 8 innbyggere i Q2'2024 for å få tilbakemelding på brukervennligheten. Rapport er tilgjengelig og helsneorge tar med tilbakemeldingene i videre arbeid.
+* Helsenorge ønsker å gjennomføre en begrenset pilot for utvalgte innbyggere før tjenesten går i produksjon i 2025. Det planlegges med oppstart i januar 2025.
+ 
+!!! Løsningen kan tilgjengeliggjøre prøvesvar fra spesialisthelsetjenesten, private laboratorier og radiologiske virksomheter:
+* Teknisk er dette på plass, og vi mottar prøvesvar både fra private og offentlige laboratorier. Det gjenstår imidlertid å etablere følgende tekniske funksjonalitet:
+* NHN skal etablere et formåls- og reservasjons API som gjør det mulig for rekvirenten å angi om svarrapporten har helsehjelpsformål (skal inn i pasientens prøvesvar) eller ikke (skal ikke inn i pasientens prøvesvar). API'et ble levert i test i oktober 2024 og skal produksjonssettes innen nyttår.
+* NHN skal utvide funksjonalitet i PTS til å kunne motta sperring og skjerming. Dette er ikke ferdig implementert. 
+* NHN har i samråd med sektoren etablert 6 feature team som skal bli enig om en tilstrekkelig god (dvs klinisk forsvarlig) visning i kjernejournal portal. Det er god progresjon på dette arbeidet, og det er ikke lenger på kritisk sti. 
+
+!!! Starte klinisk utprøving av pasientens prøvesvar med både private og offentlige lab'er:
+* Mål om oppstart i Q1'2025 (med mulig forsinkelse til Q2'2025) 
+* Det er ferdigstilt spesifikasjon for rekvisisjonsløsningene. Bestilling til Dips Interactor ble signert av alle RHF tidlig i oktober 2024. Plan for leveranse diskuteres fortsatt med Dips.
+* Det er ferdigstilt spesifikasjon for LIMS/RIS systemene. Helseforetakene har imidlertid ikke lagt bestilling til sine leverandører ennå, det avhenger av at de kan sikre finansiering. Unntaket er Helse Vest, som håndterer bestilling til Alfasoft (Unilabs) med mål om leveranse i november 2024. Unisoft brukes av alle helseforetak i Vest og dekker 5 av 8 fagområder. 
+
+! Prognose på penger og ressurser
+
+*Finansiering: Offentlig tilskudd, PPS,  ramme på 23.6 mnok som tilfaller vår divisjon og 1.4 mnok som tilfaller divisjon Innbygger. Prognosen for året for DHP pr 1. okt tilsier 23.6 mnok, dvs akkurat på rammen. Totalrammen for pasientens prøvesvar er dermed på 25 mnok, økt med 3 mnok som følge av omdisponering fra pasientens journaldokumenter.
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection343a8851705d1cfe8125?experience=power-bi&bookmarkGuid=Bookmarkb054aef5571bab1663f9">Oversikt PPS (Power BI)</a>
+
+
+
+
+

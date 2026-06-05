@@ -1,0 +1,22 @@
+TjenesteID: 40041
+created: 20240317143037915
+modified: 20260409110844998
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] [[Team Kollektivet]] [[Team Innrapportering]] Innrapportering 2026
+title: Innrapportering av dødsfall og dødsårsak
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+Tjenesten brukes av leger til å rapportere //Melding om dødsfall// til Folkeregisteret (Skatt) og //Melding om dødsårsak// til Folkehelseinstituttet (FHI). Tjenesten består av en Web-applikasjon som brukes av leger til å melde inn dødsfall. Web-applikasjonen benytter //Dødsmelding API//, som inneholder funksjoner for å sende inn melding om dødsfall og dødsårsak. 
+
+Det er et mål at leger skal kunne rapportere dødsfall i sitt EPJ-system, - knyttet direkte til pasientens journal. Det krever at EPJ-leverandør tar i bruk //Dødsmelding API// og implementerer nødvendig funksjonalitet for å melde dødsfall og dødsårsak. Vi kjenner til at to leverandører jobber med integrasjon nå. 
+
+Tjenesten forvaltes av to team i Divisjon helsepersonell i NHN. Team Kollektivet i domene brukerflater har ansvaret for Web-fronten av løsningen og Team Innrapportering i domene Samhandlingsplattform har ansvaret for API'et.
+
+<a href="https://confluence.nhn.no/pages/viewpage.action?pageId=52691320">Elektronisk dødsmelding (Confluence)</a>
+
+! Målsettinger
+!! 2027
+<<list-links filter:"[tag[Målsetting]tag[2027]tag<currentTiddler>]">>
+!! 2026
+<<list-links filter:"[tag[Målsetting]tag[2026]tag<currentTiddler>]">>

@@ -1,0 +1,10 @@
+created: 20250119173737467
+modified: 20250119173948316
+revision: 0
+tags: [[Ny administrasjonsklient for reseptformidleren - Reseptify]] Resultat 2025
+title: RF Admin kan fases ut for drift
+type: text/vnd.tiddlywiki
+
+Driftsteamet behøver ikke lengre bruke RF Admin. De har støtte for all funksjonalitet de trenger i den nye administrasjonsløsningen eller vha andre verktøy.
+
+RF Admin kan termineres. Dette gir økt sikkerhet både i GUI og med tilpassede roller slik at man har tilgang til det man trenger for å gjøre jobben sin. Ikke mer og ikke mindre.

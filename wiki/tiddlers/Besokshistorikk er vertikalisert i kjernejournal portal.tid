@@ -1,0 +1,19 @@
+TjenesteID: 40033
+created: 20260316094043433
+modified: 20260409113701922
+revision: 0
+tags: [[Kjernejournal portal]] Målsetting 2026
+title: Besøkshistorikk er vertikalisert i kjernejournal portal
+type: text/vnd.tiddlywiki
+
+Kjernejournal skal bestå av et sett med informasjonstjenester, hver med sitt eget grensesnitt (API) og sin egen database, samt en portal (Kjernejournal portal) som inneholder én fane pr informasjonstjeneste.
+
+Vi vil vertikalisere fanen Besøkshistorikk. Det er planlagt at denne også blir en egen informasjonstjeneste, men her er det pågående diskusjoner med FHI som dataansvarlig for Norsk Pasient Register (NPR). FHI har gitt oss signaler om at de vil prioritere arbeidet med ny registerplattform i 2026 og 2027. Dermed kan de foreløpig ikke love oss et eget API for å hente ut data fra dem. En mellomløsning blir at vi bruker nåværende API i vår nye vertikal.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

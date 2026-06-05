@@ -1,0 +1,16 @@
+created: 20250217124403802
+modified: 20250708125207918
+revision: 0
+tags: [[Tiltaket digitalt helsekort for gravide]] 2025 Oppgave [[Tiltaket digitalt helsekort for gravide 2025]] Levert
+title: DHG oppgave: Utvikle brukerflate på Helsenorge for den gravide og for helsepersonell i eget journalsystem
+type: text/vnd.tiddlywiki
+
+!! NHN oppgave 2025:
+
+Norsk helsenett skal utvikle en brukerflate for gravide på Helsenorge, i tillegg til samtykkeløsningen som allerede er utviklet.
+
+Norsk helsenett har inngått avtale med hele leverandørmarkedet for helsestasjons- og fastlegemarkedet, og finansierer utviklingen slik at helsepersonell får oppdatert informasjon fra andre som samhandler om den gravide gjennom det nasjonale APIet. Spesialist har ansvaret for sine leverandører, som utvikler tilsvarende funksjonalitet for helsepersonell på sykehus. 
+
+!! Leveranse
+
+<<list-links filter:"[tag[Leveranse]tag[2025]tag<currentTiddler>]">>

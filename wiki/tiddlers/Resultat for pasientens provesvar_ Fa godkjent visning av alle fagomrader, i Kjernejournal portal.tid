@@ -1,0 +1,16 @@
+TjenesteID: 40170
+created: 20260407052229301
+modified: 20260508075704704
+revision: 0
+tags: [[Kjernejournal Pasientens prøvesvar]] [[Tiltaket pasientens prøvesvar]] Resultat 2026 [[Målsetting for pasientens prøvesvar: Ferdigstille nødvendig funksjonalitet for visning og personvern (inkl. tilgangsstyring)]]
+title: Resultat for pasientens prøvesvar: Få godkjent visning av alle fagområder, i Kjernejournal portal
+type: text/vnd.tiddlywiki
+
+! Mål:  
+* Kjernejournal portal skal ha implementert en klinisk forvarslig visning av prøvesvar fra alle fagområder
+* Pasientens prøvesvar skal ha funksjonalitet for at pasienten og helsepersonell kan sette nødvendige personverninnstillinger
+
+! Effekt sektoren
+* Laboratoriene kan være trygg på at prøvesvar vises for innbygger og helsepersonell på en klinisk forsvarlig måte
+* Innbygger kan sette og oppheve personverninnstillinger via helsenorge
+* Helsepersonell kan sette personverninnstillinger fra eget fagsystem eller fra kjernejournal portal. 

@@ -1,0 +1,9 @@
+created: 20260507103738292
+modified: 20260507105838877
+revision: 0
+tags: Målsetting 2026 [[Pasientens måledata]]
+title: Inkludere nye type målinger (ikke begrenset til DHO) i tjenesten
+type: text/vnd.tiddlywiki
+
+! Resultat
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>

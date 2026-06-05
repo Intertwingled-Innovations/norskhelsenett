@@ -1,0 +1,20 @@
+created: 20240531131919783
+modified: 20240612104046772
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] Melding [[Styring Ekstern tjeneste]] Mai
+title: Melding - hovedtrekk og endringer mai
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer
+
+EDI 2.0 er fortsatt i pilot, og vi arbeider fortsatt mot produksjonssetting i løpet av Q3/Q4. "Storfil" support er en del av dette, og mye tyder på at den kommer til å bli brukt aktivt fra produksjonssetting, sannsynligvis med et lite antall brukere som har begrenset meldingsvolum. 
+Som et ledd i dette settes meldingstjeneren i 24/7-drift i løpet av våren/sommeren.
+Egen ROS for REST-endepunkt er under utarbeidelse.
+
+
+
+! Prognose på penger og ressurser
+Ny ressurs inn (Anita, Team Melding), konsulent ut av teamet (Roar Hoksnes, fra ca. september). 
+
+*Finansiering: Medlemsavgift
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarke7bc61a8188a81da0ffc">Oversikt Melding (Power BI)</a>

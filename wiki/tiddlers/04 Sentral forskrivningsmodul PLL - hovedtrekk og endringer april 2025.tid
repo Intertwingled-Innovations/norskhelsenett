@@ -1,0 +1,29 @@
+created: 20250509083327482
+modified: 20250514133644495
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Videreutvikle sentral forskrivningsmodul (SFM) for fastlege og sykehus, samt fortsette utvikling av funksjonalitet for sykehjem, hjemmetjeneste og legevakt]] [[Styring Tiltak]] [[Sentral forskrivningsmodul]] 2025 April
+title: 04 Sentral forskrivningsmodul PLL - hovedtrekk og endringer april 2025
+type: text/vnd.tiddlywiki
+
+
+! Hovedtrekk og endringer
+*Status leveranser: God fart på godkjenningsprosessen av leverandører. Planen følges og vi godkjenner fortløpende (se leveranser under)
+*Status leveranser: PLO utvikling startet. Beskrivelse av løsning nesten på plass. Utvikling startet og vi er p.t i rute
+*Fokus: Scopeing og utvikling av PLO funksjonalitet
+
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag[April]tag[2025]tag[Sentral forskrivningsmodul]]">>
+
+
+! Prognose på penger og ressurser
+
+* Finansiering: Offentlig tilskudd: PLL -ramme for SFM på 51,2 mnok. Budsjett 41,7 mnok. 
+* Runrate per April er på 39,8 mnok (11mnd)
+* Prognose helår 41,6mnok. Prognosen er stabil (noe avvik denne måneden pga feilpostering, rettes opp i mai-tallene). Rammen er romslig.
+* Ressurssiden: Det planlegges innleie av to konsulenter som skal fokusere på automatisering av produksjonslinjer, infrastruktur og tester. Kapasiteten ellers i teamet er som forventet.
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark2bd56f9db35a6e55a14f">Oversikt Sentral forskrivningsmodul PLL (Power BI)</a>
+
+

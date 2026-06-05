@@ -1,0 +1,15 @@
+created: 20251205131600359
+modified: 20251205133126823
+revision: 0
+tags: 
+title: Virksomhetsstyring - krav oppdragsdokument og foretaksprotokoll 2025
+type: text/vnd.tiddlywiki
+
+
+! Oppfølging og rapportering i 2025
+
+<<NHN-liste-levert type:"OppfølgingOgRapportering" aar:"2025">>
+
+! Oppgaver i 2025
+
+<<NHN-liste-liste-levert type:"Tiltak" undertype:"Oppgave" aar:"2025">>

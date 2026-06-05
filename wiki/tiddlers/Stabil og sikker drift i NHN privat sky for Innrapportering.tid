@@ -1,0 +1,16 @@
+created: 20240703074555369
+modified: 20240703074639647
+revision: 0
+tags: Innrapportering Målsetting 2024
+title: Stabil og sikker drift i NHN privat sky for Innrapportering
+type: text/vnd.tiddlywiki
+
+Beskrivelse?
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

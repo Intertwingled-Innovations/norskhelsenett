@@ -1,0 +1,12 @@
+created: 20250312111230890
+modified: 20250313130438167
+revision: 0
+tags: [[Modernisering av reseptformidleren]] Leveranse 2025 Mars
+title: Autentisering med HelseID og DPoP for rekvirenter
+type: text/vnd.tiddlywiki
+
+Oppdatert rekvirent webservice der rekvirent kan autentisere seg med HelseID (med DPoP). Det har tidligere vært forutsatt bruk av personlig sertifikat fra Buypass eller Commfides. Kun SFM har brukt HelseID.
+
+Dette legger til rette for at bruk av Buypass/Commfides kan fases ut hos aktørene dersom de ønsker det.
+
+Denne leveransen bidrar til at reseptformidleren øker bruk av mekanismer for autentisering og autorisasjon i samhandlingsplattformen.

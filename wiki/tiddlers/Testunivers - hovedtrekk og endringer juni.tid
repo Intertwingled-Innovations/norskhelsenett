@@ -1,0 +1,33 @@
+created: 20240627124907433
+modified: 20240814075649102
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] Testunivers [[Styring Ekstern tjeneste]] Juni
+title: Testunivers - hovedtrekk og endringer juni
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+__Datasjø og syntetisering av data__
+- Azure datalake er etablert i allmenn sky og det jobbes nå med tilgjengeliggjøring av API og Power BI som første tilgangsintegrasjoner mot datasjøen.
+- Utredning for aktuelt verktøy for etablering av en datakatalog er gjennomført og vi har valgt å ta i bruk Microsoft Purview som allerede er en del av vår sky portefølje.
+- ​Algoritme for generering av syntetiske data basert på Pasientens prøvesvar er 90% ferdig utviklet. Vi har hatt en konstruktiv dialog med Hdir vedrørende vår juridiske vurdering som tilsier at vi kan gjøre bruk av reelle data i fra Pasientens prøvesvar og Kjernejournal. Resultatet er at utvikling av planlagte algoritmer koblet mot Kafkka for syntetisering av produksjonsdata starter opp medio august. 
+
+__Spinn-off miljøer__
+Tiltaket stoppes. Grunnen er teknologiske utfordringer med de tjenestene som skulle ligge til grunne for spin-off miljøene. De aktuelle tjenestene bygger i dag på ikke kompatibel teknologi. Pengene overføres til tiltaket Datasjø og syntetisering.
+
+Alt arbeid med tiltakene ligger innenfor plan for trinnvis tilnærming av løsningene.
+
+[img[image.png]]
+
+! Prognose på penger og ressurser
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection343a8851705d1cfe8125?experience=power-bi&bookmarkGuid=Bookmark6073939a83ecbd0d58cd">Oversikt Tiltak - Spin off miljø i skyen og Syntetisk datalake (Power BI)</a>
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection343a8851705d1cfe8125?experience=power-bi&bookmarkGuid=Bookmark04f8970f121aa863a9e2">Oversikt Testmiljø forvaltning og videreutvikling og Syntetiske data (Power BI)</a>
+
+Prognose på penger og ressurser følger plan sett ut i fra helårseffekt. Noe underforbruk av timer nå før 3 nyansatte er 100% oppe og kjører samt 1 langtidssykmeldt en periode nå.                                 
+*Finansiering: Testunivers består av ulik finansiering. Aktivitet knyttet til syntetisk datalake og spin off miljø i skyen er ufinansiert og utgjør en kostnadsbase for året på 12 mnok. Tildelte interne tjenester som er dekt av medlemsinntekt er på 1,86 mnok. Ekstern fakturering på 0,5 mnok og offentlig tilskudd - post 70 på 0,8 mnok.
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark9025ca7215f00744e172">Oversikt Testunivers (Power BI)</a>
+

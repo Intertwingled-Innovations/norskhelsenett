@@ -1,0 +1,17 @@
+created: 20250131094812750
+modified: 20250131100436968
+revision: 0
+tags: [[Tiltaket pasientens legemiddelliste]] 2024 Oppgave Levert
+title: Videreutvikle SFM for fastlege og sykehus, og fortsette utvikling av funksjonalitet for sykehjem, hjemmetjeneste og legevakt
+type: text/vnd.tiddlywiki
+
+!! NHN Oppgaver 2024
+
+I 2024 er det en prioritet at Norsk helsenett videreutvikler funksjonalitet i Sentral forskrivningsmodul (SFM) som er tilstrekkelig for at den godkjennes for innføring i fastlegemarkedet. 
+Leveransen skal sikre at fastleger som tar i bruk SFM fullversjon får tilgang på en versjon som inneholder avklart og god nok funksjonalitet for å understøtte beslutninger og arbeidsprosesser. 
+Som en del av videreutviklingen vil Norsk helsenett også sørge for tiltak som gjør løsningen mer stabil og sikrer tilstrekkelig ytelse og skalerbarhet for bruk på for både fastleger og andre brukere som er i gang med SFM 
+Så langt mulig vil Norsk helsenett også prioritere kritiske forbedringer i eksisterende funksjonalitet for helsepersonell tilknyttet legevakt, sykehjem og hjemmetjeneste, basert på erfaringer fra utprøving.  
+
+!! Leveranser:
+
+<<list-links filter:"[tag[Leveranse]tag[2024]tag<currentTiddler>]">>

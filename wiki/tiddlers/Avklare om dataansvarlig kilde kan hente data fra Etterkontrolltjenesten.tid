@@ -1,0 +1,10 @@
+TjenesteID: 40171
+created: 20260512075915173
+modified: 20260512102952754
+revision: 0
+tags: 2026 [[Kjernejournal Pasientens journaldokumenter]] Mai [[Virksomheter skal kunne hente ut oversikt over hvem som har lest hvilke journaldokumenter fra helsevirksomheten]] Leveranse [[Avklare om dataansvarlig kilde kan hente data fra Etterkontrolltjenesten]]
+title: Avklare om dataansvarlig kilde kan hente data fra Etterkontrolltjenesten
+type: text/vnd.tiddlywiki
+
+!Leveranse
+Det er avklart om dataansvarlig virksomhet kan hente logger over leste joruanldokumenter som de deler via etterkontrolltjenesten

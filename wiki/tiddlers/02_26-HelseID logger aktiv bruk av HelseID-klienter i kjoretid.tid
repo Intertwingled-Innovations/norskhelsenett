@@ -1,0 +1,11 @@
+TjenesteID: 40031
+created: 20260225124725052
+modified: 20260513094602040
+revision: 0
+tags: 2026 [[Autentisering og autorisasjon]] Selvbetjening Leveranse 40031 [[Tilby verktøy som effektiviserer og kvalitetssikrer bruken av HelseID]] [[API-eiere kan sjekke virksomheters tilgang til sine APIer i kjøretid]] Februar
+title: 02/26-HelseID logger aktiv bruk av HelseID-klienter i kjøretid
+type: text/vnd.tiddlywiki
+
+Manglende medlemskap for helsevirksomheter og avvik for bestilling av tjenester (APIer) logges i en periode. Data vises i logg til API-eiere og leverandører i HelseID selvbetjening. Leveransen er knyttet til riktig medlemsmasse i Helsenettet, prioritet 1 i forretningsområde Helsepersonell.
+
+​

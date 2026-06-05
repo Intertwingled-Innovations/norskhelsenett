@@ -1,0 +1,26 @@
+created: 20240508070227072
+modified: 20260220120048648
+revision: 0
+tags: Reseptformidleren Målsetting 2024 2025
+title: Modernisering av reseptformidleren
+type: text/vnd.tiddlywiki
+
+Som en del av målsettingen for modernisering av reseptformidleren så er det satt opp mål om at: 
+
+* Det skal raskt kunne gjøres endringer i reseptformidleren
+* Reseptformidleren skal være en integrert del av Samhandlingsplattformen
+* Reseptformidleren skal ha robusthet i arkitekturen
+* Reseptformidleren har innebygget sikkerhet og personvern som en integrert del av utviklingsprosessen.
+* Leveranseteamet skal drive fremgang. 
+
+Reseptformidleren skal dele resepter utskrevet i Norge med utleverere i EU og motta utleveringsmelding via MyHealth@EU knutepunkt på format fastsatt av MyHealth@EU programmet.
+
+Reseptformidleren skal tilpasses EHDS iht den tidsplanen som er satt, dvs februar 2029. Reseptformidleren skal kunne samhandle på eksisterende formater og EHDS formater i parallell slik at aktørene kan gjøre tilpasninger i eget tempo/etter egen tidsplan.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

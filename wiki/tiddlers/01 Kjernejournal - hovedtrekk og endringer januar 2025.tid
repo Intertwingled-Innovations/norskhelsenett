@@ -1,0 +1,39 @@
+created: 20250211143848711
+modified: 20250409141500280
+revision: 0
+tags: [[Divisjon Helsepersonell]] Kjernejournal [[Styring Ekstern tjeneste]] 2025 Januar
+title: 01 Kjernejournal - hovedtrekk og endringer januar 2025
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+!! Drift og produksjon
+
+
+!! Portal
+Det ble oppdaget inkonsistens mellom PVK og kjernejournal-databasen, samt problemer med synkronisering fra kjernejournal-logg til audit-loggen. Det første problemet førte til en incident, det andre ble oppdaget av en feil meldt fra innbygger. Dette har tatt mye fokus i januar, i tillegg til vertikalisering av kritisk info og legemiddel-fanen.
+
+! Prognose på penger og ressurser
+
+!! Drift og produksjon
+Drift og produksjon er iht budsjett.
+
+!! Portal
+Forvaltning av kjernejournal portal er over budsjett. Dette skyldes høy aktivitet for å løse incident og feil i januar.
+
+!! Infotjenester
+Årsprognosen for KJ infotjenester er på ca 37.1 mnok, det er 19.7 mnok under under budsjett på 56.8 mnok. 
+
+!!! Ressurser
+
+KJ infotjenester: KJ infotjeneste teamet vil mer eller mindre i sin helhet allokeres til digitalt helsekort for gravide resten av 2024. Team Plattform bistår med migrering av auditlog-tjenesten over på Axual kafka innen nyttår. I tillegg er det besluttet å opprette en nytt team som skal forvalte auditlog-tjenesten, inkl videreutvikling av loggerammeverket og etablering av etterkontroll. Ragnhild Varmedal blir tjenesteeier. 
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarkb92368e492600e8b0b92">Oversikt Kjernejournal total (Power BI)</a>
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark09c84f60ca0c0d0dee2a">Oversikt Kjernejournal Infotjenester (Power BI)</a>
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarke23fe3d1eccd55765405">Oversikt Kjernejournal portal (Power BI)</a>
+
+

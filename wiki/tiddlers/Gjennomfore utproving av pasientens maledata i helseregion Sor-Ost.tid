@@ -1,0 +1,24 @@
+created: 20240128091316894
+modified: 20260408071025186
+revision: 0
+tags: [[Tiltaket pasientens måledata (OLD)]] 2024 Oppgave 2025 2026
+title: Gjennomføre utprøving av pasientens måledata i helseregion Sør-Øst
+type: text/vnd.tiddlywiki
+
+
+
+!! Status etter 2024:
+Tiltaket er forsinket i henhold til opprinnelig plan for 2024 og utprøvingen er ikke ferdigstilt. Det er nye måter å samarbeide på tvers av nivåene i sektoren på, så det har tatt tid å få aktørene på plass for løsningen. 
+
+Tiltaket har en revidert plan med mål om utprøving i løpet av Q2 2025.
+
+!!Status etter 2025:
+Utprøving i gang, deling mellom Oslo kommune og OUS. Deling mellom Drammen kommune og Vestre Viken HF under oppstart.
+
+!!Plan 2026:
+- Deling mellom Drammen kommune og Vestre Viken HF: Helsepersonell ved Vestre Viken HF må ta i bruk oppslag via PEGA-klient.
+- Koble på Sarpsborg Kommune og Sykehuset i Østfold - deling innenfor Digital hjemmeoppfølging
+- Forbedringer på tjenesten:
+- Statusendepunkt for bedre sluttbrukeropplevelse - DIPS kan sjekke om det finnes måledata for pasient før oppslag og påloggingssløyfe med sikker pålogging må gjennomføres
+- Søking og filtrering
+

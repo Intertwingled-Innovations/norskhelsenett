@@ -1,0 +1,37 @@
+TjenesteID: 40057
+created: 20260529133810022
+modified: 20260601112810491
+revision: 1
+tags: [[Divisjon Helsepersonell]] 2026 [[Styring Satsning for fart]] [[Pasientens planer]] [[Forretningsmessig endring:1]] Mai
+title: 05 Pasientens planer - hovedtrekk og endringer mai 2026
+type: text/vnd.tiddlywiki
+
+
+! Hovedtrekk og endringer
+
+Arbeidet i gang med virksomhetene (AHUS og MILA-kommunene + Oslo kommune og fastleger) og leverandørene (Dignio og Webmed).
+
+NHN arbeider med informasjonsmodell sammen med aktørene.
+Har tatt lang tid å komme på et nivå hvor vi diskuterer løsning - NHN lager løsningsforslag som tar inn over seg resultat av siste arbeidsmøter med leverandørene.
+
+Det er ikke realistisk å kunne levere et fungerende API før sommeren, men vi opprettholder ambisjon om å kunne starte utprøving i løpet av Q3.
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 1''
+
+Konsekvens av forretningsmessig endring:
+
+
+
+! Prognose på penger og ressurser
+
+*Finansiering: Ingen finansiering, ligger inne som et tiltak og finansieres over NHN sin egenkapital.
+* 
+* Prognose er på 14,2 mnok som omfatter kjøp fra leverandører (10 MNOK) og timekostnader egne ressurser (2,85 MNOK)
+* Arbeidet i gang på vår side, vi tar opp fart og timekost slik at runrate timekost pr. april er på 1,9 MNOK. Denne forventes å øke slik at vi forventer å lande på prognosen. Runrate totalt pr. april er 3,2 mnok.
+
+* Status ressursbehov/kapasitet: Leveranseteam KOMLINK har ansvar. Styrket med 1 intern ressurs og 1 innleid konsulent fra og med mai.
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=b7bf84ea4db72ae3f8f4">Oversikt Pasientens planer (Power BI)</a>
+
+
+

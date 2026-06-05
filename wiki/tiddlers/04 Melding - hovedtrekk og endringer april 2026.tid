@@ -1,0 +1,41 @@
+TjenesteID: 40026
+created: 20260428080450098
+modified: 20260520092310221
+revision: 0
+tags: 2026 [[Styring Ekstern tjeneste]] [[Divisjon Helsepersonell]] [[Forretningsmessig endring:1]] Melding April
+title: 04 Melding - hovedtrekk og endringer april 2026
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer
+
+Konsekvens av forretningsmessig endring: Ingen
+
+* NB! Avvik fortsatt åpent avvik på grunn av manglende støtte/implentasjon av TLS (nyere versjon) på ftps og EDI generelt (smpts), ute i sektoren. 
+
+* Oppgradering til nyere versjon "ikke gjørbart" for regionene. Jobber med eskalering
+
+* V 3.0 fortsatt prioritert. Planlagt utrulling ser ut til å holde.
+
+** Kapabilitetsregister
+** Bedre/Enklere API for status meldinger og send/motta 
+
+! Prognose på penger og ressurser
+
+* Finansieringskilde: Forskriftsfestet medlemsinntekt (Helsenettet Eksterne Tjenester). 
+* Ramme 2026 34,5 MNOK 
+* Opprinnelig budsjett 2026: 30,1 MNOK
+* EDI 2.0 er godt i rute ut fra prioriterte oppgaver. Mister litt fart pga. sykefravær i teamet.
+* Årsprognose (pr. april) 28,2 MNOK, Runrate 11 mnd (pr. april) 25,5 MNOK.
+* Hva er årsak til avvik?
+* Ressursbehov/kapasitet: Fortsatt (langtids) sykefravær på en utvikler.
+
+<!-- Mal:
+* Hvordan ligger vi an hittil i år opp i mot prognoser og planlagte oppgaver?
+* Hvordan ligger vi an i prognose for året opp i mot finansieringsrammer for året?
+* Hvordan er runrate for året opp i mot prognose og finansieringsramme for året? Hva er årsak til avvik?
+* Bemanning: Fortsatt (langtids) sykefravær på en utvikler
+-->
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarke7bc61a8188a81da0ffc">Oversikt Melding (Power BI)</a>
+

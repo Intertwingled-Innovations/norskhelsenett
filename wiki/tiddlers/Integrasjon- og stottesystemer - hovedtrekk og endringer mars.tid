@@ -1,0 +1,40 @@
+created: 20240402131225536
+modified: 20240416122425271
+revision: 0
+tags: Styring 2024 [[Divisjon Helsepersonell]] Mars [[Integrasjon- og støttesystemer]]
+title: Integrasjon- og støttesystemer - hovedtrekk og endringer mars
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+''Junta/Flow - Q1''
+
+* 2 nye medarbeidere i teamet fom 1. februar, som ifbm. opplæring har brukt en del tid på Junta og Flow. Dette for læring, oppdatering av kompontentbiblioteker og arbeid ifbm. avvikling.
+* Det jobbes aktivt med å flytte ansvaret for Flow DNS til APT
+* Det er laget en midlertidig frontend for administrasjon av EDI-kontoer, som overleveres til team melding. Det har vært dialog med team melding for å flytte EDI-konfigurasjon ut av Junta og utvikle et API mot ny database.
+* Det er brukt litt tid på lukking av avvik og feilretting, der det har vært vurdert som spesielt nødvendig
+* Det jobbes med å utvikle en arkiv-løsning for Junta, som skal kunne brukes til oppslag på historiske saker
+* Avvikling av eksterne e-post kontoer
+* Bistått Nasjonalt nett med transisjon ut av Junta og monitorering av TeleREST API (Telemator)
+* Tiltak for å få kontroll på brukerkontoer og saker uten aktiv saksbehandler (opprydding av kontoer for tidligere ansatte, sjekk ved deaktivering av konto slik at aktive saker blir satt til ny person, endringer for å unngå mail-loop)
+* Konsumering av topics i Junta Worker (varsel i Junta ved automatisert tilgang i Medlemstjenesten)
+* Ny forside med informasjon rundt Junta avvikling og kartlegging av bruk av Junta i organisasjonen
+* Muliggjort sletting av enheter i CMDB via API
+* Kartlegging og deaktivering av API brukere ifbm avvikling
+
+''Integrasjonstjenesten''
+
+* Dialog med APT mhp saksbehandlingssystem.
+* Opplæring i Axual: Planlegging og allokering av personer for kurs.
+* Videre jobbing med formål i forbindelse med DHP systemdesign.
+
+
+
+! Prognose på penger og ressurser
+*Finansiering: Medlemsavgiften
+* Ca. 600 timer under budsjett pr. mars 24, pga. at det ikke var tatt høyde for lavere bemanning i januar og påsken i mars
+<a href="https://app.powerbi.com/groups/6931f38e-9db9-41f4-a143-ac9ee4a4719c/reports/a03232e0-bd45-4da2-b925-662e476d7ebd/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark6966c46e3cd6605ce815">Oversikt Integrasjon- og støttesystemer (Power BI)</a>
+
+

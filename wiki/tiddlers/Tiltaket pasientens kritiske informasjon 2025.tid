@@ -1,0 +1,31 @@
+created: 20250228164720392
+modified: 20250303133428140
+revision: 0
+tags: [[Norsk Helsenett SF]] Tiltak [[Tiltaket pasientens kritiske informasjon]] 2025 DigitalSamhandling
+title: Tiltaket pasientens kritiske informasjon 2025
+type: text/vnd.tiddlywiki
+
+Deling av kritisk informasjon (alvorlige diagnoser og tilstander) om pasienten er opplysninger som det i en behandlingssituasjon er særskilt viktig at helsepersonell kjenner til og som vil være med å øke pasientsikkerheten. Kritisk informasjon blir oftest registrert i aktørens egne fagsystemer. Kritisk informasjon som i tillegg registreres i kjernejournal blir tilgjengelig for deling mellom aktører nasjonalt, for dem som har innført kjernejournal. Innbyggere får innsyn via helsenorge.
+
+Tiltaket skal bidra til å øke registreringsgraden nasjonalt, ved at helsepersonell kan registrere opplysningene i eget fagsystem – samtidig som data overføres automatisk til kjernejournalen. Dette skal bidra til at flere innbyggere får registrert kritisk informasjonen i kjernejournal og dermed redusere risiko for feilbehandling, som for eksempel alvorlige legemiddelreaksjoner. Tiltaket vil også redusere tiden helsepersonell bruker på å lete etter slik informasjon. 
+
+Kritisk informasjon inneholder flere av de samme helseopplysningene som er del av den internasjonale standarden International Patient Summary (IPS) . Flere land globalt   tar i bruk IPS for nasjonale formål for blant annet å tilrettelegge for innovasjon og næringsutvikling, samt for følge internasjonale anbefalinger.
+
+
+Norsk helsenett SF er ansvarlig for teknisk utvikling og utprøving av tiltaket. Norsk helsenett SF er også ansvarlig for drift og forvaltning av løsningen. 
+
+
+!! Oppgaver i 2025
+
+<<NHN-current-liste-levert type:"Oppgave" aar:"2025">>
+
+!! Leveranseplan 2025
+https://nhnkontor.sharepoint.com/:b:/r/sites/Samhandlingsplattformen/Shared%20Documents/Team%20Sats/Leveranseplan%202025/Endelig%20versjon/NHN%20leveranseplan%202025%20-%20Digital%20samhandling%201.0.pdf?csf=1&web=1&e=zMTSCS
+!! Rapportering leveranseplan 2025
+
+<<list-links filter:"[tag[2025]tag[Leveranse]tag[Rapportering leveranseplan]]">>
+
+
+! Styring 2025
+
+<<list-links filter:"[tag[Styring Tiltak]tag[2025]tag<currentTiddler>]">>

@@ -1,0 +1,27 @@
+created: 20240402131147350
+modified: 20240419083230281
+revision: 0
+tags: Styring 2024 [[Divisjon Helsepersonell]] Mars Testunivers
+title: Testunivers - hovedtrekk og endringer mars
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+__Datasjø og syntetisering av data__
+- Azure datalake er etablert i allmenn sky og det jobbes nå med tilgjengeliggjøring av API og Power BI som første tilgangsintegrasjoner mot datasjøen.
+- ​Algoritme for syntetisering av data i fra Pasientens prøvesvar via Kafka utvikles som planlagt og skal foreligge klar for testing og evaluering pr medio juni. Det tas nå utgangspunkt i Pasientens prøvesvar Test i påvente av tilbakemelding i fra Hdir om tilgang til skarpe data.
+
+__Spinn-off miljøer__
+Vi har startet kartlegging av kompetansebehov eksternt/internt samt innhenting av use-cases.
+Planen er å starte opp første trappetrinn i den trinnvise tilnærmingen medio august.
+
+Alt går som planlagt ihht trinnvis tilnærming av løsningene.
+
+[img[image.png]]
+
+! Prognose på penger og ressurser
+Prognose på penger og ressurser følger plan. 
+*Finansiering: Testunivers består av ulik finansiering. Aktivitet knyttet til syntetisk datalake og spin off miljø i skyen er ufinansiert og utgjør en kostnadsbase for året på 12 mnok. Tildelte interne tjenester som er dekt av medlemsinntekt er på 1,86 mnok. Ekstern fakturering på 0,5 mnok og offentlig tilskudd - post 70 på 0,8 mnok.
+<a href="https://app.powerbi.com/groups/6931f38e-9db9-41f4-a143-ac9ee4a4719c/reports/a03232e0-bd45-4da2-b925-662e476d7ebd/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark9025ca7215f00744e172">Oversikt Testunivers (Power BI)</a>
+

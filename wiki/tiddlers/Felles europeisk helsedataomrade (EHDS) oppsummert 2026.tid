@@ -1,0 +1,36 @@
+TjenesteID: 40062
+created: 20260407065317580
+modified: 20260407092657807
+revision: 0
+tags: [[Divisjon Helsepersonell]] 2026 [[Felles europeisk helsedataområde (EHDS)]] [[Tjeneste oppsummert]]
+title: Felles europeisk helsedataområde (EHDS) oppsummert 2026
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+
+<<list-links filter:"[tag[Intern tjeneste]tag[Felles europeisk helsedataområde (EHDS)]tag[Divisjon Helsepersonell]]">>
+
+
+
+! Målsettinger
+
+<<list-links filter:"[tag[Målsetting]tag[2026]tag[Felles europeisk helsedataområde (EHDS)]]">>
+
+
+! Resultat
+
+
+<<list-links filter:"[tag[Resultat]tag[2026]tag[Felles europeisk helsedataområde (EHDS)]]">>
+
+
+! Leveranser
+<<list-links filter:"[tag[Leveranse]tag[2026]tag[Felles europeisk helsedataområde (EHDS)]]">>
+
+Teamet har sørge-for ansvar knyttet til tiltaket MyHealth@EU, og følger opp hovedoppgavene fra mandatet. Se oppgavene under tiltaket MyHealth@EU.
+
+<<list-links filter:"[tag[Tiltak]tag[2026]tag[DigitalSamhandling]tag[Tiltaket MyHealth@EU]]">>
+
+! Styring
+
+!! Intern tjeneste
+<<list-links filter:"[tag[Styring Intern tjeneste]tag[2026]tag[Felles europeisk helsedataområde (EHDS)]]">>

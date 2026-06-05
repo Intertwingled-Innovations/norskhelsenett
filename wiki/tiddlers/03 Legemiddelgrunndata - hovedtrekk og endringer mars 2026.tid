@@ -1,0 +1,43 @@
+TjenesteID: 40055
+created: 20260327120947286
+modified: 20260422095335331
+revision: 0
+tags: [[Divisjon Helsepersonell]] 2026 [[Styring Satsning for fart]] Mars Legemiddelgrunndata [[Team Sats]] [[Forretningsmessig endring:3]]
+title: 03 Legemiddelgrunndata - hovedtrekk og endringer mars 2026
+type: text/vnd.tiddlywiki
+
+<<list-links filter:"[tag[]tag[Tiltak]]">>
+
+! Hovedtrekk og endringer
+* Innenfor konseptet av satsning for fart i 2026 kartlegger nå NHN det første steget for å bygge en Norsk legemiddelkatalog (NOMPD) i NHN sin samhandlingsløsning. Planen er nå at H-resept etableres som den første tjenesten på en nasjonal legemiddelgrunndata tjeneste (NOMPD) hos NHN. Dvs. at NHN overtar realisering av løsning for H-resept fra DMP/SAFEST. Dette er forankret med ledelsen i DMP, H-resept prosjektet og prosjekteier (Helse Midt). Det gjenstår nå en endelig forankring med RHFenes IKT direktørmøte 28.april.
+
+*DMP er innforstått med at de må ta det videre ansvaret for den andre hovedstrømmen frem mot et målbilde for en nasjonal legemiddelgrunndatatjeneste. Dvs. å rydde/oppdatere DMPs interne systemer for å produsere legemiddelgrunndata, inklusive forskrivningsstøtte.
+
+MÅLSETTING
+
+* Beslutte og forankre og utvikle for en MVP (første steg) i 2026. H-resept etableres som den første tjenesten på en nasjonal legemiddelgrunndata tjeneste (NOMPD) hos NHN
+* Forankring av MVP må besluttes av prioriteringsrådet og IKT direktørmøtet den 28 april, før endelig beslutning i NHN sin ledelse
+
+
+RESULTAT
+
+* Utkast til første steg (MVP) foreligger etter utreding og avklaring med DMP og Helse Midt RHF/H-reseptprosjektet
+
+* Operativt team er etablert med tjenesteeier og APO. 
+
+
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 3''
+
+Konsekvens av forretningsmessig endring: 3
+
+! Prognose på penger og ressurser
+* Finansiering: Satsing for fart og finansiert over NHN sin egenkapital.
+* DHP har ved utgangen av februar brukt XX mnok av en prognose på XX mnok. Runrate for året er på XX mnok. 
+* Status ressursbehov/kapasitet?
+
+
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=f600785091dac1c0030e">Oversikt satsning Legemiddel grunndata (DMP) (Power BI)</a>
+

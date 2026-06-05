@@ -1,0 +1,36 @@
+created: 20260101142248056
+modified: 20260101144311587
+revision: 0
+tags: Reseptformidleren [[Styring Ekstern tjeneste]] 2025 Desember
+title: 12 Reseptformidleren - hovedtrekk og endringer desember2025
+type: text/vnd.tiddlywiki
+
+!Hovedtrekk og endringer
+
+
+Vi har hatt 1 alvorlige hendelse i desember:
+
+*rullering av vault token fungerte ikke og dette førte til at vi ikke klarte å motta M15 meldinger (svar på søknad om godkjenningsfritak) fra DMP korrekt. Vi ga ingen feilmelding, slik at DMP ikke oppdaget dette. Det var Helse-Vest som meldte fra den 5.desember om at de ikke hadde mottatt svar på M15 siden 15.november. Feilen ble rettet den 5.desember og alle M15 meldinger sendt på nytt fra DMP slik at alle de 251 reseptene der man ventet på svar, fikk godkjenning eller avslag. Basert på søknadene som var berørt konkluderte DMP og Hdir med at det ikke hadde hatt alvorlige konsekvenser for pasientene. Pasientene kan se status for resepten i Helsenorge og at den er "venter på svar fra DMP". Dersom det haster for pasienten, kan pasienten ta kontakt med DMP eller rekvirent. For resepter der det haster med svar er det en egen "hurtigløsning" utenom reseptformidleren.
+
+
+Tilgang til apotekløsning er fortsatt ikke etablert og vi kan dermed ikke gjennomføre ende til ende tester ved nye leveranser. Dette medfører en noe høyere risiko. Vi har fått tilbud på et EIK testmiljø, men mangler en utleverer løsning. Vi har dialog med Sykehusapotekene som er positive til å la oss bruke sin løsning (Orion). Det er imidlertid vanskelig å få fremdrift i saken fordi Sykehusapotekene må prioritere lovpålagte endringer foran arbeid med å gi oss tilgang til sin løsning.
+
+
+!Modernisering
+*Pasientens legemidler (PLM) skal sørge for utfasing av eksisterende KJ infotjenester legemiddel API så raskt som mulig. Det er backend delen som blir erstattet først. Fase 1 vil fase ut komponenter basert på Oracle Service Bus og var planlagt levert i oktober 2025. Dette krever ikke endringer hos konsumentene (som er SFM og HP i hovedsak). Feil avdekket i akseptansetest medfører at vi er ytterligere forsinket og vil ikke være i produksjon ila 2025. Ny dato må fastsettes, mål om tidlig 2026.
+* Arbeid med å ta i bruk Etterkontroll tjenesten pågår, vi har behov for noen tilpasninger som vi er i dialog med etterkontroll tjenesten om. Planlagt å ferdigstille dette arbeidet tidlig 2026.
+*Data til sekundærbruk. Hdir har sendt oss en omfattende bestilling på statistikk/rapporter de ønsker om forskrivningspraksis og status innføring av PLL. Majoriteten av behovene forutsetter spørringer på et fullt datasett fra reseptformidleren. De ønsker ikke å motta anonyme rådata, men vil heller ikke ha ansvar for sin egen "kopi" av produksjonsdata. Langsiktig løsning er at reseptformidleren deler data med Legemiddelregisteret hos FHI. Der kan det etableres sikre analyserom for både Hdir sine behov og andre sekundærbehov.
+*Vi jobber videre med systemdesign iht løsningsmønster i samhandlingsplattformen etter avstemming med PO Odd Martin.
+*EHDS - forslag til forretningsregler for oversetting fra en resept (M1) til en ePrescription i samarbeid verdikjede e-resept er under arbeid og ble diskutert med Hdir før jul.
+
+
+!Sikkerhet
+*Alle tekniske krav og sikkerhetskrav til aktører som vil ta i bruk reseptformidleren er gjennomgått og er samlet på ett sted; utviklerportalen.
+*Validering av utleverers sertifikat er ikke aktivert som planlagt den 15.november 2025. Apotek 1 hadde ikke gjort nødvendige endringer i sin multidose løsning. De søkte om utsettelse og har lagt frem en plan som tilsier at de er klare den 15.februar 2026. Dette ble innvilget for å sikre de omkring 80.000 pasientene som får multidose fra Apotek 1.
+
+!Prognose på penger og ressurser - ikke oppdater for desember ennå
+Drift ligger over budsjett og ligger høyere enn det gjorde hos TiE. Det er iverksatt en rekke tiltak ift å redusere lagring for å redusere driftskost. Effekten av disse var lavere enn forventet, reduksjon kun 70' pr mnd. 
+
+Forvaltning ligger fortsatt godt under rammen og noe under den nedjusterte prognosen. Dette skyldes i hovedsak at vi har lavere bemanning enn opprinnelig planlagt og at konsulenter er erstattet med ansatte.
+
+Oversikt Reseptformidleren (Power BI)

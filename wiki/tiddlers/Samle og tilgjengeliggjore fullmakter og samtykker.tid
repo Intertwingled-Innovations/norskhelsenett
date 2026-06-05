@@ -1,0 +1,30 @@
+TjenesteID: 40068
+created: 20260217110228754
+modified: 20260326181917954
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Intern tjeneste]] [[Ekstern Tjeneste]] 2026
+title: Samle og tilgjengeliggjøre fullmakter og samtykker
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+
+Tjenesten for å samle og tilgjengeliggjøre fullmakter svarer på et behov observert i nasjonale tjenester der pasientens egne fullmakter er sentrale. Behovet er også løftet fra flere aktører i sektoren, spesielt i forbindelse med forskning og registrering av data i en del helseregister der pasientens samtykke er påkrevet. En samling av fullmakter er nødvendig både for å gi pasienten et komplett innsyn i hvilke fullmakter hen til en hver tid har gitt, samt anledning til å trekke disse tilbake. Samtidig er det sentralt for aktørene med oppdatert og komplett informasjon om foreliggende samtykker for å kunne registrere kvalitets- og forskningsdata på en riktig og effektiv måte. Behovets omfang er foreløpig ikke fullt avdekket, og rigging av denne tjenesten finansieres derfor på fjorårets midler.
+
+! Målsettinger
+!! 2026
+<<list-links filter:"[tag[Målsetting]tag[2026]tag<currentTiddler>]">>
+
+
+
+! Styring
+!! 2026
+<<list-links filter:"[tag[Styring Intern tjeneste]tag[2026]tag<currentTiddler>]">>
+
+
+
+
+! Leveranser
+
+!! Leveranser 2026
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>tag[2026]]">>
+

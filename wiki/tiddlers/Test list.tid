@@ -1,0 +1,33 @@
+created: 20240703122331057
+modified: 20240703124210545
+revision: 0
+tags: 
+title: Test list
+type: text/vnd.tiddlywiki
+
+<$list filter='[tag[Oppgave]]'>
+<$checkbox tag=Levert/> <$link><$view field='title'/></$link><br>
+</$list>
+
+
+{{{ [tag[Oppgave]] }}}
+
+<$list filter="[tag[Oppgave]]">
+<br><<currentTiddler>>
+</$list>
+
+<$list filter='[tag[Oppgave]]'>
+<$link><$view field='title'/></$link> - ''Modified:'' <$view field="modified" format="date" template="DDD DDth MMM YYYY"/> - ''Tags:'' <$view field='tags'/><br>
+</$list>
+
+<ol>
+<$list filter="[tag[Oppgave]]">
+<li><$link to={{!!title}}><$view field="title"/></$link> {{tag[Levert]||$:/core/ui/ViewTemplate/tags}}</li>
+</$list>
+</ol>
+
+<$list filter="[tag[Oppgave]sort[title]]">
+<<currentTiddler>> {{||$:/core/ui/ViewTemplate/tags}}
+</$list>
+
+<$list filter="[tag[Oppgave]sort[title]]" template="$:/core/ui/ViewTemplate/subtitle"/>

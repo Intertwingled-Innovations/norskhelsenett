@@ -1,0 +1,21 @@
+created: 20240809123433344
+modified: 20260408085632634
+revision: 0
+tags: [[Forsvarlig forvaltning av Forskrivningsmodulen]] 2024 Leveranse [[Forskrivningsmodulen 2024-2025]] Juli
+title: FM 4.12.7 - Godkjent 10. juli 2024
+type: text/vnd.tiddlywiki
+
+Hensikten med leveransen er å sikre at vi informerer bruker om feil i dosering (Ref incident 884390)
+
+Hva er levert?
+Leveransen er å sikre at vi informerer bruker om feil i dosering på legemiddel  (Ref incident 884390)
+
+Hvilken nytte for sektoren?
+Hjelper helsepersonell å håndtere legemidler der det er doseringsfeil i Reseptformidleren (ref incident 884390). Når helsepersonell åpner resepter med mulig doseringsfeil så får de informasjon om dette og kan passe på å rette til riktig dosering. 
+
+Leveransen retter følgende saker:
+
+
+* RENO - 18341: As FM I want to validate that <Kortdose> matches <Intervall>
+
+* RENO - 18352: Dosing warning shown on all items where the kortdose selected for the prescription does not exist in local FEST

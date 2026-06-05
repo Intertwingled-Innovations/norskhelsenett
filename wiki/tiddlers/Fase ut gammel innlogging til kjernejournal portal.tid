@@ -1,0 +1,21 @@
+TjenesteID: 40033
+created: 20260316115110407
+modified: 20260409113744016
+revision: 0
+tags: [[Kjernejournal portal]] Målsetting 2026
+title: Fase ut gammel innlogging til kjernejournal portal
+type: text/vnd.tiddlywiki
+
+Vi har utviklet ny og sikrere innlogging til portalen, og vil derfor fase ut den gamle. Leverandører er oppfordret til å endre innlogging til den nye så raskt som mulig og innen den 1.12.2026. 
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>
+

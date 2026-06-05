@@ -1,0 +1,55 @@
+TjenesteID: 40034
+created: 20260503100557643
+modified: 20260520104808880
+revision: 0
+tags: Reseptformidleren [[Styring Ekstern tjeneste]] 2026 [[Forretningsmessig endring:1]] [[Divisjon Helsepersonell]] April Styring
+title: 04 Reseptformidleren - hovedtrekk og endringer april 2026
+type: text/vnd.tiddlywiki
+
+!Hovedtrekk og endringer
+
+Foreløpig ingen tilbakemeldinger fra Datatilsynet om saken der vi har delt opplysninger som ikke skulle vært delt i perioden 30.04.25 - 15.11.25.
+
+Det har vært en ny hendelse med feil i FEST fil fra DMP. Dette er rettet av DMP og de som hadde lest inn fil med feil må lese inn på nytt. NHN ble bedt om å slå av validering mot FEST, men det er ikke mulig uten nye prodsettinger.
+
+Vi har fått tilbud på avtale om bruk av Orion (Sykehusapotekene sin utleveringsløsning) og vil inngå avtale om bruk av den. Vi har bedt om oppdatert tilbud på EIK samt hatt avklaringer om drift av Orion testinstallasjon hos NHN. Forvaltning av Orion og EIK utføres av hhv CGI og Cap. For å kunne kjøpe bistand fra dem har vi utlyst en minikonkurranse blant de med rammeavtale i kategori A.
+
+
+!Modernisering
+* Arbeid med å ta i bruk Etterkontroll tjenesten pågår. Plan er fortsatt å produksjonssette denne funksjonaliteten i juni (i en hovedleveranse pga stort testbehov).
+*Data til sekundærbruk. Vi har fått et oppdrag om å etablere en slik løsning der vi deler anonyme data. Vi må leie inn ressurs(er) for å ta studentenes arbeid videre. Tilbudsfrist var 30.04.26. Studentene har jobbet med å plukke informasjonselementer fra M1 og M25.1.
+*Vi har startet arbeidet med en PoC av M1 (resept) på samhandlingsplattformens løsningsmønster. Planlagt klar til sommeren.
+*Status "under ekspedering" må fases ut og sentral beregning av gjenværende mengde må innføres. Det er avtalt møte med Difa og Apotekforeningen den 12.mai. Dette er da et varsel fra vår side.
+*EHDS - videre detaljering av forretningsregler for oversetting av en resept i samarbeid med Hdir, dette blir en arbeidsstrøm som følges opp av team EHDS.
+
+
+!Sikkerhet
+*Det var planlagt å avvikle støtte for utdaterte kryptoalgoritmer for asynkrone meldinger den 7.mars. Det var imidlertid flere aktører som ikke hadde gjort nødvendige tiltak og dette er derfor ikke aktivert. Vi har hatt møte med Dips Communicator og Infodoc (som er en viktig bruker av Dips Communicator) og formidlet at vi iverksetter den 4.juni. Dette ble akseptert av partene. 
+*Vi vil etablere rf applikasjon i OSL. Pt har vi kun database i OSL og en etablering av rf applikasjon vil ta omkring 1 uke. I forbindelse med hendelsen den 1.mars kunne mange tjenester gjøre failover til OSL, men det var ikke mulig for rf. Vi diskuterer hvordan vi skal løse dette og planlegger å gjennomføre frem til august/september 2026.
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 1''
+
+Konsekvens av forretningsmessig endring:
+
+
+!Prognose på penger og ressurser
+
+Finansiering: Forskriftsfestet pasientjournal E-resept, ramme 2026 92,9 MNOK.
+
+Årsprognose 2026 (pr. april) 75,2 MNOK, Runrate 11 mnd. (pr. april) 62,4 MNOK 
+
+For å nå de mål vi har satt for migrering til samhandlingsplattformens løsningsmønster i 2026, må vi frigjøre sentrale ressurser fra andre oppgaver slik at vi får økt fart på disse oppgavene.
+
+Pr april ligger vi fortsatt under rammen, men vil få økt pådrag fremover:
+
+*med innleie av 4 konsulenter fra 1.juni (evaluering av tilbud starter nå)
+*etablere testmiljø med EIK og Orion for verdikjede test, etablering vil koste omkring 1 mnok og årlige vedlikehold også omkring 1 mnok. 
+*etablering av rf applikasjon i OSL
+*testmiljøer på Viti plattformen for omskriving til samhandlingsplattformens løsningsmønster
+
+
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarkab9171eafbc4217a5bac">Oversikt Reseptformidleren</a>
+
+

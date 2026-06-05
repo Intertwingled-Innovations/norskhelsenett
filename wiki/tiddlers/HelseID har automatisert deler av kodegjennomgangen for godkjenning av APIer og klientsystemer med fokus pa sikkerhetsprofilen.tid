@@ -1,0 +1,11 @@
+created: 20250226125651488
+modified: 20250311082733285
+revision: 0
+tags: [[Autentisering og autorisasjon]] [[Driften av HelseID skal være enkel og effektiv]] 2025
+title: HelseID har automatisert deler av kodegjennomgangen for godkjenning av APIer og klientsystemer med fokus på sikkerhetsprofilen
+type: text/vnd.tiddlywiki
+
+
+* HelseID bygger Minimal Viable Product (MVP) for samsvarstesting 
+* Arbeid med automatisering av kodegjennomgang for HelseID- implementasjon
+* Conformance-testing i henhold til sikkerhetsprofilen for HelseID

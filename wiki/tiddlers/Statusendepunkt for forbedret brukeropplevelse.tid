@@ -1,0 +1,8 @@
+created: 20260507110404810
+modified: 20260507110806156
+revision: 0
+tags: [[Støtte nye behov som avdekkes i utprøvingen]] Resultat 2026 [[Pasientens måledata]]
+title: Statusendepunkt for forbedret brukeropplevelse
+type: text/vnd.tiddlywiki
+
+Statusendepunkt som gjør det mulig for klientsystemer å gi brukeren signal hvis det finnes (relevante) målinger å gjøre oppslag på for aktuell pasient.

@@ -1,0 +1,17 @@
+TjenesteID: 40023
+created: 20240128165646604
+modified: 20260330102419931
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] [[Team Kollektivet]] [[Team Innrapportering]] Innrapportering 2026
+title: Melde.no
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av tjenesten
+Det finnes en rekke meldeordninger for helsetjenesten som skal bidra til god lærings- og meldekultur og bedre pasientsikkerhet. Meldeordningene forvaltes av seks ulike etater.
+Melde.no er et felles elektronisk meldesystem som skal forenkle innrapporteringen til meldeordningene, og med det bidra til å oppnå hensikten med meldeordningene.
+
+<a href="https://confluence.nhn.no/display/EVI/Melde">Melde (Confluence)</a>
+
+! Målsettinger
+!! 2026
+<<list-links filter:"[tag[Målsetting]tag[2026]tag<currentTiddler>]">>

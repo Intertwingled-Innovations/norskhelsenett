@@ -1,0 +1,29 @@
+created: 20241206124654776
+modified: 20241209123842651
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] [[Tiltaket digitalt helsekort for gravide]] [[Styring Tiltak]] November
+title: Digitalt helsekort for gravide - hovedtrekk og endringer november
+type: text/vnd.tiddlywiki
+
+<<list-links filter:"[tag[Tiltaket digitalt helsekort for gravide]tag[Tiltak]tag[2024]]">>
+
+! Hovedtrekk og endringer
+* NHN holder på API-First strategi
+* 4 kommuner som skal delta i utprøving kjører Visma HSPRO - avtale inngått med Visma om utvikling av funksjonalitet i HSPRO for utprøving. NHN direkteanskaffer mot Visma
+* Utlysning for anskaffelse av funksjonalitet mot resten av EPJ leverandørmarkedet (kommuner, fastleger) offentliggjort, 5 leverandører har levert tilbud
+* HSØ håndterer brukergrensesnitt mot spesialist
+
+! Prognose på penger og ressurser
+
+*Finansiering: Offentlig tilskudd, helsekort for gravide
+* Prognose på DHP tatt ned til 4.4 MNOK basert på fart og frafall av arbeidsoppgaver (GUI for helsepersonell)
+* 1.7 MNOK opprettholdt i prognose for ekstern kostnad (EPJ-leverandør)
+* Inntil 24 MNOK for å kunne stimulere leverandører til å bidra i med utvikling av brukergrensesnitt for begrenset utprøving og utvidet utprøving.  Inntil 4 MNOK pr leverandør
+https://nhnkontor.sharepoint.com/sites/Intranett/SitePages/Mal-med-publiseringsdato(3).aspx
+
+! Leveranser
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark939bcb60b56e4d11e018">Oversikt Elektronisk helsekort for gravide (Power BI)</a>
+
+
+

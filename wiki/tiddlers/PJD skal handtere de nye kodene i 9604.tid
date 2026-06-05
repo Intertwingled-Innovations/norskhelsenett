@@ -1,0 +1,15 @@
+TjenesteID: 40171
+created: 20260512125303211
+modified: 20260512130022713
+revision: 0
+tags: 2026 [[PJD skal håndtere de nye kodene i 9604]] [[PJD sine personverninnstillinger er i tråd med Personvern og tilgangsstyring sitt målbilde]] [[Kjernejournal Pasientens journaldokumenter]] Resultat
+title: PJD skal håndtere de nye kodene i 9604
+type: text/vnd.tiddlywiki
+
+! Resultat beskrivelse
+
+I april 2025 så har Helsedirektoratet publiser nye koder for sperring av Helsepersonell som erstatter NORT fra 9603. Disse er hard og myk sperre og må tas i bruk i PJD.
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

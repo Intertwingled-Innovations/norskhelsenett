@@ -1,0 +1,39 @@
+created: 20250911120420807
+modified: 20260508101345118
+revision: 0
+tags: [[Velferdsteknologisk knutepunkt]] [[Divisjon Helsepersonell]] [[Styring Ekstern tjeneste]] 2025 August
+title: 08 Velferdsteknologisk knutepunkt - hovedtrekk og endringer august 2025
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+Omprioritering av arbeidet slik at uviklerne får gjennomført nødvendige produktforbedringer:
+
+*Admin-grensesnitt for å gjøre innføring/drift/KD i stand til å konfigurere opp nye kommuner
+*Selvbetjening for å gjøre kommunene i stand til dette selv
+
+Utviklere skal ikke benyttes til å støtte innføringsløp og integrasjoner for å oppnå denne prioriteringen.
+Vi etablerer //permanent dagvaktrolle// for å være bindeledd mellom teknisk og innføring.
+
+Dette har konsekvenser for vår evne til å betjene KS-løp i høst:
+
+*Løp 6 - Netnordic - kommet så langt i planlegging at det går som planlagt
+*Løp 7 - Hepro - Profil - CosDoc - litt justering for å få med viktige kombinasjoner/ kommuner
+*Løp 8 - Evondos - Profil - tak på 10 kommuner
+
+Det viser seg at trykket fra kommunene på tilkopling minker - slikt sett ser det ut som om konsekvensene for kommunene blir mindre enn fryktet som del av omprioriteringen, i tillegg til at vi forventer å kunne ta ut gevinster som følge av produktforbedringene.
+
+Fakturering gjennomført for 1. halvår. God dialog med økonomi.
+
+! Prognose på penger og ressurser
+*Finansiering: Medlemsinntekt
+* Ramme på 26 MNOK - oppjustert til 30 MNOK
+* Kostnadsreduserende tiltak gjennomført på drift på MS Azure - omlag 700.000 i årlig besparelse på dagens drift
+
+Omprioriteringen på oppgaver påvirker ikke prognose da kostbasen ikke endres.
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarkfeea3d895ff89eaee682">Oversikt VKP (Power BI)</a>
+
+

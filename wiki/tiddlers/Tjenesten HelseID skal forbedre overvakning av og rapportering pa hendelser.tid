@@ -1,0 +1,13 @@
+created: 20260504090416625
+modified: 20260505102333422
+revision: 0
+tags: [[Tjenesten HelseID skal lukke alle risikoelementer med risikonivå alvorlig]] 2026 [[Autentisering og autorisasjon]] resultat
+title: Tjenesten HelseID skal forbedre overvåkning av og rapportering på hendelser
+type: text/vnd.tiddlywiki
+
+Manglende overvåkning av, og svak rapportering på, hendelser i tjenesten fører til at pågående tekniske problemer (eller pågående angrep) ikke oppdages.
+Eksempel på dette var avbrudd / tekniske problemer mot Altinn (Delegeringer). Dette kan skje ved:
+Manglende rapportering av feilsituasjoner i produksjon.
+Ufullstendig informasjon i loggfiler. Dette gjør feilsøk vanskelig
+Plukker ikke opp hvis det skjer endringer i trafikkmønstre mot oss.
+Vi har ikke god oversikt over hva som burde overvåkes, eller hvordan varsling/rapportering bør gjøres.

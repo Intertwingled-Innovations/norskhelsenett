@@ -1,0 +1,8 @@
+created: 20240920124315563
+modified: 20250307091312944
+revision: 0
+tags: [[2024 - Avvikling eller overlevering av Flow moduler]] Flow 2024 Leveranse September [[Integrasjon- og støttesystemer]] Integrasjonstjenesten
+title: Avviklet Flow Telemator
+type: text/vnd.tiddlywiki
+
+Flow Telemator var en modul som synkroniserte PoP (point of presence)  fra Junta til Nasjonalt nett sitt verktøy Telemator. Denne er nå avviklet og Telemator er nå autoritativ kilde for PoP registrering.

@@ -1,0 +1,18 @@
+TjenesteID: 40171
+created: 20260407060413371
+modified: 20260527122740616
+revision: 2
+tags: [[Kjernejournal Pasientens journaldokumenter]] 2026 Målsetting [[Flere helsevirksomheter skal dele journaldokumenter gjennom PJD]]
+title: Flere helsevirksomheter skal dele journaldokumenter gjennom PJD
+type: text/vnd.tiddlywiki
+
+! Beskrivelse målsetting
+Mandatet for Pasientens journaldokumenter 2026 fra Helse og omsorgsdepartementet har gitt følgende oppgave til Norsk helsenett: bidra i videre innføring av pasientens journaldokumenter, herunder utvikle nødvendig 
+funksjonalitet for å støtte deling fra sykehus, kommuner, avtalespesialister og fastleger.
+
+* Relevante journaldokumenter om en pasient blir tilgjengelig for alle med tjenstlig behov. Dette medfører raskere og bedre helsehjelp
+* Pasientene får selv tilgang til egne journaldokumenter. Dette bedrer pasientenes medvirkning i egen helsesituasjon.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>

@@ -1,0 +1,36 @@
+created: 20260212065440648
+modified: 20260508094553634
+revision: 0
+tags: [[Divisjon Helsepersonell]] [[Styring Tiltak]] [[Tiltaket pasientens måledata (OLD)]] Januar 2026 [[Pasientens måledata]]
+title: 01 Tiltak pasientens måledata - hovedtrekk og endringer januar 2026
+type: text/vnd.tiddlywiki
+
+
+<<list-links filter:"[tag[Tiltaket pasientens måledata 2026]tag[Tiltak]tag[2026]]">>
+
+! Hovedtrekk og endringer
+
+
+!!! Gjennomføre en utprøving av pasientens måledata i helseregon Sør-øst
+
+* Mål: Gjennomføre utprøving med deling av måledata mellom Oslo kommune og OUS i løpet av Q3 2025
+Utvides til også gjelde utprøving mellom Drammen kommune og Vestre Viken HF.
+
+Tjenesten DHG er satt i produksjon.
+Oslo Kommune overfører måledata fra 7 pasienter til Pasientens måledata
+Visningsklient i Pega er produksjonssatt, tilgjengeliggjort og benyttes av helsepersonell ved OUS.
+
+Vestre Viken HF, Drammen kommune: Venter på testing fra Tellu sin side for å kunne åpne opp for å overføre målinger fra pasienter i Drammen kommune til PMD. Drammen har konkrete pasienter klare til hvitelisting når test er gjennomført.
+
+Videre arbeid med bredding til flere pasienter og pasientgrupper påstartet. Oslo kommune/ OUS skal benytte tjenesten for diabetes-pasienter.
+I tillegg til Asker/Drammen/Vestre Viken har Sykehuset Østfold og Fredrikstad kommune signalisert interesse for å starte opp med deling av målinger. Dette vil arbeides med i 2026.
+
+Gjennom tiltaket Pasientens planer så anskaffes funksjonalitet i fastlege-EPJ for Pasientens planer som også inkluderer integrasjon med Pasientens Måledata. Dette vil kunne gjøre det mulig for fastleger å få tilgang til og avlevere målinger for pasienter.
+
+! Prognose på penger og ressurser
+
+*Finansiering: Offentlig tilskudd, PMD, 8,8 mnok tilfaller vår divisjon og 1 mnok divisjon Innbygger
+* Prognose - må oppdateres ! x.x mnok på DHP inkl. felleskostnader.  
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection343a8851705d1cfe8125?experience=power-bi&bookmarkGuid=Bookmark76496cc890038835a416">Oversikt PMD (Power BI)</a>

@@ -1,0 +1,11 @@
+created: 20260507110111257
+modified: 20260508100706722
+revision: 0
+tags: [[Støtte nye behov som avdekkes i utprøvingen]] Resultat 2026 [[Pasientens måledata]]
+title: Mulighet for innsending, endring og sletting av måling
+type: text/vnd.tiddlywiki
+
+Innsending av målinger foregår via VKP og det er ikke mulighet for endring og sletting pr i dag.
+
+!Leveranser
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

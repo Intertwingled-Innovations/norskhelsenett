@@ -1,0 +1,31 @@
+created: 20241206124828975
+modified: 20241206124844371
+revision: 0
+tags: 2024 [[Divisjon Helsepersonell]] [[Tiltaket MyHealth@EU]] [[Styring Tiltak]] November
+title: MyHealth@EU - hovedtrekk og endringer november
+type: text/vnd.tiddlywiki
+
+<<list-links filter:"[tag[Tiltaket MyHealth@EU]tag[Tiltak]tag[2024]]">>
+
+! Hovedtrekk og endringer
+
+Prosjektet er fortsatt på plan. De viktigste aktivitetene siste periode har vært:
+
+*Compliance check. Har gjennomført initial compliance check med Gartner. Dette er en femdagers audit som skal verifisere ikke-funksjonelle krav til den nye MyHealth@EU tjenesten i Norge. Auditen gikk bra, og det var for vår del kun funn klassifisert som "minor". Helsedirektoratet fikk et "medium" funn, og dette gikk på manglende leveranse av DPIA. Vi utarbeider sammen med Helsedirektoratet en action plan for å lukke alle funn, og fortsetter arbeidet mot pilot.
+
+*Juridiske vurderinger. Gjøres i samarbeid med Hdir og HOD. Sees i sammenheng med EHDS som kommer. Helsedirektoratet har fått dataansvar. Behandlingsgrunnlag av tjenesten baserer seg på samtykke fra pasient i påvente av EHDS.
+
+*Pilotaktiviteter. Planlegging i gang. Bodø og Stjørdal blir pilotkommuner. Planen er å starte pilot Q1 2025. Helsepersonell fra legevakt i Bodø og Stjørdal involveres allerede i år for å komme med tidlige tilbakemeldinger til brukergrensesnitt og opplæringsmateriell. De to kommunene har bestilt integrasjon i EPJ (fra CGM), og integrasjonen blir svært lik det som gjøres i dag for Pasientens journaldokumenter. Vi har kartlagt hvilke land (av dem som har implementert utlevering av helseinformasjon) som gir oss mest eksponering i 2025, basert på arbeidsinnvandring og hotellovernattinger. Finland, Litauen, Latvia, Spania, Tsjekkia, Estland og Portugal er aktuelle land å hente pasientdata fra i første omgang. 
+
+
+! Prognose på penger og ressurser
+
+*Underforbruk i 2024 blir overført i 2025 for å dekke behovet for finansiering.
+
+*Finansiering: I 2025 vil vi motta ca 2 MNOK fra EU. Det resterende finansieres av midler fra HOD, samt overføringer fra 2024.
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark11acc8bf8ba654e01398">Oversikt MyHealth@EU (Power BI)</a>
+
+
+
+

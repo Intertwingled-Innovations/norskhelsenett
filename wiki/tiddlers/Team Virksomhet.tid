@@ -1,0 +1,19 @@
+created: 20240229093403503
+modified: 20241108125512595
+revision: 0
+tags: Team [[Domene Samhandlingsplattform]] [[Team Virksomhet]]
+title: Team Virksomhet
+type: text/vnd.tiddlywiki
+
+!Beskrivelse
+Team Virksomhet skal samle og tilgjengeliggjøre virksomhetsinformasjon for helsevirksomheter, på vegne av helsesektoren.
+
+Team Virksomhet forvalter de følgende tjenestene:
+
+*Adresseregisteret
+*BedReg
+*RESH
+
+!Ansvar og målsettinger
+
+<<list-links filter:"[tag[Målsetting]tag<currentTiddler>]">>

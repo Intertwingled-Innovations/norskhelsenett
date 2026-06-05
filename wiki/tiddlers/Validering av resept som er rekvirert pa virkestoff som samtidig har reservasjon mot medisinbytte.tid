@@ -1,0 +1,8 @@
+created: 20241204093431137
+modified: 20241204095728038
+revision: 0
+tags: [[Forbedre kvaliteten på data i e-resept verdikjeden]] Leveranse November 2024 Reseptformidleren
+title: Validering av resept som er rekvirert på virkestoff som samtidig har reservasjon mot medisinbytte
+type: text/vnd.tiddlywiki
+
+Resept som er rekvirert på virkestoff kan ikke samtidig ha reservasjon mot medisinbytte. Apotekene har fått lettet sin arbeidsprosess etter denne endringen, da det nå blir mulig å levere valgfri produsent i disse sakene. Valideringen ble produksjonssatt 23. novmeber 2024. Ingen henvendelser og ingen feil. 

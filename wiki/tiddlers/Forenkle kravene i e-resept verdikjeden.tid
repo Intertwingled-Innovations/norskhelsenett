@@ -1,0 +1,19 @@
+created: 20240710103932446
+modified: 20240710114057481
+revision: 0
+tags: [[Team verdikjede e-resept]] Målsetting 2024 OMS
+title: Forenkle kravene i e-resept verdikjeden
+type: text/vnd.tiddlywiki
+
+NHN har vært i dialog med sektoren over lengre tid rundt de kravene som stilles til de ulike aktørene i verdikjeden til e-resept. Aktørene mener at mange av kravene er for strenge og griper inn i deres områder.
+
+NHN har som målsetting å forenkle og redusere kravene til e-resept verdikjeden.
+
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

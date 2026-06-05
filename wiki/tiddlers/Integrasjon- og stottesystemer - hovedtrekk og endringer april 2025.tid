@@ -1,0 +1,31 @@
+created: 20250430083707220
+modified: 20250610084440780
+revision: 0
+tags: Integrasjonstjenesten 2025 [[Divisjon Helsepersonell]] April [[Styring Intern tjeneste]] [[Integrasjon- og støttesystemer]] Styring
+title: Integrasjon- og støttesystemer - hovedtrekk og endringer april 2025
+type: text/vnd.tiddlywiki
+
+Hovedtrekk og endringer april
+
+Junta/Flow
+
+* KD sakshånterings verktøy fått navn - SAKU - https://saku.nhn.no/.
+* SAKU kommet opp i prod miljø
+* Løpende samarbeid med APT på integrasjon - topic er ute i test miljø for SAKU. Pt kun oppdateringer fra KD til APT.
+* Studenter avsluttet med demo Nautobot applikasjon Åpen fredag.
+* EDI konto handover: Gjenstår kun ferdigstillelse dokumentasjon
+* Flow DNS settes opp i prod i privat sky.
+
+Integrasjonstjenesten
+
+* Vi mangler prod miljø for Integrasjonstjenesten. Ting har sklidd hos APT pga Kafka incident.
+* Dialog med APT mhp å gjøre Kafka 24/7.
+* Bistår KD videre på anskaffelse av nytt sakssystem.
+
+Prognose på penger og ressurser
+
+Finansiering: Medlemsavgiften.
+
+* Noe lavere timepådrag pga KD støtte i april.
+
+Oversikt Integrasjon- og støttesystemer (Power BI): https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ad6307c59006ac4e200e?experience=power-bi&bookmarkGuid=Bookmark6966c46e3cd6605ce815

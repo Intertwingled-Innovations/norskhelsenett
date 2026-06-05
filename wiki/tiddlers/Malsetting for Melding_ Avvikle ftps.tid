@@ -1,0 +1,36 @@
+TjenesteID: 40026
+created: 20240416084507109
+modified: 20260409120020347
+revision: 0
+tags: Avvikles Melding Målsetting 2025 2026
+title: Målsetting for Melding: Avvikle ftps
+type: text/vnd.tiddlywiki
+
+Løsningen er proprietær og i sin tid spesifisert av en leverandør (Dips/C).  Dokumentasjon er dårlig og ikke vedlikeholdt. Koden er gammel, og heller ikke vedlikeholdt i vesentlig grad. Ftps framstår som lite strategisk og mer en betydelig risiko for at den kan bli umuligå vedlikeholde.
+
+Det har vært arbeidet med dette siden høsten 2024, men det har vist seg å være en litt treg materie. Det flyter store mengder innrapporteringsdata gjennom tjenestene, og motivasjonen fra FHI/Hdir for å gjøre en innsats for å komme seg bort fra tjenesten er lav.
+
+På generelt grunnlag: Ftps bør erstattes av den nye infrastrukturen som lages i EDI 2.0. Det bør være mulig å sette dette på kartet i løpet av 2025/2026.
+Prioriterte møter:
+
+Status pr. mars 26 er at vi er i dialog med FHI, HSØ og Hdir om mulige overgangsløninger.
+
+Stikkord:
+* DIPS
+* Kreftregisteret
+* Unicare Coperio
+* HelseNord
+* UNN
+* Medilink
+
+Beskrivelse?
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+Ikke 100% klart hvilke leveranser dette resultatet forutsetter / medfører enda.
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>
