@@ -1,0 +1,17 @@
+{
+	"description": "NHN Experiments",
+	"plugins": [
+	],
+	"themes": [
+		"tiddlywiki/vanilla",
+		"tiddlywiki/snowwhite"
+	],
+	"build": {
+		"index": [
+			"--rendertiddler",
+			"$:/core/save/all",
+			"index.html",
+			"text/plain"
+		]
+	}
+}
