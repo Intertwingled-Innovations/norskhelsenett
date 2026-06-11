@@ -1,0 +1,55 @@
+created: 20260610113741649
+modified: 20260611092625132
+tags: 
+title: Investigation
+type: text/vnd.tiddlywiki
+
+
+\define years() 2023 2024 2025 2026 2027
+
+\define months() Januar Februar Mars April Mai Juni Juli August September Oktober November Desember
+
+!! Timeline
+
+<div class="tc-table-of-contents">
+	<ol class="tc-toc toc-selective-expandable">
+		<$list filter=<<years>> variable="year">
+			<li>
+				<$text text=<<year>>/>
+				<ol class="tc-toc toc-selective-expandable">
+					<$list filter=<<months>> variable="month">
+						<$let tiddlers={{{ [tag<year>tag<month>sort[]] }}}>
+							<li>
+								<$qualify name="toc-state" title={{{ [[$:/state/toc-]addsuffix<year>addsuffix[-]addsuffix<month>] }}}>
+									<$button class="tc-btn-invisible">
+										<$action-setfield $tiddler=<<toc-state>> $value={{{ [<toc-state>get[text]match[open]then[close]else[open]] }}}/>
+										<$transclude $tiddler={{{ [<toc-state>get[text]match[open]then[$:/core/images/down-arrow]else[$:/core/images/right-arrow]] }}}/>
+										<$text text=<<month>>/> (<$text text={{{ [(tiddlers)count[]] }}}/>)
+									</$button>
+									<$list filter="[<toc-state>get[text]match[open]]" variable="ignore">
+										<ol class="tc-toc toc-selective-expandable">
+											<$list filter="[tag<year>tag<month>sort[]]" variable="currentTiddler">
+												<$let transclusion={{{ [<currentTiddler>] }}}>
+													<li>
+														<$link to=<<currentTiddler>>><$text text=<<currentTiddler>>/></$link>
+														<$list filter="[all[current]tags[]sort[title]]" template="$:/core/ui/TagTemplate" storyview="pop"/>
+													</li>
+												</$let>
+											</$list>
+										</ol>
+									</$list>
+								</$qualify>
+							</li>
+						</$let>
+					</$list>
+				</ol>
+			</li>
+		</$list>
+	</ol>
+</div>
+
+!! Tags with no corresponding tiddler
+
+<$list filter="[tags[]!is[tiddler]sort[]]">
+<$transclude $variable="tag" tag=<<currentTiddler>> mode="block"/>
+</$list>
