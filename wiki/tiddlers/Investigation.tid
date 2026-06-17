@@ -4,52 +4,153 @@ tags:
 title: Investigation
 type: text/vnd.tiddlywiki
 
-
-\define years() 2023 2024 2025 2026 2027
+\define years() 2023 2024 2025 2026
 
 \define months() Januar Februar Mars April Mai Juni Juli August September Oktober November Desember
 
-!! Timeline
+\widget $expandy.collapsy(name)
+<$qualify name="toc-state" title={{{ [[$:/state/expandy-]addsuffix<name>] }}}>
+	<$button class="tc-btn-invisible">
+		<$action-setfield $tiddler=<<toc-state>> $value={{{ [<toc-state>get[text]match[open]then[close]else[open]] }}}/>
+		<$transclude $tiddler={{{ [<toc-state>get[text]match[open]then[$:/core/images/down-arrow]else[$:/core/images/right-arrow]] }}}/>
+		<$slot $name="button"/>
+	</$button>
+	<$list filter="[<toc-state>get[text]match[open]]" variable="ignore">
+		<$slot $name="body"/>
+	</$list>
+</$qualify>
+\end
 
-<div class="tc-table-of-contents">
-	<ol class="tc-toc toc-selective-expandable">
-		<$list filter=<<years>> variable="year">
-			<li>
-				<$text text=<<year>>/>
-				<ol class="tc-toc toc-selective-expandable">
-					<$list filter=<<months>> variable="month">
-						<$let tiddlers={{{ [tag<year>tag<month>sort[]] }}}>
+<$expandy.collapsy name="timeline">
+	<$fill $name="button">
+		<span style="font-size: 1.2em;"><$text text="Timeline"/></span>
+	</$fill>
+	<$fill $name="body">
+		<div class="tc-table-of-contents">
+			<ol class="tc-toc toc-selective-expandable">
+				<$list filter=<<years>> variable="year">
+					<li>
+						<$text text=<<year>>/>
+						<ol class="tc-toc toc-selective-expandable">
 							<li>
-								<$qualify name="toc-state" title={{{ [[$:/state/toc-]addsuffix<year>addsuffix[-]addsuffix<month>] }}}>
-									<$button class="tc-btn-invisible">
-										<$action-setfield $tiddler=<<toc-state>> $value={{{ [<toc-state>get[text]match[open]then[close]else[open]] }}}/>
-										<$transclude $tiddler={{{ [<toc-state>get[text]match[open]then[$:/core/images/down-arrow]else[$:/core/images/right-arrow]] }}}/>
-										<$text text=<<month>>/> (<$text text={{{ [(tiddlers)count[]] }}}/>)
-									</$button>
-									<$list filter="[<toc-state>get[text]match[open]]" variable="ignore">
-										<ol class="tc-toc toc-selective-expandable">
-											<$list filter="[tag<year>tag<month>sort[]]" variable="currentTiddler">
-												<$let transclusion={{{ [<currentTiddler>] }}}>
+								<$let
+									taggedWithMonth={{{ [all[tiddlers]tag<year>] -[enlist<months>tagging[]] +[unique[]sort[]] }}}
+								>
+									<$expandy.collapsy name={{{ [[monthless-]addsuffix<year>] }}}>
+										<$fill $name="button">
+											<$text text="(monthless)"/> (<$text text={{{ [(taggedWithMonth)count[]] }}}/>)
+										</$fill>
+										<$fill $name="body">
+											<ol>
+												<$list filter="[all[tiddlers]tag<year>] -[enlist<months>tagging[]] +[unique[]sort[]]">
 													<li>
 														<$link to=<<currentTiddler>>><$text text=<<currentTiddler>>/></$link>
-														<$list filter="[all[current]tags[]sort[title]]" template="$:/core/ui/TagTemplate" storyview="pop"/>
 													</li>
-												</$let>
-											</$list>
-										</ol>
-									</$list>
-								</$qualify>
+												</$list>
+											</ol>
+										</$fill>
+									</$expandy.collapsy>
+								</$let>
 							</li>
-						</$let>
+							<$list filter=<<months>> variable="month">
+								<$let tiddlers={{{ [tag<year>tag<month>sort[]] }}}>
+									<li>
+										<$qualify name="toc-state" title={{{ [[$:/state/toc-]addsuffix<year>addsuffix[-]addsuffix<month>] }}}>
+											<$button class="tc-btn-invisible">
+												<$action-setfield $tiddler=<<toc-state>> $value={{{ [<toc-state>get[text]match[open]then[close]else[open]] }}}/>
+												<$transclude $tiddler={{{ [<toc-state>get[text]match[open]then[$:/core/images/down-arrow]else[$:/core/images/right-arrow]] }}}/>
+												<$text text=<<month>>/> (<$text text={{{ [(tiddlers)count[]] }}}/>)
+											</$button>
+											<$list filter="[<toc-state>get[text]match[open]]" variable="ignore">
+												<ol class="tc-toc toc-selective-expandable">
+													<$list filter="[tag<year>tag<month>sort[]]" variable="currentTiddler">
+														<$let transclusion={{{ [<currentTiddler>] }}}>
+															<li>
+																<$link to=<<currentTiddler>>><$text text=<<currentTiddler>>/></$link>
+																<$list filter="[all[current]tags[]sort[title]]" template="$:/core/ui/TagTemplate" storyview="pop"/>
+															</li>
+														</$let>
+													</$list>
+												</ol>
+											</$list>
+										</$qualify>
+									</li>
+								</$let>
+							</$list>
+						</ol>
+					</li>
+				</$list>
+			</ol>
+		</div>
+	</$fill>
+</$expandy.collapsy>
+
+<$expandy.collapsy name="tags-in-reverse-order-of-number-of-tagged-tiddlers">
+	<$fill $name="button">
+		<span style="font-size: 1.2em;"><$text text="Tags in reverse order of number of tagged tiddlers"/></span>
+	</$fill>
+	<$fill $name="body">
+		<ol>
+			<$list filter="[tags[]] :sort:number[<currentTiddler>tagging[]count[]] +[reverse[]]">
+				<li>
+					<$transclude $variable="tag" tag=<<currentTiddler>>/>
+					(<$text text={{{ [<currentTiddler>tagging[]count[]] }}}/>)
+				</li>
+			</$list>
+		</ol>
+	</$fill>
+</$expandy.collapsy>
+
+<$expandy.collapsy name="tags-with-no-corresponding-tiddler">
+	<$fill $name="button">
+		<span style="font-size: 1.2em;"><$text text="Tags with no corresponding tiddler"/></span>
+	</$fill>
+	<$fill $name="body">
+		<ol>
+			<$list filter="[tags[]!is[tiddler]sort[]]">
+				<li>
+					<$transclude $variable="tag" tag=<<currentTiddler>>/>
+				</li>
+			</$list>
+		</ol>
+	</$fill>
+</$expandy.collapsy>
+
+<$expandy.collapsy name="timestamped-tiddlers-that-are-themselves-also-tags">
+	<$fill $name="button">
+		<span style="font-size: 1.2em;"><$text text="Timestamped tiddlers that are themselves also tags"/></span>
+	</$fill>
+	<$fill $name="body">
+		<ol>
+			<$list filter=<<years>> variable="year">
+				<$list filter=<<months>> variable="month">
+					<$list filter="[tag<year>tag<month>unique[]sort[]]">
+						<$list filter="[<currentTiddler>tagging[]count[]!match[0]]" variable="ignore">
+							<li>
+								<$transclude $variable="tag" tag=<<currentTiddler>>/>
+								(<$text text={{{ [<currentTiddler>tagging[]count[]] }}}/>)
+							</li>
+						</$list>
 					</$list>
-				</ol>
-			</li>
-		</$list>
-	</ol>
-</div>
+				</$list>
+			</$list>
+		</ol>
+	</$fill>
+</$expandy.collapsy>
 
-!! Tags with no corresponding tiddler
-
-<$list filter="[tags[]!is[tiddler]sort[]]">
-<$transclude $variable="tag" tag=<<currentTiddler>> mode="block"/>
-</$list>
+<$expandy.collapsy name="tiddlers-with-a-year-tag-but-no-month-tag">
+	<$fill $name="button">
+		<span style="font-size: 1.2em;"><$text text="Tiddlers with a year tag but no month tag"/></span>
+	</$fill>
+	<$fill $name="body">
+		<ol>
+			<$list filter="[enlist<years>]" variable="year">
+				<$list filter="[all[tiddlers]tag<year>] -[enlist<months>tagging[]] +[unique[]sort[]]">
+					<li>
+						<$link to=<<currentTiddler>>><$text text=<<currentTiddler>>/></$link>
+					</li>
+				</$list>
+			</$list>
+		</ol>
+	</$fill>
+</$expandy.collapsy>
