@@ -1,0 +1,34 @@
+title: $:/plugins/forms/styles
+tags: $:/tags/Stylesheet
+code-body: yes
+
+.forms-tree { font-size: 0.95em; line-height: 1.5; width: max-content; min-width: 100%; }
+
+.forms-tree-summary { cursor: pointer; list-style: none; display: flex; align-items: center; }
+.forms-tree-summary::-webkit-details-marker { display: none; }
+
+.forms-tree-toggle {
+	flex: 0 0 auto;
+	display: inline-flex;
+	align-items: center;
+	width: 1em;
+	margin-right: 0.35em;
+}
+.forms-tree-toggle svg { width: 1em; height: 1em; fill: <<colour muted-foreground>>; }
+.forms-tree-summary > a {
+	flex: 0 0 auto;
+	white-space: nowrap;
+}
+.forms-tree-summary .tc-image-down-arrow { display: none; }
+.forms-tree details[open] > .forms-tree-summary .tc-image-down-arrow { display: inline; }
+.forms-tree details[open] > .forms-tree-summary .tc-image-right-arrow { display: none; }
+
+.forms-tree-children {
+	margin-left: 0.5em;
+	padding-left: 0.75em;
+}
+
+.forms-tree-leaf {
+	padding-left: 1.35em;
+	white-space: nowrap;
+}

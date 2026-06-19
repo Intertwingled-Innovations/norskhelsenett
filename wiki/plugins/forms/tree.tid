@@ -1,0 +1,40 @@
+title: $:/plugins/forms/tree
+tags: $:/tags/Global
+
+\whitespace trim
+\procedure forms-tree(roots,children)
+<div class="forms-tree">
+<$list filter=<<roots>> variable="node">
+<$let currentTiddler=<<node>> forms-tree-path={{{ [<node>format:titlelist[]] }}} >
+<$transclude $variable="forms-tree-node" children=<<children>> open="yes"/>
+</$let>
+</$list>
+</div>
+\end
+
+\procedure forms-tree-branch(children)
+<summary class="forms-tree-summary"><span class="forms-tree-toggle"><$transclude $tiddler="$:/core/images/right-arrow" size="1em"/><$transclude $tiddler="$:/core/images/down-arrow" size="1em"/></span><$link to=<<currentTiddler>>/></summary>
+<div class="forms-tree-children">
+<$list filter="[function<children>] -[enlist<forms-tree-path>]" variable="node">
+<$let currentTiddler=<<node>> forms-tree-path={{{ [enlist<forms-tree-path>] [<node>] +[format:titlelist[]join[ ]] }}} >
+<$transclude $variable="forms-tree-node" children=<<children>>/>
+</$let>
+</$list>
+</div>
+\end
+
+\procedure forms-tree-node(children,open)
+<$list filter="[function<children>] -[enlist<forms-tree-path>] +[limit[1]]" variable="_probe" emptyMessage="""<div class="forms-tree-leaf"><$link to=<<currentTiddler>>/></div>""">
+<% if [<open>match[yes]] %>
+<details class="forms-tree-branch" open><$transclude $variable="forms-tree-branch" children=<<children>>/></details>
+<% else %>
+<details class="forms-tree-branch"><$transclude $variable="forms-tree-branch" children=<<children>>/></details>
+<% endif %>
+</$list>
+\end
+
+! forms-tree
+
+Renders a collapsible, cycle-safe tree (native `<details>`/`<summary>`).
+
+`<$transclude $variable="forms-tree" roots="<filter>" children="<fn-name>"/>` — `roots`: filter for the top nodes; `children`: name of a function mapping `currentTiddler` → its child tiddlers. The root is expanded; descendants collapse. Repeated ancestors are pruned, so self-/mutual-tag cycles are safe.

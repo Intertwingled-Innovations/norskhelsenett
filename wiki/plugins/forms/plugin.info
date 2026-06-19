@@ -1,0 +1,9 @@
+{
+	"title": "$:/plugins/forms",
+	"name": "forms",
+	"description": "New fangled forms engine for TiddlyWiki",
+	"author": "Jeremy Ruston",
+	"plugin-type": "plugin",
+	"version": "0.0.1",
+	"list": "readme"
+}

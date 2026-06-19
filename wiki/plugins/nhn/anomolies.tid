@@ -1,0 +1,74 @@
+title: Anomolies
+caption: Anomolies
+
+\whitespace trim
+
+! Datakvalitet: anomalier og verktøy
+
+This tiddler gathers tools to surface data-quality issues in the wiki so they can be reviewed and cleaned up. The governance structure, intentions and deliveries are modelled entirely with tags and fields, so small inconsistencies (casing drift, self-tags, duplicate year-versions) accumulate and quietly break automated views.
+
+Each section below was found while building the navigation tree (Styringsstruktur TOC). Where it can be computed, a live list of the affected tiddlers is shown.
+
+!! 1. Self-tagging cycles
+
+Some tiddlers carry their own title as a tag, and some Målsetting/Resultat pairs tag each other. A naive recursive tree would recurse forever on these — the TOC guards against it by tracking the ancestor path.
+
+''Tiddlers that tag themselves:'' <$count filter="[all[tiddlers]] :filter[<currentTiddler>tags[]match<currentTiddler>]"/>
+
+<div class="nhn-anomaly-list">
+<$list filter="[all[tiddlers]] :filter[<currentTiddler>tags[]match<currentTiddler>] +[sort[title]limit[200]]"><$link/><br></$list>
+</div>
+
+!! 2. Tag casing / spelling drift
+
+The same concept appears under several spellings, so a filter matching one variant silently misses the others.
+
+|!Variant |!Count |
+|`Ekstern Tjeneste` |<$count filter="[tag[Ekstern Tjeneste]]"/> |
+|`Ekstern tjeneste` |<$count filter="[tag[Ekstern tjeneste]]"/> |
+|`Intern tjeneste` |<$count filter="[tag[Intern tjeneste]]"/> |
+|`Intern Tjeneste` |<$count filter="[tag[Intern Tjeneste]]"/> |
+|`Relatert tjeneste` |<$count filter="[tag[Relatert tjeneste]]"/> |
+|`Relatert Tjeneste` |<$count filter="[tag[Relatert Tjeneste]]"/> |
+
+!! 3. Service-type tags on monthly review tiddlers
+
+Monthly business-review tiddlers (titled `NN <service> - hovedtrekk og endringer …`) sometimes carry a service-type tag, so they appear as spurious "service" nodes in the structure.
+
+<div class="nhn-anomaly-list">
+<$list filter="[enlist<nhn-tjeneste-types>] :map:flat[tag<currentTiddler>] +[unique[]regexp[^\d\d ]sort[title]]"><$link/><br></$list>
+</div>
+
+!! 4. `Tiltak` / `Satsning for fart` attached directly to NHN
+
+National-initiative tiddlers are tagged directly on `Norsk Helsenett SF` with the `Tiltak`/`Satsning for fart` service-type tags, which floods the root level. The TOC therefore uses a narrower service set (the three `tjeneste` variants).
+
+''Service-type tiddlers tagged directly on NHN:'' <$count filter="[[Norsk Helsenett SF]tagging[]] :filter[tag[Tiltak]] [[Norsk Helsenett SF]tagging[]] :filter[tag[Satsning for fart]] +[unique[]]"/>
+
+<div class="nhn-anomaly-list">
+<$list filter="[[Norsk Helsenett SF]tagging[]] :filter[tag[Tiltak]] [[Norsk Helsenett SF]tagging[]] :filter[tag[Satsning for fart]] +[unique[]sort[title]]"><$link/><br></$list>
+</div>
+
+!! 5. Objectives / results multi-homed
+
+Results are often tagged both their Målsetting and the service/team, so the same Resultat appears under more than one parent in the tree (duplication). This is structural to the data; not yet auto-listed.
+
+!! 6. Year-versioned duplicate tiddlers
+
+Initiatives exist as `X` and `X 2025` / `X 2026`, which tag each other and look like duplicates in the structure.
+
+!! 7. Inconsistent `Domene` layer
+
+Only some services are tagged a `Domene …`; one domain (`Domene Økosystem`) is also tagged `Divisjon`. The domain layer is not yet shown in the TOC.
+
+''Domains:'' <$list filter="[tag[Domene]sort[title]]"><$link/> </$list>
+
+!! 8. Målsetting also tagged Resultat (kind ambiguity)
+
+Some tiddlers carry both `Målsetting` and `Resultat`, making their kind ambiguous and causing objective-under-objective nesting.
+
+''Tiddlers tagged both Målsetting and Resultat:'' <$count filter="[tag[Målsetting]tag[Resultat]]"/>
+
+<div class="nhn-anomaly-list">
+<$list filter="[tag[Målsetting]tag[Resultat]sort[title]]"><$link/><br></$list>
+</div>

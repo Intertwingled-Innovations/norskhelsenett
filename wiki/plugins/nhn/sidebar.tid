@@ -1,0 +1,16 @@
+title: $:/plugins/nhn/ui/SideBar/Navigasjon
+tags: $:/tags/SideBar
+caption: NHN
+list-before:
+
+\whitespace trim
+
+<table class="nhn-nav-toolbar">
+<tbody>
+<tr>
+<td><$link to="Anomolies">{{$:/core/images/warning}} Anomolies</$link></td>
+</tr>
+</tbody>
+</table>
+
+<$transclude $variable="forms-tree" roots=<<nhn-gov-root-filter>> children="nhn-gov-children"/>

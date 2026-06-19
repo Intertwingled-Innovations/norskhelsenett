@@ -1,0 +1,26 @@
+title: $:/plugins/nhn/governance
+tags: $:/tags/Global
+
+\whitespace trim
+\define nhn-tjeneste-types() [[Ekstern Tjeneste]] [[Ekstern tjeneste]] [[Intern tjeneste]] [[Intern Tjeneste]] [[Relatert tjeneste]] [[Relatert Tjeneste]]
+\define nhn-gov-root-filter() [[Norsk Helsenett SF]]
+\function nhn-is-service() [<currentTiddler>tags[]] :intersection[enlist<nhn-tjeneste-types>] +[limit[1]]
+\function nhn-is-division() [<currentTiddler>tag[Divisjon]!tag[Domene]]
+\function nhn-divisions-of() [tag<currentTiddler>] :filter[function[nhn-is-division]]
+\function nhn-services-of() [tag<currentTiddler>] :filter[function[nhn-is-service]]
+\function nhn-structural-children() [function[nhn-divisions-of]] [function[nhn-services-of]] +[unique[]]
+\function nhn-objective-children() [<currentTiddler>!tag[Målsetting]!tag[Resultat]then<currentTiddler>] :map:flat[tag[Målsetting]tag<currentTiddler>]
+\function nhn-result-children() [<currentTiddler>tag[Målsetting]then<currentTiddler>] :map:flat[tag[Resultat]tag<currentTiddler>]
+\function nhn-gov-children() [function[nhn-structural-children]] [function[nhn-objective-children]] [function[nhn-result-children]] +[!is[blank]!match<currentTiddler>unique[]]
+
+Global functions forNHN governance configuration.
+
+* `nhn-tjeneste-types` — service-type tag set used by the governance tree (the three "tjeneste" variants, incl. casing drift). Distinct from the full Extract-2 service-type set, which also includes `Tiltak`/`Satsning for fart` (NHN-level initiatives).
+* `nhn-gov-root-filter` — root of the Styringsstruktur.
+* `nhn-is-service` / `nhn-is-division` — kind tests used to dispatch children (a division is tagged `Divisjon` but not `Domene`).
+* `nhn-structural-children` — sub-divisions + services tagged the current node (NHN → divisions → services).
+* `nhn-objective-children` — objectives (Målsetting) attached to a structural node; suppressed under OKR nodes so results are not duplicated.
+* `nhn-result-children` — key results (Resultat) attached under their Målsetting only.
+* `nhn-gov-children` — the governance + intentions tree relation, used by the navigation sidebar.
+
+Known v1 simplifications: the partially-applied `Domene` layer is not yet shown; some month-prefixed review tiddlers carry a service-type tag and will appear as extra service nodes (data drift).

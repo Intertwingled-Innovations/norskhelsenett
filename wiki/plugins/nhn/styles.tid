@@ -1,0 +1,12 @@
+title: $:/plugins/nhn/styles
+tags: $:/tags/Stylesheet
+code-body: yes
+
+.nhn-nav-toolbar {
+	width: 100%;
+	margin: 0 0 0.5em 0;
+	border-collapse: collapse;
+	border-bottom: 1px solid <<colour tab-border>>;
+}
+.nhn-nav-toolbar td { padding: 0.25em 0.4em; }
+.nhn-nav-toolbar svg { width: 1em; height: 1em; vertical-align: text-bottom; fill: <<colour muted-foreground>>; }
