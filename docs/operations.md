@@ -67,6 +67,8 @@ Field/tag bindings are NHN config. Per the resolved data facts in CLAUDE.md:
 | **3.8** Access control | server-side, not a plugin concern — see D5 in CLAUDE.md |
 
 ## Build order
+> **Superseded** by the dependency-ordered "Build order & status" in [../CLAUDE.md](../CLAUDE.md), which reflects current progress (§3.1 done; remaining order 3.3 → 3.4 → 3.2 → 3.5 → 3.6 → 3.7 → 3.8). The mechanism-level sequence below is kept for reference.
+
 1. Tag sets + selectors + projections → extracts possible.
 2. `csv` + `download` → both extracts ship.
 3. `group-by` + `tree` → navigation + overviews.

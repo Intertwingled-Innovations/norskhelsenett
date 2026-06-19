@@ -1,0 +1,17 @@
+title: $:/plugins/nhn/services
+tags: $:/tags/Global
+
+\whitespace trim
+\define nhn-owner-field() tjenesteeier
+\function nhn-has-business-unit() [<currentTiddler>tags[]] :filter[tag[Divisjon]!tag[Domene]] +[limit[1]]
+\function nhn-services() [enlist<nhn-tjeneste-types>tagging[]unique[]] :filter[function[nhn-has-business-unit]] +[!regexp[^\d\d ]]
+\function nhn-business-unit() [<currentTiddler>tags[]] :filter[tag[Divisjon]!tag[Domene]] :else[[(Ingen forretningsområde)]]
+\function nhn-owner() [<currentTiddler>get<nhn-owner-field>] :else[[(Ingen tjenesteeier)]]
+\function nhn-bu-sortkey() [<currentTiddler>match[(Ingen forretningsområde)]then[ÿ]else<currentTiddler>]
+\function nhn-owner-sortkey() [<currentTiddler>match[(Ingen tjenesteeier)]then[ÿ]else<currentTiddler>]
+
+Configuration for the "services grouped by business unit and service owner" tree (brief §3.1).
+
+* `nhn-services` — service-entity tiddlers: tagged a service-type tag, excluding the month-prefixed monthly reviews (`^\d\d ` titles).
+* `nhn-business-unit` — the service's division (`Divisjon …`, excluding `Domene …`); falls back to `(Ingen forretningsområde)`.
+* `nhn-owner` — reads the configurable owner field `nhn-owner-field` (default `tjenesteeier`); falls back to `(Ingen tjenesteeier)`. **The Service Owner field does not exist in the snapshot yet** (brief §3.5/3.6 adds it), so all services currently group under the fallback bucket — the structure is ready to populate.

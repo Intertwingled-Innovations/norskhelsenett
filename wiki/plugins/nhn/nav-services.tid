@@ -1,0 +1,9 @@
+title: $:/plugins/nhn/ui/nav/services
+tags: $:/tags/nhn/NavTab
+caption: Tjenester
+
+\whitespace trim
+
+<div class="forms-tree">
+<$transclude $variable="forms-group" set={{{ [function[nhn-services]] +[format:titlelist[]join[ ]] }}} groups="nhn-business-unit nhn-owner" sorts="nhn-bu-sortkey nhn-owner-sortkey"/>
+</div>

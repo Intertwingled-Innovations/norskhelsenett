@@ -77,7 +77,7 @@ Per year, at each governance level:
 
 All of these are **automation/UX layers over the existing tag model** — no schema migration is implied unless you propose one.
 
-1. **§3.1 Simplified navigation** — a right-side menu reflecting: governance structure + intentions; business review by year→month; deliveries summarised by year/month; services grouped by business unit and service owner.
+1. **§3.1 Simplified navigation** — a right-side menu reflecting: governance structure + intentions; business review by year→month; deliveries summarised by year/month; services grouped by business unit and service owner. **✓ Done** — a sub-tabbed *NHN* sidebar tab (Styringsstruktur · Forretningsgjennomgang · Leveranser · Tjenester) built on the `forms-tree` relation tree + `forms-group` group-by engine.
 2. **§3.2 Guided tiddler creation** — let users pick a tiddler *type* and be guided so the result follows the correct structure (correct tags/fields). Optional: same for editing.
 3. **§3.3 Two Excel/URL extracts:**
    - *Extract 1:* tiddlers tagged with any `Styring …` governance tag → columns: tiddler name, ServiceID, URL, Division, Service name, Year, Month, Business change, Governance type. Filterable by year **and** month.
@@ -87,6 +87,20 @@ All of these are **automation/UX layers over the existing tag model** — no sch
 6. **§3.6 ToDo for OKRs** — same idea, per year.
 7. **§3.7 Periodisation & archiving** — periodise by year, archive prior years to reduce clutter.
 8. **§3.8 Access control (optional)** — separate editors from readers; NHN uses Microsoft AD.
+
+## Build order & status (recommended)
+
+§3.1 is **done**. Recommended order for the rest, by dependency and reuse — **not** strict §-number order (this supersedes the build order in [docs/operations.md](docs/operations.md)):
+
+1. **§3.3 Extracts** — realizes the keystone `export = (set, columns)`. Build the **projection catalogue** once (`serviceid`, `division`, `servicename`, `url`, `year`, `month`, `severity`, `governance-type`, `service-type`) + `csv` and `download` (UTF-8 BOM — D4). The two extracts differ only by selector + column list. *First because:* lowest dependency, immediately shippable, and these projections are reused by 3.4/3.5/3.6.
+2. **§3.4 Summaries** — reuse `forms-group` + the projection catalogue; add a `service` group level (delivery/OKR → service via the **service-name tag**) and a `Målsetting` level (`results-of`). The brief's alternative orderings are just a reordered group `path`.
+3. **§3.2 Guided creation** — the form engine (config-driven forms, the tag→kind table, per-kind field/tag templates). *Before the ToDos because:* it is the vehicle for the ToDo "one-click create", for capturing the new **Service Owner** field, and for stamping `period`/`reviewed` (D3) so staleness becomes a field check rather than brittle text diffing.
+4. **§3.5 ToDo — business review** — validators (`has-valid-review`, `missing-reviews`, `is-stale`), per month × service. *Depends on* §3.2 (create + period stamp) **and** the Service Owner field.
+5. **§3.6 ToDo — OKRs** — the same machinery, per year.
+6. **§3.7 Periodisation & archiving** — year-tag grouping + moving prior-year tiddlers out of the active set.
+7. **§3.8 Access control** — server-side (AD / auth proxy); out of plugin scope (D5) — a deployment note, not a plugin task.
+
+**Cross-cutting prerequisite — Service Owner field.** It does not exist in the snapshot yet. §3.4's owner grouping is already built but empty, and §3.5/§3.6 are meaningless without it. Add it as a (configurable) field on service tiddlers, captured via §3.2 — so it lands naturally in step 3. (Tempting to do §3.5/§3.6 next, but they sit *downstream* of §3.2 and the owner field, hence steps 4–5.)
 
 ## The solution: two plugins
 
@@ -102,14 +116,14 @@ Both live as auto-loaded plugin folders under `wiki/plugins/forms/` and `wiki/pl
 ### Architecture — the core principle (non-negotiable)
 
 **Three layers, all via shadow tiddlers:**
-1. `<engine>` ships mechanism + empty/sensible config slots as shadows.
+1. `forms` ships mechanism + empty/sensible config slots as shadows.
 2. `nhn` ships configuration as shadows that populate/override those slots.
 3. The user overrides anything above with ordinary tiddlers.
 
 Because plugin tiddlers are **shadows**, a user tiddler with the same title overrides one, and **deleting that user tiddler reverts to the shadow default**. "Reset to defaults" = "delete the overriding tiddlers." This constrains everything:
 - Config and defaults **must ship as shadow tiddlers**, never as state the plugin mutates in place.
 - The plugin **must not write to its own config/shadow tiddlers at runtime** — user edits create *override* tiddlers; the shadow stays pristine underneath. Mutating a shadow breaks reset-by-deletion.
-- **No NHN/Norwegian string, tag, field name, URL, or month name may appear in `<engine>`.** A hardcoded `Leveranse`, `Styring …`, `mars`, `ServiceID`, or `tiddlywiki.plattform.nhn.no` in the engine is a bug — it belongs in an `nhn` config shadow the engine reads.
+- **No NHN/Norwegian string, tag, field name, URL, or month name may appear in `forms`.** A hardcoded `Leveranse`, `Styring …`, `mars`, `ServiceID`, or `tiddlywiki.plattform.nhn.no` in the engine is a bug — it belongs in an `nhn` config shadow the engine reads.
 - **Config-by-data:** forms, columns, group-by paths, tag sets, kind tables are *data tiddlers*, so `nhn` supplies them and users can override them.
 
 ### The keystone abstraction — build this first
@@ -135,7 +149,7 @@ The full operation catalogue, the requirement→operations mapping, and the buil
 - **Year-only tiddlers** (`Målsetting`) pad to `YYYY-00` (sorts to start of year). Decide whether "unspecified" must ever differ from "January".
 - `date-cmp` = `compare:string` over two datekeys; `prev-month`/`prev-year` feed the staleness validators.
 
-**D2 — Normalised search (fold).** *(Not in the PDF — added later by NHN.)* NHN want typing `o` to match `ø`. The standard "NFD then strip combining marks" trick is **insufficient** and silently half-works on NHN's data: `å` decomposes and folds fine (`måledata`→`maledata`), but `ø` (U+00F8) and `æ` (U+00E6) are **precomposed with no canonical decomposition**, so NFD leaves them unchanged and `o` misses `Støtte og hjelpe leverandører`. Correct fold = **NFD-strip *plus* an explicit replacement map** for the non-decomposing letters (`æ ø å` + uppercase; broaden cautiously). Principles: fold index and query through the **same** function (symmetry); use `æ→a` (1:1) for search, reserve `æ→ae` for slugs; fold case in the same pass; keep the map narrow to avoid collisions. Recommended: a **custom JS filter operator** (`s.normalize('NFD').replace(/\p{Mn}/gu,'')` + the small map). Wikitext-only (`lowercase` + chained `search-replace:g`) works at NHN scale but is slower; escalate to a precomputed `folded` field only if laggy. `fold` lives in `<engine>`; the map additions are `nhn` config.
+**D2 — Normalised search (fold).** *(Not in the PDF — added later by NHN.)* NHN want typing `o` to match `ø`. The standard "NFD then strip combining marks" trick is **insufficient** and silently half-works on NHN's data: `å` decomposes and folds fine (`måledata`→`maledata`), but `ø` (U+00F8) and `æ` (U+00E6) are **precomposed with no canonical decomposition**, so NFD leaves them unchanged and `o` misses `Støtte og hjelpe leverandører`. Correct fold = **NFD-strip *plus* an explicit replacement map** for the non-decomposing letters (`æ ø å` + uppercase; broaden cautiously). Principles: fold index and query through the **same** function (symmetry); use `æ→a` (1:1) for search, reserve `æ→ae` for slugs; fold case in the same pass; keep the map narrow to avoid collisions. Recommended: a **custom JS filter operator** (`s.normalize('NFD').replace(/\p{Mn}/gu,'')` + the small map). Wikitext-only (`lowercase` + chained `search-replace:g`) works at NHN scale but is slower; escalate to a precomputed `folded` field only if laggy. `fold` lives in `forms`; the map additions are `nhn` config.
 
 **D3 — Validation / "not a stale copy".** §3.5/3.6 need: exists, **not the template**, **not just last period's copy**. Free-text diffing is brittle. **Prefer** stamping a `period` field (e.g. `2026-03`) and/or a `reviewed` flag during guided creation → "valid for this period" becomes a field check and `is-stale` collapses to nothing. Make this the default; offer content-comparison only as a soft warning.
 
