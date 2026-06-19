@@ -1,0 +1,7 @@
+title: $:/plugins/nhn/ui/nav/governance
+tags: $:/tags/nhn/NavTab
+caption: Styringsstruktur
+
+\whitespace trim
+
+<$transclude $variable="forms-tree" roots=<<nhn-gov-root-filter>> children="nhn-gov-children"/>

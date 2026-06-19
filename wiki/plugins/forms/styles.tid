@@ -15,7 +15,8 @@ code-body: yes
 	margin-right: 0.35em;
 }
 .forms-tree-toggle svg { width: 1em; height: 1em; fill: <<colour muted-foreground>>; }
-.forms-tree-summary > a {
+.forms-tree-summary > a,
+.forms-tree-summary > .forms-group-label {
 	flex: 0 0 auto;
 	white-space: nowrap;
 }
@@ -26,6 +27,13 @@ code-body: yes
 .forms-tree-children {
 	margin-left: 0.5em;
 	padding-left: 0.75em;
+}
+
+.forms-tree-count {
+	flex: 0 0 auto;
+	margin-left: 0.4em;
+	color: <<colour muted-foreground>>;
+	font-size: 0.85em;
 }
 
 .forms-tree-leaf {

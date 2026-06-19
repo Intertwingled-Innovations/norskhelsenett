@@ -1,0 +1,4 @@
+title: $:/plugins/nhn/month-names
+type: application/json
+
+{"januar":"Januar","februar":"Februar","mars":"Mars","april":"April","mai":"Mai","juni":"Juni","juli":"Juli","august":"August","september":"September","oktober":"Oktober","november":"November","desember":"Desember"}

@@ -13,4 +13,4 @@ list-before:
 </tbody>
 </table>
 
-<$transclude $variable="forms-tree" roots=<<nhn-gov-root-filter>> children="nhn-gov-children"/>
+<<tabs tabsList:"[all[shadows+tiddlers]tag[$:/tags/nhn/NavTab]]" default:"$:/plugins/nhn/ui/nav/governance" state:"$:/state/nhn/nav-tab">>

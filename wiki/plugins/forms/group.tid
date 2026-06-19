@@ -1,0 +1,30 @@
+title: $:/plugins/forms/group
+tags: $:/tags/Global
+
+\whitespace trim
+\procedure forms-group(set,groups,sorts)
+<% if [enlist<groups>] %>
+<$let head={{{ [enlist<groups>first[]] }}} grest={{{ [enlist<groups>rest[]format:titlelist[]join[ ]] }}} hsort={{{ [enlist<sorts>first[]] }}} srest={{{ [enlist<sorts>rest[]format:titlelist[]join[ ]] }}}>
+<$list filter="[enlist<set>] :map:flat[function<head>] +[unique[]] :sort[function<hsort>]" variable="gval">
+<$let subset={{{ [enlist<set>] :filter[function<head>match<gval>] +[format:titlelist[]join[ ]] }}}>
+<details class="forms-tree-branch">
+<summary class="forms-tree-summary"><<forms-toggle>><span class="forms-group-label"><$text text=<<gval>>/></span><span class="forms-tree-count">(<$text text={{{ [enlist<subset>count[]] }}}/>)</span></summary>
+<div class="forms-tree-children">
+<$transclude $variable="forms-group" set=<<subset>> groups=<<grest>> sorts=<<srest>>/>
+</div>
+</details>
+</$let>
+</$list>
+</$let>
+<% else %>
+<$list filter="[enlist<set>sort[title]]" variable="node">
+<div class="forms-tree-leaf"><$link to=<<node>>/></div>
+</$list>
+<% endif %>
+\end
+
+! forms-group
+
+Renders a collapsible group-by tree (native `<details>`/`<summary>`).
+
+`<$transclude $variable="forms-group" set="<title-list>" groups="<fn> <fn> …" sorts="<fn> <fn> …"/>` — `set`: a title-list of the leaf tiddlers; `groups`: ordered group-projection function names (each `currentTiddler` → group value); `sorts`: parallel sort-key function names (each group value → sort key; blank = natural). Reordering `groups` is the only difference between grouping variants.

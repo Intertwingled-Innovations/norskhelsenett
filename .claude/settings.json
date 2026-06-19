@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -)",
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('NHN_TiddlyWiki.json'\\)\\); print\\('\\\\n'.join\\(t['title']+'  ::color='+t.get\\('color',''\\) for t in d if 'color' in t\\)\\)\")",
+      "Bash(tiddlywiki --version)",
+      "Bash(python3 -c \"import json,sys; print\\(json.load\\(sys.stdin\\).get\\('version'\\)\\)\")",
+      "Bash(rm -rf /tmp/nhn-render)",
+      "Bash(mkdir -p /tmp/nhn-render)",
+      "Bash(tiddlywiki wiki *)",
+      "Bash(echo \"=== EXIT: $? ===\")",
+      "Read(//tmp/nhn-render/**)",
+      "Bash(echo \"=== exit $? ; output size: ===\")",
+      "Bash(awk '/forms-tree.*before/{f=1} f&&/color:/{print; f=0}' /tmp/nhn-render/page.css)",
+      "Bash(awk '/forms-tree.*children/{f=1} f&&/border-left:/{print; f=0}' /tmp/nhn-render/page.css)",
+      "Bash(awk '/\\\\.tc-sidebar-scrollable \\\\{/,/\\\\}/' themes/tiddlywiki/vanilla/base.tid)",
+      "Bash(awk '/\\\\.tc-sidebar-lists \\\\{/,/\\\\}/' themes/tiddlywiki/vanilla/base.tid)",
+      "Bash(sed -n '457,463p' themes/tiddlywiki/vanilla/base.tid)"
+    ],
+    "additionalDirectories": [
+      "/private/tmp/nhn-render"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+title: $:/plugins/nhn/review
+tags: $:/tags/Global
+
+\whitespace trim
+\define nhn-governance-tags() [[Styring Ekstern tjeneste]] [[Styring Intern tjeneste]] [[Styring Tiltak]] [[Styring Relatert tjeneste]] [[Styring Satsning for fart]]
+\define nhn-month-keys() [[januar]] [[februar]] [[mars]] [[april]] [[mai]] [[juni]] [[juli]] [[august]] [[september]] [[oktober]] [[november]] [[desember]]
+\function nhn-has-month() [<currentTiddler>tags[]lowercase[]] :intersection[enlist<nhn-month-keys>] +[limit[1]]
+\function nhn-reviews() [enlist<nhn-governance-tags>tagging[]unique[]] :filter[function[nhn-has-month]]
+\function nhn-year() [<currentTiddler>tags[]regexp[^\d{4}$]]
+\function nhn-month() [<currentTiddler>tags[]lowercase[]] :intersection[enlist<nhn-month-keys>] :map[[$:/plugins/nhn/month-names]getindex<currentTiddler>]
+\function nhn-year-sortkey() [[9999]subtract<currentTiddler>]
+\function nhn-month-ord() [<currentTiddler>lowercase[]] :map[[$:/plugins/nhn/months]getindex<currentTiddler>]
+
+Configuration for the business-review (Forretningsgjennomgang) group-by tree.
+
+* `nhn-governance-tags` — the five `Styring …` governance tags (also the Extract-1 selector).
+* `nhn-reviews` — monthly business-review tiddlers: tagged a governance tag and carrying a month tag.
+* `nhn-year` / `nhn-month` — group projections (month normalised to canonical casing, merging `mars`/`Mars`).
+* `nhn-year-sortkey` (newest first) / `nhn-month-ord` (chronological) — sort keys for the group levels.

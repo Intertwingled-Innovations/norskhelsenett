@@ -36,7 +36,7 @@ The same concept appears under several spellings, so a filter matching one varia
 Monthly business-review tiddlers (titled `NN <service> - hovedtrekk og endringer …`) sometimes carry a service-type tag, so they appear as spurious "service" nodes in the structure.
 
 <div class="nhn-anomaly-list">
-<$list filter="[enlist<nhn-tjeneste-types>] :map:flat[tag<currentTiddler>] +[unique[]regexp[^\d\d ]sort[title]]"><$link/><br></$list>
+<$list filter="[enlist<nhn-tjeneste-types>tagging[]unique[]] +[regexp[^\d\d ]sort[title]]"><$link/><br></$list>
 </div>
 
 !! 4. `Tiltak` / `Satsning for fart` attached directly to NHN

@@ -2,6 +2,10 @@ title: $:/plugins/forms/tree
 tags: $:/tags/Global
 
 \whitespace trim
+\procedure forms-toggle()
+<span class="forms-tree-toggle"><$transclude $tiddler="$:/core/images/right-arrow" size="1em"/><$transclude $tiddler="$:/core/images/down-arrow" size="1em"/></span>
+\end
+
 \procedure forms-tree(roots,children)
 <div class="forms-tree">
 <$list filter=<<roots>> variable="node">
@@ -13,7 +17,7 @@ tags: $:/tags/Global
 \end
 
 \procedure forms-tree-branch(children)
-<summary class="forms-tree-summary"><span class="forms-tree-toggle"><$transclude $tiddler="$:/core/images/right-arrow" size="1em"/><$transclude $tiddler="$:/core/images/down-arrow" size="1em"/></span><$link to=<<currentTiddler>>/></summary>
+<summary class="forms-tree-summary"><<forms-toggle>><$link to=<<currentTiddler>>/><span class="forms-tree-count">(<$text text={{{ [function<children>] -[enlist<forms-tree-path>] +[count[]] }}}/>)</span></summary>
 <div class="forms-tree-children">
 <$list filter="[function<children>] -[enlist<forms-tree-path>]" variable="node">
 <$let currentTiddler=<<node>> forms-tree-path={{{ [enlist<forms-tree-path>] [<node>] +[format:titlelist[]join[ ]] }}} >
