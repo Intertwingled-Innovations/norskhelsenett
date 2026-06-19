@@ -1,2 +1,2 @@
 title: $:/tags/nhn/NavTab
-list: [[$:/plugins/nhn/ui/nav/governance]] [[$:/plugins/nhn/ui/nav/review]]
+list: [[$:/plugins/nhn/ui/nav/governance]] [[$:/plugins/nhn/ui/nav/review]] [[$:/plugins/nhn/ui/nav/deliveries]]

@@ -1,0 +1,9 @@
+title: $:/plugins/nhn/ui/nav/deliveries
+tags: $:/tags/nhn/NavTab
+caption: Leveranser
+
+\whitespace trim
+
+<div class="forms-tree">
+<$transclude $variable="forms-group" set={{{ [function[nhn-deliveries]] +[format:titlelist[]join[ ]] }}} groups="nhn-year nhn-month" sorts="nhn-year-sortkey nhn-month-ord"/>
+</div>

@@ -1,0 +1,11 @@
+title: $:/plugins/nhn/deliveries
+tags: $:/tags/Global
+
+\whitespace trim
+\function nhn-deliveries() [[Leveranse]tagging[]]
+
+Configuration for the deliveries (Leveranser) group-by tree.
+
+* `nhn-deliveries` — all tiddlers tagged `Leveranse`.
+
+Grouped by `nhn-year` → `nhn-month` (shared with the business-review tree); deliveries lacking a year or month tag fall into the `(Uten år)` / `(Uten måned)` buckets, sorted last.

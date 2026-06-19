@@ -6,10 +6,10 @@ tags: $:/tags/Global
 \define nhn-month-keys() [[januar]] [[februar]] [[mars]] [[april]] [[mai]] [[juni]] [[juli]] [[august]] [[september]] [[oktober]] [[november]] [[desember]]
 \function nhn-has-month() [<currentTiddler>tags[]lowercase[]] :intersection[enlist<nhn-month-keys>] +[limit[1]]
 \function nhn-reviews() [enlist<nhn-governance-tags>tagging[]unique[]] :filter[function[nhn-has-month]]
-\function nhn-year() [<currentTiddler>tags[]regexp[^\d{4}$]]
-\function nhn-month() [<currentTiddler>tags[]lowercase[]] :intersection[enlist<nhn-month-keys>] :map[[$:/plugins/nhn/month-names]getindex<currentTiddler>]
+\function nhn-year() [<currentTiddler>tags[]regexp[^\d{4}$]] :else[[(Uten år)]]
+\function nhn-month() [<currentTiddler>tags[]lowercase[]] :intersection[enlist<nhn-month-keys>] :map[[$:/plugins/nhn/month-names]getindex<currentTiddler>] :else[[(Uten måned)]]
 \function nhn-year-sortkey() [[9999]subtract<currentTiddler>]
-\function nhn-month-ord() [<currentTiddler>lowercase[]] :map[[$:/plugins/nhn/months]getindex<currentTiddler>]
+\function nhn-month-ord() [<currentTiddler>lowercase[]] :map[[$:/plugins/nhn/months]getindex<currentTiddler>] +[!is[blank]else[99]]
 
 Configuration for the business-review (Forretningsgjennomgang) group-by tree.
 
