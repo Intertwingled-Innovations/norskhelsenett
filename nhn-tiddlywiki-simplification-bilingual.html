@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simplification of TiddlyWiki for Divisjon Helsepersonell — bilingual</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --forest:#0B3D2E;
+    --green:#117A57;
+    --green-bright:#18A47C;
+    --mint:#8FE0BC;
+    --mint-2:#BDEBD3;
+    --mint-pale:#E3F5EC;
+    --paper:#FBFDFC;
+    --ink:#14241D;
+    --muted:#4E6B5F;
+    --line:#D6E8DF;
+    --line-soft:#E7F2EC;
+    --tag-bg:#EAF4EE;
+    --salmon:#F7D9C6;
+    --yellow:#FBEFA8;
+    --cyan:#BFEDE6;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Hanken Grotesk',system-ui,sans-serif;
+    font-size:17px;
+    line-height:1.62;
+    -webkit-font-smoothing:antialiased;
+  }
+  ::selection{background:var(--mint);color:var(--forest);}
+
+  /* ---------- wordmark ---------- */
+  .wordmark{display:inline-flex;align-items:center;gap:.55rem;font-weight:700;letter-spacing:-.01em;}
+  .wordmark svg{display:block;}
+  .wordmark .nm{font-size:1.15rem;color:var(--forest);}
+
+  /* ---------- hero ---------- */
+  .hero{
+    position:relative;
+    background:var(--forest);
+    color:#EAF7F0;
+    overflow:hidden;
+    padding:clamp(2rem,5vw,4rem) clamp(1.25rem,5vw,4rem) clamp(2.5rem,5vw,4.5rem);
+  }
+  .hero .wordmark .nm{color:#fff;}
+  .hero-grid{
+    position:absolute;inset:0;
+    opacity:.5;pointer-events:none;
+  }
+  .hero-inner{position:relative;max-width:1180px;margin:0 auto;}
+  .hero-top{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;margin-bottom:clamp(2rem,7vw,5rem);}
+  .hero-date{font-family:'JetBrains Mono',monospace;font-size:.8rem;color:var(--mint);letter-spacing:.04em;}
+  .hero h1{
+    font-size:clamp(2.1rem,6vw,4.1rem);
+    line-height:1.04;
+    font-weight:800;
+    letter-spacing:-.025em;
+    margin:0;
+    max-width:18ch;
+  }
+  .hero h1 .gl{
+    display:block;
+    font-size:clamp(1.05rem,2.4vw,1.5rem);
+    font-weight:500;
+    color:var(--mint);
+    letter-spacing:-.01em;
+    margin-top:.7rem;
+  }
+  .hero-sub{margin-top:1.4rem;max-width:60ch;color:#BFE6D3;font-size:1.02rem;}
+
+  /* ---------- layout ---------- */
+  .shell{max-width:1180px;margin:0 auto;padding:0 clamp(1.25rem,5vw,4rem);}
+  .columns{display:grid;grid-template-columns:1fr;gap:0;}
+  @media(min-width:1000px){
+    .columns{grid-template-columns:236px 1fr;gap:clamp(2rem,4vw,4.5rem);align-items:start;}
+  }
+
+  /* ---------- toc ---------- */
+  nav.toc{
+    border:1px solid var(--line);
+    border-radius:16px;
+    background:#fff;
+    padding:1.25rem 1.25rem 1.4rem;
+    margin:2rem 0;
+  }
+  @media(min-width:1000px){
+    nav.toc{position:sticky;top:1.5rem;margin:2.5rem 0;}
+  }
+  nav.toc .eyebrow{font-family:'JetBrains Mono',monospace;font-size:.68rem;text-transform:uppercase;letter-spacing:.14em;color:var(--green);margin-bottom:.85rem;}
+  nav.toc ol{list-style:none;margin:0;padding:0;counter-reset:sec;}
+  nav.toc > ol > li{counter-increment:sec;margin:.15rem 0;}
+  nav.toc a{
+    display:block;text-decoration:none;color:var(--ink);
+    font-size:.92rem;padding:.28rem 0;border-radius:6px;
+    transition:color .15s;
+  }
+  nav.toc > ol > li > a::before{content:counter(sec) ".  ";font-family:'JetBrains Mono',monospace;color:var(--green);font-size:.82rem;}
+  nav.toc a:hover{color:var(--green);}
+  nav.toc ol ol{margin:.1rem 0 .5rem .2rem;padding-left:.85rem;border-left:2px solid var(--line-soft);counter-reset:sub;}
+  nav.toc ol ol li{counter-increment:sub;}
+  nav.toc ol ol a{font-size:.84rem;color:var(--muted);padding:.18rem 0;}
+  nav.toc ol ol a::before{content:counter(sec) "." counter(sub) "  ";font-family:'JetBrains Mono',monospace;font-size:.74rem;color:var(--green-bright);}
+
+  /* ---------- content ---------- */
+  main{padding:1rem 0 4rem;min-width:0;}
+  section{scroll-margin-top:1.5rem;padding:2.2rem 0;border-top:1px solid var(--line-soft);}
+  section:first-of-type{border-top:none;}
+  .sec-num{font-family:'JetBrains Mono',monospace;font-size:.78rem;color:var(--green);letter-spacing:.08em;display:block;margin-bottom:.35rem;}
+  h2{font-size:clamp(1.5rem,3.4vw,2.1rem);line-height:1.12;letter-spacing:-.02em;font-weight:800;color:var(--forest);margin:0 0 1rem;}
+  h2 .gl{display:block;font-size:.62em;font-weight:500;color:var(--muted);letter-spacing:-.01em;margin-top:.25rem;}
+  h3{font-size:1.18rem;font-weight:700;color:var(--forest);margin:2rem 0 .6rem;letter-spacing:-.01em;}
+  h3 .num{font-family:'JetBrains Mono',monospace;color:var(--green);font-weight:500;font-size:.85rem;margin-right:.5rem;}
+  h3 .gl{font-weight:500;color:var(--muted);font-size:.85rem;}
+  p{margin:.75rem 0;}
+  ul.body{margin:.6rem 0;padding-left:0;list-style:none;}
+  ul.body li{position:relative;padding-left:1.4rem;margin:.4rem 0;}
+  ul.body li::before{content:"";position:absolute;left:.15rem;top:.72em;width:7px;height:7px;border-radius:2px;background:var(--green-bright);}
+  .opt{font-family:'JetBrains Mono',monospace;font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#fff;background:var(--green);padding:.12rem .5rem;border-radius:5px;vertical-align:middle;}
+
+  /* ---------- translation pattern ---------- */
+  .no{font-weight:600;color:var(--ink);}
+  .gl{color:var(--muted);font-weight:500;}
+  p .gl, li .gl{font-size:.95em;}
+  code.tag{
+    font-family:'JetBrains Mono',monospace;
+    font-size:.82em;
+    background:var(--tag-bg);
+    color:var(--forest);
+    border:1px solid var(--line);
+    padding:.06rem .4rem;
+    border-radius:6px;
+    white-space:nowrap;
+  }
+  .taggloss{color:var(--muted);font-weight:500;font-size:.95em;}
+
+  /* note / callout */
+  .note{
+    background:var(--mint-pale);
+    border:1px solid var(--line);
+    border-left:4px solid var(--green-bright);
+    border-radius:12px;
+    padding:1rem 1.2rem;
+    margin:1.4rem 0;
+    font-size:.96rem;
+  }
+
+  /* ---------- diagram ---------- */
+  figure{margin:1.8rem 0;}
+  .diagram-wrap{
+    background:#fff;border:1px solid var(--line);border-radius:16px;
+    padding:1rem;overflow-x:auto;
+  }
+  .diagram-wrap svg{display:block;min-width:640px;width:100%;height:auto;}
+  figcaption{font-size:.85rem;color:var(--muted);margin-top:.7rem;text-align:center;}
+
+  /* ---------- tables ---------- */
+  .extract-label{
+    display:inline-block;font-family:'JetBrains Mono',monospace;font-size:.72rem;
+    letter-spacing:.08em;text-transform:uppercase;color:var(--green);
+    border:1px solid var(--line);border-radius:6px;padding:.18rem .55rem;margin:.4rem 0;
+  }
+  .field-list{margin:.6rem 0;}
+  .table-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:14px;margin:1rem 0;}
+  table.data{border-collapse:collapse;width:100%;min-width:720px;font-size:.86rem;}
+  table.data caption{caption-side:top;text-align:left;font-weight:600;color:var(--green);padding:.7rem 1rem .2rem;font-size:.8rem;letter-spacing:.04em;text-transform:uppercase;}
+  table.data th,table.data td{padding:.6rem .8rem;text-align:left;vertical-align:top;border-bottom:1px solid var(--line-soft);}
+  table.data thead th{background:var(--forest);color:#EAF7F0;font-weight:600;font-size:.78rem;letter-spacing:.01em;border-bottom:none;}
+  table.data thead th .gl{color:var(--mint);font-weight:400;font-size:.92em;}
+  table.data tbody tr:nth-child(even){background:var(--mint-pale);}
+  table.data .url{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--green);word-break:break-all;}
+  table.data td .gl{display:block;font-size:.9em;margin-top:.1rem;}
+
+  /* ---------- glossary ---------- */
+  .glossary section{border:none;padding:0;}
+  table.gloss{border-collapse:collapse;width:100%;}
+  table.gloss th,table.gloss td{text-align:left;vertical-align:top;padding:.7rem .9rem;border-bottom:1px solid var(--line-soft);}
+  table.gloss thead th{background:var(--mint-pale);color:var(--forest);font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;border-bottom:1px solid var(--line);}
+  table.gloss td.term{font-weight:700;color:var(--forest);white-space:nowrap;}
+  table.gloss td.tr{color:var(--green);font-weight:600;white-space:nowrap;}
+  table.gloss td.desc{color:var(--ink);font-size:.92rem;}
+  @media(max-width:680px){
+    table.gloss td.term,table.gloss td.tr{white-space:normal;}
+  }
+  .gloss-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:14px;}
+
+  footer{border-top:1px solid var(--line);padding:2rem 0 3rem;color:var(--muted);font-size:.85rem;}
+  footer .wordmark .nm{color:var(--forest);}
+
+  @media (prefers-reduced-motion: no-preference){
+    .hero h1,.hero-sub{animation:rise .7s ease both;}
+    .hero-sub{animation-delay:.1s;}
+  }
+  @keyframes rise{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:none;}}
+  a:focus-visible,nav.toc a:focus-visible{outline:2px solid var(--green-bright);outline-offset:2px;border-radius:4px;}
+</style>
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <svg class="hero-grid" viewBox="0 0 1180 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g>
+      <rect x="40"  y="20"  width="150" height="46" rx="23" fill="#3FA77E"/>
+      <rect x="205" y="20"  width="46"  height="46" rx="23" fill="#0E6B4C"/>
+      <rect x="266" y="20"  width="210" height="46" rx="23" fill="#9BE3C0"/>
+      <rect x="640" y="20"  width="46"  height="46" rx="23" fill="#1E8E68"/>
+      <rect x="700" y="20"  width="120" height="46" rx="23" fill="#74D5A9"/>
+      <rect x="40"  y="80"  width="46"  height="106" rx="23" fill="#2FA070"/>
+      <rect x="100" y="80"  width="46"  height="106" rx="23" fill="#0B5C40"/>
+      <rect x="160" y="80"  width="316" height="46" rx="23" fill="#5DC796"/>
+      <rect x="490" y="80"  width="46"  height="46" rx="23" fill="#0E6B4C"/>
+      <rect x="160" y="140" width="150" height="46" rx="23" fill="#9BE3C0"/>
+      <rect x="325" y="140" width="151" height="46" rx="23" fill="#2FA070"/>
+      <rect x="700" y="80"  width="120" height="106" rx="23" fill="#3FA77E"/>
+      <rect x="40"  y="200" width="120" height="46" rx="23" fill="#74D5A9"/>
+      <rect x="175" y="200" width="100" height="46" rx="23" fill="#0B5C40"/>
+      <rect x="290" y="200" width="186" height="46" rx="23" fill="#9BE3C0"/>
+      <rect x="640" y="200" width="180" height="46" rx="23" fill="#063A29"/>
+    </g>
+  </svg>
+  <div class="hero-inner">
+    <div class="hero-top">
+      <span class="wordmark" aria-label="Norsk helsenett">
+        <svg width="34" height="22" viewBox="0 0 34 22" fill="none" aria-hidden="true">
+          <path d="M2 16C5 6 8 6 11 11C14 16 17 16 20 6" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/>
+          <path d="M13 16C16 6 19 6 22 11C25 16 28 16 31 6" stroke="#5DC796" stroke-width="3.4" stroke-linecap="round"/>
+        </svg>
+        <span class="nm">Norsk helsenett</span>
+      </span>
+      <span class="hero-date">30. APRIL 2026</span>
+    </div>
+    <h1>Simplification of TiddlyWiki for use in Divisjon Helsepersonell
+      <span class="gl">[Healthcare Professionals Division]</span>
+    </h1>
+    <p class="hero-sub">A bilingual reading edition. Every Norwegian term is kept in place, with the English translation in brackets. A full glossary sits at the end.</p>
+  </div>
+</header>
+
+<div class="shell">
+<div class="columns">
+
+  <!-- ============ TOC ============ -->
+  <nav class="toc" aria-label="Contents">
+    <div class="eyebrow">Contents</div>
+    <ol>
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#structure">Structure</a></li>
+      <li><a href="#simplification">Simplification and automation</a>
+        <ol>
+          <li><a href="#nav">Simplified navigation</a></li>
+          <li><a href="#create">Simplified creation of “correct” tiddlies</a></li>
+          <li><a href="#export">Export from governance &amp; business review</a></li>
+          <li><a href="#summary">Summarising deliveries</a></li>
+          <li><a href="#todo-review">ToDo-list for business review</a></li>
+          <li><a href="#todo-okr">ToDo-list for OKRs</a></li>
+          <li><a href="#archive">Periodisation and archiving</a></li>
+          <li><a href="#access">Access control</a></li>
+        </ol>
+      </li>
+      <li><a href="#glossary">Glossary — Norsk → English</a></li>
+    </ol>
+  </nav>
+
+  <!-- ============ MAIN ============ -->
+  <main>
+
+    <!-- 1 -->
+    <section id="intro">
+      <span class="sec-num">SECTION 01</span>
+      <h2>Introduction</h2>
+      <p>Business Unit <span class="no">Helsepersonell</span> <span class="gl">[health personnel / healthcare professionals]</span> — referred to as <span class="no">Helsepersonell</span> — is a part of <span class="no">Norsk Helsenett SF</span> <span class="gl">[Norwegian Health Network, a state enterprise — “SF” = statsforetak]</span>, which delivers the national infrastructure for sharing of data and handling of workflow in the Norwegian healthcare sector.</p>
+      <p><span class="no">Helsepersonell</span> uses TiddlyWiki for some key management areas:</p>
+      <ul class="body">
+        <li>Monthly business review of the different services that <span class="no">Helsepersonell</span> provides.</li>
+        <li>Definition and tracking of OKRs for each service and the business unit.</li>
+        <li>Automation of reporting to the CEO and his team.</li>
+      </ul>
+      <p><span class="no">Helsepersonell</span> is currently using a vanilla installation of TiddlyWiki, but the quality of the input indicates that the way responsible individuals interact with TiddlyWiki needs to be simplified.</p>
+    </section>
+
+    <!-- 2 -->
+    <section id="structure">
+      <span class="sec-num">SECTION 02</span>
+      <h2>Structure</h2>
+      <p>The diagram below shows the structure that <span class="no">Helsepersonell</span> maintains in TiddlyWiki.</p>
+
+      <figure>
+        <div class="diagram-wrap">
+          <svg viewBox="0 0 900 600" role="img" aria-label="Governance structure, intention (OKR) structure and value-delivered structure">
+            <defs>
+              <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+                <path d="M0 0 L9 4.5 L0 9 z" fill="#5c6b63"/>
+              </marker>
+            </defs>
+
+            <!-- swimlane: Styringsstruktur -->
+            <rect x="30" y="70" width="330" height="500" rx="26" fill="#F7D9C6"/>
+            <text x="55" y="108" font-family="Hanken Grotesk,sans-serif" font-size="18" font-weight="800" fill="#9A4A2A">Styringsstruktur</text>
+            <text x="55" y="128" font-family="Hanken Grotesk,sans-serif" font-size="13" font-weight="500" fill="#B26A4C">[Governance structure]</text>
+
+            <!-- swimlane: Intensjon -->
+            <rect x="500" y="70" width="372" height="300" rx="26" fill="#FBEFA8"/>
+            <text x="855" y="104" text-anchor="end" font-family="Hanken Grotesk,sans-serif" font-size="18" font-weight="800" fill="#8A7A12">Intensjon</text>
+            <text x="855" y="124" text-anchor="end" font-family="Hanken Grotesk,sans-serif" font-size="13" font-weight="500" fill="#9C8C2E">[Intention]</text>
+
+            <!-- swimlane: Verdi levert -->
+            <rect x="500" y="400" width="372" height="170" rx="26" fill="#BFEDE6"/>
+            <text x="855" y="556" text-anchor="end" font-family="Hanken Grotesk,sans-serif" font-size="18" font-weight="800" fill="#1F7E73">Verdi levert</text>
+            <text x="855" y="436" text-anchor="end" font-family="Hanken Grotesk,sans-serif" font-size="13" font-weight="500" fill="#2C9387">[Value delivered]</text>
+
+            <!-- governance boxes -->
+            <!-- NHN -->
+            <rect x="90" y="150" width="200" height="70" rx="10" fill="#C9CDCB" stroke="#7C817F" stroke-width="1.5"/>
+            <text x="190" y="180" text-anchor="middle" font-family="Hanken Grotesk,sans-serif" font-size="17" font-weight="700" fill="#1c241f">NHN</text>
+            <text x="190" y="200" text-anchor="middle" font-family="Hanken Grotesk,sans-serif" font-size="11" fill="#4a514d">Norsk Helsenett SF</text>
+
+            <!-- Forretningsområde -->
+            <rect x="90" y="290" width="200" height="70" rx="10" fill="#C9CDCB" stroke="#7C817F" stroke-width="1.5"/>
+            <text x="190" y="320" text-anchor="middle" font-family="Hanken Grotesk,sans-serif" font-size="15" font-weight="700" fill="#1c241f">Forretningsområde</text>
+            <text x="190" y="340" text-anchor="middle" font-family="Hanken Grotesk,sans-serif" font-size="11" fill="#4a514d">[Business unit]</text>
+
+            <!-- Tjeneste -->
+            <rect x="90" y="430" width="200" height="70" rx="10" fill="#C9CDCB" stroke="#7C817F" stroke-width="1.5"/>
+            <text x="190" y="460" text-anchor="middle" font-family="Hanken Grotesk,sans-serif" font-size="16" font-weight="700" fill="#1c241f">Tjeneste</text>
+            <text x="190" y="480" text-anchor="middle" font-family="Hanken Grotesk,sans-serif" font-size="11" fill="#4a514d">[Service]</text>
+
+            <!-- vertical 1:M arrows (child -> parent) -->
+            <line x1="190" y1="430" x2="190" y2="362" stroke="#5c6b63" stroke-width="1.6" marker-end="url(#arrow)"/>
+            <text x="200" y="400" font-family="JetBrains Mono,monospace" font-size="11" fill="#5c6b63">1:M</text>
+            <line x1="190" y1="290" x2="190" y2="222" stroke="#5c6b63" stroke-width="1.6" marker-end="url(#arrow)"/>
+            <text x="200" y="260" font-family="JetBrains Mono,monospace" font-size="11" fill="#5c6b63">1:M</text>
+
+            <!-- intention boxes -->
+            <!-- Målsetting -->
+            <rect x="525" y="150" width="175" height="66" rx="10" fill="#6E78C8"/>
+            <text x="612" y="178" text-anchor="middle" font-family="Hanken Grotesk,sans-serif" font-size="16" font-weight="700" fill="#fff">Målsetting</text>
+            <text x="612" y="197" text-anchor="middle" font-family="Hanken Grotesk,sans-serif" font-size="11" fill="#E4E7FA">[Objective]</text>
+
+            <!-- Resultat -->
+            <rect x="675" y="270" width="175" height="66" rx="10" fill="#B9C2EE"/>
+            <text x="762" y="298" text-anchor="middle" font-family="Hanken Grotesk,sans-serif" font-size="16" font-weight="700" fill="#23306e">Resultat</text>
+            <text x="762" y="317" text-anchor="middle" font-family="Hanken Grotesk,sans-serif" font-size="11" fill="#3a4790">[Key result]</text>
+
+            <line x1="612" y1="216" x2="708" y2="270" stroke="#5c6b63" stroke-width="1.6" marker-end="url(#arrow)"/>
+            <text x="650" y="252" font-family="JetBrains Mono,monospace" font-size="11" fill="#5c6b63">1:M</text>
+
+            <!-- annotation: Målsetting -->
+            <text font-family="Hanken Grotesk,sans-serif" font-size="10.5" fill="#7a6c14">
+              <tspan x="525" y="124">Kan være målsetninger NHN har satt selv,</tspan>
+              <tspan x="525" y="138">eller komme fra oppdragsbrev, mandater.</tspan>
+            </text>
+            <text font-family="Hanken Grotesk,sans-serif" font-size="10" font-style="italic" fill="#9C8C2E">
+              <tspan x="525" y="354">[Can be objectives NHN has set itself, or</tspan>
+              <tspan x="525" y="367">come from commissioning letters / mandates.]</tspan>
+            </text>
+
+            <!-- annotation: Resultat -->
+            <text font-family="Hanken Grotesk,sans-serif" font-size="10" font-style="italic" fill="#9C8C2E">
+              <tspan x="675" y="232">Resultatene vi planlegger å oppnå, samt ca.</tspan>
+              <tspan x="675" y="245">når vi skal oppnå de.</tspan>
+              <tspan x="675" y="259">[The results we plan to achieve, and roughly</tspan>
+              <tspan x="675" y="272">when we will achieve them.]</tspan>
+            </text>
+
+            <!-- Leveranse box -->
+            <rect x="560" y="455" width="190" height="66" rx="10" fill="#2FA86A"/>
+            <text x="655" y="483" text-anchor="middle" font-family="Hanken Grotesk,sans-serif" font-size="16" font-weight="700" fill="#fff">Leveranse</text>
+            <text x="655" y="502" text-anchor="middle" font-family="Hanken Grotesk,sans-serif" font-size="11" fill="#D7F3E4">[Delivery]</text>
+
+            <text font-family="Hanken Grotesk,sans-serif" font-size="10.5" fill="#1F7E73">
+              <tspan x="560" y="438">Hva er levert &amp; hvilken nytte har det for sektoren.</tspan>
+            </text>
+            <text font-family="Hanken Grotesk,sans-serif" font-size="10" font-style="italic" fill="#2C9387">
+              <tspan x="560" y="540">[What has been delivered &amp; what benefit it has</tspan>
+              <tspan x="560" y="553">for the sector.]  &lt;År, måned&gt; — [Year, month]</tspan>
+            </text>
+
+            <!-- relationships (dashed) -->
+            <!-- NHN N:M Målsetting -->
+            <line x1="290" y1="170" x2="525" y2="178" stroke="#5c6b63" stroke-width="1.4" stroke-dasharray="5 4"/>
+            <text x="392" y="166" text-anchor="middle" font-family="JetBrains Mono,monospace" font-size="11" fill="#5c6b63">N:M</text>
+            <!-- Tjeneste up to intention region -->
+            <line x1="290" y1="450" x2="430" y2="450" stroke="#5c6b63" stroke-width="1.4" stroke-dasharray="5 4"/>
+            <line x1="430" y1="450" x2="430" y2="200" stroke="#5c6b63" stroke-width="1.4" stroke-dasharray="5 4"/>
+            <line x1="430" y1="200" x2="525" y2="195" stroke="#5c6b63" stroke-width="1.4" stroke-dasharray="5 4"/>
+            <!-- Tjeneste / governance down to Leveranse -->
+            <line x1="290" y1="475" x2="430" y2="475" stroke="#5c6b63" stroke-width="1.4" stroke-dasharray="5 4"/>
+            <line x1="430" y1="475" x2="430" y2="488" stroke="#5c6b63" stroke-width="1.4" stroke-dasharray="5 4"/>
+            <line x1="430" y1="488" x2="560" y2="488" stroke="#5c6b63" stroke-width="1.4" stroke-dasharray="5 4" marker-end="url(#arrow)"/>
+          </svg>
+        </div>
+        <figcaption>Recreated from the source diagram. Salmon = <span class="no">Styringsstruktur</span> [governance], yellow = <span class="no">Intensjon</span> [intention / OKRs], cyan = <span class="no">Verdi levert</span> [value delivered].</figcaption>
+      </figure>
+
+      <p>The governance structure [<span class="no">Styringsstruktur</span>] consists of <span class="no">NHN</span> — this is one tiddler representing the mother company <span class="no">Norsk Helsenett SF</span>. <span class="no">NHN</span> consists of several business units [<span class="no">Forretningsområde</span> <span class="gl">— business unit / business area</span>], and each business unit owns and is responsible for a set of services [<span class="no">Tjeneste</span> <span class="gl">— service</span>]. These services can be internal or external facing.</p>
+
+      <p>Each year the team establishes its intentions [<span class="no">Intensjon</span> <span class="gl">— intention</span>] for what it wants to achieve at the different levels in the governance structure. A loose version of OKRs is used to do this: Objectives [<span class="no">Målsetting</span>] and Key Result [<span class="no">Resultat</span>].</p>
+
+      <p>The team runs three-week sprints, and each time it delivers it registers a delivery [<span class="no">Leveranse</span> <span class="gl">— delivery</span>] in TiddlyWiki and links it to:</p>
+      <ul class="body">
+        <li>The OKR structure <span class="opt">optional</span>, or</li>
+        <li>The governance structure.</li>
+      </ul>
+
+      <p>Not included in the diagram: each month there is a business review where each service owner [<span class="no">Tjenesteeier</span> <span class="gl">— service owner</span>] writes a small tiddler summarising business change, economics, and a severity flag (1–3) for each service. The business unit goes through these based on severity and changes each month. Today they are linked in the business-unit tiddler.</p>
+
+      <div class="note">Today this is all handled using <strong>tags</strong> in TiddlyWiki.</div>
+    </section>
+
+    <!-- 3 -->
+    <section id="simplification">
+      <span class="sec-num">SECTION 03</span>
+      <h2>Simplification and automation</h2>
+      <p>Based on the experience that <span class="no">Helsepersonell</span> has gained over the last two years using plain TiddlyWiki, there are several needs for simplification and automation. These are summarised in the subsections below.</p>
+
+      <!-- 3.1 -->
+      <h3 id="nav"><span class="num">3.1</span> Simplified navigation</h3>
+      <p>Make the menu on the right-hand side of TiddlyWiki show a reflection of:</p>
+      <ul class="body">
+        <li>The governance structure with the intentions [<span class="no">Intensjon</span>].</li>
+        <li>The business-review structure, separated into year and month.</li>
+        <li>Summarised deliveries [<span class="no">Leveranse</span>] per year and month.</li>
+        <li>Services grouped by business unit [<span class="no">Forretningsområde</span>] and service owner [<span class="no">Tjenesteeier</span>].</li>
+      </ul>
+
+      <!-- 3.2 -->
+      <h3 id="create"><span class="num">3.2</span> Simplified creation of “correct” tiddlies</h3>
+      <p>Let the user select which type of tiddler they want to create and be guided through the creation, so that tiddlers follow the correct structure.</p>
+      <p><span class="opt">optional</span> It would also be nice to have this for updating existing tiddlers.</p>
+
+      <!-- 3.3 -->
+      <h3 id="export"><span class="num">3.3</span> Export of information from the governance structure and business review, per service</h3>
+      <p>Export information from the governance structure and per-service business review in the format below. Two types of extract are requested.</p>
+
+      <p class="extract-label">Extract 1</p>
+      <p>An Excel extract showing all links (URLs) to tiddlers tagged with one of:</p>
+      <p class="field-list">
+        <code class="tag">Styring Satsning for fart</code> <span class="taggloss">[Governance: Initiative for speed]</span>,
+        <code class="tag">Styring Tiltak</code> <span class="taggloss">[Governance: Measure / action]</span>,
+        <code class="tag">Styring Intern tjeneste</code> <span class="taggloss">[Governance: Internal service]</span>,
+        <code class="tag">Styring Relatert tjeneste</code> <span class="taggloss">[Governance: Related service]</span>, or
+        <code class="tag">Styring Ekstern tjeneste</code> <span class="taggloss">[Governance: External service]</span>.
+      </p>
+      <p>The extract should include separate columns showing the fields and tags on the tiddler:</p>
+      <ul class="body">
+        <li>ServiceID</li>
+        <li>Division</li>
+        <li>Service name</li>
+        <li>Year</li>
+        <li>Month</li>
+        <li>Business change — <code class="tag">Forretningsmessig endring:1</code> / <code class="tag">:2</code> / <code class="tag">:3</code> <span class="taggloss">[Business change: 1 / 2 / 3]</span></li>
+        <li>Governance — <code class="tag">Styring Satsning for fart</code>, <code class="tag">Styring Tiltak</code>, <code class="tag">Styring Intern tjeneste</code>, <code class="tag">Styring Relatert tjeneste</code>, or <code class="tag">Styring Ekstern tjeneste</code></li>
+      </ul>
+      <p>It must be possible to filter / refine the extract by <strong>year and month</strong>.</p>
+
+      <div class="table-scroll">
+        <table class="data">
+          <caption>Extract 1 — example input</caption>
+          <thead>
+            <tr>
+              <th>Name of the tiddler</th>
+              <th>ServiceID</th>
+              <th>URL to the governance tiddler</th>
+              <th>Division</th>
+              <th>Service name</th>
+              <th>Year</th>
+              <th>Month</th>
+              <th>Business change</th>
+              <th>Governance type</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>03 Tiltak Pasientens måledata - hovedtrekk og endringer mars 2026<span class="gl">[03 Measure — “Patient’s measurement data”, highlights and changes, March 2026]</span></td>
+              <td>40056</td>
+              <td class="url">https://tiddlywiki.plattform.nhn.no/#03%20Tiltak%20pasientens%20m%C3%A5ledata%20-%20hovedtrekk%20og%20endringer%20mars%202026</td>
+              <td>Divisjon Helsepersonell<span class="gl">[Healthcare Professionals Division]</span></td>
+              <td>Pasientens måledata<span class="gl">[Patient’s measurement data]</span></td>
+              <td>2026</td>
+              <td>Mars<span class="gl">[March]</span></td>
+              <td>Forretningsmessig endring:2<span class="gl">[Business change: 2]</span></td>
+              <td>Styring Tiltak<span class="gl">[Governance: Measure]</span></td>
+            </tr>
+            <tr>
+              <td>03 Støtte og hjelpe Leverandører - hovedtrekk og endringer mars 2026<span class="gl">[03 Support and help suppliers — highlights and changes, March 2026]</span></td>
+              <td>40051</td>
+              <td class="url">https://tiddlywiki.plattform.nhn.no/#03%20St%C3%B8tte%20og%20hjelpe%20Leverand%C3%B8rer%20-%20hovedtrekk%20og%20endringer%20mars%202026</td>
+              <td>Divisjon Helsepersonell<span class="gl">[Healthcare Professionals Division]</span></td>
+              <td>Støtte og hjelpe leverandører<span class="gl">[Support and help suppliers]</span></td>
+              <td>2026</td>
+              <td>Mars<span class="gl">[March]</span></td>
+              <td>Forretningsmessig endring:1<span class="gl">[Business change: 1]</span></td>
+              <td>Styring på ekstern tjeneste<span class="gl">[Governance on external service]</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="extract-label">Extract 2</p>
+      <p>An Excel extract showing all links (URLs) to tiddlers tagged with one of:</p>
+      <p class="field-list">
+        <code class="tag">Ekstern tjeneste</code> <span class="taggloss">[External service]</span>,
+        <code class="tag">Intern tjeneste</code> <span class="taggloss">[Internal service]</span>,
+        <code class="tag">Relatert tjeneste</code> <span class="taggloss">[Related service]</span>,
+        <code class="tag">Tiltak</code> <span class="taggloss">[Measure / action]</span>, or
+        <code class="tag">Satsning for fart</code> <span class="taggloss">[Initiative for speed]</span>.
+      </p>
+      <p>The extract should include separate columns showing the fields and tags on the tiddler:</p>
+      <ul class="body">
+        <li>ServiceID</li>
+        <li>Division</li>
+        <li>Service name</li>
+        <li>Year</li>
+        <li>Service type — <code class="tag">Ekstern tjeneste</code>, <code class="tag">Intern tjeneste</code>, <code class="tag">Relatert tjeneste</code>, <code class="tag">Tiltak</code>, or <code class="tag">Satsning for fart</code></li>
+      </ul>
+      <p>It must be possible to filter / refine the extract by <strong>year</strong>.</p>
+
+      <!-- 3.4 -->
+      <h3 id="summary"><span class="num">3.4</span> Summarising of deliveries per year and/or month</h3>
+      <p>Deliveries are used to report to the board and to external entities. The team would like an overview with the following information.</p>
+      <p>Overview of all tiddlers tagged <code class="tag">Leveranse</code> <span class="taggloss">[Delivery]</span>, with flexibility to group by:</p>
+      <ul class="body">
+        <li>Year (tag) → Month (tag) → Service (<code class="tag">Intern tjeneste</code> / <code class="tag">Ekstern tjeneste</code>)</li>
+        <li>Service (<code class="tag">Intern tjeneste</code> / <code class="tag">Ekstern tjeneste</code>) → Year (tag) → Month (tag)</li>
+      </ul>
+      <p>Overview of all tiddlers tagged <code class="tag">Målsetting</code> <span class="taggloss">[Objective]</span>, with flexibility to group by:</p>
+      <ul class="body">
+        <li>Year (tag) → Service (<code class="tag">Intern tjeneste</code> / <code class="tag">Ekstern tjeneste</code>)</li>
+        <li>Service (<code class="tag">Intern tjeneste</code> / <code class="tag">Ekstern tjeneste</code>) → Year (tag)</li>
+      </ul>
+      <p>Overview of all tiddlers tagged <code class="tag">Resultat</code> <span class="taggloss">[Key result]</span>, with flexibility to group by:</p>
+      <ul class="body">
+        <li>Year (tag) → Service (<code class="tag">Intern tjeneste</code> / <code class="tag">Ekstern tjeneste</code>) → <code class="tag">Målsetting</code></li>
+        <li>Service (<code class="tag">Intern tjeneste</code> / <code class="tag">Ekstern tjeneste</code>) → Year (tag) → <code class="tag">Målsetting</code></li>
+      </ul>
+
+      <!-- 3.5 -->
+      <h3 id="todo-review"><span class="num">3.5</span> Generation of a ToDo-list for the business review</h3>
+      <p>Generate a ToDo list, per month and per service, identifying where the service owner [<span class="no">Tjenesteeier</span>] has not yet established the business-review tiddler for that month.</p>
+      <p>This must also check that the tiddler is not just the template, and not just a copy of last month. It should be easy for the service owner to create the necessary tiddler directly from this ToDo list. The service owner can be recorded on the service tiddler.</p>
+
+      <div class="table-scroll">
+        <table class="data">
+          <caption>Per-service ToDo source — example input</caption>
+          <thead>
+            <tr>
+              <th>Name of the tiddler</th>
+              <th>ServiceID</th>
+              <th>URL to the service-description tiddler</th>
+              <th>Division</th>
+              <th>Service name</th>
+              <th>Year</th>
+              <th>Service type</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pasientens måledata 2026<span class="gl">[Patient’s measurement data 2026]</span></td>
+              <td>40056</td>
+              <td class="url">https://tiddlywiki.plattform.nhn.no/#Pasientens%20m%C3%A5ledata%202026</td>
+              <td>Divisjon Helsepersonell<span class="gl">[Healthcare Professionals Division]</span></td>
+              <td>Pasientens måledata<span class="gl">[Patient’s measurement data]</span></td>
+              <td>2026</td>
+              <td>Mandater<span class="gl">[Mandates]</span></td>
+            </tr>
+            <tr>
+              <td>Støtte og hjelp til leverandører<span class="gl">[Support and help for suppliers]</span></td>
+              <td>40051</td>
+              <td class="url">https://tiddlywiki.plattform.nhn.no/#St%C3%B8tte%20og%20hjelp%20til%20leverand%C3%B8rer</td>
+              <td>Divisjon Helsepersonell<span class="gl">[Healthcare Professionals Division]</span></td>
+              <td>Støtte og hjelpe leverandører<span class="gl">[Support and help suppliers]</span></td>
+              <td>2026</td>
+              <td>Ekstern tjeneste<span class="gl">[External service]</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 3.6 -->
+      <h3 id="todo-okr"><span class="num">3.6</span> Generation of a ToDo-list for OKRs [<span class="no">Intensjon</span> <span class="gl">— Intention</span>]</h3>
+      <p>Generate a ToDo list, per year and per service, identifying where the service owner has not yet established the OKRs for that service for the given year.</p>
+      <p>This must also check that the tiddler is not just the template, and not just a copy of last year’s. It should be easy for the service owner to create the necessary tiddler directly from this ToDo list. The service owner can be recorded on the service tiddler.</p>
+
+      <!-- 3.7 -->
+      <h3 id="archive"><span class="num">3.7</span> Periodisation and archiving</h3>
+      <p>A solution is needed to periodise the structure per year — and possibly archive the previous year — to keep clutter down.</p>
+
+      <!-- 3.8 -->
+      <h3 id="access"><span class="num">3.8</span> Access control <span class="opt">optional</span></h3>
+      <p>The team would like to separate who can work in TiddlyWiki from who can only read. NHN uses Microsoft AD <span class="gl">[Active Directory]</span>.</p>
+    </section>
+
+    <!-- GLOSSARY -->
+    <section id="glossary" class="glossary">
+      <span class="sec-num">APPENDIX</span>
+      <h2>Glossary <span class="gl">Norsk → English</span></h2>
+      <p>The recurring Norwegian vocabulary in this document, with a short note on what each term means in context.</p>
+      <div class="gloss-scroll">
+      <table class="gloss">
+        <thead>
+          <tr><th>Norsk</th><th>English</th><th>Description</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="term">Norsk Helsenett (SF)</td><td class="tr">Norwegian Health Network</td><td class="desc">The parent organisation. <em>SF</em> = <span class="no">statsforetak</span>, a state-owned enterprise. Abbreviated NHN.</td></tr>
+          <tr><td class="term">Divisjon</td><td class="tr">Division</td><td class="desc">An organisational division within NHN.</td></tr>
+          <tr><td class="term">Helsepersonell</td><td class="tr">Health personnel</td><td class="desc">Healthcare professionals. Here, the name of the business unit (<span class="no">Divisjon Helsepersonell</span>).</td></tr>
+          <tr><td class="term">Styringsstruktur</td><td class="tr">Governance structure</td><td class="desc">The hierarchy NHN → business unit → service. From <span class="no">styring</span> (steering / governance).</td></tr>
+          <tr><td class="term">Styring</td><td class="tr">Governance / steering</td><td class="desc">Management or control. Used as a prefix on governance tags, e.g. <span class="no">Styring Tiltak</span>.</td></tr>
+          <tr><td class="term">Forretningsområde</td><td class="tr">Business unit / area</td><td class="desc">A unit owning a set of services. Literally “business area”.</td></tr>
+          <tr><td class="term">Tjeneste</td><td class="tr">Service</td><td class="desc">A service the unit provides; can be internal or external facing.</td></tr>
+          <tr><td class="term">Tjenesteeier</td><td class="tr">Service owner</td><td class="desc">The person responsible for a service’s reviews and OKRs.</td></tr>
+          <tr><td class="term">Intern tjeneste</td><td class="tr">Internal service</td><td class="desc">A service facing inward, within the organisation.</td></tr>
+          <tr><td class="term">Ekstern tjeneste</td><td class="tr">External service</td><td class="desc">A service facing outward, to the sector / public.</td></tr>
+          <tr><td class="term">Relatert tjeneste</td><td class="tr">Related service</td><td class="desc">A service related to, but distinct from, the main ones.</td></tr>
+          <tr><td class="term">Tiltak</td><td class="tr">Measure / action</td><td class="desc">An initiative or action item within governance.</td></tr>
+          <tr><td class="term">Satsning for fart</td><td class="tr">Initiative for speed</td><td class="desc">A focused push to accelerate (literally “a bet/effort for pace”).</td></tr>
+          <tr><td class="term">Intensjon</td><td class="tr">Intention</td><td class="desc">The yearly intentions set across the governance levels — the OKR layer.</td></tr>
+          <tr><td class="term">Målsetting</td><td class="tr">Objective</td><td class="desc">The <em>O</em> in OKR — what the team aims to achieve.</td></tr>
+          <tr><td class="term">Resultat</td><td class="tr">[Key] result</td><td class="desc">The <em>KR</em> in OKR — the results planned, and roughly when.</td></tr>
+          <tr><td class="term">Leveranse</td><td class="tr">Delivery</td><td class="desc">Registered each sprint; what was delivered and its benefit to the sector.</td></tr>
+          <tr><td class="term">Verdi levert</td><td class="tr">Value delivered</td><td class="desc">The “delivery” swimlane in the structure diagram.</td></tr>
+          <tr><td class="term">Forretningsmessig endring</td><td class="tr">Business change</td><td class="desc">Commercial / business change noted in a review, with a severity 1–3.</td></tr>
+          <tr><td class="term">Oppdragsbrev</td><td class="tr">Commissioning letter</td><td class="desc">A government tasking / assignment letter that can set objectives.</td></tr>
+          <tr><td class="term">Mandat / Mandater</td><td class="tr">Mandate / mandates</td><td class="desc">Formal mandates that can also be a source of objectives.</td></tr>
+          <tr><td class="term">Hovedtrekk</td><td class="tr">Highlights / main points</td><td class="desc">The main features summarised in a monthly review tiddler.</td></tr>
+          <tr><td class="term">Endringer</td><td class="tr">Changes</td><td class="desc">Changes recorded for a service in the review period.</td></tr>
+          <tr><td class="term">Støtte og hjelpe leverandører</td><td class="tr">Support and help suppliers</td><td class="desc">Example service name. <span class="no">Leverandør</span> = supplier / vendor.</td></tr>
+          <tr><td class="term">Pasientens måledata</td><td class="tr">Patient’s measurement data</td><td class="desc">Example service name. <span class="no">Måledata</span> = measurement data.</td></tr>
+          <tr><td class="term">År</td><td class="tr">Year</td><td class="desc">Used as a grouping tag.</td></tr>
+          <tr><td class="term">Måned</td><td class="tr">Month</td><td class="desc">Used as a grouping tag. <span class="no">Mars</span> = March.</td></tr>
+          <tr><td class="term">Tagg / Tagger</td><td class="tr">Tag / tags</td><td class="desc">TiddlyWiki tags — the mechanism currently carrying all the structure.</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </section>
+
+    <footer>
+      <span class="wordmark" aria-label="Norsk helsenett">
+        <svg width="30" height="20" viewBox="0 0 34 22" fill="none" aria-hidden="true">
+          <path d="M2 16C5 6 8 6 11 11C14 16 17 16 20 6" stroke="#0B3D2E" stroke-width="3.4" stroke-linecap="round"/>
+          <path d="M13 16C16 6 19 6 22 11C25 16 28 16 31 6" stroke="#18A47C" stroke-width="3.4" stroke-linecap="round"/>
+        </svg>
+        <span class="nm">Norsk helsenett</span>
+      </span>
+      <p>Bilingual reading edition of “Simplification of TiddlyWiki for use in Divisjon Helsepersonell”, 30 April 2026. Norwegian terms retained throughout with English translations in brackets. Example URLs and data reproduced from the source document.</p>
+    </footer>
+
+  </main>
+</div>
+</div>
+</body>
+</html>
