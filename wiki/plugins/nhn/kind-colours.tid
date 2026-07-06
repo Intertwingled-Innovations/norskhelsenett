@@ -1,0 +1,13 @@
+title: $:/plugins/intertwingled-innovations/nhn/kind-colours
+type: application/json
+
+{
+"structure": "#808285",
+"service": "#015945",
+"leveranse": "#02a67f",
+"malsetting": "#00467a",
+"resultat": "#372770",
+"review": "#e85800",
+"oppgave": "#ffc46b",
+"template": "#6b1e27"
+}

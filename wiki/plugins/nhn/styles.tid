@@ -24,3 +24,12 @@ code-body: yes
 .nhn-nav-menu svg { width: 1.1em; height: 1.1em; flex: 0 0 auto; fill: <<colour muted-foreground>>; }
 
 .nhn-extract-filters { margin: 0.75em 0; }
+
+/* Coloured type-bar across the top edge of an application tiddler (kind → colour) */
+.nhn-typebar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 4px;
+}

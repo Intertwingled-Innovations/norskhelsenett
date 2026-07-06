@@ -1,0 +1,9 @@
+title: $:/plugins/intertwingled-innovations/nhn/kinds
+tags: $:/tags/Global
+
+\whitespace trim
+\function nhn-review-governance() [<currentTiddler>tags[]] :intersection[enlist<nhn-governance-tags>] +[limit[1]]
+\function nhn-is-structure() [<currentTiddler>tag[Divisjon]] [<currentTiddler>tag[Domene]] [subfilter<nhn-gov-root-filter>match<currentTiddler>] +[limit[1]]
+\function nhn-kind() [<currentTiddler>tag[mal]then[template]] :else[<currentTiddler>tag[Resultat]then[resultat]] :else[<currentTiddler>tag[Målsetting]then[malsetting]] :else[<currentTiddler>tag[Leveranse]then[leveranse]] :else[<currentTiddler>function[nhn-review-governance]then[review]] :else[<currentTiddler>function[nhn-is-service]then[service]] :else[<currentTiddler>tag[Oppgave]then[oppgave]] :else[<currentTiddler>function[nhn-is-structure]then[structure]]
+
+Classifies an application tiddler into a single kind by first-match priority — `template` (mal), `resultat`, `malsetting`, `leveranse`, `review` (Styring… governance), `service` (service-type entity), `oppgave` — and returns empty for anything else. Drives the coloured type-bar (see the `$:/tags/ViewTemplate` typebar). Kinds map to colours in [[$:/plugins/intertwingled-innovations/nhn/kind-colours]].
