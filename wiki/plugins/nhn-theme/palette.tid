@@ -1,0 +1,151 @@
+title: $:/plugins/intertwingled-innovations/nhn-theme/palette
+name: NHN
+description: Norsk Helsenett – grønn
+tags: $:/tags/Palette
+type: application/x-tiddler-dictionary
+color-scheme: light
+
+alert-background: #ffc46b
+alert-border: #e85800
+alert-highlight: #6b1e27
+alert-muted-foreground: #e85800
+background: #ffffff
+nhn-accent: #7befb2
+blockquote-bar: <<colour nhn-accent>>
+button-background:
+button-foreground:
+button-border:
+code-background: #f1f2f2
+code-border: #dcddde
+code-foreground: #6b1e27
+diff-delete-background: #ffc9c9
+diff-delete-foreground: <<colour foreground>>
+diff-equal-background:
+diff-equal-foreground: <<colour foreground>>
+diff-insert-background: #c4f2da
+diff-insert-foreground: <<colour foreground>>
+diff-invisible-background:
+diff-invisible-foreground: <<colour muted-foreground>>
+dirty-indicator: #e85800
+download-background: #02a67f
+download-foreground: <<colour background>>
+dragger-background: <<colour foreground>>
+dragger-foreground: <<colour background>>
+dropdown-background: <<colour background>>
+dropdown-border: <<colour muted-foreground>>
+dropdown-tab-background-selected: #ffffff
+dropdown-tab-background: #f1f2f2
+dropzone-background: rgba(2,166,127,0.7)
+external-link-background-hover: inherit
+external-link-background-visited: inherit
+external-link-background: inherit
+external-link-foreground-hover: inherit
+external-link-foreground-visited: #247360
+external-link-foreground: #015945
+footnote-target-background: #eafaf1
+foreground: #002920
+highlight-background: #c4f2da
+highlight-foreground: #002920
+message-background: #eafaf1
+message-border: #7befb2
+message-foreground: #015945
+modal-backdrop: <<colour foreground>>
+modal-background: <<colour background>>
+modal-border: #dcddde
+modal-footer-background: #f7f5f4
+modal-footer-border: #dcddde
+modal-header-border: #f1f2f2
+muted-foreground: #808285
+network-activity-foreground: #02a67f
+notification-background: #eafaf1
+notification-border: #7befb2
+page-background: #f7f5f4
+pre-background: #f1f2f2
+pre-border: #dcddde
+primary: #015945
+selection-background:
+selection-foreground:
+select-tag-background:
+select-tag-foreground:
+sidebar-button-foreground: <<colour foreground>>
+sidebar-controls-foreground-hover: #015945
+sidebar-controls-foreground: #bcbec0
+sidebar-foreground-shadow: rgba(255,255,255,0.0)
+sidebar-foreground: #247360
+sidebar-muted-foreground-hover: #015945
+sidebar-muted-foreground: #bcbec0
+sidebar-tab-background-selected: #f7f5f4
+sidebar-tab-background: #e7e9e8
+sidebar-tab-border-selected: <<colour tab-border-selected>>
+sidebar-tab-border: <<colour tab-border>>
+sidebar-tab-divider: #dcddde
+sidebar-tab-foreground-selected:
+sidebar-tab-foreground: <<colour tab-foreground>>
+sidebar-tiddler-link-foreground-hover: #015945
+sidebar-tiddler-link-foreground: #247360
+site-title-foreground: <<colour tiddler-title-foreground>>
+stability-stable: #00b700
+stability-experimental: #c07c00
+stability-deprecated: #ff0000
+stability-legacy: #0000ff
+static-alert-foreground: #aaaaaa
+tab-background-selected: #ffffff
+tab-background: #f1f2f2
+tab-border-selected: #dcddde
+tab-border: #dcddde
+tab-divider: #dcddde
+tab-foreground-selected: #015945
+tab-foreground: #808285
+table-border: #dcddde
+table-footer-background: #bcbec0
+table-header-background: #f1f2f2
+tag-background: #c4f2da
+tag-foreground: #002920
+testcase-accent-level-1: #c1eaff
+testcase-accent-level-2: #E3B740
+testcase-accent-level-3: #5FD564
+tiddler-background: <<colour background>>
+tiddler-border: <<colour background>>
+tiddler-controls-foreground-hover: #015945
+tiddler-controls-foreground-selected: #247360
+tiddler-controls-foreground: #bcbec0
+tiddler-editor-background: #f8f8f8
+tiddler-editor-border-image: #ffffff
+tiddler-editor-border: #dcddde
+tiddler-editor-fields-even: #e0e8e0
+tiddler-editor-fields-odd: #f0f4f0
+tiddler-info-background: #f7f5f4
+tiddler-info-border: #dcddde
+tiddler-info-tab-background: #f7f5f4
+tiddler-link-background: <<colour background>>
+tiddler-link-foreground: <<colour primary>>
+tiddler-subtitle-foreground: #bcbec0
+tiddler-title-foreground: #015945
+toolbar-new-button:
+toolbar-options-button:
+toolbar-save-button:
+toolbar-info-button:
+toolbar-edit-button:
+toolbar-close-button:
+toolbar-delete-button:
+toolbar-cancel-button:
+toolbar-done-button:
+untagged-background: #bcbec0
+very-muted-foreground: #bcbec0
+wikilist-background: #e5e5e5
+wikilist-item: #ffffff
+wikilist-info: #000000
+wikilist-title: #666666
+wikilist-title-svg: <<colour wikilist-title>>
+wikilist-url: #aaaaaa
+wikilist-button-open: #02a67f
+wikilist-button-open-hover: #015945
+wikilist-button-reveal: #247360
+wikilist-button-reveal-hover: #015945
+wikilist-button-remove: #d85778
+wikilist-button-remove-hover: #ff0000
+wikilist-toolbar-background: #d3d3d3
+wikilist-toolbar-foreground: #888888
+wikilist-droplink-dragover: #ffc0c0
+wikilist-button-background: #acacac
+wikilist-button-foreground: #000000

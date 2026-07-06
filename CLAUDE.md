@@ -103,12 +103,13 @@ All of these are **automation/UX layers over the existing tag model** — no sch
 
 **Cross-cutting prerequisite — Service Owner field.** It does not exist in the snapshot yet. §3.4's owner grouping is already built but empty, and §3.5/§3.6 are meaningless without it. Add it as a (configurable) field on service tiddlers, captured via §3.2 — so it lands naturally in step 3. (Tempting to do §3.5/§3.6 next, but they sit *downstream* of §3.2 and the owner field, hence steps 4–5.)
 
-## The solution: two plugins
+## The solution: plugins
 
-The work delivers **two TiddlyWiki plugins** that replace the manual all-by-hand-tagging workflow:
+The work delivers TiddlyWiki plugins that replace the manual all-by-hand-tagging workflow:
 
 - **`forms`** (`$:/plugins/tiddlywiki/forms/…`; folder `wiki/plugins/forms/`) — a **generic, configuration-driven** plugin: guided form-based tiddler creation/editing, structured selection / projection / grouping, CSV export, normalised search. **Contains zero NHN/Norwegian specifics.**
 - **`nhn`** (`$:/plugins/intertwingled-innovations/nhn/…`; folder `wiki/plugins/nhn/`) — an NHN-specific plugin that is almost entirely **configuration**: tag sets, field-name bindings, month map, form definitions, export column lists, group-by paths, base URL, fold-map additions, the tag→kind table. It layers onto `forms` as shadow tiddlers.
+- **`nhn-theme`** (`$:/plugins/intertwingled-innovations/nhn-theme`; folder `wiki/plugins/nhn-theme/`) — a **theme-type plugin** (`plugin-type: theme`, `dependents: [snowwhite]`) carrying the NHN visual identity: the green **palette**, the font, and a stylesheet layered on Vanilla/Snow White. It is *activated* by `$:/theme`/`$:/palette` pointers that live in the **`nhn` config plugin** (not in the theme) — theme-plugin shadows are only unpacked when the theme is active, so the activator can't live inside the theme it activates (circular).
 
 (Plugin *titles* are namespaced as above; the *folder* names stay `forms`/`nhn`. Engine function names — `forms-tree`, `forms-group`, `forms-csv`, … and the `nhn-*` projections — are unaffected by the title namespace.)
 

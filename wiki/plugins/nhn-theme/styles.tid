@@ -1,0 +1,63 @@
+title: $:/plugins/intertwingled-innovations/nhn-theme/styles
+tags: $:/tags/Stylesheet
+code-body: yes
+
+/* ==== NHN theme — Norsk Helsenett branding accents ==== */
+
+/* Tags as rounded brand pills */
+.tc-tag-label {
+	border-radius: 1em;
+	padding: 1px 0.7em;
+	font-weight: 400;
+}
+
+/* Links: quiet until hover */
+.tc-tiddler-body a.tc-tiddlylink,
+.tc-sidebar-lists a.tc-tiddlylink { text-decoration: none; }
+.tc-tiddler-body a.tc-tiddlylink:hover { text-decoration: underline; }
+
+/* Headings on-brand */
+.tc-tiddler-body h1,
+.tc-tiddler-body h2,
+.tc-tiddler-body h3 {
+	color: <<colour primary>>;
+	font-weight: 600;
+	border-bottom: none;
+}
+.tc-tiddler-body h1 { border-bottom: 2px solid <<colour tab-border>>; padding-bottom: 0.2em; }
+
+/* Site title (sidebar header) */
+.tc-site-title { font-weight: 700; letter-spacing: -0.01em; }
+
+/* Selected tab: bright accent highlight across the top (inset = no layout shift) */
+.tc-tab-buttons button.tc-tab-selected {
+	box-shadow: inset 0 3px 0 <<colour nhn-accent>>;
+	font-weight: 600;
+}
+
+/* Softly rounded inputs, buttons and code */
+input[type=text],
+input[type=search],
+select,
+button.tc-btn-big-green,
+.tc-block-dropdown { border-radius: 5px; }
+code, .tc-tiddler-body pre { border-radius: 4px; }
+
+/* Download / primary action buttons (e.g. Eksport): pill, on-brand */
+a.forms-export-download {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4em;
+	padding: 0.35em 0.9em;
+	border-radius: 1em;
+	background: <<colour download-background>>;
+	color: <<colour download-foreground>>;
+	font-weight: 600;
+}
+a.forms-export-download:hover { background: <<colour primary>>; text-decoration: none; }
+a.forms-export-download svg { fill: <<colour download-foreground>>; }
+
+/* ==== Bright accent (#7befb2) — used sparingly for pop ==== */
+
+/* Accent underline on data-table headers (Eksport, Anomolier) */
+.tc-tiddler-body table th { border-bottom: 2px solid <<colour nhn-accent>>; }

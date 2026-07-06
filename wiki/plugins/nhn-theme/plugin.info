@@ -1,0 +1,10 @@
+{
+	"title": "$:/plugins/intertwingled-innovations/nhn-theme",
+	"name": "NHN",
+	"description": "Norsk Helsenett visual theme — green palette + typography — layered on Vanilla/Snow White",
+	"author": "Jeremy Ruston",
+	"plugin-type": "theme",
+	"dependents": ["$:/themes/tiddlywiki/snowwhite"],
+	"core-version": ">=5.4.0",
+	"version": "0.0.1"
+}
