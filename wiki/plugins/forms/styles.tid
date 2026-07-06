@@ -43,6 +43,7 @@ code-body: yes
 
 .forms-export-actions { margin: 0.5em 0; }
 .forms-export-count { color: <<colour muted-foreground>>; margin-left: 1em; }
+.forms-export-scroll { overflow-x: auto; max-width: 100%; }
 .forms-export-table { border-collapse: collapse; font-size: 0.85em; margin-top: 0.5em; }
 .forms-export-table th, .forms-export-table td {
 	border: 1px solid <<colour tab-border>>;

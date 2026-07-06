@@ -11,6 +11,7 @@ tags: $:/tags/Global
 <a class="tc-btn-invisible forms-export-download" href={{{ [subfilter<set>] +[forms-csv<columns>] +[forms-datauri[text/csv]] }}} download=<<filename>>>{{$:/core/images/download-button}} <$text text={{{ [<caption>!is[blank]else[Download CSV]] }}}/></a>
 <span class="forms-export-count"><<total>>&#32;<$text text={{{ [<rowlabel>!is[blank]else[rows]] }}}/><% if [<total>compare:number:gt<limit>] %>&#32;(preview&#32;<<limit>>)<% endif %></span>
 </p>
+<div class="forms-export-scroll">
 <table class="forms-export-table">
 <thead>
 <tr><$list filter="[<coljson>jsonindexes[]]" variable="ci"><th><$text text={{{ [<coljson>jsonget<ci>,[header]] }}}/></th></$list></tr>
@@ -23,6 +24,7 @@ tags: $:/tags/Global
 </$list>
 </tbody>
 </table>
+</div>
 </div>
 </$let>
 \end
