@@ -1,0 +1,13 @@
+{
+	"name": "norskhelsenett-wiki",
+	"version": "1.0.0",
+	"private": true,
+	"description": "TiddlyWiki simplification project for NHN Divisjon Helsepersonell (forms + nhn plugins over the wiki content)",
+	"scripts": {
+		"build": "tiddlywiki wiki --output build --build index",
+		"serve": "tiddlywiki wiki --listen host=127.0.0.1 port=8080"
+	},
+	"devDependencies": {
+		"tiddlywiki": "^5.4.0"
+	}
+}
