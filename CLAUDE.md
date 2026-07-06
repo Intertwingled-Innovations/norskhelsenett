@@ -20,16 +20,17 @@ The live instance is served at `https://tiddlywiki.plattform.nhn.no/` (reference
 
 They use the **Node.js instantiation** of TiddlyWiki (server mode), not a single-file HTML wiki. Currently a **vanilla** install — no custom plugins beyond the standard set. The whole point of the brief is to add simplification/automation on top of this vanilla base.
 
-`wiki/tiddlywiki.info`:
-- Plugins: `tiddlywiki/tiddlyweb` (client-server sync) + `tiddlywiki/filesystem` (each tiddler ↔ a `.tid` file on disk).
-- Themes: `tiddlywiki/vanilla` + `tiddlywiki/snowwhite`.
-- A `build` target rendering `index.html` via `$:/core/save/all`.
+**Two wiki folders (client/server split):**
+- **`wiki/`** — the *client* wiki: content (`wiki/tiddlers/`), the two plugin folders (`wiki/plugins/`), `tiddlywiki/vanilla` + `snowwhite` themes, and the `index` **build** target (`$:/core/save/all`). It has **no sync plugins**, so the static single-file build carries no browser syncer (avoids the Pages 405 sync errors).
+- **`wiki-server/`** — the *server* edition: `includeWikis: ["../wiki"]` + `tiddlywiki/tiddlyweb` + `tiddlywiki/filesystem`, with `config.default-tiddler-location: "../wiki/tiddlers"`. `includeWikis` loads the client wiki's tiddlers **and** its `wiki/plugins/` folder, and tracks each tiddler's source file — so edits on the server save back into `wiki/tiddlers/`.
 
-To run locally you need TiddlyWiki installed (`npm install -g tiddlywiki`), then from `wiki/`:
+Run via `package.json`:
 ```
-tiddlywiki . --listen
+npm install        # gets tiddlywiki (devDependency)
+npm run serve      # tiddlywiki wiki-server --listen  (editable, syncs to wiki/tiddlers)
+npm run build      # tiddlywiki wiki --output build --build index  → build/index.html (static, no sync)
 ```
-There is **no `package.json` or `node_modules` in this repo** — it is a data + brief snapshot, not a runnable app checkout. Don't assume a build system exists; if you need one, set it up explicitly. The TiddlyWiki5 source is available in a sibling working dir (`../TiddlyWiki5`) if you need to reference core behaviour.
+The GitHub Pages deploy (`.github/workflows/deploy.yaml`) runs `npm ci` → `npm run build` → uploads `./build`. The TiddlyWiki5 source is available in a sibling working dir (`../TiddlyWiki5`) for referencing core behaviour.
 
 ## The data model (this is the important part)
 
@@ -106,8 +107,10 @@ All of these are **automation/UX layers over the existing tag model** — no sch
 
 The work delivers **two TiddlyWiki plugins** that replace the manual all-by-hand-tagging workflow:
 
-- **`forms`** (`$:/plugins/forms/…`) — a **generic, configuration-driven** plugin: guided form-based tiddler creation/editing, structured selection / projection / grouping, CSV export, normalised search. **Contains zero NHN/Norwegian specifics.**
-- **`nhn`** (`$:/plugins/nhn/…`) — an NHN-specific plugin that is almost entirely **configuration**: tag sets, field-name bindings, month map, form definitions, export column lists, group-by paths, base URL, fold-map additions, the tag→kind table. It layers onto `forms` as shadow tiddlers.
+- **`forms`** (`$:/plugins/tiddlywiki/forms/…`; folder `wiki/plugins/forms/`) — a **generic, configuration-driven** plugin: guided form-based tiddler creation/editing, structured selection / projection / grouping, CSV export, normalised search. **Contains zero NHN/Norwegian specifics.**
+- **`nhn`** (`$:/plugins/intertwingled-innovations/nhn/…`; folder `wiki/plugins/nhn/`) — an NHN-specific plugin that is almost entirely **configuration**: tag sets, field-name bindings, month map, form definitions, export column lists, group-by paths, base URL, fold-map additions, the tag→kind table. It layers onto `forms` as shadow tiddlers.
+
+(Plugin *titles* are namespaced as above; the *folder* names stay `forms`/`nhn`. Engine function names — `forms-tree`, `forms-group`, `forms-csv`, … and the `nhn-*` projections — are unaffected by the title namespace.)
 
 Both live as auto-loaded plugin folders under `wiki/plugins/forms/` and `wiki/plugins/nhn/` — TiddlyWiki packs each folder into a plugin tiddler at boot ([boot.js](../TiddlyWiki5/boot/boot.js) "Load any plugins within the wiki folder"), so their constituent tiddlers become shadows with no `tiddlywiki.info` edit. Definitions are shared globally by tagging their tiddlers `$:/tags/Global`.
 

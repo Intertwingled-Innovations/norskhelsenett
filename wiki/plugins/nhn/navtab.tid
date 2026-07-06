@@ -1,2 +1,2 @@
 title: $:/tags/nhn/NavTab
-list: [[$:/plugins/nhn/ui/nav/governance]] [[$:/plugins/nhn/ui/nav/review]] [[$:/plugins/nhn/ui/nav/deliveries]] [[$:/plugins/nhn/ui/nav/services]]
+list: [[$:/plugins/intertwingled-innovations/nhn/ui/nav/governance]] [[$:/plugins/intertwingled-innovations/nhn/ui/nav/review]] [[$:/plugins/intertwingled-innovations/nhn/ui/nav/deliveries]] [[$:/plugins/intertwingled-innovations/nhn/ui/nav/services]]

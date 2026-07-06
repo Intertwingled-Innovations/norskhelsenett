@@ -1,4 +1,4 @@
-title: $:/plugins/nhn/projections
+title: $:/plugins/intertwingled-innovations/nhn/projections
 tags: $:/tags/Global
 
 \whitespace trim
@@ -22,4 +22,4 @@ Projection functions (tiddler → value) for the §3.3 extracts and reused by §
 * `nhn-governance-type` — the `Styring …` governance tag.
 * `nhn-service-type` — the bare service-type tag (Ekstern/Intern/Relatert tjeneste, Tiltak, Satsning for fart).
 
-(`nhn-year` / `nhn-month` live in [[$:/plugins/nhn/review]].)
+(`nhn-year` / `nhn-month` live in [[$:/plugins/intertwingled-innovations/nhn/review]].)

@@ -1,4 +1,4 @@
-title: $:/plugins/nhn/ui/SideBar/Navigasjon
+title: $:/plugins/intertwingled-innovations/nhn/ui/SideBar/Navigasjon
 tags: $:/tags/SideBar
 caption: NHN
 list-before:
@@ -10,4 +10,4 @@ list-before:
 <li><$link to="Eksport">{{$:/core/images/download-button}} Eksport</$link></li>
 </ul>
 
-<<tabs tabsList:"[all[shadows+tiddlers]tag[$:/tags/nhn/NavTab]]" default:"$:/plugins/nhn/ui/nav/governance" state:"$:/state/nhn/nav-tab">>
+<<tabs tabsList:"[all[shadows+tiddlers]tag[$:/tags/nhn/NavTab]]" default:"$:/plugins/intertwingled-innovations/nhn/ui/nav/governance" state:"$:/state/nhn/nav-tab">>

@@ -1,5 +1,5 @@
 /*\
-title: $:/plugins/forms/csv.js
+title: $:/plugins/tiddlywiki/forms/csv.js
 type: application/javascript
 module-type: filteroperator
 

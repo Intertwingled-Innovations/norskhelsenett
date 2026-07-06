@@ -1,4 +1,4 @@
-title: $:/plugins/nhn/review
+title: $:/plugins/intertwingled-innovations/nhn/review
 tags: $:/tags/Global
 
 \whitespace trim
@@ -7,11 +7,11 @@ tags: $:/tags/Global
 \function nhn-has-month() [<currentTiddler>tags[]lowercase[]] :intersection[enlist<nhn-month-keys>] +[limit[1]]
 \function nhn-reviews() [enlist<nhn-governance-tags>tagging[]unique[]] :filter[function[nhn-has-month]]
 \function nhn-year-raw() [<currentTiddler>tags[]regexp[^\d{4}$]]
-\function nhn-month-raw() [<currentTiddler>tags[]lowercase[]] :intersection[enlist<nhn-month-keys>] :map[[$:/plugins/nhn/month-names]getindex<currentTiddler>]
+\function nhn-month-raw() [<currentTiddler>tags[]lowercase[]] :intersection[enlist<nhn-month-keys>] :map[[$:/plugins/intertwingled-innovations/nhn/month-names]getindex<currentTiddler>]
 \function nhn-year() [function[nhn-year-raw]] :else[[(Uten år)]]
 \function nhn-month() [function[nhn-month-raw]] :else[[(Uten måned)]]
 \function nhn-year-sortkey() [[9999]subtract<currentTiddler>]
-\function nhn-month-ord() [<currentTiddler>lowercase[]] :map[[$:/plugins/nhn/months]getindex<currentTiddler>] +[!is[blank]else[99]]
+\function nhn-month-ord() [<currentTiddler>lowercase[]] :map[[$:/plugins/intertwingled-innovations/nhn/months]getindex<currentTiddler>] +[!is[blank]else[99]]
 
 Configuration for the business-review (Forretningsgjennomgang) group-by tree.
 

@@ -1,10 +1,10 @@
 {
-	"title": "$:/plugins/nhn",
+	"title": "$:/plugins/intertwingled-innovations/nhn",
 	"name": "nhn",
 	"description": "NHN Divisjon Helsepersonell configuration for the forms engine",
 	"author": "Jeremy Ruston",
 	"plugin-type": "plugin",
-	"dependents": "$:/plugins/forms",
+	"dependents": "$:/plugins/tiddlywiki/forms",
 	"version": "0.0.1",
 	"list": "readme"
 }

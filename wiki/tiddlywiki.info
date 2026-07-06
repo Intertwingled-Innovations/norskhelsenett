@@ -1,9 +1,5 @@
 {
-	"description": "NHN Experiments",
-	"plugins": [
-		"tiddlywiki/tiddlyweb",
-		"tiddlywiki/filesystem"
-	],
+	"description": "NHN wiki — content and UI (client; static build target)",
 	"themes": [
 		"tiddlywiki/vanilla",
 		"tiddlywiki/snowwhite"

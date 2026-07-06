@@ -1,0 +1,17 @@
+{
+	"description": "NHN wiki — Node.js editing server (adds client-server sync over the client wiki)",
+	"includeWikis": [
+		"../wiki"
+	],
+	"plugins": [
+		"tiddlywiki/tiddlyweb",
+		"tiddlywiki/filesystem"
+	],
+	"themes": [
+		"tiddlywiki/vanilla",
+		"tiddlywiki/snowwhite"
+	],
+	"config": {
+		"default-tiddler-location": "../wiki/tiddlers"
+	}
+}

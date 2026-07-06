@@ -1,5 +1,5 @@
 {
-	"title": "$:/plugins/forms",
+	"title": "$:/plugins/tiddlywiki/forms",
 	"name": "forms",
 	"description": "New fangled forms engine for TiddlyWiki",
 	"author": "Jeremy Ruston",
