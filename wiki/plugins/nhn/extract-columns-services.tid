@@ -1,0 +1,12 @@
+title: $:/plugins/nhn/extracts/services-columns
+type: application/json
+
+[
+{"header":"Name","fn":"forms-title"},
+{"header":"ServiceID","fn":"nhn-serviceid"},
+{"header":"URL","fn":"nhn-url"},
+{"header":"Division","fn":"nhn-division"},
+{"header":"Service name","fn":"nhn-servicename"},
+{"header":"Year","fn":"nhn-year-raw"},
+{"header":"Service type","fn":"nhn-service-type"}
+]

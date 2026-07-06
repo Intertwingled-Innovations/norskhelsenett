@@ -1,0 +1,41 @@
+title: $:/plugins/forms/export
+tags: $:/tags/Global
+
+\whitespace trim
+\function forms-title() [<currentTiddler>]
+
+\procedure forms-export(set,columns,filename,limit,caption,rowlabel)
+<$let coljson={{{ [<columns>get[text]] }}} total={{{ [subfilter<set>count[]] }}}>
+<div class="forms-export">
+<p class="forms-export-actions">
+<a class="tc-btn-invisible forms-export-download" href={{{ [subfilter<set>] +[forms-csv<columns>] +[forms-datauri[text/csv]] }}} download=<<filename>>>{{$:/core/images/download-button}} <$text text={{{ [<caption>!is[blank]else[Download CSV]] }}}/></a>
+<span class="forms-export-count"><<total>>&#32;<$text text={{{ [<rowlabel>!is[blank]else[rows]] }}}/><% if [<total>compare:number:gt<limit>] %>&#32;(preview&#32;<<limit>>)<% endif %></span>
+</p>
+<table class="forms-export-table">
+<thead>
+<tr><$list filter="[<coljson>jsonindexes[]]" variable="ci"><th><$text text={{{ [<coljson>jsonget<ci>,[header]] }}}/></th></$list></tr>
+</thead>
+<tbody>
+<$list filter="[subfilter<set>limit<limit>]" variable="row">
+<$let currentTiddler=<<row>>>
+<tr><$list filter="[<coljson>jsonindexes[]]" variable="ci"><$let fn={{{ [<coljson>jsonget<ci>,[fn]] }}}><td><$text text={{{ [function<fn>first[]] }}}/></td></$let></$list></tr>
+</$let>
+</$list>
+</tbody>
+</table>
+</div>
+</$let>
+\end
+
+! forms-export
+
+`<<forms-export set columns filename limit caption rowlabel>>` — renders a download-CSV link plus a preview table for an export.
+
+* `set` — a filter selecting the rows.
+* `columns` — title of a JSON data tiddler: an array of `{"header","fn"}` (`fn` is a projection-function name).
+* `filename` — download file name.
+* `limit` — max preview rows (the download always contains all rows).
+* `caption` — download-link label (default `Download CSV`).
+* `rowlabel` — noun for the row count (default `rows`).
+
+Two selectors + two column specs give two different exports with no code difference (the keystone `export = (set, columns)`). The engine carries no domain strings; captions are passed in.

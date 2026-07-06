@@ -40,3 +40,14 @@ code-body: yes
 	padding-left: 1.35em;
 	white-space: nowrap;
 }
+
+.forms-export-actions { margin: 0.5em 0; }
+.forms-export-count { color: <<colour muted-foreground>>; margin-left: 1em; }
+.forms-export-table { border-collapse: collapse; font-size: 0.85em; margin-top: 0.5em; }
+.forms-export-table th, .forms-export-table td {
+	border: 1px solid <<colour tab-border>>;
+	padding: 2px 6px;
+	text-align: left;
+	vertical-align: top;
+}
+.forms-export-table th { background: <<colour tab-background>>; white-space: nowrap; }

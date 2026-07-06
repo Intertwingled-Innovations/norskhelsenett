@@ -1,0 +1,25 @@
+title: $:/plugins/nhn/projections
+tags: $:/tags/Global
+
+\whitespace trim
+\define nhn-permalink-prefix() https://tiddlywiki.plattform.nhn.no/#
+\define nhn-extract-service-types() [[Ekstern tjeneste]] [[Ekstern Tjeneste]] [[Intern tjeneste]] [[Intern Tjeneste]] [[Relatert tjeneste]] [[Relatert Tjeneste]] [[Tiltak]] [[Satsning for fart]]
+\function nhn-serviceid() [<currentTiddler>get[TjenesteID]]
+\function nhn-url() [<currentTiddler>encodeuricomponent[]addprefix<nhn-permalink-prefix>]
+\function nhn-division() [<currentTiddler>tags[]] :filter[tag[Divisjon]!tag[Domene]]
+\function nhn-servicename() [<currentTiddler>tags[]] :filter[function[nhn-is-service]] :else[<currentTiddler>function[nhn-is-service]then<currentTiddler>]
+\function nhn-severity() [<currentTiddler>tags[]prefix[Forretningsmessig endring:]]
+\function nhn-governance-type() [<currentTiddler>tags[]prefix[Styring ]]
+\function nhn-service-type() [<currentTiddler>tags[]] :intersection[enlist<nhn-extract-service-types>]
+
+Projection functions (tiddler → value) for the §3.3 extracts and reused by §3.4/3.5/3.6.
+
+* `nhn-serviceid` — the `TjenesteID` field.
+* `nhn-url` — permalink: base URL + `#` + URI-encoded title.
+* `nhn-division` — the division tag (`Divisjon …`, excluding `Domene …`).
+* `nhn-servicename` — the service this tiddler is about: its service-entity tag, or its own title if it is itself a service.
+* `nhn-severity` — the `Forretningsmessig endring:N` tag (business change).
+* `nhn-governance-type` — the `Styring …` governance tag.
+* `nhn-service-type` — the bare service-type tag (Ekstern/Intern/Relatert tjeneste, Tiltak, Satsning for fart).
+
+(`nhn-year` / `nhn-month` live in [[$:/plugins/nhn/review]].)

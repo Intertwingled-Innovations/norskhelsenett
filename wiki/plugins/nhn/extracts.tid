@@ -1,0 +1,13 @@
+title: $:/plugins/nhn/extracts
+tags: $:/tags/Global
+
+\whitespace trim
+\function nhn-match-year() [<extract-year>is[blank]then<currentTiddler>] [<currentTiddler>tag<extract-year>]
+\function nhn-match-month() [<extract-month>is[blank]then<currentTiddler>] [<currentTiddler>function[nhn-month]match<extract-month>then<currentTiddler>]
+\function nhn-extract-governance-set() [enlist<nhn-governance-tags>tagging[]unique[]] :filter[function[nhn-match-year]] :filter[function[nhn-match-month]]
+\function nhn-extract-services-set() [enlist<nhn-extract-service-types>tagging[]unique[]] :filter[function[nhn-match-year]]
+
+Selectors for the two §3.3 extracts, narrowed by the `extract-year` / `extract-month` variables (blank = no constraint).
+
+* Extract 1 — `nhn-extract-governance-set`: tiddlers tagged any `Styring …` governance tag; filterable by year and month.
+* Extract 2 — `nhn-extract-services-set`: tiddlers tagged any service-type tag; filterable by year.

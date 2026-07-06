@@ -2,11 +2,25 @@ title: $:/plugins/nhn/styles
 tags: $:/tags/Stylesheet
 code-body: yes
 
-.nhn-nav-toolbar {
-	width: 100%;
-	margin: 0 0 0.5em 0;
-	border-collapse: collapse;
+.nhn-nav-menu {
+	list-style: none;
+	margin: 0 0 0.75em 0;
+	padding: 0 0 0.5em 0;
 	border-bottom: 1px solid <<colour tab-border>>;
 }
-.nhn-nav-toolbar td { padding: 0.25em 0.4em; }
-.nhn-nav-toolbar svg { width: 1em; height: 1em; vertical-align: text-bottom; fill: <<colour muted-foreground>>; }
+.nhn-nav-menu li { margin: 0; padding: 0; }
+.nhn-nav-menu a.tc-tiddlylink {
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+	padding: 0.35em 0.5em;
+	border-radius: 4px;
+	color: <<colour sidebar-tiddler-link-foreground>>;
+}
+.nhn-nav-menu a.tc-tiddlylink:hover {
+	background: <<colour tab-background>>;
+	text-decoration: none;
+}
+.nhn-nav-menu svg { width: 1.1em; height: 1.1em; flex: 0 0 auto; fill: <<colour muted-foreground>>; }
+
+.nhn-extract-filters { margin: 0.75em 0; }

@@ -1,0 +1,40 @@
+title: Eksport
+caption: Eksport
+
+\whitespace trim
+
+! Eksport
+
+Eksporter til CSV (åpnes i Excel; UTF-8 med BOM). Filtrer på år/måned før nedlasting — nedlastingen følger filteret.
+
+!! Styringsstruktur (Extract 1)
+
+Tiddlere tagget med en `Styring …`-tagg.
+
+<$let extract-year={{$:/state/nhn/extract/gov/year}} extract-month={{$:/state/nhn/extract/gov/month}}>
+<div class="nhn-extract-filters">
+År: <$select tiddler="$:/state/nhn/extract/gov/year">
+<option value="">(alle år)</option>
+<$list filter="[enlist<nhn-governance-tags>tagging[]] :map:flat[function[nhn-year]] +[regexp[^\d{4}$]unique[]sort[]]"><option><$text text=<<currentTiddler>>/></option></$list>
+</$select>
+&nbsp;&nbsp;Måned: <$select tiddler="$:/state/nhn/extract/gov/month">
+<option value="">(alle måneder)</option>
+<$list filter="[enlist<nhn-month-keys>] :map[[$:/plugins/nhn/month-names]getindex<currentTiddler>]"><option><$text text=<<currentTiddler>>/></option></$list>
+</$select>
+</div>
+<<forms-export "[function[nhn-extract-governance-set]]" "$:/plugins/nhn/extracts/governance-columns" "nhn-styringsstruktur.csv" "50" "Last ned CSV" "rader">>
+</$let>
+
+!! Tjenestetyper (Extract 2)
+
+Tiddlere tagget med en tjenestetype-tagg (Ekstern/Intern/Relatert tjeneste, Tiltak, Satsning for fart).
+
+<$let extract-year={{$:/state/nhn/extract/svc/year}} extract-month="">
+<div class="nhn-extract-filters">
+År: <$select tiddler="$:/state/nhn/extract/svc/year">
+<option value="">(alle år)</option>
+<$list filter="[enlist<nhn-extract-service-types>tagging[]] :map:flat[function[nhn-year]] +[regexp[^\d{4}$]unique[]sort[]]"><option><$text text=<<currentTiddler>>/></option></$list>
+</$select>
+</div>
+<<forms-export "[function[nhn-extract-services-set]]" "$:/plugins/nhn/extracts/services-columns" "nhn-tjenestetyper.csv" "50" "Last ned CSV" "rader">>
+</$let>

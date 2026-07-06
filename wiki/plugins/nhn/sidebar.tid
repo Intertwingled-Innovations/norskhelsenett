@@ -5,12 +5,9 @@ list-before:
 
 \whitespace trim
 
-<table class="nhn-nav-toolbar">
-<tbody>
-<tr>
-<td><$link to="Anomolies">{{$:/core/images/warning}} Anomolies</$link></td>
-</tr>
-</tbody>
-</table>
+<ul class="nhn-nav-menu">
+<li><$link to="Anomolies">{{$:/core/images/warning}} Anomolier</$link></li>
+<li><$link to="Eksport">{{$:/core/images/download-button}} Eksport</$link></li>
+</ul>
 
 <<tabs tabsList:"[all[shadows+tiddlers]tag[$:/tags/nhn/NavTab]]" default:"$:/plugins/nhn/ui/nav/governance" state:"$:/state/nhn/nav-tab">>

@@ -1,0 +1,14 @@
+title: $:/plugins/nhn/extracts/governance-columns
+type: application/json
+
+[
+{"header":"Name","fn":"forms-title"},
+{"header":"ServiceID","fn":"nhn-serviceid"},
+{"header":"URL","fn":"nhn-url"},
+{"header":"Division","fn":"nhn-division"},
+{"header":"Service name","fn":"nhn-servicename"},
+{"header":"Year","fn":"nhn-year-raw"},
+{"header":"Month","fn":"nhn-month-raw"},
+{"header":"Business change","fn":"nhn-severity"},
+{"header":"Governance type","fn":"nhn-governance-type"}
+]

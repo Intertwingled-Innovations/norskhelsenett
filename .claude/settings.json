@@ -15,7 +15,10 @@
       "Bash(awk '/forms-tree.*children/{f=1} f&&/border-left:/{print; f=0}' /tmp/nhn-render/page.css)",
       "Bash(awk '/\\\\.tc-sidebar-scrollable \\\\{/,/\\\\}/' themes/tiddlywiki/vanilla/base.tid)",
       "Bash(awk '/\\\\.tc-sidebar-lists \\\\{/,/\\\\}/' themes/tiddlywiki/vanilla/base.tid)",
-      "Bash(sed -n '457,463p' themes/tiddlywiki/vanilla/base.tid)"
+      "Bash(sed -n '457,463p' themes/tiddlywiki/vanilla/base.tid)",
+      "Bash(sed -n '1,40p' core/ui/Buttons/export-tiddler.tid)",
+      "Bash(sed -n \"/makeDataUri = function/,/^};/p\" core/modules/utils/utils.js)",
+      "Bash(xxd)"
     ],
     "additionalDirectories": [
       "/private/tmp/nhn-render"
