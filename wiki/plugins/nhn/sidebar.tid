@@ -6,6 +6,7 @@ list-before:
 \whitespace trim
 
 <ul class="nhn-nav-menu">
+<li><$link to="Tjenesteeiere">{{$:/core/images/edit-button}} Tjenesteeiere</$link></li>
 <li><$link to="Anomolies">{{$:/core/images/warning}} Anomolier</$link></li>
 <li><$link to="Eksport">{{$:/core/images/download-button}} Eksport</$link></li>
 </ul>

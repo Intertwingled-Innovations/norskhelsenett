@@ -33,3 +33,18 @@ code-body: yes
 	right: 0;
 	height: 4px;
 }
+
+/* Service Owner (Tjenesteeier) capture */
+.nhn-owner-field { margin: 0.4em 0 0.2em; }
+.nhn-owner-label { font-weight: 600; margin-right: 0.4em; }
+.nhn-owner-input {
+	border: 1px solid <<colour tab-border>>;
+	border-radius: 4px;
+	padding: 2px 6px;
+	min-width: 12em;
+	font: inherit;
+}
+.nhn-owner-summary { color: <<colour muted-foreground>>; margin: 0.5em 0; }
+.nhn-owner-table { border-collapse: collapse; }
+.nhn-owner-table th,
+.nhn-owner-table td { border: 1px solid <<colour tab-border>>; padding: 3px 8px; text-align: left; }

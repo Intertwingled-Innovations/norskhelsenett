@@ -1,0 +1,10 @@
+title: $:/plugins/intertwingled-innovations/nhn/ui/ViewTemplate/owner
+tags: $:/tags/ViewTemplate
+list-after: $:/core/ui/ViewTemplate/tags
+
+\whitespace trim
+<% if [<currentTiddler>function[nhn-kind]match[service]] %>
+<div class="nhn-owner-field">
+<span class="nhn-owner-label">Tjenesteeier:</span> <$edit-text tiddler=<<currentTiddler>> field=<<nhn-owner-field>> tag="input" default="" placeholder="(ingen tjenesteeier)" class="nhn-owner-input"/>
+</div>
+<% endif %>

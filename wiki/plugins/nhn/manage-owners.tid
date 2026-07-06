@@ -1,0 +1,28 @@
+title: Tjenesteeiere
+caption: Tjenesteeiere
+
+\whitespace trim
+
+! Tjenesteeiere
+
+Sett tjenesteeier for hver tjeneste. Endringene lagres direkte på tjeneste-tiddleren (krever en redigerbar wiki / server). Tjenesteeier brukes til å gruppere tjenester og til å generere ToDo-lister (§3.5/§3.6).
+
+<div class="nhn-owner-summary">Tjenester med tjenesteeier: <$count filter="[function[nhn-services]] :filter[has<nhn-owner-field>]"/> / <$count filter="[function[nhn-services]]"/></div>
+
+<table class="nhn-owner-table">
+<thead>
+<tr><th>Tjeneste</th><th>ServiceID</th><th>Forretningsområde</th><th>Tjenesteeier</th></tr>
+</thead>
+<tbody>
+<$list filter="[function[nhn-services]sort[title]]" variable="svc">
+<$let currentTiddler=<<svc>>>
+<tr>
+<td><$link to=<<svc>>/></td>
+<td><$text text={{{ [function[nhn-serviceid]] }}}/></td>
+<td><$text text={{{ [function[nhn-business-unit]first[]] }}}/></td>
+<td><$edit-text tiddler=<<svc>> field=<<nhn-owner-field>> tag="input" placeholder="(ingen)" class="nhn-owner-input"/></td>
+</tr>
+</$let>
+</$list>
+</tbody>
+</table>
