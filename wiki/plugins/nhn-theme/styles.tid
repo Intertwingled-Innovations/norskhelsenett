@@ -26,8 +26,27 @@ code-body: yes
 }
 .tc-tiddler-body h1 { border-bottom: 2px solid <<colour tab-border>>; padding-bottom: 0.2em; }
 
-/* Site title (sidebar header) */
-.tc-site-title { font-weight: 700; letter-spacing: -0.01em; }
+/* NHN wordmark (site title + subtitle in the sidebar header) */
+.tc-site-title {
+	font-size: 1.5em;
+	font-weight: 700;
+	letter-spacing: -0.015em;
+	line-height: 1.1;
+}
+.tc-site-subtitle { color: <<colour muted-foreground>>; font-size: 0.95em; }
+
+/* Card-style tiddlers: rounded corners + a subtle lift, no border
+   (so the coloured type-bar sits flush at the very top edge) */
+.tc-tiddler-frame {
+	border: none;
+	border-radius: 8px;
+	box-shadow: 0 1px 3px rgba(0, 41, 32, 0.07);
+}
+/* Match the type-bar's top corners to the rounded frame */
+.nhn-typebar {
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
 
 /* Selected tab: bright accent highlight across the top (inset = no layout shift) */
 .tc-tab-buttons button.tc-tab-selected {
