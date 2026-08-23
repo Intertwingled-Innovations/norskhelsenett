@@ -91,8 +91,10 @@ exports["forms-search"] = function(source, operator, options) {
 		results = [];
 	source(function(tiddler, title) {
 		if(terms.length === 0) {
-			// An empty query filters nothing, matching the core search operator
-			results.push(title);
+			// An empty query matches everything, so its inverse matches nothing
+			if(!invert) {
+				results.push(title);
+			}
 			return;
 		}
 		var haystack = fields.map(function(field) {

@@ -73,8 +73,25 @@ h.test("blank year and month place no constraint", function() {
 	var w = h.wiki(),
 		unfiltered = w.filter("[function[nhn-extract-governance-set]]",
 			{"extract-year": "", "extract-month": ""}),
-		everything = w.filter("[enlist<nhn-governance-tags>tagging[]unique[]]");
+		everything = w.filter("[enlist<nhn-governance-tags>tagging[]unique[]] -[function[nhn-excluded]]");
 	assert.deepEqual(unfiltered.sort(), everything.sort());
+});
+
+/*
+The MAL review template carries the same governance, year and month tags as a
+real review — that is what makes it a usable template. Exporting it as a data
+row is the exact "stale copy mistaken for content" failure the brief exists to
+stop, so the extracts must subtract the `mal` set like every other selector.
+*/
+h.test("the untouched template is never a data row", function() {
+	var w = h.wiki(),
+		rows = w.filter("[function[nhn-extract-governance-set]]",
+			{"extract-year": "", "extract-month": ""}),
+		templates = w.filter("[[mal]tagging[]]");
+	assert.ok(templates.length > 0, "no template in the snapshot, so the exclusion is untested");
+	templates.forEach(function(title) {
+		assert.ok(rows.indexOf(title) === -1, title + " is exported as a data row");
+	});
 });
 
 h.test("filtering narrows monotonically", function() {

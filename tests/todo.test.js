@@ -16,9 +16,9 @@ var h = require("./harness.js"),
 
 /* The contract the generic to-do engine expects a page to have bound. */
 function period(wiki, year, month, priorTitles) {
-	var reviews = wiki.filter("[function[nhn-reviews]] :filter[function[nhn-year]match<y>] :filter[function[nhn-month]match<m>]",
+	var reviews = wiki.filter("[function[nhn-reviews-all]] :filter[function[nhn-year]match<y>] :filter[function[nhn-month]match<m>]",
 			{y: year, m: month}),
-		yearReviews = wiki.filter("[function[nhn-reviews]] :filter[function[nhn-year]match<y>]", {y: year});
+		yearReviews = wiki.filter("[function[nhn-reviews-all]] :filter[function[nhn-year]match<y>]", {y: year});
 	return rollUp(wiki, {
 		"todo-items": reviews.map(list).join(" "),
 		"todo-year-items": yearReviews.map(list).join(" "),
@@ -28,20 +28,15 @@ function period(wiki, year, month, priorTitles) {
 	});
 }
 
-/* Reduce the period into the three membership sets, exactly as a page does.
-   The engine expects these bound; deriving a status per row instead is quadratic. */
+/* Reduce the period into the three membership sets, exactly as a page does —
+   by calling the same engine functions the pages call, so the precedence
+   subtraction lives in one place (forms/todo.tid) rather than being pinned a
+   second time here. */
 function rollUp(wiki, vars) {
-	var raw = {};
-	["done", "copy", "template"].forEach(function(state) {
-		raw[state] = wiki.filter("[function[forms-todo-with-state],<s>]",
-			Object.assign({s: state}, vars));
+	["done-set", "copy-set", "template-set"].forEach(function(fn) {
+		var state = fn.split("-")[0];
+		vars["todo-set-" + state] = wiki.filter("[function[forms-todo-" + fn + "]]", vars).map(list).join(" ");
 	});
-	var without = function(set, others) {
-		return set.filter(function(m) { return others.indexOf(m) === -1; });
-	};
-	vars["todo-set-done"] = raw.done.map(list).join(" ");
-	vars["todo-set-copy"] = without(raw.copy, raw.done).map(list).join(" ");
-	vars["todo-set-template"] = without(raw.template, raw.done.concat(raw.copy)).map(list).join(" ");
 	return vars;
 }
 
@@ -155,6 +150,47 @@ h.test("a review copied from the previous period is caught", function() {
 	}
 });
 
+/*
+Archiving hides content from navigation, extracts and summaries, but the ToDo
+lists answer "was the work done" — a question archiving must not be able to lie
+about. Both nhn-reviews-all and nhn-objectives-all keep archived items, and the
+ToDo pages read those, not the archived-subtracting base selectors.
+*/
+h.test("archiving a review does not turn its status back to missing", function() {
+	var w = h.fixtureWiki(),
+		made = "09 Autentisering og autorisasjon - hovedtrekk og endringer september 2026";
+	w.addTiddler({title: made, tags: "Styring [[Styring Ekstern tjeneste]] [[Divisjon Helsepersonell]] " +
+		"2026 September [[Autentisering og autorisasjon]] Arkiv",
+		text: "Arkivert innhold."});
+	try {
+		var vars = period(w, "2026", "September");
+		assert.equal(statusOf(w, vars, "Autentisering og autorisasjon"), "done",
+			"an archived review was reported as missing");
+	} finally {
+		w.$tw.wiki.deleteTiddler(made);
+	}
+});
+
+h.test("archiving the prior period does not blind copy detection", function() {
+	var w = h.fixtureWiki(),
+		prior = "01 Autentisering og autorisasjon - hovedtrekk og endringer januar 2026",
+		made = "10 Autentisering og autorisasjon - hovedtrekk og endringer oktober 2026";
+	assert.ok(w.exists(prior), "fixture is missing");
+	w.addTiddler({title: made, tags: "Styring [[Styring Ekstern tjeneste]] [[Divisjon Helsepersonell]] " +
+		"2026 Oktober [[Autentisering og autorisasjon]]",
+		text: w.$tw.wiki.getTiddlerText(prior)});
+	var priorTags = w.$tw.wiki.getTiddler(prior).fields.tags;
+	w.$tw.wiki.setText(prior, "tags", null, priorTags.concat(["Arkiv"]));
+	try {
+		var vars = period(w, "2026", "Oktober", [prior]);
+		assert.equal(statusOf(w, vars, "Autentisering og autorisasjon"), "copy",
+			"an archived prior review no longer counted as a copy source");
+	} finally {
+		w.$tw.wiki.deleteTiddler(made);
+		w.$tw.wiki.setText(prior, "tags", null, priorTags);
+	}
+});
+
 h.suite("ToDo population");
 
 h.test("the reporting services are a subset of the services", function() {
@@ -199,14 +235,16 @@ h.test("the summary counts account for every service exactly once", function() {
 
 h.suite("Owner import");
 
+/*
+Invokes the page's own nhn-owner-apply-lines procedure — the button on
+Tjenesteeiere transcludes the same procedure — so a change to the separator
+regexp or the self-name guard on the page is exactly what this test exercises,
+rather than a hand-copied reimplementation of it.
+*/
 h.test("pasted owners are applied to known services and unknown names skipped", function() {
 	var w = h.fixtureWiki(),
 		apply = '<$let known={{{ [enlist<names>] :intersection[function[nhn-services]] +[format:titlelist[]join[ ]] }}}>' +
-			'<$list filter="[enlist<lines>]" variable="line">' +
-			'<$let svc={{{ [<line>splitregexp[\\t|;]first[]trim[]] }}} owner={{{ [<line>splitregexp[\\t|;]last[]trim[]] }}}>' +
-			'<% if [<svc>] :intersection[enlist<known>] :filter[<owner>!is[blank]] :filter[<owner>!match<svc>] %>' +
-			'<$action-setfield $tiddler=<<svc>> $field=<<nhn-owner-field>> $value=<<owner>>/>' +
-			'<% endif %></$let></$list></$let>',
+			'<$transclude $variable="nhn-owner-apply-lines" lines=<<lines>> known=<<known>>/></$let>',
 		lines = "[[Etterkontroll;Ola Hansen]] [[Finnes Ikke;Per Berg]]",
 		names = "Etterkontroll [[Finnes Ikke]]";
 	// Restore rather than delete: Etterkontroll is a real service in the snapshot
@@ -225,8 +263,8 @@ h.suite("OKR ToDo");
 /* The OKR list is the same engine with a different period, item set and
    attribution — no template, because objectives are not seeded from one. */
 function okrPeriod(wiki, year) {
-	var items = wiki.filter("[function[nhn-objectives]] :filter[function[nhn-year]match<y>]", {y: year}),
-		prior = wiki.filter("[function[nhn-objectives]] :filter[function[nhn-year]match<y>]",
+	var items = wiki.filter("[function[nhn-objectives-all]] :filter[function[nhn-year]match<y>]", {y: year}),
+		prior = wiki.filter("[function[nhn-objectives-all]] :filter[function[nhn-year]match<y>]",
 			{y: String(Number(year) - 1)});
 	return rollUp(wiki, {
 		"todo-items": items.map(list).join(" "),
@@ -252,11 +290,34 @@ h.test("an active service with no objective is missing", function() {
 	assert.equal(statusOf(w, vars, without), "missing");
 });
 
-h.test("with no template configured nothing is ever read as unwritten", function() {
+h.test("with no template configured only an empty item reads as unwritten", function() {
 	var w = h.wiki(),
-		vars = okrPeriod(w, "2026");
-	// todo-template is blank for OKRs, so the template state must never fire
-	assert.deepEqual(w.filter("[function[forms-todo-with-state],[template]]", vars), []);
+		vars = okrPeriod(w, "2026"),
+		// todo-template is blank for OKRs, so `template` can only mean "text is empty"
+		blank = w.filter("[enlist<todo-items>] :filter[get[text]trim[]!is[blank]count[]match[0]] :map:flat[function[nhn-servicename]] +[unique[]sort[]]", vars);
+	assert.deepEqual(w.filter("[function[forms-todo-with-state],[template]] +[sort[]]", vars), blank);
+});
+
+/*
+An item whose text is blank is not written work. Without an explicit guard the
+state derivation falls through to `done` — the template and copy checks both
+require non-blank text — so someone who created an objective and deleted the
+seeded text would silence the ToDo list.
+*/
+h.test("an empty item is unwritten, not done", function() {
+	var w = h.fixtureWiki(),
+		service = "Autentisering og autorisasjon",
+		title = "Test målsetting uten innhold";
+	assert.deepEqual(w.filter("[function[nhn-objectives]] :filter[function[nhn-year]match[2031]]"), [],
+		"2031 already has objectives, pick another year");
+	w.addTiddler({title: title, tags: "Målsetting 2031 [[" + service + "]]", text: ""});
+	try {
+		var vars = okrPeriod(w, "2031");
+		assert.equal(statusOf(w, vars, service), "template",
+			"a blank objective was read as written work");
+	} finally {
+		w.$tw.wiki.deleteTiddler(title);
+	}
 });
 
 /*
@@ -316,6 +377,34 @@ function summaryOf(wiki, page) {
 	assert.ok(numbers.length >= 4, "could not read the summary from " + page + ": " + line);
 	return {line: line, total: +numbers[0], rest: numbers.slice(1).map(Number)};
 }
+
+/*
+Archiving is reachable only through the rendered page (todo-year-items/
+todo-items are bound there, not by the generic engine tests above), so this is
+the only test that would catch the page reverting to the archived-subtracting
+selector.
+*/
+h.test("archiving a reported service does not make the review page overshoot", function() {
+	var w = h.fixtureWiki(),
+		made = "11 Autentisering og autorisasjon - hovedtrekk og endringer november 2026";
+	w.addTiddler({title: made, tags: "Styring [[Styring Ekstern tjeneste]] [[Divisjon Helsepersonell]] " +
+		"2026 November [[Autentisering og autorisasjon]] Arkiv",
+		text: "Arkivert innhold."});
+	try {
+		w.$tw.wiki.setText("$:/state/nhn/todo/year", "text", null, "2026");
+		w.$tw.wiki.setText("$:/state/nhn/todo/month", "text", null, "November");
+		w.$tw.wiki.setText("$:/state/nhn/todo/scope", "text", null, "aktive");
+		var s = summaryOf(w, "ToDo forretningsgjennomgang"),
+			sum = s.rest.reduce(function(a, b) { return a + b; }, 0);
+		assert.equal(sum, s.total, "the statuses add up to " + sum + " of " + s.total + ": " + s.line);
+		var html = w.render("{{ToDo forretningsgjennomgang}}"),
+			row = (html.match(/<tr>(?:(?!<\/tr>)[\s\S])*Autentisering og autorisasjon[\s\S]*?<\/tr>/) || [""])[0];
+		assert.ok(/nhn-status-ok/.test(row),
+			"the service with an archived review did not read as done: " + row);
+	} finally {
+		w.$tw.wiki.deleteTiddler(made);
+	}
+});
 
 h.test("the review page's counts partition its population", function() {
 	var w = h.wiki();

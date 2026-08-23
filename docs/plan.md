@@ -141,6 +141,8 @@ A **Rediger strukturert** button on any tiddler whose kind has a form ([kind-for
 
 > new tags = (the tiddler's tags − the tags the form would have produced when it loaded) + the tags it produces now
 
+The subtraction is case-insensitive: the `from` filters read values back in canonical casing, so an exact subtraction would miss a drifted variant of the same tag and a no-op save would add the canonical tag alongside it. Removing case variants means saving through the form replaces the drifted tag instead.
+
 replacing only what the form is responsible for. Fields outside the definition are untouched, and a filter that comes out blank leaves the existing value alone.
 
 **Renaming.** Changing an input that feeds the title — the month of a monthly review — renames via `tm-rename-tiddler`, which relinks tags and lists. That is essential here: parent↔child links are made by tagging the parent's *title*, so a plain retitle would orphan every child. A rename onto an occupied title is refused rather than merging two tiddlers.

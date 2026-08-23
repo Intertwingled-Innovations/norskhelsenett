@@ -5,7 +5,7 @@ caption: Tjeneste
 
 {
 	"caption": "Tjeneste",
-	"description": "En tjeneste i styringsstrukturen. Tjenesteeier brukes til gruppering og til ToDo-listene.",
+	"description": "En tjeneste i styringsstrukturen. Tjenesteeier brukes til gruppering og til ToDo-listene. År er valgfritt: flere eksisterende tjenester mangler årstag, og et påkrevd felt som dataene selv bryter ville blokkert redigering av dem.",
 	"inputs": [
 		{
 			"name": "title",
@@ -26,7 +26,7 @@ caption: Tjeneste
 			"name": "servicetype",
 			"label": "Tjenestetype",
 			"type": "select",
-			"options": "[[Ekstern tjeneste]] [[Intern tjeneste]] [[Relatert tjeneste]]",
+			"options": "[enlist<nhn-canonical-tjeneste-types>]",
 			"required": "yes",
 			"from": "[<forms-target>] :map:flat[function[nhn-service-type]] +[first[]]"
 		},
@@ -48,8 +48,7 @@ caption: Tjeneste
 			"label": "År",
 			"type": "select",
 			"options": "[function[nhn-form-years]]",
-			"required": "yes",
-			"from": "[<forms-target>tags[]regexp[^\\d{4}$]first[]]"
+			"from": "[<forms-target>] :map:flat[function[nhn-year-raw]] +[first[]]"
 		}
 	],
 	"title": "$:/plugins/intertwingled-innovations/nhn/forms/title-plain",

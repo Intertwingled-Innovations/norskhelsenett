@@ -19,7 +19,7 @@ list-before:
 <div class="nhn-scope">
 <label>Periode:&#32;<$select tiddler="$:/config/nhn/active-year" default="alle">
 <option value="alle">Alle år</option>
-<$list filter="[all[tiddlers]tags[]regexp[^\d{4}$]unique[]sort[]]"><option><$text text=<<currentTiddler>>/></option></$list>
+<$list filter="[function[nhn-form-years]]"><option><$text text=<<currentTiddler>>/></option></$list>
 </$select></label>
 </div>
 

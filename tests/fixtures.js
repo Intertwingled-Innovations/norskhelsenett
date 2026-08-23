@@ -45,5 +45,3 @@ exports.install = function(wiki) {
 		wiki.addTiddler(fields);
 	});
 };
-
-exports.titles = TIDDLERS.map(function(t) { return t.title; });

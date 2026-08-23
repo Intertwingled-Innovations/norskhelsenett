@@ -20,7 +20,7 @@ Sidebar-fanen har i tillegg fire navigasjonstrær — Styringsstruktur, Forretni
 
 !! What it supplies to the engine
 
-* ''Selectors'' — the sets behind each view: `nhn-services`, `nhn-reviews`, `nhn-deliveries`, `nhn-objectives`, `nhn-results`, and the two extract sets. Every one of them subtracts archived content and the `mal` template.
+* ''Selectors'' — the sets behind each view: `nhn-services`, `nhn-reviews`, `nhn-deliveries`, `nhn-objectives`, `nhn-results`, and the two extract sets. Every one of them subtracts archived content and the `mal` template — except `nhn-reviews-all` / `nhn-objectives-all`, which keep archived content and feed the ToDo lists, so archiving a year cannot falsify its history.
 * ''Projections'' — the shared column and group-key vocabulary: `nhn-serviceid`, `nhn-url`, `nhn-division`, `nhn-servicename`, `nhn-severity`, `nhn-governance-type`, `nhn-service-type`, `nhn-year`, `nhn-month`, `nhn-years`, `nhn-months`, `nhn-owner`.
 * ''Relations'' — `nhn-gov-children`, which walks NHN → forretningsområde → tjeneste and the intentions beneath them.
 * ''Form definitions'' — one per kind, plus the functions that derive what the forms do not ask for: choosing a service settles its `TjenesteID`, its division tag and its `Styring …` tag.

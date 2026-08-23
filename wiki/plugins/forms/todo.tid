@@ -4,16 +4,18 @@ tags: $:/tags/Global
 \whitespace trim
 \function forms-todo-items() [enlist<todo-items>] :filter[function<todo-attribution>match<todo-member>]
 \function forms-todo-item() [function[forms-todo-items]first[]]
-\function forms-todo-states() [function[forms-todo-items]] :map[function[forms-todo-state]] +[unique[]]
 \function forms-todo-prior-texts() [enlist<todo-prior-items>] :map[get[text]trim[]]
 \function forms-todo-is-template() [<todo-template>!is[blank]] :map[get[text]trim[]] :intersection[<currentTiddler>get[text]trim[]]
 \function forms-todo-is-copy() [<currentTiddler>get[text]trim[]!is[blank]] :intersection[function[forms-todo-prior-texts]]
-\function forms-todo-state() [<currentTiddler>function[forms-todo-is-template]then[template]] :else[<currentTiddler>function[forms-todo-is-copy]then[copy]] :else[[done]]
+\function forms-todo-state() [<currentTiddler>get[text]trim[]!is[blank]count[]match[0]then[template]] :else[<currentTiddler>function[forms-todo-is-template]then[template]] :else[<currentTiddler>function[forms-todo-is-copy]then[copy]] :else[[done]]
 \function forms-todo-in(set) [<todo-member>] :intersection[enlist<set>]
 \function forms-todo-status() [function[forms-todo-in],<todo-set-done>then[done]] :else[function[forms-todo-in],<todo-set-copy>then[copy]] :else[function[forms-todo-in],<todo-set-template>then[template]] :else[[missing]]
 \function forms-todo-covered-in(items) [enlist<items>] :map:flat[function<todo-attribution>] +[unique[]]
 \function forms-todo-covered() [function[forms-todo-covered-in],<todo-items>]
 \function forms-todo-with-state(state) [enlist<todo-items>] :filter[function[forms-todo-state]match<state>] :map:flat[function<todo-attribution>] +[unique[]]
+\function forms-todo-done-set() [function[forms-todo-with-state],[done]]
+\function forms-todo-copy-set() [function[forms-todo-with-state],[copy]] -[function[forms-todo-done-set]]
+\function forms-todo-template-set() [function[forms-todo-with-state],[template]] -[function[forms-todo-done-set]] -[function[forms-todo-copy-set]]
 
 ! forms-todo
 
@@ -32,7 +34,7 @@ tags: $:/tags/Global
 
 |!State |!Meaning |
 |`missing` |No item for this member and period |
-|`template` |An item exists, but its text is still the template's |
+|`template` |An item exists, but its text is still the template's — or empty |
 |`copy` |Its text is identical to something from the preceding period |
 |`done` |An item exists with content of its own |
 
@@ -44,12 +46,12 @@ Comparison is exact, never fuzzy. A near-copy with one word changed reads as `do
 
 One service files one review a month, but it may hold four objectives in a year. So a member's status is the **best** state among its items — one real objective means the year is covered, whatever the other three look like. Precedence runs `done` > `copy` > `template` > `missing`.
 
-A page evaluates `forms-todo-with-state` once per state, subtracts the higher-precedence sets, and binds the results as `todo-set-done`, `todo-set-copy` and `todo-set-template`. `forms-todo-status` then answers a row by set membership, and a member lands in exactly one bucket — without the subtraction a service with one written objective and one copied from last year would be counted twice and the summary would exceed the population.
+`forms-todo-done-set`, `forms-todo-copy-set` and `forms-todo-template-set` are the three disjoint sets, already subtracted by precedence — a page binds them directly as `todo-set-done`, `todo-set-copy` and `todo-set-template` without repeating the subtraction. `forms-todo-status` then answers a row by set membership, and a member lands in exactly one bucket — without the subtraction a service with one written objective and one copied from last year would be counted twice and the summary would exceed the population. The subtraction lives here, once, rather than in every page (and every test) that needs the three sets.
 
-Hoisting matters here. Deriving each row's status from scratch is quadratic — 48 services against 165 objectives, each comparing its text with every objective from the year before — and cost about a second and a half. Evaluating the three sets once, and subtracting rather than re-deriving, brings it to roughly a third of that.
+Hoisting matters here. Deriving each row's status from scratch is quadratic — 48 services against 165 objectives, each comparing its text with every objective from the year before — and cost about a second and a half. Evaluating `forms-todo-with-state` once per state, rather than re-deriving per row, brings it to roughly a third of that.
 
 !! Rolling up
 
-`forms-todo-covered` and `forms-todo-in-state` reduce the whole period in one pass. `forms-todo-covered-in` takes any list, which is how a page derives a population — "the members that filed anything at all this year" — from the same attribution rule, so a summary need not re-derive a status per member. Passing the population through both, and subtracting `forms-todo-covered` for the missing, partitions it exactly.
+`forms-todo-covered` and `forms-todo-with-state` reduce the whole period in one pass. `forms-todo-covered-in` takes any list, which is how a page derives a population — "the members that filed anything at all this year" — from the same attribution rule, so a summary need not re-derive a status per member. Passing the population through the three `-set` functions, and subtracting `forms-todo-covered` for the missing, partitions it exactly.
 
 The state names are identifiers, not labels; a configuration layer maps them to whatever the reader should see.

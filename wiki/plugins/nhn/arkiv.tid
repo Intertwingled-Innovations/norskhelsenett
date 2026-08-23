@@ -15,31 +15,41 @@ Bare periodisk innhold kan arkiveres — forretningsgjennomganger, leveranser, m
 <div class="nhn-arkiv-controls">
 <label>Til og med år:&#32;<$select tiddler="$:/state/nhn/arkiv/year">
 <option value="">(velg år)</option>
-<$list filter="[all[tiddlers]tags[]regexp[^\d{4}$]unique[]sort[]]"><option><$text text=<<currentTiddler>>/></option></$list>
+<$list filter="[function[nhn-form-years]]"><option><$text text=<<currentTiddler>>/></option></$list>
 </$select></label>
 </div>
 
 <% if [<year>!is[blank]] %>
-<$let n={{{ [function[nhn-archivable]count[]] }}}>
+<$let arch={{{ [function[nhn-archivable]] +[format:titlelist[]join[ ]] }}}
+	n={{{ [enlist<arch>count[]] }}}>
 <% if [<n>match[0]] %>
-<p class="nhn-arkiv-none">Ingenting å arkivere til og med <$text text=<<year>>/>.</p>
+<p class="nhn-arkiv-none">Ingenting å arkivere til og med&#32;<$text text=<<year>>/>.</p>
 <% else %>
+<$let r-review={{{ [enlist<arch>] :intersection[function[nhn-reviews]] +[format:titlelist[]join[ ]] }}}
+	r-deliv={{{ [enlist<arch>] :intersection[function[nhn-deliveries]] -[enlist<r-review>] +[format:titlelist[]join[ ]] }}}
+	r-obj={{{ [enlist<arch>] :intersection[function[nhn-objectives]] -[enlist<r-review>] -[enlist<r-deliv>] +[format:titlelist[]join[ ]] }}}
+	r-res={{{ [enlist<arch>] :intersection[function[nhn-results]] -[enlist<r-review>] -[enlist<r-deliv>] -[enlist<r-obj>] +[format:titlelist[]join[ ]] }}}
+	r-other={{{ [enlist<arch>] -[enlist<r-review>] -[enlist<r-deliv>] -[enlist<r-obj>] -[enlist<r-res>] +[format:titlelist[]join[ ]] }}}>
 <table class="nhn-arkiv-table">
 <tbody>
-<tr><td>Forretningsgjennomganger</td><td><$count filter="[function[nhn-archivable]] :intersection[function[nhn-reviews]]"/></td></tr>
-<tr><td>Leveranser</td><td><$count filter="[function[nhn-archivable]] :intersection[function[nhn-deliveries]]"/></td></tr>
-<tr><td>Målsettinger</td><td><$count filter="[function[nhn-archivable]] :intersection[function[nhn-objectives]]"/></td></tr>
-<tr><td>Resultater</td><td><$count filter="[function[nhn-archivable]] :intersection[function[nhn-results]]"/></td></tr>
+<tr><td>Forretningsgjennomganger</td><td><$text text={{{ [enlist<r-review>count[]] }}}/></td></tr>
+<tr><td>Leveranser</td><td><$text text={{{ [enlist<r-deliv>count[]] }}}/></td></tr>
+<tr><td>Målsettinger</td><td><$text text={{{ [enlist<r-obj>count[]] }}}/></td></tr>
+<tr><td>Resultater</td><td><$text text={{{ [enlist<r-res>count[]] }}}/></td></tr>
+<% if [enlist<r-other>count[]!match[0]] %>
+<tr><td>Annet periodisk innhold</td><td><$text text={{{ [enlist<r-other>count[]] }}}/></td></tr>
+<% endif %>
 <tr><th>Til sammen</th><th><$text text=<<n>>/></th></tr>
 </tbody>
 </table>
 
-<p class="nhn-arkiv-warning">Dette skriver til <$text text=<<n>>/> tiddlere. På en server betyr det like mange filskrivinger, så det tar litt tid. Tiddlere som også er tagget et senere år, røres ikke.</p>
+<p class="nhn-arkiv-warning">Dette skriver til&#32;<$text text=<<n>>/>&#32;tiddlere. På en server betyr det like mange filskrivinger, så det tar litt tid. Tiddlere som også er tagget et senere år, røres ikke. Hver tiddler telles i én rad; «Annet periodisk innhold» er styringstagget innhold uten månedstag.</p>
 
 <$button class="tc-btn-big-green">
-<$list filter="[function[nhn-archivable]]"><$action-listops $tiddler=<<currentTiddler>> $tags=<<nhn-archive-tag>>/></$list>
-Arkiver <$text text=<<n>>/> tiddlere
+<$list filter="[enlist<arch>]"><$action-listops $tiddler=<<currentTiddler>> $tags=<<nhn-archive-tag>>/></$list>
+Arkiver&#32;<$text text=<<n>>/>&#32;tiddlere
 </$button>
+</$let>
 <% endif %>
 </$let>
 <% endif %>
@@ -51,10 +61,10 @@ Arkiver <$text text=<<n>>/> tiddlere
 <% if [<archived>match[0]] %>
 <p class="nhn-arkiv-none">Ingenting er arkivert.</p>
 <% else %>
-<p><$text text=<<archived>>/> tiddlere er arkivert, fordelt på år:</p>
+<p><$text text=<<archived>>/>&#32;tiddlere er arkivert, fordelt på år:</p>
 <div class="nhn-arkiv-years">
 <$list filter="[function[nhn-archived]] :map:flat[function[nhn-year-raw]] +[unique[]sort[]]" variable="y">
-<div><$text text=<<y>>/>: <$count filter="[function[nhn-archived]] :filter[<currentTiddler>tag<y>]"/></div>
+<div><$text text=<<y>>/>:&#32;<$count filter="[function[nhn-archived]] :filter[<currentTiddler>tag<y>]"/></div>
 </$list>
 </div>
 <$button class="tc-btn-invisible nhn-arkiv-restore">

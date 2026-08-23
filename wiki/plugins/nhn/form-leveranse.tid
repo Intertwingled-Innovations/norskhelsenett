@@ -35,7 +35,7 @@ caption: Leveranse
 			"type": "select",
 			"options": "[function[nhn-form-years]]",
 			"required": "yes",
-			"from": "[<forms-target>tags[]regexp[^\\d{4}$]first[]]"
+			"from": "[<forms-target>] :map:flat[function[nhn-year-raw]] +[first[]]"
 		},
 		{
 			"name": "month",

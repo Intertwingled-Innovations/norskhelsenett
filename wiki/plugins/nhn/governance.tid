@@ -2,6 +2,7 @@ title: $:/plugins/intertwingled-innovations/nhn/governance
 tags: $:/tags/Global
 
 \whitespace trim
+\define nhn-canonical-tjeneste-types() [[Ekstern tjeneste]] [[Intern tjeneste]] [[Relatert tjeneste]]
 \define nhn-tjeneste-types() [[Ekstern Tjeneste]] [[Ekstern tjeneste]] [[Intern tjeneste]] [[Intern Tjeneste]] [[Relatert tjeneste]] [[Relatert Tjeneste]]
 \define nhn-gov-root-filter() [[Norsk Helsenett SF]]
 \function nhn-is-service() [<currentTiddler>tags[]] :intersection[enlist<nhn-tjeneste-types>] +[limit[1]]
@@ -15,7 +16,8 @@ tags: $:/tags/Global
 
 Global functions forNHN governance configuration.
 
-* `nhn-tjeneste-types` — service-type tag set used by the governance tree (the three "tjeneste" variants, incl. casing drift). Distinct from the full Extract-2 service-type set, which also includes `Tiltak`/`Satsning for fart` (NHN-level initiatives).
+* `nhn-canonical-tjeneste-types` — the three service types in their canonical casing; what the Tjeneste form offers, so guided creation never mints a drift variant.
+* `nhn-tjeneste-types` — service-type tag set used by the governance tree: the canonical three //plus// their casing-drift variants, because the snapshot uses both. Distinct from the full Extract-2 service-type set, which also includes `Tiltak`/`Satsning for fart` (NHN-level initiatives).
 * `nhn-gov-root-filter` — root of the Styringsstruktur.
 * `nhn-is-service` / `nhn-is-division` — kind tests used to dispatch children (a division is tagged `Divisjon` but not `Domene`).
 * `nhn-structural-children` — sub-divisions + services tagged the current node (NHN → divisions → services).

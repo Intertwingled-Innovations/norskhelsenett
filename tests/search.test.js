@@ -119,6 +119,20 @@ h.test("an empty query filters nothing", function() {
 		w.filter("[all[tiddlers]!is[system]count[]]")[0]);
 });
 
+/*
+The complement invariant must hold for the empty query too. An empty query
+matches everything, so its inverse matches nothing; a UI filter using
+`!forms-search` with a not-yet-typed query must show nothing, not the whole wiki.
+*/
+h.test("an inverted empty query matches nothing", function() {
+	var w = h.wiki(),
+		all = w.filter("[all[tiddlers]!is[system]count[]]")[0] | 0,
+		hits = w.filter("[all[tiddlers]!is[system]forms-search:title[]count[]]")[0] | 0,
+		inverted = w.filter("[all[tiddlers]!is[system]!forms-search:title[]count[]]")[0] | 0;
+	assert.equal(inverted, 0);
+	assert.equal(hits + inverted, all);
+});
+
 h.test("the operator can be inverted and can search other fields", function() {
 	var w = h.wiki(),
 		all = w.filter("[all[tiddlers]!is[system]count[]]")[0] | 0,

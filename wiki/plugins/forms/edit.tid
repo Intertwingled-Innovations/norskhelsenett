@@ -5,6 +5,7 @@ tags: $:/tags/Global
 
 \function forms-edit-state(target) [<target>addprefix[$:/state/forms/edit/]]
 \function forms-edit-original(state) [<state>addsuffix[/original]]
+\function forms-tag-loaded(tags) [<currentTiddler>lowercase[]] :intersection[enlist<tags>lowercase[]]
 
 \procedure forms-load-actions(def,target,state)
 <$let forms-def-json={{{ [<def>get[text]] }}} forms-target=<<target>> origstate={{{ [function[forms-edit-original],<state>] }}}>
@@ -35,7 +36,7 @@ tags: $:/tags/Global
 <$wikify name="forms-raw-title" text={{{ [<forms-def-json>jsonget[title]get[text]] }}} mode="inline" output="text">
 <$let newtitle={{{ [<forms-raw-title>trim[]] }}}
 	newtags={{{ [<forms-def-json>jsonget[tags]] :map:flat[subfilter<currentTiddler>] +[format:titlelist[]join[ ]] }}}>
-<$let mergedtags={{{ [<target>tags[]] -[enlist<oldtags>] [enlist<newtags>] +[unique[]format:titlelist[]join[ ]] }}}
+<$let mergedtags={{{ [<target>tags[]] :filter[function[forms-tag-loaded],<oldtags>count[]match[0]] [enlist<newtags>] +[unique[]format:titlelist[]join[ ]] }}}
 	titleok={{{ [<newtitle>!is[blank]match<target>] [<newtitle>!is[blank]!is[tiddler]] +[first[]] }}}>
 <% if [<target>is[tiddler]] :filter[<titleok>!is[blank]] :filter[function[forms-missing-names]count[]match[0]] %>
 <$action-setfield $tiddler=<<target>> $field="tags" $value=<<mergedtags>>/>
@@ -124,6 +125,8 @@ An input with no `from` simply starts blank.
 > new tags = (the tiddler's tags − the tags the form would have produced when it loaded) + the tags it produces now
 
 which replaces only what the form is actually responsible for.
+
+The subtraction is case-insensitive. The `from` filters read values back in canonical casing, so on a tiddler whose stored tag has drifted (`budget` where the canonical tag is `Budget`) an exact subtraction would miss the stored variant and saving would add the canonical tag //alongside// it — manufacturing precisely the casing drift structured editing exists to prevent. Removing case variants of the loaded tags means a save through the form replaces the drifted tag with its canonical form instead.
 
 **Fields outside the definition are untouched**, and a field whose filter comes out blank is left as it was rather than being emptied.
 

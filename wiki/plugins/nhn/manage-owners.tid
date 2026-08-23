@@ -7,7 +7,7 @@ caption: Tjenesteeiere
 
 Sett tjenesteeier for hver tjeneste. Endringene lagres direkte på tjeneste-tiddleren (krever en redigerbar wiki / server). Tjenesteeier brukes til å gruppere tjenester og til å generere ToDo-lister (§3.5/§3.6).
 
-<div class="nhn-owner-summary">Tjenester med tjenesteeier: <$count filter="[function[nhn-services]] :filter[has<nhn-owner-field>]"/> / <$count filter="[function[nhn-services]]"/></div>
+<div class="nhn-owner-summary">Tjenester med tjenesteeier:&#32;<$count filter="[function[nhn-services]] :filter[has<nhn-owner-field>]"/>&#32;/&#32;<$count filter="[function[nhn-services]]"/></div>
 
 !! Lim inn fra regneark
 
@@ -22,17 +22,11 @@ Lim inn to kolonner — tjenestenavn og tjenesteeier — atskilt med tabulator e
 <% if [enlist<names>count[]compare:number:gt[0]] %>
 <div class="nhn-owner-import">
 <$button class="tc-btn-big-green">
-<$list filter="[enlist<lines>]" variable="line">
-<$let svc={{{ [<line>splitregexp[\t|;]first[]trim[]] }}} owner={{{ [<line>splitregexp[\t|;]last[]trim[]] }}}>
-<% if [<svc>] :intersection[enlist<known>] :filter[<owner>!is[blank]] :filter[<owner>!match<svc>] %>
-<$action-setfield $tiddler=<<svc>> $field=<<nhn-owner-field>> $value=<<owner>>/>
-<% endif %>
-</$let>
-</$list>
+<$transclude $variable="nhn-owner-apply-lines" lines=<<lines>> known=<<known>>/>
 <$action-deletetiddler $tiddler="$:/state/nhn/owners/paste"/>
 Sett tjenesteeiere
 </$button>
-<span class="nhn-owner-import-count"><$text text={{{ [enlist<known>count[]] }}}/> av <$text text={{{ [enlist<names>count[]] }}}/> navn treffer en tjeneste</span>
+<span class="nhn-owner-import-count"><$text text={{{ [enlist<known>count[]] }}}/>&#32;av&#32;<$text text={{{ [enlist<names>count[]] }}}/>&#32;navn treffer en tjeneste</span>
 </div>
 <% if [enlist<unknown>count[]compare:number:gt[0]] %>
 <div class="nhn-owner-unmatched">

@@ -2,7 +2,7 @@ title: $:/plugins/intertwingled-innovations/nhn/deliveries
 tags: $:/tags/Global
 
 \whitespace trim
-\function nhn-deliveries() [[Leveranse]tagging[]] -[[mal]tagging[]] -[function[nhn-archived]]
+\function nhn-deliveries() [[Leveranse]tagging[]] -[function[nhn-excluded]]
 
 Configuration for the deliveries (Leveranser) group-by tree.
 

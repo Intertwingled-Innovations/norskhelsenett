@@ -4,17 +4,23 @@ tags: $:/tags/Global
 \whitespace trim
 \define nhn-archive-tag() Arkiv
 \function nhn-archived() [<nhn-archive-tag>tagging[]]
+\function nhn-templates() [[mal]tagging[]]
+\function nhn-excluded() [function[nhn-templates]] [function[nhn-archived]] +[unique[]]
 \function nhn-active-year() [[$:/config/nhn/active-year]get[text]] :else[[alle]]
 \function nhn-in-year-scope() [function[nhn-active-year]match[alle]then<currentTiddler>] [<currentTiddler>function[nhn-year-raw]count[]match[0]then<currentTiddler>] [<currentTiddler>tag{$:/config/nhn/active-year}]
 \function nhn-max-year() [<currentTiddler>tags[]regexp[^\d{4}$]sort[]last[]]
-\function nhn-periodic() [enlist<nhn-governance-tags>tagging[]unique[]] [function[nhn-deliveries]] [function[nhn-objectives]] [function[nhn-results]] +[unique[]] -[[mal]tagging[]] -[function[nhn-services]] -[function[nhn-archived]]
+\function nhn-periodic() [enlist<nhn-governance-tags>tagging[]unique[]] [function[nhn-deliveries]] [function[nhn-objectives]] [function[nhn-results]] +[unique[]] -[function[nhn-excluded]] -[function[nhn-services]]
 \function nhn-archivable() [function[nhn-periodic]] :filter[function[nhn-max-year]compare:number:lteq{$:/state/nhn/arkiv/year}]
 
 Periodisation and archiving (brief §3.7). Two separate mechanisms, deliberately.
 
 !! Archiving — a tag, and every selector honours it
 
-`nhn-archived` is everything carrying the configurable `Arkiv` tag, and each base selector subtracts it. Archiving is therefore reversible by untagging, destroys nothing, and needs no second wiki. The tag is applied in bulk from [[Arkiv]].
+`nhn-archived` is everything carrying the configurable `Arkiv` tag. Archiving is therefore reversible by untagging, destroys nothing, and needs no second wiki. The tag is applied in bulk from [[Arkiv]].
+
+`nhn-excluded` is the one definition of "not content": archived tiddlers (`nhn-archived`) plus the `mal` templates (`nhn-templates`). Every base selector — and both extract sets — subtracts this single function rather than carrying its own copy of the exclusion, so a new exclusion (a draft tag, a second template) is one edit here, not a hunt through every filter expression.
+
+The one place archived content still counts is the ToDo lists: they answer "was the work done", and archiving a year must not turn its history into "Mangler" or blind the copy detection across the archive boundary. So `nhn-reviews-all` / `nhn-objectives-all` subtract only the templates, and the ToDo pages read those, while everything user-facing reads the archived-subtracting base selectors.
 
 Only the **period-bearing kinds** can be archived — `nhn-periodic`: everything carrying a governance tag, plus deliveries, objectives and results. Services, divisions and templates are structural: they belong to no single year and hiding them would break the governance tree rather than tidy it.
 

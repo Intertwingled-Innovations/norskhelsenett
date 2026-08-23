@@ -14,7 +14,7 @@ tags: $:/tags/Global
 <$wikify name="forms-raw-title" text={{{ [<forms-def-json>jsonget[title]get[text]] }}} mode="inline" output="text">
 <$let newtitle={{{ [<forms-raw-title>trim[]] }}} stamp=<<now "[UTC]YYYY0MM0DD0hh0mm0ss0XXX">>>
 <% if [<newtitle>!is[blank]!is[tiddler]] :filter[function[forms-missing-names]count[]match[0]] %>
-<$action-setfield $tiddler=<<newtitle>> $field="text" $value={{{ [<forms-def-json>jsonget[body]get[text]] }}}/>
+<$action-setfield $tiddler=<<newtitle>> $field="text" $value={{{ [<forms-def-json>jsonget[body]] :map:flat[subfilter<currentTiddler>] }}}/>
 <$action-setfield $tiddler=<<newtitle>> $field="tags" $value={{{ [<forms-def-json>jsonget[tags]] :map:flat[subfilter<currentTiddler>] +[format:titlelist[]join[ ]] }}}/>
 <$action-setfield $tiddler=<<newtitle>> $field="created" $value=<<stamp>>/>
 <$action-setfield $tiddler=<<newtitle>> $field="modified" $value=<<stamp>>/>
@@ -110,7 +110,7 @@ Values are held as //indexes// rather than fields so that an input may be called
   "title": "<tiddler>",          // wikitext template rendered to produce the title
   "tags": "<filter>",            // produces the tag list
   "fields": [{"name": "…", "filter": "<filter>"}],
-  "body": "<tiddler>"            // its text seeds the new tiddler
+  "body": "<filter>"             // produces the text that seeds the new tiddler
 }
 ```
 

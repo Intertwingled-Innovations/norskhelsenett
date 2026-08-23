@@ -2,6 +2,9 @@ title: $:/plugins/intertwingled-innovations/nhn/form-functions
 tags: $:/tags/Global
 
 \whitespace trim
+\define nhn-ny-form-state() $:/state/nhn/ny/form
+\function nhn-form-state(def) [<def>split[/]last[]addprefix[$:/state/nhn/form/]]
+\function nhn-form-def(kind) [[$:/plugins/intertwingled-innovations/nhn/kind-forms]getindex<kind>]
 \function nhn-form-service() [<forms-state>getindex[service]]
 \function nhn-form-serviceid() [function[nhn-form-service]get[TjenesteID]]
 \function nhn-form-division() [function[nhn-form-service]] :map[function[nhn-division]]
@@ -14,6 +17,8 @@ tags: $:/tags/Global
 \function nhn-form-months() [enlist<nhn-month-keys>] :map[[$:/plugins/intertwingled-innovations/nhn/month-names]getindex<currentTiddler>]
 
 Values the guided-creation forms derive from what the user picked, rather than asking for. Each reads the form's state tiddler through `forms-state`, the variable the `forms` engine binds while evaluating a definition.
+
+The plumbing shared by every place that opens a form: `nhn-form-def(kind)` looks a kind up in the [[kind-forms|$:/plugins/intertwingled-innovations/nhn/kind-forms]] table, `nhn-form-state(def)` derives the state-tiddler title a definition uses, and `nhn-ny-form-state` is where the Ny page keeps the chosen definition. The ToDo pages pre-fill a form by writing into exactly these tiddlers — through these functions, so renaming a definition cannot silently strand a pre-fill in a state tiddler the Ny page never reads.
 
 Choosing a service settles most of a monthly review:
 

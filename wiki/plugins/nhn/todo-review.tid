@@ -16,11 +16,13 @@ caption: ToDo gjennomgang
 <$link to=<<review>>>Åpne</$link>
 <% else %>
 <$button class="tc-btn-invisible nhn-todo-create">
-<$action-setfield $tiddler="$:/state/nhn/form/review" $index="service" $value=<<svc>>/>
-<$action-setfield $tiddler="$:/state/nhn/form/review" $index="year" $value=<<todo-year>>/>
-<$action-setfield $tiddler="$:/state/nhn/form/review" $index="month" $value=<<todo-month>>/>
-<$action-setfield $tiddler="$:/state/nhn/ny/form" text="$:/plugins/intertwingled-innovations/nhn/forms/review"/>
+<$let def={{{ [function[nhn-form-def],[review]] }}} fstate={{{ [function[nhn-form-state],<def>] }}}>
+<$action-setfield $tiddler=<<fstate>> $index="service" $value=<<svc>>/>
+<$action-setfield $tiddler=<<fstate>> $index="year" $value=<<todo-year>>/>
+<$action-setfield $tiddler=<<fstate>> $index="month" $value=<<todo-month>>/>
+<$action-setfield $tiddler=<<nhn-ny-form-state>> text=<<def>>/>
 <$action-navigate $to="Ny"/>
+</$let>
 {{$:/core/images/new-button}}&#32;Opprett
 </$button>
 <% endif %>
@@ -41,18 +43,15 @@ Tjenester som mangler månedens forretningsgjennomgang. «Kun mal» betyr at gje
 	todo-scope={{{ [[$:/state/nhn/todo/scope]get[text]] :else[[aktive]] }}}>
 <$let todo-ord={{{ [<todo-month>lowercase[]] :map[[$:/plugins/intertwingled-innovations/nhn/months]getindex<currentTiddler>] }}}>
 <$let prevnum={{{ [<todo-ord>subtract[1]] }}}>
-<$let todo-prev-month={{{ [function[nhn-form-months]] :filter[function[nhn-month-ord]compare:number:eq<prevnum>] :else[[Desember]] }}}
+<$let todo-prev-month={{{ [function[nhn-form-months]] :filter[function[nhn-month-ord]compare:number:eq<prevnum>] :else[function[nhn-form-months]last[]] }}}
 	todo-prev-year={{{ [<prevnum>compare:number:gt[0]then<todo-year>] :else[<todo-year>subtract[1]] }}}>
-<$let todo-year-items={{{ [function[nhn-reviews]] :filter[function[nhn-year]match<todo-year>] +[format:titlelist[]join[ ]] }}}>
+<$let todo-year-items={{{ [function[nhn-reviews-all]] :filter[function[nhn-year]match<todo-year>] +[format:titlelist[]join[ ]] }}}>
 <$let todo-items={{{ [enlist<todo-year-items>] :filter[function[nhn-month]match<todo-month>] +[format:titlelist[]join[ ]] }}}
-	todo-prior-items={{{ [function[nhn-reviews]] :filter[function[nhn-year]match<todo-prev-year>] :filter[function[nhn-month]match<todo-prev-month>] +[format:titlelist[]join[ ]] }}}
+	todo-prior-items={{{ [function[nhn-reviews-all]] :filter[function[nhn-year]match<todo-prev-year>] :filter[function[nhn-month]match<todo-prev-month>] +[format:titlelist[]join[ ]] }}}
 	reporting={{{ [function[forms-todo-covered-in],<todo-year-items>] +[format:titlelist[]join[ ]] }}}>
-<$let raw-done={{{ [function[forms-todo-with-state],[done]] +[format:titlelist[]join[ ]] }}}
-	raw-copy={{{ [function[forms-todo-with-state],[copy]] +[format:titlelist[]join[ ]] }}}
-	raw-template={{{ [function[forms-todo-with-state],[template]] +[format:titlelist[]join[ ]] }}}>
-<$let todo-set-done=<<raw-done>>
-	todo-set-copy={{{ [enlist<raw-copy>] -[enlist<raw-done>] +[format:titlelist[]join[ ]] }}}
-	todo-set-template={{{ [enlist<raw-template>] -[enlist<raw-done>] -[enlist<raw-copy>] +[format:titlelist[]join[ ]] }}}>
+<$let todo-set-done={{{ [function[forms-todo-done-set]] +[format:titlelist[]join[ ]] }}}
+	todo-set-copy={{{ [function[forms-todo-copy-set]] +[format:titlelist[]join[ ]] }}}
+	todo-set-template={{{ [function[forms-todo-template-set]] +[format:titlelist[]join[ ]] }}}>
 <$let svc-all={{{ [function[nhn-services]sort[title]] +[format:titlelist[]join[ ]] }}}
 	svc-active={{{ [function[nhn-services]] :intersection[enlist<reporting>] +[sort[title]format:titlelist[]join[ ]] }}}>
 <$let services={{{ [<todo-scope>match[alle]then<svc-all>else<svc-active>] }}}>
@@ -65,7 +64,7 @@ Tjenester som mangler månedens forretningsgjennomgang. «Kun mal» betyr at gje
 <$list filter="[function[nhn-form-months]]"><option><$text text=<<currentTiddler>>/></option></$list>
 </$select></label>
 <label>Omfang:&#32;<$select tiddler="$:/state/nhn/todo/scope" default="aktive">
-<option value="aktive">Tjenester som rapporterer i <$text text=<<todo-year>>/></option>
+<option value="aktive">Tjenester som rapporterer i&#32;<$text text=<<todo-year>>/></option>
 <option value="alle">Alle tjenester</option>
 </$select></label>
 </div>
@@ -76,11 +75,11 @@ Tjenester som mangler månedens forretningsgjennomgang. «Kun mal» betyr at gje
 	n-kopi={{{ [enlist<services>] :intersection[enlist<todo-set-copy>] +[count[]] }}}
 	n-mangler={{{ [enlist<services>] -[function[forms-todo-covered]] +[count[]] }}}>
 <div class="nhn-todo-summary">
-<$text text=<<n-total>>/> tjenester ·
-<span class="nhn-status-ok"><$text text=<<n-ok>>/> skrevet</span> ·
-<span class="nhn-status-template"><$text text=<<n-mal>>/> kun mal</span> ·
-<span class="nhn-status-copy"><$text text=<<n-kopi>>/> kopi</span> ·
-<span class="nhn-status-missing"><$text text=<<n-mangler>>/> mangler</span>
+<$text text=<<n-total>>/>&#32;tjenester&#32;·&#32;
+<span class="nhn-status-ok"><$text text=<<n-ok>>/>&#32;skrevet</span>&#32;·&#32;
+<span class="nhn-status-template"><$text text=<<n-mal>>/>&#32;kun mal</span>&#32;·&#32;
+<span class="nhn-status-copy"><$text text=<<n-kopi>>/>&#32;kopi</span>&#32;·&#32;
+<span class="nhn-status-missing"><$text text=<<n-mangler>>/>&#32;mangler</span>
 </div>
 </$let>
 
@@ -95,8 +94,8 @@ Tjenester som mangler månedens forretningsgjennomgang. «Kun mal» betyr at gje
 </table>
 <% endif %>
 
-<% if [function[nhn-services]] :filter[has[tjenesteeier]] :else[[none]] +[match[none]] %>
+<% if [function[nhn-services]] :filter[has<nhn-owner-field>] :else[[none]] +[match[none]] %>
 <p class="nhn-todo-hint">Ingen tjenester har tjenesteeier ennå, så eierkolonnen er tom. Sett eiere på [[Tjenesteeiere]].</p>
 <% endif %>
 
-</$let></$let></$let></$let></$let></$let></$let></$let></$let></$let></$let>
+</$let></$let></$let></$let></$let></$let></$let></$let></$let></$let>

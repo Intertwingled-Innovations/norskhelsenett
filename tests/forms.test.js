@@ -57,8 +57,10 @@ h.test("every template a definition points at exists", function() {
 		assert.ok(w.exists(def.title), title + " names the title template \"" + def.title +
 			"\", which does not exist — the form would produce a blank title");
 		if(def.body) {
-			assert.ok(w.exists(def.body), title + " seeds its body from \"" + def.body +
-				"\", which does not exist");
+			// body is a filter producing the seed text, so a renamed template
+			// cannot silently blank every new tiddler
+			assert.ok(w.filter(def.body).join("").length > 0, title + " seeds its body from \"" +
+				def.body + "\", a filter that produces no text");
 		}
 	});
 });
@@ -145,7 +147,9 @@ h.test("the body is seeded from the template", function() {
 		month: "August", severity: "1"});
 	try {
 		var text = w.$tw.wiki.getTiddlerText(made),
-			template = w.$tw.wiki.getTiddlerText(w.data(REVIEW).body);
+			// the definition finds the template by its `mal` tag, not by title,
+			// so renaming the template cannot break seeding
+			template = w.$tw.wiki.getTiddlerText(w.filter("[function[nhn-template-text]]")[0]);
 		assert.equal(text, template, "the new review did not start from the template");
 		// but it must not inherit the template's `mal` tag, or it would look like a template
 		assert.deepEqual(w.project("nhn-kind", made), ["review"]);
@@ -315,6 +319,33 @@ h.test("opening and saving without changes leaves the tiddler alone", function()
 	assert.deepEqual(tagsOf(w, target), before, "a round trip through the form changed the tags");
 	assert.equal(JSON.stringify(w.$tw.wiki.getTiddler(target).fields.TjenesteID), fieldsBefore);
 	assert.ok(w.exists(target), "the tiddler was renamed by a no-op save");
+});
+
+/*
+The snapshot's real drift: reviews tagged a lowercase month where the canonical
+tag is capitalised. The `from` filters read values back canonically, so an exact
+old-tags subtraction misses the stored variant and a no-op save would add the
+canonical tag alongside it — manufacturing the very anomaly the wiki flags.
+Saving through the form must replace the drifted tag, not duplicate it.
+*/
+h.test("a no-op save normalises a drifted tag instead of duplicating it", function() {
+	var w = h.fixtureWiki(),
+		target = "11 Autentisering og autorisasjon - hovedtrekk og endringer november 2026";
+	assert.ok(!w.exists(target), "the snapshot already has this review, pick another month");
+	w.addTiddler({title: target,
+		tags: "2026 november [[Styring Ekstern tjeneste]] [[Divisjon Helsepersonell]] [[Autentisering og autorisasjon]]",
+		text: "Egen tekst for driftstesten."});
+	try {
+		var form = open(w, REVIEW, target);
+		form.save();
+		var after = tagsOf(w, target);
+		assert.ok(after.indexOf("Mars") === -1, "a month the tiddler never had appeared");
+		assert.ok(after.indexOf("November") !== -1, "the canonical month tag was not written");
+		assert.ok(after.indexOf("november") === -1,
+			"the drifted month tag survived alongside the canonical one");
+	} finally {
+		w.$tw.wiki.deleteTiddler(target);
+	}
 });
 
 h.test("tags the form knows nothing about are preserved", function() {

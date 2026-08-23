@@ -11,7 +11,7 @@ tags: $:/tags/Global
 \function nhn-severity() [<currentTiddler>tags[]prefix[Forretningsmessig endring:]]
 \function nhn-governance-type() [<currentTiddler>tags[]prefix[Styring ]]
 \function nhn-service-type() [<currentTiddler>tags[]] :intersection[enlist<nhn-extract-service-types>]
-\function nhn-years() [<currentTiddler>tags[]regexp[^\d{4}$]unique[]sort[]join[, ]]
+\function nhn-years() [function[nhn-year-raw]unique[]sort[]join[, ]]
 \function nhn-months() [function[nhn-month-raw]unique[]] :sort[function[nhn-month-ord]] +[join[, ]]
 
 Projection functions (tiddler → value) for the §3.3 extracts and reused by §3.4/3.5/3.6.

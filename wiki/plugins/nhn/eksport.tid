@@ -15,7 +15,7 @@ Tiddlere tagget med en `Styring …`-tagg.
 <div class="nhn-extract-filters">
 År: <$select tiddler="$:/state/nhn/extract/gov/year">
 <option value="">(alle år)</option>
-<$list filter="[enlist<nhn-governance-tags>tagging[]] :map:flat[function[nhn-year]] +[regexp[^\d{4}$]unique[]sort[]]"><option><$text text=<<currentTiddler>>/></option></$list>
+<$list filter="[function[nhn-form-years]]"><option><$text text=<<currentTiddler>>/></option></$list>
 </$select>
 &nbsp;&nbsp;Måned: <$select tiddler="$:/state/nhn/extract/gov/month">
 <option value="">(alle måneder)</option>
@@ -33,7 +33,7 @@ Tiddlere tagget med en tjenestetype-tagg (Ekstern/Intern/Relatert tjeneste, Tilt
 <div class="nhn-extract-filters">
 År: <$select tiddler="$:/state/nhn/extract/svc/year">
 <option value="">(alle år)</option>
-<$list filter="[enlist<nhn-extract-service-types>tagging[]] :map:flat[function[nhn-year]] +[regexp[^\d{4}$]unique[]sort[]]"><option><$text text=<<currentTiddler>>/></option></$list>
+<$list filter="[function[nhn-form-years]]"><option><$text text=<<currentTiddler>>/></option></$list>
 </$select>
 </div>
 <<forms-export "[function[nhn-extract-services-set]]" "$:/plugins/intertwingled-innovations/nhn/extracts/services-columns" "nhn-tjenestetyper.csv" "50" "Last ned CSV" "rader">>
