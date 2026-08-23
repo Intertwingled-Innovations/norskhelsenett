@@ -1,0 +1,3 @@
+title: $:/plugins/intertwingled-innovations/nhn/forms/title-review
+
+<$text text={{{ [function[nhn-form-month-ord]] }}}/> <$text text={{{ [<forms-state>getindex[service]] }}}/> - hovedtrekk og endringer <$text text={{{ [<forms-state>getindex[month]lowercase[]] }}}/> <$text text={{{ [<forms-state>getindex[year]] }}}/>

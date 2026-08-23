@@ -48,3 +48,40 @@ code-body: yes
 .nhn-owner-table { border-collapse: collapse; }
 .nhn-owner-table th,
 .nhn-owner-table td { border: 1px solid <<colour tab-border>>; padding: 3px 8px; text-align: left; }
+
+/* Guided creation (Ny) */
+.nhn-form-picker { margin: 1em 0; }
+.nhn-form-description { color: <<colour muted-foreground>>; font-style: italic; }
+.nhn-edit-action { margin: 0.5em 0; }
+.nhn-edit-button { color: <<colour muted-foreground>>; }
+.nhn-edit-button svg { width: 1em; height: 1em; fill: <<colour muted-foreground>>; vertical-align: text-bottom; }
+.nhn-edit-panel {
+	margin: 1em 0;
+	padding: 0.75em 1em;
+	border: 1px solid <<colour muted-foreground>>;
+	border-radius: 6px;
+}
+
+/* ToDo: forretningsgjennomgang */
+.nhn-todo-controls { display: flex; flex-wrap: wrap; gap: 1.25em; align-items: center; margin: 1em 0 0.5em 0; }
+.nhn-todo-summary { margin: 0.5em 0 1em 0; color: <<colour muted-foreground>>; }
+.nhn-todo-summary span { white-space: nowrap; }
+.nhn-todo-table { width: 100%; border-collapse: collapse; }
+.nhn-todo-table th { text-align: left; }
+.nhn-todo-table td, .nhn-todo-table th { padding: 0.3em 0.6em; border-bottom: 1px solid <<colour table-border>>; }
+.nhn-todo-hint, .nhn-todo-empty { color: <<colour muted-foreground>>; font-style: italic; }
+.nhn-todo-create svg { width: 1em; height: 1em; fill: currentColor; vertical-align: text-bottom; }
+.nhn-status-ok { color: #015945; }
+.nhn-status-template { color: #e85800; }
+.nhn-status-copy { color: #e85800; }
+.nhn-status-missing { color: #6b1e27; font-weight: bold; }
+
+/* Periodisering og arkiv */
+.nhn-scope { margin: 0 0 0.75em 0; font-size: 0.9em; }
+.nhn-arkiv-controls { margin: 1em 0; }
+.nhn-arkiv-table { border-collapse: collapse; margin: 0.5em 0; }
+.nhn-arkiv-table td, .nhn-arkiv-table th { padding: 0.2em 1.2em 0.2em 0; text-align: left; }
+.nhn-arkiv-warning { color: #e85800; }
+.nhn-arkiv-none { color: <<colour muted-foreground>>; font-style: italic; }
+.nhn-arkiv-years { margin: 0.5em 0; }
+.nhn-arkiv-restore { color: <<colour muted-foreground>>; text-decoration: underline; }

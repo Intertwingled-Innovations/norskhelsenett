@@ -11,6 +11,8 @@ tags: $:/tags/Global
 \function nhn-severity() [<currentTiddler>tags[]prefix[Forretningsmessig endring:]]
 \function nhn-governance-type() [<currentTiddler>tags[]prefix[Styring ]]
 \function nhn-service-type() [<currentTiddler>tags[]] :intersection[enlist<nhn-extract-service-types>]
+\function nhn-years() [<currentTiddler>tags[]regexp[^\d{4}$]unique[]sort[]join[, ]]
+\function nhn-months() [function[nhn-month-raw]unique[]] :sort[function[nhn-month-ord]] +[join[, ]]
 
 Projection functions (tiddler → value) for the §3.3 extracts and reused by §3.4/3.5/3.6.
 
@@ -21,5 +23,12 @@ Projection functions (tiddler → value) for the §3.3 extracts and reused by §
 * `nhn-severity` — the `Forretningsmessig endring:N` tag (business change).
 * `nhn-governance-type` — the `Styring …` governance tag.
 * `nhn-service-type` — the bare service-type tag (Ekstern/Intern/Relatert tjeneste, Tiltak, Satsning for fart).
+* `nhn-years` / `nhn-months` — //every// year or month the tiddler is tagged with, as one comma-separated cell.
 
 (`nhn-year` / `nhn-month` live in [[$:/plugins/intertwingled-innovations/nhn/review]].)
+
+! Single values versus all values
+
+The group projections `nhn-year` and `nhn-month` return one value per tag, so a tiddler tagged three years appears under all three in a grouped tree — which is what grouping should do.
+
+The CSV exporter takes only the //first// result of a projection, so those same functions would export a tiddler tagged `2024 2025 2026` as plain `2024` — a row that reads as 2024 even when the user filtered for 2026. The extracts therefore use `nhn-years` and `nhn-months`, which fold every value into one cell. Both deduplicate first: the data contains tiddlers tagged `april` //and// `April`, which normalise to the same month.

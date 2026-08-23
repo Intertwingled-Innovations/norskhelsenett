@@ -1,0 +1,65 @@
+title: $:/plugins/intertwingled-innovations/nhn/forms/leveranse
+type: application/json
+tags: $:/tags/nhn/Form
+caption: Leveranse
+
+{
+	"caption": "Leveranse",
+	"description": "En leveranse i en sprint, knyttet til en målsetting og en tjeneste.",
+	"inputs": [
+		{
+			"name": "title",
+			"label": "Tittel",
+			"type": "text",
+			"hint": "Kort beskrivelse av leveransen",
+			"required": "yes",
+			"from": "[<forms-target>]"
+		},
+		{
+			"name": "objective",
+			"label": "Målsetting",
+			"type": "select",
+			"options": "[function[nhn-objectives]sort[title]]",
+			"from": "[<forms-target>tags[]] :filter[tag[Målsetting]] +[first[]]"
+		},
+		{
+			"name": "service",
+			"label": "Tjeneste",
+			"type": "select",
+			"options": "[function[nhn-services]sort[title]]",
+			"from": "[<forms-target>] :map:flat[function[nhn-servicename]] +[first[]]"
+		},
+		{
+			"name": "year",
+			"label": "År",
+			"type": "select",
+			"options": "[function[nhn-form-years]]",
+			"required": "yes",
+			"from": "[<forms-target>tags[]regexp[^\\d{4}$]first[]]"
+		},
+		{
+			"name": "month",
+			"label": "Måned",
+			"type": "select",
+			"options": "[function[nhn-form-months]]",
+			"required": "yes",
+			"from": "[<forms-target>] :map:flat[function[nhn-month-raw]] +[first[]]"
+		}
+	],
+	"title": "$:/plugins/intertwingled-innovations/nhn/forms/title-plain",
+	"tags": "[[Leveranse]] [<forms-state>getindex[year]] [<forms-state>getindex[month]] [<forms-state>getindex[service]] [<forms-state>getindex[objective]] [function[nhn-form-division]]",
+	"fields": [
+		{
+			"name": "type",
+			"filter": "[[text/vnd.tiddlywiki]]"
+		},
+		{
+			"name": "TjenesteID",
+			"filter": "[function[nhn-form-serviceid]]"
+		},
+		{
+			"name": "period",
+			"filter": "[function[nhn-form-period]]"
+		}
+	]
+}

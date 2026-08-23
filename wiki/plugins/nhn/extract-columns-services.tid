@@ -7,6 +7,6 @@ type: application/json
 {"header":"URL","fn":"nhn-url"},
 {"header":"Division","fn":"nhn-division"},
 {"header":"Service name","fn":"nhn-servicename"},
-{"header":"Year","fn":"nhn-year-raw"},
+{"header":"Year","fn":"nhn-years"},
 {"header":"Service type","fn":"nhn-service-type"}
 ]

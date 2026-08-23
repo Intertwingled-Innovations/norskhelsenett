@@ -1,0 +1,56 @@
+title: $:/plugins/tiddlywiki/forms/grouped-view
+tags: $:/tags/Global
+
+\whitespace trim
+\procedure forms-grouped-view(views,state,setlabel,orderlabel,rowlabel)
+<$let json={{{ [<views>get[text]] }}}
+	setstate={{{ [<state>addsuffix[/set]] }}}
+	orderstate={{{ [<state>addsuffix[/order]] }}}
+	si={{{ [<setstate>get[text]] :intersection[<json>jsonindexes[]] :else[[0]] }}}
+	oi={{{ [<orderstate>get[text]] :intersection[<json>jsonindexes<si>,[orderings]] :else[[0]] }}}
+	setfilter={{{ [<json>jsonget<si>,[set]] }}}
+	groups={{{ [<json>jsonget<si>,[orderings],<oi>,[groups]] }}}
+	sorts={{{ [<json>jsonget<si>,[orderings],<oi>,[sorts]] }}}
+	leaves={{{ [subfilter<setfilter>] +[format:titlelist[]join[ ]] }}}>
+<div class="forms-grouped-view">
+<div class="forms-grouped-view-controls">
+<span class="forms-grouped-view-control"><$text text=<<setlabel>>/>&#32;<$select tiddler=<<setstate>> default="0">
+<$list filter="[<json>jsonindexes[]]" variable="i"><option value=<<i>>><$text text={{{ [<json>jsonget<i>,[caption]] }}}/></option></$list>
+</$select></span>
+<span class="forms-grouped-view-control"><$text text=<<orderlabel>>/>&#32;<$select tiddler=<<orderstate>> default="0">
+<$list filter="[<json>jsonindexes<si>,[orderings]]" variable="j"><option value=<<j>>><$text text={{{ [<json>jsonget<si>,[orderings],<j>,[caption]] }}}/></option></$list>
+</$select></span>
+<span class="forms-grouped-view-count"><$text text={{{ [enlist<leaves>count[]] }}}/>&#32;<$text text=<<rowlabel>>/></span>
+</div>
+<div class="forms-tree">
+<$transclude $variable="forms-group" set=<<leaves>> groups=<<groups>> sorts=<<sorts>>/>
+</div>
+</div>
+</$let>
+\end
+
+! forms-grouped-view
+
+`<<forms-grouped-view views state setlabel orderlabel rowlabel>>` — a data-driven browser over grouped sets: one picker chooses //what// to look at, a second chooses //how// it is grouped.
+
+* `views` — title of a JSON data tiddler holding an array of sets:
+
+```
+[{
+  "caption": "…",              // shown in the first picker
+  "set": "<filter>",           // selects the leaf tiddlers
+  "orderings": [{
+    "caption": "…",            // shown in the second picker
+    "groups": "<fn> <fn> …",   // group-projection function names, outermost first
+    "sorts": "<fn> <fn> …"     // parallel sort-key function names
+  }]
+}]
+```
+
+* `state` — state tiddler prefix; the two pickers store their selection in `<state>/set` and `<state>/order`.
+* `setlabel` / `orderlabel` — labels for the two pickers.
+* `rowlabel` — noun for the leaf count.
+
+Adding an ordering is an edit to the JSON, not to any code: `groups` is handed straight to `forms-group`, where reordering the list is the only difference between grouping variants. An ordering index left over from a set with more orderings is clamped back to the first, so switching sets can never land on a missing ordering.
+
+A leaf whose group projection yields several values (a tiddler tagged two services, say) appears under each of them, so the group counts can add up to more than the leaf count.

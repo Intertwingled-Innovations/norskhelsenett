@@ -5,7 +5,7 @@ tags: $:/tags/Global
 \define nhn-governance-tags() [[Styring Ekstern tjeneste]] [[Styring Intern tjeneste]] [[Styring Tiltak]] [[Styring Relatert tjeneste]] [[Styring Satsning for fart]]
 \define nhn-month-keys() [[januar]] [[februar]] [[mars]] [[april]] [[mai]] [[juni]] [[juli]] [[august]] [[september]] [[oktober]] [[november]] [[desember]]
 \function nhn-has-month() [<currentTiddler>tags[]lowercase[]] :intersection[enlist<nhn-month-keys>] +[limit[1]]
-\function nhn-reviews() [enlist<nhn-governance-tags>tagging[]unique[]] :filter[function[nhn-has-month]]
+\function nhn-reviews() [enlist<nhn-governance-tags>tagging[]unique[]] :filter[function[nhn-has-month]] -[[mal]tagging[]] -[function[nhn-archived]]
 \function nhn-year-raw() [<currentTiddler>tags[]regexp[^\d{4}$]]
 \function nhn-month-raw() [<currentTiddler>tags[]lowercase[]] :intersection[enlist<nhn-month-keys>] :map[[$:/plugins/intertwingled-innovations/nhn/month-names]getindex<currentTiddler>]
 \function nhn-year() [function[nhn-year-raw]] :else[[(Uten år)]]

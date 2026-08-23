@@ -1,0 +1,19 @@
+title: $:/plugins/intertwingled-innovations/nhn/summaries
+tags: $:/tags/Global
+
+\whitespace trim
+\function nhn-objectives() [[Målsetting]tagging[]] -[[mal]tagging[]] -[function[nhn-archived]]
+\function nhn-results() [[Resultat]tagging[]] -[[mal]tagging[]] -[function[nhn-archived]]
+\function nhn-service-group() [function[nhn-servicename]] :else[[(Uten tjeneste)]]
+\function nhn-service-sortkey() [<currentTiddler>match[(Uten tjeneste)]then[ÿ]else<currentTiddler>]
+\function nhn-objective-of() [<currentTiddler>tags[]] :filter[tag[Målsetting]] :else[[(Uten målsetting)]]
+\function nhn-objective-sortkey() [<currentTiddler>match[(Uten målsetting)]then[ÿ]else<currentTiddler>]
+
+Configuration for the delivery and OKR summaries (brief §3.4).
+
+* `nhn-objectives` / `nhn-results` — the two OKR sets (`Målsetting`, `Resultat`); deliveries come from `nhn-deliveries`.
+* `nhn-service-group` — the service a delivery or OKR belongs to, via the service-name tag, falling back to `(Uten tjeneste)`. Roughly a quarter of deliveries and a third of results carry no service tag, so the fallback bucket is real and sorts last.
+* `nhn-objective-of` — for a `Resultat`, the `Målsetting` it is tagged under (the parent↔child join is by tagging the parent's title). About one result in ten is unparented and falls into `(Uten målsetting)`.
+* The `-sortkey` functions push those fallback buckets to the end of the list, matching `nhn-bu-sortkey` and `nhn-owner-sortkey`.
+
+A tiddler tagged with two service names appears under both, so group counts can exceed the number of tiddlers in the set.

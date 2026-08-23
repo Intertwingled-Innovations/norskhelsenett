@@ -1,0 +1,29 @@
+title: $:/plugins/intertwingled-innovations/nhn/scope
+tags: $:/tags/Global
+
+\whitespace trim
+\define nhn-archive-tag() Arkiv
+\function nhn-archived() [<nhn-archive-tag>tagging[]]
+\function nhn-active-year() [[$:/config/nhn/active-year]get[text]] :else[[alle]]
+\function nhn-in-year-scope() [function[nhn-active-year]match[alle]then<currentTiddler>] [<currentTiddler>function[nhn-year-raw]count[]match[0]then<currentTiddler>] [<currentTiddler>tag{$:/config/nhn/active-year}]
+\function nhn-max-year() [<currentTiddler>tags[]regexp[^\d{4}$]sort[]last[]]
+\function nhn-periodic() [enlist<nhn-governance-tags>tagging[]unique[]] [function[nhn-deliveries]] [function[nhn-objectives]] [function[nhn-results]] +[unique[]] -[[mal]tagging[]] -[function[nhn-services]] -[function[nhn-archived]]
+\function nhn-archivable() [function[nhn-periodic]] :filter[function[nhn-max-year]compare:number:lteq{$:/state/nhn/arkiv/year}]
+
+Periodisation and archiving (brief §3.7). Two separate mechanisms, deliberately.
+
+!! Archiving — a tag, and every selector honours it
+
+`nhn-archived` is everything carrying the configurable `Arkiv` tag, and each base selector subtracts it. Archiving is therefore reversible by untagging, destroys nothing, and needs no second wiki. The tag is applied in bulk from [[Arkiv]].
+
+Only the **period-bearing kinds** can be archived — `nhn-periodic`: everything carrying a governance tag, plus deliveries, objectives and results. Services, divisions and templates are structural: they belong to no single year and hiding them would break the governance tree rather than tidy it.
+
+`nhn-periodic` is deliberately wider than `nhn-reviews`, which requires a month tag. A governance-tagged tiddler with no month is still periodic content — it appears in Extract 1 — and one that could be exported but never archived would be a hole in the mechanism.
+
+`nhn-archivable` selects everything whose //latest// year tag is at or before the chosen year, so "archive up to and including 2025" leaves alone an objective that is also tagged 2026. That is the difference between tidying and losing things.
+
+!! Period scope — a view filter, applied only where it helps
+
+`nhn-in-year-scope` is true when the active year is `alle`, when the tiddler carries that year, **or when the tiddler has no year tag at all**. That last clause matters: 25 deliveries, 15 objectives and 57 results are undated, and a scope that hid them would make them unreachable through navigation with no hint they existed.
+
+The scope applies to the navigation trees only. The extracts, the ToDo lists and the summaries all carry their own period controls, and a hidden second filter silently narrowing an export would be a trap rather than a convenience.

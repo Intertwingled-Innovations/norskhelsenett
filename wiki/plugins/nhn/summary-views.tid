@@ -1,0 +1,32 @@
+title: $:/plugins/intertwingled-innovations/nhn/summary-views
+type: application/json
+
+[
+{
+	"caption": "Leveranser",
+	"set": "[function[nhn-deliveries]]",
+	"orderings": [
+		{"caption": "År → måned → tjeneste", "groups": "nhn-year nhn-month nhn-service-group", "sorts": "nhn-year-sortkey nhn-month-ord nhn-service-sortkey"},
+		{"caption": "Tjeneste → år → måned", "groups": "nhn-service-group nhn-year nhn-month", "sorts": "nhn-service-sortkey nhn-year-sortkey nhn-month-ord"},
+		{"caption": "År → tjeneste", "groups": "nhn-year nhn-service-group", "sorts": "nhn-year-sortkey nhn-service-sortkey"}
+	]
+},
+{
+	"caption": "Målsettinger",
+	"set": "[function[nhn-objectives]]",
+	"orderings": [
+		{"caption": "År → tjeneste", "groups": "nhn-year nhn-service-group", "sorts": "nhn-year-sortkey nhn-service-sortkey"},
+		{"caption": "Tjeneste → år", "groups": "nhn-service-group nhn-year", "sorts": "nhn-service-sortkey nhn-year-sortkey"},
+		{"caption": "Forretningsområde → år", "groups": "nhn-business-unit nhn-year", "sorts": "nhn-bu-sortkey nhn-year-sortkey"}
+	]
+},
+{
+	"caption": "Resultater",
+	"set": "[function[nhn-results]]",
+	"orderings": [
+		{"caption": "Målsetting → år", "groups": "nhn-objective-of nhn-year", "sorts": "nhn-objective-sortkey nhn-year-sortkey"},
+		{"caption": "År → tjeneste", "groups": "nhn-year nhn-service-group", "sorts": "nhn-year-sortkey nhn-service-sortkey"},
+		{"caption": "Tjeneste → år", "groups": "nhn-service-group nhn-year", "sorts": "nhn-service-sortkey nhn-year-sortkey"}
+	]
+}
+]

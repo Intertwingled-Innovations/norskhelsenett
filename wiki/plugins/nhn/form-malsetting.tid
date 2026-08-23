@@ -1,0 +1,50 @@
+title: $:/plugins/intertwingled-innovations/nhn/forms/malsetting
+type: application/json
+tags: $:/tags/nhn/Form
+caption: Målsetting
+
+{
+	"caption": "Målsetting",
+	"description": "En målsetting for året, på en tjeneste eller et forretningsområde.",
+	"inputs": [
+		{
+			"name": "title",
+			"label": "Tittel",
+			"type": "text",
+			"hint": "Hva skal oppnås?",
+			"required": "yes",
+			"from": "[<forms-target>]"
+		},
+		{
+			"name": "service",
+			"label": "Tjeneste",
+			"type": "select",
+			"options": "[function[nhn-services]sort[title]]",
+			"from": "[<forms-target>] :map:flat[function[nhn-servicename]] +[first[]]"
+		},
+		{
+			"name": "year",
+			"label": "År",
+			"type": "select",
+			"options": "[function[nhn-form-years]]",
+			"required": "yes",
+			"from": "[<forms-target>tags[]regexp[^\\d{4}$]first[]]"
+		}
+	],
+	"title": "$:/plugins/intertwingled-innovations/nhn/forms/title-plain",
+	"tags": "[[Målsetting]] [<forms-state>getindex[year]] [<forms-state>getindex[service]] [function[nhn-form-division]]",
+	"fields": [
+		{
+			"name": "type",
+			"filter": "[[text/vnd.tiddlywiki]]"
+		},
+		{
+			"name": "TjenesteID",
+			"filter": "[function[nhn-form-serviceid]]"
+		},
+		{
+			"name": "period",
+			"filter": "[function[nhn-form-period]]"
+		}
+	]
+}

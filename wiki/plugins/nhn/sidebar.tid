@@ -6,9 +6,21 @@ list-before:
 \whitespace trim
 
 <ul class="nhn-nav-menu">
+<li><$link to="Ny">{{$:/core/images/new-button}} Ny</$link></li>
+<li><$link to="ToDo forretningsgjennomgang">{{$:/core/images/task}} ToDo gjennomgang</$link></li>
+<li><$link to="ToDo målsettinger">{{$:/core/images/task}} ToDo målsettinger</$link></li>
+<li><$link to="Sammendrag">{{$:/core/images/list-bullet}} Sammendrag</$link></li>
 <li><$link to="Tjenesteeiere">{{$:/core/images/edit-button}} Tjenesteeiere</$link></li>
-<li><$link to="Anomolies">{{$:/core/images/warning}} Anomolier</$link></li>
+<li><$link to="Arkiv">{{$:/core/images/folder}} Arkiv</$link></li>
+<li><$link to="Anomalier">{{$:/core/images/warning}} Anomalier</$link></li>
 <li><$link to="Eksport">{{$:/core/images/download-button}} Eksport</$link></li>
 </ul>
+
+<div class="nhn-scope">
+<label>Periode:&#32;<$select tiddler="$:/config/nhn/active-year" default="alle">
+<option value="alle">Alle år</option>
+<$list filter="[all[tiddlers]tags[]regexp[^\d{4}$]unique[]sort[]]"><option><$text text=<<currentTiddler>>/></option></$list>
+</$select></label>
+</div>
 
 <<tabs tabsList:"[all[shadows+tiddlers]tag[$:/tags/nhn/NavTab]]" default:"$:/plugins/intertwingled-innovations/nhn/ui/nav/governance" state:"$:/state/nhn/nav-tab">>

@@ -1,0 +1,71 @@
+title: $:/plugins/intertwingled-innovations/nhn/forms/tjeneste
+type: application/json
+tags: $:/tags/nhn/Form
+caption: Tjeneste
+
+{
+	"caption": "Tjeneste",
+	"description": "En tjeneste i styringsstrukturen. Tjenesteeier brukes til gruppering og til ToDo-listene.",
+	"inputs": [
+		{
+			"name": "title",
+			"label": "Tjenestenavn",
+			"type": "text",
+			"required": "yes",
+			"from": "[<forms-target>]"
+		},
+		{
+			"name": "unit",
+			"label": "Forretningsområde",
+			"type": "select",
+			"options": "[tag[Divisjon]!tag[Domene]sort[title]]",
+			"required": "yes",
+			"from": "[<forms-target>] :map:flat[function[nhn-division]] +[first[]]"
+		},
+		{
+			"name": "servicetype",
+			"label": "Tjenestetype",
+			"type": "select",
+			"options": "[[Ekstern tjeneste]] [[Intern tjeneste]] [[Relatert tjeneste]]",
+			"required": "yes",
+			"from": "[<forms-target>] :map:flat[function[nhn-service-type]] +[first[]]"
+		},
+		{
+			"name": "serviceid",
+			"label": "TjenesteID",
+			"type": "number",
+			"hint": "f.eks. 40031",
+			"from": "[<forms-target>get[TjenesteID]]"
+		},
+		{
+			"name": "owner",
+			"label": "Tjenesteeier",
+			"type": "text",
+			"from": "[<forms-target>get[tjenesteeier]]"
+		},
+		{
+			"name": "year",
+			"label": "År",
+			"type": "select",
+			"options": "[function[nhn-form-years]]",
+			"required": "yes",
+			"from": "[<forms-target>tags[]regexp[^\\d{4}$]first[]]"
+		}
+	],
+	"title": "$:/plugins/intertwingled-innovations/nhn/forms/title-plain",
+	"tags": "[<forms-state>getindex[unit]] [<forms-state>getindex[servicetype]] [<forms-state>getindex[year]]",
+	"fields": [
+		{
+			"name": "type",
+			"filter": "[[text/vnd.tiddlywiki]]"
+		},
+		{
+			"name": "TjenesteID",
+			"filter": "[<forms-state>getindex[serviceid]]"
+		},
+		{
+			"name": "tjenesteeier",
+			"filter": "[<forms-state>getindex[owner]]"
+		}
+	]
+}

@@ -1,0 +1,10 @@
+title: $:/plugins/intertwingled-innovations/nhn/governance-tags
+type: application/json
+
+{
+"ekstern tjeneste": "Styring Ekstern tjeneste",
+"intern tjeneste": "Styring Intern tjeneste",
+"relatert tjeneste": "Styring Relatert tjeneste",
+"tiltak": "Styring Tiltak",
+"satsning for fart": "Styring Satsning for fart"
+}

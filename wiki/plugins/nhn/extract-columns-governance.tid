@@ -7,8 +7,8 @@ type: application/json
 {"header":"URL","fn":"nhn-url"},
 {"header":"Division","fn":"nhn-division"},
 {"header":"Service name","fn":"nhn-servicename"},
-{"header":"Year","fn":"nhn-year-raw"},
-{"header":"Month","fn":"nhn-month-raw"},
+{"header":"Year","fn":"nhn-years"},
+{"header":"Month","fn":"nhn-months"},
 {"header":"Business change","fn":"nhn-severity"},
 {"header":"Governance type","fn":"nhn-governance-type"}
 ]

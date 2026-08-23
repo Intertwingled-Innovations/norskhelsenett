@@ -1,0 +1,9 @@
+title: $:/plugins/intertwingled-innovations/nhn/todo-status
+type: application/json
+
+{
+"missing": {"label": "Mangler", "class": "nhn-status-missing"},
+"template": {"label": "Kun mal", "class": "nhn-status-template"},
+"copy": {"label": "Kopi av forrige måned", "class": "nhn-status-copy"},
+"done": {"label": "Skrevet", "class": "nhn-status-ok"}
+}

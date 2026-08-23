@@ -1,87 +1,117 @@
-# Operation catalogue & requirement mapping
+# Operation catalogue
 
-Detailed design for the `<engine>` + `nhn` plugins. Read [../CLAUDE.md](../CLAUDE.md) first for the domain, data model, architecture principles (shadow model, no-NHN-in-engine), the keystone abstraction, and the design decisions (D1–D5). This document is the catalogue those principles produce.
+What the two plugins actually define, and which requirement each piece serves. Read [data-model.md](data-model.md) first for the domain, and [architecture.md](architecture.md) for the layering and the design decisions.
 
-Every report/export/validation is **one pipeline: select → filter → project → group → emit** (validation = project + predicate). Filtering by year/month is *free* because they are tags (`… +[tag<year>] +[tag<month>]`).
+Every report, export and validation is one pipeline: **select → filter → project → group → emit**. Filtering by year or month is nearly free, because both are tags.
 
-Signatures read as "input → output"; input is the current tiddler unless named. Suggested namespace: generic ops in the `<engine>` namespace, NHN-specific config under `nhn.*`.
+The naming convention is strict: `forms-*` is mechanism and carries no domain knowledge; `nhn-*` is configuration and carries all of it. A `\define` is a constant, a `\function` is an operation.
 
-## A. Selectors — gather a set
+## Engine — `forms`
+
+### Rendering
+
+| Operation | Shape |
+|---|---|
+| `forms-tree(roots, children)` | Collapsible tree over a relation function; prunes repeated ancestors, so self- and mutual-tagging cannot loop |
+| `forms-group(set, groups, sorts)` | Group-by tree; `groups` is an ordered list of projection names, `sorts` the parallel sort keys |
+| `forms-grouped-view(views, state, …)` | Set picker plus ordering picker over a JSON catalogue, delegating to `forms-group` |
+| `forms-export(set, columns, …)` | Download link plus preview table |
+
+### Creating and editing
+
+| Operation | Shape |
+|---|---|
+| `forms-form(def, state)` | Renders a form from a JSON definition |
+| `forms-create-actions(def, state)` | The creation itself, as action widgets, so a to-do row can trigger it |
+| `forms-edit(def, state)` | Renders the same definition against an existing tiddler |
+| `forms-load-actions(def, target, state)` / `forms-save-actions(def, state)` / `forms-cancel-actions(state)` | Read a tiddler into a form, write it back, discard |
+| `forms-edit-state(target)` | The conventional state title for editing a tiddler |
+| `forms-input-names` / `forms-required-names` / `forms-missing-names` / `forms-label(key)` | Definition introspection, used by the form UI |
+
+### To-do lists
+
+Bound by the caller: `todo-items`, `todo-prior-items`, `todo-member`, `todo-attribution` (a function *name*, invoked dynamically), `todo-template`, and the rolled-up `todo-set-done` / `todo-set-copy` / `todo-set-template`.
+
 | Operation | Yields |
 |---|---|
-| `tagged-any(set)` | tiddlers carrying ≥1 tag in `set` *(foundation of both extracts and every overview)* |
-| `services` | `tagged-any` over the **service-type** set |
-| `reviews` | `tagged-any` over the **governance** ("Styring …") set |
-| `deliveries` / `objectives` / `results` | `[tag[Leveranse]]` / `[tag[Målsetting]]` / `[tag[Resultat]]` |
+| `forms-todo-items` / `forms-todo-item` | The items belonging to the current member |
+| `forms-todo-state` | One item's state: `template`, `copy` or `done` |
+| `forms-todo-status` | A member's status, best-first: `done` > `copy` > `template` > `missing` |
+| `forms-todo-with-state(state)` | Members holding an item in that state — one pass over the period |
+| `forms-todo-covered` / `forms-todo-covered-in(items)` | Members with any item, for the period or for any given list |
 
-Two named tag sets (NHN config):
-- **service-type** = `Ekstern tjeneste, Intern tjeneste, Relatert tjeneste, Tiltak, Satsning for fart`
-- **governance** = the same five prefixed with `Styring ` (`Styring Ekstern tjeneste`, …)
+### Filter operators (JavaScript)
 
-> Note (from the data, see CLAUDE.md): tag spelling/casing drifts in the live wiki (e.g. `Ekstern Tjeneste` vs `Ekstern tjeneste`). Selectors should match against the configured set, and tag-cleanup is part of the value the plugins add.
+| Operator | Shape |
+|---|---|
+| `[<set>] +[forms-csv[<column-spec>]]` | CSV with a leading UTF-8 BOM (D4) |
+| `[<text>] +[forms-datauri[<mime>]]` | Wraps a string for an `<a download>` link |
+| `[<string>fold[]]` | Lower-case, map, NFD-strip (D2) |
+| `[<titles>forms-search:<fields>[<query>]]` | Diacritic-insensitive search; `!` inverts |
 
-## B. Projections — tiddler → a value (the column/key vocabulary)
-`title`, `serviceid`, `division`, `servicename`, `owner`, `url` (permalink), `year`, `month`, `month-ord`, `datekey`, `severity` (from the `Forretningsmessig endring:N` **tag**), `governance-type`, `service-type`.
+## Configuration — `nhn`
 
-Field/tag bindings are NHN config. Per the resolved data facts in CLAUDE.md:
-- `serviceid` ← the `TjenesteID` **field** (present on service-review tiddlers; sparse elsewhere — do not use it to join).
-- `division` ← the `Divisjon Helsepersonell` **tag** (no Division field exists).
-- `servicename` ← the service-name **tag**.
-- `owner` ← a Service-Owner field **to be added** on the service tiddler (does not exist yet).
-- `severity` ← the `Forretningsmessig endring:N` tag.
+### Constants
 
-## C. Classifiers — tiddler → kind/label
-`kind` → `service` / `review` / `delivery` / `objective` / `result` / `template` / `other`; `is-template`. Same machinery as projections; the tag→kind table is NHN config. `template` is detected by the **`mal` tag** (the dedicated marker).
+`nhn-governance-tags` · `nhn-tjeneste-types` · `nhn-extract-service-types` · `nhn-month-keys` · `nhn-gov-root-filter` · `nhn-permalink-prefix` · `nhn-owner-field` · `nhn-archive-tag`
 
-## D. Relations — tiddler → related tiddlers
-`unit-of`, `services-of`, `service-of`, `owner-of`, `reviews-of`, `okrs-of`, `deliveries-of`, `results-of` (Målsetting 1:M Resultat).
+### Selectors
 
-**Join mechanism (resolved, Q1):** parent↔child links are by **tagging the parent tiddler's *title*** (`tags: … [[<parent title>]]`, rendered via `<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>`). Service membership is the **service-name tag**. `TjenesteID` is *not* a reliable cross-kind join key. Build family D on tags, not on `TjenesteID`.
+| Operation | Yields |
+|---|---|
+| `nhn-services` | Service entities: a service-type tag plus a business unit, excluding month-prefixed reviews |
+| `nhn-reviews` | Monthly business reviews: a governance tag plus a month tag |
+| `nhn-deliveries` / `nhn-objectives` / `nhn-results` | `Leveranse` / `Målsetting` / `Resultat` |
+| `nhn-extract-governance-set` / `nhn-extract-services-set` | The two §3.3 extracts, narrowed by `extract-year` / `extract-month` |
+| `nhn-periodic` / `nhn-archivable` | What may be archived, and what a given year's archiving would take |
 
-## E. Temporal
-`datekey` (sortable `YYYY-MM`), `date-cmp(a,b)` → −1/0/1, `prev-month(y,m)`, `prev-year(y)`. See D1 in CLAUDE.md for the `fold-year`/`month-ord`/`datekey` functions and year-only `YYYY-00` padding.
+Every one of these subtracts archived content and the `mal` template. **The template carries a governance tag, a month and a year**, so a selector that forgets to exclude it counts it as content.
 
-## F. Grouping — the one structural primitive
-`group-by(path)` — recursively nest by an ordered list of projection names. Drives both the sidebar (3.1) and every overview (3.4); **reordering `path` is the only difference between grouping variants.**
+### Projections
 
-## G. Validators — project + predicate over a period
-`has-valid-review(service,y,m)`, `has-valid-okr(service,y)`, `is-stale(tiddler,prior)`, `missing-reviews(y,m)` → ToDo list, `missing-okrs(y)` → ToDo list. See D3 in CLAUDE.md — prefer a stamped `period`/`reviewed` field over free-text diffing, which collapses `is-stale` to a field check.
+`nhn-serviceid` · `nhn-url` · `nhn-division` · `nhn-servicename` · `nhn-severity` · `nhn-governance-type` · `nhn-service-type` · `nhn-owner` · `nhn-business-unit` · `nhn-result-count`
 
-## H. Emitters — set → output
-`csv(set,columns)`, `download` (UTF-8 **BOM** — see D4), `tree(set,path)` (renders `group-by` as sidebar nav).
+Dates come in two flavours, and mixing them up is a real bug: `nhn-year` / `nhn-month` (with `(Uten år)` / `(Uten måned)` fallbacks) are **group keys** and may return several values, while `nhn-years` / `nhn-months` fold every value into **one cell** for export, because the CSV writer takes only the first result. `nhn-year-raw` / `nhn-month-raw` are the unadorned versions the others build on.
 
-## Generic vs NHN-config split
-- **Generic (`<engine>`):** `tagged-any`, all projections (parameterised), `group-by`, `csv`, `download`, `tree`, `fold`, the form engine, validation primitives.
-- **NHN config (`nhn`):** tag sets, field bindings, month→ordinal map, base URL, fold-map additions, form/column/path definitions, the tag→kind table.
+Sort keys: `nhn-year-sortkey` (newest first) · `nhn-month-ord` · `nhn-bu-sortkey` · `nhn-owner-sortkey` · `nhn-service-sortkey` · `nhn-objective-sortkey`. Each pushes its "(Uten …)" bucket last.
 
-## Requirement → operations (brief §3)
+### Classification and relations
+
+| Operation | Yields |
+|---|---|
+| `nhn-kind` | One kind per tiddler by first match: `template`, `resultat`, `malsetting`, `leveranse`, `review`, `service`, `oppgave`, `structure` |
+| `nhn-is-service` / `nhn-is-division` / `nhn-is-structure` | The kind tests those dispatch on |
+| `nhn-gov-children` | The governance tree: sub-units, services, then objectives and results beneath them |
+| `nhn-objective-of` / `nhn-service-group` | A result's parent objective; the service an item belongs to — both with fallback buckets |
+| `nhn-review-service` | Which service a review is about: the service tag, else an **exact** title match against a known service |
+
+### Attribution, scope and forms
+
+- `nhn-in-year-scope` — the navigation period filter. True for `alle`, for the active year, **and for anything undated**.
+- `nhn-max-year` — the latest year tag, which is what stops archiving hiding something still current.
+- `nhn-form-*` — what the guided forms derive rather than ask for: a chosen service settles `TjenesteID`, the division tag and the `Styring …` tag (through a lookup table, because the two families disagree on casing).
+- `nhn-template-text` — the `mal` tiddler, which the review to-do list passes as `todo-template`.
+
+## Requirement → operations
+
 | Requirement | Composition |
 |---|---|
-| **3.1** Navigation | `tree` over `services`/`reviews`/`deliveries` with several `group-by` paths |
-| **3.2** Guided creation | form engine + `kind` + `is-template` + per-kind field/tag templates (data-driven) |
-| **3.3 / Extract 1** | `reviews` → filter year, month → `csv` cols: title, serviceid, url, division, servicename, year, month, severity, governance-type |
-| **3.3 / Extract 2** | `services` → filter year → `csv` cols: title, serviceid, url, division, servicename, year, service-type |
-| **3.4** Summaries | `deliveries`/`objectives`/`results` → `group-by(path)`; results path ends in Målsetting via `results-of` |
-| **3.5 / 3.6** ToDo lists | `missing-reviews(y,m)` / `missing-okrs(y)` → list with a create-from-template action per row |
-| **3.7** Periodisation | year is a tag → `group-by[year]`; archive = move prior-year tiddlers out of the active set |
-| **3.8** Access control | server-side, not a plugin concern — see D5 in CLAUDE.md |
+| **3.1** Navigation | ✓ `forms-tree` over `nhn-gov-children`, and `forms-group` over reviews, deliveries and services |
+| **3.2** Guided creation | ✓ `forms-form` over a JSON definition per kind; `forms-edit` runs the same definition backwards via a `from` filter per input |
+| **3.3 / Extract 1** | ✓ `nhn-extract-governance-set` → `forms-csv` with the governance column spec |
+| **3.3 / Extract 2** | ✓ `nhn-extract-services-set` → `forms-csv` with the services column spec |
+| **3.4** Summaries | ✓ `forms-grouped-view` over a catalogue of sets and group paths |
+| **3.5** ToDo review | ✓ `forms-todo-status` per service per period, attributed by `nhn-review-service` |
+| **3.6** ToDo OKRs | ✓ the same engine per year, attributed by `nhn-servicename`, with no template |
+| **3.7** Periodisation | ✓ `nhn-in-year-scope` for navigation; `nhn-archived` subtracted everywhere, applied from the Arkiv page |
+| **3.8** Access control | Server-side, not a plugin concern — see D5 in [architecture.md](architecture.md) |
+| **D2** Normalised search | ✓ `fold` and `forms-search`, wired in as the default search results tab |
 
-## Build order
-> **Superseded** by the dependency-ordered "Build order & status" in [../CLAUDE.md](../CLAUDE.md), which reflects current progress (§3.1 done; remaining order 3.3 → 3.4 → 3.2 → 3.5 → 3.6 → 3.7 → 3.8). The mechanism-level sequence below is kept for reference.
+## Tests
 
-1. Tag sets + selectors + projections → extracts possible.
-2. `csv` + `download` → both extracts ship.
-3. `group-by` + `tree` → navigation + overviews.
-4. `fold` (JS operator) → normalised search.
-5. Temporal + relations → validator prerequisites.
-6. Validators → the two ToDo lists.
-7. Form engine + guided creation (3.2); periodisation/archiving (3.7) reuse the above.
-
-## Tests to add
-- `datekey` ordering including year-only `YYYY-00` padding.
-- `fold` on `ø/æ/å` and the `o`→`ø` query case (symmetry of index and query).
-- The columns-as-functions exporter producing **both** extracts from one code path.
+Run with `npm test`; see [testing.md](testing.md). The suite covers date ordering, both extracts from one code path, folding symmetry, attribution, and the invariants that stop archiving or grouping losing tiddlers.
 
 ## Scope notes
+
 - Normalised search (D2) was **not** in the NHN PDF — added later by NHN.
 - The bilingual/translated version of the PDF is handled separately and is **not** part of this work.

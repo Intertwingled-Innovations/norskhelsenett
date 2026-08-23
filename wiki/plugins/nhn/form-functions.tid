@@ -1,0 +1,29 @@
+title: $:/plugins/intertwingled-innovations/nhn/form-functions
+tags: $:/tags/Global
+
+\whitespace trim
+\function nhn-form-service() [<forms-state>getindex[service]]
+\function nhn-form-serviceid() [function[nhn-form-service]get[TjenesteID]]
+\function nhn-form-division() [function[nhn-form-service]] :map[function[nhn-division]]
+\function nhn-form-service-type() [function[nhn-form-service]] :map[function[nhn-service-type]]
+\function nhn-form-governance-tag() [function[nhn-form-service-type]lowercase[]] :map[[$:/plugins/intertwingled-innovations/nhn/governance-tags]getindex<currentTiddler>]
+\function nhn-form-severity-tag() [<forms-state>getindex[severity]!is[blank]addprefix[Forretningsmessig endring:]]
+\function nhn-form-month-ord() [<forms-state>getindex[month]lowercase[]] :map[[$:/plugins/intertwingled-innovations/nhn/months]getindex<currentTiddler>]
+\function nhn-form-period() [<forms-state>getindex[year]!is[blank]] [function[nhn-form-month-ord]] +[join[-]]
+\function nhn-form-years() [all[tiddlers]tags[]regexp[^\d{4}$]] [<nhn-year-now>!is[blank]] +[unique[]sort[]]
+\function nhn-form-months() [enlist<nhn-month-keys>] :map[[$:/plugins/intertwingled-innovations/nhn/month-names]getindex<currentTiddler>]
+
+Values the guided-creation forms derive from what the user picked, rather than asking for. Each reads the form's state tiddler through `forms-state`, the variable the `forms` engine binds while evaluating a definition.
+
+Choosing a service settles most of a monthly review:
+
+* `nhn-form-serviceid` — the service's `TjenesteID`.
+* `nhn-form-division` — its `Divisjon …` tag.
+* `nhn-form-governance-tag` — its `Styring …` tag, via [[$:/plugins/intertwingled-innovations/nhn/governance-tags]]. A lookup table rather than string concatenation, because the two families disagree on casing: a service is tagged `Ekstern Tjeneste` while its reviews are tagged `Styring Ekstern tjeneste`.
+
+The rest:
+
+* `nhn-form-severity-tag` — turns a severity of 1–3 into the `Forretningsmessig endring:N` tag.
+* `nhn-form-period` — the `period` stamp (design decision D3): `2026-03` when a month was chosen, `2026` when only a year was. One function serves both the monthly and the yearly forms.
+* `nhn-form-years` — every year already in use as a tag, plus the current year. The current year comes from `nhn-year-now`, which the page hosting the form supplies (filters cannot read the clock); without it the list is simply the years in use.
+* `nhn-form-months` — the twelve months in calendar order, in canonical casing.

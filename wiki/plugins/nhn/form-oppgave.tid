@@ -1,0 +1,46 @@
+title: $:/plugins/intertwingled-innovations/nhn/forms/oppgave
+type: application/json
+tags: $:/tags/nhn/Form
+caption: Oppgave
+
+{
+	"caption": "Oppgave",
+	"description": "En oppgave under en målsetting eller et tiltak.",
+	"inputs": [
+		{
+			"name": "title",
+			"label": "Tittel",
+			"type": "text",
+			"hint": "Hva skal gjøres?",
+			"required": "yes",
+			"from": "[<forms-target>]"
+		},
+		{
+			"name": "objective",
+			"label": "Målsetting",
+			"type": "select",
+			"options": "[function[nhn-objectives]sort[title]]",
+			"from": "[<forms-target>tags[]] :filter[tag[Målsetting]] +[first[]]"
+		},
+		{
+			"name": "year",
+			"label": "År",
+			"type": "select",
+			"options": "[function[nhn-form-years]]",
+			"required": "yes",
+			"from": "[<forms-target>tags[]regexp[^\\d{4}$]first[]]"
+		}
+	],
+	"title": "$:/plugins/intertwingled-innovations/nhn/forms/title-plain",
+	"tags": "[[Oppgave]] [<forms-state>getindex[objective]] [<forms-state>getindex[year]]",
+	"fields": [
+		{
+			"name": "type",
+			"filter": "[[text/vnd.tiddlywiki]]"
+		},
+		{
+			"name": "period",
+			"filter": "[function[nhn-form-period]]"
+		}
+	]
+}

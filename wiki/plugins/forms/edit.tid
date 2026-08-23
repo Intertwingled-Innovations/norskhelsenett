@@ -1,0 +1,134 @@
+title: $:/plugins/tiddlywiki/forms/edit
+tags: $:/tags/Global
+
+\whitespace trim
+
+\function forms-edit-state(target) [<target>addprefix[$:/state/forms/edit/]]
+\function forms-edit-original(state) [<state>addsuffix[/original]]
+
+\procedure forms-load-actions(def,target,state)
+<$let forms-def-json={{{ [<def>get[text]] }}} forms-target=<<target>> origstate={{{ [function[forms-edit-original],<state>] }}}>
+<$list filter="[<forms-def-json>jsonindexes[inputs]]" variable="ii">
+<$let iname={{{ [<forms-def-json>jsonget[inputs],<ii>,[name]] }}}
+	ivalue={{{ [<forms-def-json>jsonget[inputs],<ii>,[from]] :map:flat[subfilter<currentTiddler>] }}}>
+<$action-setfield $tiddler=<<state>> $index=<<iname>> $value=<<ivalue>>/>
+<$action-setfield $tiddler=<<origstate>> $index=<<iname>> $value=<<ivalue>>/>
+</$let>
+</$list>
+<$action-setfield $tiddler=<<state>> forms-target=<<target>>/>
+</$let>
+\end
+
+\procedure forms-cancel-actions(state)
+<$action-deletetiddler $tiddler=<<state>>/>
+<$action-deletetiddler $tiddler={{{ [function[forms-edit-original],<state>] }}}/>
+\end
+
+\procedure forms-save-actions(def,state)
+<$let forms-def=<<def>> forms-def-json={{{ [<def>get[text]] }}}
+	target={{{ [<state>get[forms-target]] }}}
+	origstate={{{ [function[forms-edit-original],<state>] }}}
+	stamp=<<now "[UTC]YYYY0MM0DD0hh0mm0ss0XXX">>>
+<$let forms-state=<<origstate>>>
+<$let oldtags={{{ [<forms-def-json>jsonget[tags]] :map:flat[subfilter<currentTiddler>] +[format:titlelist[]join[ ]] }}}>
+<$let forms-state=<<state>>>
+<$wikify name="forms-raw-title" text={{{ [<forms-def-json>jsonget[title]get[text]] }}} mode="inline" output="text">
+<$let newtitle={{{ [<forms-raw-title>trim[]] }}}
+	newtags={{{ [<forms-def-json>jsonget[tags]] :map:flat[subfilter<currentTiddler>] +[format:titlelist[]join[ ]] }}}>
+<$let mergedtags={{{ [<target>tags[]] -[enlist<oldtags>] [enlist<newtags>] +[unique[]format:titlelist[]join[ ]] }}}
+	titleok={{{ [<newtitle>!is[blank]match<target>] [<newtitle>!is[blank]!is[tiddler]] +[first[]] }}}>
+<% if [<target>is[tiddler]] :filter[<titleok>!is[blank]] :filter[function[forms-missing-names]count[]match[0]] %>
+<$action-setfield $tiddler=<<target>> $field="tags" $value=<<mergedtags>>/>
+<$action-setfield $tiddler=<<target>> $field="modified" $value=<<stamp>>/>
+<$list filter="[<forms-def-json>jsonindexes[fields]]" variable="fi">
+<$let fname={{{ [<forms-def-json>jsonget[fields],<fi>,[name]] }}} fvalue={{{ [<forms-def-json>jsonget[fields],<fi>,[filter]] :map:flat[subfilter<currentTiddler>] }}}>
+<% if [<fvalue>!is[blank]] %>
+<$action-setfield $tiddler=<<target>> $field=<<fname>> $value=<<fvalue>>/>
+<% endif %>
+</$let>
+</$list>
+<% if [<newtitle>!match<target>] %>
+<$action-sendmessage $message="tm-rename-tiddler" from=<<target>> to=<<newtitle>>/>
+<% endif %>
+<$transclude $variable="forms-cancel-actions" state=<<state>>/>
+<% endif %>
+</$let>
+</$let>
+</$wikify>
+</$let>
+</$let>
+</$let>
+</$let>
+\end
+
+\procedure forms-edit(def,state)
+<$let forms-def=<<def>> forms-state=<<state>> forms-def-json={{{ [<def>get[text]] }}}
+	target={{{ [<state>get[forms-target]] }}}>
+<$wikify name="forms-raw-title" text={{{ [<forms-def-json>jsonget[title]get[text]] }}} mode="inline" output="text">
+<$let newtitle={{{ [<forms-raw-title>trim[]] }}} missing={{{ [function[forms-missing-names]count[]] }}}>
+<div class="forms-form forms-form-edit">
+<$list filter="[<forms-def-json>jsonindexes[inputs]]" variable="ii"><$transclude $variable="forms-field" index=<<ii>>/></$list>
+<% if [<newtitle>!is[blank]!match<target>] %>
+<div class="forms-form-preview">
+<% if [<newtitle>is[tiddler]] %>
+<span class="forms-form-warning"><$text text={{{ [function[forms-label],[clash]] }}}/></span>&#32;<code><$text text=<<newtitle>>/></code>
+<% else %>
+<span class="forms-form-preview-label"><$text text={{{ [function[forms-label],[rename]] }}}/></span>&#32;<code><$text text=<<newtitle>>/></code>
+<% endif %>
+</div>
+<% endif %>
+<div class="forms-form-actions">
+<% if [<missing>!match[0]] %>
+<span class="forms-form-warning"><$text text={{{ [function[forms-label],[missing]] }}}/></span>
+<% elseif [<newtitle>is[blank]] %>
+<span class="forms-form-warning"><$text text={{{ [function[forms-label],[missing]] }}}/></span>
+<% elseif [<newtitle>!match<target>] :filter[<newtitle>is[tiddler]] %>
+<span class="forms-form-warning"><$text text={{{ [function[forms-label],[clash]] }}}/></span>
+<% else %>
+<$button class="tc-btn-big-green">
+<$transclude $variable="forms-save-actions" def=<<forms-def>> state=<<forms-state>>/>
+<$text text={{{ [function[forms-label],[save]] }}}/>
+</$button>
+<% endif %>
+<$button class="tc-btn-invisible forms-form-reset">
+<$transclude $variable="forms-cancel-actions" state=<<forms-state>>/>
+<$text text={{{ [function[forms-label],[cancel]] }}}/>
+</$button>
+</div>
+</div>
+</$let>
+</$wikify>
+</$let>
+\end
+
+! forms-edit
+
+Structured editing: reopen an existing tiddler through the same definition that would have created it, so a correction cannot break the structure.
+
+`<<forms-load-actions def target state>>` fills the form from the tiddler, `<<forms-edit def state>>` renders it, and `<<forms-save-actions def state>>` writes the changes back. `forms-edit-state(target)` is the conventional state title.
+
+!! Reading a tiddler back into a form
+
+Creation maps inputs to a tiddler; editing needs the reverse. Each input therefore carries a `from` filter, evaluated with `forms-target` bound to the tiddler being edited:
+
+```
+{"name": "month", …, "from": "[<forms-target>] :map:flat[function[…]] +[first[]]"}
+```
+
+An input with no `from` simply starts blank.
+
+!! What it will not destroy
+
+**Tags the form does not know about are kept.** A delivery may carry a team tag, a `Levert` marker, anything a person added by hand; regenerating the tag list from the form alone would silently discard all of it. So loading also stores an untouched copy of the values, and saving computes
+
+> new tags = (the tiddler's tags − the tags the form would have produced when it loaded) + the tags it produces now
+
+which replaces only what the form is actually responsible for.
+
+**Fields outside the definition are untouched**, and a field whose filter comes out blank is left as it was rather than being emptied.
+
+!! Renaming
+
+The save is gated on `titleok`, which is the union of two runs — "the title is unchanged" or "the title is new and free" — rather than a chain of `:and`/`:else`, whose semantics read like boolean logic and are not (see the gotchas in the architecture notes).
+
+If the inputs imply a different title — changing the month of a monthly review, say — saving renames the tiddler with `tm-rename-tiddler`, which relinks the tags and lists that point at it. That matters here: parent↔child links in this data are made by tagging the parent's *title*, so a plain retitle would orphan every child. If the new title is already taken the save is refused rather than merging two tiddlers.

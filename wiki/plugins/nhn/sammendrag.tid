@@ -1,0 +1,14 @@
+title: Sammendrag
+caption: Sammendrag
+
+\whitespace trim
+
+! Sammendrag
+
+Grupperte oversikter over leveranser, målsettinger og resultater. Velg hva du vil se på, og hvordan det skal grupperes — rekkefølgen på gruppenivåene er det eneste som skiller variantene.
+
+<<forms-grouped-view "$:/plugins/intertwingled-innovations/nhn/summary-views" "$:/state/nhn/sammendrag" "Vis:" "Gruppér etter:" "tiddlere">>
+
+<div class="nhn-summary-note">
+En tiddler som er tagget med flere tjenester vises under hver av dem, så summen av gruppene kan bli høyere enn antallet tiddlere. Tiddlere uten tjeneste, målsetting, år eller måned havner i egne grupper nederst.
+</div>

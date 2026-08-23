@@ -1,0 +1,17 @@
+title: $:/config/forms/fold-map
+type: application/json
+
+{
+"ø": "o",
+"æ": "a",
+"å": "a",
+"ß": "ss",
+"ð": "d",
+"þ": "th",
+"œ": "oe",
+"ł": "l",
+"đ": "d",
+"ħ": "h",
+"ŋ": "n",
+"ŧ": "t"
+}

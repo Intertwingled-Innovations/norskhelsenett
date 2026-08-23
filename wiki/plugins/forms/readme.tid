@@ -1,0 +1,33 @@
+title: $:/plugins/tiddlywiki/forms/readme
+
+A configuration-driven engine for building navigation, overviews, guided editing and spreadsheet exports over a wiki whose structure is already expressed in tags and fields.
+
+!! The idea
+
+An //operation// is a named function from a tiddler to a value or a list. Export columns, group keys and tree relations are all the same thing: a function name. Two reports that select different tiddlers and show different columns are therefore the same code with different data — no second code path.
+
+!! What it provides
+
+|!Feature |!Usage |
+|`forms-tree` |`<$transclude $variable="forms-tree" roots="<filter>" children="<fn>"/>` — a cycle-safe collapsible tree over a relation function |
+|`forms-group` |`<$transclude $variable="forms-group" set="<titles>" groups="<fn> <fn>" sorts="<fn> <fn>"/>` — a collapsible group-by tree; reordering `groups` is the only difference between grouping variants |
+|`forms-grouped-view` |`<<forms-grouped-view views state setlabel orderlabel rowlabel>>` — one picker chooses //what// to look at, a second chooses //how// it is grouped, both from a JSON catalogue |
+|`forms-form` |`<<forms-form def state>>` — guided creation from a definition: which inputs to ask for, a template for the title, filters for the tags and fields, a tiddler to seed the body |
+|`forms-edit` |`<<forms-edit def state>>` — the same definition run backwards over an existing tiddler, keeping tags the form does not manage and renaming with relink when the title changes |
+|`forms-todo-*` |Which members of a population still owe an item for a period, and whether what they filed is real |
+|`forms-export` |`<<forms-export set columns filename limit caption rowlabel>>` — a download link plus a preview table |
+|`forms-csv` |`[<filter>] +[forms-csv[<column-spec>]]` — CSV with a leading UTF-8 BOM, so spreadsheet software reads it as UTF-8 |
+|`forms-datauri` |`[<text>] +[forms-datauri[<mime-type>]]` — wraps a string for an `<a download>` link |
+|`fold` / `forms-search` |`[<titles>forms-search:title[<query>]]` — diacritic-insensitive search, so a query typed without accents still finds the accented text |
+
+Each feature's own tiddler documents it in full; open the plugin's contents tab to read them.
+
+!! Configuring it
+
+This plugin carries mechanism only: it defines no selectors, no columns and no vocabulary of its own, and contains no strings specific to any one deployment. A companion configuration plugin supplies those as shadow tiddlers, and users override anything with ordinary tiddlers of the same title. Deleting such an override restores the default.
+
+Two config slots ship here with neutral defaults for a configuration layer to replace: [[$:/config/forms/labels]] (button and warning captions) and [[$:/config/forms/fold-map]] (letters that Unicode normalisation cannot fold on its own).
+
+A configuration layer must declare a higher `plugin-priority` than this plugin, or its overrides will not win: TiddlyWiki unpacks plugins in priority order and falls back to alphabetical order by title.
+
+Because reset-by-deletion depends on the defaults staying pristine, nothing here writes to its own configuration tiddlers at runtime.

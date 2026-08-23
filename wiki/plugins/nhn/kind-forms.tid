@@ -1,0 +1,11 @@
+title: $:/plugins/intertwingled-innovations/nhn/kind-forms
+type: application/json
+
+{
+"review": "$:/plugins/intertwingled-innovations/nhn/forms/review",
+"leveranse": "$:/plugins/intertwingled-innovations/nhn/forms/leveranse",
+"malsetting": "$:/plugins/intertwingled-innovations/nhn/forms/malsetting",
+"resultat": "$:/plugins/intertwingled-innovations/nhn/forms/resultat",
+"oppgave": "$:/plugins/intertwingled-innovations/nhn/forms/oppgave",
+"service": "$:/plugins/intertwingled-innovations/nhn/forms/tjeneste"
+}

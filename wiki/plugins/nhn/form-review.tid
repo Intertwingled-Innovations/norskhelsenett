@@ -1,0 +1,60 @@
+title: $:/plugins/intertwingled-innovations/nhn/forms/review
+type: application/json
+tags: $:/tags/nhn/Form
+caption: Forretningsgjennomgang
+
+{
+	"caption": "Forretningsgjennomgang",
+	"description": "Månedlig gjennomgang av hovedtrekk og endringer for én tjeneste. Forretningsmessig endring er valgfri: de fleste eksisterende gjennomgangene mangler taggen, og et påkrevd felt som dataene selv bryter ville blokkert redigering av dem.",
+	"inputs": [
+		{
+			"name": "service",
+			"label": "Tjeneste",
+			"type": "select",
+			"options": "[function[nhn-services]sort[title]]",
+			"required": "yes",
+			"from": "[<forms-target>] :map:flat[function[nhn-servicename]] +[first[]]"
+		},
+		{
+			"name": "year",
+			"label": "År",
+			"type": "select",
+			"options": "[function[nhn-form-years]]",
+			"required": "yes",
+			"from": "[<forms-target>tags[]regexp[^\\d{4}$]first[]]"
+		},
+		{
+			"name": "month",
+			"label": "Måned",
+			"type": "select",
+			"options": "[function[nhn-form-months]]",
+			"required": "yes",
+			"from": "[<forms-target>] :map:flat[function[nhn-month-raw]] +[first[]]"
+		},
+		{
+			"name": "severity",
+			"label": "Forretningsmessig endring",
+			"type": "select",
+			"options": "[[1]] [[2]] [[3]]",
+			"from": "[<forms-target>tags[]prefix[Forretningsmessig endring:]removeprefix[Forretningsmessig endring:]first[]]",
+			"hint": "1 = ingen, 2 = liten, 3 = større"
+		}
+	],
+	"title": "$:/plugins/intertwingled-innovations/nhn/forms/title-review",
+	"tags": "[[Styring]] [function[nhn-form-governance-tag]] [function[nhn-form-division]] [<forms-state>getindex[year]] [<forms-state>getindex[month]] [<forms-state>getindex[service]] [function[nhn-form-severity-tag]]",
+	"fields": [
+		{
+			"name": "type",
+			"filter": "[[text/vnd.tiddlywiki]]"
+		},
+		{
+			"name": "TjenesteID",
+			"filter": "[function[nhn-form-serviceid]]"
+		},
+		{
+			"name": "period",
+			"filter": "[function[nhn-form-period]]"
+		}
+	],
+	"body": "01 MAL Tjenestenavn - hovedtrekk og endringer januar 2026"
+}

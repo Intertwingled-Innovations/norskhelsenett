@@ -1,0 +1,16 @@
+title: $:/config/forms/labels
+type: application/json
+
+{
+"create": "Opprett",
+"missing": "Fyll ut feltene merket med *",
+"exists": "Det finnes allerede en tiddler med denne tittelen:",
+"open": "Åpne den",
+"reset": "Tøm skjemaet",
+"preview": "Opprettes som:",
+"edit": "Rediger strukturert",
+"save": "Lagre",
+"cancel": "Avbryt",
+"rename": "Lagring gir tiddleren nytt navn:",
+"clash": "Tittelen er allerede i bruk:"
+}

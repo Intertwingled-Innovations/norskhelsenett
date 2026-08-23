@@ -7,10 +7,10 @@ tags: $:/tags/Global
 \function nhn-is-service() [<currentTiddler>tags[]] :intersection[enlist<nhn-tjeneste-types>] +[limit[1]]
 \function nhn-is-division() [<currentTiddler>tag[Divisjon]!tag[Domene]]
 \function nhn-divisions-of() [<currentTiddler>tagging[]] :filter[function[nhn-is-division]]
-\function nhn-services-of() [<currentTiddler>tagging[]] :filter[function[nhn-is-service]]
+\function nhn-services-of() [<currentTiddler>tagging[]] :filter[function[nhn-is-service]] -[function[nhn-archived]]
 \function nhn-structural-children() [function[nhn-divisions-of]] [function[nhn-services-of]] +[unique[]]
-\function nhn-objective-children() [<currentTiddler>!tag[Målsetting]!tag[Resultat]] :map:flat[<currentTiddler>tagging[]] :filter[tag[Målsetting]]
-\function nhn-result-children() [<currentTiddler>tag[Målsetting]] :map:flat[<currentTiddler>tagging[]] :filter[tag[Resultat]]
+\function nhn-objective-children() [<currentTiddler>!tag[Målsetting]!tag[Resultat]] :map:flat[<currentTiddler>tagging[]] :filter[tag[Målsetting]] -[function[nhn-archived]] :filter[function[nhn-in-year-scope]]
+\function nhn-result-children() [<currentTiddler>tag[Målsetting]] :map:flat[<currentTiddler>tagging[]] :filter[tag[Resultat]] -[function[nhn-archived]] :filter[function[nhn-in-year-scope]]
 \function nhn-gov-children() [function[nhn-structural-children]] [function[nhn-objective-children]] [function[nhn-result-children]] +[!is[blank]!match<currentTiddler>unique[]]
 
 Global functions forNHN governance configuration.

@@ -1,0 +1,3 @@
+title: $:/plugins/intertwingled-innovations/nhn/forms/title-plain
+
+<$text text={{{ [<forms-state>getindex[title]trim[]] }}}/>

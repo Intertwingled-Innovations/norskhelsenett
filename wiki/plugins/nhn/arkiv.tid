@@ -1,0 +1,65 @@
+title: Arkiv
+caption: Arkiv
+
+\whitespace trim
+
+! Arkiv
+
+Arkivering skjuler gammelt innhold fra navigasjon, oversikter og eksport uten å slette noe. Den setter taggen `Arkiv` på tiddlerne; å fjerne taggen henter dem fram igjen. Ingenting går tapt.
+
+Bare periodisk innhold kan arkiveres — forretningsgjennomganger, leveranser, målsettinger og resultater. Tjenester og forretningsområder hører ikke til ett bestemt år, og å skjule dem ville ødelagt styringsstrukturen i stedet for å rydde i den.
+
+!! Arkiver
+
+<$let year={{$:/state/nhn/arkiv/year}}>
+<div class="nhn-arkiv-controls">
+<label>Til og med år:&#32;<$select tiddler="$:/state/nhn/arkiv/year">
+<option value="">(velg år)</option>
+<$list filter="[all[tiddlers]tags[]regexp[^\d{4}$]unique[]sort[]]"><option><$text text=<<currentTiddler>>/></option></$list>
+</$select></label>
+</div>
+
+<% if [<year>!is[blank]] %>
+<$let n={{{ [function[nhn-archivable]count[]] }}}>
+<% if [<n>match[0]] %>
+<p class="nhn-arkiv-none">Ingenting å arkivere til og med <$text text=<<year>>/>.</p>
+<% else %>
+<table class="nhn-arkiv-table">
+<tbody>
+<tr><td>Forretningsgjennomganger</td><td><$count filter="[function[nhn-archivable]] :intersection[function[nhn-reviews]]"/></td></tr>
+<tr><td>Leveranser</td><td><$count filter="[function[nhn-archivable]] :intersection[function[nhn-deliveries]]"/></td></tr>
+<tr><td>Målsettinger</td><td><$count filter="[function[nhn-archivable]] :intersection[function[nhn-objectives]]"/></td></tr>
+<tr><td>Resultater</td><td><$count filter="[function[nhn-archivable]] :intersection[function[nhn-results]]"/></td></tr>
+<tr><th>Til sammen</th><th><$text text=<<n>>/></th></tr>
+</tbody>
+</table>
+
+<p class="nhn-arkiv-warning">Dette skriver til <$text text=<<n>>/> tiddlere. På en server betyr det like mange filskrivinger, så det tar litt tid. Tiddlere som også er tagget et senere år, røres ikke.</p>
+
+<$button class="tc-btn-big-green">
+<$list filter="[function[nhn-archivable]]"><$action-listops $tiddler=<<currentTiddler>> $tags=<<nhn-archive-tag>>/></$list>
+Arkiver <$text text=<<n>>/> tiddlere
+</$button>
+<% endif %>
+</$let>
+<% endif %>
+</$let>
+
+!! Arkivert nå
+
+<$let archived={{{ [function[nhn-archived]count[]] }}}>
+<% if [<archived>match[0]] %>
+<p class="nhn-arkiv-none">Ingenting er arkivert.</p>
+<% else %>
+<p><$text text=<<archived>>/> tiddlere er arkivert, fordelt på år:</p>
+<div class="nhn-arkiv-years">
+<$list filter="[function[nhn-archived]] :map:flat[function[nhn-year-raw]] +[unique[]sort[]]" variable="y">
+<div><$text text=<<y>>/>: <$count filter="[function[nhn-archived]] :filter[<currentTiddler>tag<y>]"/></div>
+</$list>
+</div>
+<$button class="tc-btn-invisible nhn-arkiv-restore">
+<$list filter="[function[nhn-archived]]"><$action-listops $tiddler=<<currentTiddler>> $tags="-[<nhn-archive-tag>]"/></$list>
+Hent fram alt igjen
+</$button>
+<% endif %>
+</$let>

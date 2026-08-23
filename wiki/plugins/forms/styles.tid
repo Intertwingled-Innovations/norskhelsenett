@@ -41,6 +41,40 @@ code-body: yes
 	white-space: nowrap;
 }
 
+.forms-form { max-width: 42em; }
+.forms-field { margin: 0.75em 0; }
+.forms-field-label {
+	display: block;
+	font-size: 0.9em;
+	color: <<colour muted-foreground>>;
+	margin-bottom: 0.2em;
+}
+.forms-field-required { color: <<colour dirty-indicator>>; margin-left: 0.25em; }
+.forms-field-input { width: 100%; }
+.forms-field-textarea { min-height: 5em; }
+
+.forms-form-preview {
+	margin: 1em 0 0.5em 0;
+	padding: 0.5em 0.75em;
+	background: <<colour code-background>>;
+	border-radius: 4px;
+	overflow-wrap: anywhere;
+}
+.forms-form-preview-label { color: <<colour muted-foreground>>; font-size: 0.9em; }
+
+.forms-form-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1em; margin: 0.5em 0 1em 0; }
+.forms-form-warning { color: <<colour muted-foreground>>; }
+.forms-form-reset { color: <<colour muted-foreground>>; text-decoration: underline; }
+
+.forms-grouped-view-controls {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 1em;
+	margin: 0.5em 0 1em 0;
+}
+.forms-grouped-view-count { color: <<colour muted-foreground>>; }
+
 .forms-export-actions { margin: 0.5em 0; }
 .forms-export-count { color: <<colour muted-foreground>>; margin-left: 1em; }
 .forms-export-scroll { overflow-x: auto; max-width: 100%; }

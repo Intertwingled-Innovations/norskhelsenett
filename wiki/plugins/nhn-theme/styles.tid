@@ -78,5 +78,5 @@ a.forms-export-download svg { fill: <<colour download-foreground>>; }
 
 /* ==== Bright accent (#7befb2) — used sparingly for pop ==== */
 
-/* Accent underline on data-table headers (Eksport, Anomolier) */
+/* Accent underline on data-table headers (Eksport, Anomalier) */
 .tc-tiddler-body table th { border-bottom: 2px solid <<colour nhn-accent>>; }

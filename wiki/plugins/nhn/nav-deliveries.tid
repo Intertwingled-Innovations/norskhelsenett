@@ -5,5 +5,5 @@ caption: Leveranser
 \whitespace trim
 
 <div class="forms-tree">
-<$transclude $variable="forms-group" set={{{ [function[nhn-deliveries]] +[format:titlelist[]join[ ]] }}} groups="nhn-year nhn-month" sorts="nhn-year-sortkey nhn-month-ord"/>
+<$transclude $variable="forms-group" set={{{ [function[nhn-deliveries]] :filter[function[nhn-in-year-scope]] +[format:titlelist[]join[ ]] }}} groups="nhn-year nhn-month" sorts="nhn-year-sortkey nhn-month-ord"/>
 </div>

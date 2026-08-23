@@ -1,0 +1,7 @@
+title: $:/plugins/intertwingled-innovations/nhn/ui/SearchResults/Normalisert
+tags: $:/tags/SearchResults
+caption: Normalisert
+first-search-filter: [!is[system]forms-search:title<userInput>sort[title]limit[250]]
+second-search-filter: [!is[system]forms-search:title,text<userInput>sort[title]limit[250]]
+
+{{$:/core/ui/DefaultSearchResultList}}

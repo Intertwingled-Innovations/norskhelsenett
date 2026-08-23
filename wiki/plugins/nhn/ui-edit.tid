@@ -1,0 +1,25 @@
+title: $:/plugins/intertwingled-innovations/nhn/ui/ViewTemplate/edit
+tags: $:/tags/ViewTemplate
+list-after: $:/plugins/intertwingled-innovations/nhn/ui/ViewTemplate/owner
+
+\whitespace trim
+<% if [<currentTiddler>!prefix[$:/]] %>
+<$let def={{{ [<currentTiddler>function[nhn-kind]] :map[[$:/plugins/intertwingled-innovations/nhn/kind-forms]getindex<currentTiddler>] }}}>
+<% if [<def>!is[blank]] %>
+<$let forms-def-json={{{ [<def>get[text]] }}} state={{{ [function[forms-edit-state],<currentTiddler>] }}}>
+<% if [<state>is[tiddler]] %>
+<div class="nhn-edit-panel">
+<$transclude $variable="forms-edit" def=<<def>> state=<<state>>/>
+</div>
+<% else %>
+<div class="nhn-edit-action">
+<$button class="tc-btn-invisible nhn-edit-button">
+<$transclude $variable="forms-load-actions" def=<<def>> target=<<currentTiddler>> state=<<state>>/>
+{{$:/core/images/edit-button}}&#32;<$text text={{{ [function[forms-label],[edit]] }}}/>
+</$button>
+</div>
+<% endif %>
+</$let>
+<% endif %>
+</$let>
+<% endif %>

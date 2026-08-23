@@ -1,0 +1,128 @@
+title: $:/plugins/tiddlywiki/forms/form
+tags: $:/tags/Global
+
+\whitespace trim
+
+\function forms-input-names() [<forms-def-json>jsonindexes[inputs]] :map[<forms-def-json>jsonget[inputs],<currentTiddler>,[name]]
+\function forms-required-names() [<forms-def-json>jsonindexes[inputs]] :filter[<forms-def-json>jsonget[inputs],<currentTiddler>,[required]match[yes]] :map[<forms-def-json>jsonget[inputs],<currentTiddler>,[name]]
+\function forms-filled-names() [function[forms-required-names]] :filter[<forms-state>getindex<currentTiddler>!is[blank]]
+\function forms-missing-names() [function[forms-required-names]] -[function[forms-filled-names]]
+\function forms-label(key) [<forms-def-json>jsonget[labels],<key>] :else[[$:/config/forms/labels]get[text]jsonget<key>]
+
+\procedure forms-create-actions(def,state)
+<$let forms-def=<<def>> forms-state=<<state>> forms-def-json={{{ [<def>get[text]] }}}>
+<$wikify name="forms-raw-title" text={{{ [<forms-def-json>jsonget[title]get[text]] }}} mode="inline" output="text">
+<$let newtitle={{{ [<forms-raw-title>trim[]] }}} stamp=<<now "[UTC]YYYY0MM0DD0hh0mm0ss0XXX">>>
+<% if [<newtitle>!is[blank]!is[tiddler]] :filter[function[forms-missing-names]count[]match[0]] %>
+<$action-setfield $tiddler=<<newtitle>> $field="text" $value={{{ [<forms-def-json>jsonget[body]get[text]] }}}/>
+<$action-setfield $tiddler=<<newtitle>> $field="tags" $value={{{ [<forms-def-json>jsonget[tags]] :map:flat[subfilter<currentTiddler>] +[format:titlelist[]join[ ]] }}}/>
+<$action-setfield $tiddler=<<newtitle>> $field="created" $value=<<stamp>>/>
+<$action-setfield $tiddler=<<newtitle>> $field="modified" $value=<<stamp>>/>
+<$list filter="[<forms-def-json>jsonindexes[fields]]" variable="fi">
+<$let fname={{{ [<forms-def-json>jsonget[fields],<fi>,[name]] }}} fvalue={{{ [<forms-def-json>jsonget[fields],<fi>,[filter]] :map:flat[subfilter<currentTiddler>] }}}>
+<% if [<fvalue>!is[blank]] %>
+<$action-setfield $tiddler=<<newtitle>> $field=<<fname>> $value=<<fvalue>>/>
+<% endif %>
+</$let>
+</$list>
+<$action-deletetiddler $tiddler=<<forms-state>>/>
+<$action-navigate $to=<<newtitle>>/>
+<% endif %>
+</$let>
+</$wikify>
+</$let>
+\end
+
+\procedure forms-field(index)
+<$let name={{{ [<forms-def-json>jsonget[inputs],<index>,[name]] }}}
+	label={{{ [<forms-def-json>jsonget[inputs],<index>,[label]] }}}
+	type={{{ [<forms-def-json>jsonget[inputs],<index>,[type]] }}}
+	options={{{ [<forms-def-json>jsonget[inputs],<index>,[options]] }}}
+	hint={{{ [<forms-def-json>jsonget[inputs],<index>,[hint]] }}}
+	required={{{ [<forms-def-json>jsonget[inputs],<index>,[required]] }}}>
+<div class="forms-field">
+<label class="forms-field-label"><$text text=<<label>>/><% if [<required>match[yes]] %><span class="forms-field-required">&#42;</span><% endif %></label>
+<% if [<type>match[select]] %>
+<$select tiddler=<<forms-state>> index=<<name>> class="forms-field-input">
+<option value=""></option>
+<$list filter=<<options>> variable="opt"><option><$text text=<<opt>>/></option></$list>
+</$select>
+<% elseif [<type>match[textarea]] %>
+<$edit-text tiddler=<<forms-state>> index=<<name>> class="forms-field-input forms-field-textarea" placeholder=<<hint>>/>
+<% else %>
+<$edit-text tiddler=<<forms-state>> index=<<name>> tag="input" type=<<type>> class="forms-field-input" placeholder=<<hint>>/>
+<% endif %>
+</div>
+</$let>
+\end
+
+\procedure forms-form(def,state)
+<$let forms-def=<<def>> forms-state=<<state>> forms-def-json={{{ [<def>get[text]] }}}>
+<$wikify name="forms-raw-title" text={{{ [<forms-def-json>jsonget[title]get[text]] }}} mode="inline" output="text">
+<$let newtitle={{{ [<forms-raw-title>trim[]] }}} missing={{{ [function[forms-missing-names]count[]] }}}>
+<div class="forms-form">
+<$list filter="[<forms-def-json>jsonindexes[inputs]]" variable="ii"><$transclude $variable="forms-field" index=<<ii>>/></$list>
+<div class="forms-form-preview"><span class="forms-form-preview-label"><$text text={{{ [function[forms-label],[preview]] }}}/></span>&#32;<code><$text text={{{ [<newtitle>!is[blank]then<newtitle>else[…]] }}}/></code></div>
+<div class="forms-form-actions">
+<% if [<missing>!match[0]] %>
+<span class="forms-form-warning"><$text text={{{ [function[forms-label],[missing]] }}}/></span>
+<% elseif [<newtitle>is[blank]] %>
+<span class="forms-form-warning"><$text text={{{ [function[forms-label],[missing]] }}}/></span>
+<% elseif [<newtitle>is[tiddler]] %>
+<span class="forms-form-warning"><$text text={{{ [function[forms-label],[exists]] }}}/></span>&#32;<$link to=<<newtitle>>><$text text={{{ [function[forms-label],[open]] }}}/></$link>
+<% else %>
+<$button class="tc-btn-big-green">
+<$transclude $variable="forms-create-actions" def=<<forms-def>> state=<<forms-state>>/>
+<$text text={{{ [function[forms-label],[create]] }}}/>
+</$button>
+<% endif %>
+<$button class="tc-btn-invisible forms-form-reset"><$action-deletetiddler $tiddler=<<forms-state>>/><$text text={{{ [function[forms-label],[reset]] }}}/></$button>
+</div>
+</div>
+</$let>
+</$wikify>
+</$let>
+\end
+
+! forms-form
+
+A guided-creation form driven entirely by a definition tiddler.
+
+`<<forms-form def state>>` renders the form; `<<forms-create-actions def state>>` is the creation itself, as action widgets, so a caller can trigger it from elsewhere (a to-do list, say) with the same guarantees.
+
+* `def` — title of a JSON data tiddler defining the form (below).
+* `state` — title of a JSON data tiddler holding the entered values, one index per input. Pre-setting indexes on it before the form opens is how a caller supplies defaults.
+
+Values are held as //indexes// rather than fields so that an input may be called anything at all — an input named `title` stored in a field would rename the state tiddler out from under the form.
+
+!! The definition
+
+```
+{
+  "caption": "…",
+  "labels": {"create": "…", …},   // optional; falls back to $:/config/forms/labels
+  "inputs": [{"name": "…",       // the index it is stored under on the state tiddler
+              "label": "…",
+              "type": "text | textarea | number | select",
+              "options": "<filter>",   // select only
+              "hint": "…",             // placeholder
+              "required": "yes"}],
+  "title": "<tiddler>",          // wikitext template rendered to produce the title
+  "tags": "<filter>",            // produces the tag list
+  "fields": [{"name": "…", "filter": "<filter>"}],
+  "body": "<tiddler>"            // its text seeds the new tiddler
+}
+```
+
+The title template, the tags filter and the field filters are all evaluated with `forms-state` bound to the state tiddler, so they read what the user entered with `[<forms-state>getindex[…]]` and can derive the rest from it. Everything the new tiddler ends up containing is therefore configuration, not code.
+
+!! What it guarantees
+
+* **Required inputs** are marked, and creation is blocked until they are filled.
+* **The title is shown before you commit**, computed by the same template that will be used.
+* **An existing title is never overwritten and never silently renamed.** `$action-createtiddler` would quietly create "X 1"; this refuses and offers to open the existing tiddler instead, because a duplicate monthly review is worse than a rejected click.
+* Creation stamps `created` and `modified`, and clears the form.
+
+!! Labels
+
+The button and warning captions come from [[$:/config/forms/labels]], a JSON data tiddler shipped here with English defaults for a configuration layer to override. A definition may also carry its own `labels` object, which wins for that one form.

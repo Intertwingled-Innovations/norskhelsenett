@@ -9,6 +9,44 @@ Sett tjenesteeier for hver tjeneste. Endringene lagres direkte på tjeneste-tidd
 
 <div class="nhn-owner-summary">Tjenester med tjenesteeier: <$count filter="[function[nhn-services]] :filter[has<nhn-owner-field>]"/> / <$count filter="[function[nhn-services]]"/></div>
 
+!! Lim inn fra regneark
+
+Lim inn to kolonner — tjenestenavn og tjenesteeier — atskilt med tabulator eller semikolon, én tjeneste per linje. Navnet må stemme nøyaktig med tjenesten i wikien; linjer som ikke treffer, listes opp under og røres ikke.
+
+<$edit-text tiddler="$:/state/nhn/owners/paste" tag="textarea" class="nhn-owner-paste" placeholder="Autentisering og autorisasjon&#9;Kari Nordmann"/>
+
+<$let lines={{{ [[$:/state/nhn/owners/paste]get[text]splitregexp[\n]] :filter[!is[blank]] +[format:titlelist[]join[ ]] }}}>
+<$let names={{{ [enlist<lines>] :map[splitregexp[\t|;]first[]trim[]] +[!is[blank]unique[]format:titlelist[]join[ ]] }}}>
+<$let known={{{ [enlist<names>] :intersection[function[nhn-services]] +[format:titlelist[]join[ ]] }}}
+	unknown={{{ [enlist<names>] -[function[nhn-services]] +[format:titlelist[]join[ ]] }}}>
+<% if [enlist<names>count[]compare:number:gt[0]] %>
+<div class="nhn-owner-import">
+<$button class="tc-btn-big-green">
+<$list filter="[enlist<lines>]" variable="line">
+<$let svc={{{ [<line>splitregexp[\t|;]first[]trim[]] }}} owner={{{ [<line>splitregexp[\t|;]last[]trim[]] }}}>
+<% if [<svc>] :intersection[enlist<known>] :filter[<owner>!is[blank]] :filter[<owner>!match<svc>] %>
+<$action-setfield $tiddler=<<svc>> $field=<<nhn-owner-field>> $value=<<owner>>/>
+<% endif %>
+</$let>
+</$list>
+<$action-deletetiddler $tiddler="$:/state/nhn/owners/paste"/>
+Sett tjenesteeiere
+</$button>
+<span class="nhn-owner-import-count"><$text text={{{ [enlist<known>count[]] }}}/> av <$text text={{{ [enlist<names>count[]] }}}/> navn treffer en tjeneste</span>
+</div>
+<% if [enlist<unknown>count[]compare:number:gt[0]] %>
+<div class="nhn-owner-unmatched">
+Disse navnene finnes ikke som tjeneste og hoppes over:
+<$list filter="[enlist<unknown>sort[title]]" variable="bad"><div><code><$text text=<<bad>>/></code></div></$list>
+</div>
+<% endif %>
+<% endif %>
+</$let>
+</$let>
+</$let>
+
+!! Alle tjenester
+
 <table class="nhn-owner-table">
 <thead>
 <tr><th>Tjeneste</th><th>ServiceID</th><th>Forretningsområde</th><th>Tjenesteeier</th></tr>

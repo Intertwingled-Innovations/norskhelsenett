@@ -1,0 +1,97 @@
+title: ToDo målsettinger
+caption: ToDo målsettinger
+
+\whitespace trim
+
+\procedure nhn-okr-row(svc)
+<$let todo-member=<<svc>> currentTiddler=<<svc>>
+	status={{{ [function[forms-todo-status]] }}}
+	items={{{ [function[forms-todo-items]] +[format:titlelist[]join[ ]] }}}>
+<$let okr={{{ [enlist<items>first[]] }}}>
+<tr>
+<td><$link to=<<svc>>/></td>
+<td><$text text={{{ [function[nhn-owner]] }}}/></td>
+<td><span class={{{ [[$:/plugins/intertwingled-innovations/nhn/todo-status]get[text]jsonget<status>,[class]] }}}><$text text={{{ [[$:/plugins/intertwingled-innovations/nhn/todo-status]get[text]jsonget<status>,[label]] }}}/></span></td>
+<td>
+<% if [<okr>!is[blank]] %>
+<$let n-okr={{{ [enlist<items>count[]] }}} n-res={{{ [enlist<items>] :map[function[nhn-result-count]] +[sum[]] }}}>
+<$text text=<<n-okr>>/> målsetting<% if [<n-okr>!match[1]] %>er<% endif %> ·
+<% if [<n-res>match[0]] %><span class="nhn-status-template">ingen resultater</span><% else %><$text text=<<n-res>>/> resultater<% endif %>
+</$let>
+<% endif %>
+</td>
+<td>
+<% if [<okr>!is[blank]] %>
+<$link to=<<okr>>>Åpne</$link>
+<% else %>
+<$button class="tc-btn-invisible nhn-todo-create">
+<$action-setfield $tiddler="$:/state/nhn/form/malsetting" $index="service" $value=<<svc>>/>
+<$action-setfield $tiddler="$:/state/nhn/form/malsetting" $index="year" $value=<<todo-year>>/>
+<$action-setfield $tiddler="$:/state/nhn/ny/form" text="$:/plugins/intertwingled-innovations/nhn/forms/malsetting"/>
+<$action-navigate $to="Ny"/>
+{{$:/core/images/new-button}}&#32;Opprett
+</$button>
+<% endif %>
+</td>
+</tr>
+</$let></$let>
+\end
+
+! ToDo: målsettinger
+
+Tjenester som mangler målsetting for året. Målsettinger settes per år, så en tjeneste som er aktiv — den leverer forretningsgjennomganger eller har målsettinger — men mangler målsetting for det valgte året, står oppført her.
+
+<$let nhn-year-now=<<now "YYYY">> todo-attribution="nhn-servicename" todo-template="">
+<$let todo-year={{{ [[$:/state/nhn/todo/okr-year]get[text]] :else[<nhn-year-now>] }}}
+	todo-scope={{{ [[$:/state/nhn/todo/okr-scope]get[text]] :else[[aktive]] }}}>
+<$let todo-prev-year={{{ [<todo-year>subtract[1]] }}}>
+<$let todo-items={{{ [function[nhn-objectives]] :filter[function[nhn-year]match<todo-year>] +[format:titlelist[]join[ ]] }}}
+	todo-prior-items={{{ [function[nhn-objectives]] :filter[function[nhn-year]match<todo-prev-year>] +[format:titlelist[]join[ ]] }}}
+	year-reviews={{{ [function[nhn-reviews]] :filter[function[nhn-year]match<todo-year>] +[format:titlelist[]join[ ]] }}}>
+<$let reviewing={{{ [enlist<year-reviews>] :map:flat[function[nhn-review-service]] +[unique[]format:titlelist[]join[ ]] }}}>
+<$let svc-reviewing={{{ [function[nhn-services]] :intersection[enlist<reviewing>] +[format:titlelist[]join[ ]] }}}
+	svc-withokr={{{ [function[nhn-services]] :intersection[function[forms-todo-covered]] +[format:titlelist[]join[ ]] }}}>
+<$let raw-done={{{ [function[forms-todo-with-state],[done]] +[format:titlelist[]join[ ]] }}}
+	raw-copy={{{ [function[forms-todo-with-state],[copy]] +[format:titlelist[]join[ ]] }}}
+	raw-template={{{ [function[forms-todo-with-state],[template]] +[format:titlelist[]join[ ]] }}}>
+<$let todo-set-done=<<raw-done>>
+	todo-set-copy={{{ [enlist<raw-copy>] -[enlist<raw-done>] +[format:titlelist[]join[ ]] }}}
+	todo-set-template={{{ [enlist<raw-template>] -[enlist<raw-done>] -[enlist<raw-copy>] +[format:titlelist[]join[ ]] }}}>
+<$let svc-all={{{ [function[nhn-services]sort[title]] +[format:titlelist[]join[ ]] }}}
+	svc-active={{{ [enlist<svc-reviewing>] [enlist<svc-withokr>] +[unique[]sort[title]format:titlelist[]join[ ]] }}}>
+<$let services={{{ [<todo-scope>match[alle]then<svc-all>else<svc-active>] }}}>
+
+<div class="nhn-todo-controls">
+<label>År:&#32;<$select tiddler="$:/state/nhn/todo/okr-year" default=<<nhn-year-now>>>
+<$list filter="[function[nhn-form-years]]"><option><$text text=<<currentTiddler>>/></option></$list>
+</$select></label>
+<label>Omfang:&#32;<$select tiddler="$:/state/nhn/todo/okr-scope" default="aktive">
+<option value="aktive">Aktive tjenester i <$text text=<<todo-year>>/></option>
+<option value="alle">Alle tjenester</option>
+</$select></label>
+</div>
+
+<$let n-total={{{ [enlist<services>count[]] }}}
+	n-done={{{ [enlist<services>] :intersection[enlist<todo-set-done>] +[count[]] }}}
+	n-copy={{{ [enlist<services>] :intersection[enlist<todo-set-copy>] +[count[]] }}}
+	n-missing={{{ [enlist<services>] -[function[forms-todo-covered]] +[count[]] }}}>
+<div class="nhn-todo-summary">
+<$text text=<<n-total>>/> tjenester ·
+<span class="nhn-status-ok"><$text text=<<n-done>>/> har målsetting</span> ·
+<span class="nhn-status-copy"><$text text=<<n-copy>>/> lik fjorårets</span> ·
+<span class="nhn-status-missing"><$text text=<<n-missing>>/> mangler</span>
+</div>
+</$let>
+
+<% if [enlist<services>count[]match[0]] %>
+<p class="nhn-todo-empty">Ingen aktive tjenester i <$text text=<<todo-year>>/>. Prøv «Alle tjenester», eller velg et annet år.</p>
+<% else %>
+<table class="nhn-todo-table">
+<thead><tr><th>Tjeneste</th><th>Tjenesteeier</th><th>Status</th><th>Nøkkelresultater</th><th></th></tr></thead>
+<tbody>
+<$list filter="[enlist<services>]" variable="svc"><$transclude $variable="nhn-okr-row" svc=<<svc>>/></$list>
+</tbody>
+</table>
+<% endif %>
+
+</$let></$let></$let></$let></$let></$let></$let></$let></$let></$let>

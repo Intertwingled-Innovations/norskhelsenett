@@ -1,0 +1,47 @@
+title: $:/plugins/intertwingled-innovations/nhn/forms/resultat
+type: application/json
+tags: $:/tags/nhn/Form
+caption: Resultat
+
+{
+	"caption": "Resultat",
+	"description": "Et nøkkelresultat under en målsetting. Koblingen lages ved å tagge målsettingens tittel.",
+	"inputs": [
+		{
+			"name": "title",
+			"label": "Tittel",
+			"type": "text",
+			"hint": "Hvilket resultat skal nås?",
+			"required": "yes",
+			"from": "[<forms-target>]"
+		},
+		{
+			"name": "objective",
+			"label": "Målsetting",
+			"type": "select",
+			"options": "[function[nhn-objectives]sort[title]]",
+			"required": "yes",
+			"from": "[<forms-target>tags[]] :filter[tag[Målsetting]] +[first[]]"
+		},
+		{
+			"name": "year",
+			"label": "År",
+			"type": "select",
+			"options": "[function[nhn-form-years]]",
+			"required": "yes",
+			"from": "[<forms-target>tags[]regexp[^\\d{4}$]first[]]"
+		}
+	],
+	"title": "$:/plugins/intertwingled-innovations/nhn/forms/title-plain",
+	"tags": "[[Resultat]] [<forms-state>getindex[objective]] [<forms-state>getindex[year]]",
+	"fields": [
+		{
+			"name": "type",
+			"filter": "[[text/vnd.tiddlywiki]]"
+		},
+		{
+			"name": "period",
+			"filter": "[function[nhn-form-period]]"
+		}
+	]
+}

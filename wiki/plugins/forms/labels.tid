@@ -1,0 +1,16 @@
+title: $:/config/forms/labels
+type: application/json
+
+{
+"create": "Create",
+"missing": "Fill in the fields marked with *",
+"exists": "A tiddler with this title already exists:",
+"open": "Open it",
+"reset": "Clear the form",
+"preview": "Will be created as:",
+"edit": "Edit with the form",
+"save": "Save",
+"cancel": "Cancel",
+"rename": "Saving will rename this tiddler to:",
+"clash": "That title is already taken:"
+}

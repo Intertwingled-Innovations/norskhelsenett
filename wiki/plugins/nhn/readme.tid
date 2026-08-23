@@ -1,0 +1,33 @@
+title: $:/plugins/intertwingled-innovations/nhn/readme
+
+Configuration of the [[forms|$:/plugins/tiddlywiki/forms]] engine for Norsk Helsenett SF, Divisjon Helsepersonell. Almost everything here is data rather than code: the engine supplies the mechanism, this plugin tells it about the governance structure, intentions, deliveries and monthly business reviews the wiki already holds.
+
+!! The pages it adds
+
+All are reached from the //NHN// tab in the sidebar.
+
+|!Side |!Hva den gjør |
+|[[Ny]] |Oppretter tiddlere gjennom et skjema, slik at tagger og felter blir riktige |
+|[[Sammendrag]] |Grupperte oversikter over leveranser, målsettinger og resultater |
+|[[ToDo forretningsgjennomgang]] |Hvilke tjenester som mangler månedens gjennomgang |
+|[[ToDo målsettinger]] |Hvilke tjenester som mangler målsetting for året |
+|[[Tjenesteeiere]] |Setter tjenesteeier, én og én eller limt inn fra regneark |
+|[[Eksport]] |De to Excel-uttrekkene, filtrert på år og måned |
+|[[Arkiv]] |Skjuler gammelt innhold uten å slette det |
+|[[Anomalier]] |Datakvalitetsproblemer som er verdt å rydde i |
+
+Sidebar-fanen har i tillegg fire navigasjonstrær — Styringsstruktur, Forretningsgjennomgang, Leveranser og Tjenester — og en periodevelger som begrenser dem til ett år.
+
+!! What it supplies to the engine
+
+* ''Selectors'' — the sets behind each view: `nhn-services`, `nhn-reviews`, `nhn-deliveries`, `nhn-objectives`, `nhn-results`, and the two extract sets. Every one of them subtracts archived content and the `mal` template.
+* ''Projections'' — the shared column and group-key vocabulary: `nhn-serviceid`, `nhn-url`, `nhn-division`, `nhn-servicename`, `nhn-severity`, `nhn-governance-type`, `nhn-service-type`, `nhn-year`, `nhn-month`, `nhn-years`, `nhn-months`, `nhn-owner`.
+* ''Relations'' — `nhn-gov-children`, which walks NHN → forretningsområde → tjeneste and the intentions beneath them.
+* ''Form definitions'' — one per kind, plus the functions that derive what the forms do not ask for: choosing a service settles its `TjenesteID`, its division tag and its `Styring …` tag.
+* ''Tables'' — month maps, the governance-tag map, the tag→kind table and its colours, the column spec for each extract, and the view catalogue for the summaries.
+
+!! Changing it
+
+Tag sets, field names, column lists, group paths, form definitions and the permalink base URL are all ordinary tiddlers. Edit one and the wiki creates an override; delete the override and the shipped default returns. Nothing in this plugin needs editing to change what a report selects or which columns it exports.
+
+The service owner field is named by `nhn-owner-field` (default `tjenesteeier`) and is set per service on the tiddler itself, or in bulk on [[Tjenesteeiere]].

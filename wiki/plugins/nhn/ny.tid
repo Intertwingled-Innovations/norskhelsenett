@@ -1,0 +1,21 @@
+title: Ny
+caption: Ny
+
+\whitespace trim
+
+! Opprett ny tiddler
+
+Velg hva du vil opprette. Skjemaet setter tagger og felter selv, slik at resultatet følger strukturen i wikien — du fyller bare ut det som ikke kan utledes.
+
+<$let nhn-year-now=<<now "YYYY">> def={{$:/state/nhn/ny/form}}>
+<div class="nhn-form-picker">
+<label>Type:&#32;<$select tiddler="$:/state/nhn/ny/form">
+<option value=""></option>
+<$list filter="[all[shadows+tiddlers]tag[$:/tags/nhn/Form]sort[caption]]" variable="f"><option value=<<f>>><$text text={{{ [<f>get[caption]] }}}/></option></$list>
+</$select></label>
+</div>
+<% if [<def>!is[blank]] %>
+<p class="nhn-form-description"><$text text={{{ [<def>get[text]jsonget[description]] }}}/></p>
+<$transclude $variable="forms-form" def=<<def>> state={{{ [<def>split[/]last[]addprefix[$:/state/nhn/form/]] }}}/>
+<% endif %>
+</$let>
