@@ -13,7 +13,7 @@ caption: ToDo gjennomgang
 <td><span class={{{ [[$:/plugins/intertwingled-innovations/nhn/todo-status]get[text]jsonget<status>,[class]] }}}><$text text={{{ [[$:/plugins/intertwingled-innovations/nhn/todo-status]get[text]jsonget<status>,[label]] }}}/></span></td>
 <td>
 <% if [<review>!is[blank]] %>
-<$link to=<<review>>>Åpne</$link>
+<$link to=<<review>> class="nhn-todo-open">{{$:/core/images/preview-open}}&#32;Åpne</$link>
 <% else %>
 <$button class="tc-btn-invisible nhn-todo-create">
 <$let def={{{ [function[nhn-form-def],[review]] }}} fstate={{{ [function[nhn-form-state],<def>] }}}>

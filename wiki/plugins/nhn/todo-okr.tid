@@ -22,7 +22,7 @@ caption: ToDo målsettinger
 </td>
 <td>
 <% if [<okr>!is[blank]] %>
-<$link to=<<okr>>>Åpne</$link>
+<$link to=<<okr>> class="nhn-todo-open">{{$:/core/images/preview-open}}&#32;Åpne</$link>
 <% else %>
 <$button class="tc-btn-invisible nhn-todo-create">
 <$let def={{{ [function[nhn-form-def],[malsetting]] }}} fstate={{{ [function[nhn-form-state],<def>] }}}>
