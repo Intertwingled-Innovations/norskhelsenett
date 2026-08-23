@@ -5,7 +5,7 @@ caption: Tjenesteeiere
 
 ! Tjenesteeiere
 
-Sett tjenesteeier for hver tjeneste. Endringene lagres direkte på tjeneste-tiddleren (krever en redigerbar wiki / server). Tjenesteeier brukes til å gruppere tjenester og til å generere ToDo-lister (§3.5/§3.6).
+Sett tjenesteeier for hver tjeneste. Endringene lagres direkte på tjeneste-tiddleren. Tjenesteeier brukes til å gruppere tjenester og til å generere ToDo-lister (§3.5/§3.6).
 
 <div class="nhn-owner-summary">Tjenester med tjenesteeier:&#32;<$count filter="[function[nhn-services]] :filter[has<nhn-owner-field>]"/>&#32;/&#32;<$count filter="[function[nhn-services]]"/></div>
 
