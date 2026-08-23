@@ -28,6 +28,8 @@ This plugin carries mechanism only: it defines no selectors, no columns and no v
 
 Two config slots ship here with neutral defaults for a configuration layer to replace: [[$:/config/forms/labels]] (button and warning captions) and [[$:/config/forms/fold-map]] (letters that Unicode normalisation cannot fold on its own).
 
+A JSON config tiddler may carry a `"documentation"` key: wikitext, wikified in place above the editor when the tiddler is opened, so a configuration layer's own overrides — an unfamiliar letter table, an otherwise-bare `{}` — are not left to speak for themselves. It can `[[link]]` to whatever explains it. The key is reserved by convention: a consumer that iterates a JSON tiddler's own keys (`fold-map`, for one) must skip it.
+
 A configuration layer must declare a higher `plugin-priority` than this plugin, or its overrides will not win: TiddlyWiki unpacks plugins in priority order and falls back to alphabetical order by title.
 
 Because reset-by-deletion depends on the defaults staying pristine, nothing here writes to its own configuration tiddlers at runtime.

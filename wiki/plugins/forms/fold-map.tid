@@ -1,4 +1,6 @@
 title: $:/config/forms/fold-map
 type: application/json
 
-{}
+{
+"documentation": "This map is empty by default: which letters fold to what is language configuration, not engine mechanism. See [[$:/plugins/tiddlywiki/forms/fold.js]] for how folding works, and [[$:/plugins/tiddlywiki/forms/readme]] for the engine overview. A configuration layer overrides this tiddler, at a higher `plugin-priority`, with the letters its language needs."
+}

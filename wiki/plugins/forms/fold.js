@@ -23,11 +23,21 @@ and silently misses the rest.
 The same function folds both the stored text and the query, so the two can only
 agree or disagree together.
 
+The engine ships the map EMPTY: which letters fold to what is language
+configuration, and this plugin carries no language. A configuration layer
+overrides $:/config/forms/fold-map at a higher plugin-priority with the letters
+its language needs.
+
+The map tiddler may carry one reserved key, "documentation" — wikitext shown
+when the tiddler is opened, so an otherwise-bare `{}` or an unfamiliar letter
+table is not left unexplained. It is never treated as a folding rule.
+
 \*/
 
 "use strict";
 
-var MAP_TITLE = "$:/config/forms/fold-map";
+var MAP_TITLE = "$:/config/forms/fold-map",
+	DOC_KEY = "documentation";
 
 // \p{Mn} covers combining marks in every script; fall back to the Latin block
 var COMBINING;
@@ -52,7 +62,9 @@ function getFolder(wiki) {
 		var configured = wiki.getTiddlerDataCached(MAP_TITLE, {}) || {},
 			map = Object.create(null);
 		Object.keys(configured).forEach(function(key) {
-			map[key.toLowerCase()] = String(configured[key]).toLowerCase();
+			if(key !== DOC_KEY) {
+				map[key.toLowerCase()] = String(configured[key]).toLowerCase();
+			}
 		});
 		// Longest first, so a multi-character key is never pre-empted by a prefix
 		var keys = Object.keys(map).sort(function(a, b) { return b.length - a.length; });

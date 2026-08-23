@@ -1,0 +1,13 @@
+title: $:/plugins/tiddlywiki/forms/ui/doc-field
+tags: $:/tags/ViewTemplate
+list-before: $:/core/ui/ViewTemplate/body
+
+\whitespace trim
+\function forms-doc-field() [<currentTiddler>type[application/json]] :filter[<currentTiddler>get[text]jsonget[documentation]!is[blank]]
+<% if [function[forms-doc-field]] %>
+<$let forms-doc={{{ [<currentTiddler>get[text]jsonget[documentation]] }}}>
+<div class="forms-json-doc">
+<<forms-doc>>
+</div>
+</$let>
+<% endif %>

@@ -86,3 +86,13 @@ code-body: yes
 	vertical-align: top;
 }
 .forms-export-table th { background: <<colour tab-background>>; white-space: nowrap; }
+
+.forms-json-doc {
+	margin: 0.5em 0 1em 0;
+	padding: 0.5em 0.75em;
+	background: <<colour code-background>>;
+	border-radius: 4px;
+	font-size: 0.9em;
+}
+.forms-json-doc p:first-child { margin-top: 0; }
+.forms-json-doc p:last-child { margin-bottom: 0; }

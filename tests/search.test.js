@@ -74,6 +74,26 @@ h.test("the fold map is configuration, not code", function() {
 	assert.equal(folded(w, "Støtte"), "stotte", "the map did not go back");
 });
 
+/*
+"documentation" is a reserved key in the fold map's JSON, rendered as wikitext
+by the doc-field ViewTemplate rather than treated as a folding rule. If fold.js
+ever stopped excluding it, a real deployment's map — which always carries the
+key — would fold the literal word "documentation" into whatever the doc text
+starts with, corrupting search for anyone who typed that word.
+*/
+h.test("the documentation key is never treated as a folding rule", function() {
+	var w = h.fixtureWiki(),
+		before = w.$tw.wiki.getTiddlerText(MAP);
+	try {
+		w.addTiddler({title: MAP, type: "application/json",
+			text: JSON.stringify({documentation: "xyzzy", "ø": "o"})});
+		assert.equal(folded(w, "documentation"), "documentation",
+			"the documentation key's value was applied as a folding rule");
+	} finally {
+		w.addTiddler({title: MAP, type: "application/json", text: before});
+	}
+});
+
 h.suite("Normalised search");
 
 h.test("an ASCII query finds the accented text", function() {

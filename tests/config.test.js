@@ -44,6 +44,29 @@ h.test("every JSON data tiddler in the plugins parses", function() {
 	});
 });
 
+/*
+A JSON config tiddler may carry a "documentation" key: wikitext, rendered above
+the JSON editor by the engine's doc-field ViewTemplate, so an override is not
+left to speak for itself. This renders it through the real page view chain
+(as the story river would), not a bare {{transclusion}}, because ViewTemplate
+splices only apply there.
+*/
+h.test("a JSON tiddler's documentation key is wikified when the tiddler is viewed", function() {
+	var w = h.wiki(),
+		title = "$:/config/forms/fold-map",
+		html = w.render('<$tiddler tiddler="' + title + '"><$transclude tiddler="$:/core/ui/ViewTemplate"/></$tiddler>'),
+		box = (html.match(/forms-json-doc[\s\S]*?<\/div>/) || [""])[0];
+	assert.ok(box, title + " has a documentation key but no doc box was rendered");
+	assert.ok(/tc-tiddlylink/.test(box), "the documentation text did not wikify its [[links]]");
+	assert.ok(!/tc-tiddlylink-missing/.test(box), "a link in the documentation points at a title that does not exist: " + box);
+});
+
+h.test("a JSON tiddler with no documentation key renders no doc box", function() {
+	var w = h.wiki(),
+		html = w.render('<$tiddler tiddler="$:/config/forms/labels"><$transclude tiddler="$:/core/ui/ViewTemplate"/></$tiddler>');
+	assert.ok(!/forms-json-doc/.test(html), "labels has no documentation key, but a doc box was rendered anyway");
+});
+
 h.test("every projection named in a column spec is a defined function", function() {
 	var w = h.wiki();
 	COLUMN_SPECS.forEach(function(spec) {

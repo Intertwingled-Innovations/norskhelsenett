@@ -2,6 +2,7 @@ title: $:/config/forms/fold-map
 type: application/json
 
 {
+"documentation": "The Norwegian letters that Unicode normalisation alone cannot fold — the [[forms|$:/plugins/tiddlywiki/forms/readme]] engine ships this tiddler empty, and this configuration plugin overrides it at a higher `plugin-priority`. See [[$:/plugins/tiddlywiki/forms/fold.js]] for how the folding mechanism uses this map, and [[$:/plugins/intertwingled-innovations/nhn/readme]] for this plugin's overview.",
 "ø": "o",
 "æ": "a",
 "å": "a",
