@@ -41,7 +41,7 @@ Both plugins are flat folders of small tiddlers. Nothing is generated; every fil
 
 | File | Holds |
 |---|---|
-| `tree.tid` | `forms-tree`: cycle-safe collapsible tree over a relation function |
+| `tree.tid` | `forms-tree`: cycle-safe collapsible tree over a relation function; `forms-tag-or-link`: the one way to display a tag (see D6) |
 | `group.tid` | `forms-group`: group-by tree over projection functions and parallel sort keys |
 | `grouped-view.tid` | `forms-grouped-view`: set picker plus ordering picker over a JSON catalogue |
 | `form.tid` | `forms-form` and `forms-create-actions`: guided creation from a definition |
@@ -134,6 +134,10 @@ CSV satisfies the brief's "Excel extract", but must **prepend a UTF-8 BOM** or E
 ### D5 — Access control
 
 Read-vs-write against Microsoft AD is **server-side** (an auth proxy, or Node.js TiddlyWiki server auth), not a plugin concern. Out of scope for both plugins; it belongs in the deployment story.
+
+### D6 — Tags are always shown as the core tag pill
+
+Anywhere the UI displays a tag, or a link to something that acts as a tag — tree nodes, group headers, the service column of the ToDo lists, the Anomalier listings — it goes through `forms-tag-or-link` (in `tree.tid`), which transcludes `$:/core/ui/TagTemplate` when anything is tagged with the title and falls back to a `$link` otherwise. Never a bare `$link` or a hand-rolled pill: users get the same colour, icon and dropdown of tagged tiddlers they know from the core UI. A smoke test renders every page and fails if no pill appears.
 
 ## TiddlyWiki mechanics worth knowing
 

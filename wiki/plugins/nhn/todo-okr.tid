@@ -9,7 +9,7 @@ caption: ToDo målsettinger
 	items={{{ [function[forms-todo-items]] +[format:titlelist[]join[ ]] }}}>
 <$let okr={{{ [enlist<items>first[]] }}}>
 <tr>
-<td><$link to=<<svc>>/></td>
+<td><$transclude $variable="forms-tag-or-link" title=<<svc>>/></td>
 <td><$text text={{{ [function[nhn-owner]] }}}/></td>
 <td><span class={{{ [[$:/plugins/intertwingled-innovations/nhn/todo-status]get[text]jsonget<status>,[class]] }}}><$text text={{{ [[$:/plugins/intertwingled-innovations/nhn/todo-status]get[text]jsonget<status>,[label]] }}}/></span></td>
 <td>

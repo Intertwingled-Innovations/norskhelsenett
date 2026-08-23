@@ -8,7 +8,7 @@ caption: ToDo gjennomgang
 	status={{{ [function[forms-todo-status]] }}}
 	review={{{ [function[forms-todo-item]] }}}>
 <tr>
-<td><$link to=<<svc>>/></td>
+<td><$transclude $variable="forms-tag-or-link" title=<<svc>>/></td>
 <td><$text text={{{ [function[nhn-owner]] }}}/></td>
 <td><span class={{{ [[$:/plugins/intertwingled-innovations/nhn/todo-status]get[text]jsonget<status>,[class]] }}}><$text text={{{ [[$:/plugins/intertwingled-innovations/nhn/todo-status]get[text]jsonget<status>,[label]] }}}/></span></td>
 <td>

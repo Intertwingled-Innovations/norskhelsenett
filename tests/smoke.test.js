@@ -93,3 +93,37 @@ h.test("a sample of tiddlers render through the real ViewTemplate without a stru
 		assert.deepEqual(errors, [], title + " has structural errors when opened: " + errors.join(", "));
 	});
 });
+
+/* Tags must be shown as the core tag pill (with its dropdown), never as a bare
+   link. The engine's forms-tag-or-link decides by whether anything is tagged
+   with the title; every page that lists tag-like titles goes through it. */
+h.suite("Tag pill rendering");
+
+h.test("forms-tag-or-link renders a pill for a tag and a link otherwise", function() {
+	var w = h.wiki();
+	w.addTiddler({title: "Parent"});
+	w.addTiddler({title: "Child", tags: "Parent"});
+	w.addTiddler({title: "Loner"});
+	var pill = w.render('<$transclude $variable="forms-tag-or-link" title="Parent"/>'),
+		link = w.render('<$transclude $variable="forms-tag-or-link" title="Loner"/>');
+	assert.ok(/tc-tag-list-item/.test(pill) && /data-tag-title="Parent"/.test(pill),
+		"a title used as a tag should render as the core tag pill: " + pill);
+	assert.ok(!/tc-tag-list-item/.test(link) && /tc-tiddlylink/.test(link),
+		"a title nothing is tagged with should render as a plain link: " + link);
+});
+
+h.test("navigation trees, summaries and ToDo lists show tags as pills", function() {
+	var w = h.fixtureWiki();
+	[
+		'<$transclude $tiddler="$:/plugins/intertwingled-innovations/nhn/ui/nav/governance"/>',
+		'<$transclude $tiddler="$:/plugins/intertwingled-innovations/nhn/ui/nav/services"/>',
+		"{{Sammendrag}}",
+		"{{ToDo forretningsgjennomgang}}",
+		"{{ToDo målsettinger}}",
+		"{{Tjenesteeiere}}",
+		"{{Anomalier}}"
+	].forEach(function(src) {
+		var html = w.render(src);
+		assert.ok(/tc-tag-list-item/.test(html), src + " renders no tag pills");
+	});
+});

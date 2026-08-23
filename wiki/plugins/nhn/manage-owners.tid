@@ -49,7 +49,7 @@ Disse navnene finnes ikke som tjeneste og hoppes over:
 <$list filter="[function[nhn-services]sort[title]]" variable="svc">
 <$let currentTiddler=<<svc>>>
 <tr>
-<td><$link to=<<svc>>/></td>
+<td><$transclude $variable="forms-tag-or-link" title=<<svc>>/></td>
 <td><$text text={{{ [function[nhn-serviceid]] }}}/></td>
 <td><$text text={{{ [function[nhn-business-unit]first[]] }}}/></td>
 <td><$edit-text tiddler=<<svc>> field=<<nhn-owner-field>> tag="input" placeholder="(ingen)" class="nhn-owner-input"/></td>

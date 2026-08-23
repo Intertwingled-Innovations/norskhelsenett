@@ -16,7 +16,7 @@ Noen tiddlere har sin egen tittel som tagg, og enkelte par av Målsetting og Res
 ''Tiddlere som tagger seg selv:'' <$count filter="[all[tiddlers]] :filter[<currentTiddler>tags[]match<currentTiddler>]"/>
 
 <div class="nhn-anomaly-list">
-<$list filter="[all[tiddlers]] :filter[<currentTiddler>tags[]match<currentTiddler>] +[sort[title]limit[200]]"><$link/><br></$list>
+<$list filter="[all[tiddlers]] :filter[<currentTiddler>tags[]match<currentTiddler>] +[sort[title]limit[200]]"><$transclude $variable="forms-tag-or-link" title=<<currentTiddler>>/><br></$list>
 </div>
 
 !! 2. Avvik i skrivemåte og store bokstaver
@@ -24,19 +24,19 @@ Noen tiddlere har sin egen tittel som tagg, og enkelte par av Målsetting og Res
 Det samme begrepet finnes i flere skrivemåter, slik at et filter som treffer én variant stilltiende går glipp av de andre.
 
 |!Variant |!Antall |
-|`Ekstern Tjeneste` |<$count filter="[tag[Ekstern Tjeneste]]"/> |
-|`Ekstern tjeneste` |<$count filter="[tag[Ekstern tjeneste]]"/> |
-|`Intern tjeneste` |<$count filter="[tag[Intern tjeneste]]"/> |
-|`Intern Tjeneste` |<$count filter="[tag[Intern Tjeneste]]"/> |
-|`Relatert tjeneste` |<$count filter="[tag[Relatert tjeneste]]"/> |
-|`Relatert Tjeneste` |<$count filter="[tag[Relatert Tjeneste]]"/> |
+|<<tag "Ekstern Tjeneste">> |<$count filter="[tag[Ekstern Tjeneste]]"/> |
+|<<tag "Ekstern tjeneste">> |<$count filter="[tag[Ekstern tjeneste]]"/> |
+|<<tag "Intern tjeneste">> |<$count filter="[tag[Intern tjeneste]]"/> |
+|<<tag "Intern Tjeneste">> |<$count filter="[tag[Intern Tjeneste]]"/> |
+|<<tag "Relatert tjeneste">> |<$count filter="[tag[Relatert tjeneste]]"/> |
+|<<tag "Relatert Tjeneste">> |<$count filter="[tag[Relatert Tjeneste]]"/> |
 
 !! 3. Tjenestetype-tagger på månedlige gjennomganger
 
 Månedlige forretningsgjennomganger (med tittel `NN <tjeneste> - hovedtrekk og endringer …`) har iblant en tjenestetype-tagg, og dukker derfor opp som uekte tjenestenoder i strukturen.
 
 <div class="nhn-anomaly-list">
-<$list filter="[enlist<nhn-tjeneste-types>tagging[]unique[]] +[regexp[^\d\d ]sort[title]]"><$link/><br></$list>
+<$list filter="[enlist<nhn-tjeneste-types>tagging[]unique[]] +[regexp[^\d\d ]sort[title]]"><$transclude $variable="forms-tag-or-link" title=<<currentTiddler>>/><br></$list>
 </div>
 
 !! 4. `Tiltak` og `Satsning for fart` tagget direkte på NHN
@@ -46,7 +46,7 @@ Nasjonale tiltak er tagget direkte på `Norsk Helsenett SF` med tjenestetype-tag
 ''Tjenestetype-tiddlere tagget direkte på NHN:'' <$count filter="[[Norsk Helsenett SF]tagging[]] :filter[tag[Tiltak]] [[Norsk Helsenett SF]tagging[]] :filter[tag[Satsning for fart]] +[unique[]]"/>
 
 <div class="nhn-anomaly-list">
-<$list filter="[[Norsk Helsenett SF]tagging[]] :filter[tag[Tiltak]] [[Norsk Helsenett SF]tagging[]] :filter[tag[Satsning for fart]] +[unique[]sort[title]]"><$link/><br></$list>
+<$list filter="[[Norsk Helsenett SF]tagging[]] :filter[tag[Tiltak]] [[Norsk Helsenett SF]tagging[]] :filter[tag[Satsning for fart]] +[unique[]sort[title]]"><$transclude $variable="forms-tag-or-link" title=<<currentTiddler>>/><br></$list>
 </div>
 
 !! 5. Målsettinger og resultater med flere foreldre
@@ -61,7 +61,7 @@ Tiltak finnes både som `X` og som `X 2025` / `X 2026`, som tagger hverandre og 
 
 Bare noen tjenester er tagget med `Domene …`, og ett domene (`Domene Økosystem`) er dessuten tagget `Divisjon`. Domenenivået vises ennå ikke i navigasjonstreet.
 
-''Domener:'' <$list filter="[tag[Domene]sort[title]]"><$link/> </$list>
+''Domener:'' <$list filter="[tag[Domene]sort[title]]"><$transclude $variable="forms-tag-or-link" title=<<currentTiddler>>/> </$list>
 
 !! 8. Målsetting som også er tagget Resultat (tvetydig type)
 
@@ -70,5 +70,6 @@ Noen tiddlere har både `Målsetting` og `Resultat`, noe som gjør typen tvetydi
 ''Tiddlere tagget både Målsetting og Resultat:'' <$count filter="[tag[Målsetting]tag[Resultat]]"/>
 
 <div class="nhn-anomaly-list">
-<$list filter="[tag[Målsetting]tag[Resultat]sort[title]]"><$link/><br></$list>
+<$list filter="[tag[Målsetting]tag[Resultat]sort[title]]"><$transclude $variable="forms-tag-or-link" title=<<currentTiddler>>/><br></$list>
 </div>
+

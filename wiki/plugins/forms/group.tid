@@ -8,7 +8,7 @@ tags: $:/tags/Global
 <$list filter="[enlist<set>] :map:flat[function<head>] +[unique[]] :sort[function<hsort>]" variable="gval">
 <$let subset={{{ [enlist<set>] :filter[function<head>match<gval>] +[format:titlelist[]join[ ]] }}}>
 <details class="forms-tree-branch">
-<summary class="forms-tree-summary"><<forms-toggle>><span class="forms-group-label"><$text text=<<gval>>/></span><span class="forms-tree-count">(<$text text={{{ [enlist<subset>count[]] }}}/>)</span></summary>
+<summary class="forms-tree-summary"><<forms-toggle>><span class="forms-group-label"><% if [<gval>tagging[]limit[1]] %><$let currentTiddler=<<gval>>><$transclude $tiddler="$:/core/ui/TagTemplate"/></$let><% else %><$text text=<<gval>>/><% endif %></span><span class="forms-tree-count">(<$text text={{{ [enlist<subset>count[]] }}}/>)</span></summary>
 <div class="forms-tree-children">
 <$transclude $variable="forms-group" set=<<subset>> groups=<<grest>> sorts=<<srest>>/>
 </div>
@@ -18,7 +18,7 @@ tags: $:/tags/Global
 </$let>
 <% else %>
 <$list filter="[enlist<set>sort[title]]" variable="node">
-<div class="forms-tree-leaf"><$link to=<<node>>/></div>
+<div class="forms-tree-leaf"><$transclude $variable="forms-tag-or-link" title=<<node>>/></div>
 </$list>
 <% endif %>
 \end

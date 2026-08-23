@@ -6,6 +6,14 @@ tags: $:/tags/Global
 <span class="forms-tree-toggle"><$transclude $tiddler="$:/core/images/right-arrow" size="1em"/><$transclude $tiddler="$:/core/images/down-arrow" size="1em"/></span>
 \end
 
+\procedure forms-tag-or-link(title)
+<% if [<title>tagging[]limit[1]] %>
+<$let currentTiddler=<<title>>><$transclude $tiddler="$:/core/ui/TagTemplate"/></$let>
+<% else %>
+<$link to=<<title>>/>
+<% endif %>
+\end
+
 \procedure forms-tree(roots,children)
 <div class="forms-tree">
 <$list filter=<<roots>> variable="node">
@@ -17,7 +25,7 @@ tags: $:/tags/Global
 \end
 
 \procedure forms-tree-branch(children)
-<summary class="forms-tree-summary"><<forms-toggle>><$link to=<<currentTiddler>>/><span class="forms-tree-count">(<$text text={{{ [function<children>] -[enlist<forms-tree-path>] +[count[]] }}}/>)</span></summary>
+<summary class="forms-tree-summary"><<forms-toggle>><$transclude $variable="forms-tag-or-link" title=<<currentTiddler>>/><span class="forms-tree-count">(<$text text={{{ [function<children>] -[enlist<forms-tree-path>] +[count[]] }}}/>)</span></summary>
 <div class="forms-tree-children">
 <$list filter="[function<children>] -[enlist<forms-tree-path>]" variable="node">
 <$let currentTiddler=<<node>> forms-tree-path={{{ [enlist<forms-tree-path>] [<node>] +[format:titlelist[]join[ ]] }}} >
@@ -28,7 +36,7 @@ tags: $:/tags/Global
 \end
 
 \procedure forms-tree-node(children,open)
-<$list filter="[function<children>] -[enlist<forms-tree-path>] +[limit[1]]" variable="_probe" emptyMessage="""<div class="forms-tree-leaf"><$link to=<<currentTiddler>>/></div>""">
+<$list filter="[function<children>] -[enlist<forms-tree-path>] +[limit[1]]" variable="_probe" emptyMessage="""<div class="forms-tree-leaf"><$transclude $variable="forms-tag-or-link" title=<<currentTiddler>>/></div>""">
 <% if [<open>match[yes]] %>
 <details class="forms-tree-branch" open><$transclude $variable="forms-tree-branch" children=<<children>>/></details>
 <% else %>
@@ -42,3 +50,7 @@ tags: $:/tags/Global
 Renders a collapsible, cycle-safe tree (native `<details>`/`<summary>`).
 
 `<$transclude $variable="forms-tree" roots="<filter>" children="<fn-name>"/>` — `roots`: filter for the top nodes; `children`: name of a function mapping `currentTiddler` → its child tiddlers. The root is expanded; descendants collapse. Repeated ancestors are pruned, so self-/mutual-tag cycles are safe.
+
+! forms-tag-or-link
+
+`<$transclude $variable="forms-tag-or-link" title=<<t>>/>` — renders `t` as the core tag pill (`$:/core/ui/TagTemplate`, with its dropdown of tagged tiddlers) if anything is tagged with it, otherwise as a plain `$link`. Every place the engine or a configuration layer shows a title that acts as a tag must go through this rather than a bare link, so tags look and behave the same everywhere as in the core UI.
