@@ -2,3 +2,6 @@ wiki/output/
 .DS_Store
 node_modules/
 /build/
+
+# Written back by the Node.js server on every navigation; has no effect on startup
+wiki/tiddlers/$__StoryList.tid
