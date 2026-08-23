@@ -6,6 +6,8 @@ tags: $:/tags/Global
 \function nhn-review-title-service() [<currentTiddler>search-replace:g:regexp[^\d+\s+],[]search-replace:g:regexp[\s*-\s*hovedtrekk.*$],[]] :intersection[function[nhn-services]]
 \function nhn-review-service() [function[nhn-servicename]] :else[function[nhn-review-title-service]]
 \function nhn-result-count() [<currentTiddler>tagging[]tag[Resultat]count[]]
+\define nhn-glued-re() (?m)^[^!|*#;:>\-<"`\\\s][^\n]*\n[*#]+ 
+\function nhn-glued-lists() [all[tiddlers]!is[system]!is[binary]] :filter[<currentTiddler>get[type]else[text/vnd.tiddlywiki]match[text/vnd.tiddlywiki]] +[regexp:text<nhn-glued-re>sort[title]]
 
 Attribution for the ToDo lists (brief §3.5 and §3.6). The status machinery itself is generic and lives in [[$:/plugins/tiddlywiki/forms/todo]]; what is NHN-specific is deciding which service an item belongs to.
 
@@ -24,3 +26,7 @@ Objectives need no such fallback: their titles follow no convention, so `nhn-ser
 
 * `nhn-template-text` — the `mal` tiddler, which the review ToDo passes as `todo-template`. OKRs have no template, so that list passes nothing.
 * `nhn-result-count` — how many `Resultat` hang off an objective. Not part of the status, but 39% of the 2026 objectives have none, which is worth showing next to one that "exists".
+
+!! Lists glued to a paragraph
+
+`nhn-glued-lists` — wikitext tiddlers in which a `*` or `#` list line directly follows a line of paragraph text with no blank line between. TiddlyWiki then renders the bullets as literal text inside the paragraph. Lines that are themselves block-level (headings, tables, other list items, definitions, quotes, rules, HTML, code fences, pragmas) are legitimate predecessors and are not reported.

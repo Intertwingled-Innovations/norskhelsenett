@@ -147,3 +147,29 @@ h.test("a service can carry several year tags", function() {
 	assert.ok(multiYear.length > 0,
 		"expected some multi-year services; if this is now empty the export wrinkle is gone");
 });
+
+h.suite("Data-quality detectors");
+
+h.test("nhn-glued-lists reports only lists glued to paragraph text", function() {
+	var w = h.fixtureWiki();
+	w.addTiddler({title: "$:/temp/test/glued", text: "Kommentar:\n* en\n* to"});
+	[
+		{title: "Glued list", text: "Kommentar:\n* Internregnskapet viser\n* to"},
+		{title: "Glued numbered", text: "Status\n# første"},
+		{title: "Spaced list", text: "Kommentar:\n\n* en"},
+		{title: "After heading", text: "! Tittel\n* en"},
+		{title: "Nested list", text: "* en\n** to"},
+		{title: "After table", text: "|a|b|\n* en"},
+		{title: "Not wikitext", text: "x\n* y", type: "text/plain"}
+	].forEach(function(t) { w.addTiddler(t); });
+	var found = w.filter("[function[nhn-glued-lists]]");
+	["Glued list", "Glued numbered"].forEach(function(t) {
+		assert.ok(found.indexOf(t) >= 0, t + " should be reported");
+	});
+	["Spaced list", "After heading", "Nested list", "After table", "Not wikitext"].forEach(function(t) {
+		assert.ok(found.indexOf(t) === -1, t + " should not be reported");
+	});
+	assert.ok(found.indexOf("$:/temp/test/glued") === -1, "system tiddlers must be ignored");
+	assert.ok(found.indexOf("02 Styringsrapport DHP februar 2025") >= 0,
+		"the known glued list in the February 2025 report was not detected");
+});

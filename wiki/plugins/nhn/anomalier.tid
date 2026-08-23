@@ -73,3 +73,12 @@ Noen tiddlere har både `Målsetting` og `Resultat`, noe som gjør typen tvetydi
 <$list filter="[tag[Målsetting]tag[Resultat]sort[title]]"><$transclude $variable="forms-tag-or-link" title=<<currentTiddler>>/><br></$list>
 </div>
 
+!! 9. Punktliste uten blank linje foran
+
+En `*`- eller `#`-liste som følger rett etter en tekstlinje, uten blank linje imellom, blir ikke en liste: TiddlyWiki viser punktene som ren tekst inne i avsnittet (for eksempel `Kommentar:` etterfulgt av `* Internregnskapet viser …`). Rettingen er mekanisk — sett inn en blank linje — og kan kjøres samlet når NHN har godkjent den.
+
+''Tiddlere med liste limt til avsnittet foran:'' <$count filter="[function[nhn-glued-lists]]"/>
+
+<div class="nhn-anomaly-list">
+<$list filter="[function[nhn-glued-lists]]"><$link/><br></$list>
+</div>
