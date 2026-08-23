@@ -51,6 +51,7 @@ Tjenester som mangler målsetting for året. Målsettinger settes per år, så e
 	todo-prior-items={{{ [function[nhn-objectives-all]] :filter[function[nhn-year]match<todo-prev-year>] +[format:titlelist[]join[ ]] }}}
 	year-reviews={{{ [function[nhn-reviews-all]] :filter[function[nhn-year]match<todo-year>] +[format:titlelist[]join[ ]] }}}>
 <$let reviewing={{{ [enlist<year-reviews>] :map:flat[function[nhn-review-service]] +[unique[]format:titlelist[]join[ ]] }}}>
+<$let todo-prior-text-hashes={{{ [function[forms-todo-prior-text-hashes]] }}}>
 <$let svc-reviewing={{{ [function[nhn-services]] :intersection[enlist<reviewing>] +[format:titlelist[]join[ ]] }}}
 	svc-withokr={{{ [function[nhn-services]] :intersection[function[forms-todo-covered]] +[format:titlelist[]join[ ]] }}}>
 <$let todo-set-done={{{ [function[forms-todo-done-set]] +[format:titlelist[]join[ ]] }}}
@@ -93,4 +94,4 @@ Tjenester som mangler målsetting for året. Målsettinger settes per år, så e
 </table>
 <% endif %>
 
-</$let></$let></$let></$let></$let></$let></$let></$let></$let>
+</$let></$let></$let></$let></$let></$let></$let></$let></$let></$let>

@@ -47,11 +47,7 @@ try {
 	COMBINING = /[̀-ͯ]/g;
 }
 
-var cache = {source: null, map: null, regexp: null};
-
-function escapeRegExp(s) {
-	return s.replace(/[.*+?^${}()|[\]\\-]/g, "\\$&");
-}
+var cache = {source: null, map: null, regexp: null, generation: 0};
 
 /* Build (and cache) the folder from the configured map. Rebuilt only when the
    map tiddler's text changes, so this costs nothing on a normal keystroke. */
@@ -71,7 +67,11 @@ function getFolder(wiki) {
 		cache = {
 			source: source,
 			map: map,
-			regexp: keys.length ? new RegExp(keys.map(escapeRegExp).join("|"), "g") : null
+			regexp: keys.length ? new RegExp(keys.map($tw.utils.escapeRegExp).join("|"), "g") : null,
+			// Bumped on every rebuild, so a per-tiddler folded-haystack cache keyed on
+			// it (below) cannot outlive a fold-map change even though editing the map
+			// tiddler only clears its own cache entry, not every other tiddler's.
+			generation: cache.generation + 1
 		};
 	}
 	return cache;
@@ -100,6 +100,11 @@ exports["forms-search"] = function(source, operator, options) {
 		fields = suffix && suffix.length ? suffix : ["title"],
 		terms = fold(operator.operand, folder).split(/\s+/).filter(Boolean),
 		invert = operator.prefix === "!",
+		// Folding a tiddler is independent of the query, so its result is cached per
+		// tiddler rather than redone on every keystroke. Namespaced by field
+		// combination (title-only vs title+text are different haystacks) and by the
+		// fold-map's generation (see getFolder), so neither can return a stale value.
+		cacheName = "forms-fold:" + folder.generation + ":" + fields.join(","),
 		results = [];
 	source(function(tiddler, title) {
 		if(terms.length === 0) {
@@ -109,11 +114,13 @@ exports["forms-search"] = function(source, operator, options) {
 			}
 			return;
 		}
-		var haystack = fields.map(function(field) {
-				if(field === "title") { return title; }
-				return tiddler ? tiddler.getFieldString(field) : "";
-			}).join(" "),
-			folded = fold(haystack, folder),
+		var folded = options.wiki.getCacheForTiddler(title, cacheName, function() {
+				var haystack = fields.map(function(field) {
+					if(field === "title") { return title; }
+					return tiddler ? tiddler.getFieldString(field) : "";
+				}).join(" ");
+				return fold(haystack, folder);
+			}),
 			matched = terms.every(function(term) { return folded.indexOf(term) !== -1; });
 		if(matched !== invert) {
 			results.push(title);

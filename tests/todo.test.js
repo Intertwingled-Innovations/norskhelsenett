@@ -20,9 +20,9 @@ function period(wiki, year, month, priorTitles) {
 			{y: year, m: month}),
 		yearReviews = wiki.filter("[function[nhn-reviews-all]] :filter[function[nhn-year]match<y>]", {y: year});
 	return rollUp(wiki, {
-		"todo-items": reviews.map(list).join(" "),
-		"todo-year-items": yearReviews.map(list).join(" "),
-		"todo-prior-items": (priorTitles || []).map(list).join(" "),
+		"todo-items": wiki.$tw.utils.stringifyList(reviews),
+		"todo-year-items": wiki.$tw.utils.stringifyList(yearReviews),
+		"todo-prior-items": wiki.$tw.utils.stringifyList(priorTitles || []),
 		"todo-attribution": "nhn-review-service",
 		"todo-template": wiki.filter("[function[nhn-template-text]]")[0]
 	});
@@ -33,15 +33,12 @@ function period(wiki, year, month, priorTitles) {
    subtraction lives in one place (forms/todo.tid) rather than being pinned a
    second time here. */
 function rollUp(wiki, vars) {
+	vars["todo-prior-text-hashes"] = wiki.filter("[function[forms-todo-prior-text-hashes]]", vars)[0];
 	["done-set", "copy-set", "template-set"].forEach(function(fn) {
 		var state = fn.split("-")[0];
-		vars["todo-set-" + state] = wiki.filter("[function[forms-todo-" + fn + "]]", vars).map(list).join(" ");
+		vars["todo-set-" + state] = wiki.$tw.utils.stringifyList(wiki.filter("[function[forms-todo-" + fn + "]]", vars));
 	});
 	return vars;
-}
-
-function list(title) {
-	return /[\s\[\]]/.test(title) ? "[[" + title + "]]" : title;
 }
 
 function statusOf(wiki, vars, member) {
@@ -267,8 +264,8 @@ function okrPeriod(wiki, year) {
 		prior = wiki.filter("[function[nhn-objectives-all]] :filter[function[nhn-year]match<y>]",
 			{y: String(Number(year) - 1)});
 	return rollUp(wiki, {
-		"todo-items": items.map(list).join(" "),
-		"todo-prior-items": prior.map(list).join(" "),
+		"todo-items": wiki.$tw.utils.stringifyList(items),
+		"todo-prior-items": wiki.$tw.utils.stringifyList(prior),
 		"todo-attribution": "nhn-servicename",
 		"todo-template": ""
 	});

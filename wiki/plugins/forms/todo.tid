@@ -5,8 +5,9 @@ tags: $:/tags/Global
 \function forms-todo-items() [enlist<todo-items>] :filter[function<todo-attribution>match<todo-member>]
 \function forms-todo-item() [function[forms-todo-items]first[]]
 \function forms-todo-prior-texts() [enlist<todo-prior-items>] :map[get[text]trim[]]
+\function forms-todo-prior-text-hashes() [function[forms-todo-prior-texts]] :map[sha256[]] +[unique[]join[ ]]
 \function forms-todo-is-template() [<todo-template>!is[blank]] :map[get[text]trim[]] :intersection[<currentTiddler>get[text]trim[]]
-\function forms-todo-is-copy() [<currentTiddler>get[text]trim[]!is[blank]] :intersection[function[forms-todo-prior-texts]]
+\function forms-todo-is-copy() [<currentTiddler>get[text]trim[]!is[blank]] :map[sha256[]] :intersection[enlist<todo-prior-text-hashes>]
 \function forms-todo-state() [<currentTiddler>get[text]trim[]!is[blank]count[]match[0]then[template]] :else[<currentTiddler>function[forms-todo-is-template]then[template]] :else[<currentTiddler>function[forms-todo-is-copy]then[copy]] :else[[done]]
 \function forms-todo-in(set) [<todo-member>] :intersection[enlist<set>]
 \function forms-todo-status() [function[forms-todo-in],<todo-set-done>then[done]] :else[function[forms-todo-in],<todo-set-copy>then[copy]] :else[function[forms-todo-in],<todo-set-template>then[template]] :else[[missing]]
@@ -29,6 +30,7 @@ tags: $:/tags/Global
 * `todo-attribution` — the //name of a function// mapping an item to the member it belongs to. Invoked dynamically, so a caller supplies its own rule for "which service is this review about" without the engine knowing what a service is.
 * `todo-template` — optional; a tiddler whose text means "created but not written". Leave blank where there is no template.
 * `todo-set-done`, `todo-set-copy`, `todo-set-template` — the rolled-up membership sets, evaluated once per period (below).
+* `todo-prior-text-hashes` — the preceding period's item texts, hashed and hoisted (below); leave blank where `todo-prior-items` is blank.
 
 !! The states
 
@@ -48,7 +50,9 @@ One service files one review a month, but it may hold four objectives in a year.
 
 `forms-todo-done-set`, `forms-todo-copy-set` and `forms-todo-template-set` are the three disjoint sets, already subtracted by precedence — a page binds them directly as `todo-set-done`, `todo-set-copy` and `todo-set-template` without repeating the subtraction. `forms-todo-status` then answers a row by set membership, and a member lands in exactly one bucket — without the subtraction a service with one written objective and one copied from last year would be counted twice and the summary would exceed the population. The subtraction lives here, once, rather than in every page (and every test) that needs the three sets.
 
-Hoisting matters here. Deriving each row's status from scratch is quadratic — 48 services against 165 objectives, each comparing its text with every objective from the year before — and cost about a second and a half. Evaluating `forms-todo-with-state` once per state, rather than re-deriving per row, brings it to roughly a third of that.
+Hoisting matters here, twice over. Deriving each row's status from scratch is quadratic — 48 services against 165 objectives, each comparing its text with every objective from the year before — and cost about a second and a half. Evaluating `forms-todo-with-state` once per state, rather than re-deriving per row, brings it to roughly a third of that.
+
+The copy check is quadratic on its own: naively, every item's text is compared against every prior item's text, so `forms-todo-prior-texts` — reading and trimming the whole prior period — would otherwise be redone from scratch for each of the current period's items. `forms-todo-prior-text-hashes` hoists that side once, as SHA-256 digests rather than raw text: a page binds it alongside the `todo-set-*` variables, and `forms-todo-is-copy` then hashes only the one item it is asked about and checks membership — one read of the prior period per render instead of one per item. Hashing, rather than joining the raw texts into a list, is what makes a *page-level* variable safe to use for this: review bodies are free text and can contain anything a title-list join would choke on, but a digest is always a plain, joinable string regardless of what it was made from.
 
 !! Rolling up
 

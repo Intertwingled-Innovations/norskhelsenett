@@ -49,6 +49,7 @@ Tjenester som mangler månedens forretningsgjennomgang. «Kun mal» betyr at gje
 <$let todo-items={{{ [enlist<todo-year-items>] :filter[function[nhn-month]match<todo-month>] +[format:titlelist[]join[ ]] }}}
 	todo-prior-items={{{ [function[nhn-reviews-all]] :filter[function[nhn-year]match<todo-prev-year>] :filter[function[nhn-month]match<todo-prev-month>] +[format:titlelist[]join[ ]] }}}
 	reporting={{{ [function[forms-todo-covered-in],<todo-year-items>] +[format:titlelist[]join[ ]] }}}>
+<$let todo-prior-text-hashes={{{ [function[forms-todo-prior-text-hashes]] }}}>
 <$let todo-set-done={{{ [function[forms-todo-done-set]] +[format:titlelist[]join[ ]] }}}
 	todo-set-copy={{{ [function[forms-todo-copy-set]] +[format:titlelist[]join[ ]] }}}
 	todo-set-template={{{ [function[forms-todo-template-set]] +[format:titlelist[]join[ ]] }}}>
@@ -98,4 +99,4 @@ Tjenester som mangler månedens forretningsgjennomgang. «Kun mal» betyr at gje
 <p class="nhn-todo-hint">Ingen tjenester har tjenesteeier ennå, så eierkolonnen er tom. Sett eiere på [[Tjenesteeiere]].</p>
 <% endif %>
 
-</$let></$let></$let></$let></$let></$let></$let></$let></$let></$let>
+</$let></$let></$let></$let></$let></$let></$let></$let></$let></$let></$let>

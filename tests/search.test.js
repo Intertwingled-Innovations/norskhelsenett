@@ -164,6 +164,43 @@ h.test("the operator can be inverted and can search other fields", function() {
 	assert.ok(wide >= hits, "adding the text field found fewer tiddlers");
 });
 
+/*
+forms-search caches each tiddler's folded haystack (fold.js) rather than
+re-folding it on every keystroke, since folding is query-independent. The two
+ways that cache could go stale — and silently keep matching text a tiddler no
+longer has, or miss text it now does — are covered here explicitly, since
+neither is exercised by the tests above.
+*/
+h.test("editing a tiddler's text is reflected in search immediately", function() {
+	var w = h.fixtureWiki(),
+		title = "Test Divisjon";
+	assert.deepEqual(w.filter("[[" + title + "]forms-search:text[xyzzyplugh]]"), [],
+		"the fixture already contains the probe word");
+	w.$tw.wiki.setText(title, "text", null, "Contains xyzzyplugh now.");
+	try {
+		assert.deepEqual(w.filter("[[" + title + "]forms-search:text[xyzzyplugh]]"), [title],
+			"a cached, pre-edit folded haystack was returned instead of the current text");
+	} finally {
+		w.$tw.wiki.setText(title, "text", null, "Fixture business unit");
+	}
+});
+
+h.test("changing the fold map is reflected in already-cached tiddlers", function() {
+	var w = h.fixtureWiki(),
+		title = "Test Tjeneste Med Eier",
+		before = w.$tw.wiki.getTiddlerText(MAP);
+	// Warm the per-tiddler cache under the map as shipped, before changing it
+	w.filter("[[" + title + "]forms-search:title[warm]]");
+	try {
+		w.addTiddler({title: MAP, type: "application/json", text: JSON.stringify({"m": "z"})});
+		// "Med" folds to "zed" only under the new map
+		assert.deepEqual(w.filter("[[" + title + "]forms-search:title[zed]]"), [title],
+			"a folded haystack cached under the old map survived the map change");
+	} finally {
+		w.addTiddler({title: MAP, type: "application/json", text: before});
+	}
+});
+
 h.suite("Search integration");
 
 h.test("the normalised tab is offered and is the default", function() {

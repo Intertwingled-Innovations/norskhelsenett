@@ -23,37 +23,20 @@ function exportCsv(wiki, setFilter, columnsTitle, variables) {
 	return wiki.filter(setFilter + " +[forms-csv[" + columnsTitle + "]]", variables)[0];
 }
 
-/* Parse the exporter's output back into rows. Every field it emits is quoted,
-   with embedded quotes doubled. */
-function parseCsv(text) {
-	var rows = [], row = [], field = "", inQuotes = false, i = 0;
-	if(text.charAt(0) === BOM) {
-		text = text.slice(1);
-	}
-	while(i < text.length) {
-		var c = text.charAt(i);
-		if(inQuotes) {
-			if(c === "\"" && text.charAt(i + 1) === "\"") {
-				field += "\""; i += 2;
-			} else if(c === "\"") {
-				inQuotes = false; i++;
-			} else {
-				field += c; i++;
-			}
-		} else if(c === "\"") {
-			inQuotes = true; i++;
-		} else if(c === ",") {
-			row.push(field); field = ""; i++;
-		} else if(c === "\r" && text.charAt(i + 1) === "\n") {
-			row.push(field); rows.push(row); row = []; field = ""; i += 2;
-		} else {
-			field += c; i++;
-		}
-	}
-	if(field !== "" || row.length) {
-		row.push(field); rows.push(row);
-	}
-	return rows;
+/* Parse the exporter's output back into rows, through the same CSV parser
+   TiddlyWiki itself ships ($tw.utils.parseCsvString) rather than a private
+   reimplementation — so a quoting edge case is tested against what the rest
+   of the wiki would actually see, not against this file's own understanding
+   of CSV. Only the leading BOM is exporter-specific enough to strip here.
+
+   $tw.utils.parseCsvString runs inside the wiki's own vm-context sandbox, so
+   the arrays it returns belong to a different JS realm than this test file's
+   — assert.deepEqual would then reject them as "not reference-equal" despite
+   identical content. Array.from re-materialises them in this realm, the same
+   trick harness.js already uses for w.filter's results. */
+function parseCsv(wiki, text) {
+	var rows = wiki.$tw.utils.parseCsvString(text.charAt(0) === BOM ? text.slice(1) : text);
+	return Array.from(rows, function(row) { return Array.from(row); });
 }
 
 h.suite("CSV export");
@@ -62,7 +45,7 @@ h.test("the header row comes from the column spec", function() {
 	var w = h.wiki();
 	[GOVERNANCE_COLUMNS, SERVICE_COLUMNS].forEach(function(spec) {
 		var expected = w.data(spec).map(function(column) { return column.header; }),
-			header = parseCsv(exportCsv(w, "[[" + REVIEW + "]]", spec))[0];
+			header = parseCsv(w, exportCsv(w, "[[" + REVIEW + "]]", spec))[0];
 		assert.deepEqual(header, expected, spec);
 	});
 });
@@ -83,7 +66,7 @@ h.test("rows are separated by CRLF", function() {
 
 h.test("embedded quotes are doubled", function() {
 	var w = h.fixtureWiki(),
-		rows = parseCsv(exportCsv(w, "[[Test Sitat \"Anførselstegn\"]]", GOVERNANCE_COLUMNS));
+		rows = parseCsv(w, exportCsv(w, "[[Test Sitat \"Anførselstegn\"]]", GOVERNANCE_COLUMNS));
 	assert.equal(rows.length, 2);
 	assert.equal(rows[1][0], "Test Sitat \"Anførselstegn\"");
 });
@@ -91,7 +74,7 @@ h.test("embedded quotes are doubled", function() {
 h.test("cells agree with the projections they name", function() {
 	var w = h.wiki(),
 		columns = w.data(GOVERNANCE_COLUMNS),
-		row = parseCsv(exportCsv(w, "[[" + REVIEW + "]]", GOVERNANCE_COLUMNS))[1];
+		row = parseCsv(w, exportCsv(w, "[[" + REVIEW + "]]", GOVERNANCE_COLUMNS))[1];
 	assert.equal(row.length, columns.length);
 	columns.forEach(function(column, index) {
 		var expected = column.fn === "forms-title" ? REVIEW : (w.project(column.fn, REVIEW)[0] || "");
@@ -103,7 +86,7 @@ h.test("cells agree with the projections they name", function() {
 h.test("every row has one cell per column", function() {
 	var w = h.wiki(),
 		columns = w.data(GOVERNANCE_COLUMNS).length,
-		rows = parseCsv(exportCsv(w, "[function[nhn-extract-governance-set]limit[80]]",
+		rows = parseCsv(w, exportCsv(w, "[function[nhn-extract-governance-set]limit[80]]",
 			GOVERNANCE_COLUMNS, {"extract-year": "2026", "extract-month": "Mars"}));
 	assert.ok(rows.length > 1, "the extract produced no data rows");
 	rows.forEach(function(row, index) {
@@ -113,7 +96,7 @@ h.test("every row has one cell per column", function() {
 
 h.test("an empty set exports headers and nothing else", function() {
 	var w = h.wiki(),
-		rows = parseCsv(exportCsv(w, "[[no such tiddler at all]tags[]]", GOVERNANCE_COLUMNS));
+		rows = parseCsv(w, exportCsv(w, "[[no such tiddler at all]tags[]]", GOVERNANCE_COLUMNS));
 	assert.equal(rows.length, 1);
 });
 
@@ -121,8 +104,8 @@ h.test("both extracts come from the one code path", function() {
 	var w = h.wiki(),
 		set = "[function[nhn-extract-governance-set]limit[20]]",
 		variables = {"extract-year": "2026", "extract-month": "Mars"},
-		governance = parseCsv(exportCsv(w, set, GOVERNANCE_COLUMNS, variables)),
-		services = parseCsv(exportCsv(w, set, SERVICE_COLUMNS, variables));
+		governance = parseCsv(w, exportCsv(w, set, GOVERNANCE_COLUMNS, variables)),
+		services = parseCsv(w, exportCsv(w, set, SERVICE_COLUMNS, variables));
 	// Same operator, same input, two column specs: the shape follows the spec and
 	// nothing else. If these ever diverge in row count, a second path has appeared.
 	assert.equal(governance.length, services.length);

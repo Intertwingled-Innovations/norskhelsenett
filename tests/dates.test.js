@@ -16,11 +16,6 @@ var h = require("./harness.js"),
 	MONTHS = ["januar", "februar", "mars", "april", "mai", "juni",
 		"juli", "august", "september", "oktober", "november", "desember"];
 
-/* Build a filter over an explicit list of values. */
-function list(values) {
-	return values.map(function(v) { return "[[" + v + "]]"; }).join(" ");
-}
-
 h.suite("Date model");
 
 h.test("nhn-month-ord maps the twelve months to 01-12", function() {
@@ -47,13 +42,13 @@ h.test("an unrecognised month sorts last", function() {
 h.test("sorting by nhn-month-ord yields chronological order", function() {
 	var w = h.wiki(),
 		shuffled = ["Desember", "Mars", "Januar", "September", "Februar"],
-		sorted = w.filter(list(shuffled) + " :sort[function[nhn-month-ord]]");
+		sorted = w.filter(w.$tw.utils.stringifyList(shuffled) + " :sort[function[nhn-month-ord]]");
 	assert.deepEqual(sorted, ["Januar", "Februar", "Mars", "September", "Desember"]);
 });
 
 h.test("sorting by nhn-year-sortkey yields newest first", function() {
 	var w = h.wiki(),
-		sorted = w.filter(list(["2024", "2026", "2023", "2025"]) + " :sort[function[nhn-year-sortkey]]");
+		sorted = w.filter(w.$tw.utils.stringifyList(["2024", "2026", "2023", "2025"]) + " :sort[function[nhn-year-sortkey]]");
 	assert.deepEqual(sorted, ["2026", "2025", "2024", "2023"]);
 });
 
@@ -65,8 +60,8 @@ instead, which is what the group trees claim to do.
 */
 h.test("the undated buckets sort after every real year and month", function() {
 	var w = h.wiki(),
-		years = w.filter(list(["2026", "(Uten år)", "2023"]) + " :sort[function[nhn-year-sortkey]]"),
-		months = w.filter(list(["Desember", "(Uten måned)", "Januar"]) + " :sort[function[nhn-month-ord]]");
+		years = w.filter(w.$tw.utils.stringifyList(["2026", "(Uten år)", "2023"]) + " :sort[function[nhn-year-sortkey]]"),
+		months = w.filter(w.$tw.utils.stringifyList(["Desember", "(Uten måned)", "Januar"]) + " :sort[function[nhn-month-ord]]");
 	assert.deepEqual(years, ["2026", "2023", "(Uten år)"]);
 	assert.deepEqual(months, ["Januar", "Desember", "(Uten måned)"]);
 });

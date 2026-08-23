@@ -136,12 +136,33 @@ h.test("the fallback buckets sort last", function() {
 
 h.suite("Grouped view");
 
+var GV_VIEWS = "$:/temp/test/gv-scoped-views";
+
+/*
+The real VIEWS catalogue's sets range over the whole corpus (hundreds of
+deliveries/objectives/results), and forms-tree/forms-group cost scales with
+leaf count, not with how interesting the assertions are — thirteen renders
+against real content cost several seconds for checks that only need a
+handful of tiddlers to exercise every real code path. This installs a
+scoped copy of the SAME catalogue — same captions, same group/sort function
+names, so the exact real widget/projection code still runs for every
+ordering — with each `set` narrowed to the small fixture population
+fixtures.js adds for this purpose (two services, two years per kind, so
+every grouping still has more than one group to place things under). */
+function installScopedViews(wiki) {
+	var scoped = wiki.data(VIEWS).map(function(view) {
+		return Object.assign({}, view, {set: view.set + " +[prefix[Test Gruppetest]]"});
+	});
+	wiki.addTiddler({title: GV_VIEWS, type: "application/json", text: JSON.stringify(scoped)});
+	return scoped;
+}
+
 /* Render the picker with an explicit state prefix so tests cannot leak into
    each other, and count the leaves it produced. */
-function renderView(wiki, statePrefix, setIndex, orderIndex) {
+function renderView(wiki, statePrefix, setIndex, orderIndex, viewsTitle) {
 	wiki.addTiddler({title: statePrefix + "/set", text: String(setIndex)});
 	wiki.addTiddler({title: statePrefix + "/order", text: String(orderIndex)});
-	var html = wiki.render('<<forms-grouped-view "' + VIEWS + '" "' + statePrefix +
+	var html = wiki.render('<<forms-grouped-view "' + (viewsTitle || VIEWS) + '" "' + statePrefix +
 		'" "Vis:" "Grupper:" "tiddlere">>');
 	return {
 		html: html,
@@ -152,11 +173,12 @@ function renderView(wiki, statePrefix, setIndex, orderIndex) {
 
 h.test("each set and ordering renders its own tiddlers", function() {
 	var w = h.fixtureWiki(),
-		views = w.data(VIEWS);
+		views = installScopedViews(w);
 	views.forEach(function(view, vi) {
 		var size = w.filter(view.set).length;
+		assert.ok(size > 0, view.caption + "'s scoped fixture set is empty — fixtures.js needs updating");
 		view.orderings.forEach(function(ordering, oi) {
-			var out = renderView(w, "$:/temp/test/gv/" + vi + "/" + oi, vi, oi);
+			var out = renderView(w, "$:/temp/test/gv/" + vi + "/" + oi, vi, oi, GV_VIEWS);
 			assert.ok(out.groups > 0, view.caption + " / " + ordering.caption + " rendered no groups");
 			// Multi-homed tiddlers repeat, so leaves are never fewer than the set
 			assert.ok(out.leaves >= size,
@@ -167,19 +189,21 @@ h.test("each set and ordering renders its own tiddlers", function() {
 });
 
 h.test("reordering the group levels keeps the same leaf set", function() {
-	var w = h.fixtureWiki(),
-		// "År → tjeneste" and "Tjeneste → år" over the objectives: same two levels, swapped
-		a = renderView(w, "$:/temp/test/gv/swap/a", 1, 0),
-		b = renderView(w, "$:/temp/test/gv/swap/b", 1, 1);
+	var w = h.fixtureWiki();
+	installScopedViews(w);
+	// "År → tjeneste" and "Tjeneste → år" over the objectives: same two levels, swapped
+	var a = renderView(w, "$:/temp/test/gv/swap/a", 1, 0, GV_VIEWS),
+		b = renderView(w, "$:/temp/test/gv/swap/b", 1, 1, GV_VIEWS);
 	assert.equal(a.leaves, b.leaves, "swapping the group order changed how many leaves appear");
 	assert.notEqual(a.html, b.html, "swapping the group order changed nothing at all");
 });
 
 h.test("an ordering left over from another set is clamped, not left broken", function() {
-	var w = h.fixtureWiki(),
-		// Objectives have three orderings; ask for a fourth
-		out = renderView(w, "$:/temp/test/gv/clamp", 1, 9),
-		first = renderView(w, "$:/temp/test/gv/clampref", 1, 0);
+	var w = h.fixtureWiki();
+	installScopedViews(w);
+	// Objectives have three orderings; ask for a fourth
+	var out = renderView(w, "$:/temp/test/gv/clamp", 1, 9, GV_VIEWS),
+		first = renderView(w, "$:/temp/test/gv/clampref", 1, 0, GV_VIEWS);
 	assert.ok(out.groups > 0, "an out-of-range ordering rendered an ungrouped list");
 	assert.equal(out.groups, first.groups, "the clamp did not fall back to the first ordering");
 });
