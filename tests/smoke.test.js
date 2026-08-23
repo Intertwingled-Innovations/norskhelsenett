@@ -1,0 +1,95 @@
+/*
+A cheap, permanent backstop: every page the sidebar links to, and every kind
+Ny can create, must render without TiddlyWiki falling back to its error
+widget or a filter-syntax error. This catches the "renamed a function, forgot
+a page still calls it" class of regression immediately (a widget/parser
+failure is loud), which is the complement of the silent-filter-failure class
+that unit tests exist to catch (a wrong-but-valid filter is quiet).
+
+It proves nothing about correctness — only that nothing is structurally
+broken. See docs/architecture.md for the gotchas that make that distinction
+necessary.
+*/
+
+"use strict";
+
+var h = require("./harness.js"),
+	assert = h.assert,
+	NHN = "$:/plugins/intertwingled-innovations/nhn";
+
+var PAGES = [
+	"Ny", "Eksport", "Arkiv", "Tjenesteeiere", "ToDo forretningsgjennomgang",
+	"ToDo målsettinger", "Sammendrag", "Anomalier"
+];
+
+// Signals TiddlyWiki itself uses for "this could not be rendered": the error
+// widget's class (most parse-time failures), the filter compiler's own error
+// text (malformed filter syntax), and — separately, because it renders as a
+// plain <p> with no distinguishing class — an unrecognised widget type, e.g.
+// a typo'd `<$actionsetfield>` for `<$action-setfield>`.
+function structuralErrors(html) {
+	var found = [];
+	if(/class="tc-error"/.test(html)) {
+		var messages = html.match(/class="tc-error">([^<]*)</g) || [];
+		found = found.concat(messages);
+	}
+	if(/Filter error:/.test(html)) {
+		found.push("contains \"Filter error:\"");
+	}
+	var undefinedWidgets = html.match(/Undefined widget '[^']*'/g);
+	if(undefinedWidgets) {
+		found = found.concat(undefinedWidgets);
+	}
+	return found;
+}
+
+h.suite("Page smoke test");
+
+PAGES.forEach(function(page) {
+	h.test(page + " renders without a structural error", function() {
+		var w = h.wiki(),
+			html;
+		try {
+			html = w.render("{{" + page + "}}");
+		} catch(e) {
+			assert.ok(false, page + " threw while rendering: " + e.message);
+			return;
+		}
+		assert.ok(html.length > 0, page + " rendered no content at all");
+		var errors = structuralErrors(html);
+		assert.deepEqual(errors, [], page + " has structural errors: " + errors.join(", "));
+	});
+});
+
+h.test("every kind-forms entry renders through Ny without a structural error", function() {
+	var w = h.wiki(),
+		map = w.data(NHN + "/kind-forms");
+	Object.keys(map).forEach(function(kind) {
+		w.$tw.wiki.setText("$:/state/nhn/ny/form", "text", null, map[kind]);
+		var html = w.render("{{Ny}}");
+		assert.ok(html.indexOf("forms-form") !== -1, "Ny/" + kind + " (" + map[kind] + ") did not render a form");
+		var errors = structuralErrors(html);
+		assert.deepEqual(errors, [], "Ny/" + kind + " has structural errors: " + errors.join(", "));
+	});
+});
+
+/*
+Every $:/tags/ViewTemplate entry gets spliced into every tiddler's page view
+(doc-field.tid is one), so a broken one would not show up in the page list
+above — it would only appear when some tiddler happened to be opened directly.
+Render a cross-section of real content through the actual ViewTemplate chain,
+the way the story river does, rather than the {{transclusion}} shortcut the
+page list above uses (which does not invoke ViewTemplate splices at all).
+*/
+h.test("a sample of tiddlers render through the real ViewTemplate without a structural error", function() {
+	var w = h.wiki(),
+		sample = w.filter("[function[nhn-services]limit[3]] [function[nhn-reviews]limit[3]] " +
+			"[[$:/config/forms/fold-map]] [[$:/config/forms/labels]] [[" + NHN + "/kind-forms]]");
+	assert.ok(sample.length > 0, "the sample is empty, so this test proves nothing");
+	sample.forEach(function(title) {
+		var html = w.render('<$tiddler tiddler=<<t>>><$transclude tiddler="$:/core/ui/ViewTemplate"/></$tiddler>',
+			{t: title});
+		var errors = structuralErrors(html);
+		assert.deepEqual(errors, [], title + " has structural errors when opened: " + errors.join(", "));
+	});
+});
