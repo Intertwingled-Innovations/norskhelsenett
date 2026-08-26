@@ -17,11 +17,14 @@ npm run serve  # editable server at http://127.0.0.1:8080
                # edits save back into wiki/tiddlers/
 
 npm run build  # static single-file wiki → build/index.html (no sync plugins)
+               # + importable plugin JSONs → build/plugins/{forms,nhn}.json
 
 npm test       # run the plugin test suite (~8s)
 ```
 
 The GitHub Pages deploy ([.github/workflows/deploy.yaml](.github/workflows/deploy.yaml)) runs `npm ci` → `npm test` → `npm run build` and publishes `./build`; a failing test blocks the deploy. Branches and pull requests run the suite via [.github/workflows/test.yaml](.github/workflows/test.yaml).
+
+The build also publishes the two plugins as standalone JSON files, `plugins/forms.json` and `plugins/nhn.json` (a `plugins` build target in [wiki/tiddlywiki.info](wiki/tiddlywiki.info), rendered through the core `JsonFile` exporter). Each is TiddlyWiki's drag-and-drop import format: drop the file into any wiki — including plain tiddlywiki.com — import, save and reload, and the plugin is installed. On the Pages site they live at `…/plugins/forms.json` and `…/plugins/nhn.json`.
 
 There are two wiki folders because of a client/server split:
 

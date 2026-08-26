@@ -1,5 +1,5 @@
 {
-	"description": "NHN wiki — content and UI (client; static build target)",
+	"description": "NHN wiki \u2014 content and UI (client; static build target)",
 	"themes": [
 		"tiddlywiki/vanilla",
 		"tiddlywiki/snowwhite"
@@ -10,6 +10,22 @@
 			"$:/core/save/all",
 			"index.html",
 			"text/plain"
+		],
+		"plugins": [
+			"--render",
+			"[[$:/plugins/tiddlywiki/forms]]",
+			"[[plugins/forms.json]]",
+			"text/plain",
+			"$:/core/templates/exporters/JsonFile",
+			"exportFilter",
+			"[[$:/plugins/tiddlywiki/forms]]",
+			"--render",
+			"[[$:/plugins/intertwingled-innovations/nhn]]",
+			"[[plugins/nhn.json]]",
+			"text/plain",
+			"$:/core/templates/exporters/JsonFile",
+			"exportFilter",
+			"[[$:/plugins/intertwingled-innovations/nhn]]"
 		]
 	}
 }

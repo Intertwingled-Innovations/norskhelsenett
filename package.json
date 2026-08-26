@@ -4,7 +4,7 @@
 	"private": true,
 	"description": "TiddlyWiki simplification project for NHN Divisjon Helsepersonell (forms + nhn plugins over the wiki content)",
 	"scripts": {
-		"build": "tiddlywiki wiki --output build --build index",
+		"build": "tiddlywiki wiki --output build --build index plugins",
 		"test": "node tests/run.js",
 		"serve": "tiddlywiki wiki-server --listen host=127.0.0.1 port=8080"
 	},
