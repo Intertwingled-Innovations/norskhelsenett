@@ -71,7 +71,7 @@ Resolved against the snapshot — these are the facts the plugins are built on:
 
 Expect dirty data, and validate against the JSON before asserting structure:
 
-- **Casing and spelling drift in tags** — e.g. `Ekstern Tjeneste` (87) vs `Ekstern tjeneste` (15); months appear as both `Mars` and `mars`. Normalise casing on read.
+- **Casing and spelling drift in tags** — e.g. `Ekstern Tjeneste` (95) vs `Ekstern tjeneste` (22); months appear as both `Mars` and `mars`; `Resultat` (435) has a lowercase `resultat` (2), which quietly keeps two tiddlers out of the OKR set. Normalise casing on read. Five families drift in this snapshot, but do not work from a list of them: `nhn-tag-casing-drift` (in `validators.tid`) derives the families from the tags in use, because which ones drift changes with every refresh.
 - **Reviews are frequently under-tagged.** Of the 781 monthly reviews, **84% carry no `Forretningsmessig endring` tag** and **22% carry no service-name tag**. Anything that treats those as mandatory — a validator, a required form input, a report column — will find most of the corpus non-conforming. Some also carry surprises instead, such as a bare `40031` tag where the severity should be.
 - Templates left unfilled, and copies of last month's review passed off as this month's — the ToDo features have to detect both.
 - Duplicate-looking titles.

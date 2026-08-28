@@ -23,13 +23,26 @@ Noen tiddlere har sin egen tittel som tagg, og enkelte par av Målsetting og Res
 
 Det samme begrepet finnes i flere skrivemåter, slik at et filter som treffer én variant stilltiende går glipp av de andre.
 
-|!Variant |!Antall |
-|<<tag "Ekstern Tjeneste">> |<$count filter="[tag[Ekstern Tjeneste]]"/> |
-|<<tag "Ekstern tjeneste">> |<$count filter="[tag[Ekstern tjeneste]]"/> |
-|<<tag "Intern tjeneste">> |<$count filter="[tag[Intern tjeneste]]"/> |
-|<<tag "Intern Tjeneste">> |<$count filter="[tag[Intern Tjeneste]]"/> |
-|<<tag "Relatert tjeneste">> |<$count filter="[tag[Relatert tjeneste]]"/> |
-|<<tag "Relatert Tjeneste">> |<$count filter="[tag[Relatert Tjeneste]]"/> |
+Tabellen beregnes fra taggene som faktisk er i bruk, ikke fra en fast liste: den finner alle tagger som er like bortsett fra store og små bokstaver. ''Anbefalt'' er varianten som brukes av flest tiddlere — den de øvrige bør slås sammen til.
+
+''Tagger med avvikende skrivemåte:'' <$count filter="[function[nhn-tag-casing-drift]]"/>
+
+<table class="nhn-anomaly-table">
+<thead>
+<tr><th>Variant</th><th>Antall</th><th>Anbefalt</th></tr>
+</thead>
+<tbody>
+<$list filter="[function[nhn-tag-casing-drift]]" variable="variant">
+<$let currentTiddler=<<variant>> keep={{{ [function[nhn-tag-casing-canonical]] }}}>
+<tr>
+<td><$transclude $variable="forms-tag-or-link" title=<<variant>>/></td>
+<td><$count filter="[all[tiddlers]tag<variant>]"/></td>
+<td><% if [<variant>match<keep>] %>—<% else %><$transclude $variable="forms-tag-or-link" title=<<keep>>/><% endif %></td>
+</tr>
+</$let>
+</$list>
+</tbody>
+</table>
 
 !! 3. Tjenestetype-tagger på månedlige gjennomganger
 

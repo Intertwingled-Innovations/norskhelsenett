@@ -242,3 +242,65 @@ h.test("nhn-glued-lists reports only lists glued to paragraph text", function() 
 		"the known glued list in the February 2025 report was not detected");
 });
 
+/*
+Casing drift used to be a hand-written table of six `tjeneste` spellings on the
+Anomalier page, which is why `Resultat`/`resultat` and `MyHealth@EU`/`Myhealth@EU`
+went unreported for as long as they did. The detector derives the families from
+the tags in use instead, so the fixtures below — not the snapshot — are what pin
+its behaviour.
+*/
+h.test("nhn-tag-casing-drift finds every variant of a drifting tag", function() {
+	var w = h.fixtureWiki();
+	w.addTiddler({title: "Test Drift A", tags: "[[Test Sprikende]] [[Test Stabil]]"});
+	w.addTiddler({title: "Test Drift B", tags: "[[Test sprikende]] [[Test Stabil]]"});
+	try {
+		var drift = w.filter("[function[nhn-tag-casing-drift]]");
+		assert.ok(drift.indexOf("Test Sprikende") !== -1, "the capitalised variant is missing");
+		assert.ok(drift.indexOf("Test sprikende") !== -1, "the lowercase variant is missing");
+		// Both variants, or a merge tool has nothing to merge from
+		assert.ok(drift.indexOf("Test Stabil") === -1,
+			"a tag with no casing twin was reported as drifting");
+	} finally {
+		w.$tw.wiki.deleteTiddler("Test Drift A");
+		w.$tw.wiki.deleteTiddler("Test Drift B");
+	}
+});
+
+h.test("nhn-tag-casing-canonical proposes the most-used variant", function() {
+	var w = h.fixtureWiki(),
+		made = ["Test Kanon 1", "Test Kanon 2", "Test Kanon 3"];
+	// Two tiddlers on the capitalised spelling, one on the lowercase
+	w.addTiddler({title: made[0], tags: "[[Test Kanonisk]]"});
+	w.addTiddler({title: made[1], tags: "[[Test Kanonisk]]"});
+	w.addTiddler({title: made[2], tags: "[[Test kanonisk]]"});
+	try {
+		["Test Kanonisk", "Test kanonisk"].forEach(function(variant) {
+			assert.deepEqual(w.project("nhn-tag-casing-canonical", variant), ["Test Kanonisk"],
+				"the variant proposed for " + variant + " is not the most-used one");
+		});
+	} finally {
+		made.forEach(function(t) { w.$tw.wiki.deleteTiddler(t); });
+	}
+});
+
+/*
+Counts sort as numbers, not as text. With a string sort "189" precedes "4", so
+the four tiddlers tagged `april` would out-vote the 189 tagged `April` and the
+page would propose normalising the corpus onto the typo. Ten variants is not
+enough for that to be visible by eye, so it is pinned here.
+*/
+h.test("nhn-tag-casing-canonical compares counts numerically", function() {
+	var w = h.fixtureWiki(),
+		made = [];
+	for(var i = 0; i < 11; i++) {
+		made.push("Test Numerisk " + i);
+		w.addTiddler({title: made[i], tags: i < 9 ? "[[Test Mange]]" : "[[Test mange]]"});
+	}
+	try {
+		// 9 on the capitalised spelling against 2 on the lowercase: a string sort
+		// would answer "Test mange", because "2" sorts after "9"
+		assert.deepEqual(w.project("nhn-tag-casing-canonical", "Test mange"), ["Test Mange"]);
+	} finally {
+		made.forEach(function(t) { w.$tw.wiki.deleteTiddler(t); });
+	}
+});

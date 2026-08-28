@@ -8,6 +8,10 @@ tags: $:/tags/Global
 \function nhn-result-count() [<currentTiddler>tagging[]tag[Resultat]count[]]
 \define nhn-glued-re() (?m)^[^!|*#;:>\-<"`\\\s][^\n]*\n[*#]+ 
 \function nhn-glued-lists() [all[tiddlers]!is[system]!is[binary]] :filter[<currentTiddler>get[type]else[text/vnd.tiddlywiki]match[text/vnd.tiddlywiki]] +[regexp:text<nhn-glued-re>sort[title]]
+\function nhn-all-tags() [all[tiddlers]tags[]unique[]]
+\function nhn-tag-casing-count() [function[nhn-all-tags]match:caseinsensitive<currentTiddler>count[]]
+\function nhn-tag-casing-drift() [function[nhn-all-tags]] :filter[function[nhn-tag-casing-count]compare:number:gt[1]] +[sort[]]
+\function nhn-tag-casing-canonical() [function[nhn-all-tags]match:caseinsensitive<currentTiddler>] :sort:number[all[tiddlers]tag<currentTiddler>count[]] +[last[]]
 
 Attribution for the ToDo lists (brief §3.5 and §3.6). The status machinery itself is generic and lives in [[$:/plugins/tiddlywiki/forms/todo]]; what is NHN-specific is deciding which service an item belongs to.
 
@@ -30,3 +34,11 @@ Objectives need no such fallback: their titles follow no convention, so `nhn-ser
 !! Lists glued to a paragraph
 
 `nhn-glued-lists` — wikitext tiddlers in which a `*` or `#` list line directly follows a line of paragraph text with no blank line between. TiddlyWiki then renders the bullets as literal text inside the paragraph. Lines that are themselves block-level (headings, tables, other list items, definitions, quotes, rules, HTML, code fences, pragmas) are legitimate predecessors and are not reported.
+
+!! Tags that differ only in casing
+
+`nhn-tag-casing-drift` — every tag for which another tag exists with the same letters and different capitalisation, both variants listed, most-used last. Computed rather than enumerated: a fixed table of known variants was what the page carried before, and it went on reporting six `tjeneste` spellings while `Resultat`/`resultat` and `MyHealth@EU`/`Myhealth@EU` drifted past it unmentioned. Drift is not a fixed list — it is whatever people have typed since — so the page has to derive it from the tags that are actually in use.
+
+`nhn-tag-casing-canonical` names the variant to keep: the one used by the most tiddlers. It is what a future merge action would normalise onto, and showing it turns the listing from a complaint into a proposal.
+
+`nhn-all-tags` is the distinct tags in use, shared by both. It is rescanned per tag, so the listing costs roughly half a second on this corpus — acceptable on a page opened to audit the data, and not used anywhere in the everyday views.

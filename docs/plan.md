@@ -271,6 +271,8 @@ Three other mutations are covered: dropping the map entirely (the NFD-only trap)
 
 The Anomalier page diagnoses ten classes of problem and fixes one. Add reviewed bulk actions for the other mechanical ones: merge tag casing variants, remove self-tags, strip service-type tags from monthly review tiddlers, and insert the missing blank line before lists glued to a paragraph (class 9, `nhn-glued-lists` — 31 tiddlers in the snapshot, where the bullets currently render as literal `*` text). The last is the safest to automate; it is still their text, so it waits for the same sign-off.
 
+Class 2 is now the readiest of these: `nhn-tag-casing-drift` finds the families and `nhn-tag-casing-canonical` already names the variant to merge onto (the most-used one), so the action is a retag loop over the listing rather than a decision. Ten variants across five families in this snapshot.
+
 Class 10 (leftover drafts) is the one that has been fixed rather than only diagnosed: drafts now fall under `nhn-excluded`, so they no longer inflate the summaries, the extracts or the OKR ToDo list. Deleting the 19 tiddlers themselves is still NHN's call, and the page lists them for that.
 
 This class is deliberately **not** patched in the renderer: a custom parser rule would make our build render differently from NHN's live wiki and hide the problem from the people writing the text.

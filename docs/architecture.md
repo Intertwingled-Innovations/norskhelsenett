@@ -65,7 +65,7 @@ Both plugins are flat folders of small tiddlers. Nothing is generated; every fil
 | `form-*.tid` | Six form definitions, the values they derive (`form-functions.tid`), the title templates, and the Norwegian label overrides |
 | `extracts.tid`, `extract-columns-*.tid`, `eksport.tid` | The two §3.3 extracts: selectors, column specs, UI |
 | `summary-views.tid`, `sammendrag.tid` | The §3.4 view catalogue and its page |
-| `validators.tid`, `todo-review.tid`, `todo-okr.tid`, `todo-status.tid` | Attribution for the two to-do lists, their pages, and the status labels |
+| `validators.tid`, `todo-review.tid`, `todo-okr.tid`, `todo-status.tid` | To-do attribution and the data-quality detectors (glued lists, tag casing drift); the two to-do pages and the status labels |
 | `scope.tid`, `arkiv.tid` | §3.7 archiving, the period scope and `nhn-excluded` (the one definition of "not content": templates, archived tiddlers, drafts), and the page that applies them |
 | `search-results.tid`, `search-default.tid` | The folded search tab, and making it the default |
 | `sidebar.tid`, `navtab.tid`, `nav-*.tid` | The NHN sidebar: period control, page links, four navigation trees |

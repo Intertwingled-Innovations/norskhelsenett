@@ -112,6 +112,42 @@ h.test("forms-tag-or-link renders a pill for a tag and a link otherwise", functi
 		"a title nothing is tagged with should render as a plain link: " + link);
 });
 
+h.suite("Anomaly page");
+
+/*
+The detectors behind Anomalier are unit-tested in selectors.test.js; this is
+about the page actually showing what they find. Both halves have already been
+wrong in ways no filter test could see: `\whitespace trim` collapses a wikitext
+table built inside a `$list` into a single row, so ten variants rendered as one
+line of run-together cells while every underlying filter was correct.
+*/
+h.test("Anomalier lists what its detectors find", function() {
+	var w = h.wiki(),
+		html = w.render("{{Anomalier}}"),
+		drift = w.filter("[function[nhn-tag-casing-drift]]"),
+		drafts = w.filter("[function[nhn-drafts]]");
+	assert.ok(drift.length > 0 && drafts.length > 0,
+		"the snapshot has no casing drift or no drafts, so this proves nothing");
+	// One row per variant, plus the header — not one row holding all of them
+	var rows = (html.match(/<tr/g) || []).length;
+	assert.ok(rows >= drift.length + 1,
+		"the casing table rendered " + rows + " rows for " + drift.length +
+		" drifting variants — the rows have collapsed into each other");
+	drift.forEach(function(variant) {
+		assert.ok(html.indexOf(variant) !== -1, "the casing table omits " + variant);
+	});
+	drafts.forEach(function(draft) {
+		assert.ok(html.indexOf($tw$escape(draft)) !== -1, "the drafts section omits " + draft);
+	});
+});
+
+/* Titles reach the HTML with the usual entities substituted. */
+function $tw$escape(title) {
+	return title.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+h.suite("Tag pill rendering");
+
 h.test("navigation trees, summaries and ToDo lists show tags as pills", function() {
 	var w = h.fixtureWiki();
 	[
