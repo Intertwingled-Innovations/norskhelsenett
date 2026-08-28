@@ -1,0 +1,16 @@
+created: 20260613114112835
+modified: 20260613114911504
+revision: 0
+tags: [[Forenkling og opprydding i dagens løsning (RF)]] Reseptformidleren [[Ekstern Tjeneste]] 2026 Juni Leveranse
+title: Returner alle resepter også når gammel PID benyttes
+type: text/vnd.tiddlywiki
+
+Noen pasienter bytter PID. I utgangspunktet skal siste PID benyttes, det er den som er gyldig og de tidligere er ugyldige. Pasienten kan ha resepter foreskrevet på gammel PID.
+
+Hvis apotek spør på siste, dvs den gyldige PID, får man hele listen over resepter uavhengig av hvilken av pasientes PID de var forskrevet på. Benyttet man forrige PID fikk man ikke resepter forskrevet på ny PID. Vi anser dette som riktig funksjonalitet. Man skal alltid bruke siste, altså den gyldige PID.
+
+Det har tidligere vært lovet til apotek at de skulle få hele reseptlisten til pasienten selv om de ikke brukte siste og den gyldige PID ved oppslag. Apotek anser at dette er tidsbesparende for dem ved ekspedering.
+
+Det bør innføres krav om at man benytter den gyldige PID.
+
+Verdi av leveransen: helsepersonell i apotek sparer tid ved utlevering til pasienter som har byttet PID

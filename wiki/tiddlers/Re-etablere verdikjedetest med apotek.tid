@@ -1,7 +1,7 @@
 created: 20251013065927904
-modified: 20251013070624472
+modified: 20260629120302648
 revision: 0
-tags: [[Forbedre kvaliteten på data i e-resept verdikjeden]] 2025 Resultat Reseptformidleren
+tags: [[Forbedre kvaliteten på data i e-resept verdikjeden]] 2025 Resultat Reseptformidleren 2026 [[Ekstern Tjeneste]] [[Bedre datakvalitet i rf]] [[Forenkling og opprydding i dagens løsning (RF)]]
 title: Re-etablere verdikjedetest med apotek
 type: text/vnd.tiddlywiki
 
@@ -10,8 +10,14 @@ Vi har tidligere hatt tilgang til apotekløsning (Farmapro) slik at hele verdikj
 Etter at NHN har tilbudt seg å betale for å kunne ha EIK og en apotekløsning (PCA) i sitt testmiljø ser det ut til at Difa og Sykehusapotekene kan stille seg annerledes til dette.
 
 Det er nødvendig å ha kontroll over hele verdikjede testen av flere grunner:
+
 * vi leverer løpende forbedringer når de er klare, dette kan være hyppig
 * for å være rustet til å håndtere produksjonshendelser som krever rask retting
 * teste konsekvenser av endringer i verdikjeden før endringene skal i produksjon. Dette blir spesielt viktig med tanke på MyHealth@EU og EHDS tilpasninger der nytt og gammelt skal fungere i parallell.
 
 Dette vil også være nyttig for godkjenningsprosessen.
+
+! Leveranser
+!! 2026
+
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>

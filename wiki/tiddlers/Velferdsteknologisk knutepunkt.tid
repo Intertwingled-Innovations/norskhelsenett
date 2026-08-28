@@ -1,6 +1,6 @@
 TjenesteID: 40037
 created: 20240128165407861
-modified: 20260508101700136
+modified: 20260630121301328
 revision: 0
 tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] 2026 [[Team VKP]]
 title: Velferdsteknologisk knutepunkt
@@ -23,6 +23,9 @@ VKP tilbyr både uthenting av opplysninger fra EPJ og automatisk journalføring 
 ! Målsettinger 2026
 
 <<list-links filter:"[tag[Målsetting]tag[2026]tag<currentTiddler>]">>
+
+! Resultat 2026
+<<list-links filter:"[tag[Resultat]tag[2026]tag<currentTiddler>]">>
 
 ! Styring
 !! 2024

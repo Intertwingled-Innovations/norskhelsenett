@@ -1,7 +1,7 @@
 created: 20260330144540912
-modified: 20260331080352750
+modified: 20260624114238284
 revision: 0
-tags: [[Team Medlemsforvaltning]] 2026 [[Forvaltning av Helsenettet - Medlemskap i 2026]] Resultat [[Langsiktig mål: Riktig medlemsmasse i Helsenettet og oversikt over tjenester medlemmer har tilgang til]]
+tags: [[Team Medlemsforvaltning]] 2026 [[Forvaltning av Helsenettet - Medlemskap i 2026]] Resultat [[Langsiktig mål: Riktig medlemsmasse i Helsenettet og oversikt over tjenester medlemmer har tilgang til]] [[Resultat: Masteroversikt over medlemmer og samarbeidspartnere]]
 title: Resultat: Masteroversikt over medlemmer og samarbeidspartnere
 type: text/vnd.tiddlywiki
 
@@ -12,3 +12,5 @@ type: text/vnd.tiddlywiki
 *Oversikt, innsikt og statistikk for å følge fremdrift i arbeidet med å rydde i medlemsmassen
 *Underlag/kilde til Intern informasjon i NHN (TBU underlag, budsjett og styringsinformasjon)  
 
+! Leveranser
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>

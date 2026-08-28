@@ -1,0 +1,19 @@
+TjenesteID: 40025
+created: 20260810063345908
+modified: 20260810063449234
+revision: 1
+tags: Leveranse 2026 [[Testunivers i 2026]] Juni
+title: Leveranse Testunivers: SyntPop ny versjon
+type: text/vnd.tiddlywiki
+
+Levert:
+
+Ny versjon satt i produksjon med utvidet støtte for fastlegehåndtering:
+*Fremskynding av fastlegebytte
+*SletteListeTilhørighet
+*Nullstilling av antall fastlegebytter
+
+Omfattende HelseID-tilpasninger, inkludert overgang fra RS256 til PS256 signeringsalgoritme og oppdateringer knyttet til scopes og client assertions for å sikre fortsatt tilgang til syntetiske data ved kommende HelseID-innstramminger.
+
+
+

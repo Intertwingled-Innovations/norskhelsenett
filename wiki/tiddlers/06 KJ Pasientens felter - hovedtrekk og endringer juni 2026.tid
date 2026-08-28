@@ -1,0 +1,31 @@
+TjenesteID: 40172
+created: 20260807103207781
+modified: 20260807103647118
+revision: 1
+tags: 2026 [[Styring Ekstern tjeneste]] [[Divisjon Helsepersonell]] [[Forretningsmessig endring:1]] [[Kjernejournal Pasientens felter]] Juni
+title: 06 KJ Pasientens felter - hovedtrekk og endringer juni 2026
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer
+* API for spesielle kommunikasjonsbehov, donorkort og egenregistrerte sykdommer er ferdig og produksjonssatt
+* Det er tatt en beslutning om at tjenesten også skal støtte egenregistrerte kontaktpersoner. Finansieringen endres ikke som følge av dette.
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 2''
+
+Konsekvens av forretningsmessig endring: Tjenesten må også støtte egenregistrerte kontaktpersoner. Dette skal i utgangspunktet håndteres innenfor eksisterende finansieringsrammer, men øker risikoen noe.
+
+
+! Prognose på penger og ressurser
+
+* Tjenesten er en del av den nasjonale e-helseløsningen under Kjernejournal og  finansieres over forskriftsfestede midler.
+* DHP har brukt 1.7 mnok av en total inntektsramme for 2026 på 3,5 mnok
+* Budsjett 2026: 0, ny tjeneste som ikke var tatt inn i budsjett
+* Runrate (11 mnd): 2.7 mnok.
+* Framdrift skjer ihht plan
+* Teamet har nødvendige ressurser
+
+! Leveranser
+<<list-links filter:"[tag[Leveranse]tag[KJ Pasientens felter]tag[2026]tag[Juni]]">>
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=a5fa67773442d5ca9a1c">Oversikt KJ Pasientens felter (Power BI)</a>
+

@@ -1,8 +1,8 @@
 TjenesteID: 40036
 created: 20260310115220799
-modified: 20260504163343417
-revision: 0
-tags: [[Tiltaket Pasientens legemiddelliste 2026]] Oppgave 2026 [[Team verdikjede e-resept]] [[Verdikjede e-resept]] Målsetting
+modified: 20260806112943367
+revision: 7
+tags: [[Tiltaket Pasientens legemiddelliste 2026]] Oppgave 2026 [[Team verdikjede e-resept]] [[Verdikjede e-resept]] Målsetting Levert
 title: Sluttføre oppdrag fra HOD om justering og effektivisering av rekvirent/PLL krav
 type: text/vnd.tiddlywiki
 
@@ -23,9 +23,17 @@ https://nhnkontor.sharepoint.com/:b:/r/sites/Samhandlingsplattformen/Shared%20Do
 
 <<list-links filter:"[tag[Resultat]tag[2026]tag<currentTiddler>]">>
 
+NHN har i perioden gjennomført totalt 12 arbeidsgruppemøter for gjennomfæring av oppdraget. Arbeidet med å revidere og forenkle rekvirentkravene til PLL har hatt som mål å dekke minimumskrav som må ivaretas for å sikre god samhandling og forsvarlig legemiddelbehandling, uten å påtvinge endringer i etablerte arbeidsprosesser. Arbeidet bygger på erfaringer fra utprøving av PLL.  Arbeidsgruppen har lagt vekt på at kravene skal gi rekvirenten nødvendig informasjon, uten «hard stops», aktive varslinger eller informasjonsstøy. Forenklinger i krav anbefalt fra arbeidsgruppen flytter ansvaret av krav for beslutningsstøtte over til virksomheten. Det forventes at virksomheten sikrer god opplæring og at systemet de benytter understøtter deres arbeidsprosesser, slik at leger forstår hva det betyr å sende en PLL.  
+
+I arbeidet med krav har arbeidsgruppen ønsket å beskrive hva systemene skal oppnå, fremfor å detaljere hvordan løsningene skal utformes. Dette gir rom for ulike tekniske løsninger og bedre tilpasning til arbeidsprosesser i virksomhetene. Totalt er 37 krav utgått, 10 krav er endret og det er besluttet 6 nye krav. Endringene innebærer blant annet at krav til samstemming er fjernet eller erstattet med krav om tydelig visning av samlet legemiddelinformasjon. I tillegg er flere krav til aktive varslinger erstattet med krav om at viktig informasjon skal vises. Enkelte kravområder krever videre helsefaglige og juridiske avklaringer, og på noen områder mangler vi tilstrekkelig erfaring. Dette gjelder blant annet multidose, håndtering av utleveringsmeldinger fra papir- og telefonresepter, samt ansvar og systemstøtte ved skifte av omsorgsnivå. Det er startet videre oppfølgingsarbeid for dette fra bl.annet HDIR, DMP, Apotekforeningen og NHN. 
+
+ NHN mener at enkelte behov ikke nødvendigvis bør løses gjennom rekvirentkrav, men gjennom virksomhetenes egne arbeidsprosesser, nasjonale råd og tilgrensende løsninger som kjernejournal og FEST.  
+Det forenklede kravsettet som nå er oppdatert legger et større ansvar over på virksomhet og rekvirenten. Det er en balanse mellom å sikre riktig PLL («hard stops») opp mot behovet for at det ikke alltid er mulig å holde PLL samstemt. Forenklingen av krav legger nå opp til at leger må kjenne til hensikten med hva det betyr å sende en PLL. 
+
 
 ! Leveranser
 !! 2026
 
 <<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>
+
 

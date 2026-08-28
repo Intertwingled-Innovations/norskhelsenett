@@ -1,0 +1,37 @@
+TjenesteID: 40025
+created: 20260806181631281
+modified: 20260807073345815
+revision: 2
+tags: [[Divisjon Helsepersonell]] 2026 [[Styring Relatert tjeneste]] [[Testunivers i 2026]] [[Forretningsmessig endring:2]] Juni
+title: 06 Testunivers - hovedtrekk og endringer juni 2026
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer
+
+*Hovedfokus på å legge til rette for selvbetjening med syntetiske virksomheter, samt tilgjengeliggjøring av syntetiske helsedata (pasientens prøvesvar).
+*Forberedelse til POC med PMD/VKP
+*Endringer i teamet: Ytterligere en fast ansatt slutter (tilsammen 3). Rekruttering av fast ansatt og innleide er påstartet. Mål er å få rett kompetanse for å bygge nedlastbart testunivers
+*MVP av nedlastbart testunivers for PPS er godt i gang med mål om å produksjonssette en tjeneste i løpet av Q3
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større): 2''
+
+Konsekvens av forretningsmessig endring: Lavere bemanning i en periode kan føre til saktere fart, men sannsynligvis ikke.. Kosten vil gå noe ned inntil nye teammedlemmer er på plass.
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag[Juni]tag[2026]tag[Testunivers i 2026]]">>
+
+
+! Prognose på penger og ressurser
+
+* Er en relatert tjeneste som finansieres med forskriftsfestede midler hentet fra alle nasjonale e-helseløsninger innad i divisjon Helsepersonell.
+* Budsjett 20,8 mnok
+* Opprinnelig ramme: 20,6 mnok. 
+* Prognose for året: 23,2 mnok. Dette er 2.0 ned fra forrige mnd.
+* Runrate for året: 19,2 mnok.  (11 mnd) (ned 3mnok,)
+
+* Status ressursbehov/kapasitet: Vi har sykdom i teamet som tar ned kapasitet. Det er ikke kritisk for øyeblikket. Det er stilt spørsmål om vi har riktig kompetanse i teamet. Det er mye bevegelse i teamsammensetningen nå som vil påvirke fremdrift.
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark9025ca7215f00744e172">Oversikt Testunivers (Power BI)</a>
+

@@ -1,0 +1,8 @@
+created: 20260817135505728
+modified: 20260817152457513
+revision: 1
+tags: [[05 Flow Form (gammel skjematjeneste) er avviklet]] August [[Helsenettet.no og Medlemstjenesten]] 2026 [[Divisjon Helsepersonell]] [[02 Medlemskap og medlemskapshendelser vedlikeholdes og tilgjengeliggjøres for interne og eksterne tjenester (Medlemstjenesten)]] Leveranse
+title: 26/08 Mottar, reponderer og tilgjengeliggjør medlemskapsoppsigelser utført av NHN, fra andre interne tjenester
+type: text/vnd.tiddlywiki
+
+Medlemstjenesten tilbyr API til interne støttesystem for innrapportering av oppsigelser av Medlemskap, utført av Norsk helsenett. Funksjonalitet for oppsigelse via Avtalebiblioteket er stengt, og det er lagt til rette for å avvikle Flow Form. 

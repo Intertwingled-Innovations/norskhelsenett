@@ -1,0 +1,19 @@
+TjenesteID: 40044
+created: 20260806182153148
+modified: 20260806182223552
+revision: 1
+tags: Leveranse [[Team SFM]] 2026 [[Forvalte SFM i 2026 for alle segmenter]] [[Sentral forskrivningsmodul i 2026]] Juni
+title: Leveranse SFM: Funksjonalitet for å kunne angi dosering på spesifikk dag
+type: text/vnd.tiddlywiki
+
+Mål: Implementere forbedringer i arkitektur, implementasjon og deployment - kode, prosesser og ansvar.
+
+Levert:
+
+*Leveranse: Funksjonalitet for å kunne angi dosering på spesifikk dag
+
+Effekten av dette er økt bruk av strukturert dosering i e-resept verdikjede, som igjen bidrar til lavere tidsbruk når pasientens legemiddelliste deles mellom helsepersonell på tvers av systemer
+
+
+
+

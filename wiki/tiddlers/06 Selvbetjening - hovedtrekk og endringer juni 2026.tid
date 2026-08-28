@@ -1,0 +1,33 @@
+TjenesteID: 40032
+created: 20260703130821358
+modified: 20260810132342856
+revision: 2
+tags: [[Divisjon Helsepersonell]] 2026 Selvbetjening [[Styring Intern tjeneste]] [[Forretningsmessig endring:1]] Juni
+title: 06 Selvbetjening - hovedtrekk og endringer juni 2026
+type: text/vnd.tiddlywiki
+
+
+! Hovedtrekk og endringer
+
+*Selvbetjening fokuserer på å understøtte målet om riktig medlemsmasse. Dette gjøres både i form av kjøretidssjekk og tilrettelegging for leverandører og API-eiere. 
+*Selvbetjening er divisjonens pilot på Vitistack, og er nå fullt over på Vitistack inkludert i produksjon. Dette fungerer godt. 
+*Tjenesten er fullt over på devops
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 1''
+
+Konsekvens av forretningsmessig endring: Ingen vesentilg endring.
+
+
+! Prognose på penger og ressurser
+
+* Intern tjeneste som fordeles ut på de eksterne tjenestene i divisjon Helsepersonell.
+*  Budsjett for året på 9,9 mnok
+* Prognose for året økt til 11,8 mnok. Årsak er økning i timekostnader, antall timer og økte plattformkostnader. Forventer reduksjon i forbindelse med pappaperm. 
+* Runrate for året er på 11,2 mnok. 
+* Første prognose på fordeling av plattformkostnader viser langt høyere kostnad enn det er tatt høyde for i budsjettet. Vi kommer til å følge opp dette for å avklare om dette faktisk er riktig. 
+* Status ressursbehov/kapasitet: Teamet er redusrert til 4 pers. I tillegg forventes en pappapermisjon mot slutten av året. Det må vurderes om dette er tilstrekkelig kapasitet i forbindelse med overgangen til full devops. 
+
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ad6307c59006ac4e200e?experience=power-bi&bookmarkGuid=Bookmarkf3bd903679d4d6441979">Selvbetjening</a>
+

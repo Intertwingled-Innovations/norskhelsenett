@@ -1,0 +1,23 @@
+TjenesteID: 40169
+created: 20260629122755233
+modified: 20260629123645506
+revision: 0
+tags: [[Kjernejournal Pasientens legemidler]] [[Styring Ekstern tjeneste]] [[Forretningsmessig endring:1]] 2026 Juni
+title: 06 Pasientens legemidler - hovedtrekk og endringer juni 2026
+type: text/vnd.tiddlywiki
+
+!Hovedtrekk og endringer
+
+*Data fra reseptformidleren leses inn i ny backend i produksjon
+*Historikk fra KJ arkiv er lest inn i produksjon. Det er en håndfull meldinger som er svært store og de er ikke migrert.
+*Vi er i prøveproduksjon der vi sammenligner svar fra ny backend med svar fra gammel backend. Det er noen få forskjeller som må håndteres
+
+!Penger og ressurser
+
+Vi har så langt brukt betydelig mer penger på å etablere ny backend enn det som var planlagt, det blir dermed mindre penger igjen til å etablere nytt API. Vi har foreløpig ikke noe estimat for nytt API. Dette vil bli utarbeidet når vi er i produksjon med ny backend. Det er planlagt før sommeren.
+
+Foreløpig tror vi at vi vil holde oss innenfor tildelt ramme på 12,1 MNOK i 2026.
+Timepådraget vil øke fra juli for vi vil sette på flere ressurser for å utvikle API'ene. Det kan være nye innleide eller ansatte.
+
+
+https://app.powerbi.com/Redirect?action=OpenReport&appId=6b2c0868-17a5-4050-a66c-e55f8a394c78&reportObjectId=2d7d01c3-db91-4731-bb68-8724b49c798a&ctid=e3dac4b3-9b0b-4f41-8623-9392d0d566dc&reportPage=ab265f40bbbad51c5a74&pbi_source=appShareLink&portalSessionId=7bac47ee-43a7-4011-9bc0-0f83f2c5ac36

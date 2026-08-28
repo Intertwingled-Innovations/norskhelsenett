@@ -1,0 +1,14 @@
+created: 20260613112927804
+modified: 20260613122035304
+revision: 0
+tags: [[Forenkling og opprydding i dagens løsning (RF)]] Reseptformidleren [[Ekstern Tjeneste]] 2026 Juni Leveranse
+title: Forser tilbakekalling av resepter "under ekspedering"
+type: text/vnd.tiddlywiki
+
+Status "under ekspedering" medfører (blant annet) at rekvirent ikke får gjennomført tilbakekalling av resepten for eksempel hvis legemiddelet skal seponeres eller dosering skal endres.
+
+Et stort antall resepter holdes "under ekspedering" over lengre tid og dette medfører at endringer som rekvirenten gjør ikke får effekt før apotek "frigir" resepten. Dette kan føre til at det leveres ut på en resept som rekvirenten har tilbakekalt.
+
+Nå endrer vi status på resepten iht det rekvirenten gjør også for resepter som har status "under ekspedering", altså at vi overstyrer "under ekspedering". Da vil apotek få avvist sin utleveringsmelding (M10) hvis de forsøker å levere ut uten å ha hentet de siste opplysninger fra reseptformidleren. (Det er et krav at siste/nye opplysninger skal hentes før utlevering, men dette skjer sannsynligvis ikke alltid). Dersom reseptformidleren avviser M10 skal legemiddel ikke leveres ut.
+
+Verdi av leveransen: bedre kvalitet i legemiddelbruk siden rekvirentens handling overstyrer "under ekspedering".

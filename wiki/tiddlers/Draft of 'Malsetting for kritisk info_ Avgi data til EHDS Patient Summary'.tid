@@ -1,0 +1,21 @@
+TjenesteID: 40168
+created: 20260412115112999
+draft.of: Målsetting for kritisk info: Avgi data til EHDS Patient Summary
+draft.title: Målsetting for kritisk info: Avgi data til EHDS Patient Summary
+modified: 20260512103559462
+revision: 0
+tags: [[Kjernejournal Pasientens kritiske informasjon]] Målsetting 2026
+title: Draft of 'Målsetting for kritisk info: Avgi data til EHDS Patient Summary'
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+
+Avgi data til EHDS Patient Summary
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

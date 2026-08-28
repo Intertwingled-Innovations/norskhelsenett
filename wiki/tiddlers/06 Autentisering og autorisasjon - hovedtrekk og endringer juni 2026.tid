@@ -1,0 +1,35 @@
+TjenesteID: 40031
+created: 20260703125112406
+modified: 20260810112240066
+revision: 2
+tags: Styring [[Divisjon Helsepersonell]] [[Styring Ekstern tjeneste]] 2026 [[Autentisering og autorisasjon]] [[Forretningsmessig endring:2]] Juni
+title: 06 Autentisering og autorisasjon - hovedtrekk og endringer juni 2026
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+*Økt pådrag fra eksterne leverandører (Buypass/ID-porten) i forbindelse med økt bruk. Vi går nå gjennom med leverandører som har unormalt høyt forbruk og ser på implementasjonen.
+*Noe forventet økt pådrag i forbindelse med den geopolitiske situasjonen og økte krav til robusthet.
+*Noe økt timepådrag pga utvidet risikovurdering - forventes å vedvare. Dette har også medført endringer i personalkabal, og en overgang til devops-modell der drift tas inn i teamet. Det er for tidlig å si hvilke utslag dette gir økonomisk. 
+*Overgang til 4 regioner samtidig som sikkerhetsprofilen strammes inn og tjenesten gjennomfører en utvidet risikovrudering.
+
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 2''
+
+Konsekvens av forretningsmessig endring: Noe økt pådrag.
+
+! Prognose på penger og ressurser
+* Finansieringskilde: Forskriftsfestet pasientjournal HelseID Autentisering & autorisasjon. Ramme 2026 34 MNOK.
+* Risikobildet er redusert betydelig, leveranse for autonome regioner er godt i gang. 
+* Årsprognose 36,1 MNOK 
+* Runrate 11 mnd 30,2 MNOK. Forventer økt timepådrag etter å å ha fåtti nn nye ressurser på teamet.
+* Langt lavere plattformkostnader enn budsjettert, dette forventes å endre seg ved overgang til privat sky, spesielt i en periode der vi kjører med dobbel infrastruktur.
+* Status ressursbehov/kapasitet: Ressurssituasjonen er pr. nå som ønsket. En konsulent ble avsluttet ved utgangen av juni, en ny fast ansatt kommer inn på teamet i halv stilling i august. 
+
+
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark19f8e267b312397c330d">Oversikt Autentisering og autorisasjon</a>
+

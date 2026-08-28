@@ -1,0 +1,20 @@
+TjenesteID: 40025
+created: 20260608060931910
+modified: 20260608061202966
+revision: 0
+tags: Leveranse 2026 [[Testunivers i 2026]] Mai
+title: Leveranse Testunivers: Dr who - nye namespaces for utlevering av e-resept
+type: text/vnd.tiddlywiki
+
+Levert:
+
+Det er utvikliet støtte for nye namespaces: 
+
+* M9NA1 / M9NA2 (nettuleverer)
+* M91 / M92 (utleverer)
+
+Effekt for sektor: Understøtte kvalitetssikring for RF og utleverer i e-resept i testarbeidet. Dette vil øke kvaliteten på leveransene.
+
+
+
+

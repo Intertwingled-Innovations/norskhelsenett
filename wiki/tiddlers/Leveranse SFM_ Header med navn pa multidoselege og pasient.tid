@@ -1,0 +1,18 @@
+TjenesteID: 40044
+created: 20260806182655214
+modified: 20260806182739295
+revision: 1
+tags: Leveranse [[Team SFM]] 2026 [[Sentral forskrivningsmodul i 2026]] Juni [[Implementere endringer basert på erfaringer fra bruk av SFM i alle segmenter]]
+title: Leveranse SFM: Header med navn på multidoselege og pasient
+type: text/vnd.tiddlywiki
+
+Mål: Implementere forbedringer i arkitektur, implementasjon og deployment - kode, prosesser og ansvar.
+
+Levert:
+
+*Header med navn på multidoselege og pasient
+
+Effekten av dette er økt pasientsikkerhet fordi pasientens fastlege enklere kan oppdage dersom annen lege er registrert som multidoselege. Helsepersonell som bruker SFM ser også tydelig hvilken pasient som vises, uavhengig av hvordan SFM er implementert i EPJ.
+
+
+

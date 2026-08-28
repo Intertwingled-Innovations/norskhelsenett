@@ -1,0 +1,14 @@
+created: 20260613112120603
+modified: 20260613112650031
+revision: 0
+tags: [[Ta i bruk etterkontroll tjenesten]] Reseptformidleren [[RF på SHP løsningsmønster - fase 1]] Leveranse Juni [[Ekstern Tjeneste]] 2026
+title: Ta i bruk etterkontrolltjenesten utviklet
+type: text/vnd.tiddlywiki
+
+All kode for å ta i bruk etterkontroll tjenesten er ferdig utviklet og produksjonssatt. Funksjonaliteten er ikke aktivert ennå fordi etterkontroll tjenesten ikke er klare til å ta imot data fra reseptformidleren. De må klargjøre en egen topic for reseptformidleren.
+
+Nå etterkontrolltjenesten er klar kan funksjonaliteten aktiveres med en toggle.
+
+Det vil være nødvendig å samle historikk i omkring ett år før den gamle løsningen kan avvikles fordi eksisterende data ikke er tilstrekkelig detaljert til å migrere dem til etterkontroll tjenesten.
+
+''Verdi av leveranse:'' funksjonalitet er ferdig utviklet og vi får verifisert at den ikke skaper nye/uforutsette feil selv om funksjonaliteten ikke er aktivert.

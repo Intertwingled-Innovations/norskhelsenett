@@ -1,0 +1,32 @@
+TjenesteID: 40055
+created: 20260608055310532
+modified: 20260608060609433
+revision: 0
+tags: [[Divisjon Helsepersonell]] 2026 [[Pasientens rekvisisjoner]] [[Styring Satsning for fart]] Mai [[Forretningsmessig endring:2]]
+title: 05 Pasientens rekvisisjoner - hovedtrekk og endringer mai 2026
+type: text/vnd.tiddlywiki
+
+<<list-links filter:"[tag[Pasientens rekvisisjoner]tag[Tiltak]]">>
+
+! Hovedtrekk og endringer
+* Utprøvingen startet i Helse Vest 21. mai 2026
+* Utprøving i Helse Nord utsatt til 16. juni 2026
+* Det kan være behov for ytterligere finansiering til Dips for å realisere videre scenerier (rekvirering i primærhelsetjenesten, prøvetaking i spesialist). Helse Vest ber om at det vurderes grundig om det er behov for videre scenarier. 
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 2''
+
+Konsekvens av forretningsmessig endring: NHNs finansieringsavtale med Helse Vest IKT på 30 mnok for funksjonalitet i Dips AOM og Dips Interactor vil potensielt ikke være tilstrekkelig for å dekke funksjonalitet nødvendig for å realisere kommende faser av Pasientens rekvisisjoner. Det kan komme behov for mer finansiering, alternativt at vi revurderer hvilken funksjonalitet som skal realiseres framover. Dette vil behandles på workshop 17. - 18. juni
+
+! Prognose på penger og ressurser
+* Finansiering: Satsing for fart og finansiert over NHN sin egenkapital.
+* DIT har brukt 1.4 mnok av en total ramme på 2.7 mnok. 
+* DHP har brukt 6.2 mnok av et budsjett på 25.4 mnok. Prognose pr. mai viser 26,0 mnok. Runrate for året er på 13.6 mnok. Årsak til lavere runrate er at det ikke er betalt ut noen leverandørincentiver av en prognose på 15 mnok. Dette vil bli utbetalt senere i året.
+* Teamet har nødvendig kapasitet
+
+
+! Leveranser
+<<list-links filter:"[tag[Leveranse]tag[Pasientens rekvisisjoner]tag[2026]tag[Mai]]">>
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=c685682c0e0e3a08e148">Oversikt Pasientens rekvisisjoner (Power BI)</a>
+
+

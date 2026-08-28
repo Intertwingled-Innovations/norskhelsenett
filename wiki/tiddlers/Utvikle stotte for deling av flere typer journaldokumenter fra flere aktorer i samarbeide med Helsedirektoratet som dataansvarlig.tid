@@ -1,9 +1,13 @@
 TjenesteID: 40171
 created: 20260527122812750
-modified: 20260527123532243
-revision: 2
+modified: 20260826125341722
+revision: 1
 tags: [[Kjernejournal Pasientens journaldokumenter]] 2026 Målsetting
 title: Utvikle støtte for deling av flere typer journaldokumenter fra flere aktører i samarbeide med Helsedirektoratet som dataansvarlig
 type: text/vnd.tiddlywiki
 
+! Beskrivelse målsetting
 Denne målsettingen er gitt av Helse og omsorgsdepartementet som en del av mandatet for journaldokumenter i 2026.
+
+! Resultat
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>

@@ -1,0 +1,18 @@
+TjenesteID: 40044
+created: 20260806182312343
+modified: 20260806182343393
+revision: 1
+tags: Leveranse [[Team SFM]] 2026 [[Forvalte SFM i 2026 for alle segmenter]] [[Sentral forskrivningsmodul i 2026]] Juni
+title: Leveranse SFM: Nytt RF rekvirent API
+type: text/vnd.tiddlywiki
+
+Mål: Implementere forbedringer i arkitektur, implementasjon og deployment - kode, prosesser og ansvar.
+
+Levert:
+
+*Nytt RF rekvirent API
+
+Effekten av dette er økt sikkerhet pga. overgang til DPoP og bidrag til forenkling av forvaltning for RF-teamet
+
+
+

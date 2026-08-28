@@ -1,12 +1,10 @@
 TjenesteID: 40040
 created: 20260526125950530
-modified: 20260605113003769
-revision: 3
+modified: 20260609064941341
+revision: 0
 tags: [[Divisjon Helsepersonell]] [[Innrapportering av fødselsmelding]] [[Styring Ekstern tjeneste]] 2026 [[Forretningsmessig endring:1]] Mai
 title: 05 Innrapportering av fødselsmelding - hovedtrekk og endringer mai 2026
 type: text/vnd.tiddlywiki
-
-Under arbeid
 
 ! Hovedtrekk og endringer
 I portalen jobbes det med små forbedringer i koden, også med fokus på sikkerhet. Det er ingen større endringer så langt i år.

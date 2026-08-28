@@ -1,5 +1,5 @@
 created: 20260330123818105
-modified: 20260331080352750
+modified: 20260624113718278
 revision: 0
 tags: [[Team Medlemsforvaltning]] 2026 [[Forvaltning av Helsenettet - Medlemskap i 2026]] Resultat [[Resultat: Etablert avtalevilkår for samarbeidspartnere i Helsenettet]] [[Langsiktig mål: Riktig medlemsmasse i Helsenettet og oversikt over tjenester medlemmer har tilgang til]]
 title: Resultat: Etablert avtalevilkår for samarbeidspartnere i Helsenettet
@@ -12,3 +12,5 @@ type: text/vnd.tiddlywiki
 *Intern versjonskontroll på medlemsvilkår og tilgang til alle publiserte versjoner
 *Rutine for informasjon om vilkårs oppdateringer 
 
+! Leveranser
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>

@@ -1,6 +1,6 @@
 TjenesteID: 40173
 created: 20240201095345609
-modified: 20260417124133797
+modified: 20260624124259017
 revision: 0
 tags: [[Team Medlemsforvaltning]] 2026 [[Forvaltning av Helsenettet - Medlemskap i 2026]] Mars Leveranse [[Ekstern tjeneste]] [[Resultat: Rutiner for forvaltning og oppfølging av medlemskap]]
 title: 03/26 Rutine for håndtere endringer i vilkår
@@ -15,4 +15,5 @@ type: text/vnd.tiddlywiki
 *Etablere kriterier ved mindre vs vesentlige endinger 
 *Etablere varslingsrutine  til medlemmer/evt andre 
 
+Nytteverdi for sektor: Transparens om juridiske vilkår. Medlemmer er informert om nye vesentlige endringer og har tilgang til historisk endringslogg.
 https://www.nhn.no/medlemskap-i-helsenettet/vilkar

@@ -51,8 +51,16 @@ There are two wiki folders because of a client/server split:
 
 | Path | Purpose |
 |---|---|
-| [NHN_TiddlyWiki.json](NHN_TiddlyWiki.json) | All ~2,479 tiddlers as one JSON array — the easiest form to query and analyse programmatically. |
+| [NHN_TiddlyWiki.json](NHN_TiddlyWiki.json) | All ~2,652 tiddlers as one JSON array — the easiest form to query and analyse programmatically. |
 | [wiki/tiddlers/](wiki/tiddlers/) | The same content as individual `.tid` files (the Node.js on-disk form). Filenames are ASCII-folded; the `title:` field keeps the real Norwegian characters. |
+
+**Refreshing the snapshot.** `wiki/tiddlers/` is regenerated from `NHN_TiddlyWiki.json` by loading the JSON into a bare wiki and running TiddlyWiki's own `--savewikifolder`, which produces exactly the filenames and `.tid`/`.meta` pairs the filesystem adaptor writes. Three things in that folder are **not** in the JSON export and must survive the regeneration:
+
+- `DefaultTiddlers.json` — `$:/DefaultTiddlers`, which the export omits along with every other `$:/` tiddler.
+- `Spørsmål til NHN` — the open questions for the client, written here, not by them.
+- `Investigation` — working notes, likewise.
+
+The last two are ordinary content tiddlers with no marker distinguishing them from NHN's own, so a wholesale replace deletes them silently. Check the deletions in `git status` against the titles the JSON actually dropped before committing a refresh.
 | [DefaultTiddlers.json](DefaultTiddlers.json) | The wiki's default open tiddlers (`$:/DefaultTiddlers`). |
 
 ### The plugins (the deliverable)

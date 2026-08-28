@@ -1,0 +1,35 @@
+TjenesteID: 40043
+created: 20260807101118320
+modified: 20260807102810989
+revision: 2
+tags: [[Divisjon Helsepersonell]] [[Styring Tiltak]] 2026 [[Tiltaket digitalt helsekort for gravide]] [[Forretningsmessig endring:2]] Juni
+title: 06 Digitalt helsekort for gravide - hovedtrekk og endringer juni 2026
+type: text/vnd.tiddlywiki
+
+<<list-links filter:"[tag[Tiltaket digitalt helsekort for gravide]tag[Tiltak]tag[2024]]">>
+
+! Hovedtrekk og endringer
+* API har vært i produksjon siden 22. mai 2025. Det samme gjelder Gravid tjenesten på helsenorge.
+* Aktører som har tatt i bruk tjenesten:  23 helsestasjoner, 205 legekontor og 3 helseforetak
+* Det er 20889 aktive digitale helsekort, 4360 gravide har avgitt samtykke. 
+* Det er etablert statistikk for å kunne følge opp breddingsmålene for 2026 (https://www.nhn.no/tjenester/statistikk)
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 2''
+
+Konsekvens av forretningsmessig endring: Det inngås en finansieringsavtale med Helse Vest IKT om finansiering av DHG funksjonalitet i Dips Arena (4 mnok). I tillegg er rammen til Helseplattformen økt med 1 mnok. Dette gjøres uten at rammen på 8 mnok i leverandørincentiver for 2026 skal overskrides.
+
+
+! Prognose på penger og ressurser
+* Finansiering: Offentlig tilskudd, helsekort for gravide
+* Finansieringsramme på 14,6 mnok i 2026.
+* DIT har brukt 2.5 mnok av en total ramme på 6,1 mnok. 
+* DHP har brukt 9.2 mnok av en total ramme på 14,6 mnok (hvorav leverandørincentiver utgjør 8 mnok). 
+* Det er brukt 5.8 mnok på leverandørincentiver. Total ramme er 8.0 mnok.
+
+! Leveranser
+<<list-links filter:"[tag[Leveranse]tag[Tiltaket digitalt helsekort for gravide]tag[2026]tag[Juni]]">>
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark939bcb60b56e4d11e018">Oversikt Elektronisk helsekort for gravide (Power BI)</a>
+
+
+

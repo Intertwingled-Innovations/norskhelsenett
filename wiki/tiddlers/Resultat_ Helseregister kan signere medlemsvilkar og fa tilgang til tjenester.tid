@@ -1,7 +1,7 @@
 created: 20260330144033992
-modified: 20260522081628239
+modified: 20260624113837686
 revision: 0
-tags: [[Team Medlemsforvaltning]] 2026 [[Forvaltning av Helsenettet - Medlemskap i 2026]] Resultat kortsi [[Langsiktig mål: Riktig medlemsmasse i Helsenettet og oversikt over tjenester medlemmer har tilgang til]]
+tags: [[Team Medlemsforvaltning]] 2026 [[Forvaltning av Helsenettet - Medlemskap i 2026]] Resultat kortsi [[Langsiktig mål: Riktig medlemsmasse i Helsenettet og oversikt over tjenester medlemmer har tilgang til]] [[Resultat: Helseregister kan signere medlemsvilkår og få tilgang til tjenester]]
 title: Resultat: Helseregister kan signere medlemsvilkår og få tilgang til tjenester
 type: text/vnd.tiddlywiki
 
@@ -12,3 +12,5 @@ type: text/vnd.tiddlywiki
 *Etablert prosess og rutine for helseregister 
 *Informasjon til aktuelle helseregister og sektor
 
+! Leveranser
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>

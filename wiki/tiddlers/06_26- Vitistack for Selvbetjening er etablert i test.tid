@@ -1,0 +1,8 @@
+created: 20260609120829343
+modified: 20260609122255778
+revision: 0
+tags: juni 2026 Selvbetjening Leveranse [[Fokus på sikkerhet. Tjenesten HelseID har en instans som kjører i region nord]]
+title: 06/26- Vitistack for Selvbetjening er etablert i test
+type: text/vnd.tiddlywiki
+
+Å etablere Vitistack til erstatning for Tanzu er et viktig steg for å komme skikkelig i gang med å etablere regionale autonome leveranser av kritiske nasjonale tjenester. HelseID prioriteres for lokal tilgjengelighet, robusthet og etterlevelse av tjenestekrav i helseregioner.

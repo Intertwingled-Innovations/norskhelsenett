@@ -1,0 +1,12 @@
+created: 20260826125349147
+modified: 20260826125835522
+revision: 1
+tags: 2026 [[Kjernejournal Pasientens journaldokumenter]] Resultat [[Helsevirksomhetene styrer hvilke journaldokument de deler]]
+title: Helsevirksomhetene styrer hvilke journaldokument de deler
+type: text/vnd.tiddlywiki
+
+! Beskrivelse resultat
+Norsk helsenett har gjennom filtrering v visning av dokumentliste kun tillat sektoren å vise 4 dokumenttyper. Dette er gjort som en oppgave på vegne av den dataansvarlige helsevirksomheten. Nå skal helsevirksomheten selv styre hvilke journaldokumenter som deles (in henhold til Hdir sin veilednng).
+
+! Leveranser
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>

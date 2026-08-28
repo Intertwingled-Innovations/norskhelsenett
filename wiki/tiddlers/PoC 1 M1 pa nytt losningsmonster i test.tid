@@ -1,9 +1,14 @@
 TjenesteID: 40034
 created: 20260324163210309
-modified: 20260414123823082
+modified: 20260629134515055
 revision: 0
 tags: [[RF på SHP løsningsmønster - fase 1]] 2026 Resultat Reseptformidleren [[Ekstern Tjeneste]]
 title: PoC 1 M1 på nytt løsningsmønster i test
 type: text/vnd.tiddlywiki
 
 En M1 skal flyte gjennom fra skriv til les på nytt løsningsmønster. Dette er en testapplikasjon som kjører i Kubernetes.
+
+! Leveranser
+!! 2026
+
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>

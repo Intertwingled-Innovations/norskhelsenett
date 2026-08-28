@@ -1,0 +1,8 @@
+created: 20260817140907810
+modified: 20260817143643657
+revision: 2
+tags: [[02 Medlemskap og medlemskapshendelser vedlikeholdes og tilgjengeliggjøres for interne og eksterne tjenester (Medlemstjenesten)]] Resultat 2026 Juni [[Helsenettet.no og Medlemstjenesten]] [[Divisjon Helsepersonell]]
+title: 26/06 "Nye" medlemskap tilgjengelig for interne tjenester
+type: text/vnd.tiddlywiki
+
+Når virksomheter signerer gjeldene vilkår på Helsenettet.no (blir medlem) tilgjengeliggjøres medlemskapene i et API og i en hendelsestrøm på Kafka, slik at andre interne støttesystem kan respondere. 

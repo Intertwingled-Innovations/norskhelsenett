@@ -1,0 +1,37 @@
+TjenesteID: 40030
+created: 20260811125734547
+modified: 20260811125954508
+revision: 2
+tags: [[Divisjon Helsepersonell]] [[Styring Ekstern tjeneste]] Person 2026 [[Forretningsmessig endring:1]] Juni
+title: 06 Person - hovedtrekk og endringer juni 2026
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+I henhold til plan.
+
+*PREG ble deaktivert for alle bortsett fra en bruker den 09.02.26, og avtalen om oppdateringer med TietoEvry er sagt opp. Siste fakturering var i mai 2026.
+
+*Det jobbes aktivt med AIN og hvordan vise hvem som har opprettet de, og mulighet for redigering.
+*Vi har også begynt å jobbe med etterspurt kobling mellom AIN og PID
+*Prosjekt med Persontjenesten på tredje lokasjon (HelseVest) er godt i gang og estimeres i pilot i juni.
+*Testet kjøretidssjekk i ET
+*Kjørt ET i Bergen med eksterne konsumenter
+*Har etablert prduksjonmiljø i slutten av mai, og vil pilotere dette i juni.
+
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 1''
+
+Konsekvens av forretningsmessig endring:
+
+
+! Prognose på penger og ressurser
+* Finansieringskilde: Forskriftsfestet pasientjournal Grunndata Person. Ramme 2026 23,7 MNOK
+* Ligger på plan i henhold til oppgaver og ressurser.
+* Årsprognose (pr. juni) 24,3 MNOK, Runrate 11 mnd (pr. juni) 20,6 MNOK. Forventet avvik, som vil jevne seg ut. 
+* Passende med ressurser før sommeren, men må gjøre tiltak etter sommeren.
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark0eb3b30158bdab9401a7">Oversikt Person (Power BI)</a>
+
+

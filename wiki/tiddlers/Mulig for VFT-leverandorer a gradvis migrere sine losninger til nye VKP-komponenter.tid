@@ -1,0 +1,8 @@
+created: 20260630122509257
+modified: 20260630122806555
+revision: 0
+tags: [[Støtte modernisering av kommunale EPJ-løsninger]] 2026 Resultat [[Velferdsteknologisk knutepunkt]]
+title: Mulig for VFT-leverandører å gradvis migrere sine løsninger til nye VKP-komponenter
+type: text/vnd.tiddlywiki
+
+Gjøre det mulig for VFT-systemer å gradvis migrere mot nye tjenester. Unngå at alle må "hoppe i takt" ved å ivareta bakoverkompatibilitet mot VFT-systemer. Dette er fordelaktig da kommnene gjør store løft på anskaffelse av ny EPJ - dette betyr at krav til migrering av VFT-løsninger blir enklere å gjennomføre i praskis over tid.

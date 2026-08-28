@@ -1,0 +1,8 @@
+created: 20260630121448164
+modified: 20260630121615392
+revision: 0
+tags: [[Støtte autonome regioner]] [[Velferdsteknologisk knutepunkt]] 2026 Resultat
+title: Etablert hendelseslager for event-sourcing for alle informasjonselementer
+type: text/vnd.tiddlywiki
+
+Hendelseslager for varig persistering og event-sourcing for alle informasjonselementer som håndteres av VKP.

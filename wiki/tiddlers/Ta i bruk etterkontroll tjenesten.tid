@@ -1,7 +1,21 @@
 TjenesteID: 40034
 created: 20260222154515785
-modified: 20260414124014832
+modified: 20260613121722416
 revision: 0
 tags: 2026 Resultat Reseptformidleren [[RF på SHP løsningsmønster - fase 1]] [[Ekstern Tjeneste]]
 title: Ta i bruk etterkontroll tjenesten
 type: text/vnd.tiddlywiki
+
+Reseptformidleren har sin egen logg over innsyn. Denne har en del svakheter:
+
+* oppslag fra samme helsepersonell aggregeres pr dag, dvs at det ikke fremkommer om helsepersonell har slått opp en eller flere ganger
+* ikke spesifikk informasjon om hva som er sett på eller hvorfor
+* innsyn fra apotek logges kun med navn på apoteket/virksomheten og ikke hvem som så på informasjonen
+
+Etterkontroll tjenesten tar imot mer detaljert informasjon og innbygger kan dermed få bedre innsikt i bruk av sine opplysninger.
+
+Vi tar i bruk etterkontroll tjenesten i dagens reseptformidler slik at dette kun behøver å videreføres ved omskriving av reseptformidleren til samhandlingsplattformens løsningsmønster.
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

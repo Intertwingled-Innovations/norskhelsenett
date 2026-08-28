@@ -1,0 +1,32 @@
+TjenesteID: 40171
+created: 20260608063436091
+modified: 20260608064014601
+revision: 0
+tags: 2026 [[Styring Ekstern tjeneste]] [[Divisjon Helsepersonell]] [[Kjernejournal Pasientens journaldokumenter]] Mai [[Forretningsmessig endring:2]]
+title: 05 KJ Pasientens journaldokumenter - hovedtrekk og endringer mai 2026
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer
+* NHN dokumentlager er produksjonssatt som intern dokumentkilde. Oslo kommune har signert bruksvilkår og vil starte produksjon i juni 2026.
+* Helse Vest har tatt opp behovet for at avtalespesialister deler journaldokumenter, og spesifikt behovet for en insentivering av EPJ-leverandørene til avtalespesialistene. NHN vurderer en anskaffelse av funksjonalitet, dette gjelder primært 4 leverandører.
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 2''
+
+Konsekvens av forretningsmessig endring: Bruk av egenkapital til å kjøpe funksjonalitet hos EPJ-leverandørene til avtalespesialistene.
+
+
+! Prognose på penger og ressurser
+
+* Tjenesten er en del av den nasjonale e-helseløsningen under Kjernejournal og  finansieres over forskriftsfestede midler.
+* DHG har brukt 8.7 mnok av en total inntektsramme for 2026 på 20,5 mnok
+* Budsjett 2026: 19,4 mnok
+* Prognose for året: 21.5 mnok
+* Runrate for året (11 mnd) basert på regnskap pr april: 19.2 mnok. 
+* Framdrift er stort sett ihht plan
+* Teamet har nødvendig kapasitet. Ny innleiekontrakt er inngått for en konsulent i teamet.
+
+! Leveranser
+<<list-links filter:"[tag[Leveranse]tag[KJ Pasientens journaldokumenter]tag[2026]tag[Mai]]">>
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=56573aa0b28de9e08460">Oversikt KJ Pasientens journaldokumenter (Power BI)</a>
+

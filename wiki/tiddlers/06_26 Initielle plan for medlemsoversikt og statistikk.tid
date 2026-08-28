@@ -1,0 +1,17 @@
+TjenesteID: 40173
+created: 20260624110822471
+modified: 20260817105510443
+revision: 1
+tags: Leveranse [[Ekstern tjeneste]] 2026 [[Forvaltning av Helsenettet - Medlemskap i 2026]] Juni [[Resultat: Masteroversikt over medlemmer og samarbeidspartnere]]
+title: 06/26 Initielle plan for medlemsoversikt og statistikk
+type: text/vnd.tiddlywiki
+
+!Beskrivelse av leveranse
+  Initielle plan for medlemsoversikt og statistikk
+
+*Besluttet oppstart og avklart fremgangsmåte for å samle tilgjengelig data til medlemsoversikt (Bruke Kafka-strømmer fra medlemstjenesten)
+*Fått tildelt utviklingsressurser fra Innsikt og leveranse hos divisjon AOS
+*Utført gjennomgang av behov og etablert overordnet ramme
+*Konkretisering av arbeidsomfang  og utvikling starter i i august
+
+Nytteverdi for NHN er innsikt og oversikt over hvem som har signert nye vilkår, og bidrar til nødvendig informasjon i rydding og oppfølging av medlemsmassen. Reduserer manuelle uttrekk og sammenstilling av data, og gir oss oppdaterte helhetlig medlemsoversikt i sanntid.

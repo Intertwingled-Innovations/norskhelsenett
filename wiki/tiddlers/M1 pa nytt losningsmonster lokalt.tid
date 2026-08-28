@@ -1,0 +1,12 @@
+created: 20260629133900944
+modified: 20260629134611115
+revision: 0
+tags: Leveranse Juni [[Ekstern Tjeneste]] Reseptformidleren [[PoC 1 M1 på nytt løsningsmønster i test]] [[RF på SHP løsningsmønster - fase 1]] 2026
+title: M1 på nytt løsningsmønster lokalt
+type: text/vnd.tiddlywiki
+
+Vi kan motta en M1 på skrive siden, parse, oppdatere db state, serialisere med protobuf og sende på kafka. Vi kan også deserialisere protobuf, oppdatere state og svare på en M95 på lese siden.
+
+Vi har dermed første utkast/forslag for CQRS vha. event-sourcing over kafka.
+
+Dette kjører foreløpig lokalt, neste steg er i Kubernetes testmiljø.

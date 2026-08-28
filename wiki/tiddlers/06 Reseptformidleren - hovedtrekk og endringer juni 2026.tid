@@ -1,0 +1,41 @@
+TjenesteID: 40034
+created: 20260629121335182
+modified: 20260727103931356
+revision: 0
+tags: Reseptformidleren [[Styring Ekstern tjeneste]] 2026 [[Forretningsmessig endring:1]] [[Divisjon Helsepersonell]] Styring Juni
+title: 06 Reseptformidleren - hovedtrekk og endringer juni 2026
+type: text/vnd.tiddlywiki
+
+!Hovedtrekk og endringer
+
+Fortsatt ingen tilbakemeldinger fra Datatilsynet om saken der vi har delt opplysninger som ikke skulle vært delt i perioden 30.04.25 - 15.11.25.
+
+!Modernisering
+* Arbeid med å ta i bruk Etterkontroll tjenesten er ferdig implementert. Vår plan var å produksjonssette denne funksjonaliteten i juni (i en hovedleveranse pga stort testbehov), men etterkontroll tjenesten er ikke klar til å ta imot nye tjenester på denne siden av sommeren.
+*Data til sekundærbruk. Vi har fått et oppdrag fra HOD om å etablere en slik løsning der vi deler anonyme data. Ressurser er på plass og dette arbeidet har høy prioritet fremover. Samarbeider med Statistikk og måling teamet om dette.
+*Vi har en PoC av M1 (resept) på samhandlingsplattformens løsningsmønster. En M1 kan "flyte helt gjennom" fra skriv til les på nytt løsningsmønster. Kjører i Kubernetes. 
+*Status "under ekspedering" må fases ut og sentral beregning av gjenværende mengde må innføres. Difa og Apotekforeningen ble varslet om utfasing av "under ekspedering" den 12.mai. Apotek/Difa har svart at dette ikke er mulig/de er uenig, og ikke gjort noe for å vurdere konsekvenser og omfang for sine løsninger.
+*EHDS - videre detaljering av forretningsregler for oversetting av en resept i samarbeid med Hdir, dette er arbeidsstrøm som følges opp av team EHDS. Regler for oversetting til/fra MyHealth er i stor grad klar og arbeid med implementasjon starter i august.
+
+
+!Sikkerhet
+*Det var planlagt å avvikle støtte for utdaterte kryptoalgoritmer for asynkrone meldinger den 7.mars. Det var imidlertid flere aktører som ikke hadde gjort nødvendige tiltak og dette er derfor ikke aktivert. Vi har hatt møte med Dips Communicator og Infodoc (som er en viktig bruker av Dips Communicator) og formidlet at vi iverksetter den 4.juni. Dette ble akseptert av partene. Vi valgte å slå av den 5.juni pga et stort antall M25.2 meldinger som ikke kom frem til rekvirenter. Dette gjelder spørsmål fra apotek til multidose ansvarlig lege. Det ble aktivert igjen den 9.juni kl. 9 da de siste hadde oppdatert sine løsninger.
+*Vi vil etablere rf applikasjon i OSL ila august/september slik at vi raskere kan gjøre failover til OSL enn idag. 
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 1''
+
+Konsekvens av forretningsmessig endring:
+
+
+!Prognose på penger og ressurser
+
+Finansiering: Forskriftsfestet pasientjournal E-resept, ramme 2026 92,9 MNOK.
+
+Årsprognose 2026 omkring 75 MNOK, betydelig under tildelt ramme.
+
+*Vi har onboardet 4 konsulenter i juni
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarkab9171eafbc4217a5bac">Oversikt Reseptformidleren</a>
+
+

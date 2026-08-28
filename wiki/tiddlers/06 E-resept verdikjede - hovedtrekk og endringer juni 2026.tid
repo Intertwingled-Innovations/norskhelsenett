@@ -1,0 +1,74 @@
+TjenesteID: 40039
+created: 20260806121839766
+modified: 20260807100224493
+revision: 3
+tags: [[Divisjon Helsepersonell]] [[Styring Ekstern tjeneste]] [[Verdikjede e-resept]] 2026 [[Forretningsmessig endring:1]] [[Prosess for dispensasjon til HMN og HN fra krav om å sende PLL samlet]] Juni [[Tiltaket Pasientens legemiddelliste 2026]]
+title: 06 E-resept verdikjede - hovedtrekk og endringer juni 2026
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+
+Team verdikjede e-resept skal sørge for funksjonelle og sikkerhetsmessige krav til de fagsystemene som samhandler og inngår i e-reseptkjeden. Dialog, samhandling og koordinering skal sikre at aktørene involveres i forvaltning av e-reseptkjeden. Team verdikjede e-resept skal også bistå i rådgivingen inn mot tiltakene på legemiddelområdet og har ansvaret for test og godkjenning på kravstilling for å sikre kvalitet i verdikjeden
+
+Hovedoppgaver i forvaltningen av e-resept er:
+
+* Kravstilling og dokumentasjon
+
+* Test og godkjenning
+
+* Kvalitet i e-resept
+
+* Utredninger, analyse og rådgivning på e-reseptløsningen
+
+*Endringshåndtering
+
+* Leverandørdialog
+
+* Hendelseshåndtering
+
+
+
+! Leveranser
+!! 2026
+
+<<list-links filter:"[tag[Leveranse]tag[2026]tag[Tiltaket Pasientens legemiddelliste 2026]]">>
+
+
+
+TEST og GODKJENNING
+
+* Godkjent akseptansetest (AT) for Lovisenberg Diakonale Sykehus for av bruk av SFM Basis API getMedication, for import av legemidler til kurveløsningen Meona
+
+
+
+HENDELSER SISTE PERIODE
+
+*Det er gjennomført både Endringsforum og Endringsråd for e-resept i juni. Beredskap hos de enkelte aktørene i verdikjeden ble presentert som egen sak i Endringsrådet. Dette ble gjennomført i tråd med tiltak anbefalt i verdikjede e-resept sin oppdaterte ROS. Det ble også besluttet gjennomføring av beredskapsøvelse av verdikjeden ila høsten 2026.
+
+* HDIR har sendt en juridisk vurdering om dataansvar for forvaltning av rekvirentkrav. HDIR har foreslått endret prosess i forvaltningen av krav og hvem som har ansvar og kan gi dispensasjon fra krav. NHN har svart ut dette med en egen juridisk vurdering av NHN sitt forvaltningsansvar av e-reseptkjeden, med føringer fra Pasientjournalloven. NHN avviser HDIR sitt forslag om endrede prosesser. Diskusjonen er ennå ikke avklart
+
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 1''
+
+Konsekvens av forretningsmessig endring: 1
+
+
+! Prognose på penger og ressurser
+* Finansieringskilde: Forskriftsfestet pasientjournal e-resept. Ramme 2026 29 MNOK 
+* Hvordan ligger vi an hittil i år opp i mot prognoser og planlagte oppgaver?
+* Årsprognose (pr. juni) 20,2 MNOK, Runrate 11 mnd (pr. mai) 20 MNOK. 
+* Hva er årsak til avvik? Timepådrag - Underforbruk på timer grunnet sykdom, ferieavvikling og utlån av ressurser til andre tiltak (LMGD). Høy TBU ramme sammenlignet med budsjett
+* Status ressursbehov/kapasitet? Teamet har ikke ressursbehov men prioriterer oppgavene. Avgir kapasitet til SFM og tem eMD. 
+
+
+
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark4c89bd5ada01ce3dc213">Oversikt E-resept verdikjede (Power BI)</a>
+
+
+
+

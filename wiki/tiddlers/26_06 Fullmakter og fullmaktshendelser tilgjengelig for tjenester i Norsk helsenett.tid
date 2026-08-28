@@ -1,0 +1,8 @@
+created: 20260524065218722
+modified: 20260817142039109
+revision: 2
+tags: [[02 Medlemskap og medlemskapshendelser vedlikeholdes og tilgjengeliggjøres for interne og eksterne tjenester (Medlemstjenesten)]] 2026 [[Helsenettet.no og Medlemstjenesten]] Resultat Mai
+title: 26/06 Fullmakter og fullmaktshendelser tilgjengelig for tjenester i Norsk helsenett
+type: text/vnd.tiddlywiki
+
+Fullmakter som utstedes på Helsenettet.no er tilgjengelig i API og på Kafka for andre tjenester i Norsk helsenett, og det er klargjort for stegvis overføring av "delegering til HelseID" i Altinn. 

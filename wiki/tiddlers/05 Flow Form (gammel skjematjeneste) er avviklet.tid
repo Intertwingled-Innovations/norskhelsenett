@@ -1,0 +1,17 @@
+created: 20260523172322027
+l: 
+modified: 20260817143207259
+revision: 3
+tags: [[Helsenettet.no og Medlemstjenesten]] Målsetting September 2026 [[Divisjon Helsepersonell]]
+title: 05 Flow Form (gammel skjematjeneste) er avviklet
+type: text/vnd.tiddlywiki
+
+Funksjonalitet som støttes av Flow Form (skjematjensten) er stengt. Behovet dekkes av Helsenettet.no, Medlemstjenesten og andre støttesystem. Flow Form (skjemaløsningen) er avviklet. 
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+!! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

@@ -1,7 +1,7 @@
 TjenesteID: 40055
 created: 20260526080637353
-modified: 20260526082122807
-revision: 2
+modified: 20260609124014706
+revision: 0
 tags: [[Divisjon Helsepersonell]] 2026 [[Styring Satsning for fart]] Legemiddelgrunndata [[Team Sats]] [[Forretningsmessig endring:3]] Mai
 title: 05 Legemiddelgrunndata - hovedtrekk og endringer mai 2026
 type: text/vnd.tiddlywiki
@@ -10,14 +10,26 @@ type: text/vnd.tiddlywiki
 
 ! Hovedtrekk og endringer
 
+Strategisk: 
+
+NHN finansierer gjennom "tiltak for fart" investeringen for utvikling og etablering av en nasjonal grunndatatjeneste i NHN sin samhandlingsplattform for distribusjon av legemiddeldata for konsumenter av tjenesten. Aktørene i sektoren finansierer drift og forvaltning av tjenesten når den er i produksjon.
+Det ble først avtalt med NHN, DMP og RHFene å starte med utvikling av en MVP i 2026 ved å tilgjengeliggjøre H-reseptdata som første tjeneste fra en ny legemiddelgrunndatatjeneste i NHN. Når vi har jobbet med første versjon av disse tjenestene har vi avdekket at vi kan levere dette raskere enn antatt. NHN tenker derfor å avvike prinsippet med å ikke lage «software for hylla», og sette fart på å ferdigstille mest mulig av tjenestene raskest mulig. Dette er forankret med sektoren i IKT direktørmøtet 28.4.
+
+Direktoratet for medisinske produkter (DMP) er den sentrale kilden til legemiddelgrunndata til helsesektoren, men de mangler finansiering for nødvendig oppgradering av DMPs interne systemer/infrastruktur for å saksbehandle/produsere legemiddelgrunndata. NHN bistår nå en felles prosess med DMP, HDIR og RHFene for å be HOD om å finansiere videre satsninger for at DMP skal kunne opprettholde forsvarlig fremdrift for realisering av en nasjonal legemiddelgrunndatatjeneste
+
+
+Operativt:
+
 * Samlet team for workshop i Oslo. Replanlegging etter beslutning om økt fart. Bygget backlogg. 
 * Videre dialog med omkringliggende interessenter; Dialog med HResept prosjektet, DMP og SFM.
 * Videre om organisering og team struktur: Løpende refleksjon rundt teamsammensetning og ansvarsfordeling på tvers av Oslo/Trondheim/Tromsø.. Onboarding av nye team medlemmer (Ane) i implementasjonsteamet. Startet prosess av innkjøpt av inntil to eksterne konsulenter.
 * Rigget prosess for testing av API (internt og av SFM)
 * Startet ROS, Personvern og BiA prosess.
+
  
 MÅLSETTING
 
+* NHN bistår i prosessen for å sikre at DMP får tilgang til nødvendig finansiering for realisering av en nasjonal legemiddelgrunndatatjeneste
 * Beslutte og forankre og utvikle for en MVP (første steg) i 2026. H-resept etableres som den første tjenesten på en nasjonal legemiddelgrunndata tjeneste (NOMPD) hos NHN
 * Forankring av MVP må besluttes av prioriteringsrådet og IKT direktørmøtet den 28 april, før endelig beslutning i NHN sin ledelse
 

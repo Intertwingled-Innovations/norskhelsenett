@@ -1,0 +1,16 @@
+TjenesteID: 40171
+created: 20260511122848911
+draft.of: Det gjennomføres jevnlige loggkontroller
+draft.title: Det gjennomføres jevnlige loggkontroller
+modified: 20260826125241518
+revision: 1
+tags: 2026 [[Kjernejournal Pasientens journaldokumenter]] Målsetting [[Det gjennomføres jevnlige loggkontroller]]
+title: Draft of 'Det gjennomføres jevnlige loggkontroller'
+type: text/vnd.tiddlywiki
+
+! Beskrivelse målsetting
+Helsevirksomheter skal kontrollere hvem som har lest hvilke journaldokumenter. Dette er en sentral forutsetning for deling mellom virksomheter.
+
+! Resultat
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+

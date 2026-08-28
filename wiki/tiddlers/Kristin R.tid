@@ -1,6 +1,6 @@
 created: 20260413071820704
-modified: 20260526130301634
-revision: 1
+modified: 20260803123507984
+revision: 0
 tags: 
 title: Kristin R
 type: text/vnd.tiddlywiki
@@ -17,7 +17,18 @@ type: text/vnd.tiddlywiki
 <<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag[Mai]tag[Innrapportering av dødsfall og dødsårsak]]">>
 <<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag[Mai]tag[Melde.no]]">>
 
-!Mai
+! Juni 2026
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag[Juni]tag[Kjernejournal portal]]">>
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag[Juni]tag[Innrapportering av fødselsmelding]]">>
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag[Juni]tag[Innrapportering av dødsfall og dødsårsak]]">>
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag[Juni]tag[Melde.no]]">>
+
+! August 2026
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag[August]tag[Kjernejournal portal]]">>
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag[August]tag[Innrapportering av fødselsmelding]]">>
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag[August]tag[Innrapportering av dødsfall og dødsårsak]]">>
+<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag[August]tag[Melde.no]]">>
+
 !!KJ Portal
 Ferdigstille Dpop
 Sikkerhetsarbeid ifm Trivy-hendelsen, det hadde ikke skjedd nå.....

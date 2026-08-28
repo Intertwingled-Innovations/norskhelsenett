@@ -1,0 +1,20 @@
+TjenesteID: 40023
+created: 20240702102427337
+draft.of: Melde.no - levere en bedre arbeidsflyt for innmelder
+draft.title: Melde.no - levere en bedre arbeidsflyt for innmelder
+modified: 20260416083910344
+revision: 0
+tags: Melde.no Målsetting 2026
+title: Draft of 'Melde.no - levere en bedre arbeidsflyt for innmelder'
+type: text/vnd.tiddlywiki
+
+Vi skal gjøre det enklere for brukerne av melde å foreta endringer i skjema før det sendes inn, dvs at vi mellomlagrer skjema før innsending. 
+
+! Resultat
+
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

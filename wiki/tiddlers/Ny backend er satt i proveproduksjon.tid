@@ -1,0 +1,10 @@
+created: 20260629124154911
+modified: 20260629124459926
+revision: 0
+tags: [[Ny backend i prøveproduksjon]] 2026 Leveranse Juni [[Ekstern Tjeneste]] [[Kjernejournal Pasientens legemidler]]
+title: Ny backend er satt i prøveproduksjon
+type: text/vnd.tiddlywiki
+
+Foreløpig er det kun 1 % av trafikken til eksisterende backend som også rutes til ny backend.
+
+Det er noen forskjeller i respons mellom ny og gammel backend.

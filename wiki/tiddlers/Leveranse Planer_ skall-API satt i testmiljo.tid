@@ -1,0 +1,11 @@
+TjenesteID: 40057
+created: 20260610124715373
+modified: 20260610124807851
+revision: 0
+tags: 2026 [[Pasientens planer]] Leveranse [[Målsetting planer]]
+title: Leveranse Planer: skall-API satt i testmiljø
+type: text/vnd.tiddlywiki
+
+!Beskrivelse av målsetting
+
+Første versjon satt i dev. for at leverandørene kan starte å utvikle

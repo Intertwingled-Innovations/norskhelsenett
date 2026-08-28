@@ -1,0 +1,8 @@
+created: 20260629123943895
+modified: 20260629124129039
+revision: 0
+tags: [[Tilby nytt API for lesing av legemiddel informasjon]] 2026 Resultat [[Ekstern Tjeneste]] [[Kjernejournal Pasientens legemidler]]
+title: Eksisterende API må støtte HelseID med DPoP
+type: text/vnd.tiddlywiki
+
+Det finnes idag et eksternt API og et internt API. Disse støtter ikke HelseID med DPoP slik at de vil slutte å fungere ved slutten av 2026.

@@ -1,0 +1,27 @@
+created: 20260609074602813
+modified: 20260625110655136
+revision: 0
+tags: 2026 [[Divisjon Helsepersonell]]
+title: Forretningsmessig endring
+type: text/vnd.tiddlywiki
+
+Denne tiddlien skal oppsummere forretningsmessig endring listet fra 1-3 i de ulike månedene.
+
+Forretningsmessig endring 3:
+
+
+<<list-links filter:"[tag[Forretningsmessig endring:3]tag[2026]tag[Juni]]">>
+
+Forretningsmessig endring 2:
+
+<<list-links filter:"[tag[Forretningsmessig endring:2]tag[2026]tag[Juni]]">>
+
+
+
+Forretningsmessig endring 1:
+
+<<list-links filter:"[tag[Forretningsmessig endring:1]tag[2026]tag[Juni]]">>
+
+
+
+<<list-links filter:"[tag<currentTiddler>tag[Tjeneste oppsummert]tag[2026]]">>

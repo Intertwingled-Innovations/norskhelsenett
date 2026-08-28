@@ -1,0 +1,31 @@
+TjenesteID: 40037
+created: 20260803134230292
+modified: 20260803134833366
+revision: 0
+tags: [[Velferdsteknologisk knutepunkt]] [[Divisjon Helsepersonell]] [[Styring Ekstern tjeneste]] 2026 [[Forretningsmessig endring:1]] Juni
+title: 06 Velferdsteknologisk knutepunkt - hovedtrekk og endringer juni 2026
+type: text/vnd.tiddlywiki
+
+
+
+! Hovedtrekk og endringer
+
+*Arbeidet med å skrive om VKP til frittstående informasjonstjenester pågår. 
+*3 utviklere (team KOMSAT) jobber full tid med dette arbeidet, fullt fokus på PIT (Pasientinformasjonstjenesten)
+* Designes for Autonome Regioner (H2 2026)
+*Team VKP server eksisterende VKP-kommuner, og bistår i arbeid med reverse-proxy løsning for å slippe endringer på VFT/DHO systemsiden samtidig med EPJ-siden.
+* Må kjøpe oss opp lisensmessig på riktig nivå på Azure. Vi har hatt en developer-lisens som gir tilgang til mye funksjonalitet men elendig SLA. Økt kostnad på drift ca 30.000/Mnd
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 1''
+
+Konsekvens av forretningsmessig endring:
+
+! Prognose på penger og ressurser
+* Finansiering: Medlemsinntekt, ramme 2026 28,4 MNOK.
+* Stø kurs på oppgaver og kostbase for 2026
+* Prognose kost (pr. juni) 26,4 MNOK, Runrate kost 11 mnd (pr. juni) 24,8 MNOK. Run-rate noe under prognose, men prognosen opprettholdes pga. noe usikkerhet knyttet til kostnader for Azure.
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarkfeea3d895ff89eaee682">Oversikt VKP (Power BI)</a>
+
+

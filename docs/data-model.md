@@ -2,7 +2,7 @@
 
 How Divisjon Helsepersonell represents its management structure in TiddlyWiki. This is the most important thing to understand before changing anything: **there are no custom data types — everything is tags and fields on plain tiddlers, and the tags *are* the schema.**
 
-Counts below are from the snapshot (~2,479 tiddlers). Verify against [../NHN_TiddlyWiki.json](../NHN_TiddlyWiki.json) before relying on them.
+Counts below are from the snapshot (~2,652 tiddlers, refreshed August 2026). Verify against [../NHN_TiddlyWiki.json](../NHN_TiddlyWiki.json) before relying on them.
 
 ## Where the data lives
 

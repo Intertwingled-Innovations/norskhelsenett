@@ -1,0 +1,16 @@
+created: 20260613110352394
+modified: 20260613111416132
+revision: 0
+tags: [[Avvikle all bruk av utdaterte kryptoalgoritmer]] Leveranse 2026 Juni [[Forenkling og opprydding i dagens løsning (RF)]] Reseptformidleren
+title: Bruk av utdaterte kryptoalgoritmer avviklet
+type: text/vnd.tiddlywiki
+
+All bruk av utdaterte kryptoalgoritmer (3DES) blir avvist. Dette er tidligere avviklet for synkrone meldinger, ukjent hvorfor det ikke ble gjort for asynkrone samtidig.
+
+Det har vært et informasjonsløp siden høsten 2025 om at dette ville bli avviklet. Opprinnelig dato var satt til 7.mars 2026. Da var det fortsatt omkring 40% av asynkrone meldinger som benyttet utdaterte algoritmer og innføring ble besluttet utsatt.
+
+Vi aktiverte/slo på kravet først den 4.juni kl 08, men pga store mengder M25.2 som ikke kom frem til rekvirent slo vi det av igjen den 5.juni kl. 9. Brukere av Dips Communicator som ikke hadde oppdatert sin versjon stod for mesteparten av disse.
+
+M25.2 er spørsmål fra multidose apotek til multidose ansvarlig lege. Multidose apotek kan kontakte multidoseansvarlig lege pr telefon, men dette fører til merarbeid både i apotek og hos rekvirent.
+
+Verdi av leveransen: økt sikkerhet i e-resept verdikjeden.

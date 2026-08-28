@@ -1,12 +1,10 @@
 TjenesteID: 40033
 created: 20260526125855696
-modified: 20260605113656465
-revision: 9
+modified: 20260609064753768
+revision: 0
 tags: [[Divisjon Helsepersonell]] [[Styring Ekstern tjeneste]] 2026 Kjernejournal [[Kjernejournal portal]] [[Forretningsmessig endring:1]] Mai
 title: 05 Kjernejournal portal - hovedtrekk og endringer mai 2026
 type: text/vnd.tiddlywiki
-
-Under arbeid
 
 ! Hovedtrekk og endringer
 *Fokus i mai har vært arbeid med å gjøre PVK til master og implementere HelseId sitt krav om DPoP-støtte i API

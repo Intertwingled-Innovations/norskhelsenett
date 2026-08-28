@@ -1,0 +1,15 @@
+created: 20260613120334362
+modified: 20260613121537447
+revision: 0
+tags: [[Forankre utfasing av status "under ekspedering"]] Reseptformidleren [[Forenkling og opprydding i dagens løsning (RF)]] 2026 Leveranse Mai
+title: Varsel om at "under ekspedering" blir avviklet
+type: text/vnd.tiddlywiki
+
+Resept status "under ekspedering" må avvikles.
+
+Detter et tiltak ifm ROS e-resept (scenario "Manglende eller feil oppdatering av e-reseptstatus (T)") og er nødvendig for at vi skal kunne skille les og skriv. Det er en forutsetning for at fremtidens reseptformidler kan kjøre i autonome regioner og at NHN skal møte forventninger og krav til beredskap for nasjonale ehelse løsninger.
+
+Dette vil føre til behov for endinger i utleveringsleddet, sannsynligvis både EIK og kjedenes ekspederingsløsninger. Difa ble derfor varslet om denne endringer i et møte den 12.mai og de skal gjøre en vurdering av konsekvenser for dem.
+
+Verdi av leveransen: Vi følger rutinen om at endringer skal varsles i god tid. Å fjerne status "under ekspedering" vil også legge til rette for mer korrekt utlevering av legemidler som er i tråd med siste forskrivning/endring fra rekvirent.
+

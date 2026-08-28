@@ -1,0 +1,52 @@
+TjenesteID: 40024
+created: 20260806113315455
+modified: 20260807100714208
+revision: 2
+tags: 2026 [[Divisjon Helsepersonell]] [[Forretningsmessig endring:1]] [[Tiltaket Pasientens legemiddelliste 2026]] [[Team eMD]] [[Nasjonal innføring av e-multidose i 2026]] [[Verdikjede e-resept]] [[Styring Tiltak]] Juni
+title: 06 E-multidose PLL- hovedtrekk og endringer juni 2026
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer
+E-multidose er en elektronisk melding som legen sender til Reseptformidleren for at pasienter som står på mage legemidler skal få sine medisiner pakket i multidoseposer. Dette er funksjonalitet i e-resept og inngår som en del av NHN sitt forvaltningsansvar. I tillegg har NHN nå et oppdrag via mandatet for PLL (digital samhandling) om å koordinere innføringen av e-multidose nasjonalt.
+
+MÅLSETTING
+
+* Mandatet for PLL har en ambisjon om 100% nasjonal innføring av e-multidose for fastleger i 2026
+
+
+Status juni: 
+
+*Apotekforeningen har meldt til Helsedirektoratet at det er behov for å iverksette tiltak i forbindelse med innføring av rekvirering i reseptformidler ved multidose (eMD) og medførende økt behov for farmasøytkontroll. Helsedirektoratet ble forelagt problemstillingen 25. mars 2026. Apotek 1 har som konsekvens av økt farmasøytkontroll gitt beskjed om at de ikke vil avtale oppstart og opplæring for flere multidoseapotek, utover de som allerede er avtalt for august/sept. Konsekvensen er at videre bredding stopper opp for legekontor som nå har kommet opp på SFM med eMD funksjonalitet. Avdeling legemidler og biomedisin i HDIR er fagansvarlig for multidose sammen med DMP som forvalter regelverket. Disse to aktørene har nå startet en prosess hvor også NHN deltar for videre avklaringer.
+
+*EG Infodoc er sterkt forsinket med innføring av SFM for de 271 legekontorer som i dag benytter Infodoc Plenario. De har eMD, men Infodoc Plenario er ikke godkjent for videre bredding av PLL. Team eMD i NHN prioriterer nå leverandøroppfølging for å reelle planer fra EG Infodoc for gjennomføring.
+
+
+! Resultat
+!! 2026
+
+<<list-links filter:"[tag[Resultat]tag[2026]tag[Tiltaket Pasientens legemiddelliste 2026]]">>
+
+271 fastlegekontorer som er over på e-multidose med Infodoc Plenario må bytte over til ny Infodoc skyløsning med SFM som legemiddelmodul. Infodoc Plenario kan ikke benyttes for PLL. Per mai er kun to Infodoc fastlegekontor over på SFM
+
+
+
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 3''
+
+Konsekvens av forretningsmessig endring: NHN vil ikke nå målsettingen om 100% nasjonal innføring av eMD for fastleger ila 2026. Se statuspunkt over om behov for avklaringer om farmasøytkontroll ved eMD. Det vil være behov for å videreføre dette NHN tiltaket i Digital samhandling for 2027.
+
+
+! Prognose på penger og ressurser
+
+* Finansieringskilde: Offentlig tilskudd post 21 PLL Multidose. Ramme 2026 6,0 MNOK. 
+
+*Team eMD har 2,8 FTEer. Det er ikke ytterligere ressursbehov per i dag
+
+
+* Hvordan ligger vi an hittil i år opp i mot prognoser og planlagte oppgaver? - Etter plan
+* Årsprognose (pr. juni) 6,2 MNOK, Runrate 11 mnd (pr. mai) 5,8 MNOK - 
+
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=8edfed4ea6382d43a0a7">Oversikt E-resept Multidose (Power BI)</a>
+
