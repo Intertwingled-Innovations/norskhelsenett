@@ -39,6 +39,18 @@ var TIDDLERS = [
 	{title: "Test Sitat \"Anførselstegn\"", tags: "[[Styring Ekstern tjeneste]] 2026 Mars",
 		text: "Title containing double quotes"},
 
+	// Tagged three years and three months, deliberately out of order: neither
+	// tag order (Februar, Januar, Desember) nor alphabetical order (Desember,
+	// Februar, Januar) is chronological, so only a chronological sort passes.
+	// The real snapshot cannot pin this — whichever tiddler happens to be
+	// tagged several months today may be tagged another one tomorrow.
+	// Date tags only, deliberately: a governance tag would put it in the
+	// extract and to-do populations, where three years at once would skew
+	// counts in tests that have nothing to do with the date projections.
+	{title: "Test Gjennomgang Flere Perioder",
+		tags: "2025 2026 2024 Februar Januar Desember",
+		text: "Three years and three months, none of them in order"},
+
 	// A small, self-contained population for the summary grouped-view tests
 	// (summaries.test.js): two services and two years, so every ordering in
 	// the catalogue — year/month/service/business-unit, in either order —

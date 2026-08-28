@@ -93,12 +93,34 @@ group projections cannot double as export columns. `nhn-years`/`nhn-months` fold
 every value into one cell for the CSV.
 */
 h.test("the export date projections list every value in one cell", function() {
-	var w = h.wiki();
-	// A service tagged three years must not export as though it were only the first
-	assert.deepEqual(w.project("nhn-years", "Kjernejournal Pasientens journaldokumenter"),
-		["2024, 2025, 2026"]);
-	// Months come out chronologically, not alphabetically
-	assert.deepEqual(w.project("nhn-months", "Oppgraderinger og rydding Q2 2026"), ["April, Mai"]);
+	var w = h.fixtureWiki(),
+		multi = "Test Gjennomgang Flere Perioder";
+	// A tiddler tagged three years must not export as though it were only the first
+	assert.deepEqual(w.project("nhn-years", multi), ["2024, 2025, 2026"]);
+	// Months come out chronologically — not in tag order (Februar, Januar,
+	// Desember) and not alphabetically (Desember, Februar, Januar)
+	assert.deepEqual(w.project("nhn-months", multi), ["Januar, Februar, Desember"]);
+});
+
+/*
+The fixture above fixes the ordering; this one guards the real corpus against
+the failure the projection exists to prevent — a multi-valued tiddler exporting
+as its first value alone. Asserted as an invariant over whichever tiddler is
+multi-year today, so a refreshed snapshot cannot quietly retire the case.
+*/
+h.test("no real multi-year tiddler loses a year in its export cell", function() {
+	var w = h.wiki(),
+		multi = w.filter("[all[tiddlers]] :filter[function[nhn-year-raw]unique[]count[]compare:number:gt[1]]");
+	assert.ok(multi.length > 0, "no tiddler in the snapshot is tagged with more than one year");
+	multi.forEach(function(title) {
+		var cell = w.project("nhn-years", title)[0] || "";
+		// currentTiddler, not a piped title: a function reads it from the widget
+		// scope, so [<t>function[…]] would evaluate against nothing at all
+		w.filter("[function[nhn-year-raw]unique[]]", {currentTiddler: title}).forEach(function(year) {
+			assert.ok(cell.split(", ").indexOf(year) !== -1,
+				title + " exports as \"" + cell + "\", losing the year " + year);
+		});
+	});
 });
 
 h.test("the export date projections deduplicate casing drift", function() {

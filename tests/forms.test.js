@@ -34,6 +34,38 @@ function discard(wiki, title) {
 	wiki.$tw.wiki.deleteTiddler(title);
 }
 
+var MONTHS = ["Januar", "Februar", "Mars", "April", "Mai", "Juni",
+	"Juli", "August", "September", "Oktober", "November", "Desember"];
+
+/*
+Pick a month of `year` that `service` has no review for yet, and return the
+title the review form should give it.
+
+The snapshot is refreshed periodically, and every refresh brings months that
+were free when a test was written. Creating over an existing title is refused —
+correctly — so a test that names its own month starts failing on data grounds
+rather than on behaviour. Asking for a free period keeps the assertion about the
+naming convention instead of about which months NHN have filed. It also keeps
+`discard` honest: a title that did not exist beforehand is safe to delete from
+the shared fixture wiki afterwards.
+*/
+function freePeriod(wiki, service, year) {
+	for(var i = 0; i < MONTHS.length; i++) {
+		var period = {
+			month: MONTHS[i],
+			ord: String(i + 1).padStart(2, "0"),
+			year: year
+		};
+		period.title = period.ord + " " + service + " - hovedtrekk og endringer " +
+			period.month.toLowerCase() + " " + year;
+		if(!wiki.exists(period.title)) {
+			return period;
+		}
+	}
+	throw new Error("every month of " + year + " already has a review for " + service +
+		" — this test needs a service or year with a free month");
+}
+
 h.suite("Form definitions");
 
 h.test("every form definition parses and is complete", function() {
@@ -100,15 +132,16 @@ h.suite("Guided creation");
 
 h.test("the review form reproduces the naming convention", function() {
 	var w = h.fixtureWiki(),
+		p = freePeriod(w, "Autentisering og autorisasjon", "2026"),
 		state = create(w, REVIEW, {service: "Autentisering og autorisasjon",
-			year: "2026", month: "Juni", severity: "2"}),
-		made = "06 Autentisering og autorisasjon - hovedtrekk og endringer juni 2026";
+			year: p.year, month: p.month, severity: "2"}),
+		made = p.title;
 	try {
 		assert.ok(w.exists(made), "the review was not created under the expected title");
 		// Compare against a real review of the same service: same tags, bar the month
 		var tags = w.filter("[<t>tags[]sort[]]", {t: made});
 		assert.deepEqual(tags, ["2026", "Autentisering og autorisasjon", "Divisjon Helsepersonell",
-			"Forretningsmessig endring:2", "Juni", "Styring", "Styring Ekstern tjeneste"].sort());
+			"Forretningsmessig endring:2", p.month, "Styring", "Styring Ekstern tjeneste"].sort());
 		assert.equal(w.$tw.wiki.getTiddler(made).fields.TjenesteID, "40031");
 		assert.equal(w.$tw.wiki.getTiddler(made).fields.type, "text/vnd.tiddlywiki");
 		assert.ok(!w.exists(state), "the form was not cleared after creating");
@@ -195,14 +228,15 @@ h.test("nothing is created while a required input is missing", function() {
 
 h.test("the period stamp records the period the tiddler is for", function() {
 	var w = h.fixtureWiki(),
-		review = "05 Autentisering og autorisasjon - hovedtrekk og endringer mai 2026",
+		p = freePeriod(w, "Autentisering og autorisasjon", "2026"),
+		review = p.title,
 		objective = "Testmålsetting for perioden";
-	create(w, REVIEW, {service: "Autentisering og autorisasjon", year: "2026",
-		month: "Mai", severity: "1"});
+	create(w, REVIEW, {service: "Autentisering og autorisasjon", year: p.year,
+		month: p.month, severity: "1"});
 	create(w, NHN + "/forms/malsetting", {title: objective, year: "2026"});
 	try {
 		// D3: a monthly kind stamps YYYY-MM, a yearly one just YYYY
-		assert.equal(w.$tw.wiki.getTiddler(review).fields.period, "2026-05");
+		assert.equal(w.$tw.wiki.getTiddler(review).fields.period, p.year + "-" + p.ord);
 		assert.equal(w.$tw.wiki.getTiddler(objective).fields.period, "2026");
 	} finally {
 		discard(w, review);

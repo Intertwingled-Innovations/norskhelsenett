@@ -70,6 +70,7 @@ Two wikis are available, each booted once and shared:
 ## Conventions
 
 - **Assert invariants, not counts.** The snapshot will be refreshed. "No service is titled `NN …`" survives that; "there are 60 services" does not. Where an exact value is needed, pin it to a named tiddler and add a test that fails loudly if that tiddler disappears.
+- **A named period is a count in disguise.** The August 2026 refresh broke three tests this way: one expected a tiddler to be tagged exactly `April, Mai`, and two created a review for a month NHN had since filed, so creation was correctly refused and the test failed on data rather than on behaviour. Creation tests now ask `freePeriod` (in `forms.test.js`) for a month the snapshot does not cover; ordering and multi-value cases moved to fixtures, which the snapshot cannot move under.
 - **Set `currentTiddler` through the helper.** Functions read it from the widget scope; piping a title in via `[[X]function[f]]` does *not* set it. `w.project()` handles this.
 - **Say what broke in the message.** `assert.ok(cond, "…")` costs one line and saves reading the filter back.
 - **Own your fixtures.** A test that edits a snapshot tiddler depends on whatever that tiddler happens to contain, and leaves it changed for whatever runs next. Build what you need through the real creation path, and restore or discard it in a `finally`.
