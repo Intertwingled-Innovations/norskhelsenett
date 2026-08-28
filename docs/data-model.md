@@ -77,6 +77,7 @@ Expect dirty data, and validate against the JSON before asserting structure:
 - Duplicate-looking titles.
 - **The review template is tagged like a review** — governance tag, month and year — so any selector for reviews has to subtract the `mal` tag explicitly or it counts the template as content.
 - **Some governance-tagged tiddlers carry no month**, so a set defined as "governance tag + month" is narrower than "governance tag". The extracts use the wider one.
+- **The snapshot contains TiddlyWiki drafts** — 19 of them, the scratch copies the editor leaves behind when a tiddler is opened and not saved. Eight inherit the tags of what they draft, so they read as ordinary content: a draft of a `Leveranse` is tagged `Leveranse`. Any selector has to subtract them (`nhn-drafts`) or it double-counts the work. Eleven have lost their `draft.of` field and are recognisable only by the `Draft of '…'` title TiddlyWiki gave them.
 
 This inconsistency is not incidental: it is exactly the data-quality problem the brief wants solved. Never assume the tags are clean.
 

@@ -42,10 +42,78 @@ h.test("every review carries a month and a governance tag", function() {
 	});
 });
 
-h.test("nhn-deliveries is exactly the Leveranse-tagged set", function() {
-	var w = h.wiki();
-	assert.deepEqual(w.filter("[function[nhn-deliveries]sort[title]]"),
-		w.filter("[[Leveranse]tagging[]sort[title]]"));
+/*
+A base selector is "everything carrying this tag, less what is not content" —
+the `mal` templates, archived tiddlers and drafts, all of them via `nhn-excluded`.
+Asserted as the two directions of that sentence rather than by re-composing the
+filter here: a selector that quietly starts reading a different tag fails on the
+first, and one that drops members for a reason of its own fails on the second.
+*/
+function assertTagLessExclusions(w, fn, tag) {
+	var selected = w.filter("[function[" + fn + "]]"),
+		tagged = w.filter("[[" + tag + "]tagging[]]"),
+		excluded = w.filter("[function[nhn-excluded]]");
+	assert.ok(selected.length > 0, fn + " selects nothing at all");
+	selected.forEach(function(title) {
+		assert.ok(tagged.indexOf(title) !== -1,
+			fn + " selected \"" + title + "\", which is not tagged " + tag);
+		assert.ok(excluded.indexOf(title) === -1,
+			fn + " selected \"" + title + "\", which nhn-excluded rules out");
+	});
+	tagged.forEach(function(title) {
+		assert.ok(selected.indexOf(title) !== -1 || excluded.indexOf(title) !== -1,
+			"\"" + title + "\" is tagged " + tag + " but " + fn +
+			" drops it, and nhn-excluded does not say why");
+	});
+}
+
+h.test("nhn-deliveries is the Leveranse-tagged set, less what is not content", function() {
+	assertTagLessExclusions(h.wiki(), "nhn-deliveries", "Leveranse");
+});
+
+/*
+TiddlyWiki's editor leaves a draft copy behind whenever a tiddler is opened and
+not saved, and the draft inherits the tags of what it drafts. Seven of the ones
+in this snapshot were being counted as content: a draft of a `Leveranse` as a
+second delivery, a draft of a `Målsetting` as a second objective. So the reports
+overstated the work, against tiddlers nobody had filed.
+
+The guard is on every population at once rather than on the seven — the point is
+that no selector may ever admit a draft, not that these particular drafts are
+gone. The "-all" variants are included: they keep archived content deliberately,
+but archived work happened and a draft did not.
+*/
+h.test("no draft reaches any population", function() {
+	var w = h.wiki(),
+		drafts = w.filter("[function[nhn-drafts]]");
+	assert.ok(drafts.length > 0, "no drafts in the snapshot — this guard proves nothing");
+	["nhn-deliveries", "nhn-objectives", "nhn-objectives-all", "nhn-results",
+			"nhn-reviews", "nhn-reviews-all", "nhn-services", "nhn-periodic"].forEach(function(fn) {
+		var members = w.filter("[function[" + fn + "]]");
+		drafts.forEach(function(draft) {
+			assert.ok(members.indexOf(draft) === -1,
+				fn + " counts the draft \"" + draft + "\" as content");
+		});
+	});
+	// Both extracts read nhn-excluded too, so a draft cannot be exported either
+	assert.deepEqual(w.filter("[function[nhn-extract-governance-set]] :intersection[function[nhn-drafts]]",
+		{"extract-year": "", "extract-month": ""}), []);
+});
+
+/*
+Two shapes of draft, and the second is the one a `has[draft.of]` test misses:
+twelve in this snapshot lost that field and are recognisable only by the title
+TiddlyWiki gave them.
+*/
+h.test("nhn-drafts catches drafts that lost their draft.of field", function() {
+	var w = h.wiki(),
+		drafts = w.filter("[function[nhn-drafts]]"),
+		fielded = w.filter("[has[draft.of]]");
+	assert.ok(drafts.length > fielded.length,
+		"nhn-drafts found no more than has[draft.of] does, so the orphaned drafts are being missed");
+	w.filter("[all[tiddlers]prefix<nhn-draft-title-prefix>]").forEach(function(title) {
+		assert.ok(drafts.indexOf(title) !== -1, title + " is titled as a draft but nhn-drafts misses it");
+	});
 });
 
 h.test("the governance tree descends from the configured root", function() {
@@ -173,3 +241,4 @@ h.test("nhn-glued-lists reports only lists glued to paragraph text", function() 
 	assert.ok(found.indexOf("02 Styringsrapport DHP februar 2025") >= 0,
 		"the known glued list in the February 2025 report was not detected");
 });
+

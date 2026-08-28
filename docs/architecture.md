@@ -66,7 +66,7 @@ Both plugins are flat folders of small tiddlers. Nothing is generated; every fil
 | `extracts.tid`, `extract-columns-*.tid`, `eksport.tid` | The two §3.3 extracts: selectors, column specs, UI |
 | `summary-views.tid`, `sammendrag.tid` | The §3.4 view catalogue and its page |
 | `validators.tid`, `todo-review.tid`, `todo-okr.tid`, `todo-status.tid` | Attribution for the two to-do lists, their pages, and the status labels |
-| `scope.tid`, `arkiv.tid` | §3.7 archiving and the period scope, and the page that applies them |
+| `scope.tid`, `arkiv.tid` | §3.7 archiving, the period scope and `nhn-excluded` (the one definition of "not content": templates, archived tiddlers, drafts), and the page that applies them |
 | `search-results.tid`, `search-default.tid` | The folded search tab, and making it the default |
 | `sidebar.tid`, `navtab.tid`, `nav-*.tid` | The NHN sidebar: period control, page links, four navigation trees |
 | `ui-owner.tid`, `ui-edit.tid`, `ui-typebar.tid`, `manage-owners.tid` | View-template additions and the Tjenesteeiere page |

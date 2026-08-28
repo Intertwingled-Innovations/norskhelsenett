@@ -65,7 +65,7 @@ Bound by the caller: `todo-items`, `todo-prior-items`, `todo-member`, `todo-attr
 | `nhn-extract-governance-set` / `nhn-extract-services-set` | The two §3.3 extracts, narrowed by `extract-year` / `extract-month` |
 | `nhn-periodic` / `nhn-archivable` | What may be archived, and what a given year's archiving would take |
 
-Every one of these subtracts `nhn-excluded` — archived content plus the `mal` template — through that single function in `scope.tid`, never by carrying its own copy of the exclusion. **The template carries a governance tag, a month and a year**, so a selector that forgets to exclude it counts it as content; that is why the exclusion is one chokepoint rather than a per-selector convention.
+Every one of these subtracts `nhn-excluded` — archived content, the `mal` template and TiddlyWiki drafts — through that single function in `scope.tid`, never by carrying its own copy of the exclusion. **The template carries a governance tag, a month and a year**, so a selector that forgets to exclude it counts it as content; that is why the exclusion is one chokepoint rather than a per-selector convention.
 
 ### Projections
 
@@ -103,7 +103,7 @@ Sort keys: `nhn-year-sortkey` (newest first) · `nhn-month-ord` · `nhn-bu-sortk
 | **3.4** Summaries | ✓ `forms-grouped-view` over a catalogue of sets and group paths |
 | **3.5** ToDo review | ✓ `forms-todo-status` per service per period, attributed by `nhn-review-service` |
 | **3.6** ToDo OKRs | ✓ the same engine per year, attributed by `nhn-servicename`, with no template |
-| **3.7** Periodisation | ✓ `nhn-in-year-scope` for navigation; `nhn-excluded` (archived + `mal`) subtracted everywhere, applied from the Arkiv page |
+| **3.7** Periodisation | ✓ `nhn-in-year-scope` for navigation; `nhn-excluded` (archived + `mal` + drafts) subtracted everywhere, applied from the Arkiv page |
 | **3.8** Access control | Server-side, not a plugin concern — see D5 in [architecture.md](architecture.md) |
 | **D2** Normalised search | ✓ `fold` and `forms-search`, wired in as the default search results tab |
 

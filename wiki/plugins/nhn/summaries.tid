@@ -2,7 +2,7 @@ title: $:/plugins/intertwingled-innovations/nhn/summaries
 tags: $:/tags/Global
 
 \whitespace trim
-\function nhn-objectives-all() [[Målsetting]tagging[]] -[function[nhn-templates]]
+\function nhn-objectives-all() [[Målsetting]tagging[]] -[function[nhn-templates]] -[function[nhn-drafts]]
 \function nhn-objectives() [function[nhn-objectives-all]] -[function[nhn-archived]]
 \function nhn-results() [[Resultat]tagging[]] -[function[nhn-excluded]]
 \function nhn-service-group() [function[nhn-servicename]] :else[[(Uten tjeneste)]]

@@ -95,12 +95,35 @@ h.test("no group projection can drop a tiddler out of the tree", function() {
 
 h.suite("Summary projections");
 
-h.test("the OKR sets are the tagged sets", function() {
+/*
+A base selector is "everything carrying this tag, less what is not content" —
+the `mal` templates, archived tiddlers and drafts, all of them via `nhn-excluded`.
+Asserted as the two directions of that sentence rather than by re-composing the
+filter here: a selector that quietly starts reading a different tag fails on the
+first, and one that drops members for a reason of its own fails on the second.
+*/
+function assertTagLessExclusions(w, fn, tag) {
+	var selected = w.filter("[function[" + fn + "]]"),
+		tagged = w.filter("[[" + tag + "]tagging[]]"),
+		excluded = w.filter("[function[nhn-excluded]]");
+	assert.ok(selected.length > 0, fn + " selects nothing at all");
+	selected.forEach(function(title) {
+		assert.ok(tagged.indexOf(title) !== -1,
+			fn + " selected \"" + title + "\", which is not tagged " + tag);
+		assert.ok(excluded.indexOf(title) === -1,
+			fn + " selected \"" + title + "\", which nhn-excluded rules out");
+	});
+	tagged.forEach(function(title) {
+		assert.ok(selected.indexOf(title) !== -1 || excluded.indexOf(title) !== -1,
+			"\"" + title + "\" is tagged " + tag + " but " + fn +
+			" drops it, and nhn-excluded does not say why");
+	});
+}
+
+h.test("the OKR sets are the tagged sets, less what is not content", function() {
 	var w = h.wiki();
-	assert.deepEqual(w.filter("[function[nhn-objectives]sort[title]]"),
-		w.filter("[[Målsetting]tagging[]sort[title]]"));
-	assert.deepEqual(w.filter("[function[nhn-results]sort[title]]"),
-		w.filter("[[Resultat]tagging[]sort[title]]"));
+	assertTagLessExclusions(w, "nhn-objectives", "Målsetting");
+	assertTagLessExclusions(w, "nhn-results", "Resultat");
 });
 
 h.test("nhn-service-group falls back when there is no service tag", function() {

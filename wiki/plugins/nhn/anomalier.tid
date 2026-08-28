@@ -82,3 +82,15 @@ En `*`- eller `#`-liste som følger rett etter en tekstlinje, uten blank linje i
 <div class="nhn-anomaly-list">
 <$list filter="[function[nhn-glued-lists]]"><$link/><br></$list>
 </div>
+
+!! 10. Utkast som ligger igjen
+
+TiddlyWiki lager en utkastkopi når en tiddler åpnes for redigering, og kopien blir liggende hvis redigeringen aldri lagres. Et utkast arver taggene til tiddleren det er utkast av, og ble derfor talt med som innhold: et utkast av en `Leveranse` som enda en leveranse, et utkast av en `Målsetting` som enda en målsetting. Rapportene og uttrekkene overså dette og viste mer arbeid enn det som faktisk er registrert.
+
+Utkast holdes nå utenfor alle utvalg (`nhn-excluded`), så tallene er riktige igjen. Selve tiddlerne ligger fortsatt i wikien og bør slettes — enten ved å åpne dem og lagre eller forkaste redigeringen, eller ved å slette dem direkte.
+
+''Utkast i wikien:'' <$count filter="[function[nhn-drafts]]"/> — hvorav <$count filter="[function[nhn-drafts]] :filter[tags[]count[]compare:number:gt[0]]"/> har tagger og dermed kunne telle med som innhold.
+
+<div class="nhn-anomaly-list">
+<$list filter="[function[nhn-drafts]sort[title]]"><$link/><br></$list>
+</div>

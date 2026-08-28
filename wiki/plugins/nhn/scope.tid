@@ -3,9 +3,11 @@ tags: $:/tags/Global
 
 \whitespace trim
 \define nhn-archive-tag() Arkiv
+\define nhn-draft-title-prefix() Draft of '
 \function nhn-archived() [<nhn-archive-tag>tagging[]]
 \function nhn-templates() [[mal]tagging[]]
-\function nhn-excluded() [function[nhn-templates]] [function[nhn-archived]] +[unique[]]
+\function nhn-drafts() [has[draft.of]] [has[draft.title]] [all[tiddlers]prefix<nhn-draft-title-prefix>] +[unique[]]
+\function nhn-excluded() [function[nhn-templates]] [function[nhn-archived]] [function[nhn-drafts]] +[unique[]]
 \function nhn-active-year() [[$:/config/nhn/active-year]get[text]] :else[[alle]]
 \function nhn-in-year-scope() [function[nhn-active-year]match[alle]then<currentTiddler>] [<currentTiddler>function[nhn-year-raw]count[]match[0]then<currentTiddler>] [<currentTiddler>tag{$:/config/nhn/active-year}]
 \function nhn-max-year() [<currentTiddler>tags[]regexp[^\d{4}$]sort[]last[]]
@@ -18,9 +20,11 @@ Periodisation and archiving (brief §3.7). Two separate mechanisms, deliberately
 
 `nhn-archived` is everything carrying the configurable `Arkiv` tag. Archiving is therefore reversible by untagging, destroys nothing, and needs no second wiki. The tag is applied in bulk from [[Arkiv]].
 
-`nhn-excluded` is the one definition of "not content": archived tiddlers (`nhn-archived`) plus the `mal` templates (`nhn-templates`). Every base selector — and both extract sets — subtracts this single function rather than carrying its own copy of the exclusion, so a new exclusion (a draft tag, a second template) is one edit here, not a hunt through every filter expression.
+`nhn-excluded` is the one definition of "not content": archived tiddlers (`nhn-archived`), the `mal` templates (`nhn-templates`) and unfinished drafts (`nhn-drafts`). Every base selector — and both extract sets — subtracts this single function rather than carrying its own copy of the exclusion, so a new exclusion is one edit here, not a hunt through every filter expression.
 
-The one place archived content still counts is the ToDo lists: they answer "was the work done", and archiving a year must not turn its history into "Mangler" or blind the copy detection across the archive boundary. So `nhn-reviews-all` / `nhn-objectives-all` subtract only the templates, and the ToDo pages read those, while everything user-facing reads the archived-subtracting base selectors.
+`nhn-drafts` is a draft in TiddlyWiki's own sense: the scratch copy the editor makes while a tiddler is open. The snapshot carries 19 of them, and they are not harmless. Seven inherit the tags of what they draft, so a draft of a `Leveranse` counted as a second delivery, and a draft of a `Målsetting` as a second objective — inflating the summaries, both extracts and the OKR ToDo list against tiddlers the wiki never meant to publish. The remaining twelve lost their `draft.of` field and are recognised by title alone; they carry no tags, so they skewed nothing, but they are still listed on [[Anomalier]] so they can be deleted.
+
+The one place archived content still counts is the ToDo lists: they answer "was the work done", and archiving a year must not turn its history into "Mangler" or blind the copy detection across the archive boundary. So `nhn-reviews-all` / `nhn-objectives-all` keep archived content, and the ToDo pages read those, while everything user-facing reads the archived-subtracting base selectors. They still subtract the templates //and the drafts//: an archived objective is work that happened, but a draft is work that was never filed, and counting one would report an objective as written when only its unsaved copy exists.
 
 Only the **period-bearing kinds** can be archived — `nhn-periodic`: everything carrying a governance tag, plus deliveries, objectives and results. Services, divisions and templates are structural: they belong to no single year and hiding them would break the governance tree rather than tidy it.
 
