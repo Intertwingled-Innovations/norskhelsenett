@@ -1,0 +1,43 @@
+title: $:/plugins/tiddlywiki/forms/merge
+tags: $:/tags/Global
+
+\whitespace trim
+
+\function forms-merge-losers(from,to) [enlist<from>] -[<to>] +[!is[blank]unique[]]
+\function forms-merge-renamed(from,to) [function[forms-merge-losers],<from>,<to>] :filter[is[tiddler]] :filter[<to>!is[tiddler]] +[first[]]
+\function forms-merge-count(from,to) [function[forms-merge-losers],<from>,<to>] :map:flat[all[tiddlers]tag<currentTiddler>] +[unique[]count[]]
+
+\procedure forms-merge-tags(from,to)
+<% if [<to>!is[blank]] %>
+<$let renamed={{{ [function[forms-merge-renamed],<from>,<to>] }}}>
+<$list filter="[function[forms-merge-losers],<from>,<to>]" variable="forms-merge-from">
+<% if [<forms-merge-from>match<renamed>] %>
+<$action-sendmessage $message="tm-rename-tiddler" from=<<forms-merge-from>> to=<<to>>/>
+<% else %>
+<$action-sendmessage $message="tm-relink-tiddler" from=<<forms-merge-from>> to=<<to>>/>
+<% endif %>
+</$list>
+</$let>
+<% endif %>
+\end
+
+! forms-merge-tags
+
+`<$transclude $variable="forms-merge-tags" from=<<variants>> to=<<keep>>/>` — an action that merges a set of tags into one. `from` is a title list of tags to merge away, `to` the tag to keep. Every tiddler tagged with one of the `from` tags ends up tagged `to` instead; a tiddler that already carried both keeps a single `to`.
+
+The work is done by the core's `tm-relink-tiddler`, not by a retag loop of our own. That message runs the core relinkers, which rewrite `tags` //and// `list` fields across the wiki — so a tag that is also used to order a list is not half-merged — and which skip plugins and JavaScript modules, so a merge can never rewrite a configuration shadow. It also removes an existing `to` before substituting, which is where a hand-rolled `$action-listops` loop would leave a duplicate tag behind.
+
+!! The tag's own tiddler
+
+A tag may or may not have a tiddler behind it, and that decides how a merge finishes:
+
+* **`to` has a tiddler** (or neither does) — relink only. Any tiddler behind a `from` tag is left alone: it holds text somebody wrote, and merging two tiddlers is not a decision an action should take.
+* **`to` has no tiddler and a `from` tag does** — that tiddler //is// the tag, spelled wrong, so it is renamed with `tm-rename-tiddler` rather than orphaned. Renaming relinks as a side effect, so the tag moves with it.
+
+`forms-merge-renamed` picks **at most one** tiddler to rename. The branch is decided when the button renders, not when it is clicked, so two `from` tiddlers renamed to the same absent title would both fire and the second would overwrite the first. The rest relink, which leaves their tiddlers intact for a human to deal with.
+
+!! Previewing
+
+`forms-merge-count(from,to)` — how many tiddlers the merge would retag. Show it before the button: this writes one file per tiddler on a server, and the count is the only warning of how long that takes.
+
+`forms-merge-losers(from,to)` — the tags that would disappear, `to` and blanks removed. Both are used by the caller's preview as well as by the action, so what is counted is what is changed.
