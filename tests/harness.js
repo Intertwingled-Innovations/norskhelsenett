@@ -63,11 +63,15 @@ function makeHelper($tw) {
 	}
 
 	// The core installs its tm-* message handlers from a browser-only startup module,
-	// so a headless boot has none. Reinstate the rename handler exactly as core does,
-	// so tests can follow an action that sends the message through to the wiki.
+	// so a headless boot has none. Reinstate the rename and relink handlers exactly as
+	// core does, so tests can follow an action that sends the message through to the wiki.
 	$tw.rootWidget.addEventListener("tm-rename-tiddler", function(event) {
 		var params = event.paramObject || {};
 		$tw.wiki.renameTiddler(params.from || event.tiddlerTitle, params.to);
+	});
+	$tw.rootWidget.addEventListener("tm-relink-tiddler", function(event) {
+		var params = event.paramObject || {};
+		$tw.wiki.relinkTiddler(params.from || event.tiddlerTitle, params.to);
 	});
 
 	return {
@@ -114,6 +118,37 @@ function makeHelper($tw) {
 			scope.invokeActionString(wikitext, scope, {}, variables || {});
 		},
 
+		/* Render wikitext and click every $button whose rendered markup contains
+		   `match`, returning how many were clicked.
+
+		   invokeActions() cannot reach a button's actions: ButtonWidget refuses
+		   action propagation, because it fires its own. So a test that wants to
+		   exercise a page's button — rather than a copy of the wikitext behind it,
+		   which is how a swapped argument stays invisible — has to find the widget
+		   and invoke it the way a click does. */
+		clickButtons: function(wikitext, match, variables) {
+			var parser = $tw.wiki.parseText("text/vnd.tiddlywiki",
+					"\\import [subfilter{$:/core/config/GlobalImportFilter}]\n" + wikitext),
+				widget = $tw.wiki.makeWidget(parser, {
+					parentWidget: scope,
+					document: $tw.fakeDocument,
+					variables: variables || {}
+				}),
+				buttons = [];
+			widget.render($tw.fakeDocument.createElement("div"), null);
+			(function collect(node) {
+				if(node.parseTreeNode && node.parseTreeNode.tag === "$button" &&
+						node.domNodes && node.domNodes.length &&
+						node.domNodes[0].outerHTML.indexOf(match) !== -1) {
+					buttons.push(node);
+				}
+				(node.children || []).forEach(collect);
+			})(widget);
+			// Collected before any of them fires: clicking one can re-render the rest
+			buttons.forEach(function(button) { button.invokeActions(button, null); });
+			return buttons.length;
+		},
+
 		/* Does this tiddler exist? Resolves shadows, so it sees tiddlers that
 		   are only shipped inside a plugin. */
 		exists: function(title) {
@@ -144,6 +179,14 @@ var pristine = null, fixtured = null;
 /* The wiki as it ships: real NHN content, no test data. */
 function wiki() {
 	return pristine || (pristine = bootWiki());
+}
+
+/* A private wiki, booted fresh for the caller and shared with nobody.
+   For the few tests that have to mutate the real content destructively — a bulk
+   action rewriting the tiddlers it finds — where cleaning up afterwards is not
+   possible. Costs a boot (~450ms), so reach for fixtureWiki() first. */
+function scratchWiki() {
+	return bootWiki();
 }
 
 /* The same wiki plus synthetic tiddlers, for deterministic behaviour tests.
@@ -178,6 +221,7 @@ function test(name, fn) {
 
 exports.wiki = wiki;
 exports.fixtureWiki = fixtureWiki;
+exports.scratchWiki = scratchWiki;
 exports.setFile = setFile;
 exports.suite = suite;
 exports.test = test;
