@@ -20,9 +20,10 @@ Sizes are relative (S / M / L), not estimates in days.
 | `forms-todo-*` | [todo.tid](../wiki/plugins/forms/todo.tid) | "Who still owes a thing this period, and is it real" — items, attribution by function name, four states |
 | `forms-export` | [export.tid](../wiki/plugins/forms/export.tid) | Preview table plus download link for `(set, columns)` |
 | `forms-csv` / `forms-datauri` | [csv.js](../wiki/plugins/forms/csv.js) | BOM'd CSV built by invoking a projection per cell |
+| `forms-htmldoc` | [html.js](../wiki/plugins/forms/html.js) | Wraps rendered HTML in a complete standalone document, for HTML downloads |
 | `fold` / `forms-search` | [fold.js](../wiki/plugins/forms/fold.js) | Diacritic-insensitive folding and search |
 
-**`nhn` supplies configuration**: selectors, the projection catalogue, six form definitions, the view and column catalogues, month and governance-tag maps, the kind table and its colours, the scope and archive rules, and the UI — a sidebar with four navigation tabs plus eight pages (Ny, Sammendrag, ToDo forretningsgjennomgang, ToDo målsettinger, Tjenesteeiere, Eksport, Arkiv, Anomalier).
+**`nhn` supplies configuration**: selectors, the projection catalogue, six form definitions, the view and column catalogues, month and governance-tag maps, the kind table and its colours, the scope and archive rules, and the UI — a sidebar with four navigation tabs plus nine pages (Ny, Sammendrag, ToDo forretningsgjennomgang, ToDo målsettinger, Tjenesteeiere, Eksport, Leveranserapport, Arkiv, Anomalier).
 
 **Still outstanding, and mostly not ours:**
 
@@ -43,6 +44,7 @@ Phase 5  §3.7 Periodisation & archiving  ✓ done
 Phase 6  D2 Normalised search            ✓ done
 Phase 7  Data-quality cleanup           ─ needs NHN sign-off
 Phase 8  §3.8 Access control            ─ documentation, not code
+Phase 9  Leveranserapport (post-brief)   ✓ done
 ```
 
 Phases 6–8 are independent of the 1→5 spine and can be interleaved when the spine is blocked on client input.
@@ -288,6 +290,32 @@ The payoff is not only cleaner data — it deletes complexity from the config. `
 Per D5 this is server-side and out of plugin scope. Deliverable: a `docs/deployment.md` covering the auth-proxy pattern in front of the Node.js server, AD/OIDC integration, and the reader/editor split — alongside how the current build and GitHub Pages deploy work.
 
 ---
+
+## Phase 9 — Leveranserapport (M, post-brief) — ✓ done
+
+NHN asked (August 2026) for a **board delivery report**: every delivery in a month range within a year, grouped by service, as a standalone shareable HTML file. They prototyped it themselves — a Python script over a `tiddlers.json` export — and its selection rules turned out to be this repo's selectors reimplemented: service = division + service-type tag minus the governance/OKR kinds (= `nhn-services`), delivery-in-period = `Leveranse` + year + month tags case-insensitively (= `nhn-deliveries` + fold), delivery→service = tag matching a service title. Useful external validation of the data model; what was genuinely new was the month **range**, the `MM/ÅÅ` display prefix, inline descriptions, and the standalone artefact.
+
+**New in `forms`** — [html.js](../wiki/plugins/forms/html.js): `forms-htmldoc` wraps an already-rendered HTML string in a complete document (doctype, charset, `<title>`, inline CSS from a named tiddler, optional `lang`), ready for `forms-datauri[text/html]` behind an `<a download>` — the CSV export pattern, retargeted at HTML. Title, styles and language are all operands, so the engine stays domain-free.
+
+**New in `nhn`** — [rapport-functions.tid](../wiki/plugins/nhn/rapport-functions.tid), the **Leveranserapport** page, the [rapport/html-body](../wiki/plugins/nhn/rapport-html.tid) export template and its [CSS](../wiki/plugins/nhn/rapport-css.tid). The page renders collapsible per-service sections with rendered descriptions and tag pills, and a loud warning block for deliveries linked to no service. The download wikifies the export template and pipes it through `forms-htmldoc`.
+
+**Month defaults follow the data.** The pickers open at the span of the selected year's deliveries — first to last month that actually carry data (`nhn-report-months-with-data`), so a year in progress opens January–August and a finished year January–December — and changing the year fires `nhn-rapport-reset-months`, resetting the range to the new year's span (whole calendar year if it has no dated deliveries). Without the reset, a range picked for one year would silently narrow the next. An earlier version defaulted to the current tertial; NHN preferred the data span.
+
+### Decisions
+
+- **The service join is deliberately stricter than Sammendrag's.** `nhn-report-service-of` intersects a delivery's tags with `nhn-services` (service-type tag *and* a business unit), where `nhn-servicename` accepts any tiddler carrying a service-type tag. Without this, "Forenkling og opprydding i dagens løsning (RF)" — a workstream tiddler mis-tagged `Ekstern Tjeneste` — showed up as a service section. The client's own generator required the division too. A mutation test pins the strictness.
+- **The `MM/ÅÅ` prefix takes the *latest* month tag.** The Python took whichever month tag it happened to see last — order-dependent. Latest-by-ordinal is deterministic and matches how a multi-month delivery (tagged April+Mai+Juni) reads: it *finished* in June. The prefix is all-or-nothing: a tiddler missing month or year gets the bare title, never a fragment. Titles already carrying their prefix are not double-prefixed.
+- **Descriptions are rendered wikitext, not escaped source.** The prototype showed literal `!Beskrivelse` and `*` bullets; a board deserves the rendered form. Internal links inside descriptions become **live permalinks into the NHN wiki** via `tv-wikilink-template` set to the permalink prefix — every link in the standalone file resolves against the live wiki, so the file cannot go stale silently.
+- **Every summary count is derived from the same sets the sections render**, and a test asserts the counts printed in the HTML agree with the sets — the counts cannot drift from the content.
+- **Ranges do not cross a year boundary.** Reporting periods here never do; cheap to add if NHN ever asks.
+
+### Parity check needs a fresh snapshot
+
+Against our snapshot the report finds 19 deliveries for mai–august 2026; NHN's own run of their script found 73 of a 636-delivery dataset (ours holds 576). Their export is months newer. The four unlinked deliveries we do find are a subset of their twelve — several of theirs carry tags like `Støtte og hjelp til leverandør` that name no service tiddler, which is exactly the Phase 7 cleanup case. Re-run the comparison when NHN supply a current `tiddlers.json`.
+
+### Cost
+
+A full-year default range initially took **14s** to render: the tag→service join re-evaluated `nhn-services` (~4ms) once per delivery per service, twice over (page + the `$wikify` of the export document). The join now reads a `report-known-services` title-list the page and template bind once, with a fall-back to computing it so an unbound call is slow but never wrong — **~0.5s warm** for 116 deliveries. A test pins the binding, and a mutation test pins the fall-back.
 
 ## Open questions for NHN
 

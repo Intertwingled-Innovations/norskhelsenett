@@ -1,0 +1,100 @@
+title: Leveranserapport
+caption: Rapport
+
+\whitespace trim
+
+\procedure nhn-rapport-row()
+<div class="nhn-rapport-delivery">
+<$let pfx={{{ [function[nhn-report-prefix]] }}}
+	label={{{ [<currentTiddler>prefix<pfx>] :else[<pfx>addsuffix[ ]addsuffix<currentTiddler>] }}}>
+<div class="nhn-rapport-delivery-title"><$link to=<<currentTiddler>>><$text text=<<label>>/></$link></div>
+<% if [<currentTiddler>get[text]!is[blank]] %>
+<div class="nhn-rapport-description"><$transclude $tiddler=<<currentTiddler>> $mode="block"/></div>
+<% else %>
+<div class="nhn-rapport-description nhn-rapport-empty">(ingen tekst)</div>
+<% endif %>
+<div class="nhn-rapport-tags"><$list filter="[<currentTiddler>tags[]]" variable="tag"><$let currentTiddler=<<tag>>><$transclude $tiddler="$:/core/ui/TagTemplate"/></$let></$list></div>
+</$let>
+</div>
+\end
+
+! Leveranserapport
+
+Leveranser per tjeneste for en valgt periode — måneder innenfor ett år — til styrerapportering. «Last ned HTML» gir en frittstående fil med permalenker til wikien, klar til å deles.
+
+<$let nhn-year-now=<<now "YYYY">>>
+<$let report-year={{{ [[$:/state/nhn/rapport/year]get[text]] :else[<nhn-year-now>] }}}>
+<$let default-from={{{ [function[nhn-report-months-with-data],<report-year>first[]] :else[function[nhn-form-months]first[]] }}}
+	default-to={{{ [function[nhn-report-months-with-data],<report-year>last[]] :else[function[nhn-form-months]last[]] }}}>
+<$let from-month={{{ [[$:/state/nhn/rapport/from]get[text]] :else[<default-from>] }}}
+	to-month={{{ [[$:/state/nhn/rapport/to]get[text]] :else[<default-to>] }}}>
+<$let from-ord={{{ [<from-month>lowercase[]] :map[[$:/plugins/intertwingled-innovations/nhn/months]getindex<currentTiddler>] }}}
+	to-ord={{{ [<to-month>lowercase[]] :map[[$:/plugins/intertwingled-innovations/nhn/months]getindex<currentTiddler>] }}}>
+
+<div class="nhn-rapport-controls">
+<label>År:&#32;<$select tiddler="$:/state/nhn/rapport/year" default=<<nhn-year-now>> actions=<<nhn-rapport-reset-months>>>
+<$list filter="[function[nhn-form-years]]"><option><$text text=<<currentTiddler>>/></option></$list>
+</$select></label>
+<label>Fra måned:&#32;<$select tiddler="$:/state/nhn/rapport/from" default=<<default-from>>>
+<$list filter="[function[nhn-form-months]]"><option><$text text=<<currentTiddler>>/></option></$list>
+</$select></label>
+<label>Til måned:&#32;<$select tiddler="$:/state/nhn/rapport/to" default=<<default-to>>>
+<$list filter="[function[nhn-form-months]]"><option><$text text=<<currentTiddler>>/></option></$list>
+</$select></label>
+</div>
+
+<% if [<from-ord>compare:number:gt<to-ord>] %>
+<div class="nhn-rapport-warning">«Fra måned» er etter «til måned» — velg en gyldig periode.</div>
+<% else %>
+<$let report-known-services={{{ [function[nhn-services]] +[format:titlelist[]join[ ]] }}}
+	report-set={{{ [function[nhn-report-set],<report-year>,<from-ord>,<to-ord>] +[format:titlelist[]join[ ]] }}}
+	report-services={{{ [function[nhn-report-services],<report-year>,<from-ord>,<to-ord>] +[format:titlelist[]join[ ]] }}}>
+<$let report-unlinked={{{ [function[nhn-report-unlinked]] +[format:titlelist[]join[ ]] }}}>
+<$let n-period={{{ [enlist<report-set>count[]] }}}
+	n-unlinked={{{ [enlist<report-unlinked>count[]] }}}
+	doc-title={{{ [function[nhn-report-months],<from-ord>,<from-ord>] =[function[nhn-report-months],<to-ord>,<to-ord>] +[unique[]join[–]addprefix[Leveranserapport ]addsuffix[ ]addsuffix<report-year>] }}}
+	report-filename={{{ [<report-year>addprefix[leveranserapport-]addsuffix[-]addsuffix<from-ord>addsuffix[-]addsuffix<to-ord>addsuffix[.html]] }}}>
+
+<div class="nhn-rapport-summary">
+Tjenester med leveranser:&#32;<strong><$text text={{{ [enlist<report-services>count[]] }}}/></strong>
+&nbsp;·&nbsp;Leveranser i perioden:&#32;<strong><$text text=<<n-period>>/></strong>
+&nbsp;·&nbsp;Koblet til minst én tjeneste:&#32;<strong><$text text={{{ [<n-period>subtract<n-unlinked>] }}}/></strong>
+&nbsp;·&nbsp;Uten tjenestekobling:&#32;<strong><$text text=<<n-unlinked>>/></strong>
+&nbsp;·&nbsp;Totalt i datasettet:&#32;<strong><$text text={{{ [function[nhn-deliveries]count[]] }}}/></strong>
+</div>
+
+<p class="forms-export-actions">
+<$wikify name="report-html" text={{{ [[$:/plugins/intertwingled-innovations/nhn/rapport/html-body]get[text]] }}} output="html" mode="block">
+<a class="tc-btn-invisible forms-export-download" href={{{ [<report-html>forms-htmldoc<doc-title>,[$:/plugins/intertwingled-innovations/nhn/rapport/styles],[no]] +[forms-datauri[text/html]] }}} download=<<report-filename>>>{{$:/core/images/download-button}}&#32;Last ned HTML</a>
+</$wikify>
+</p>
+
+<$list filter="[enlist<report-services>]" variable="svc">
+<details class="forms-tree-branch" open="open">
+<summary class="forms-tree-summary"><span class="forms-group-label"><$transclude $variable="forms-tag-or-link" title=<<svc>>/></span><span class="forms-tree-count">(<$text text={{{ [function[nhn-report-for],<svc>] +[count[]] }}}/>)</span></summary>
+<div class="forms-tree-children">
+<$list filter="[function[nhn-report-for],<svc>] :sort[function[nhn-report-sortkey]]">
+<<nhn-rapport-row>>
+</$list>
+</div>
+</details>
+</$list>
+
+<% if [enlist<report-unlinked>limit[1]] %>
+<div class="nhn-rapport-unlinked">
+<strong>Leveranser som mangler kobling til tjeneste&#32;(<$text text=<<n-unlinked>>/>)</strong>
+<$list filter="[enlist<report-unlinked>] :sort[function[nhn-report-sortkey]]">
+<<nhn-rapport-row>>
+</$list>
+</div>
+<% endif %>
+
+</$let>
+</$let>
+</$let>
+<% endif %>
+</$let>
+</$let>
+</$let>
+</$let>
+</$let>

@@ -19,6 +19,7 @@ An //operation// is a named function from a tiddler to a value or a list. Export
 |`forms-merge-tags` |`<$transclude $variable="forms-merge-tags" from="<tags>" to="<tag>"/>` — merges a set of tags into one across the whole wiki, renaming the tag's own tiddler where that completes the merge and deleting nothing |
 |`forms-csv` |`[<filter>] +[forms-csv[<column-spec>]]` — CSV with a leading UTF-8 BOM, so spreadsheet software reads it as UTF-8 |
 |`forms-datauri` |`[<text>] +[forms-datauri[<mime-type>]]` — wraps a string for an `<a download>` link |
+|`forms-htmldoc` |`[<body-html>] +[forms-htmldoc<title>,<css-tiddler>,<lang>]` — wraps rendered HTML in a complete standalone document (doctype, charset, title, inline CSS) |
 |`fold` / `forms-search` |`[<titles>forms-search:title[<query>]]` — diacritic-insensitive search, so a query typed without accents still finds the accented text |
 
 Each feature's own tiddler documents it in full; open the plugin's contents tab to read them.

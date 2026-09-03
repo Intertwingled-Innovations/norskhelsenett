@@ -13,6 +13,7 @@ All are reached from the //NHN// tab in the sidebar.
 |[[ToDo målsettinger]] |Hvilke tjenester som mangler målsetting for året |
 |[[Tjenesteeiere]] |Setter tjenesteeier, én og én eller limt inn fra regneark |
 |[[Eksport]] |De to Excel-uttrekkene, filtrert på år og måned |
+|[[Leveranserapport]] |Leveranser per tjeneste for en valgt periode, med nedlastbar frittstående HTML-rapport til styrerapportering |
 |[[Arkiv]] |Skjuler gammelt innhold uten å slette det |
 |[[Anomalier]] |Datakvalitetsproblemer som er verdt å rydde i, og verktøyet som slår sammen tagger med avvikende skrivemåte |
 

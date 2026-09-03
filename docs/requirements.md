@@ -28,6 +28,8 @@ They differ only by selector and column list — which is precisely the keystone
 
 **Normalised search (D2)** — a diacritic-insensitive `forms-search` operator, wired in as the default search results tab, so typing `stotte` finds `Støtte`. Not in the brief; NHN added it later.
 
+**Leveranserapport (post-brief)** — a board-reporting page: deliveries in a chosen month range within a year, grouped by service, with a summary block, a highlighted section for deliveries linked to no service, and a **standalone HTML download** whose links are permalinks into the live wiki. Not in the brief; NHN asked for it in August 2026 after prototyping their own Python report generator, whose selection rules turned out to reproduce this repo's selectors exactly. See the phase write-up in [plan.md](plan.md).
+
 **§3.1 Navigation** — a sub-tabbed *NHN* sidebar tab (Styringsstruktur · Forretningsgjennomgang · Leveranser · Tjenester), built on the `forms-tree` relation tree and the `forms-group` group-by engine.
 
 **§3.2 Guided creation and editing** — the **Ny** page and six form definitions over a new `forms-form` engine, plus a **Rediger strukturert** button that reopens any tiddler in the form that would have created it. A definition is data: which inputs to ask for, a wikitext template for the title, a filter for the tags, a filter per field, and a tiddler to seed the body from. Picking a service settles its `TjenesteID`, division and `Styring …` tag automatically, and creation stamps `period` (D3). An existing title is never overwritten or silently uniquified. Editing preserves tags the form does not manage, and renames through `tm-rename-tiddler` so tag-based parent links follow.

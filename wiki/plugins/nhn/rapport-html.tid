@@ -1,0 +1,83 @@
+title: $:/plugins/intertwingled-innovations/nhn/rapport/html-body
+
+\whitespace trim
+
+\procedure nhn-rapport-html-delivery()
+<div class="delivery">
+<$let pfx={{{ [function[nhn-report-prefix]] }}}
+	label={{{ [<currentTiddler>prefix<pfx>] :else[<pfx>addsuffix[ ]addsuffix<currentTiddler>] }}}>
+<div class="delivery-title"><$link to=<<currentTiddler>>><$text text=<<label>>/></$link></div>
+<div class="description"><b>Beskrivelse:</b>&#32;
+<% if [<currentTiddler>get[text]!is[blank]] %>
+<$transclude $tiddler=<<currentTiddler>> $mode="block"/>
+<% else %>
+(ingen tekst)
+<% endif %>
+</div>
+<div class="tags"><b>Tagger:</b>&#32;<$list filter="[<currentTiddler>tags[]]" join=" | " variable="tag"><$link to=<<tag>>><$text text=<<tag>>/></$link></$list></div>
+</$let>
+</div>
+\end
+
+\procedure nhn-rapport-html-body()
+<$let anchor-re="[^a-z0-9æøåäöüé]+"
+	tv-wikilink-template={{{ [[$uri_encoded$]addprefix<nhn-permalink-prefix>] }}}
+	from-name={{{ [function[nhn-report-months],<from-ord>,<from-ord>] }}}
+	to-name={{{ [function[nhn-report-months],<to-ord>,<to-ord>] }}}
+	report-known-services={{{ [function[nhn-services]] +[format:titlelist[]join[ ]] }}}
+	report-set={{{ [function[nhn-report-set],<report-year>,<from-ord>,<to-ord>] +[format:titlelist[]join[ ]] }}}
+	report-services={{{ [function[nhn-report-services],<report-year>,<from-ord>,<to-ord>] +[format:titlelist[]join[ ]] }}}>
+<$let report-unlinked={{{ [function[nhn-report-unlinked]] +[format:titlelist[]join[ ]] }}}>
+<$let n-period={{{ [enlist<report-set>count[]] }}}
+	n-unlinked={{{ [enlist<report-unlinked>count[]] }}}>
+<a id="top"></a>
+<h1>Leveranserapport&#32;<$text text={{{ [<from-name>] [<to-name>] +[unique[]join[–]] }}}/>&#32;<$text text=<<report-year>>/></h1>
+<div class="summary">
+<b>Antall tjenester med leveranser:</b>&#32;<$text text={{{ [enlist<report-services>count[]] }}}/><br>
+<b>Antall leveranser i valgt periode:</b>&#32;<$text text=<<n-period>>/><br>
+<b>Antall leveranser koblet til minst én tjeneste:</b>&#32;<$text text={{{ [<n-period>subtract<n-unlinked>] }}}/><br>
+<b>Antall leveranser uten tjenestekobling:</b>&#32;<$text text=<<n-unlinked>>/><br>
+<b>Antall leveranser totalt i datasettet:</b>&#32;<$text text={{{ [function[nhn-deliveries]count[]] }}}/>
+</div>
+<div class="toc">
+<h2>Innholdsfortegnelse</h2>
+<ul>
+<$list filter="[enlist<report-services>]" variable="svc">
+<$let currentTiddler=<<svc>>
+	stype={{{ [function[nhn-service-type]first[]] }}}
+	svc-n={{{ [function[nhn-report-for],<svc>] +[count[]] }}}
+	anchor={{{ [<svc>lowercase[]search-replace:g:regexp<anchor-re>,[-]addprefix[#service-]] }}}>
+<li><a href=<<anchor>>><$text text=<<svc>>/><% if [<stype>!is[blank]] %>&#32;(<$text text=<<stype>>/>)<% endif %>&#32;(<$text text=<<svc-n>>/>&#32;leveranser)</a></li>
+</$let>
+</$list>
+<% if [enlist<report-unlinked>limit[1]] %>
+<li><a href="#unlinked-deliveries">LEVERANSER SOM MANGLER KOBLING TIL TJENESTE&#32;(<$text text=<<n-unlinked>>/>)</a></li>
+<% endif %>
+</ul>
+</div>
+<$list filter="[enlist<report-services>]" variable="svc">
+<$let currentTiddler=<<svc>>
+	stype={{{ [function[nhn-service-type]first[]] }}}
+	anchorid={{{ [<svc>lowercase[]search-replace:g:regexp<anchor-re>,[-]addprefix[service-]] }}}>
+<h2 id=<<anchorid>>><$link to=<<svc>>><$text text=<<svc>>/><% if [<stype>!is[blank]] %>&#32;(<$text text=<<stype>>/>)<% endif %></$link></h2>
+<$list filter="[function[nhn-report-for],<svc>] :sort[function[nhn-report-sortkey]]">
+<<nhn-rapport-html-delivery>>
+</$list>
+<div class="back-to-top"><a href="#top">Til toppen</a></div>
+</$let>
+</$list>
+<% if [enlist<report-unlinked>limit[1]] %>
+<div class="unlinked-section" id="unlinked-deliveries">
+<h2>LEVERANSER SOM MANGLER KOBLING TIL TJENESTE</h2>
+<$list filter="[enlist<report-unlinked>] :sort[function[nhn-report-sortkey]]">
+<<nhn-rapport-html-delivery>>
+</$list>
+<div class="back-to-top"><a href="#top">Til toppen</a></div>
+</div>
+<% endif %>
+</$let>
+</$let>
+</$let>
+\end
+
+<<nhn-rapport-html-body>>

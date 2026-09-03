@@ -1,0 +1,42 @@
+title: $:/plugins/intertwingled-innovations/nhn/rapport-functions
+tags: $:/tags/Global
+
+\whitespace trim
+\function nhn-report-in-range(fromord,toord) [function[nhn-month-raw]] :filter[function[nhn-month-ord]compare:number:gteq<fromord>compare:number:lteq<toord>] +[limit[1]]
+\function nhn-report-year-set(year) [function[nhn-deliveries]] :filter[function[nhn-year-raw]match<year>]
+\function nhn-report-set(year,fromord,toord) [function[nhn-report-year-set],<year>] :filter[function[nhn-report-in-range],<fromord>,<toord>]
+\function nhn-report-months-with-data(year) [function[nhn-report-year-set],<year>] :map:flat[function[nhn-month-raw]] +[!is[blank]unique[]] :sort[function[nhn-month-ord]]
+\function nhn-report-known-services() [enlist<report-known-services>] :else[function[nhn-services]]
+\function nhn-report-service-of() [<currentTiddler>tags[]] :intersection[function[nhn-report-known-services]]
+\function nhn-report-services(year,fromord,toord) [function[nhn-report-set],<year>,<fromord>,<toord>] :map:flat[function[nhn-report-service-of]] +[!is[blank]unique[]sort[]]
+\function nhn-report-for(svc) [enlist<report-set>] :filter[function[nhn-report-service-of]match<svc>]
+\function nhn-report-unlinked() [enlist<report-set>] :filter[function[nhn-report-service-of]count[]match[0]]
+\function nhn-report-yy() [function[nhn-year-raw]sort[]last[]split[]last[2]join[]]
+\function nhn-report-month-last() [function[nhn-month-raw]] :sort[function[nhn-month-ord]] +[last[]]
+\function nhn-report-prefix() [function[nhn-report-month-last]] :map[function[nhn-month-ord]] =[function[nhn-report-yy]] +[join[/]regexp[^\d\d/\d\d$]]
+\function nhn-report-sortkey() [function[nhn-report-prefix]addsuffix[ ]addsuffix<currentTiddler>] :else[<currentTiddler>]
+\function nhn-report-months(fromord,toord) [function[nhn-form-months]] :filter[function[nhn-month-ord]compare:number:gteq<fromord>compare:number:lteq<toord>]
+
+\procedure nhn-rapport-reset-months()
+<$let reset-year={{{ [[$:/state/nhn/rapport/year]get[text]] :else[<nhn-year-now>] }}}>
+<$let reset-months={{{ [function[nhn-report-months-with-data],<reset-year>] +[format:titlelist[]join[ ]] }}}>
+<$action-setfield $tiddler="$:/state/nhn/rapport/from" text={{{ [enlist<reset-months>first[]] :else[function[nhn-form-months]first[]] }}}/>
+<$action-setfield $tiddler="$:/state/nhn/rapport/to" text={{{ [enlist<reset-months>last[]] :else[function[nhn-form-months]last[]] }}}/>
+</$let>
+</$let>
+\end
+
+Selectors and projections for the [[Leveranserapport]] (board delivery report): deliveries in a month range within a year, grouped by service.
+
+* `nhn-report-in-range(fromord,toord)` — truthy when the tiddler carries a month tag whose ordinal falls within the inclusive range. Month tags are matched case-insensitively via `nhn-month-raw`, so a lowercase `juni` counts.
+* `nhn-report-set(year,fromord,toord)` — deliveries (per `nhn-deliveries`, so archived content and the `mal` template stay out) tagged with the year and at least one in-range month.
+* `nhn-report-service-of` — the services a delivery links to: its tags intersected with the known services. It reads the title-list variable `<report-known-services>` when the caller has bound it (the page and the export template do — evaluating `nhn-services` once instead of once per delivery per service turns an ~14s render into ~1s), and falls back to evaluating `nhn-services` itself when unbound, so a bare call is slow but never wrong. Deliberately //stricter// than `nhn-servicename` (used by Sammendrag): a board report should group under real service entities (service-type tag //and// a business unit), not under any tiddler that happens to carry a service-type tag. This matches the client's own report generator.
+* `nhn-report-services(year,fromord,toord)` — the services those deliveries link to, sorted.
+* `nhn-report-for(svc)` / `nhn-report-unlinked()` — the deliveries in `<report-set>` (a title-list variable bound by the caller) belonging to one service, and those linking to none. A delivery tagged with several services appears under each; the two shapes partition the set: every member is either linked or unlinked.
+* `nhn-report-prefix` — the `MM/ÅÅ` display prefix from the //latest// month tag (deliberately deterministic where the tag order is not) and the latest year tag; empty unless both parts exist, never a half prefix.
+* `nhn-report-sortkey` — prefix + title, so deliveries sort chronologically then alphabetically; undated ones sort by bare title.
+* `nhn-report-months(fromord,toord)` — the canonical month names in the range, for captions.
+* `nhn-report-months-with-data(year)` — the canonical month names that year's deliveries actually carry, chronologically. First and last are the report page's default range, so a year is opened at the span of its own data — January–August for a year still in progress, January–December for a finished one.
+* `nhn-rapport-reset-months` — the action the year picker fires on change: resets the from/to months to that data span (whole calendar year if the year has no dated deliveries). Without it, a range chosen for one year silently narrows the next.
+
+The display label itself (prefix prepended unless the title already starts with it) is assembled where it is rendered, because it needs both the prefix and the title in one expression.

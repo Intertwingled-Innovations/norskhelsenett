@@ -100,3 +100,37 @@ code-body: yes
 .nhn-tag-merge .nhn-anomaly-table { margin-bottom: 0.5em; }
 .nhn-tag-merge-warning { color: #e85800; margin: 0.5em 0; }
 .nhn-tag-merge-leftover { color: <<colour muted-foreground>>; margin: 0.5em 0; }
+
+/* Leveranserapport (board delivery report) */
+.nhn-rapport-controls { margin: 0.75em 0; display: flex; gap: 1em; flex-wrap: wrap; }
+.nhn-rapport-summary {
+	background: <<colour tab-background>>;
+	border-left: 4px solid <<colour primary>>;
+	padding: 0.5em 0.75em;
+	margin: 0.75em 0;
+}
+.nhn-rapport-warning {
+	background: #fff8e6;
+	border-left: 4px solid #d9822b;
+	padding: 0.5em 0.75em;
+	margin: 0.75em 0;
+}
+.nhn-rapport-delivery {
+	margin: 0 0 0.75em 0;
+	padding: 0 0 0.75em 0;
+	border-bottom: 1px solid <<colour tab-border>>;
+}
+.nhn-rapport-delivery-title { font-weight: 600; }
+.nhn-rapport-description { margin: 0.25em 0; }
+.nhn-rapport-description h1, .nhn-rapport-description h2, .nhn-rapport-description h3 {
+	font-size: 1em;
+	margin: 0.4em 0 0.1em 0;
+}
+.nhn-rapport-empty { color: <<colour muted-foreground>>; }
+.nhn-rapport-tags { margin-top: 0.25em; }
+.nhn-rapport-unlinked {
+	background: #fff8e6;
+	border-left: 4px solid #d9822b;
+	padding: 0.75em;
+	margin-top: 1.5em;
+}

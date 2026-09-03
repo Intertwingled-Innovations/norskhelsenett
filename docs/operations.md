@@ -48,6 +48,7 @@ Bound by the caller: `todo-items`, `todo-prior-items`, `todo-member`, `todo-attr
 | `[<text>] +[forms-datauri[<mime>]]` | Wraps a string for an `<a download>` link |
 | `[<string>fold[]]` | Lower-case, map, NFD-strip (D2) |
 | `[<titles>forms-search:<fields>[<query>]]` | Diacritic-insensitive search; `!` inverts |
+| `[<body-html>] +[forms-htmldoc<title>,<css-tiddler>,<lang>]` | Wraps rendered HTML in a complete standalone document (doctype, charset, `<title>`, inline CSS) for `forms-datauri[text/html]` |
 
 ## Configuration — `nhn`
 
@@ -64,6 +65,9 @@ Bound by the caller: `todo-items`, `todo-prior-items`, `todo-member`, `todo-attr
 | `nhn-deliveries` / `nhn-objectives` / `nhn-results` | `Leveranse` / `Målsetting` / `Resultat` |
 | `nhn-extract-governance-set` / `nhn-extract-services-set` | The two §3.3 extracts, narrowed by `extract-year` / `extract-month` |
 | `nhn-periodic` / `nhn-archivable` | What may be archived, and what a given year's archiving would take |
+| `nhn-report-set(year,from,to)` | Deliveries tagged the year and a month whose ordinal falls in the inclusive range — the Leveranserapport population |
+| `nhn-report-services` / `nhn-report-for` / `nhn-report-unlinked` | The services those deliveries link to (tags ∩ `nhn-services` — stricter than `nhn-servicename`, and read from the `<report-known-services>` binding for speed; see the readme in `rapport-functions.tid`), one service's subset, and the members linking to none; the last two partition the set |
+| `nhn-report-months-with-data(year)` | The months a year's deliveries actually carry — first/last are the report page's default range, reset on year change by `nhn-rapport-reset-months` |
 
 Every one of these subtracts `nhn-excluded` — archived content, the `mal` template and TiddlyWiki drafts — through that single function in `scope.tid`, never by carrying its own copy of the exclusion. **The template carries a governance tag, a month and a year**, so a selector that forgets to exclude it counts it as content; that is why the exclusion is one chokepoint rather than a per-selector convention.
 
@@ -74,6 +78,8 @@ Every one of these subtracts `nhn-excluded` — archived content, the `mal` temp
 Dates come in two flavours, and mixing them up is a real bug: `nhn-year` / `nhn-month` (with `(Uten år)` / `(Uten måned)` fallbacks) are **group keys** and may return several values, while `nhn-years` / `nhn-months` fold every value into **one cell** for export, because the CSV writer takes only the first result. `nhn-year-raw` / `nhn-month-raw` are the unadorned versions the others build on.
 
 Sort keys: `nhn-year-sortkey` (newest first) · `nhn-month-ord` · `nhn-bu-sortkey` · `nhn-owner-sortkey` · `nhn-service-sortkey` · `nhn-objective-sortkey`. Each pushes its "(Uten …)" bucket last.
+
+The Leveranserapport adds `nhn-report-prefix` — the `MM/ÅÅ` display prefix from the //latest// month and year tags, all-or-nothing so a half-dated tiddler never shows a fragment — and `nhn-report-sortkey` (prefix + title: chronological, then alphabetical).
 
 ### Classification and relations
 
@@ -106,6 +112,7 @@ Sort keys: `nhn-year-sortkey` (newest first) · `nhn-month-ord` · `nhn-bu-sortk
 | **3.7** Periodisation | ✓ `nhn-in-year-scope` for navigation; `nhn-excluded` (archived + `mal` + drafts) subtracted everywhere, applied from the Arkiv page |
 | **3.8** Access control | Server-side, not a plugin concern — see D5 in [architecture.md](architecture.md) |
 | **D2** Normalised search | ✓ `fold` and `forms-search`, wired in as the default search results tab |
+| **Leveranserapport** (post-brief) | ✓ `nhn-report-set` → grouped page + `$wikify` of the `rapport/html-body` template → `forms-htmldoc` → `forms-datauri[text/html]` |
 
 ## Tests
 
@@ -114,4 +121,5 @@ Run with `npm test`; see [testing.md](testing.md). The suite covers date orderin
 ## Scope notes
 
 - Normalised search (D2) was **not** in the NHN PDF — added later by NHN.
+- The Leveranserapport (board delivery report) was **not** in the NHN PDF either — requested in August 2026, replacing a Python script NHN had prototyped against a JSON export.
 - The bilingual/translated version of the PDF is handled separately and is **not** part of this work.
