@@ -1,13 +1,13 @@
 # Testing
 
 ```sh
-npm test              # run everything (~8s)
+npm test              # run everything (~22s)
 npm test -- export    # run only tests matching "export" (file, suite or test name)
 ```
 
 The suite has no dependencies beyond TiddlyWiki itself. It boots the `wiki` folder in-process and evaluates filter expressions against it, so tests exercise the same code the browser runs — real plugin tiddlers, real content, real filter semantics.
 
-Filter-level tests run in single-digit milliseconds; almost all of the seven seconds is the handful of tests that render a whole grouped tree, and the runner prints a duration next to any test taking over 200ms. For a fast inner loop, pass a pattern.
+Filter-level tests run in single-digit milliseconds; almost all of the wall clock is the handful of tests that render a whole grouped tree or a whole page, and the runner prints a duration next to any test taking over 200ms. For a fast inner loop, pass a pattern.
 
 Tests gate the GitHub Pages deploy ([../.github/workflows/deploy.yaml](../.github/workflows/deploy.yaml)) and run on every branch and pull request ([../.github/workflows/test.yaml](../.github/workflows/test.yaml)).
 
@@ -34,6 +34,7 @@ So the suite leans towards the failure modes that are invisible at runtime: does
 | `tests/todo.test.js` | §3.5/§3.6 attribution, status, both ToDo populations, and the owner importer |
 | `tests/scope.test.js` | §3.7 archiving, its reversibility, and what the period scope must never hide |
 | `tests/search.test.js` | D2 folding, the symmetry of query and text, and the search tab wiring |
+| `tests/merge.test.js` | Merging tag casing variants: the generic action, the family and target functions, and the Anomalier buttons that drive them |
 
 ## Writing a test
 
@@ -61,11 +62,14 @@ The wiki helper offers:
 - `w.exists(title)` — does this tiddler exist, including tiddlers shipped inside a plugin?
 - `w.render(wikitext, variables)` — render wikitext to HTML with the globals in scope. Use it only for end-to-end checks of a UI procedure; it costs hundreds of milliseconds against real content, so assert at the filter level wherever you can.
 - `w.invokeActions(wikitext, variables)` — execute action widgets, as clicking a button would. This is how the creation tests drive a form to completion instead of inspecting markup.
+- `w.clickButtons(wikitext, match, variables)` — render wikitext and click every `$button` whose markup contains `match`, returning how many were clicked. `invokeActions` cannot reach a button's actions (see the mechanics note in [architecture.md](architecture.md)), so this is the only way to exercise a page's own button rather than a copy of the wikitext behind it.
 
 Two wikis are available, each booted once and shared:
 
 - **`h.wiki()`** — the wiki as it ships. Use it for anything about the real NHN content.
 - **`h.fixtureWiki()`** — the same plus the synthetic tiddlers in `tests/fixtures.js`. Use it when you need a case the snapshot can't provide reliably: an owner that is actually set, a lowercase month tag, a title containing a quote. Kept separate so fixtures can never skew assertions about real content.
+
+A third, `h.scratchWiki()`, boots a **fresh, unshared** wiki every call. It is for the few tests that must mutate real content destructively and cannot put it back — clicking the Anomalier merge buttons rewrites a hundred-odd tiddlers and renames some of them. It costs a boot (~450ms), so reach for `fixtureWiki()` and a `finally` first.
 
 ## Conventions
 
@@ -93,4 +97,5 @@ Each phase in [plan.md](plan.md) should land with its own cases. The ones worth 
 - ~~Phase 3-4 (ToDo lists)~~ — done: attribution never invents a service, a freshly created review reads as unwritten rather than done, and both pages' summary counts partition their population.
 
 One lesson from Phase 4 is worth generalising: a helper that *reimplements* production logic tests the helper. The roll-up the pages perform was mirrored in JavaScript here, and mutating the real page changed no test — until two tests were added that render the pages and read their summaries.
+- ~~Phase 7 (tag casing merge)~~ — done: the merge moves `list` fields as well as tags (which is what separates the core relink from a hand-rolled retag loop), it renames at most one tiddler and destroys none, and clicking the page's own buttons clears the drift the page reported onto the spelling the buttons advertised. Every one of those was written by breaking the code first and checking a test noticed.
 - ~~Phase 6 (normalised search)~~ — done, and it took two attempts to test properly: folding the text but not the query passes every ASCII-query test. The assertion that catches it is that a query and its folded form return the *same set*.

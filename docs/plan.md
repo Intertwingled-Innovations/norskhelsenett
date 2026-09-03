@@ -269,11 +269,11 @@ Three other mutations are covered: dropping the map entirely (the NFD-only trap)
 
 ## Phase 7 — Data-quality cleanup (M, needs NHN sign-off)
 
-The Anomalier page diagnoses ten classes of problem and fixes one. Add reviewed bulk actions for the other mechanical ones: merge tag casing variants, remove self-tags, strip service-type tags from monthly review tiddlers, and insert the missing blank line before lists glued to a paragraph (class 9, `nhn-glued-lists` — 31 tiddlers in the snapshot, where the bullets currently render as literal `*` text). The last is the safest to automate; it is still their text, so it waits for the same sign-off.
+The Anomalier page diagnoses ten classes of problem and fixes two. Add reviewed bulk actions for the remaining mechanical ones: remove self-tags, strip service-type tags from monthly review tiddlers, and insert the missing blank line before lists glued to a paragraph (class 9, `nhn-glued-lists` — 31 tiddlers in the snapshot, where the bullets currently render as literal `*` text). The last is the safest to automate; it is still their text, so it waits for the same sign-off.
 
-Class 2 is now the readiest of these: `nhn-tag-casing-drift` finds the families and `nhn-tag-casing-canonical` already names the variant to merge onto (the most-used one), so the action is a retag loop over the listing rather than a decision. Ten variants across five families in this snapshot.
+**Class 2 (tag casing) is done** — diagnosed *and* fixable from the page. Each drifting family gets its own control: every spelling with its tiddler count, a radio choosing which to keep (the most-used one preselected), the number of tiddlers a click rewrites, and a button that merges the rest onto the chosen spelling. Ten variants across five families in this snapshot. The mechanism is generic and lives in the engine ([merge.tid](../wiki/plugins/forms/merge.tid)); D7 in [architecture.md](architecture.md) records why it delegates to the core's `tm-relink-tiddler` and why it renames but never deletes. What is still NHN's to say is *whether* to run it, and on which families — question 4 below.
 
-Class 10 (leftover drafts) is the one that has been fixed rather than only diagnosed: drafts now fall under `nhn-excluded`, so they no longer inflate the summaries, the extracts or the OKR ToDo list. Deleting the 19 tiddlers themselves is still NHN's call, and the page lists them for that.
+Class 10 (leftover drafts) is the other one fixed rather than only diagnosed: drafts now fall under `nhn-excluded`, so they no longer inflate the summaries, the extracts or the OKR ToDo list. Deleting the 19 tiddlers themselves is still NHN's call, and the page lists them for that.
 
 This class is deliberately **not** patched in the renderer: a custom parser rule would make our build render differently from NHN's live wiki and hide the problem from the people writing the text.
 
@@ -296,5 +296,5 @@ Each blocks or reshapes a phase, so worth asking early:
 1. **Owner data** — who populates `tjenesteeier` for the services, and when? (Blocks Phases 3–4 being useful.)
 2. **OKR levels** — at which governance levels is a missing objective a real gap? (Phase 4 selector.)
 3. **Backfill `period`** — may we run a one-off pass stamping `period` on the existing 476 reviews? (Simplifies Phase 3 permanently.)
-4. **Tag cleanup** — may we normalise the casing drift, and on which tag families? (Phase 7, and it simplifies the config.)
+4. **Tag cleanup** — may we normalise the casing drift, and on which tag families? The tool is built and waiting on [[Anomalier]]; what it needs is a decision per family, in particular whether `Ekstern tjeneste` or `Ekstern Tjeneste` is the correct spelling. (Phase 7, and it simplifies the config.)
 5. **Archive semantics** — is hiding prior years behind a tag enough, or do they want them out of the live wiki entirely? (Phase 5 approach.)

@@ -50,6 +50,7 @@ Both plugins are flat folders of small tiddlers. Nothing is generated; every fil
 | `export.tid` | `forms-export`: preview table and download link |
 | `csv.js` | `forms-csv`, `forms-datauri`: CSV with a UTF-8 BOM (D4) |
 | `fold.js` | `fold`, `forms-search`: diacritic-insensitive folding and search (D2) |
+| `merge.tid` | `forms-merge-tags`: merge a set of tags into one, renaming the tag's own tiddler where that completes the merge |
 | `labels.tid` | `$:/config/forms/labels` — neutral UI captions, meant to be overridden |
 | `fold-map.tid` | `$:/config/forms/fold-map` — letters normalisation cannot fold |
 | `styles.tid`, `readme.tid`, `plugin.info` | Stylesheet, plugin documentation, manifest |
@@ -65,12 +66,12 @@ Both plugins are flat folders of small tiddlers. Nothing is generated; every fil
 | `form-*.tid` | Six form definitions, the values they derive (`form-functions.tid`), the title templates, and the Norwegian label overrides |
 | `extracts.tid`, `extract-columns-*.tid`, `eksport.tid` | The two §3.3 extracts: selectors, column specs, UI |
 | `summary-views.tid`, `sammendrag.tid` | The §3.4 view catalogue and its page |
-| `validators.tid`, `todo-review.tid`, `todo-okr.tid`, `todo-status.tid` | To-do attribution and the data-quality detectors (glued lists, tag casing drift); the two to-do pages and the status labels |
+| `validators.tid`, `todo-review.tid`, `todo-okr.tid`, `todo-status.tid` | To-do attribution and the data-quality detectors (glued lists, tag casing drift and the families a merge acts on); the two to-do pages and the status labels |
 | `scope.tid`, `arkiv.tid` | §3.7 archiving, the period scope and `nhn-excluded` (the one definition of "not content": templates, archived tiddlers, drafts), and the page that applies them |
 | `search-results.tid`, `search-default.tid` | The folded search tab, and making it the default |
 | `sidebar.tid`, `navtab.tid`, `nav-*.tid` | The NHN sidebar: period control, page links, four navigation trees |
 | `ui-owner.tid`, `ui-edit.tid`, `ui-typebar.tid`, `manage-owners.tid` | View-template additions and the Tjenesteeiere page |
-| `anomalier.tid`, `ny.tid` | The data-quality page and the guided-creation page |
+| `anomalier.tid`, `ny.tid` | The data-quality page — including the per-family control that merges the tag casing variants it reports — and the guided-creation page |
 | `sitetitle.tid`, `sitesubtitle.tid`, `theme-default.tid`, `palette-default.tid`, `default-sidebar-tab.tid` | Branding and the pointers that activate the theme |
 | `styles.tid`, `readme.tid`, `plugin.info` | Stylesheet, plugin documentation, manifest |
 
@@ -139,6 +140,16 @@ Read-vs-write against Microsoft AD is **server-side** (an auth proxy, or Node.js
 
 Anywhere the UI displays a tag, or a link to something that acts as a tag — tree nodes, group headers, the service column of the ToDo lists, the Anomalier listings — it goes through `forms-tag-or-link` (in `tree.tid`), which transcludes `$:/core/ui/TagTemplate` when anything is tagged with the title and falls back to a `$link` otherwise. Never a bare `$link` or a hand-rolled pill: users get the same colour, icon and dropdown of tagged tiddlers they know from the core UI. A smoke test renders every page and fails if no pill appears.
 
+### D7 — Bulk data-quality fixes propose first, and never delete content
+
+[[Anomalier]] reports ten classes of problem; the mechanical ones it also offers to fix, starting with the tag casing drift (class 2). Three rules hold for any such action.
+
+**Propose, don't decide.** The page shows the whole family — every spelling, how many tiddlers carry each, which one would be kept — and the count of writes a click costs, before there is anything to click. The kept spelling is a *choice* with the most-used variant preselected, not a verdict: `Ekstern Tjeneste` outnumbers `Ekstern tjeneste` more than four to one, while the `Styring …` tags and the rest of the taxonomy spell it in lower case. A merge that always trusted the count would normalise the corpus onto the spelling NHN's own vocabulary disagrees with. The data is NHN's, so the direction is theirs.
+
+**Never delete content.** A merge moves tags. Where a drifted spelling exists only as a tag stub and the kept spelling has no tiddler, that stub is renamed — it is the same tiddler, spelled correctly. Where both spellings have a tiddler, the tag moves and both tiddlers stay, listed as needing a human: merging two bodies of text is a judgement, not a bulk action.
+
+**Use the core's own bulk operation.** `forms-merge-tags` sends `tm-relink-tiddler` rather than looping `$action-listops` over the tagged tiddlers. The core relinker rewrites `tags` *and* `list` fields, drops an existing target tag before substituting so nothing ends up tagged twice, and iterates real tiddlers only — which is what makes it impossible for a merge to write an override over a configuration shadow. See [merge.tid](../wiki/plugins/forms/merge.tid) for the mechanism and the one-rename-at-most guard.
+
 ## TiddlyWiki mechanics worth knowing
 
 Gotchas that have already cost time in this project:
@@ -147,6 +158,7 @@ Gotchas that have already cost time in this project:
 - **`function`/relation functions read `<currentTiddler>` from scope**, so set it (e.g. `<$tiddler tiddler="…">`). Piping a title in via `[[X]function[f]]` does *not* set it.
 - **Filter run-prefixes (`:filter`, `:map`, …) operate on the *accumulated* result of all prior runs**, not just the previous run. Compute independent sets in separate functions and union them.
 - **To get "tiddlers tagged X" use `[<X>tagging[]]`, not `[tag<X>]`.** The `tag` operator filters its *input*, and only enumerates everything tagged X when the source carries a `byTag` index — true for the live wiki source, **false inside `:map` or a filtered transclusion**, where `[tag<X>]` silently returns blanks. `tagging[]` is source-independent.
+- **A `$button`'s actions do not propagate.** `invokeActions` walks a widget tree firing the action widgets it finds, but `ButtonWidget.allowActionPropagation()` returns false, so it never descends into a button — the button fires its own actions on click. A headless test therefore cannot exercise a page's button by rendering the page and invoking it; it has to find the button widget and invoke *that*. `harness.clickButtons()` does this, and is the difference between testing the shipped page and testing a copy of the wikitext behind it.
 - **`:and` is not logical AND.** It pipes the accumulated results into the next run and replaces them with that run's output. A run that ignores its input — one starting with a constant, or with `function[…]` — therefore *resurrects* an empty accumulator, turning a false condition true. Chain conditions inside a single run (`[<x>!is[blank]!is[tiddler]]`) or use `:filter`, which really does keep only what survives. This bug reached the duplicate-tiddler guard in the form engine and was caught by a test, not by reading the code.
 
 The TiddlyWiki5 source is available in a sibling working directory (`../TiddlyWiki5`) for checking core behaviour.
