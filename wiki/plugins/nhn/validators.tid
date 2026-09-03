@@ -12,6 +12,11 @@ tags: $:/tags/Global
 \function nhn-tag-casing-count() [function[nhn-all-tags]match:caseinsensitive<currentTiddler>count[]]
 \function nhn-tag-casing-drift() [function[nhn-all-tags]] :filter[function[nhn-tag-casing-count]compare:number:gt[1]] +[sort[]]
 \function nhn-tag-casing-canonical() [function[nhn-all-tags]match:caseinsensitive<currentTiddler>] :sort:number[all[tiddlers]tag<currentTiddler>count[]] +[last[]]
+\function nhn-tag-casing-families(drift) [enlist<drift>] :else[function[nhn-tag-casing-drift]] :map:flat[function[nhn-tag-casing-canonical]] +[unique[]sort[]]
+\function nhn-tag-casing-variants() [function[nhn-all-tags]match:caseinsensitive<currentTiddler>] :sort:number[all[tiddlers]tag<currentTiddler>count[]] +[reverse[]]
+\function nhn-tag-merge-state() [[$:/state/nhn/anomalier/behold/]addsuffix<currentTiddler>]
+\function nhn-tag-merge-target() [function[nhn-tag-merge-state]get[text]] :intersection[function[nhn-tag-casing-variants]] :else[function[nhn-tag-casing-canonical]]
+\function nhn-tag-merge-losers() [function[nhn-tag-casing-variants]] -[function[nhn-tag-merge-target]]
 
 Attribution for the ToDo lists (brief §3.5 and §3.6). The status machinery itself is generic and lives in [[$:/plugins/tiddlywiki/forms/todo]]; what is NHN-specific is deciding which service an item belongs to.
 
@@ -39,6 +44,18 @@ Objectives need no such fallback: their titles follow no convention, so `nhn-ser
 
 `nhn-tag-casing-drift` — every tag for which another tag exists with the same letters and different capitalisation, both variants listed, most-used last. Computed rather than enumerated: a fixed table of known variants was what the page carried before, and it went on reporting six `tjeneste` spellings while `Resultat`/`resultat` and `MyHealth@EU`/`Myhealth@EU` drifted past it unmentioned. Drift is not a fixed list — it is whatever people have typed since — so the page has to derive it from the tags that are actually in use.
 
-`nhn-tag-casing-canonical` names the variant to keep: the one used by the most tiddlers. It is what a future merge action would normalise onto, and showing it turns the listing from a complaint into a proposal.
+`nhn-tag-casing-canonical` names the variant to keep: the one used by the most tiddlers. It is what the merge action below normalises onto by default, which turns the listing from a complaint into a proposal the reader can accept with one click.
 
 `nhn-all-tags` is the distinct tags in use, shared by both. It is rescanned per tag, so the listing costs roughly half a second on this corpus — acceptable on a page opened to audit the data, and not used anywhere in the everyday views.
+
+!! Merging the variants
+
+[[Anomalier]] does not only report the drift, it offers to fix it. The merge itself is generic and lives in the engine ([[$:/plugins/tiddlywiki/forms/merge]]); what these functions add is the //family// — the set of variants a merge acts on, and which of them to keep.
+
+`nhn-tag-casing-families` — one representative tag per drifting family, so the page renders one merge control per concept rather than one row per variant. The representative is the family's canonical variant, which is stable for as long as the family exists and disappears with it once merged.
+
+Its `drift` parameter is an optimisation, not configuration: `nhn-tag-casing-drift` costs about half a second here — it is the one expensive thing on the page — and calling it once for the heading count and again for the families would double that. Passing the list in lets [[Anomalier]] compute it once; called with nothing it computes its own, so the function still stands alone.
+
+`nhn-tag-casing-variants` — every spelling of the family the current tiddler belongs to, most-used first. Called with the family as `currentTiddler`, but any variant of the family gives the same answer: membership is case-insensitive equality, which is symmetric.
+
+`nhn-tag-merge-target` is the variant the merge will keep, and `nhn-tag-merge-losers` the ones it will remove. The target defaults to `nhn-tag-casing-canonical` — the most-used spelling — but the page lets it be chosen, because most-used is a heuristic and not always the correct one: `Ekstern Tjeneste` outnumbers `Ekstern tjeneste` more than four to one while the `Styring …` tags and the rest of the taxonomy spell it in lower case. The choice is held in `nhn-tag-merge-state`, a `$:/state` tiddler per family, and is intersected back against the variants actually in use so that a stale choice falls back to the canonical rather than merging onto a tag that no longer exists.

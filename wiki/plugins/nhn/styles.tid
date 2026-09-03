@@ -89,3 +89,14 @@ code-body: yes
 .nhn-arkiv-none { color: <<colour muted-foreground>>; font-style: italic; }
 .nhn-arkiv-years { margin: 0.5em 0; }
 .nhn-arkiv-restore { color: <<colour muted-foreground>>; text-decoration: underline; }
+
+/* Anomalier: merging tag casing variants */
+.nhn-tag-merge {
+	margin: 1em 0;
+	padding: 0.75em 1em;
+	border: 1px solid <<colour tab-border>>;
+	border-radius: 6px;
+}
+.nhn-tag-merge .nhn-anomaly-table { margin-bottom: 0.5em; }
+.nhn-tag-merge-warning { color: #e85800; margin: 0.5em 0; }
+.nhn-tag-merge-leftover { color: <<colour muted-foreground>>; margin: 0.5em 0; }

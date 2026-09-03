@@ -23,26 +23,55 @@ Noen tiddlere har sin egen tittel som tagg, og enkelte par av Målsetting og Res
 
 Det samme begrepet finnes i flere skrivemåter, slik at et filter som treffer én variant stilltiende går glipp av de andre.
 
-Tabellen beregnes fra taggene som faktisk er i bruk, ikke fra en fast liste: den finner alle tagger som er like bortsett fra store og små bokstaver. ''Anbefalt'' er varianten som brukes av flest tiddlere — den de øvrige bør slås sammen til.
+Listen beregnes fra taggene som faktisk er i bruk, ikke fra en fast liste: den finner alle tagger som er like bortsett fra store og små bokstaver. Varianten som brukes av flest tiddlere, er valgt på forhånd — velg en annen hvis det er den riktige skrivemåten. Knappen flytter taggen på alle tiddlerne som bruker de øvrige variantene.
 
-''Tagger med avvikende skrivemåte:'' <$count filter="[function[nhn-tag-casing-drift]]"/>
+<$let drift={{{ [function[nhn-tag-casing-drift]] +[format:titlelist[]join[ ]] }}}
+	families={{{ [function[nhn-tag-casing-families],<drift>] +[format:titlelist[]join[ ]] }}}>
+''Begreper med avvikende skrivemåte:''&#32;<$text text={{{ [enlist<families>count[]] }}}/>&#32;— til sammen&#32;<$text text={{{ [enlist<drift>count[]] }}}/>&#32;tagger.
 
+<div class="nhn-tag-merges">
+<$list filter="[enlist<families>]" variable="family">
+<$let currentTiddler=<<family>>>
+<$let state={{{ [function[nhn-tag-merge-state]] }}}
+	keep={{{ [function[nhn-tag-merge-target]] }}}
+	losers={{{ [function[nhn-tag-merge-losers]] +[format:titlelist[]join[ ]] }}}>
+<$let n={{{ [function[forms-merge-count],<losers>,<keep>] }}}
+	renamed={{{ [function[forms-merge-renamed],<losers>,<keep>] }}}
+	leftover={{{ [enlist<losers>is[tiddler]] -[<renamed>] +[format:titlelist[]join[ ]] }}}>
+<div class="nhn-tag-merge">
 <table class="nhn-anomaly-table">
 <thead>
-<tr><th>Variant</th><th>Antall</th><th>Anbefalt</th></tr>
+<tr><th>Behold</th><th>Variant</th><th>Tiddlere</th></tr>
 </thead>
 <tbody>
-<$list filter="[function[nhn-tag-casing-drift]]" variable="variant">
-<$let currentTiddler=<<variant>> keep={{{ [function[nhn-tag-casing-canonical]] }}}>
+<$list filter="[function[nhn-tag-casing-variants]]" variable="variant">
 <tr>
+<td><$radio tiddler=<<state>> value=<<variant>> default=<<keep>>/></td>
 <td><$transclude $variable="forms-tag-or-link" title=<<variant>>/></td>
 <td><$count filter="[all[tiddlers]tag<variant>]"/></td>
-<td><% if [<variant>match<keep>] %>—<% else %><$transclude $variable="forms-tag-or-link" title=<<keep>>/><% endif %></td>
 </tr>
-</$let>
 </$list>
 </tbody>
 </table>
+
+<p class="nhn-tag-merge-warning">Dette flytter taggen på&#32;<$text text=<<n>>/>&#32;<% if [<n>match[1]] %>tiddler<% else %>tiddlere<% endif %><% if [<renamed>!is[blank]] %>, og gir tiddleren «<$text text=<<renamed>>/>» det nye navnet «<$text text=<<keep>>/>»<% endif %>. På en server betyr det like mange filskrivinger. Handlingen kan ikke angres automatisk.</p>
+
+<% if [enlist<leftover>count[]compare:number:gt[0]] %>
+<p class="nhn-tag-merge-leftover">Disse variantene finnes også som egne tiddlere. Taggen flyttes, men tiddlerne blir liggende og må slås sammen for hånd:&#32;<$list filter="[enlist<leftover>]" variable="left"><$link to=<<left>>/>&#32;</$list></p>
+<% endif %>
+
+<$button class="tc-btn-big-green">
+<$transclude $variable="forms-merge-tags" from=<<losers>> to=<<keep>>/>
+<$action-deletetiddler $tiddler=<<state>>/>
+Slå sammen til «<$text text=<<keep>>/>»
+</$button>
+</div>
+</$let>
+</$let>
+</$let>
+</$list>
+</div>
+</$let>
 
 !! 3. Tjenestetype-tagger på månedlige gjennomganger
 

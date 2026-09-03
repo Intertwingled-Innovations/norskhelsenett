@@ -14,7 +14,7 @@ All are reached from the //NHN// tab in the sidebar.
 |[[Tjenesteeiere]] |Setter tjenesteeier, én og én eller limt inn fra regneark |
 |[[Eksport]] |De to Excel-uttrekkene, filtrert på år og måned |
 |[[Arkiv]] |Skjuler gammelt innhold uten å slette det |
-|[[Anomalier]] |Datakvalitetsproblemer som er verdt å rydde i |
+|[[Anomalier]] |Datakvalitetsproblemer som er verdt å rydde i, og verktøyet som slår sammen tagger med avvikende skrivemåte |
 
 Sidebar-fanen har i tillegg fire navigasjonstrær — Styringsstruktur, Forretningsgjennomgang, Leveranser og Tjenester — og en periodevelger som begrenser dem til ett år.
 
