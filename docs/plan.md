@@ -309,9 +309,11 @@ NHN asked (August 2026) for a **board delivery report**: every delivery in a mon
 - **Every summary count is derived from the same sets the sections render**, and a test asserts the counts printed in the HTML agree with the sets — the counts cannot drift from the content.
 - **Ranges do not cross a year boundary.** Reporting periods here never do; cheap to add if NHN ever asks.
 
-### Parity check needs a fresh snapshot
+### Parity check against NHN's own run
 
-Against our snapshot the report finds 19 deliveries for mai–august 2026; NHN's own run of their script found 73 of a 636-delivery dataset (ours holds 576). Their export is months newer. The four unlinked deliveries we do find are a subset of their twelve — several of theirs carry tags like `Støtte og hjelp til leverandør` that name no service tiddler, which is exactly the Phase 7 cleanup case. Re-run the comparison when NHN supply a current `tiddlers.json`.
+Re-run against the refreshed snapshot, the two agree. The report finds **75 deliveries for mai–august 2026** across 19 services, 12 of them linked to no service; NHN's own script found **73** in a dataset of 636, ours now holds 637, and their unlinked count was twelve as well. The gap that mattered was the stale export, not the selection rules.
+
+What is left is comparing the two lists item by item rather than count by count, which needs their output alongside ours. The unlinked deliveries are the Phase 7 cleanup case seen from the report end: several carry tags like `Støtte og hjelp til leverandør` that name no service tiddler.
 
 ### Cost
 
