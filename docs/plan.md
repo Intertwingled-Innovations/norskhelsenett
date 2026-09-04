@@ -6,7 +6,9 @@ Sizes are relative (S / M / L), not estimates in days.
 
 ## Where we are
 
-**Every deliverable in the brief is built except the optional §3.8**, which is a deployment concern rather than a plugin task. Normalised search (D2), which NHN added after the brief, is built too. What remains is not mostly code: a data-quality cleanup that needs NHN's sign-off, a deployment write-up, and the owner data only NHN can supply.
+**Every deliverable in the brief is built except the optional §3.8**, which is a deployment concern rather than a plugin task. Two things NHN added after the brief — normalised search (D2) and the Leveranserapport — are built too. What remains is mostly not code: cleanup that needs NHN's approval, a deployment write-up, the owner data only NHN can supply, and three follow-ups from the September demo.
+
+The snapshot refreshed on 3 September holds **867 reviews, 637 deliveries, 285 objectives, 433 results and 60 services** (2209 periodic tiddlers in all). Counts quoted inside the phase write-ups below are as measured when that phase was built and have not been chased; where a number still governs a decision it is restated in [What is left](#what-is-left) or in the phase's own section.
 
 **The `forms` engine** — generic, no domain strings, enforced by a test:
 
@@ -19,18 +21,51 @@ Sizes are relative (S / M / L), not estimates in days.
 | `forms-edit` / `forms-load-actions` / `forms-save-actions` | [edit.tid](../wiki/plugins/forms/edit.tid) | Structured editing: the same definition run backwards, preserving unmanaged tags, renaming with relink |
 | `forms-todo-*` | [todo.tid](../wiki/plugins/forms/todo.tid) | "Who still owes a thing this period, and is it real" — items, attribution by function name, four states |
 | `forms-export` | [export.tid](../wiki/plugins/forms/export.tid) | Preview table plus download link for `(set, columns)` |
+| `forms-merge-tags` | [merge.tid](../wiki/plugins/forms/merge.tid) | Merges a set of tags into one through the core's relinker, renaming a tag's own tiddler but never deleting one |
 | `forms-csv` / `forms-datauri` | [csv.js](../wiki/plugins/forms/csv.js) | BOM'd CSV built by invoking a projection per cell |
 | `forms-htmldoc` | [html.js](../wiki/plugins/forms/html.js) | Wraps rendered HTML in a complete standalone document, for HTML downloads |
 | `fold` / `forms-search` | [fold.js](../wiki/plugins/forms/fold.js) | Diacritic-insensitive folding and search |
 
 **`nhn` supplies configuration**: selectors, the projection catalogue, six form definitions, the view and column catalogues, month and governance-tag maps, the kind table and its colours, the scope and archive rules, and the UI — a sidebar with four navigation tabs plus nine pages (Ny, Sammendrag, ToDo forretningsgjennomgang, ToDo målsettinger, Tjenesteeiere, Eksport, Leveranserapport, Arkiv, Anomalier).
 
-**Still outstanding, and mostly not ours:**
+## What is left
 
-- **Owner data.** The field, the inline editor, the bulk table and a paste-in importer all exist; **no service carries an owner yet**. Both to-do lists show an empty owner column until NHN supply it.
-- **Data-quality cleanup** (Phase 7) — needs NHN to approve which tag families to normalise.
-- **Access control and deployment** (Phase 8) — a document, not code.
-- **The five open questions** at the end of this file.
+Reviewed 4 September 2026, after the second client demo. Three lists, because they are blocked on different things.
+
+### Ours to build
+
+| Item | Size | Where |
+|---|---|---|
+| Bulk actions for the remaining mechanical anomaly classes — self-tags (87 tiddlers), service-type tags on monthly reviews (2), lists glued to the paragraph above (31) | M | Phase 7 |
+| Compute the classes that are still prose only: results with several parents (class 5) and duplicate year-versioned tiddlers (class 6) | S | Phase 7 |
+| `docs/deployment.md` — the auth-proxy pattern, the reader/editor split, and how the build and Pages deploy work | S | Phase 8 |
+| Popup state qualifiers for tag pills rendered through `forms-tag-or-link` — Sammendrag renders 336 pills sharing 81 states, Anomalier 104 sharing 103 | S | Phase 10 |
+| Follow the objective hop when a delivery has no service tag, **if** NHN want it — it places 8 of the 12 unlinked deliveries without touching their data | S | Phase 10 |
+| Deliveries titled `ÅÅ/MM` are prefixed a second time by the report (4 in one service) | S | Phase 10 |
+| A native Norwegian speaker's pass over the UI text, which is mine | S | Phase 0 |
+
+### Blocked on NHN
+
+All eleven live in **Spørsmål til NHN** in the wiki, which is the single list to walk in a meeting; this is what each one blocks.
+
+| Question | Blocks |
+|---|---|
+| 1 Owner data | Both ToDo lists and the owner grouping are empty until it arrives. 0 of 60 services carry `tjenesteeier`. |
+| 2 Data cleanup — casing, and the other classes | Phase 7. The casing tool is built and waiting on a decision per family; the other classes wait on approval per class. |
+| 3 Archiving semantics | Whether Phase 5's reversible tag is the whole answer. |
+| 4 Business-review rules | Whether near-copies should be flagged, and whether severity should be required. |
+| 5 Which services should report | Whether the ToDo population stays "reported at least once this year" (43 of 60). |
+| 6 Permalink base | Every URL column and every link in the standalone report. |
+| 7 Authorisation | §3.8, and therefore Phase 8's shape. |
+| 8 Deliveries with no service link | Whether Phase 10 changes the report or NHN change the tags. |
+| 9 Reporting period, and their script's output | Item-by-item parity, and whether ranges must cross a year boundary. |
+| 10 Backfill `period` | Nothing carries the field yet — 0 of 2209 periodic tiddlers — so every period filter still reads tags. |
+| 11 Deployment | Who operates the wiki, which decides what Phase 8 documents. |
+
+### Not blocked, not worth doing yet
+
+- **Lazy children in `forms-group`.** Sammendrag renders in ~730ms and 612KB, the report in ~1s and 879KB. Acceptable, and both are already the fast path; revisit if the corpus grows by half again.
+- **Cross-year reporting ranges.** Cheap to add, no known use (question 9).
 
 ## Sequencing
 
@@ -42,9 +77,10 @@ Phase 3  §3.5 ToDo: business review      ✓ done
 Phase 4  §3.6 ToDo: OKRs                 ✓ done
 Phase 5  §3.7 Periodisation & archiving  ✓ done
 Phase 6  D2 Normalised search            ✓ done
-Phase 7  Data-quality cleanup           ─ needs NHN sign-off
+Phase 7  Data-quality cleanup           ◐ 2 of 10 classes fixed, rest needs sign-off
 Phase 8  §3.8 Access control            ─ documentation, not code
 Phase 9  Leveranserapport (post-brief)   ✓ done
+Phase 10 Demo follow-ups (post-brief)    ─ three small items, one needs an answer
 ```
 
 Phases 6–8 are independent of the 1→5 spine and can be interleaved when the spine is blocked on client input.
@@ -247,7 +283,7 @@ Archiving 597 tiddlers takes ~45ms in memory; on the server that is 597 file wri
 
 ### Still open for NHN
 
-Whether hiding behind a tag is enough, or prior years should leave the live wiki entirely. Everything here is reversible, so it can be adopted before that is settled.
+Whether hiding behind a tag is enough, or prior years should leave the live wiki entirely (question 3). Everything here is reversible, so it can be adopted before that is settled.
 
 ---
 
@@ -269,13 +305,26 @@ Three other mutations are covered: dropping the map entirely (the NFD-only trap)
 
 ---
 
-## Phase 7 — Data-quality cleanup (M, needs NHN sign-off)
+## Phase 7 — Data-quality cleanup (M, 2 of 10 classes fixed)
 
-The Anomalier page diagnoses ten classes of problem and fixes two. Add reviewed bulk actions for the remaining mechanical ones: remove self-tags, strip service-type tags from monthly review tiddlers, and insert the missing blank line before lists glued to a paragraph (class 9, `nhn-glued-lists` — 31 tiddlers in the snapshot, where the bullets currently render as literal `*` text). The last is the safest to automate; it is still their text, so it waits for the same sign-off.
+The Anomalier page diagnoses ten classes of problem and fixes two. What is left, with the counts in the current snapshot:
 
-**Class 2 (tag casing) is done** — diagnosed *and* fixable from the page. Each drifting family gets its own control: every spelling with its tiddler count, a radio choosing which to keep (the most-used one preselected), the number of tiddlers a click rewrites, and a button that merges the rest onto the chosen spelling. Ten variants across five families in this snapshot. The mechanism is generic and lives in the engine ([merge.tid](../wiki/plugins/forms/merge.tid)); D7 in [architecture.md](architecture.md) records why it delegates to the core's `tm-relink-tiddler` and why it renames but never deletes. What is still NHN's to say is *whether* to run it, and on which families — question 4 below.
+| Class | Count | Mechanical? |
+|---|---|---|
+| 1 Self-tagging and tag cycles | 87 | Yes — remove the tiddler's own title from its tags |
+| 3 Service-type tags on monthly reviews | 2 | Yes — strip the service-type tag |
+| 4 `Tiltak` / `Satsning for fart` tagged straight onto NHN | 2 | A judgement: they flood the root, but the tagging may be intended |
+| 5 Results with several parents | not computed | Diagnosis first; it is inherent in the data model |
+| 6 Duplicate year-versioned tiddlers | not computed | A judgement per pair |
+| 7 Inconsistent `Domene` level | 4 domains | A modelling decision, not a fix |
+| 8 Tagged both `Målsetting` and `Resultat` | 3 | A judgement per tiddler |
+| 9 Lists glued to the paragraph above | 31 | Yes — insert a blank line; the safest to automate |
 
-Class 10 (leftover drafts) is the other one fixed rather than only diagnosed: drafts now fall under `nhn-excluded`, so they no longer inflate the summaries, the extracts or the OKR ToDo list, and the page now offers to delete the tiddlers as well. It deletes only what is safe to lose — 18 of the 19 here, being drafts that are empty or whose original still holds the text. The nineteenth drafts `New Tiddler 10`, which was never saved, so its text exists nowhere else; the button holds it back and lists it. Pressing the button is still NHN's call (question 2).
+Classes 1, 3 and 9 are the ones worth a button, and 9 is the most valuable: the bullets currently render as literal `*` text in NHN's own wiki. Classes 5 and 6 do not even have a computed list yet, which is the smaller job of the two and worth doing before asking NHN about them.
+
+**Class 2 (tag casing) is done** — diagnosed *and* fixable from the page. Each drifting family gets its own control: every spelling with its tiddler count, a radio choosing which to keep (the most-used one preselected), the number of tiddlers a click rewrites, and a button that merges the rest onto the chosen spelling. Ten variants across five families in this snapshot. The mechanism is generic and lives in the engine ([merge.tid](../wiki/plugins/forms/merge.tid)); D7 in [architecture.md](architecture.md) records why it delegates to the core's `tm-relink-tiddler` and why it renames but never deletes. What is still NHN's to say is *whether* to run it, and on which families — question 2.
+
+Class 10 (leftover drafts) is the other one fixed rather than only diagnosed: drafts now fall under `nhn-excluded`, so they no longer inflate the summaries, the extracts or the OKR ToDo list, and the page now offers to delete the tiddlers as well. It deletes only what is safe to lose — 18 of the 19 here, being drafts that are empty or whose original still holds the text. The nineteenth drafts `New Tiddler 10`, which was never saved, so its text exists nowhere else; the button holds it back and lists it. Pressing the button is still NHN's call, and is part of question 2.
 
 This class is deliberately **not** patched in the renderer: a custom parser rule would make our build render differently from NHN's live wiki and hide the problem from the people writing the text.
 
@@ -288,6 +337,8 @@ The payoff is not only cleaner data — it deletes complexity from the config. `
 ## Phase 8 — §3.8 Access control (S, documentation)
 
 Per D5 this is server-side and out of plugin scope. Deliverable: a `docs/deployment.md` covering the auth-proxy pattern in front of the Node.js server, AD/OIDC integration, and the reader/editor split — alongside how the current build and GitHub Pages deploy work.
+
+It is the only brief deliverable not yet delivered, and it is a day's writing rather than a build. What it cannot decide for itself is who operates the wiki: a Node.js server for editors, the single-file build for readers, or both (questions 7 and 11). The document should describe both shapes and mark the one NHN choose.
 
 ---
 
@@ -317,14 +368,20 @@ What is left is comparing the two lists item by item rather than count by count,
 
 ### Cost
 
-A full-year default range initially took **14s** to render: the tag→service join re-evaluated `nhn-services` (~4ms) once per delivery per service, twice over (page + the `$wikify` of the export document). The join now reads a `report-known-services` title-list the page and template bind once, with a fall-back to computing it so an unbound call is slow but never wrong — **~0.5s warm** for 116 deliveries. A test pins the binding, and a mutation test pins the fall-back.
+A full-year default range initially took **14s** to render: the tag→service join re-evaluated `nhn-services` (~4ms) once per delivery per service, twice over (page + the `$wikify` of the export document). The join now reads a `report-known-services` title-list the page and template bind once, with a fall-back to computing it so an unbound call is slow but never wrong — **~0.5s warm** for 116 deliveries. A test pins the binding, and a mutation test pins the fall-back. On the refreshed snapshot the default range holds 171 deliveries and the page renders in ~1s / 879KB, which is the same cost per delivery.
+
+## Phase 10 — Follow-ups from the September demo (S each, post-brief)
+
+Three things the 4 September demo and the review behind it turned up. None is urgent; the middle one needs an answer before it can be built.
+
+**Tag pills outside the report still share popup state.** `<<qualify>>` hashes the chain of `transclusion` variables, and `$:/core/ui/TagTemplate` sets that to the tag title, so two pills for the *same* tag are one popup: clicking either opens both. [Leveranserapport](../wiki/plugins/nhn/rapport.tid) now folds the section and the delivery into `transclusion` and is clean, but everything rendered through `forms-tag-or-link` still collides — Sammendrag renders 336 pills sharing 81 states, Anomalier 104 sharing 103. The fix belongs in `forms-tag-or-link` itself, which needs something unique from its caller; the trees already carry `forms-tree-path`, which is exactly that. See the mechanics note in [architecture.md](architecture.md).
+
+**The objective hop.** 12 deliveries in the mai–august range link to no service, and 8 of them are tagged a `Målsetting` that is *itself* tagged the service. `nhn-report-service-of` could follow that one hop and place them without anyone touching the data. Whether it should is a modelling question — a delivery attributed through its objective is a slightly weaker claim than one tagged the service directly — so it is question 8, not a bug. The remaining 4 belong to national `Tiltak` / `Satsning for fart` initiatives that no service owns; those want a decision about whether a board report carries an initiatives section.
+
+**`ÅÅ/MM` titles get dated twice.** The report prepends `MM/ÅÅ` unless the title already starts with it. Four deliveries under *Helsenettet.no og Medlemstjenesten* are titled the other way round (`26/04-02 …`), so the check misses and they render as `04/26 26/04-02 …`. One of them is tagged Mai while its title says 06, so the two dates disagree as well. Either widen the match to accept `ÅÅ/MM`, or treat the titles as a cleanup class — the second is more honest, since the wiki now holds two title conventions and only one of them is intended.
 
 ## Open questions for NHN
 
-Each blocks or reshapes a phase, so worth asking early:
+The list lives in **Spørsmål til NHN** in the wiki — eleven questions, written for NHN to answer in the tiddler itself, and the thing to walk in a meeting. [What is left](#what-is-left) above maps each one to the work it blocks.
 
-1. **Owner data** — who populates `tjenesteeier` for the services, and when? (Blocks Phases 3–4 being useful.)
-2. **OKR levels** — at which governance levels is a missing objective a real gap? (Phase 4 selector.)
-3. **Backfill `period`** — may we run a one-off pass stamping `period` on the existing 476 reviews? (Simplifies Phase 3 permanently.)
-4. **Tag cleanup** — may we normalise the casing drift, and on which tag families? The tool is built and waiting on [[Anomalier]]; what it needs is a decision per family, in particular whether `Ekstern tjeneste` or `Ekstern Tjeneste` is the correct spelling. (Phase 7, and it simplifies the config.)
-5. **Archive semantics** — is hiding prior years behind a tag enough, or do they want them out of the live wiki entirely? (Phase 5 approach.)
+Two questions this file used to carry are settled and are not in that list: **OKR levels** ("at which governance levels is a missing objective a real gap") was answered from the data in Phase 4 — of the 165 objectives for 2026 all but one attach to a service — and the **`Ekstern tjeneste` spelling** is now part of question 2 rather than a question of its own, because the tool that acts on the answer exists.
