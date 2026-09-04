@@ -329,3 +329,33 @@ h.test("the page and the export template bind report-known-services", function()
 			t + " does not bind report-known-services once");
 	});
 });
+
+h.suite("Rapport tag pills");
+
+/*
+Every tag pill on the page is a popup, and a popup is keyed by `<<qualify>>`,
+which hashes the chain of `transclusion` variables above it. TagTemplate sets
+that variable to the tag itself, so two pills for the same tag share a state
+unless the caller adds something of its own: clicking one delivery's `Leveranse`
+opened the dropdown under all 177 of them. The row therefore mixes the service
+section and the delivery into `transclusion` before transcluding the template.
+
+The qualifier never reaches the markup, so this reads the widgets.
+*/
+h.test("each tag pill has a popup state of its own", function() {
+	var w = h.wiki(),
+		popups = w.findWidgets("{{Leveranserapport}}", function(node) { return !!node.popup; })
+			.map(function(node) { return node.popup; }),
+		counts = Object.create(null);
+
+	assert.ok(popups.length > 1,
+		"the report renders " + popups.length + " tag pills, so this proves nothing");
+	popups.forEach(function(state) { counts[state] = (counts[state] || 0) + 1; });
+
+	var worst = Object.keys(counts).reduce(function(most, state) {
+		return counts[state] > counts[most] ? state : most;
+	});
+	assert.equal(counts[worst], 1,
+		popups.length + " pills share " + Object.keys(counts).length + " popup states; " +
+		worst + " is used by " + counts[worst] + " of them");
+});

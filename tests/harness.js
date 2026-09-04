@@ -118,6 +118,34 @@ function makeHelper($tw) {
 			scope.invokeActionString(wikitext, scope, {}, variables || {});
 		},
 
+		/* Render wikitext and return the root widget, so a test can inspect the
+		   widget tree rather than the HTML. State qualifiers (`<<qualify>>`) never
+		   reach the markup — they live on the widgets — so a test about popup
+		   state has nowhere else to look. */
+		widgetTree: function(wikitext, variables) {
+			var parser = $tw.wiki.parseText("text/vnd.tiddlywiki",
+					"\\import [subfilter{$:/core/config/GlobalImportFilter}]\n" + wikitext),
+				widget = $tw.wiki.makeWidget(parser, {
+					parentWidget: scope,
+					document: $tw.fakeDocument,
+					variables: variables || {}
+				});
+			widget.render($tw.fakeDocument.createElement("div"), null);
+			return widget;
+		},
+
+		/* Every widget in a rendered tree for which `test` returns true. */
+		findWidgets: function(wikitext, test, variables) {
+			var found = [];
+			(function collect(node) {
+				if(test(node)) {
+					found.push(node);
+				}
+				(node.children || []).forEach(collect);
+			})(this.widgetTree(wikitext, variables));
+			return found;
+		},
+
 		/* Render wikitext and click every $button whose rendered markup contains
 		   `match`, returning how many were clicked.
 
@@ -127,15 +155,8 @@ function makeHelper($tw) {
 		   which is how a swapped argument stays invisible — has to find the widget
 		   and invoke it the way a click does. */
 		clickButtons: function(wikitext, match, variables) {
-			var parser = $tw.wiki.parseText("text/vnd.tiddlywiki",
-					"\\import [subfilter{$:/core/config/GlobalImportFilter}]\n" + wikitext),
-				widget = $tw.wiki.makeWidget(parser, {
-					parentWidget: scope,
-					document: $tw.fakeDocument,
-					variables: variables || {}
-				}),
+			var widget = this.widgetTree(wikitext, variables),
 				buttons = [];
-			widget.render($tw.fakeDocument.createElement("div"), null);
 			(function collect(node) {
 				if(node.parseTreeNode && node.parseTreeNode.tag === "$button" &&
 						node.domNodes && node.domNodes.length &&

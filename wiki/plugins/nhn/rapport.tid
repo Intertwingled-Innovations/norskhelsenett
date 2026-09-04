@@ -13,7 +13,7 @@ caption: Rapport
 <% else %>
 <div class="nhn-rapport-description nhn-rapport-empty">(ingen tekst)</div>
 <% endif %>
-<div class="nhn-rapport-tags"><$list filter="[<currentTiddler>tags[]]" variable="tag"><$let currentTiddler=<<tag>>><$transclude $tiddler="$:/core/ui/TagTemplate"/></$let></$list></div>
+<div class="nhn-rapport-tags"><$list filter="[<currentTiddler>tags[]]" variable="tag"><$let transclusion={{{ [<transclusion>] [<svc>] [<currentTiddler>] +[join[]] }}} currentTiddler=<<tag>>><$transclude $tiddler="$:/core/ui/TagTemplate"/></$let></$list></div>
 </$let>
 </div>
 \end

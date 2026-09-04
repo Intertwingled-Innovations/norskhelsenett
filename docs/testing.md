@@ -63,6 +63,7 @@ The wiki helper offers:
 - `w.render(wikitext, variables)` — render wikitext to HTML with the globals in scope. Use it only for end-to-end checks of a UI procedure; it costs hundreds of milliseconds against real content, so assert at the filter level wherever you can.
 - `w.invokeActions(wikitext, variables)` — execute action widgets, as clicking a button would. This is how the creation tests drive a form to completion instead of inspecting markup.
 - `w.clickButtons(wikitext, match, variables)` — render wikitext and click every `$button` whose markup contains `match`, returning how many were clicked. `invokeActions` cannot reach a button's actions (see the mechanics note in [architecture.md](architecture.md)), so this is the only way to exercise a page's own button rather than a copy of the wikitext behind it.
+- `w.widgetTree(wikitext, variables)` / `w.findWidgets(wikitext, test, variables)` — render wikitext and inspect the **widgets** rather than the HTML, for the things that never reach the markup. Popup state qualifiers are the case that forced it: `<<qualify>>` hashes the chain of `transclusion` variables and stores the result on the widget, so the only way to prove two tag pills have separate state is to read it off them.
 
 Two wikis are available, each booted once and shared:
 
