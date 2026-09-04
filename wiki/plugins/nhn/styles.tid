@@ -134,3 +134,13 @@ code-body: yes
 	padding: 0.75em;
 	margin-top: 1.5em;
 }
+
+/* Anomalier: deleting leftover drafts */
+.nhn-draft-purge {
+	margin: 1em 0;
+	padding: 0.75em 1em;
+	border: 1px solid <<colour tab-border>>;
+	border-radius: 6px;
+}
+.nhn-draft-purge-warning { color: #e85800; margin: 0.5em 0; }
+.nhn-draft-purge-unsaved { color: <<colour muted-foreground>>; margin: 0.5em 0; }

@@ -7,6 +7,9 @@ tags: $:/tags/Global
 \function nhn-archived() [<nhn-archive-tag>tagging[]]
 \function nhn-templates() [[mal]tagging[]]
 \function nhn-drafts() [has[draft.of]] [has[draft.title]] [all[tiddlers]prefix<nhn-draft-title-prefix>] +[unique[]]
+\function nhn-draft-recoverable() [<currentTiddler>!has[text]] [<currentTiddler>get[draft.of]is[tiddler]] +[limit[1]]
+\function nhn-drafts-disposable() [function[nhn-drafts]] :filter[function[nhn-draft-recoverable]]
+\function nhn-drafts-unsaved() [function[nhn-drafts]] -[function[nhn-drafts-disposable]]
 \function nhn-excluded() [function[nhn-templates]] [function[nhn-archived]] [function[nhn-drafts]] +[unique[]]
 \function nhn-active-year() [[$:/config/nhn/active-year]get[text]] :else[[alle]]
 \function nhn-in-year-scope() [function[nhn-active-year]match[alle]then<currentTiddler>] [<currentTiddler>function[nhn-year-raw]count[]match[0]then<currentTiddler>] [<currentTiddler>tag{$:/config/nhn/active-year}]
@@ -22,7 +25,11 @@ Periodisation and archiving (brief §3.7). Two separate mechanisms, deliberately
 
 `nhn-excluded` is the one definition of "not content": archived tiddlers (`nhn-archived`), the `mal` templates (`nhn-templates`) and unfinished drafts (`nhn-drafts`). Every base selector — and both extract sets — subtracts this single function rather than carrying its own copy of the exclusion, so a new exclusion is one edit here, not a hunt through every filter expression.
 
-`nhn-drafts` is a draft in TiddlyWiki's own sense: the scratch copy the editor makes while a tiddler is open. The snapshot carries 19 of them, and they are not harmless. Seven inherit the tags of what they draft, so a draft of a `Leveranse` counted as a second delivery, and a draft of a `Målsetting` as a second objective — inflating the summaries, both extracts and the OKR ToDo list against tiddlers the wiki never meant to publish. The remaining twelve lost their `draft.of` field and are recognised by title alone; they carry no tags, so they skewed nothing, but they are still listed on [[Anomalier]] so they can be deleted.
+`nhn-drafts` is a draft in TiddlyWiki's own sense: the scratch copy the editor makes while a tiddler is open. The snapshot carries 19 of them, and they are not harmless. Eight inherit the tags of what they draft, so a draft of a `Leveranse` counted as a second delivery, and a draft of a `Målsetting` as a second objective — inflating the summaries, both extracts and the OKR ToDo list against tiddlers the wiki never meant to publish. The remaining eleven lost their `draft.of` field and are recognised by title alone; they carry no tags, so they skewed nothing.
+
+!!! Which drafts may be deleted
+
+[[Anomalier]] offers to delete the leftovers in bulk, so the two functions behind that button decide what "leftover" means. A draft is **disposable** when nothing is lost by deleting it: `nhn-draft-recoverable` is true when the draft has no text at all, or when the tiddler it drafts still exists — in either case the text survives somewhere else. `nhn-drafts-unsaved` is the remainder, and the button does not touch it: one draft in this snapshot is of `New Tiddler 10`, a tiddler that was never saved, so its 208 characters exist nowhere but the draft. Deleting it would destroy the only copy, which is the one thing an anomaly page must not do. The page lists them instead, for a person to read and decide.
 
 The one place archived content still counts is the ToDo lists: they answer "was the work done", and archiving a year must not turn its history into "Mangler" or blind the copy detection across the archive boundary. So `nhn-reviews-all` / `nhn-objectives-all` keep archived content, and the ToDo pages read those, while everything user-facing reads the archived-subtracting base selectors. They still subtract the templates //and the drafts//: an archived objective is work that happened, but a draft is work that was never filed, and counting one would report an objective as written when only its unsaved copy exists.
 

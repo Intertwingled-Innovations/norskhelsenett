@@ -67,11 +67,11 @@ Both plugins are flat folders of small tiddlers. Nothing is generated; every fil
 | `extracts.tid`, `extract-columns-*.tid`, `eksport.tid` | The two §3.3 extracts: selectors, column specs, UI |
 | `summary-views.tid`, `sammendrag.tid` | The §3.4 view catalogue and its page |
 | `validators.tid`, `todo-review.tid`, `todo-okr.tid`, `todo-status.tid` | To-do attribution and the data-quality detectors (glued lists, tag casing drift and the families a merge acts on); the two to-do pages and the status labels |
-| `scope.tid`, `arkiv.tid` | §3.7 archiving, the period scope and `nhn-excluded` (the one definition of "not content": templates, archived tiddlers, drafts), and the page that applies them |
+| `scope.tid`, `arkiv.tid` | §3.7 archiving, the period scope and `nhn-excluded` (the one definition of "not content": templates, archived tiddlers, drafts), which drafts may be deleted (`nhn-drafts-disposable` / `nhn-drafts-unsaved`), and the page that applies the archiving |
 | `search-results.tid`, `search-default.tid` | The folded search tab, and making it the default |
 | `sidebar.tid`, `navtab.tid`, `nav-*.tid` | The NHN sidebar: period control, page links, four navigation trees |
 | `ui-owner.tid`, `ui-edit.tid`, `ui-typebar.tid`, `manage-owners.tid` | View-template additions and the Tjenesteeiere page |
-| `anomalier.tid`, `ny.tid` | The data-quality page — including the per-family control that merges the tag casing variants it reports — and the guided-creation page |
+| `anomalier.tid`, `ny.tid` | The data-quality page — including the per-family control that merges the tag casing variants it reports, and the button that deletes the leftover drafts — and the guided-creation page |
 | `sitetitle.tid`, `sitesubtitle.tid`, `theme-default.tid`, `palette-default.tid`, `default-sidebar-tab.tid` | Branding and the pointers that activate the theme |
 | `styles.tid`, `readme.tid`, `plugin.info` | Stylesheet, plugin documentation, manifest |
 
@@ -142,11 +142,13 @@ Anywhere the UI displays a tag, or a link to something that acts as a tag — tr
 
 ### D7 — Bulk data-quality fixes propose first, and never delete content
 
-[[Anomalier]] reports ten classes of problem; the mechanical ones it also offers to fix, starting with the tag casing drift (class 2). Three rules hold for any such action.
+[[Anomalier]] reports ten classes of problem; the mechanical ones it also offers to fix — the tag casing drift (class 2) and the leftover edit drafts (class 10). Three rules hold for any such action.
 
 **Propose, don't decide.** The page shows the whole family — every spelling, how many tiddlers carry each, which one would be kept — and the count of writes a click costs, before there is anything to click. The kept spelling is a *choice* with the most-used variant preselected, not a verdict: `Ekstern Tjeneste` outnumbers `Ekstern tjeneste` more than four to one, while the `Styring …` tags and the rest of the taxonomy spell it in lower case. A merge that always trusted the count would normalise the corpus onto the spelling NHN's own vocabulary disagrees with. The data is NHN's, so the direction is theirs.
 
 **Never delete content.** A merge moves tags. Where a drifted spelling exists only as a tag stub and the kept spelling has no tiddler, that stub is renamed — it is the same tiddler, spelled correctly. Where both spellings have a tiddler, the tag moves and both tiddlers stay, listed as needing a human: merging two bodies of text is a judgement, not a bulk action.
+
+**What may be deleted is what is not content.** Class 10 is the action that does delete tiddlers, and the rule survives it: a draft is the editor's scratch copy, and it is *disposable* only when its text exists somewhere else — the draft is empty, or the tiddler it drafts still exists (`nhn-draft-recoverable`). Everything else is `nhn-drafts-unsaved`: in this snapshot one draft of `New Tiddler 10`, a tiddler that was never saved, whose 208 characters exist nowhere but the draft. The button deletes the first set and lists the second for a person to read. The rule is not "never delete a tiddler" — it is never delete the only copy of something somebody wrote.
 
 **Use the core's own bulk operation.** `forms-merge-tags` sends `tm-relink-tiddler` rather than looping `$action-listops` over the tagged tiddlers. The core relinker rewrites `tags` *and* `list` fields, drops an existing target tag before substituting so nothing ends up tagged twice, and iterates real tiddlers only — which is what makes it impossible for a merge to write an override over a configuration shadow. See [merge.tid](../wiki/plugins/forms/merge.tid) for the mechanism and the one-rename-at-most guard.
 

@@ -129,10 +129,30 @@ En `*`- eller `#`-liste som følger rett etter en tekstlinje, uten blank linje i
 
 TiddlyWiki lager en utkastkopi når en tiddler åpnes for redigering, og kopien blir liggende hvis redigeringen aldri lagres. Et utkast arver taggene til tiddleren det er utkast av, og ble derfor talt med som innhold: et utkast av en `Leveranse` som enda en leveranse, et utkast av en `Målsetting` som enda en målsetting. Rapportene og uttrekkene overså dette og viste mer arbeid enn det som faktisk er registrert.
 
-Utkast holdes nå utenfor alle utvalg (`nhn-excluded`), så tallene er riktige igjen. Selve tiddlerne ligger fortsatt i wikien og bør slettes — enten ved å åpne dem og lagre eller forkaste redigeringen, eller ved å slette dem direkte.
+Utkast holdes nå utenfor alle utvalg (`nhn-excluded`), så tallene er riktige igjen. Selve tiddlerne ligger fortsatt i wikien, og knappen nedenfor sletter dem samlet.
 
 ''Utkast i wikien:'' <$count filter="[function[nhn-drafts]]"/> — hvorav <$count filter="[function[nhn-drafts]] :filter[tags[]count[]compare:number:gt[0]]"/> har tagger og dermed kunne telle med som innhold.
 
 <div class="nhn-anomaly-list">
 <$list filter="[function[nhn-drafts]sort[title]]"><$link/><br></$list>
+</div>
+
+<div class="nhn-draft-purge">
+<% if [function[nhn-drafts-unsaved]limit[1]] %>
+<p class="nhn-draft-purge-unsaved">Disse utkastene slettes ikke: de har tekst, og tiddleren de er utkast av, finnes ikke lenger — teksten finnes altså ingen andre steder. Les gjennom dem og avgjør selv:&#32;<$list filter="[function[nhn-drafts-unsaved]sort[title]]" variable="unsaved"><$link to=<<unsaved>>/>&#32;</$list></p>
+<% endif %>
+
+<% if [function[nhn-drafts-disposable]limit[1]] %>
+<p class="nhn-draft-purge-warning">Knappen sletter&#32;<$count filter="[function[nhn-drafts-disposable]]"/>&#32;utkast for godt. Tiddlerne de er utkast av, røres ikke — et utkast er en arbeidskopi, ikke innhold, og hvert av disse har enten ingen tekst eller en tiddler bak seg som teksten finnes i. På en server betyr det like mange filslettinger. Handlingen kan ikke angres.</p>
+
+<$button class="tc-btn-big-green">
+<$list filter="[function[nhn-drafts-disposable]]">
+<$action-sendmessage $message="tm-close-tiddler" $param=<<currentTiddler>>/>
+<$action-deletetiddler $tiddler=<<currentTiddler>>/>
+</$list>
+Slett&#32;<$count filter="[function[nhn-drafts-disposable]]"/>&#32;utkast
+</$button>
+<% else %>
+<p class="nhn-arkiv-none">Ingen utkast å slette.</p>
+<% endif %>
 </div>

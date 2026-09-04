@@ -35,6 +35,7 @@ So the suite leans towards the failure modes that are invisible at runtime: does
 | `tests/scope.test.js` | §3.7 archiving, its reversibility, and what the period scope must never hide |
 | `tests/search.test.js` | D2 folding, the symmetry of query and text, and the search tab wiring |
 | `tests/merge.test.js` | Merging tag casing variants: the generic action, the family and target functions, and the Anomalier buttons that drive them |
+| `tests/drafts.test.js` | Which leftover drafts may be deleted, and the Anomalier button that deletes them |
 
 ## Writing a test
 
