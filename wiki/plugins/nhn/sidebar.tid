@@ -13,6 +13,7 @@ list-before:
 <li><$link to="Tjenesteeiere">{{$:/core/images/edit-button}} Tjenesteeiere</$link></li>
 <li><$link to="Arkiv">{{$:/core/images/folder}} Arkiv</$link></li>
 <li><$link to="Anomalier">{{$:/core/images/warning}} Anomalier</$link></li>
+<li><$link to="Datamodell">{{$:/core/images/tag-button}} Datamodell</$link></li>
 <li><$link to="Eksport">{{$:/core/images/download-button}} Eksport</$link></li>
 <li><$link to="Leveranserapport">{{$:/core/images/list}} Rapport</$link></li>
 </ul>

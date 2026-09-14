@@ -13,6 +13,8 @@ var h = require("./harness.js"),
 	assert = h.assert,
 	FORMS = "$:/plugins/tiddlywiki/forms",
 	NHN = "$:/plugins/intertwingled-innovations/nhn",
+	DIAGRAM = "Datamodell",
+	DIAGRAM_STRINGS = NHN + "/datamodell-strings",
 	COLUMN_SPECS = [
 		NHN + "/extracts/governance-columns",
 		NHN + "/extracts/services-columns"
@@ -134,6 +136,10 @@ h.test("every internal link in the plugins points somewhere", function() {
 		Object.keys(tiddlers).forEach(function(title) {
 			var text = tiddlers[title].text || "",
 				match;
+			// The diagram links to tags, not pages; checked by its own test below
+			if(title === DIAGRAM) {
+				return;
+			}
 			// Literal link targets only; anything computed is beyond a static check
 			var pattern = /<\$link\s+to="([^"<>{]+)"/g;
 			while((match = pattern.exec(text)) !== null) {
@@ -144,6 +150,52 @@ h.test("every internal link in the plugins points somewhere", function() {
 		});
 	});
 	assert.deepEqual(broken, [], "broken links in the plugins:\n	" + broken.join("\n	"));
+});
+
+/* The diagram carries string keys, not strings, so its geometry is shared by both
+   languages — which also means a key present in one table and not the other renders
+   as an empty label rather than an error. Nothing at runtime would notice. */
+h.test("the Datamodell diagram says the same things in both languages", function() {
+	var w = h.wiki(),
+		table = w.data(DIAGRAM_STRINGS),
+		langs = Object.keys(table);
+	assert.deepEqual(langs.sort(), ["en", "no"], "unexpected languages in " + DIAGRAM_STRINGS);
+	assert.deepEqual(Object.keys(table.en).sort(), Object.keys(table.no).sort(),
+		"the two language tables in " + DIAGRAM_STRINGS + " do not carry the same keys, " +
+		"so some labels in the diagram render blank");
+	var used = {}, match,
+		pattern = /\[function\[dm-t\],\[([^\]]+)\]\]/g,
+		text = w.pluginTiddlers(NHN)[DIAGRAM].text;
+	while((match = pattern.exec(text)) !== null) {
+		used[match[1]] = true;
+	}
+	assert.deepEqual(Object.keys(used).sort(), Object.keys(table.no).sort(),
+		"the diagram and its strings disagree about which labels exist");
+});
+
+/* The diagram's nodes are tags, and a tag needs no tiddler behind it: `Resultat`,
+   `mal`, `Arkiv` and the year tags are carried by hundreds of tiddlers with none.
+   The diagram says so — a chip with no tiddler is drawn dashed — so the check above
+   would report the picture as broken for telling the truth. What is worth catching
+   is a *misspelt* tag, which that check cannot see either (a typo is just another
+   missing tiddler), so this replaces it rather than waiving it. */
+h.test("every node in the Datamodell diagram names a tiddler or a tag in use", function() {
+	var w = h.wiki(),
+		inUse = {},
+		unknown = [],
+		match;
+	w.$tw.wiki.filterTiddlers("[all[tiddlers]tags[]unique[]]").forEach(function(tag) {
+		inUse[tag] = true;
+	});
+	var text = w.pluginTiddlers(NHN)[DIAGRAM].text,
+		pattern = /<\$link\s+to="([^"<>{]+)"/g;
+	while((match = pattern.exec(text)) !== null) {
+		if(!w.exists(match[1]) && !inUse[match[1]]) {
+			unknown.push(match[1]);
+		}
+	}
+	assert.deepEqual(unknown, [], DIAGRAM + " points at names that are neither a " +
+		"tiddler nor a tag anything carries:\n	" + unknown.join("\n	"));
 });
 
 h.test("every navigation tab listed in the sidebar exists", function() {

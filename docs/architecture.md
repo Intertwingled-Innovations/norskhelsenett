@@ -71,6 +71,7 @@ Both plugins are flat folders of small tiddlers. Nothing is generated; every fil
 | `search-results.tid`, `search-default.tid` | The folded search tab, and making it the default |
 | `sidebar.tid`, `navtab.tid`, `nav-*.tid` | The NHN sidebar: period control, page links, four navigation trees |
 | `ui-owner.tid`, `ui-edit.tid`, `ui-typebar.tid`, `manage-owners.tid` | View-template additions and the Tjenesteeiere page |
+| `datamodell.tid`, `datamodell-strings.tid` | The schema diagram: an inline SVG of the tag/field model whose nodes are `$link` widgets, so every tag pill opens its tag. Kind colours are read from `kind-colours.tid` and a chip is dashed when no tiddler backs the tag. The geometry is generated and language-independent — every label is a key looked up in the strings tiddler, which a radio switches between Norwegian and English. The pills are never translated: they are the literal tags |
 | `anomalier.tid`, `ny.tid` | The data-quality page — including the per-family control that merges the tag casing variants it reports, and the button that deletes the leftover drafts — and the guided-creation page |
 | `sitetitle.tid`, `sitesubtitle.tid`, `theme-default.tid`, `palette-default.tid`, `default-sidebar-tab.tid` | Branding and the pointers that activate the theme |
 | `styles.tid`, `readme.tid`, `plugin.info` | Stylesheet, plugin documentation, manifest |

@@ -144,3 +144,24 @@ code-body: yes
 }
 .nhn-draft-purge-warning { color: #e85800; margin: 0.5em 0; }
 .nhn-draft-purge-unsaved { color: <<colour muted-foreground>>; margin: 0.5em 0; }
+
+/* Datamodell: the schema diagram */
+.nhn-schema-wrap {
+	overflow-x: auto;
+	margin: 1.5em 0;
+}
+.nhn-schema {
+	min-width: 760px;
+	display: block;
+}
+.nhn-schema a { cursor: pointer; }
+.nhn-schema a:hover rect { fill-opacity: 0.4; }
+.nhn-schema a:hover text { text-decoration: underline; }
+.nhn-schema a:focus-visible rect { outline: 2px solid <<colour primary>>; }
+.nhn-lang-switch {
+	display: flex;
+	gap: 1.25em;
+	margin: 0.5em 0 1em 0;
+	font-size: 0.9em;
+	color: <<colour muted-foreground>>;
+}

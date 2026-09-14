@@ -1,0 +1,421 @@
+title: Datamodell
+caption: Datamodell
+
+\function dm-t(key) [[$:/plugins/intertwingled-innovations/nhn/datamodell-strings]get[text]jsonget<dm-lang>,<key>]
+
+<$let dm-lang={{{ [[$:/state/nhn/datamodell/lang]get[text]] :else[[no]] }}}>
+
+<div class="nhn-lang-switch">
+<$radio tiddler="$:/state/nhn/datamodell/lang" value="no" default="no"> Norsk</$radio>
+<$radio tiddler="$:/state/nhn/datamodell/lang" value="en" default="no"> English</$radio>
+</div>
+
+<% if [<dm-lang>match[en]] %>
+
+! Data model
+
+How the tags and fields fit together. The tags //are// the schema — there are no custom data types, only ordinary tiddlers carrying tags and fields. Click any node to open the tiddler or tag it stands for.
+
+<div class="nhn-schema-wrap">
+<svg class="nhn-schema" viewBox="0 0 1100 945" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif">
+<defs><marker id="nhn-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="currentColor" fill-opacity="0.55"/></marker></defs>
+<path d="M158.0 122 V158" fill="none" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.6" marker-end="url(#nhn-arrow)"/>
+<text x="168.0" y="144.0" font-size="11.5" fill="currentColor" fill-opacity="0.75" text-anchor="start"><$text text={{{ [function[dm-t],[e-root]] }}}/></text>
+<path d="M158.0 289 V325" fill="none" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.6" marker-end="url(#nhn-arrow)"/>
+<text x="168.0" y="311.0" font-size="11.5" fill="currentColor" fill-opacity="0.75" text-anchor="start"><$text text={{{ [function[dm-t],[e-div]] }}}/></text>
+<path d="M292 413.5 H356" fill="none" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.6"/>
+<path d="M356 158.0 V697.5" fill="none" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.6"/>
+<path d="M356 158.0 H420" fill="none" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.6" marker-end="url(#nhn-arrow)"/>
+<path d="M356 368.5 H420" fill="none" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.6" marker-end="url(#nhn-arrow)"/>
+<path d="M356 529.0 H420" fill="none" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.6" marker-end="url(#nhn-arrow)"/>
+<path d="M356 697.5 H420" fill="none" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.6" marker-end="url(#nhn-arrow)"/>
+<text x="347.0" y="427.8" font-size="11.5" fill="currentColor" fill-opacity="0.75" text-anchor="middle" transform="rotate(-90 347.0 427.8)"><$text text={{{ [function[dm-t],[e-svc]] }}}/></text>
+<path d="M750.0 368.5 H794.0 V537.5 H840" fill="none" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.6" marker-end="url(#nhn-arrow)"/>
+<text x="804.0" y="470.0" font-size="11.5" fill="currentColor" fill-opacity="0.75" text-anchor="start"><$text text={{{ [function[dm-t],[e-okr]] }}}/></text>
+<path d="M585.0 419 V463" fill="none" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.6" marker-end="url(#nhn-arrow)"/>
+<text x="595.0" y="445.0" font-size="11.5" fill="currentColor" fill-opacity="0.75" text-anchor="start"><$text text={{{ [function[dm-t],[e-par]] }}}/></text>
+<g class="nhn-schema-box">
+<rect x="24" y="48" width="268" height="74" rx="10" fill="none" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[structure]] }}} stroke-opacity="0.55" stroke-width="1.5"/>
+<path d="M28 59 v52" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[structure]] }}} stroke-width="6" stroke-linecap="round"/>
+<$link to="Norsk Helsenett SF" overrideClass="nhn-schema-node" draggable="no"><text x="40" y="73" font-size="15.5" font-weight="600" fill="currentColor"><$text text={{{ [function[dm-t],[nhn-head]] }}}/></text></$link>
+<text x="40" y="93.0" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[nhn-n1]] }}}/></text>
+</g>
+<g class="nhn-schema-box">
+<rect x="24" y="158" width="268" height="131" rx="10" fill="none" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[structure]] }}} stroke-opacity="0.55" stroke-width="1.5"/>
+<path d="M28 169 v109" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[structure]] }}} stroke-width="6" stroke-linecap="round"/>
+<$link to="Divisjon" overrideClass="nhn-schema-node" draggable="no"><text x="40" y="183" font-size="15.5" font-weight="600" fill="currentColor"><$text text={{{ [function[dm-t],[div-head]] }}}/></text></$link>
+<text x="40" y="203.0" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[div-n1]] }}}/></text>
+<$link to="Divisjon" overrideClass="nhn-schema-chip" draggable="no" tooltip="Divisjon">
+<rect x="40" y="222.5" width="74" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[structure]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[structure]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Divisjon]is[tiddler]then[none]] :else[[Divisjon]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="50.0" y="238.0" font-size="12.5" textLength="54" lengthAdjust="spacingAndGlyphs" fill="currentColor">Divisjon</text>
+</$link>
+<$link to="Divisjon Helsepersonell" overrideClass="nhn-schema-chip" draggable="no" tooltip="Divisjon Helsepersonell">
+<rect x="40" y="252.5" width="175" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[structure]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[structure]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Divisjon Helsepersonell]is[tiddler]then[none]] :else[[Divisjon Helsepersonell]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="50.0" y="268.0" font-size="12.5" textLength="155" lengthAdjust="spacingAndGlyphs" fill="currentColor">Divisjon Helsepersonell</text>
+</$link>
+</g>
+<g class="nhn-schema-box">
+<rect x="24" y="325" width="268" height="177" rx="10" fill="none" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[service]] }}} stroke-opacity="0.55" stroke-width="1.5"/>
+<path d="M28 336 v155" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[service]] }}} stroke-width="6" stroke-linecap="round"/>
+<text x="40" y="350" font-size="15.5" font-weight="600" fill="currentColor"><$text text={{{ [function[dm-t],[tje-head]] }}}/></text>
+<text x="40" y="370.0" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[tje-n1]] }}}/></text>
+<text x="40" y="385.5" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[tje-n2]] }}}/></text>
+<$link to="Intern tjeneste" overrideClass="nhn-schema-chip" draggable="no" tooltip="Intern tjeneste">
+<rect x="40" y="405.0" width="121" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[service]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[service]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Intern tjeneste]is[tiddler]then[none]] :else[[Intern tjeneste]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="50.0" y="420.5" font-size="12.5" textLength="101" lengthAdjust="spacingAndGlyphs" fill="currentColor">Intern tjeneste</text>
+</$link>
+<$link to="Ekstern tjeneste" overrideClass="nhn-schema-chip" draggable="no" tooltip="Ekstern tjeneste">
+<rect x="40" y="435.0" width="128" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[service]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[service]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Ekstern tjeneste]is[tiddler]then[none]] :else[[Ekstern tjeneste]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="50.0" y="450.5" font-size="12.5" textLength="108" lengthAdjust="spacingAndGlyphs" fill="currentColor">Ekstern tjeneste</text>
+</$link>
+<$link to="Relatert tjeneste" overrideClass="nhn-schema-chip" draggable="no" tooltip="Relatert tjeneste">
+<rect x="40" y="465.0" width="135" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[service]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[service]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Relatert tjeneste]is[tiddler]then[none]] :else[[Relatert tjeneste]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="50.0" y="480.5" font-size="12.5" textLength="115" lengthAdjust="spacingAndGlyphs" fill="currentColor">Relatert tjeneste</text>
+</$link>
+</g>
+<g class="nhn-schema-box">
+<rect x="420" y="32" width="330" height="252" rx="10" fill="none" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[review]] }}} stroke-opacity="0.55" stroke-width="1.5"/>
+<path d="M424 43 v230" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[review]] }}} stroke-width="6" stroke-linecap="round"/>
+<text x="436" y="57" font-size="15.5" font-weight="600" fill="currentColor"><$text text={{{ [function[dm-t],[rev-head]] }}}/></text>
+<text x="436" y="77.0" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[rev-n1]] }}}/></text>
+<text x="436" y="92.5" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[rev-n2]] }}}/></text>
+<text x="436" y="108.0" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[rev-n3]] }}}/></text>
+<$link to="Styring Ekstern tjeneste" overrideClass="nhn-schema-chip" draggable="no" tooltip="Styring Ekstern tjeneste">
+<rect x="436" y="127.5" width="182" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[review]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[review]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Styring Ekstern tjeneste]is[tiddler]then[none]] :else[[Styring Ekstern tjeneste]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="446.0" y="143.0" font-size="12.5" textLength="162" lengthAdjust="spacingAndGlyphs" fill="currentColor">Styring Ekstern tjeneste</text>
+</$link>
+<$link to="Styring Intern tjeneste" overrideClass="nhn-schema-chip" draggable="no" tooltip="Styring Intern tjeneste">
+<rect x="436" y="157.5" width="175" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[review]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[review]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Styring Intern tjeneste]is[tiddler]then[none]] :else[[Styring Intern tjeneste]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="446.0" y="173.0" font-size="12.5" textLength="155" lengthAdjust="spacingAndGlyphs" fill="currentColor">Styring Intern tjeneste</text>
+</$link>
+<$link to="Styring Tiltak" overrideClass="nhn-schema-chip" draggable="no" tooltip="Styring Tiltak">
+<rect x="618" y="157.5" width="114" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[review]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[review]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Styring Tiltak]is[tiddler]then[none]] :else[[Styring Tiltak]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="628.0" y="173.0" font-size="12.5" textLength="94" lengthAdjust="spacingAndGlyphs" fill="currentColor">Styring Tiltak</text>
+</$link>
+<$link to="Styring Relatert tjeneste" overrideClass="nhn-schema-chip" draggable="no" tooltip="Styring Relatert tjeneste">
+<rect x="436" y="187.5" width="189" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[review]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[review]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Styring Relatert tjeneste]is[tiddler]then[none]] :else[[Styring Relatert tjeneste]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="446.0" y="203.0" font-size="12.5" textLength="169" lengthAdjust="spacingAndGlyphs" fill="currentColor">Styring Relatert tjeneste</text>
+</$link>
+<$link to="Styring Satsning for fart" overrideClass="nhn-schema-chip" draggable="no" tooltip="Styring Satsning for fart">
+<rect x="436" y="217.5" width="189" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[review]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[review]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Styring Satsning for fart]is[tiddler]then[none]] :else[[Styring Satsning for fart]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="446.0" y="233.0" font-size="12.5" textLength="169" lengthAdjust="spacingAndGlyphs" fill="currentColor">Styring Satsning for fart</text>
+</$link>
+<$link to="Forretningsmessig endring:1" overrideClass="nhn-schema-chip" draggable="no" tooltip="Forretningsmessig endring:1">
+<rect x="436" y="247.5" width="202" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[review]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[review]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Forretningsmessig endring:1]is[tiddler]then[none]] :else[[Forretningsmessig endring:1]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="446.0" y="263.0" font-size="12.5" textLength="182" lengthAdjust="spacingAndGlyphs" fill="currentColor">Forretningsmessig endring:1</text>
+</$link>
+</g>
+<g class="nhn-schema-box">
+<rect x="420" y="318" width="330" height="101" rx="10" fill="none" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[malsetting]] }}} stroke-opacity="0.55" stroke-width="1.5"/>
+<path d="M424 329 v79" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[malsetting]] }}} stroke-width="6" stroke-linecap="round"/>
+<$link to="Målsetting" overrideClass="nhn-schema-node" draggable="no"><text x="436" y="343" font-size="15.5" font-weight="600" fill="currentColor"><$text text={{{ [function[dm-t],[mal-head]] }}}/></text></$link>
+<text x="436" y="363.0" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[mal-n1]] }}}/></text>
+<$link to="Målsetting" overrideClass="nhn-schema-chip" draggable="no" tooltip="Målsetting">
+<rect x="436" y="382.5" width="88" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[malsetting]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[malsetting]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Målsetting]is[tiddler]then[none]] :else[[Målsetting]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="446.0" y="398.0" font-size="12.5" textLength="68" lengthAdjust="spacingAndGlyphs" fill="currentColor">Målsetting</text>
+</$link>
+</g>
+<g class="nhn-schema-box">
+<rect x="420" y="463" width="330" height="132" rx="10" fill="none" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[leveranse]] }}} stroke-opacity="0.55" stroke-width="1.5"/>
+<path d="M424 474 v110" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[leveranse]] }}} stroke-width="6" stroke-linecap="round"/>
+<$link to="Leveranse" overrideClass="nhn-schema-node" draggable="no"><text x="436" y="488" font-size="15.5" font-weight="600" fill="currentColor"><$text text={{{ [function[dm-t],[lev-head]] }}}/></text></$link>
+<text x="436" y="508.0" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[lev-n1]] }}}/></text>
+<text x="436" y="523.5" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[lev-n2]] }}}/></text>
+<text x="436" y="539.0" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[lev-n3]] }}}/></text>
+<$link to="Leveranse" overrideClass="nhn-schema-chip" draggable="no" tooltip="Leveranse">
+<rect x="436" y="558.5" width="81" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[leveranse]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[leveranse]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Leveranse]is[tiddler]then[none]] :else[[Leveranse]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="446.0" y="574.0" font-size="12.5" textLength="61" lengthAdjust="spacingAndGlyphs" fill="currentColor">Leveranse</text>
+</$link>
+<$link to="Levert" overrideClass="nhn-schema-chip" draggable="no" tooltip="Levert">
+<rect x="524" y="558.5" width="60" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[leveranse]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[leveranse]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Levert]is[tiddler]then[none]] :else[[Levert]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="534.0" y="574.0" font-size="12.5" textLength="40" lengthAdjust="spacingAndGlyphs" fill="currentColor">Levert</text>
+</$link>
+</g>
+<g class="nhn-schema-box">
+<rect x="420" y="639" width="330" height="117" rx="10" fill="none" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[oppgave]] }}} stroke-opacity="0.55" stroke-width="1.5"/>
+<path d="M424 650 v95" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[oppgave]] }}} stroke-width="6" stroke-linecap="round"/>
+<$link to="Oppgave" overrideClass="nhn-schema-node" draggable="no"><text x="436" y="664" font-size="15.5" font-weight="600" fill="currentColor"><$text text={{{ [function[dm-t],[opp-head]] }}}/></text></$link>
+<text x="436" y="684.0" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[opp-n1]] }}}/></text>
+<text x="436" y="699.5" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[opp-n2]] }}}/></text>
+<$link to="Oppgave" overrideClass="nhn-schema-chip" draggable="no" tooltip="Oppgave">
+<rect x="436" y="719.0" width="67" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[oppgave]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[oppgave]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Oppgave]is[tiddler]then[none]] :else[[Oppgave]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="446.0" y="734.5" font-size="12.5" textLength="47" lengthAdjust="spacingAndGlyphs" fill="currentColor">Oppgave</text>
+</$link>
+<$link to="Levert" overrideClass="nhn-schema-chip" draggable="no" tooltip="Levert">
+<rect x="510" y="719.0" width="60" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[oppgave]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[oppgave]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Levert]is[tiddler]then[none]] :else[[Levert]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="520.0" y="734.5" font-size="12.5" textLength="40" lengthAdjust="spacingAndGlyphs" fill="currentColor">Levert</text>
+</$link>
+</g>
+<g class="nhn-schema-box">
+<rect x="840" y="479" width="236" height="117" rx="10" fill="none" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[resultat]] }}} stroke-opacity="0.55" stroke-width="1.5"/>
+<path d="M844 490 v95" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[resultat]] }}} stroke-width="6" stroke-linecap="round"/>
+<$link to="Resultat" overrideClass="nhn-schema-node" draggable="no"><text x="856" y="504" font-size="15.5" font-weight="600" fill="currentColor"><$text text={{{ [function[dm-t],[res-head]] }}}/></text></$link>
+<text x="856" y="524.0" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[res-n1]] }}}/></text>
+<text x="856" y="539.5" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[res-n2]] }}}/></text>
+<$link to="Resultat" overrideClass="nhn-schema-chip" draggable="no" tooltip="Resultat">
+<rect x="856" y="559.0" width="74" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[resultat]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[resultat]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Resultat]is[tiddler]then[none]] :else[[Resultat]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="866.0" y="574.5" font-size="12.5" textLength="54" lengthAdjust="spacingAndGlyphs" fill="currentColor">Resultat</text>
+</$link>
+</g>
+<g class="nhn-schema-box">
+<rect x="24" y="800" width="330" height="117" rx="10" fill="none" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[structure]] }}} stroke-opacity="0.55" stroke-width="1.5"/>
+<path d="M28 811 v95" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[structure]] }}} stroke-width="6" stroke-linecap="round"/>
+<text x="40" y="825" font-size="15.5" font-weight="600" fill="currentColor"><$text text={{{ [function[dm-t],[tid-head]] }}}/></text>
+<text x="40" y="845.0" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[tid-n1]] }}}/></text>
+<$link to="2026" overrideClass="nhn-schema-chip" draggable="no" tooltip="2026">
+<rect x="40" y="864.5" width="47" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[structure]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[structure]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[2026]is[tiddler]then[none]] :else[[2026]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="50.0" y="880.0" font-size="12.5" textLength="27" lengthAdjust="spacingAndGlyphs" fill="currentColor">2026</text>
+</$link>
+<$link to="Mars" overrideClass="nhn-schema-chip" draggable="no" tooltip="Mars">
+<rect x="94" y="864.5" width="47" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[structure]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[structure]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Mars]is[tiddler]then[none]] :else[[Mars]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="104.0" y="880.0" font-size="12.5" textLength="27" lengthAdjust="spacingAndGlyphs" fill="currentColor">Mars</text>
+</$link>
+</g>
+<g class="nhn-schema-box">
+<rect x="386" y="800" width="330" height="117" rx="10" fill="none" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[template]] }}} stroke-opacity="0.55" stroke-width="1.5"/>
+<path d="M390 811 v95" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[template]] }}} stroke-width="6" stroke-linecap="round"/>
+<text x="402" y="825" font-size="15.5" font-weight="600" fill="currentColor"><$text text={{{ [function[dm-t],[unn-head]] }}}/></text>
+<text x="402" y="845.0" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[unn-n1]] }}}/></text>
+<text x="402" y="860.5" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[unn-n2]] }}}/></text>
+<$link to="mal" overrideClass="nhn-schema-chip" draggable="no" tooltip="mal">
+<rect x="402" y="880.0" width="40" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[template]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[template]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[mal]is[tiddler]then[none]] :else[[mal]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="412.0" y="895.5" font-size="12.5" textLength="20" lengthAdjust="spacingAndGlyphs" fill="currentColor">mal</text>
+</$link>
+<$link to="Arkiv" overrideClass="nhn-schema-chip" draggable="no" tooltip="Arkiv">
+<rect x="449" y="880.0" width="54" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[template]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[template]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Arkiv]is[tiddler]then[none]] :else[[Arkiv]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="459.0" y="895.5" font-size="12.5" textLength="34" lengthAdjust="spacingAndGlyphs" fill="currentColor">Arkiv</text>
+</$link>
+</g>
+<g class="nhn-schema-box">
+<rect x="748" y="800" width="330" height="117" rx="10" fill="none" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[structure]] }}} stroke-opacity="0.55" stroke-width="1.5"/>
+<path d="M752 811 v95" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[structure]] }}} stroke-width="6" stroke-linecap="round"/>
+<text x="764" y="825" font-size="15.5" font-weight="600" fill="currentColor"><$text text={{{ [function[dm-t],[utk-head]] }}}/></text>
+<text x="764" y="845.0" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[utk-n1]] }}}/></text>
+<text x="764" y="860.5" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[utk-n2]] }}}/></text>
+<text x="764" y="876.0" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[utk-n3]] }}}/></text>
+</g>
+</svg>
+</div>
+
+The pills keep their Norwegian names because they are the literal tags in the wiki; translating them would make the diagram lie. The colours are the ones on the stripe at the top of each tiddler, read from [[kind-colours|$:/plugins/intertwingled-innovations/nhn/kind-colours]]. A ''dashed'' pill is a tag with no tiddler behind it, which is worth looking at: `Resultat`, `mal`, `Arkiv` and the year tags are used freely without anyone having created the tiddler, while `Ekstern tjeneste` is dashed because only the spelling `Ekstern Tjeneste` has one — the same drift [[Anomalier]] cleans up.
+
+!! What the arrows mean
+
+Every link runs one way: //the child tags the parent's title//. There are no foreign-key fields. `TjenesteID` looks like a key but is not one — it is on most of the reviews and only sporadically elsewhere, so it cannot join deliveries or OKRs to a service. Use the tag.
+
+`service-name tag` is the one join all content shares: a review, an objective, a delivery or a task belongs to a service if it is tagged with that service's title.
+
+!! Where the model breaks down in practice
+
+* 22% of the reviews have no service-name tag and 84% no `Forretningsmessig endring`. [[ToDo forretningsgjennomgang]] compensates by reading the service name out of the title when the tag is missing; [[ToDo målsettinger]] does not, because objective titles follow no convention.
+* The tags drift in spelling — `Ekstern Tjeneste` against `Ekstern tjeneste`, `Mars` against `mars`. [[Anomalier]] derives the families and offers to merge them.
+* Drafts inherit the tags of what they draft, so an unfinished copy counts as real content unless it is subtracted.
+
+The details, with counts from the data, are in `docs/data-model.md` in the repo.
+
+<% else %>
+
+! Datamodell
+
+Hvordan tagger og felter henger sammen. Taggene //er// skjemaet — det finnes ingen egne datatyper, bare vanlige tiddlere med tagger og felter. Klikk en node for å åpne tiddleren eller taggen den står for.
+
+<div class="nhn-schema-wrap">
+<svg class="nhn-schema" viewBox="0 0 1100 945" width="100%" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif">
+<defs><marker id="nhn-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="currentColor" fill-opacity="0.55"/></marker></defs>
+<path d="M158.0 122 V158" fill="none" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.6" marker-end="url(#nhn-arrow)"/>
+<text x="168.0" y="144.0" font-size="11.5" fill="currentColor" fill-opacity="0.75" text-anchor="start"><$text text={{{ [function[dm-t],[e-root]] }}}/></text>
+<path d="M158.0 289 V325" fill="none" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.6" marker-end="url(#nhn-arrow)"/>
+<text x="168.0" y="311.0" font-size="11.5" fill="currentColor" fill-opacity="0.75" text-anchor="start"><$text text={{{ [function[dm-t],[e-div]] }}}/></text>
+<path d="M292 413.5 H356" fill="none" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.6"/>
+<path d="M356 158.0 V697.5" fill="none" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.6"/>
+<path d="M356 158.0 H420" fill="none" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.6" marker-end="url(#nhn-arrow)"/>
+<path d="M356 368.5 H420" fill="none" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.6" marker-end="url(#nhn-arrow)"/>
+<path d="M356 529.0 H420" fill="none" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.6" marker-end="url(#nhn-arrow)"/>
+<path d="M356 697.5 H420" fill="none" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.6" marker-end="url(#nhn-arrow)"/>
+<text x="347.0" y="427.8" font-size="11.5" fill="currentColor" fill-opacity="0.75" text-anchor="middle" transform="rotate(-90 347.0 427.8)"><$text text={{{ [function[dm-t],[e-svc]] }}}/></text>
+<path d="M750.0 368.5 H794.0 V537.5 H840" fill="none" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.6" marker-end="url(#nhn-arrow)"/>
+<text x="804.0" y="470.0" font-size="11.5" fill="currentColor" fill-opacity="0.75" text-anchor="start"><$text text={{{ [function[dm-t],[e-okr]] }}}/></text>
+<path d="M585.0 419 V463" fill="none" stroke="currentColor" stroke-opacity="0.55" stroke-width="1.6" marker-end="url(#nhn-arrow)"/>
+<text x="595.0" y="445.0" font-size="11.5" fill="currentColor" fill-opacity="0.75" text-anchor="start"><$text text={{{ [function[dm-t],[e-par]] }}}/></text>
+<g class="nhn-schema-box">
+<rect x="24" y="48" width="268" height="74" rx="10" fill="none" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[structure]] }}} stroke-opacity="0.55" stroke-width="1.5"/>
+<path d="M28 59 v52" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[structure]] }}} stroke-width="6" stroke-linecap="round"/>
+<$link to="Norsk Helsenett SF" overrideClass="nhn-schema-node" draggable="no"><text x="40" y="73" font-size="15.5" font-weight="600" fill="currentColor"><$text text={{{ [function[dm-t],[nhn-head]] }}}/></text></$link>
+<text x="40" y="93.0" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[nhn-n1]] }}}/></text>
+</g>
+<g class="nhn-schema-box">
+<rect x="24" y="158" width="268" height="131" rx="10" fill="none" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[structure]] }}} stroke-opacity="0.55" stroke-width="1.5"/>
+<path d="M28 169 v109" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[structure]] }}} stroke-width="6" stroke-linecap="round"/>
+<$link to="Divisjon" overrideClass="nhn-schema-node" draggable="no"><text x="40" y="183" font-size="15.5" font-weight="600" fill="currentColor"><$text text={{{ [function[dm-t],[div-head]] }}}/></text></$link>
+<text x="40" y="203.0" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[div-n1]] }}}/></text>
+<$link to="Divisjon" overrideClass="nhn-schema-chip" draggable="no" tooltip="Divisjon">
+<rect x="40" y="222.5" width="74" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[structure]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[structure]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Divisjon]is[tiddler]then[none]] :else[[Divisjon]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="50.0" y="238.0" font-size="12.5" textLength="54" lengthAdjust="spacingAndGlyphs" fill="currentColor">Divisjon</text>
+</$link>
+<$link to="Divisjon Helsepersonell" overrideClass="nhn-schema-chip" draggable="no" tooltip="Divisjon Helsepersonell">
+<rect x="40" y="252.5" width="175" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[structure]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[structure]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Divisjon Helsepersonell]is[tiddler]then[none]] :else[[Divisjon Helsepersonell]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="50.0" y="268.0" font-size="12.5" textLength="155" lengthAdjust="spacingAndGlyphs" fill="currentColor">Divisjon Helsepersonell</text>
+</$link>
+</g>
+<g class="nhn-schema-box">
+<rect x="24" y="325" width="268" height="177" rx="10" fill="none" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[service]] }}} stroke-opacity="0.55" stroke-width="1.5"/>
+<path d="M28 336 v155" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[service]] }}} stroke-width="6" stroke-linecap="round"/>
+<text x="40" y="350" font-size="15.5" font-weight="600" fill="currentColor"><$text text={{{ [function[dm-t],[tje-head]] }}}/></text>
+<text x="40" y="370.0" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[tje-n1]] }}}/></text>
+<text x="40" y="385.5" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[tje-n2]] }}}/></text>
+<$link to="Intern tjeneste" overrideClass="nhn-schema-chip" draggable="no" tooltip="Intern tjeneste">
+<rect x="40" y="405.0" width="121" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[service]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[service]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Intern tjeneste]is[tiddler]then[none]] :else[[Intern tjeneste]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="50.0" y="420.5" font-size="12.5" textLength="101" lengthAdjust="spacingAndGlyphs" fill="currentColor">Intern tjeneste</text>
+</$link>
+<$link to="Ekstern tjeneste" overrideClass="nhn-schema-chip" draggable="no" tooltip="Ekstern tjeneste">
+<rect x="40" y="435.0" width="128" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[service]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[service]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Ekstern tjeneste]is[tiddler]then[none]] :else[[Ekstern tjeneste]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="50.0" y="450.5" font-size="12.5" textLength="108" lengthAdjust="spacingAndGlyphs" fill="currentColor">Ekstern tjeneste</text>
+</$link>
+<$link to="Relatert tjeneste" overrideClass="nhn-schema-chip" draggable="no" tooltip="Relatert tjeneste">
+<rect x="40" y="465.0" width="135" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[service]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[service]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Relatert tjeneste]is[tiddler]then[none]] :else[[Relatert tjeneste]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="50.0" y="480.5" font-size="12.5" textLength="115" lengthAdjust="spacingAndGlyphs" fill="currentColor">Relatert tjeneste</text>
+</$link>
+</g>
+<g class="nhn-schema-box">
+<rect x="420" y="32" width="330" height="252" rx="10" fill="none" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[review]] }}} stroke-opacity="0.55" stroke-width="1.5"/>
+<path d="M424 43 v230" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[review]] }}} stroke-width="6" stroke-linecap="round"/>
+<text x="436" y="57" font-size="15.5" font-weight="600" fill="currentColor"><$text text={{{ [function[dm-t],[rev-head]] }}}/></text>
+<text x="436" y="77.0" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[rev-n1]] }}}/></text>
+<text x="436" y="92.5" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[rev-n2]] }}}/></text>
+<text x="436" y="108.0" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[rev-n3]] }}}/></text>
+<$link to="Styring Ekstern tjeneste" overrideClass="nhn-schema-chip" draggable="no" tooltip="Styring Ekstern tjeneste">
+<rect x="436" y="127.5" width="182" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[review]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[review]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Styring Ekstern tjeneste]is[tiddler]then[none]] :else[[Styring Ekstern tjeneste]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="446.0" y="143.0" font-size="12.5" textLength="162" lengthAdjust="spacingAndGlyphs" fill="currentColor">Styring Ekstern tjeneste</text>
+</$link>
+<$link to="Styring Intern tjeneste" overrideClass="nhn-schema-chip" draggable="no" tooltip="Styring Intern tjeneste">
+<rect x="436" y="157.5" width="175" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[review]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[review]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Styring Intern tjeneste]is[tiddler]then[none]] :else[[Styring Intern tjeneste]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="446.0" y="173.0" font-size="12.5" textLength="155" lengthAdjust="spacingAndGlyphs" fill="currentColor">Styring Intern tjeneste</text>
+</$link>
+<$link to="Styring Tiltak" overrideClass="nhn-schema-chip" draggable="no" tooltip="Styring Tiltak">
+<rect x="618" y="157.5" width="114" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[review]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[review]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Styring Tiltak]is[tiddler]then[none]] :else[[Styring Tiltak]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="628.0" y="173.0" font-size="12.5" textLength="94" lengthAdjust="spacingAndGlyphs" fill="currentColor">Styring Tiltak</text>
+</$link>
+<$link to="Styring Relatert tjeneste" overrideClass="nhn-schema-chip" draggable="no" tooltip="Styring Relatert tjeneste">
+<rect x="436" y="187.5" width="189" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[review]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[review]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Styring Relatert tjeneste]is[tiddler]then[none]] :else[[Styring Relatert tjeneste]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="446.0" y="203.0" font-size="12.5" textLength="169" lengthAdjust="spacingAndGlyphs" fill="currentColor">Styring Relatert tjeneste</text>
+</$link>
+<$link to="Styring Satsning for fart" overrideClass="nhn-schema-chip" draggable="no" tooltip="Styring Satsning for fart">
+<rect x="436" y="217.5" width="189" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[review]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[review]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Styring Satsning for fart]is[tiddler]then[none]] :else[[Styring Satsning for fart]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="446.0" y="233.0" font-size="12.5" textLength="169" lengthAdjust="spacingAndGlyphs" fill="currentColor">Styring Satsning for fart</text>
+</$link>
+<$link to="Forretningsmessig endring:1" overrideClass="nhn-schema-chip" draggable="no" tooltip="Forretningsmessig endring:1">
+<rect x="436" y="247.5" width="202" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[review]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[review]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Forretningsmessig endring:1]is[tiddler]then[none]] :else[[Forretningsmessig endring:1]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="446.0" y="263.0" font-size="12.5" textLength="182" lengthAdjust="spacingAndGlyphs" fill="currentColor">Forretningsmessig endring:1</text>
+</$link>
+</g>
+<g class="nhn-schema-box">
+<rect x="420" y="318" width="330" height="101" rx="10" fill="none" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[malsetting]] }}} stroke-opacity="0.55" stroke-width="1.5"/>
+<path d="M424 329 v79" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[malsetting]] }}} stroke-width="6" stroke-linecap="round"/>
+<$link to="Målsetting" overrideClass="nhn-schema-node" draggable="no"><text x="436" y="343" font-size="15.5" font-weight="600" fill="currentColor"><$text text={{{ [function[dm-t],[mal-head]] }}}/></text></$link>
+<text x="436" y="363.0" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[mal-n1]] }}}/></text>
+<$link to="Målsetting" overrideClass="nhn-schema-chip" draggable="no" tooltip="Målsetting">
+<rect x="436" y="382.5" width="88" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[malsetting]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[malsetting]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Målsetting]is[tiddler]then[none]] :else[[Målsetting]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="446.0" y="398.0" font-size="12.5" textLength="68" lengthAdjust="spacingAndGlyphs" fill="currentColor">Målsetting</text>
+</$link>
+</g>
+<g class="nhn-schema-box">
+<rect x="420" y="463" width="330" height="132" rx="10" fill="none" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[leveranse]] }}} stroke-opacity="0.55" stroke-width="1.5"/>
+<path d="M424 474 v110" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[leveranse]] }}} stroke-width="6" stroke-linecap="round"/>
+<$link to="Leveranse" overrideClass="nhn-schema-node" draggable="no"><text x="436" y="488" font-size="15.5" font-weight="600" fill="currentColor"><$text text={{{ [function[dm-t],[lev-head]] }}}/></text></$link>
+<text x="436" y="508.0" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[lev-n1]] }}}/></text>
+<text x="436" y="523.5" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[lev-n2]] }}}/></text>
+<text x="436" y="539.0" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[lev-n3]] }}}/></text>
+<$link to="Leveranse" overrideClass="nhn-schema-chip" draggable="no" tooltip="Leveranse">
+<rect x="436" y="558.5" width="81" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[leveranse]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[leveranse]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Leveranse]is[tiddler]then[none]] :else[[Leveranse]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="446.0" y="574.0" font-size="12.5" textLength="61" lengthAdjust="spacingAndGlyphs" fill="currentColor">Leveranse</text>
+</$link>
+<$link to="Levert" overrideClass="nhn-schema-chip" draggable="no" tooltip="Levert">
+<rect x="524" y="558.5" width="60" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[leveranse]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[leveranse]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Levert]is[tiddler]then[none]] :else[[Levert]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="534.0" y="574.0" font-size="12.5" textLength="40" lengthAdjust="spacingAndGlyphs" fill="currentColor">Levert</text>
+</$link>
+</g>
+<g class="nhn-schema-box">
+<rect x="420" y="639" width="330" height="117" rx="10" fill="none" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[oppgave]] }}} stroke-opacity="0.55" stroke-width="1.5"/>
+<path d="M424 650 v95" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[oppgave]] }}} stroke-width="6" stroke-linecap="round"/>
+<$link to="Oppgave" overrideClass="nhn-schema-node" draggable="no"><text x="436" y="664" font-size="15.5" font-weight="600" fill="currentColor"><$text text={{{ [function[dm-t],[opp-head]] }}}/></text></$link>
+<text x="436" y="684.0" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[opp-n1]] }}}/></text>
+<text x="436" y="699.5" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[opp-n2]] }}}/></text>
+<$link to="Oppgave" overrideClass="nhn-schema-chip" draggable="no" tooltip="Oppgave">
+<rect x="436" y="719.0" width="67" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[oppgave]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[oppgave]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Oppgave]is[tiddler]then[none]] :else[[Oppgave]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="446.0" y="734.5" font-size="12.5" textLength="47" lengthAdjust="spacingAndGlyphs" fill="currentColor">Oppgave</text>
+</$link>
+<$link to="Levert" overrideClass="nhn-schema-chip" draggable="no" tooltip="Levert">
+<rect x="510" y="719.0" width="60" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[oppgave]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[oppgave]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Levert]is[tiddler]then[none]] :else[[Levert]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="520.0" y="734.5" font-size="12.5" textLength="40" lengthAdjust="spacingAndGlyphs" fill="currentColor">Levert</text>
+</$link>
+</g>
+<g class="nhn-schema-box">
+<rect x="840" y="479" width="236" height="117" rx="10" fill="none" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[resultat]] }}} stroke-opacity="0.55" stroke-width="1.5"/>
+<path d="M844 490 v95" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[resultat]] }}} stroke-width="6" stroke-linecap="round"/>
+<$link to="Resultat" overrideClass="nhn-schema-node" draggable="no"><text x="856" y="504" font-size="15.5" font-weight="600" fill="currentColor"><$text text={{{ [function[dm-t],[res-head]] }}}/></text></$link>
+<text x="856" y="524.0" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[res-n1]] }}}/></text>
+<text x="856" y="539.5" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[res-n2]] }}}/></text>
+<$link to="Resultat" overrideClass="nhn-schema-chip" draggable="no" tooltip="Resultat">
+<rect x="856" y="559.0" width="74" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[resultat]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[resultat]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Resultat]is[tiddler]then[none]] :else[[Resultat]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="866.0" y="574.5" font-size="12.5" textLength="54" lengthAdjust="spacingAndGlyphs" fill="currentColor">Resultat</text>
+</$link>
+</g>
+<g class="nhn-schema-box">
+<rect x="24" y="800" width="330" height="117" rx="10" fill="none" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[structure]] }}} stroke-opacity="0.55" stroke-width="1.5"/>
+<path d="M28 811 v95" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[structure]] }}} stroke-width="6" stroke-linecap="round"/>
+<text x="40" y="825" font-size="15.5" font-weight="600" fill="currentColor"><$text text={{{ [function[dm-t],[tid-head]] }}}/></text>
+<text x="40" y="845.0" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[tid-n1]] }}}/></text>
+<$link to="2026" overrideClass="nhn-schema-chip" draggable="no" tooltip="2026">
+<rect x="40" y="864.5" width="47" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[structure]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[structure]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[2026]is[tiddler]then[none]] :else[[2026]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="50.0" y="880.0" font-size="12.5" textLength="27" lengthAdjust="spacingAndGlyphs" fill="currentColor">2026</text>
+</$link>
+<$link to="Mars" overrideClass="nhn-schema-chip" draggable="no" tooltip="Mars">
+<rect x="94" y="864.5" width="47" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[structure]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[structure]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Mars]is[tiddler]then[none]] :else[[Mars]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="104.0" y="880.0" font-size="12.5" textLength="27" lengthAdjust="spacingAndGlyphs" fill="currentColor">Mars</text>
+</$link>
+</g>
+<g class="nhn-schema-box">
+<rect x="386" y="800" width="330" height="117" rx="10" fill="none" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[template]] }}} stroke-opacity="0.55" stroke-width="1.5"/>
+<path d="M390 811 v95" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[template]] }}} stroke-width="6" stroke-linecap="round"/>
+<text x="402" y="825" font-size="15.5" font-weight="600" fill="currentColor"><$text text={{{ [function[dm-t],[unn-head]] }}}/></text>
+<text x="402" y="845.0" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[unn-n1]] }}}/></text>
+<text x="402" y="860.5" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[unn-n2]] }}}/></text>
+<$link to="mal" overrideClass="nhn-schema-chip" draggable="no" tooltip="mal">
+<rect x="402" y="880.0" width="40" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[template]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[template]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[mal]is[tiddler]then[none]] :else[[mal]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="412.0" y="895.5" font-size="12.5" textLength="20" lengthAdjust="spacingAndGlyphs" fill="currentColor">mal</text>
+</$link>
+<$link to="Arkiv" overrideClass="nhn-schema-chip" draggable="no" tooltip="Arkiv">
+<rect x="449" y="880.0" width="54" height="23" rx="11.5" fill={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[template]] }}} fill-opacity="0.16" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[template]] }}} stroke-opacity="0.85" stroke-width="1.2" stroke-dasharray={{{ [[Arkiv]is[tiddler]then[none]] :else[[Arkiv]is[shadow]then[none]] :else[[3 3]] }}}/>
+<text x="459.0" y="895.5" font-size="12.5" textLength="34" lengthAdjust="spacingAndGlyphs" fill="currentColor">Arkiv</text>
+</$link>
+</g>
+<g class="nhn-schema-box">
+<rect x="748" y="800" width="330" height="117" rx="10" fill="none" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[structure]] }}} stroke-opacity="0.55" stroke-width="1.5"/>
+<path d="M752 811 v95" stroke={{{ [[$:/plugins/intertwingled-innovations/nhn/kind-colours]get[text]jsonget[structure]] }}} stroke-width="6" stroke-linecap="round"/>
+<text x="764" y="825" font-size="15.5" font-weight="600" fill="currentColor"><$text text={{{ [function[dm-t],[utk-head]] }}}/></text>
+<text x="764" y="845.0" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[utk-n1]] }}}/></text>
+<text x="764" y="860.5" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[utk-n2]] }}}/></text>
+<text x="764" y="876.0" font-size="11.5" fill="currentColor" fill-opacity="0.62"><$text text={{{ [function[dm-t],[utk-n3]] }}}/></text>
+</g>
+</svg>
+</div>
+
+Fargene er de samme som fargestripen øverst i hver tiddler, og leses fra [[kind-colours|$:/plugins/intertwingled-innovations/nhn/kind-colours]]. En ''stiplet'' pille er en tagg som ingen tiddler ligger bak. Det er verdt å se etter: `Resultat`, `mal`, `Arkiv` og årstallene brukes flittig som tagger uten at noen har opprettet tiddleren, mens `Ekstern tjeneste` er stiplet fordi bare skrivemåten `Ekstern Tjeneste` har en tiddler — den samme driften [[Anomalier]] rydder i.
+
+!! Hva pilene betyr
+
+Alle koblinger går én vei: //barnet tagger forelderens tittel//. Det finnes ingen fremmednøkkel-felter. `TjenesteID` ser ut som en nøkkel, men er det ikke — den står på de fleste gjennomgangene og bare sporadisk ellers, så den duger ikke til å koble leveranser eller OKR-er til en tjeneste. Bruk taggen.
+
+`tjenestenavn-tag` er den ene koblingen alt innhold deler: en gjennomgang, en målsetting, en leveranse eller en oppgave hører til tjenesten hvis den er tagget med tjenestens tittel.
+
+!! Der modellen svikter i praksis
+
+* 22 % av gjennomgangene mangler tjenestenavn-taggen, og 84 % mangler `Forretningsmessig endring`. [[ToDo forretningsgjennomgang]] kompenserer ved å lese tjenestenavnet ut av tittelen når taggen mangler; [[ToDo målsettinger]] gjør det ikke, fordi målsettingstitler ikke følger noen mal.
+* Taggene drifter i skrivemåte — `Ekstern Tjeneste` mot `Ekstern tjeneste`, `Mars` mot `mars`. [[Anomalier]] finner familiene og tilbyr å slå dem sammen.
+* Utkast arver taggene til det de er utkast av, så en uferdig kopi teller som ekte innhold med mindre den trekkes fra.
+
+Detaljene, med tall fra datasettet, står i `docs/data-model.md` i repoet.
+
+<% endif %>
+
+</$let>

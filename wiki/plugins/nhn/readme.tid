@@ -16,6 +16,7 @@ All are reached from the //NHN// tab in the sidebar.
 |[[Leveranserapport]] |Leveranser per tjeneste for en valgt periode, med nedlastbar frittstående HTML-rapport til styrerapportering |
 |[[Arkiv]] |Skjuler gammelt innhold uten å slette det |
 |[[Anomalier]] |Datakvalitetsproblemer som er verdt å rydde i, og verktøyet som slår sammen tagger med avvikende skrivemåte |
+|[[Datamodell]] |Skjemadiagram: hvordan tagger og felter henger sammen, med klikkbare tagger. Norsk eller engelsk |
 
 Sidebar-fanen har i tillegg fire navigasjonstrær — Styringsstruktur, Forretningsgjennomgang, Leveranser og Tjenester — og en periodevelger som begrenser dem til ett år.
 
