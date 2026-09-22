@@ -11,7 +11,7 @@ All are reached from the //NHN// tab in the sidebar.
 |[[Sammendrag]] |Grupperte oversikter over leveranser, målsettinger og resultater |
 |[[ToDo forretningsgjennomgang]] |Hvilke tjenester som mangler månedens gjennomgang |
 |[[ToDo målsettinger]] |Hvilke tjenester som mangler målsetting for året |
-|[[Tjenesteeiere]] |Setter tjenesteeier, én og én eller limt inn fra regneark |
+|[[Tjenesteeiere]] |Setter tjenesteeier, én og én eller limt inn fra regneark, og hver tjenestes Power BI-lenke, med forslag fra siste gjennomgang |
 |[[Eksport]] |De to Excel-uttrekkene, filtrert på år og måned |
 |[[Leveranserapport]] |Leveranser per tjeneste for en valgt periode, med nedlastbar frittstående HTML-rapport til styrerapportering |
 |[[Arkiv]] |Skjuler gammelt innhold uten å slette det |
@@ -25,7 +25,7 @@ Sidebar-fanen har i tillegg fire navigasjonstrær — Styringsstruktur, Forretni
 * ''Selectors'' — the sets behind each view: `nhn-services`, `nhn-reviews`, `nhn-deliveries`, `nhn-objectives`, `nhn-results`, and the two extract sets. Every one of them subtracts archived content and the `mal` template — except `nhn-reviews-all` / `nhn-objectives-all`, which keep archived content and feed the ToDo lists, so archiving a year cannot falsify its history.
 * ''Projections'' — the shared column and group-key vocabulary: `nhn-serviceid`, `nhn-url`, `nhn-division`, `nhn-servicename`, `nhn-severity`, `nhn-governance-type`, `nhn-service-type`, `nhn-year`, `nhn-month`, `nhn-years`, `nhn-months`, `nhn-owner`.
 * ''Relations'' — `nhn-gov-children`, which walks NHN → forretningsområde → tjeneste and the intentions beneath them.
-* ''Form definitions'' — one per kind, plus the functions that derive what the forms do not ask for: choosing a service settles its `TjenesteID`, its division tag and its `Styring …` tag.
+* ''Form definitions'' — one per kind, plus the functions that derive what the forms do not ask for: choosing a service settles its `TjenesteID`, its division tag and its `Styring …` tag, and a review starts from the template with the service's Power BI link.
 * ''Tables'' — month maps, the governance-tag map, the tag→kind table and its colours, the column spec for each extract, and the view catalogue for the summaries.
 
 !! Changing it
@@ -33,3 +33,5 @@ Sidebar-fanen har i tillegg fire navigasjonstrær — Styringsstruktur, Forretni
 Tag sets, field names, column lists, group paths, form definitions and the permalink base URL are all ordinary tiddlers. Edit one and the wiki creates an override; delete the override and the shipped default returns. Nothing in this plugin needs editing to change what a report selects or which columns it exports.
 
 The service owner field is named by `nhn-owner-field` (default `tjenesteeier`) and is set per service on the tiddler itself, or in bulk on [[Tjenesteeiere]].
+
+Each service's Power BI report is named by `nhn-powerbi-field` (default `powerbi`), with optional link text in `nhn-powerbi-caption-field` (default `powerbi-tekst`). A business review created through the form ends with a link to it. See [[$:/plugins/intertwingled-innovations/nhn/powerbi]].

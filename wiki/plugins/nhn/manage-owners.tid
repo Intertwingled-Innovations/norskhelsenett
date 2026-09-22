@@ -5,7 +5,7 @@ caption: Tjenesteeiere
 
 ! Tjenesteeiere
 
-Sett tjenesteeier for hver tjeneste. Endringene lagres direkte på tjeneste-tiddleren. Tjenesteeier brukes til å gruppere tjenester og til å generere ToDo-lister (§3.5/§3.6).
+Sett tjenesteeier og Power BI-lenke for hver tjeneste. Endringene lagres direkte på tjeneste-tiddleren. Tjenesteeier brukes til å gruppere tjenester og til å generere ToDo-lister (§3.5/§3.6). Power BI-lenken settes automatisk inn i nye forretningsgjennomganger.
 
 <div class="nhn-owner-summary">Tjenester med tjenesteeier:&#32;<$count filter="[function[nhn-services]] :filter[has<nhn-owner-field>]"/>&#32;/&#32;<$count filter="[function[nhn-services]]"/></div>
 
@@ -36,6 +36,58 @@ Disse navnene finnes ikke som tjeneste og hoppes over:
 <% endif %>
 <% endif %>
 </$let>
+</$let>
+</$let>
+
+!! Power BI-lenker
+
+Hver tjeneste har én økonomirapport i Power BI, og lenken er den samme fra måned til måned. Når en tjeneste har lenke, legges den inn under «Link til økonomirapport i powerbi» i hver nye forretningsgjennomgang. Lenketeksten er valgfri; uten den blir den «Oversikt &lt;tjeneste&gt; (Power BI)».
+
+Forslagene er hentet fra tjenestens siste gjennomgang som har en Power BI-lenke. Sjekk dem før du bruker dem: en gjennomgang kan lenke til flere rapporter, og forslaget er den første.
+
+<$let reviews={{{ [function[nhn-reviews-all]format:titlelist[]join[ ]] }}}>
+<$let missing={{{ [function[nhn-services]] :filter[function[nhn-powerbi-url],<currentTiddler>count[]match[0]] :filter[function[nhn-powerbi-source],<currentTiddler>,<reviews>] +[format:titlelist[]join[ ]] }}}>
+<div class="nhn-owner-summary">Tjenester med Power BI-lenke:&#32;<$count filter="[function[nhn-services]] :filter[function[nhn-powerbi-url],<currentTiddler>]"/>&#32;/&#32;<$count filter="[function[nhn-services]]"/></div>
+<% if [enlist<missing>count[]compare:number:gt[0]] %>
+<div class="nhn-owner-import">
+<$button class="tc-btn-big-green" actions="""<$transclude $variable="nhn-powerbi-apply-suggestions" services=<<missing>> reviews=<<reviews>>/>""">
+Bruk forslagene for tjenester uten lenke
+</$button>
+<span class="nhn-owner-import-count"><$text text={{{ [enlist<missing>count[]] }}}/>&#32;tjenester uten lenke har et forslag</span>
+</div>
+<% endif %>
+
+<table class="nhn-owner-table">
+<thead>
+<tr><th>Tjeneste</th><th>Power BI-lenke</th><th>Lenketekst</th><th>Forslag fra siste gjennomgang</th></tr>
+</thead>
+<tbody>
+<$list filter="[function[nhn-services]sort[title]]" variable="svc">
+<$let source={{{ [function[nhn-powerbi-source],<svc>,<reviews>] }}}>
+<tr>
+<td><$transclude $variable="forms-tag-or-link" title=<<svc>>/></td>
+<td><$edit-text tiddler=<<svc>> field=<<nhn-powerbi-field>> tag="input" placeholder="(ingen)" class="nhn-owner-input nhn-powerbi-input"/>
+<% if [function[nhn-powerbi-invalid],<svc>] %>
+<div class="nhn-powerbi-warning">Ikke en Power BI-adresse. Den må begynne med `https://app.powerbi.com/` og kan ikke inneholde anførselstegn. Nye gjennomganger får ingen lenke før den er rettet.</div>
+<% endif %>
+</td>
+<td><$edit-text tiddler=<<svc>> field=<<nhn-powerbi-caption-field>> tag="input" placeholder={{{ [function[nhn-powerbi-caption],<svc>] }}} class="nhn-owner-input"/></td>
+<td>
+<% if [<source>!is[blank]] %>
+<$let currentTiddler=<<source>>>
+<a href={{{ [function[nhn-powerbi-found-url]] }}} target="_blank" rel="noopener noreferrer"><$text text={{{ [function[nhn-powerbi-found-caption]] :else[[(uten tekst)]] }}}/></a>
+&#32;<span class="nhn-powerbi-source">fra&#32;<$link to=<<source>>><$text text={{{ [function[nhn-year-raw]] [function[nhn-month-raw]lowercase[]] +[join[ ]] }}}/></$link></span>
+<% if [function[nhn-powerbi-found-new],<svc>] %>
+&#32;<$button class="tc-btn-invisible nhn-powerbi-use" actions="""<$transclude $variable="nhn-powerbi-apply-suggestions" services={{{ [<svc>format:titlelist[]] }}} reviews=<<reviews>>/>""">Bruk</$button>
+<% endif %>
+</$let>
+<% endif %>
+</td>
+</tr>
+</$let>
+</$list>
+</tbody>
+</table>
 </$let>
 </$let>
 

@@ -1,7 +1,7 @@
 # Testing
 
 ```sh
-npm test              # run everything (218 tests, ~30s)
+npm test              # run everything (238 tests, ~30s)
 npm test -- export    # run only tests matching "export" (file, suite or test name)
 ```
 
@@ -32,6 +32,7 @@ So the suite leans towards the failure modes that are invisible at runtime: does
 | `tests/summaries.test.js` | The §3.4 view catalogue, its projections, and the grouped-view picker |
 | `tests/forms.test.js` | The §3.2 form definitions, and creation and editing driven end to end |
 | `tests/todo.test.js` | §3.5/§3.6 attribution, status, both ToDo populations, and the owner importer |
+| `tests/powerbi.test.js` | The business-review template's wording, the Power BI link a new review is seeded with, the ToDo list still recognising such a review as unwritten, the suggestions read out of earlier reviews, the warning for a bad address, and the Anomalier list of reviews still holding the retired template |
 | `tests/scope.test.js` | §3.7 archiving, its reversibility, and what the period scope must never hide |
 | `tests/search.test.js` | D2 folding, the symmetry of query and text, and the search tab wiring |
 | `tests/merge.test.js` | Merging tag casing variants: the generic action, the family and target functions, and the Anomalier buttons that drive them |

@@ -10,6 +10,7 @@ tags: $:/tags/Global
 \function nhn-form-division() [function[nhn-form-service]] :map[function[nhn-division]]
 \function nhn-form-service-type() [function[nhn-form-service]] :map[function[nhn-service-type]]
 \function nhn-form-governance-tag() [function[nhn-form-service-type]lowercase[]] :map[[$:/plugins/intertwingled-innovations/nhn/governance-tags]getindex<currentTiddler>]
+\function nhn-form-review-body() [function[nhn-form-service]] :map[function[nhn-review-seed],<currentTiddler>]
 \function nhn-form-severity-tag() [<forms-state>getindex[severity]!is[blank]addprefix[Forretningsmessig endring:]]
 \function nhn-form-month-ord() [<forms-state>getindex[month]lowercase[]] :map[[$:/plugins/intertwingled-innovations/nhn/months]getindex<currentTiddler>]
 \function nhn-form-period() [<forms-state>getindex[year]!is[blank]] [function[nhn-form-month-ord]] +[join[-]]
@@ -28,6 +29,7 @@ Choosing a service settles most of a monthly review:
 
 The rest:
 
+* `nhn-form-review-body` — the text a new review starts with: the template followed by the service's Power BI link, via `nhn-review-seed` in [[$:/plugins/intertwingled-innovations/nhn/powerbi]].
 * `nhn-form-severity-tag` — turns a severity of 1–3 into the `Forretningsmessig endring:N` tag.
 * `nhn-form-period` — the `period` stamp (design decision D3): `2026-03` when a month was chosen, `2026` when only a year was. One function serves both the monthly and the yearly forms.
 * `nhn-form-years` — every year already in use as a tag, plus the current year. The current year comes from `nhn-year-now`, which the page hosting the form supplies (filters cannot read the clock); without it the list is simply the years in use.

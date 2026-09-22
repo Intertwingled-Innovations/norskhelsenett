@@ -1,0 +1,69 @@
+title: $:/plugins/intertwingled-innovations/nhn/powerbi
+tags: $:/tags/Global
+
+\whitespace trim
+\define nhn-powerbi-field() powerbi
+\define nhn-powerbi-caption-field() powerbi-tekst
+\define nhn-powerbi-host-re() ^https://app\.powerbi\.com/
+\define nhn-powerbi-extract-re() ^[\s\S]*?<a\s[^>]*?href="(https://app\.powerbi\.com/[^"]*)"[^>]*>([\s\S]*?)</a>[\s\S]*$
+\define nhn-html-tag-re() <[^>]*>
+\function nhn-para-break() [charcode[10],[10]]
+\function nhn-powerbi-url(service) [<service>get<nhn-powerbi-field>trim[]regexp<nhn-powerbi-host-re>!regexp["]]
+\function nhn-powerbi-invalid(service) [<service>get<nhn-powerbi-field>trim[]!is[blank]] -[function[nhn-powerbi-url],<service>]
+\function nhn-powerbi-caption(service) [<service>get<nhn-powerbi-caption-field>trim[]!is[blank]] :else[<service>addprefix[Oversikt ]addsuffix[ (Power BI)]]
+\function nhn-powerbi-anchor(service) [function[nhn-powerbi-url],<service>] :map[function[nhn-powerbi-caption],<service>encodehtml[]addprefix[">]addprefix<currentTiddler>addprefix[<a href="]addsuffix[</a>]]
+\function nhn-review-seed(service) [function[nhn-powerbi-anchor],<service>] :map[function[nhn-template-text]get[text]trim[]addsuffix<nhn-para-break>addsuffix<currentTiddler>] :else[function[nhn-template-text]get[text]]
+\function nhn-review-seed-of() [function[nhn-review-service]] :map[function[nhn-review-seed],<currentTiddler>]
+\function nhn-powerbi-found-url() [<currentTiddler>get[text]regexp<nhn-powerbi-extract-re>search-replace::regexp<nhn-powerbi-extract-re>,[$1]]
+\function nhn-powerbi-found-caption() [<currentTiddler>get[text]regexp<nhn-powerbi-extract-re>search-replace::regexp<nhn-powerbi-extract-re>,[$2]search-replace:g:regexp<nhn-html-tag-re>,[]trim[]]
+\function nhn-review-month-ord() [function[nhn-month-raw]] :map[function[nhn-month-ord]]
+\function nhn-review-sortkey() [function[nhn-year-raw]first[]multiply[100]add<nhn-review-month-ord>]
+\function nhn-powerbi-source(service,reviews) [<service>tagging[]] [enlist<reviews>search:title:literal<service>] +[unique[]] :intersection[enlist<reviews>] :filter[function[nhn-review-service]match<service>] :filter[function[nhn-powerbi-found-url]] :sort:number:reverse[function[nhn-review-sortkey]] +[first[]]
+\function nhn-powerbi-found-new(service) [function[nhn-powerbi-found-url]] -[function[nhn-powerbi-url],<service>]
+\function nhn-powerbi-suggestion-new(service,reviews) [function[nhn-powerbi-source],<service>,<reviews>] :map:flat[function[nhn-powerbi-found-new],<service>]
+
+\procedure nhn-powerbi-apply-suggestions(services,reviews)
+<$list filter="[enlist<services>]" variable="svc">
+<$let source={{{ [function[nhn-powerbi-source],<svc>,<reviews>] }}}>
+<% if [<source>!is[blank]] %>
+<$let currentTiddler=<<source>>>
+<$action-setfield $tiddler=<<svc>> $field=<<nhn-powerbi-field>> $value={{{ [function[nhn-powerbi-found-url]] }}}/>
+<% if [<svc>!has<nhn-powerbi-caption-field>] %>
+<$action-setfield $tiddler=<<svc>> $field=<<nhn-powerbi-caption-field>> $value={{{ [function[nhn-powerbi-found-caption]] }}}/>
+<% endif %>
+</$let>
+<% endif %>
+</$let>
+</$list>
+\end
+
+Each service has one Power BI report for its finances, and the address does not change from month to month. It is stored on the service tiddler, and every business review created through the form gets a link to it — nobody has to find it and paste it in again.
+
+!! Where the link lives
+
+* `nhn-powerbi-field` (default `powerbi`) — the report's address, on the service tiddler.
+* `nhn-powerbi-caption-field` (default `powerbi-tekst`) — the link text. Optional: without it the link reads `Oversikt <tjeneste> (Power BI)`, the pattern most existing reviews use. Many reports are named differently from the service (`Oversikt SFM drift og forvaltning` for Sentral forskrivningsmodul), which is why the text can be set at all.
+
+Both are set on the service tiddler itself or on [[Tjenesteeiere]].
+
+`nhn-powerbi-url(service)` is the address, but only if it is a Power BI address and contains no `"` — it is written into an HTML attribute, and a stray quote would break the review's markup rather than just the link. `nhn-powerbi-invalid(service)` is the stored address when it fails that test, so the view template and [[Tjenesteeiere]] can say so next to the input: otherwise a mistyped address is stored, and new reviews silently go without a link. `nhn-powerbi-caption(service)` is the link text, and `nhn-powerbi-anchor(service)` the finished `<a href="…">…</a>`. It is HTML rather than a `[[text|url]]` wikilink because that is how the existing reviews write it — 1,043 anchors, the same markup almost throughout — so new reviews look like the old ones in the editor.
+
+!! Seeding a new review
+
+`nhn-review-seed(service)` is the text a new review for `service` starts with: the template (the `mal` tiddler, `nhn-template-text`) followed by a blank line and the service's link — which lands directly under the template's last line, //Link til økonomirapport i powerbi://. A service with no link gets the template unchanged.
+
+The review form's body, and the ToDo list's idea of "still just the template", both come from this one function. That matters: the ToDo list decides a review is unwritten by comparing its text //exactly// with what it was seeded with, so if the form added the link and the ToDo list compared against the bare template, every untouched review for a service with a link would read as written. `nhn-review-seed-of` is the same seed for an existing review, finding its service through `nhn-review-service`; the ToDo page passes its name as `todo-seed`.
+
+A consequence worth knowing: an untouched review reads as unwritten only while the service's link is what it was when the review was created. Change the link and that review now reads as written. Links change rarely, and only an untouched review is affected.
+
+!! Suggestions from earlier reviews
+
+Nearly every existing review already links its service's report, so the addresses do not need collecting by hand. `nhn-powerbi-source(service,reviews)` is the most recent review of `service` that contains a Power BI link, where `reviews` is the review set (bound once by the page — computing it per service would be needlessly slow). It considers reviews tagged with the service and reviews whose title names it, and keeps those `nhn-review-service` actually attributes to the service, so a review that mentions another service in passing does not count. `nhn-powerbi-found-url` and `nhn-powerbi-found-caption` read the first Power BI anchor out of a review's text, caption stripped of markup. Only anchors are read: 18 reviews paste the address as a bare URL instead, and they are not suggested from. Two services (Kjernejournal Pasientens legemidler, Støtte og hjelp til leverandører) have their address only in that form, so they get no suggestion and need the address entered by hand.
+
+This is a //suggestion//, shown for someone to accept, and never applied silently: a review can link several reports, and the first one is not always the service's own (a review of Verdikjede e-resept links the multidose report first). Most services' address has also changed at least once, which is why the //latest// review is the one asked.
+
+`nhn-powerbi-found-new(service)` is the address found in the current review when it differs from the one `service` already has — what [[Tjenesteeiere]] offers a //Bruk// button for. The page evaluates it with each row's source review as `currentTiddler`, having already found that review for the row: finding it is the expensive part (about 170 ms for all 60 services), and computing it once for the row and again for the button made the page several times slower to refresh. `nhn-powerbi-suggestion-new(service,reviews)` is the same answer starting from the service.
+
+`nhn-powerbi-apply-suggestions(services,reviews)` stores the suggested address on each of `services` that has one, and the suggested link text only where the service has none yet; services with no suggestion are left alone. Keeping existing text protects a caption someone typed by hand. The cost: a caption stored by an earlier suggestion is not replaced if the report is later renamed, so clear the field first to take the new one. It is shared with the page's buttons so the tests exercise the real actions rather than a copy of them.
+
+`nhn-review-sortkey` orders reviews by period (`year × 100 + month`).

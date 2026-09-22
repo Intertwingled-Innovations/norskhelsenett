@@ -83,18 +83,27 @@ h.test("every form definition parses and is complete", function() {
 });
 
 h.test("every template a definition points at exists", function() {
-	var w = h.wiki();
-	formDefs(w).forEach(function(title) {
-		var def = w.data(title);
-		assert.ok(w.exists(def.title), title + " names the title template \"" + def.title +
-			"\", which does not exist — the form would produce a blank title");
-		if(def.body) {
-			// body is a filter producing the seed text, so a renamed template
-			// cannot silently blank every new tiddler
-			assert.ok(w.filter(def.body).join("").length > 0, title + " seeds its body from \"" +
-				def.body + "\", a filter that produces no text");
-		}
-	});
+	var w = h.fixtureWiki(),
+		state = "$:/state/test/form/body-check";
+	// A body may depend on what was picked — the review's carries the chosen
+	// service's Power BI link — so evaluate it as the form does, with a service chosen
+	w.addTiddler({title: state, type: "application/json",
+		text: JSON.stringify({service: "Autentisering og autorisasjon", year: "2026", month: "Mars"})});
+	try {
+		formDefs(w).forEach(function(title) {
+			var def = w.data(title);
+			assert.ok(w.exists(def.title), title + " names the title template \"" + def.title +
+				"\", which does not exist — the form would produce a blank title");
+			if(def.body) {
+				// body is a filter producing the seed text, so a renamed template
+				// cannot silently blank every new tiddler
+				assert.ok(w.filter(def.body, {"forms-state": state}).join("").length > 0, title +
+					" seeds its body from \"" + def.body + "\", a filter that produces no text");
+			}
+		});
+	} finally {
+		discard(w, state);
+	}
 });
 
 h.test("every input is fully specified", function() {

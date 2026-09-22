@@ -44,6 +44,10 @@ code-body: yes
 	min-width: 12em;
 	font: inherit;
 }
+.nhn-powerbi-input { min-width: 20em; }
+.nhn-powerbi-source { color: <<colour muted-foreground>>; font-size: 0.9em; }
+.nhn-powerbi-warning { color: #e85800; font-size: 0.9em; margin-top: 0.25em; }
+.nhn-powerbi-use { color: <<colour primary>>; font-weight: 600; }
 .nhn-owner-summary { color: <<colour muted-foreground>>; margin: 0.5em 0; }
 .nhn-owner-table,
 .nhn-anomaly-table { border-collapse: collapse; }

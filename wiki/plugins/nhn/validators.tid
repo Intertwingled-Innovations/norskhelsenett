@@ -5,6 +5,9 @@ tags: $:/tags/Global
 \function nhn-template-text() [[mal]tagging[]first[]]
 \function nhn-review-title-service() [<currentTiddler>search-replace:g:regexp[^\d+\s+],[]search-replace:g:regexp[\s*-\s*hovedtrekk.*$],[]] :intersection[function[nhn-services]]
 \function nhn-review-service() [function[nhn-servicename]] :else[function[nhn-review-title-service]]
+\function nhn-retired-template-texts() [all[shadows+tiddlers]tag[$:/tags/nhn/RetiredTemplate]get[text]trim[]]
+\function nhn-is-retired-template() [<currentTiddler>get[text]trim[]] :intersection[function[nhn-retired-template-texts]]
+\function nhn-reviews-retired-template() [function[nhn-reviews-all]] :filter[function[nhn-is-retired-template]] +[sort[title]]
 \function nhn-result-count() [<currentTiddler>tagging[]tag[Resultat]count[]]
 \define nhn-glued-re() (?m)^[^!|*#;:>\-<"`\\\s][^\n]*\n[*#]+ 
 \function nhn-glued-lists() [all[tiddlers]!is[system]!is[binary]] :filter[<currentTiddler>get[type]else[text/vnd.tiddlywiki]match[text/vnd.tiddlywiki]] +[regexp:text<nhn-glued-re>sort[title]]
@@ -33,8 +36,16 @@ Objectives need no such fallback: their titles follow no convention, so `nhn-ser
 
 !! Other pieces
 
-* `nhn-template-text` — the `mal` tiddler, which the review ToDo passes as `todo-template`. OKRs have no template, so that list passes nothing.
+* `nhn-template-text` — the `mal` tiddler, which the review ToDo passes as `todo-template`. OKRs have no template, so that list passes nothing. The review ToDo also passes `nhn-review-seed-of` as `todo-seed`, because a new review is the template //plus// its service's Power BI link (see [[$:/plugins/intertwingled-innovations/nhn/powerbi]]).
 * `nhn-result-count` — how many `Resultat` hang off an objective. Not part of the status, but 39% of the 2026 objectives have none, which is worth showing next to one that "exists".
+
+!! Reviews that are still a retired template
+
+When the `mal` tiddler is reworded, a review created from the old wording and never written no longer matches the template, so the review ToDo counts it as written. `nhn-reviews-retired-template` lists those reviews for [[Anomalier]]: every review (archived ones included, as in the ToDo lists) whose text, trimmed, is exactly the text of a retired template.
+
+A retired template is a tiddler tagged `$:/tags/nhn/RetiredTemplate` holding the old wording verbatim. The plugin ships the one NHN replaced in September 2026 ([[$:/plugins/intertwingled-innovations/nhn/retired-templates/review-2026-01]]). The next time the template changes, copy the outgoing text into another such tiddler; nothing else needs editing.
+
+The list is also the check to run //before// swapping the template in a wiki: with the plugin installed and the old `mal` still in place, it names every review that the swap would turn from «Kun mal» into written.
 
 !! Lists glued to a paragraph
 

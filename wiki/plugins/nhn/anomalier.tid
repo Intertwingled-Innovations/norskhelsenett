@@ -156,3 +156,15 @@ Slett&#32;<$count filter="[function[nhn-drafts-disposable]]"/>&#32;utkast
 <p class="nhn-arkiv-none">Ingen utkast å slette.</p>
 <% endif %>
 </div>
+
+!! 11. Gjennomganger som fortsatt er en tidligere mal
+
+Malen for forretningsgjennomgang ble endret i september 2026. En gjennomgang som ble opprettet fra den gamle malen og aldri fylt ut, er ikke lenger lik malen, og ToDo-listen regner den derfor som skrevet. Disse gjennomgangene inneholder bare teksten fra en tidligere mal og bør fylles ut eller slettes.
+
+Listen er også sjekken før malen byttes: så lenge den gamle malen fortsatt er i bruk, viser den hvilke gjennomganger som ville gått fra «Kun mal» til skrevet.
+
+''Gjennomganger som bare inneholder en tidligere mal:'' <$count filter="[function[nhn-reviews-retired-template]]"/>
+
+<div class="nhn-anomaly-list">
+<$list filter="[function[nhn-reviews-retired-template]]"><$link/><br></$list>
+</div>

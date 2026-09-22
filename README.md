@@ -19,7 +19,7 @@ npm run serve  # editable server at http://127.0.0.1:8080
 npm run build  # static single-file wiki → build/index.html (no sync plugins)
                # + importable plugin JSONs → build/plugins/{forms,nhn}.json
 
-npm test       # run the plugin test suite (218 tests, ~30s)
+npm test       # run the plugin test suite (238 tests, ~30s)
                # npm test -- <pattern> selects by file, suite or name
 ```
 

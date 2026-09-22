@@ -30,11 +30,12 @@ The naming convention is strict: `forms-*` is mechanism and carries no domain kn
 
 ### To-do lists
 
-Bound by the caller: `todo-items`, `todo-prior-items`, `todo-member`, `todo-attribution` (a function *name*, invoked dynamically), `todo-template`, and the rolled-up `todo-set-done` / `todo-set-copy` / `todo-set-template`.
+Bound by the caller: `todo-items`, `todo-prior-items`, `todo-member`, `todo-attribution` (a function *name*, invoked dynamically), `todo-template`, optionally `todo-seed` (a function *name* giving an item's seeded text, for when seeding is more than a copy of the template), and the rolled-up `todo-set-done` / `todo-set-copy` / `todo-set-template`.
 
 | Operation | Yields |
 |---|---|
 | `forms-todo-items` / `forms-todo-item` | The items belonging to the current member |
+| `forms-todo-seed-texts` | The texts an item counts as unwritten against: `todo-template`'s text, plus whatever `todo-seed` yields |
 | `forms-todo-state` | One item's state: `template`, `copy` or `done` — empty text reads as `template`, never `done` |
 | `forms-todo-status` | A member's status, best-first: `done` > `copy` > `template` > `missing` |
 | `forms-todo-with-state(state)` | Members holding an item in that state — one pass over the period |
@@ -97,6 +98,9 @@ The Leveranserapport adds `nhn-report-prefix` — the `MM/ÅÅ` display prefix f
 - `nhn-max-year` — the latest year tag, which is what stops archiving hiding something still current.
 - `nhn-form-*` — what the guided forms derive rather than ask for: a chosen service settles `TjenesteID`, the division tag and the `Styring …` tag (through a lookup table, because the two families disagree on casing).
 - `nhn-template-text` — the `mal` tiddler, which the review to-do list passes as `todo-template`.
+- `nhn-review-seed(service)` — a new review's text: the template, then the service's Power BI link (`nhn-powerbi-anchor`). Both the review form's body and the review to-do list use it; the list passes `nhn-review-seed-of`, the same seed for an existing review, as `todo-seed`.
+- `nhn-reviews-retired-template` — reviews whose text is exactly a retired template (tagged `$:/tags/nhn/RetiredTemplate`): unwritten, but read as written by the ToDo list once the template changed. Listed on Anomalier.
+- `nhn-powerbi-url` / `nhn-powerbi-caption` — the report address and link text on a service (fields named by `nhn-powerbi-field` / `nhn-powerbi-caption-field`); `nhn-powerbi-invalid` is a stored address that fails the check, for the warning. `nhn-powerbi-source(service,reviews)` is the latest review with a link, which Tjenesteeiere offers as a suggestion and `nhn-powerbi-apply-suggestions` stores.
 
 ## Requirement → operations
 
@@ -107,7 +111,7 @@ The Leveranserapport adds `nhn-report-prefix` — the `MM/ÅÅ` display prefix f
 | **3.3 / Extract 1** | ✓ `nhn-extract-governance-set` → `forms-csv` with the governance column spec |
 | **3.3 / Extract 2** | ✓ `nhn-extract-services-set` → `forms-csv` with the services column spec |
 | **3.4** Summaries | ✓ `forms-grouped-view` over a catalogue of sets and group paths |
-| **3.5** ToDo review | ✓ `forms-todo-status` per service per period, attributed by `nhn-review-service` |
+| **3.5** ToDo review | ✓ `forms-todo-status` per service per period, attributed by `nhn-review-service`, compared against `nhn-review-seed-of` |
 | **3.6** ToDo OKRs | ✓ the same engine per year, attributed by `nhn-servicename`, with no template |
 | **3.7** Periodisation | ✓ `nhn-in-year-scope` for navigation; `nhn-excluded` (archived + `mal` + drafts) subtracted everywhere, applied from the Arkiv page |
 | **3.8** Access control | Server-side, not a plugin concern — see D5 in [architecture.md](architecture.md) |

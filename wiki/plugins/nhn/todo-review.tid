@@ -36,7 +36,7 @@ caption: ToDo gjennomgang
 Tjenester som mangler månedens forretningsgjennomgang. «Kun mal» betyr at gjennomgangen finnes, men teksten er fortsatt malen — ingen har skrevet noe ennå.
 
 <$let now-ord=<<now "0MM">> nhn-year-now=<<now "YYYY">>
-	todo-attribution="nhn-review-service" todo-template={{{ [function[nhn-template-text]] }}}>
+	todo-attribution="nhn-review-service" todo-template={{{ [function[nhn-template-text]] }}} todo-seed="nhn-review-seed-of">
 <$let now-month={{{ [function[nhn-form-months]] :filter[function[nhn-month-ord]compare:number:eq<now-ord>] }}}
 	todo-year={{{ [[$:/state/nhn/todo/year]get[text]] :else[<nhn-year-now>] }}}
 	todo-month={{{ [[$:/state/nhn/todo/month]get[text]] :else[<now-month>] }}}

@@ -35,7 +35,7 @@ Set per year, at each level of the governance structure:
 ### 3. Deliveries (Leveranse) and the monthly business review
 
 - Work runs in 3-week sprints. Each delivery is a **`Leveranse`** tiddler (576), tagged with the year, the month, and the OKR or governance item it belongs to (again, by tagging that item's title).
-- Each **month**, every service owner (`Tjenesteeier`) writes a short **business-review** tiddler for their service, summarising business change, economics and a severity flag of 1–3. These are titled `NN <Service> - hovedtrekk og endringer <month> <year>`, where `NN` (01–12) is the month number.
+- Each **month**, every service owner (`Tjenesteeier`) writes a short **business-review** tiddler for their service, summarising business change, economics and a severity flag of 1–3. These are titled `NN <Service> - hovedtrekk og endringer <month> <year>`, where `NN` (01–12) is the month number. Most end with a link to the service's Power BI finance report. The template was reworded in September 2026: the finance section became labelled lines (Finansieringskilde, Ramme for året, Budsjett, Årsprognose, Runrate …) instead of questions, so reviews written before then follow the older shape.
 
 ## Tag taxonomy
 
@@ -60,6 +60,7 @@ Resolved against the snapshot — these are the facts the plugins are built on:
 - **`Forretningsmessig endring:N` is a *tag*, not a field.** The severity projection reads it from tags.
 - **The template marker is the `mal` tag.** There is currently one canonical template (`01 MAL Tjenestenavn - hovedtrekk og endringer januar 2026`) whose title also contains "MAL", but detection should use the tag, not title inference.
 - **There is no `Division` field.** "Division" is the `Divisjon Helsepersonell` tag.
+- **The Power BI report is a new field the plugins add**: `powerbi` on the service tiddler holds the address of the service's finance report, and `powerbi-tekst` optionally holds the link text (the names are set by `nhn-powerbi-field` / `nhn-powerbi-caption-field`). Before this, the address existed only inside review texts, copied from month to month: 1,043 `<a href="https://app.powerbi.com/…">` anchors, plus bare URLs in 18 reviews. **No service carries the field in the snapshot**; the Tjenesteeiere page suggests an address for 44 of the 60 services from their latest review. Suggestions are read from anchors only, so the two services whose address appears only as a bare URL (Kjernejournal Pasientens legemidler, Støtte og hjelp til leverandører) need it entered by hand.
 - **Service Owner (Tjenesteeier) is a new field the plugins add**, named by `nhn-owner-field` (default `tjenesteeier`) and edited on the service tiddler or in bulk on the **Tjenesteeiere** page. **No tiddler in the snapshot carries it yet**, so anything grouped or filtered by owner is currently empty.
 
 ## Naming conventions

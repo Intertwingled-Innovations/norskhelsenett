@@ -56,5 +56,5 @@ caption: Forretningsgjennomgang
 			"filter": "[function[nhn-form-period]]"
 		}
 	],
-	"body": "[function[nhn-template-text]get[text]]"
+	"body": "[function[nhn-form-review-body]]"
 }

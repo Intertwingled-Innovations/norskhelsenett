@@ -1,5 +1,5 @@
 created: 20260324110945009
-modified: 20260408124750331
+modified: 20260915120000000
 revision: 0
 tags: 2026 Januar [[Styring Ekstern tjeneste]] [[Divisjon Helsepersonell]] [[Forretningsmessig endring:1]] mal
 title: 01 MAL Tjenestenavn - hovedtrekk og endringer januar 2026
@@ -8,20 +8,20 @@ type: text/vnd.tiddlywiki
 ! Hovedtrekk og endringer
 Beskriv hovedtrekk og endringer på tjenesten
 
-''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 1''
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større)''
 
 Konsekvens av forretningsmessig endring:
 
-
 ! Prognose på penger og ressurser
 
-* Hvordan finansieres tjenesten?
-* Hva er rammen for året?
-* Hvordan ligger vi an hittil i år opp i mot prognoser og planlagte oppgaver?
-* Hvordan ligger vi an i prognose for året opp i mot finansieringsrammer for året?
-* Hvordan er runrate for året opp i mot prognose og finansieringsramme for året? Hva er årsak til avvik?
-* Status ressursbehov/kapasitet?
+* Finansieringskilde:
+* Ramme for året (disponible midler):
+* Budsjett for året:
+* Årsprognose:
+* Runrate for året: (forklar eventuelle avvik fra årsprognose)
+* Redegjør for status opp mot prognoser og økonomiske rammer for de oppgavene vi skal levere.
 
+* Status ressursbehov/kapasitet:
+* Andre opplysninger som bør nevnes:
 
-Link til økonomirapport i powerbi 
-
+Link til økonomirapport i powerbi:

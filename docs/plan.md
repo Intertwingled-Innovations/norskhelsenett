@@ -81,6 +81,7 @@ Phase 7  Data-quality cleanup           ◐ 2 of 10 classes fixed, rest needs si
 Phase 8  §3.8 Access control            ─ documentation, not code
 Phase 9  Leveranserapport (post-brief)   ✓ done
 Phase 10 Demo follow-ups (post-brief)    ─ three small items, one needs an answer
+Phase 11 New review template + Power BI link (post-brief)  ✓ done
 ```
 
 Phases 6–8 are independent of the 1→5 spine and can be interleaved when the spine is blocked on client input.
@@ -379,6 +380,34 @@ Three things the 4 September demo and the review behind it turned up. None is ur
 **The objective hop.** 12 deliveries in the mai–august range link to no service, and 8 of them are tagged a `Målsetting` that is *itself* tagged the service. `nhn-report-service-of` could follow that one hop and place them without anyone touching the data. Whether it should is a modelling question — a delivery attributed through its objective is a slightly weaker claim than one tagged the service directly — so it is question 8, not a bug. The remaining 4 belong to national `Tiltak` / `Satsning for fart` initiatives that no service owns; those want a decision about whether a board report carries an initiatives section.
 
 **`ÅÅ/MM` titles get dated twice.** The report prepends `MM/ÅÅ` unless the title already starts with it. Four deliveries under *Helsenettet.no og Medlemstjenesten* are titled the other way round (`26/04-02 …`), so the check misses and they render as `04/26 26/04-02 …`. One of them is tagged Mai while its title says 06, so the two dates disagree as well. Either widen the match to accept `ÅÅ/MM`, or treat the titles as a cleanup class — the second is more honest, since the wiki now holds two title conventions and only one of them is intended.
+
+## Phase 11 — New business-review template and the Power BI link (S, post-brief) — ✓ done
+
+In September 2026 NHN sent a Word file (`Tiddliwiki template forretningsgjennomgang.docx`) replacing the template for the monthly review. It asked for two things.
+
+**The new wording.** The six open questions under *Prognose på penger og ressurser* ("Hvordan finansieres tjenesten?" …) become labelled lines to fill in: Finansieringskilde, Ramme for året (disponible midler), Budsjett for året, Årsprognose, Runrate for året, a status against forecasts, then Status ressursbehov/kapasitet and Andre opplysninger. The severity line loses its pre-filled `1`, since the form asks for severity and tags it. The template is content, the `mal` tiddler, so the change is to [its .tid file](../wiki/tiddlers/01%20MAL%20Tjenestenavn%20-%20hovedtrekk%20og%20endringer%20januar%202026.tid), and **the live wiki needs the same edit**: the plugins read whichever `mal` tiddler the wiki holds. `NHN_TiddlyWiki.json` is left as exported and will match at the next refresh. No review in the snapshot still holds the old template text unchanged, so no ToDo status moves because of the swap. A test pins the wording, so a snapshot refresh taken before NHN edit their copy reports it rather than quietly bringing the old text back.
+
+**An automatic link to the service's Power BI report.** "Each service has a dedicated Power BI report link that is unchanged from month to month." The link is stored once per service, in a `powerbi` field on the service tiddler (with an optional `powerbi-tekst` for the link text), and the review form appends it under the template's last line, *Link til økonomirapport i powerbi:*. It is written as `<a href="…">…</a>`, the markup of 1,043 existing links; 18 reviews paste a bare URL instead. Details are in [powerbi.tid](../wiki/plugins/nhn/powerbi.tid).
+
+### Decisions
+
+- **Store the address; do not copy it forward from last month's review.** Copying forward needs no data entry, but it reads free text: one deleted line breaks the chain for every later month, and a review can link several reports. A field is config-by-data. It also gives one place to change when a report moves, and 35 of the 48 services with linked reviews have had their address change at least once.
+- **Written into the text, not rendered live.** A live transclusion would update old reviews when an address changed. But it would put macro syntax in the editor, and it would drop out of everything that reads raw text (the extracts, the standalone report). Reviews are monthly records, and the link they were written with is the right one for them to keep.
+- **Suggestions, not a silent backfill.** 44 of the 60 services have a Power BI link in their latest review. [Tjenesteeiere](../wiki/plugins/nhn/manage-owners.tid) shows each suggestion with the review it came from, a *Bruk* button per row, and one button for all services still without a link. The first link in a review is not always the service's own (Verdikjede e-resept's latest review links the multidose report first), so someone should look before accepting.
+
+### The ToDo list had to learn about it
+
+The review ToDo decides a review is "Kun mal" [only the template] by comparing its text exactly with the template. Once the form appends a per-service link, every untouched review of a service with a link would have read as written. So the `forms-todo` engine gained an optional `todo-seed`: the name of a function giving the text an item was seeded with. The review page passes `nhn-review-seed-of`, and the form's body and the ToDo comparison both come from `nhn-review-seed`. `todo-template` still counts too, so a review created before its service got a link still reads as unwritten. One consequence: an untouched review reads as unwritten only while its service's link is unchanged.
+
+### After review
+
+- **Tjenesteeiere was slow to refresh.** Finding each service's source review costs about 170 ms for all 60 services, and the page did it three times, so it rendered in about 550 ms against 27 ms before. Every keystroke in any input on the page paid that again. The *Bruk* button now reads its answer from the row's source review (`nhn-powerbi-found-new`) instead of finding the review a second time, which brings the page to about 420 ms. The remaining two scans (one for the rows, one for the services still without a link) could be merged into one if it is still noticeable.
+- **A mistyped address is now reported.** An address that is not `https://app.powerbi.com/…`, or contains a quote, is still stored but never linked. `nhn-powerbi-invalid` drives a warning next to the input on the service tiddler and on Tjenesteeiere.
+- **Unwritten reviews on the old template.** The snapshot check only covers reviews up to the export. In a live wiki, a review created from the old wording and never written would switch from «Kun mal» to written when the template is swapped. [Anomalier](../wiki/plugins/nhn/anomalier.tid) section 11 lists such reviews, matching them against the old wording, which ships as a retired-template tiddler. **Before swapping `mal` in the live wiki**, install the updated plugin and look at that section: with the old template still in place, it names every review the swap would affect. The first deployment is the GitHub Pages test site, built from the snapshot, where the list is empty.
+- **Bruk no longer overwrites link text.** Applying a suggestion stores the address, and the link text only when the service has none, so a caption typed by hand survives. To take a new suggested caption, clear the field first.
+- **Bare URLs are not read.** The suggestions come from anchors only. The docs now say so, and name the two services that have to be entered by hand.
+
+**A bug on the way:** the guard for a blank `todo-seed` was first written inline as `[<todo-template>…] [<todo-seed>!is[blank]] :then[function<todo-seed>]`. A `:then` acts on everything accumulated before it, so it replaced the template's text instead of adding to it. The existing ToDo test caught it. The guarded call now lives in its own function, and a test pins it.
 
 ## Open questions for NHN
 
