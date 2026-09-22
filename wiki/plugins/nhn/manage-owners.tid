@@ -45,8 +45,10 @@ Hver tjeneste har én økonomirapport i Power BI, og lenken er den samme fra må
 
 Forslagene er hentet fra tjenestens siste gjennomgang som har en Power BI-lenke. Sjekk dem før du bruker dem: en gjennomgang kan lenke til flere rapporter, og forslaget er den første.
 
-<$let reviews={{{ [function[nhn-reviews-all]format:titlelist[]join[ ]] }}}>
-<$let missing={{{ [function[nhn-services]] :filter[function[nhn-powerbi-url],<currentTiddler>count[]match[0]] :filter[function[nhn-powerbi-source],<currentTiddler>,<reviews>] +[format:titlelist[]join[ ]] }}}>
+<$let reviews={{{ [function[nhn-reviews-all]format:titlelist[]join[ ]] }}}
+	nhn-services-list={{{ [function[nhn-services]format:titlelist[]join[ ]] }}}>
+<$let sources={{{ [function[nhn-powerbi-sources],<reviews>] }}}>
+<$let missing={{{ [function[nhn-services]] :filter[function[nhn-powerbi-url],<currentTiddler>count[]match[0]] :filter[<sources>jsonget<currentTiddler>!is[blank]] +[format:titlelist[]join[ ]] }}}>
 <div class="nhn-owner-summary">Tjenester med Power BI-lenke:&#32;<$count filter="[function[nhn-services]] :filter[function[nhn-powerbi-url],<currentTiddler>]"/>&#32;/&#32;<$count filter="[function[nhn-services]]"/></div>
 <% if [enlist<missing>count[]compare:number:gt[0]] %>
 <div class="nhn-owner-import">
@@ -63,7 +65,7 @@ Bruk forslagene for tjenester uten lenke
 </thead>
 <tbody>
 <$list filter="[function[nhn-services]sort[title]]" variable="svc">
-<$let source={{{ [function[nhn-powerbi-source],<svc>,<reviews>] }}}>
+<$let source={{{ [<sources>jsonget<svc>] }}}>
 <tr>
 <td><$transclude $variable="forms-tag-or-link" title=<<svc>>/></td>
 <td><$edit-text tiddler=<<svc>> field=<<nhn-powerbi-field>> tag="input" placeholder="(ingen)" class="nhn-owner-input nhn-powerbi-input"/>
@@ -88,6 +90,7 @@ Bruk forslagene for tjenester uten lenke
 </$list>
 </tbody>
 </table>
+</$let>
 </$let>
 </$let>
 

@@ -419,3 +419,64 @@ h.test("a review that is only a retired template is listed, a written one is not
 h.test("no review in the snapshot is still the retired template", function() {
 	assert.deepEqual(h.wiki().filter("[function[nhn-reviews-retired-template]]"), []);
 });
+
+h.suite("Page speed bindings");
+
+/*
+`nhn-review-title-service` checks a name against every service. Recomputing
+`nhn-services` for each review cost Tjenesteeiere about 250 ms, so pages bind
+the list once as `nhn-services-list`. The answer must not depend on it.
+*/
+h.test("a bound service list gives every review the same service as computing it", function() {
+	var w = h.wiki(),
+		reviews = w.filter("[function[nhn-reviews-all]]"),
+		list = w.$tw.utils.stringifyList(w.filter("[function[nhn-services]]")),
+		titleOnly = 0;
+	reviews.forEach(function(r) {
+		var unbound = w.filter("[function[nhn-review-service]]", {currentTiddler: r}),
+			bound = w.filter("[function[nhn-review-service]]", {currentTiddler: r, "nhn-services-list": list});
+		assert.deepEqual(bound, unbound, r);
+		if(!w.first("[function[nhn-servicename]]", {currentTiddler: r}) && unbound.length) { titleOnly++; }
+	});
+	assert.ok(titleOnly > 0, "no review is attributed by title, so the bound list is never consulted");
+});
+
+/* Not a correctness requirement, since the function falls back, but a pinned performance one. */
+h.test("Tjenesteeiere and both ToDo pages bind nhn-services-list", function() {
+	var w = h.wiki();
+	["Tjenesteeiere", "ToDo forretningsgjennomgang", "ToDo målsettinger"].forEach(function(t) {
+		assert.ok(w.$tw.wiki.getTiddlerText(t).indexOf("nhn-services-list={{{ [function[nhn-services]") !== -1,
+			t + " does not bind nhn-services-list once");
+	});
+});
+
+/*
+Tjenesteeiere finds every service's source review once, as a JSON map, instead
+of once for the count and again per row. The map must say what the per-service
+function says, for every service, including titles with quotes and parentheses.
+*/
+h.test("the source map agrees with the per-service source for every service", function() {
+	var w = h.wiki(),
+		reviews = w.$tw.utils.stringifyList(w.filter("[function[nhn-reviews-all]]")),
+		map = JSON.parse(w.first("[function[nhn-powerbi-sources],<r>]", {r: reviews})),
+		services = w.filter("[function[nhn-services]]"),
+		found = 0;
+	assert.deepEqual(Object.keys(map).sort(), services.slice().sort());
+	services.forEach(function(s) {
+		var one = w.first("[function[nhn-powerbi-source],<s>,<r>]", {s: s, r: reviews});
+		assert.equal(map[s], one, s);
+		if(one) { found++; }
+	});
+	assert.equal(found, 44, "the snapshot's suggestion count moved");
+});
+
+h.test("Tjenesteeiere counts and lists the suggestions from the map", function() {
+	var w = h.wiki(),
+		html = w.render("{{Tjenesteeiere}}"),
+		rows = html.split("<tr").filter(function(r) { return r.indexOf("nhn-powerbi-input") !== -1; });
+	assert.ok(/44(&#32;|\s)*tjenester uten lenke har et forslag/.test(html.replace(/<[^>]+>/g, "")),
+		"the bulk button does not count 44 suggestions");
+	assert.equal(rows.length, 60);
+	assert.equal(rows.filter(function(r) { return /nhn-powerbi-source/.test(r); }).length, 44,
+		"the rows do not show 44 suggestions");
+});

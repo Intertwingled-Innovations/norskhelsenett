@@ -99,6 +99,7 @@ The Leveranserapport adds `nhn-report-prefix` — the `MM/ÅÅ` display prefix f
 - `nhn-form-*` — what the guided forms derive rather than ask for: a chosen service settles `TjenesteID`, the division tag and the `Styring …` tag (through a lookup table, because the two families disagree on casing).
 - `nhn-template-text` — the `mal` tiddler, which the review to-do list passes as `todo-template`.
 - `nhn-review-seed(service)` — a new review's text: the template, then the service's Power BI link (`nhn-powerbi-anchor`). Both the review form's body and the review to-do list use it; the list passes `nhn-review-seed-of`, the same seed for an existing review, as `todo-seed`.
+- `nhn-known-services` — `nhn-services`, read from the page-bound `nhn-services-list` when there is one. Used by `nhn-review-title-service`; pages that attribute many reviews bind the list once.
 - `nhn-reviews-retired-template` — reviews whose text is exactly a retired template (tagged `$:/tags/nhn/RetiredTemplate`): unwritten, but read as written by the ToDo list once the template changed. Listed on Anomalier.
 - `nhn-powerbi-url` / `nhn-powerbi-caption` — the report address and link text on a service (fields named by `nhn-powerbi-field` / `nhn-powerbi-caption-field`); `nhn-powerbi-invalid` is a stored address that fails the check, for the warning. `nhn-powerbi-source(service,reviews)` is the latest review with a link, which Tjenesteeiere offers as a suggestion and `nhn-powerbi-apply-suggestions` stores.
 

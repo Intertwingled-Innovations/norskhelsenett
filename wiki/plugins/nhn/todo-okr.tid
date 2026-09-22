@@ -43,7 +43,7 @@ caption: ToDo målsettinger
 
 Tjenester som mangler målsetting for året. Målsettinger settes per år, så en tjeneste som er aktiv — den leverer forretningsgjennomganger eller har målsettinger — men mangler målsetting for det valgte året, står oppført her.
 
-<$let nhn-year-now=<<now "YYYY">> todo-attribution="nhn-servicename" todo-template="">
+<$let nhn-year-now=<<now "YYYY">> todo-attribution="nhn-servicename" todo-template="" nhn-services-list={{{ [function[nhn-services]format:titlelist[]join[ ]] }}}>
 <$let todo-year={{{ [[$:/state/nhn/todo/okr-year]get[text]] :else[<nhn-year-now>] }}}
 	todo-scope={{{ [[$:/state/nhn/todo/okr-scope]get[text]] :else[[aktive]] }}}>
 <$let todo-prev-year={{{ [<todo-year>subtract[1]] }}}>

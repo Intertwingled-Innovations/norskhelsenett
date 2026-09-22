@@ -3,7 +3,8 @@ tags: $:/tags/Global
 
 \whitespace trim
 \function nhn-template-text() [[mal]tagging[]first[]]
-\function nhn-review-title-service() [<currentTiddler>search-replace:g:regexp[^\d+\s+],[]search-replace:g:regexp[\s*-\s*hovedtrekk.*$],[]] :intersection[function[nhn-services]]
+\function nhn-known-services() [enlist<nhn-services-list>] :else[function[nhn-services]]
+\function nhn-review-title-service() [<currentTiddler>search-replace:g:regexp[^\d+\s+],[]search-replace:g:regexp[\s*-\s*hovedtrekk.*$],[]] :intersection[function[nhn-known-services]]
 \function nhn-review-service() [function[nhn-servicename]] :else[function[nhn-review-title-service]]
 \function nhn-retired-template-texts() [all[shadows+tiddlers]tag[$:/tags/nhn/RetiredTemplate]get[text]trim[]]
 \function nhn-is-retired-template() [<currentTiddler>get[text]trim[]] :intersection[function[nhn-retired-template-texts]]
@@ -29,6 +30,8 @@ Attribution for the ToDo lists (brief §3.5 and §3.6). The status machinery its
 
 # the **service-name tag**, when that tag has a tiddler behind it that is itself tagged a service type (`nhn-servicename`);
 # otherwise the name **parsed out of the title**, `NN <Tjeneste> - hovedtrekk og endringer …`, but //only if it is exactly a member of `nhn-services`// — not merely something carrying a service-type tag, which would let an under-tagged non-service (no business unit, or itself a month-prefixed review) absorb the attribution.
+
+The second step compares the name with every service. Working out `nhn-services` costs about 3 ms, and doing that for each review with no service tag made this the slowest thing on [[Tjenesteeiere]] and the review ToDo. So `nhn-known-services` reads the list from the variable `nhn-services-list` when the page has bound it (Tjenesteeiere and both ToDo pages do), and computes it otherwise. A bare call is slower but never wrong.
 
 The second is not a guess. 174 of the 781 reviews carry no recognisable service tag, and for 14 of them the title names a service that plainly exists — without the fallback those 14 would be reported as missing every month, which is the fastest way to make people stop believing a ToDo list. The remaining 160 name services that have no tiddler at all (`Kjernejournal` is a tag, not a tiddler), so they belong to no row and are left alone rather than guessed at.
 

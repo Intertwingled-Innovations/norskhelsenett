@@ -1,7 +1,7 @@
 # Testing
 
 ```sh
-npm test              # run everything (238 tests, ~30s)
+npm test              # run everything (242 tests, ~30s)
 npm test -- export    # run only tests matching "export" (file, suite or test name)
 ```
 

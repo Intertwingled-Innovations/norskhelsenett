@@ -19,6 +19,8 @@ tags: $:/tags/Global
 \function nhn-review-month-ord() [function[nhn-month-raw]] :map[function[nhn-month-ord]]
 \function nhn-review-sortkey() [function[nhn-year-raw]first[]multiply[100]add<nhn-review-month-ord>]
 \function nhn-powerbi-source(service,reviews) [<service>tagging[]] [enlist<reviews>search:title:literal<service>] +[unique[]] :intersection[enlist<reviews>] :filter[function[nhn-review-service]match<service>] :filter[function[nhn-powerbi-found-url]] :sort:number:reverse[function[nhn-review-sortkey]] +[first[]]
+\function nhn-powerbi-source-here() [function[nhn-powerbi-source],<currentTiddler>,<reviews>]
+\function nhn-powerbi-sources(reviews) [function[nhn-known-services]] :reduce[<accumulator>!is[blank]else[{}]jsonset<currentTiddler>,<nhn-powerbi-source-here>]
 \function nhn-powerbi-found-new(service) [function[nhn-powerbi-found-url]] -[function[nhn-powerbi-url],<service>]
 \function nhn-powerbi-suggestion-new(service,reviews) [function[nhn-powerbi-source],<service>,<reviews>] :map:flat[function[nhn-powerbi-found-new],<service>]
 
@@ -62,7 +64,9 @@ Nearly every existing review already links its service's report, so the addresse
 
 This is a //suggestion//, shown for someone to accept, and never applied silently: a review can link several reports, and the first one is not always the service's own (a review of Verdikjede e-resept links the multidose report first). Most services' address has also changed at least once, which is why the //latest// review is the one asked.
 
-`nhn-powerbi-found-new(service)` is the address found in the current review when it differs from the one `service` already has — what [[Tjenesteeiere]] offers a //Bruk// button for. The page evaluates it with each row's source review as `currentTiddler`, having already found that review for the row: finding it is the expensive part (about 170 ms for all 60 services), and computing it once for the row and again for the button made the page several times slower to refresh. `nhn-powerbi-suggestion-new(service,reviews)` is the same answer starting from the service.
+`nhn-powerbi-found-new(service)` is the address found in the current review when it differs from the one `service` already has — what [[Tjenesteeiere]] offers a //Bruk// button for. The page evaluates it with each row's source review as `currentTiddler`, having already found that review for the row. `nhn-powerbi-suggestion-new(service,reviews)` is the same answer starting from the service.
+
+`nhn-powerbi-sources(reviews)` is every service's source review at once, as a JSON object from service title to review title (empty where there is none). Finding the sources is the expensive part, about 100 ms for all 60 services. [[Tjenesteeiere]] needs them twice, for the count of services a suggestion could fill and for the rows, so it computes this map once and reads both from it. `nhn-powerbi-source-here` is `nhn-powerbi-source` for the current tiddler, the form a `:reduce` operand can call.
 
 `nhn-powerbi-apply-suggestions(services,reviews)` stores the suggested address on each of `services` that has one, and the suggested link text only where the service has none yet; services with no suggestion are left alone. Keeping existing text protects a caption someone typed by hand. The cost: a caption stored by an earlier suggestion is not replaced if the report is later renamed, so clear the field first to take the new one. It is shared with the page's buttons so the tests exercise the real actions rather than a copy of them.
 
