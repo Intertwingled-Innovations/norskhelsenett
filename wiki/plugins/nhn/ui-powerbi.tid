@@ -1,0 +1,27 @@
+title: $:/plugins/intertwingled-innovations/nhn/ui/ViewTemplate/powerbi
+tags: $:/tags/ViewTemplate
+list-after: $:/core/ui/ViewTemplate/subtitle
+
+\whitespace trim
+<% if [<currentTiddler>function[nhn-kind]match[service]] %>
+<$let svc=<<currentTiddler>> url={{{ [function[nhn-powerbi-url],<currentTiddler>] }}}>
+<% if [<url>!is[blank]] %>
+<div class="nhn-powerbi-header">
+<span class="nhn-owner-label">Power BI:</span>&#32;<a href=<<url>> class="tc-tiddlylink-external" target="_blank" rel="noopener noreferrer"><$text text={{{ [function[nhn-powerbi-caption],<svc>] }}}/></a>
+</div>
+<% else %>
+<$let reviews={{{ [function[nhn-reviews-all]format:titlelist[]join[ ]] }}}
+	nhn-services-list={{{ [function[nhn-services]format:titlelist[]join[ ]] }}}>
+<$let source={{{ [function[nhn-powerbi-source],<svc>,<reviews>] }}}>
+<% if [<source>!is[blank]] %>
+<div class="nhn-powerbi-header nhn-powerbi-suggested">
+<span class="nhn-owner-label">Power BI:</span>&#32;<$let currentTiddler=<<source>>><a href={{{ [function[nhn-powerbi-found-url]] }}} class="tc-tiddlylink-external" target="_blank" rel="noopener noreferrer"><$text text={{{ [function[nhn-powerbi-found-caption]] :else[[(uten tekst)]] }}}/></a>
+&#32;<span class="nhn-powerbi-source">forslag fra&#32;<$link to=<<source>>><$text text={{{ [function[nhn-month-raw]lowercase[]] [function[nhn-year-raw]] +[join[ ]] }}}/></$link></span></$let>
+&#32;<$button class="tc-btn-invisible nhn-powerbi-use" tooltip="Lagre lenken på tjenesten, så nye gjennomganger får den" actions="""<$transclude $variable="nhn-powerbi-apply-suggestions" services={{{ [<svc>format:titlelist[]] }}} reviews=<<reviews>>/>""">Bruk</$button>
+</div>
+<% endif %>
+</$let>
+</$let>
+<% endif %>
+</$let>
+<% endif %>

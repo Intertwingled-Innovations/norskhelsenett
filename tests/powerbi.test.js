@@ -480,3 +480,59 @@ h.test("Tjenesteeiere counts and lists the suggestions from the map", function()
 	assert.equal(rows.filter(function(r) { return /nhn-powerbi-source/.test(r); }).length, 44,
 		"the rows do not show 44 suggestions");
 });
+
+h.suite("Power BI link on the service");
+
+/* The service tiddler's own view: the header segment, rendered as the story river would. */
+function header(wiki, title) {
+	return wiki.render('<$transclude $tiddler="' + NHN + '/ui/ViewTemplate/powerbi"/>', {currentTiddler: title});
+}
+
+h.test("a stored link shows as a link, with its text", function() {
+	var w = h.fixtureWiki();
+	withFields(w, SERVICE, {powerbi: URL, "powerbi-tekst": "Oversikt Testrapport (Power BI)"}, function() {
+		var html = header(w, SERVICE);
+		assert.ok(html.indexOf("href=\"" + URL.replace(/&/g, "&amp;") + "\"") !== -1, "no link to the stored address: " + html);
+		assert.ok(html.indexOf("Oversikt Testrapport (Power BI)") !== -1, "the link text is missing");
+		assert.ok(!/forslag/.test(html), "a stored link is shown as a suggestion");
+	});
+});
+
+/*
+Suggestions are computed from the reviews, so the header shows a link before
+anyone has stored one — marked as a suggestion, with Bruk to store it, because
+new reviews only get a stored link.
+*/
+h.test("with no stored link the latest review's link shows as a suggestion", function() {
+	var w = h.fixtureWiki(),
+		made = addReview(w, "12 " + SERVICE + " - hovedtrekk og endringer desember 2031", SERVICE,
+			"Tekst\n\n" + anchor(URL, "Oversikt Testrapport (Power BI)")),
+		before = w.$tw.wiki.getTiddler(SERVICE);
+	try {
+		var html = header(w, SERVICE);
+		assert.ok(html.indexOf("href=\"" + URL.replace(/&/g, "&amp;") + "\"") !== -1, "no link to the suggested address: " + html);
+		assert.ok(/forslag fra/.test(html) && html.indexOf("desember 2031") !== -1, "not marked as a suggestion from its review");
+		assert.ok(/nhn-powerbi-use/.test(html), "no Bruk button");
+		w.invokeActions('<$transclude $variable="nhn-powerbi-apply-suggestions" services=<<s>> reviews=<<r>>/>',
+			{s: w.$tw.utils.stringifyList([SERVICE]), r: w.$tw.utils.stringifyList(w.filter("[function[nhn-reviews-all]]"))});
+		assert.ok(!/forslag/.test(header(w, SERVICE)), "still a suggestion once stored");
+	} finally {
+		w.$tw.wiki.deleteTiddler(made);
+		w.$tw.wiki.addTiddler(before);
+	}
+});
+
+h.test("the header shows nothing without a link or a suggestion, and nothing on other tiddlers", function() {
+	var w = h.fixtureWiki();
+	assert.ok(!/nhn-powerbi-header/.test(header(w, OTHER)), "a service with no link or suggestion shows a header");
+	// a non-service carrying the field (a review, say) must not get the service header
+	var review = w.filter("[function[nhn-reviews-all]]")[0];
+	withFields(w, review, {powerbi: URL}, function() {
+		assert.ok(!/nhn-powerbi-header/.test(header(w, review)), "a review shows the service header");
+	});
+});
+
+h.test("a snapshot service with no stored link shows its suggestion", function() {
+	var html = header(h.wiki(), "Autentisering og autorisasjon");
+	assert.ok(/forslag fra/.test(html) && html.indexOf("juni 2026") !== -1, html.replace(/<[^>]+>/g, " "));
+});

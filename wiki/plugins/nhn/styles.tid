@@ -46,6 +46,7 @@ code-body: yes
 }
 .nhn-powerbi-input { min-width: 20em; }
 .nhn-powerbi-source { color: <<colour muted-foreground>>; font-size: 0.9em; }
+.nhn-powerbi-header { margin: 0.25em 0 0.5em; }
 .nhn-powerbi-warning { color: #e85800; font-size: 0.9em; margin-top: 0.25em; }
 .nhn-powerbi-use { color: <<colour primary>>; font-weight: 600; }
 .nhn-owner-summary { color: <<colour muted-foreground>>; margin: 0.5em 0; }

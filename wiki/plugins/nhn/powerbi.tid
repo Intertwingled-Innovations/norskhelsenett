@@ -48,6 +48,8 @@ Each service has one Power BI report for its finances, and the address does not 
 
 Both are set on the service tiddler itself or on [[Tjenesteeiere]].
 
+The service tiddler shows the link under its title ([[$:/plugins/intertwingled-innovations/nhn/ui/ViewTemplate/powerbi]]). With no link stored, it shows the latest review's link instead, marked //forslag fra <måned år>// with a //Bruk// button to store it. A suggestion is only displayed: new reviews get the stored link, never a suggestion, because the first link in a review is not always the service's own report. Finding the suggestion costs about 20 ms per open service, and only for services with no link stored.
+
 `nhn-powerbi-url(service)` is the address, but only if it is a Power BI address and contains no `"` — it is written into an HTML attribute, and a stray quote would break the review's markup rather than just the link. `nhn-powerbi-invalid(service)` is the stored address when it fails that test, so the view template and [[Tjenesteeiere]] can say so next to the input: otherwise a mistyped address is stored, and new reviews silently go without a link. `nhn-powerbi-caption(service)` is the link text, and `nhn-powerbi-anchor(service)` the finished `<a href="…">…</a>`. It is HTML rather than a `[[text|url]]` wikilink because that is how the existing reviews write it — 1,043 anchors, the same markup almost throughout — so new reviews look like the old ones in the editor.
 
 !! Seeding a new review
