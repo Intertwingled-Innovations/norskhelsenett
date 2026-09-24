@@ -65,10 +65,10 @@ tags: $:/tags/Global
 \procedure forms-edit(def,state)
 <$let forms-def=<<def>> forms-state=<<state>> forms-def-json={{{ [<def>get[text]] }}}
 	target={{{ [<state>get[forms-target]] }}}>
-<$wikify name="forms-raw-title" text={{{ [<forms-def-json>jsonget[title]get[text]] }}} mode="inline" output="text">
-<$let newtitle={{{ [<forms-raw-title>trim[]] }}} missing={{{ [function[forms-missing-names]count[]] }}}>
 <div class="forms-form forms-form-edit">
 <$list filter="[<forms-def-json>jsonindexes[inputs]]" variable="ii"><$transclude $variable="forms-field" index=<<ii>>/></$list>
+<$wikify name="forms-raw-title" text={{{ [<forms-def-json>jsonget[title]get[text]] }}} mode="inline" output="text">
+<$let newtitle={{{ [<forms-raw-title>trim[]] }}} missing={{{ [function[forms-missing-names]count[]] }}}>
 <% if [<newtitle>!is[blank]!match<target>] %>
 <div class="forms-form-preview">
 <% if [<newtitle>is[tiddler]] %>
@@ -96,9 +96,9 @@ tags: $:/tags/Global
 <$text text={{{ [function[forms-label],[cancel]] }}}/>
 </$button>
 </div>
-</div>
 </$let>
 </$wikify>
+</div>
 </$let>
 \end
 

@@ -58,10 +58,10 @@ tags: $:/tags/Global
 
 \procedure forms-form(def,state)
 <$let forms-def=<<def>> forms-state=<<state>> forms-def-json={{{ [<def>get[text]] }}}>
-<$wikify name="forms-raw-title" text={{{ [<forms-def-json>jsonget[title]get[text]] }}} mode="inline" output="text">
-<$let newtitle={{{ [<forms-raw-title>trim[]] }}} missing={{{ [function[forms-missing-names]count[]] }}}>
 <div class="forms-form">
 <$list filter="[<forms-def-json>jsonindexes[inputs]]" variable="ii"><$transclude $variable="forms-field" index=<<ii>>/></$list>
+<$wikify name="forms-raw-title" text={{{ [<forms-def-json>jsonget[title]get[text]] }}} mode="inline" output="text">
+<$let newtitle={{{ [<forms-raw-title>trim[]] }}} missing={{{ [function[forms-missing-names]count[]] }}}>
 <div class="forms-form-preview"><span class="forms-form-preview-label"><$text text={{{ [function[forms-label],[preview]] }}}/></span>&#32;<code><$text text={{{ [<newtitle>!is[blank]then<newtitle>else[…]] }}}/></code></div>
 <div class="forms-form-actions">
 <% if [<missing>!match[0]] %>
@@ -78,9 +78,9 @@ tags: $:/tags/Global
 <% endif %>
 <$button class="tc-btn-invisible forms-form-reset"><$action-deletetiddler $tiddler=<<forms-state>>/><$text text={{{ [function[forms-label],[reset]] }}}/></$button>
 </div>
-</div>
 </$let>
 </$wikify>
+</div>
 </$let>
 \end
 
@@ -122,6 +122,8 @@ The title template, the tags filter and the field filters are all evaluated with
 * **The title is shown before you commit**, computed by the same template that will be used.
 * **An existing title is never overwritten and never silently renamed.** `$action-createtiddler` would quietly create "X 1"; this refuses and offers to open the existing tiddler instead, because a duplicate monthly review is worse than a rejected click.
 * Creation stamps `created` and `modified`, and clears the form.
+
+The inputs are rendered //outside// the `$wikify` that computes the preview. A `$wikify` re-renders its children whenever its text changes, and the title is usually built from what was typed, so an input placed inside it was destroyed and rebuilt on every keystroke and the caret jumped out of the field. The markup is the same either way; the tests in `forms.test.js` compare widget identity across a refresh.
 
 !! Labels
 

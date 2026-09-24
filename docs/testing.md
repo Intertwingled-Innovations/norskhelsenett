@@ -1,7 +1,7 @@
 # Testing
 
 ```sh
-npm test              # run everything (246 tests, ~30s)
+npm test              # run everything (248 tests, ~30s)
 npm test -- export    # run only tests matching "export" (file, suite or test name)
 ```
 
@@ -30,7 +30,7 @@ So the suite leans towards the failure modes that are invisible at runtime: does
 | `tests/selectors.test.js` | The sets behind the trees and extracts, and extract filtering |
 | `tests/export.test.js` | The keystone: `(set, columns)` → CSV, and D4's UTF-8 BOM |
 | `tests/summaries.test.js` | The §3.4 view catalogue, its projections, and the grouped-view picker |
-| `tests/forms.test.js` | The §3.2 form definitions, and creation and editing driven end to end |
+| `tests/forms.test.js` | The §3.2 form definitions, creation and editing driven end to end, and that typing in a field does not rebuild the input |
 | `tests/todo.test.js` | §3.5/§3.6 attribution, status, both ToDo populations, and the owner importer |
 | `tests/powerbi.test.js` | The business-review template's wording, the Power BI link a new review is seeded with, the ToDo list still recognising such a review as unwritten, the suggestions read out of earlier reviews, the link on the service tiddler, the warning for a bad address, and the Anomalier list of reviews still holding the retired template |
 | `tests/scope.test.js` | §3.7 archiving, its reversibility, and what the period scope must never hide |
@@ -82,6 +82,8 @@ A third, `h.scratchWiki()`, boots a **fresh, unshared** wiki every call. It is f
 - **Say what broke in the message.** `assert.ok(cond, "…")` costs one line and saves reading the filter back.
 - **Own your fixtures.** A test that edits a snapshot tiddler depends on whatever that tiddler happens to contain, and leaves it changed for whatever runs next. Build what you need through the real creation path, and restore or discard it in a `finally`.
 - **Test the shipped thing, not a copy of it.** Where a page performs logic — the to-do roll-up, say — a helper that reimplements that logic in JavaScript tests the helper. Render the page and assert on what it produced.
+
+- **Never `assert.equal` two widgets or DOM nodes.** On failure Node builds a diff of both operands, and a widget tree is deeply cyclic, so the runner exhausts the heap and dies without reporting anything — a failing test that looks like a hung one. Compare identity yourself: `assert.ok(a === b, "message")`.
 
 ## Two mechanics worth knowing
 

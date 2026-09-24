@@ -526,3 +526,94 @@ h.test("an optional input left blank is simply not applied", function() {
 		discard(w, target);
 	}
 });
+
+h.suite("Typing in a form");
+
+/*
+The title preview is produced by `$wikify`, and a $wikify whose text changes
+re-renders its children. With the inputs inside it, every keystroke in a field
+that feeds the title destroyed and rebuilt the input — the caret jumped out of
+"Tjenestenavn" after each character. So the inputs live outside the $wikify,
+and only the preview and the buttons are rebuilt.
+
+A rebuilt input is invisible to a test that reads markup: the markup is
+identical. This compares the widget and its DOM node across a refresh.
+*/
+
+/* The $edit-text widgets of a rendered form, in order, with their DOM nodes. */
+function editInputs(widget) {
+	var found = [];
+	(function walk(node) {
+		if(node.parseTreeNode && node.parseTreeNode.tag === "$edit-text" &&
+				node.domNodes && node.domNodes.length) {
+			found.push(node);
+		}
+		(node.children || []).forEach(walk);
+	})(widget);
+	return found;
+}
+
+/* Render `procedure`, type `typed` into index `index`, refresh as the browser would. */
+function typeInto(wiki, procedure, def, values, index, typed) {
+	var state = "$:/state/test/form/typing",
+		changes = {};
+	wiki.addTiddler({title: state, type: "application/json", text: JSON.stringify(values)});
+	var root = wiki.widgetTree('<$transclude $variable="' + procedure + '" def=<<d>> state=<<s>>/>',
+			{d: def, s: state}),
+		before = editInputs(root);
+	wiki.$tw.wiki.setText(state, null, index, typed);
+	changes[state] = {modified: true};
+	root.refresh(changes);
+	return {before: before, after: editInputs(root), root: root, state: state};
+}
+
+/* The rendered text of the whole form, for reading the preview back. */
+function textOf(widget) {
+	var parts = [];
+	(function walk(node) {
+		(node.domNodes || []).forEach(function(dom) {
+			if(dom.textContent) { parts.push(dom.textContent); }
+		});
+		(node.children || []).forEach(walk);
+	})(widget);
+	return parts.join(" ");
+}
+
+h.test("typing a service name keeps the input, and still updates the preview", function() {
+	var w = h.fixtureWiki(),
+		r = typeInto(w, "forms-form", NHN + "/forms/tjeneste",
+			{title: "Testtjeneste N", type: "Ekstern tjeneste"}, "title", "Testtjeneste Ny");
+	try {
+		assert.equal(r.before.length, r.after.length, "the form lost or gained an input");
+		assert.ok(r.before.length > 0, "the form rendered no text inputs");
+		// identity, compared with assert.ok: a failing assert.equal on two widgets
+		// builds a diff of the whole cyclic widget tree and exhausts the heap
+		r.before.forEach(function(input, i) {
+			assert.ok(r.after[i] === input, "input " + i + " was rebuilt, so the caret would jump out");
+			assert.ok(r.after[i].domNodes[0] === input.domNodes[0], "input " + i + "'s DOM node was replaced");
+		});
+		assert.ok(textOf(r.root).indexOf("Testtjeneste Ny") !== -1,
+			"the title preview did not follow what was typed: " + textOf(r.root));
+	} finally {
+		discard(w, r.state);
+	}
+});
+
+h.test("editing an existing tiddler keeps the input too", function() {
+	var w = h.fixtureWiki(),
+		target = "Test Tjeneste Med Eier",
+		values = {title: target, type: "Ekstern tjeneste"},
+		r;
+	w.addTiddler({title: "$:/state/test/form/typing", type: "application/json",
+		text: JSON.stringify(values), "forms-target": target});
+	r = typeInto(w, "forms-edit", NHN + "/forms/tjeneste", values, "title", target + " II");
+	try {
+		assert.ok(r.before.length > 0, "the edit form rendered no text inputs");
+		r.before.forEach(function(input, i) {
+			assert.ok(r.after[i] === input, "input " + i + " was rebuilt while editing");
+			assert.ok(r.after[i].domNodes[0] === input.domNodes[0], "input " + i + "'s DOM node was replaced");
+		});
+	} finally {
+		discard(w, r.state);
+	}
+});
