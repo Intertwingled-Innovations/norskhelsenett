@@ -80,7 +80,7 @@ Bruk forslagene for tjenester uten lenke
 <a href={{{ [function[nhn-powerbi-found-url]] }}} target="_blank" rel="noopener noreferrer"><$text text={{{ [function[nhn-powerbi-found-caption]] :else[[(uten tekst)]] }}}/></a>
 &#32;<span class="nhn-powerbi-source">fra&#32;<$link to=<<source>>><$text text={{{ [function[nhn-year-raw]] [function[nhn-month-raw]lowercase[]] +[join[ ]] }}}/></$link></span>
 <% if [function[nhn-powerbi-found-new],<svc>] %>
-&#32;<$button class="tc-btn-invisible nhn-powerbi-use" actions="""<$transclude $variable="nhn-powerbi-apply-suggestions" services={{{ [<svc>format:titlelist[]] }}} reviews=<<reviews>>/>""">Bruk</$button>
+&#32;<$button class="tc-btn-big-green nhn-powerbi-use" actions="""<$transclude $variable="nhn-powerbi-apply-suggestions" services={{{ [<svc>format:titlelist[]] }}} reviews=<<reviews>>/>""">Bruk</$button>
 <% endif %>
 </$let>
 <% endif %>
