@@ -25,7 +25,13 @@ npm test       # run the plugin test suite (248 tests, ~30s)
 
 The GitHub Pages deploy ([.github/workflows/deploy.yaml](.github/workflows/deploy.yaml)) runs `npm ci` → `npm test` → `npm run build` and publishes `./build`; a failing test blocks the deploy. Branches and pull requests run the suite via [.github/workflows/test.yaml](.github/workflows/test.yaml).
 
-The build also publishes the three plugins as standalone JSON files, `plugins/forms.json`, `plugins/nhn.json` and `plugins/nhn-theme.json` (a `plugins` build target in [wiki/tiddlywiki.info](wiki/tiddlywiki.info), rendered through the core `JsonFile` exporter). Each is TiddlyWiki's drag-and-drop import format: drop the file into any wiki — including plain tiddlywiki.com — import, save and reload, and the plugin is installed. On the Pages site they live at `…/plugins/forms.json`, `…/plugins/nhn.json` and `…/plugins/nhn-theme.json`. The theme is only switched on by the `$:/theme` and `$:/palette` pointers in `nhn`, so install it alongside `nhn`; imported on its own it sits inert.
+The build also publishes the three plugins as standalone JSON files, `plugins/forms.json`, `plugins/nhn.json` and `plugins/nhn-theme.json` (a `plugins` build target in [wiki/tiddlywiki.info](wiki/tiddlywiki.info), rendered through the core `JsonFile` exporter). Each is TiddlyWiki's drag-and-drop import format: drop the file into any wiki — including plain tiddlywiki.com — import, save and reload, and the plugin is installed. On the Pages site they live at:
+
+- [https://intertwingled-innovations.github.io/norskhelsenett/plugins/forms.json](https://intertwingled-innovations.github.io/norskhelsenett/plugins/forms.json)
+- [https://intertwingled-innovations.github.io/norskhelsenett/plugins/nhn.json](https://intertwingled-innovations.github.io/norskhelsenett/plugins/nhn.json)
+- [https://intertwingled-innovations.github.io/norskhelsenett/plugins/nhn-theme.json](https://intertwingled-innovations.github.io/norskhelsenett/plugins/nhn-theme.json)
+
+The theme is only switched on by the `$:/theme` and `$:/palette` pointers in `nhn`, so install it alongside `nhn`; imported on its own it sits inert.
 
 There are two wiki folders because of a client/server split:
 
