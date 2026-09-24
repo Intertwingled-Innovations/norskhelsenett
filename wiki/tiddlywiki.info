@@ -25,7 +25,14 @@
 			"text/plain",
 			"$:/core/templates/exporters/JsonFile",
 			"exportFilter",
-			"[[$:/plugins/intertwingled-innovations/nhn]]"
+			"[[$:/plugins/intertwingled-innovations/nhn]]",
+			"--render",
+			"[[$:/plugins/intertwingled-innovations/nhn-theme]]",
+			"[[plugins/nhn-theme.json]]",
+			"text/plain",
+			"$:/core/templates/exporters/JsonFile",
+			"exportFilter",
+			"[[$:/plugins/intertwingled-innovations/nhn-theme]]"
 		]
 	}
 }

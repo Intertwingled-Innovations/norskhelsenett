@@ -21,9 +21,11 @@ var fs = require("fs"),
 
 var PLUGINS = [
 	{title: "$:/plugins/tiddlywiki/forms", file: "plugins/forms.json",
-		knownShadow: "$:/plugins/tiddlywiki/forms/csv.js"},
+		type: "plugin", knownShadow: "$:/plugins/tiddlywiki/forms/csv.js"},
 	{title: "$:/plugins/intertwingled-innovations/nhn", file: "plugins/nhn.json",
-		knownShadow: "$:/plugins/intertwingled-innovations/nhn/projections"}
+		type: "plugin", knownShadow: "$:/plugins/intertwingled-innovations/nhn/projections"},
+	{title: "$:/plugins/intertwingled-innovations/nhn-theme", file: "plugins/nhn-theme.json",
+		type: "theme", knownShadow: "$:/plugins/intertwingled-innovations/nhn-theme/palette"}
 ];
 
 var EXPORTER = "$:/core/templates/exporters/JsonFile";
@@ -43,7 +45,7 @@ function renderExport(w, exportFilter) {
 
 h.suite("Published plugin JSONs");
 
-h.test("the plugins build target renders both plugins through the JSON exporter", function() {
+h.test("the plugins build target renders every plugin through the JSON exporter", function() {
 	var info = JSON.parse(fs.readFileSync(
 			path.resolve(__dirname, "..", "wiki", "tiddlywiki.info"), "utf8")),
 		target = info.build && info.build.plugins;
@@ -70,7 +72,7 @@ h.test("each export is a one-element array holding the complete packed plugin", 
 		assert.equal(arr.length, 1, p.title + " export must hold exactly the plugin tiddler");
 		var fields = arr[0];
 		assert.equal(fields.title, p.title);
-		assert.equal(fields["plugin-type"], "plugin", p.title + " export lost its plugin-type");
+		assert.equal(fields["plugin-type"], p.type, p.title + " export lost its plugin-type");
 		assert.equal(fields.type, "application/json");
 		assert.ok(fields.version, p.title + " export carries no version");
 		// The packed text holds every constituent the live plugin has — no more, no less
@@ -89,6 +91,6 @@ h.test("each export deserializes as a drag-and-drop import would", function() {
 			tiddlers = w.$tw.wiki.deserializeTiddlers("application/json", text, {});
 		assert.equal(tiddlers.length, 1, p.file + " does not deserialize to one tiddler");
 		assert.equal(tiddlers[0].title, p.title);
-		assert.equal(tiddlers[0]["plugin-type"], "plugin");
+		assert.equal(tiddlers[0]["plugin-type"], p.type);
 	});
 });
