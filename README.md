@@ -63,13 +63,24 @@ There are two wiki folders because of a client/server split:
 | [wiki/tiddlers/](wiki/tiddlers/) | The same content as individual `.tid` files (the Node.js on-disk form). Filenames are ASCII-folded; the `title:` field keeps the real Norwegian characters. |
 | [DefaultTiddlers.json](DefaultTiddlers.json) | The wiki's default open tiddlers (`$:/DefaultTiddlers`). |
 
-**Refreshing the snapshot.** `wiki/tiddlers/` is regenerated from `NHN_TiddlyWiki.json` by loading the JSON into a bare wiki and running TiddlyWiki's own `--savewikifolder`, which produces exactly the filenames and `.tid`/`.meta` pairs the filesystem adaptor writes. Three things in that folder are **not** in the JSON export and must survive the regeneration:
+**Refreshing the snapshot.** `wiki/tiddlers/` is regenerated from `NHN_TiddlyWiki.json` by loading the JSON into a bare wiki and running TiddlyWiki's own `--savewikifolder`, which produces exactly the filenames and `.tid`/`.meta` pairs the filesystem adaptor writes:
+
+```sh
+mkdir bare && echo '{}' > bare/tiddlywiki.info
+npx tiddlywiki bare --load NHN_TiddlyWiki.json --savewikifolder out 'filter=[all[tiddlers]!prefix[$:/]]'
+rsync -a --exclude Tjenesteeiere.tid out/tiddlers/ wiki/tiddlers/   # overlay; delete the dropped titles by hand
+```
+
+The filter keeps out the `$:/StoryList`-style tiddlers the bare wiki creates at boot. Four things in `wiki/tiddlers/` are **not** in the JSON export, or differ from it, and must survive the regeneration:
 
 - `DefaultTiddlers.json` — `$:/DefaultTiddlers`, which the export omits along with every other `$:/` tiddler.
 - `Spørsmål til NHN` — the open questions for the client, written here, not by them.
 - `Investigation` — working notes, likewise.
+- `01 MAL Tjenestenavn - hovedtrekk og endringer januar 2026` — the review template. The repo carries the **reworded** template NHN sent in September 2026 (see the Power BI phase in [docs/plan.md](docs/plan.md)); the live wiki still carries the old one, so a refresh overwrites it and the template tests fail. Restore it from git after the overlay.
 
-The last two are ordinary content tiddlers with no marker distinguishing them from NHN's own, so a wholesale replace deletes them silently. Check the deletions in `git status` against the titles the JSON actually dropped before committing a refresh.
+The content tiddlers among these carry no marker distinguishing them from NHN's own, so a wholesale replace loses them silently. Check the deletions in `git status` against the titles the JSON actually dropped before committing a refresh.
+
+One tiddler in the export is **left out** deliberately: `Tjenesteeiere`. NHN's wiki holds an ordinary tiddler of that name — a verbatim copy of the plugin's owners page as it was on 23 August 2026, saved on 31 August — which overrides the plugin's shadow wherever it is installed. In this repo it would pin tests and the build to that stale copy, so it is excluded; on the live wiki it should be deleted so the plugin's current page shows.
 
 ### The plugins (the deliverable)
 

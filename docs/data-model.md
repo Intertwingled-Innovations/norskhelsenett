@@ -2,7 +2,7 @@
 
 How Divisjon Helsepersonell represents its management structure in TiddlyWiki. This is the most important thing to understand before changing anything: **there are no custom data types — everything is tags and fields on plain tiddlers, and the tags *are* the schema.**
 
-Counts below are from the snapshot (~2,652 tiddlers, refreshed August 2026). Verify against [../NHN_TiddlyWiki.json](../NHN_TiddlyWiki.json) before relying on them.
+Counts below are from the snapshot (~2,715 tiddlers, refreshed 28 September 2026, after NHN's own clean-up of the service-type tags). Verify against [../NHN_TiddlyWiki.json](../NHN_TiddlyWiki.json) before relying on them.
 
 ## Where the data lives
 
@@ -41,8 +41,8 @@ Set per year, at each level of the governance structure:
 
 - **Time** — `2023`–`2026` (years) and Norwegian month names `Januar`…`Desember`. Both applied as tags.
 - **Org** — `Divisjon Helsepersonell` (923), `Norsk Helsenett SF`, `Divisjon`, plus a per-service name tag on everything belonging to that service (e.g. `Kjernejournal`, `Reseptformidleren`).
-- **Governance type (`Styring …`)** — `Styring Ekstern tjeneste` (486), `Styring Intern tjeneste` (114), `Styring Tiltak` (154), `Styring Relatert tjeneste` (16), `Styring Satsning for fart` (16). A bare `Styring` tag (124) also appears.
-- **Service type** — the same five without the prefix: `Ekstern tjeneste`, `Intern tjeneste`, `Relatert tjeneste`, `Tiltak`, `Satsning for fart`. Used less consistently.
+- **Governance type (`Styring …`)** — on reviews. Current: `Styring Ekstern tjeneste` (555), `Styring Intern tjeneste` (143), `Styring Relatert tjeneste` (27), `Styring Satsing for fart` and `Styring Oppgaver fra HOD` (both introduced in September 2026, not yet on any review). Retired but still carried by old reviews: `Styring Tiltak` (167) and the old spelling `Styring Satsning for fart` (24). A bare `Styring` tag (140) also appears. NHN's intended mapping from service type to governance tag is in `Tiddliwiki Action Items for Jeremy 18092026.docx` at the repo root.
+- **Service type** — on services. Since the September 2026 clean-up every service carries `Ekstern tjeneste` (50) or `Intern tjeneste` (14), and an Ekstern service may also carry one secondary classification: `Relatert tjeneste` (6), `Satsing for fart` (5) or `Oppgaver fra HOD` (19). The old `Tiltak`, `Satsning for fart` and the casing variant `Ekstern Tjeneste` are gone. A tiddler carrying `Oppgaver fra HOD` or `Satsing for fart` *alone* is one of the 15 year-versioned 2024–25 national initiatives, which have no division and are not services.
 - **Business change severity** — `Forretningsmessig endring:1` (110, *ingen*/none), `:2` (11, *liten*/small), `:3` (3, *større*/larger).
 - **OKR / delivery** — `Målsetting`, `Resultat`, `Leveranse`, `Levert`, `Oppgave`.
 - **Templates** — `mal` (Norwegian for template), e.g. `01 MAL Tjenestenavn - hovedtrekk og endringer januar 2026`.
@@ -72,7 +72,7 @@ Resolved against the snapshot — these are the facts the plugins are built on:
 
 Expect dirty data, and validate against the JSON before asserting structure:
 
-- **Casing and spelling drift in tags** — e.g. `Ekstern Tjeneste` (95) vs `Ekstern tjeneste` (22); months appear as both `Mars` and `mars`; `Resultat` (435) has a lowercase `resultat` (2), which quietly keeps two tiddlers out of the OKR set. Normalise casing on read. Five families drift in this snapshot, but do not work from a list of them: `nhn-tag-casing-drift` (in `validators.tid`) derives the families from the tags in use, because which ones drift changes with every refresh.
+- **Casing and spelling drift in tags** — months appear as both `April` and `april`, `Juni` and `juni`; `Resultat` (432) has a lowercase `resultat` (2), which quietly keeps two tiddlers out of the OKR set. Normalise casing on read. Four families drift in this snapshot (NHN merged the fifth, `Ekstern Tjeneste`, themselves in September 2026), but do not work from a list of them: `nhn-tag-casing-drift` (in `validators.tid`) derives the families from the tags in use, because which ones drift changes with every refresh. Spelling drift is a separate matter the casing tool cannot see: `Styring Satsning for fart` against the new `Styring Satsing for fart`.
 - **Reviews are frequently under-tagged.** Of the 781 monthly reviews, **84% carry no `Forretningsmessig endring` tag** and **22% carry no service-name tag**. Anything that treats those as mandatory — a validator, a required form input, a report column — will find most of the corpus non-conforming. Some also carry surprises instead, such as a bare `40031` tag where the severity should be.
 - Templates left unfilled, and copies of last month's review passed off as this month's — the ToDo features have to detect both.
 - Duplicate-looking titles.
