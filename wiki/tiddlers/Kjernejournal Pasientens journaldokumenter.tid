@@ -1,9 +1,10 @@
 TjenesteID: 40171
 created: 20240317131339583
-modified: 20260512104616477
+modified: 20260915112816885
 revision: 0
-tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] [[Kjernejournal Pasientens journaldokumenter]] [[Team Dokumentdeling]] [[Domene Samhandlingsplattform]] 2025 2024 2026
+tags: [[Divisjon Helsepersonell]] [[Team Dokumentdeling]] [[Domene Samhandlingsplattform]] 2025 2024 2026 [[Ekstern tjeneste]]
 title: Kjernejournal Pasientens journaldokumenter
+tjenesteeier: Øyvind Kvennås
 type: text/vnd.tiddlywiki
 
 ! Beskrivelse av tjenesten

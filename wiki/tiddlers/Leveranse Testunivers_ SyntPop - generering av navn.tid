@@ -1,0 +1,14 @@
+TjenesteID: 40025
+created: 20260903081834013
+modified: 20260903082016500
+revision: 0
+tags: Leveranse 2026 [[Testunivers i 2026]] August
+title: Leveranse Testunivers: SyntPop - generering av navn
+type: text/vnd.tiddlywiki
+
+Levert:
+
+Ny versjon satt i produksjon som nå støtter automatisk generering av navn på syntetiske personer ved hjelp av adjektiv og substantiv iht Skatteetaten sin navnestandard. Brukeren kan fortsatt overstyre navneforslaget ved behov.
+
+
+

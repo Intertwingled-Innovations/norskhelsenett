@@ -1,9 +1,10 @@
 TjenesteID: 40031
 created: 20250603141226340
-modified: 20260513082209964
+modified: 20260915082608179
 revision: 0
-tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] 40031 2026
+tags: [[Divisjon Helsepersonell]] 40031 2026 [[Ekstern tjeneste]]
 title: Autentisering og autorisasjon
+tjenesteeier: Ragnhild Varmedal
 type: text/vnd.tiddlywiki
 
 ! Beskrivelse av tjenesten

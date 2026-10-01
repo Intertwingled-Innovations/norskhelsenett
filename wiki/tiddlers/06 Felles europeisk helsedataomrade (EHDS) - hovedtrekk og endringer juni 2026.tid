@@ -1,7 +1,7 @@
 TjenesteID: 40062
 created: 20260623090824011
-modified: 20260810082024727
-revision: 4
+modified: 20260907200859132
+revision: 0
 tags: 2026 [[Divisjon Helsepersonell]] [[Styring Intern tjeneste]] [[Felles europeisk helsedataområde (EHDS)]] [[Forretningsmessig endring:1]] Juni
 title: 06 Felles europeisk helsedataområde (EHDS) - hovedtrekk og endringer juni 2026
 type: text/vnd.tiddlywiki
@@ -23,7 +23,7 @@ Konsekvens av forretningsmessig endring:
 
 !! Ferdigstilte leveranser i perioden:
 Ingen planlagte leveranser ble ferdigstilt i perioden.
-<<list-links filter:"[tag[Leveranse]tag[2026]tag[Mai]tag[Felles europeisk helsedataområde (EHDS)]]">>
+<<list-links filter:"[tag[Leveranse]tag[2026]tag[Juni]tag[Felles europeisk helsedataområde (EHDS)]]">>
 
 ! Prognose på penger og ressurser
 * Finansieringskilde: Dette er en intern tjeneste som fordeles ut på de eksterne tjenestene i divisjon Helsepersonell.

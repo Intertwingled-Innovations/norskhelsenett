@@ -1,0 +1,19 @@
+TjenesteID: 40168
+created: 20260412115013135
+modified: 20260902114506435
+revision: 0
+tags: [[Kjernejournal Pasientens kritiske informasjon]] Målsetting 2026
+title: 3. Målsetting for kritisk info: Etablere bedre forvaltning av kodeverk som NHN har ansvar for
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+
+Etablere bedre forvaltning av kodeverk som NHN har ansvar for ved å lage en egen tjeneste for koder i kritisk informasjon. Kodeverkstjenesten skal fungerer som et knutepunkt/proxy foran kodeverk fra ulike kilder, og samle dem i en felles datamodell. Dette gjør det enkelt å komme i gang med å lese kodeverk. Slik vil konsumenter av kritisk info. APIet kunne laste ned relevante koder fra et system, istedenfor å laste ned kodeverkene direkte fra hvert enkelt kilde.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

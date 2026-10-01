@@ -1,0 +1,8 @@
+created: 20260918115826913
+modified: 20260918123246291
+revision: 0
+tags: Leveranse Selvbetjening [[Kvalitet i løsningen. Sikre god driftbarhet og tilgjengelighet]] 2026 Juli
+title: 07/26-Vitistack for Selvbetjening er etablert i produksjon
+type: text/vnd.tiddlywiki
+
+Å etablere Vitistack til erstatning for Tanzu er et viktig steg for å komme skikkelig i gang med å etablere regionale autonome leveranser av kritiske nasjonale tjenester. HelseID selvbetjening kjører nå på Vitistack i produksjon

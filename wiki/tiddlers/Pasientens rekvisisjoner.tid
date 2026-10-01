@@ -1,9 +1,10 @@
 TjenesteID: 40055
 created: 20260330065208645
-modified: 20260508060941309
+modified: 20260917104541756
 revision: 0
-tags: [[Norsk Helsenett SF]] 2025 2026 [[Satsning for fart]] [[Satsning for fart 2026]]
+tags: 2025 2026 [[Divisjon Helsepersonell]] [[Satsing for fart]] [[Ekstern tjeneste]]
 title: Pasientens rekvisisjoner
+tjenesteeier: Øyvind Kvennås
 type: text/vnd.tiddlywiki
 
 Etablere Pasientens rekvisisjoner som en digital løsning for formidling av rekvisisjoner mellom rekvirent og prøvetaker. 

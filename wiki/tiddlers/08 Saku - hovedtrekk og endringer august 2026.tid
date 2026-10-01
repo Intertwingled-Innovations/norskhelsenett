@@ -1,0 +1,23 @@
+created: 20260907101421060
+modified: 20260909073031050
+revision: 0
+tags: Saku 2026 [[Divisjon Helsepersonell]] August [[Styring Intern tjeneste]] [[Forretningsmessig endring:2]]
+title: 08 Saku - hovedtrekk og endringer august 2026
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer
+
+* Kun utført nødvendige tiltak for å sikre at tjenesten vil være operativ og holdt vedlike til KD og DHP leveranseteam er over i nytt system.
+* SAKU er nå flyttet over på viti-stacken.
+* Antall aktive unike brukere i august måned: 331 stk.
+* Antall innkommende e-post (saker og innkommende svar på saker) i august måned: 3371 stk.
+* Antall utsendte e-post (svar på saker) august: 8952 stk.
+* Opprettet 832 saker via API fra Flow Form (innmeldte skjema fra medlemstjenesten).
+
+Forretningsmessig endring: 2 *.
+
+! Prognose på penger og ressurser
+* Endring i teamet. Én utvikler er sluttet i teamet fra 1 september.*
+* Planlagt å få ansatt ny utvikler til teamet for å levere som normalt for SAKU og Statistikk og måling.
+
+* Begrenset ressursbruk til maks 1350 timer i 2026.

@@ -1,20 +1,23 @@
 TjenesteID: 40025
 created: 20240128165850685
-modified: 20260409061107459
+modified: 20260917111653846
 revision: 0
-tags: [[Divisjon Helsepersonell]] [[Domene Samhandlingsplattform]] [[Relatert tjeneste]]
+tags: [[Divisjon Helsepersonell]] [[Domene Samhandlingsplattform]] [[Relatert tjeneste]] [[Ekstern tjeneste]]
 title: Testunivers
+tjenesteeier: Hans Christian Alnæs
 type: text/vnd.tiddlywiki
 
 Testuniverset skal være en bærekraftig Nasjonal sandkasse med utviklings- og testmiljøer, API'er og syntetiske data fra ulike helsesystemer.
 Testuinverset er til for forskning, utvikling, tidlig utprøving og testing av helseteknologi for helsepersonell.
 
 __Testuniverset skal__;
+
 *  legge til rette for å kunne gjennomføre nødvendig utvikling, test og kvalitetssikring og utprøving av eksisterende eller nye tjenester og produkter for helsepersonell. 
 *  ivareta personvern perspektivet gjennom bruk av kun syntetiske data i sine tjenester samt kunne tilby syntetiske data som egen tjeneste. 
 *  bidra med å skape verdi for og sammen med deltakerne i sektorens økosystem.
 
 __Verdien Testuniverset gir sektor er bl.a__.:
+
 * Norsk Helsenett SF som Nasjonal tjenesteleverandør tilbyr en robust, skalerbar og bærekraftig sandkasse, for utvikling, innovasjon og kvalitetssikring av helsesystemer for helsepersonell.
 * Sandkassen med sin syntetiske datasjø tilbys hele sektoren å populeres med data mot at de kan konsumere tilbake for utvikling og testing av AI/ML modeller til forskning og innovasjon.
 * Testuniverset understøtter, forenkler og legger til rette for at økosystemet og dets aktører tar i bruk NHN sine tjenester.

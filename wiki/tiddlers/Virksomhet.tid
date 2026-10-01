@@ -1,14 +1,15 @@
 TjenesteID: 40027
 created: 20240128165343202
-modified: 20260511184612298
+modified: 20260915120527336
 revision: 0
-tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] [[Domene Samhandlingsplattform]] Virksomhet 2026
+tags: [[Divisjon Helsepersonell]] [[Domene Samhandlingsplattform]] 2026 [[Ekstern tjeneste]]
 title: Virksomhet
+tjenesteeier: Marianne Zahl
 type: text/vnd.tiddlywiki
 
 ! Beskrivelse av tjenesten
 
-Team Virksomhet er et leveranseteam bestående av 4 utviklere og en lærling som i samarbeid med team Personell jobber på Grunndataplattformen. Grunndata er et sett av registre og en forutsetning for elektronisk samhandling i Helse-Norge. Tilgang til registrene skjer primært gjennom API, men det er også mulig å søke og oppdatere informasjon via webgrensesnitt.
+Team Virksomhet er et tjenesteteam bestående av 5 ressurser med utvikler- og driftskompetanse som i samarbeid med team Personell jobber på Grunndataplattformen. Grunndata er et sett av registre og en forutsetning for elektronisk samhandling i Helse-Norge. Tilgang til registrene skjer primært gjennom API, men det er også mulig å søke og oppdatere informasjon via webgrensesnitt.
 
 Virksomhet har ansvar for de registrene som inneholder virksomhetsrelatert informasjon, bl.a. gjennom adresseregisteret, organisasjonsregisteret, lokasjonsregisteret og register for enheter i spesialhelsetjenesten (RESH). 
 

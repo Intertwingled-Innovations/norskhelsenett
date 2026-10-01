@@ -1,9 +1,10 @@
 TjenesteID: 40055
 created: 20260604112655339
-modified: 20260604112759431
+modified: 20260917104434601
 revision: 0
-tags: [[Norsk Helsenett SF]] 2026 [[Satsning for fart]] [[Satsning for fart 2026]]
+tags: 2026 [[Divisjon Helsepersonell]] [[Satsing for fart]] [[Ekstern tjeneste]]
 title: Pasientens planer
+tjenesteeier: Sigurd Ringbakken
 type: text/vnd.tiddlywiki
 
 Etablere Pasientens rekvisisjoner som en digital løsning for formidling av rekvisisjoner mellom rekvirent og prøvetaker. 

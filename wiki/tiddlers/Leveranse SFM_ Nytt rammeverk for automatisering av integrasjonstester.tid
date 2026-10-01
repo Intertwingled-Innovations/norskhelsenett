@@ -1,0 +1,18 @@
+TjenesteID: 40044
+created: 20260906170451054
+modified: 20260906170557375
+revision: 0
+tags: Leveranse [[Team SFM]] 2026 [[Tiltak for ytterligere stabilisering, håndtere økt volum og opprettholde fart i leveranser]] [[Sentral forskrivningsmodul i 2026]] August
+title: Leveranse SFM: Nytt rammeverk for automatisering av integrasjonstester
+type: text/vnd.tiddlywiki
+
+Mål: Implementere forbedringer i arkitektur, implementasjon og deployment - kode, prosesser og ansvar.
+
+Levert:
+
+* Nytt rammeverk for automatisering av integrasjonstester
+
+Effekt: Økt kvalitet i løsningen gjennom bedre testdekning
+
+
+

@@ -1,0 +1,9 @@
+created: 20260918123311279
+modified: 20260918125432572
+revision: 0
+tags: 2026 Mai Leveranse Selvbetjening [[Tilby verktøy som effektiviserer og kvalitetssikrer bruken av HelseID]]
+title: 05/26- Samsvarstesten i HelseID er nå et steg i produksjonssettingsflyten for leverandørene
+type: text/vnd.tiddlywiki
+
+Før leverandører går i produksjon med et klientsystem må det bli godkjent i en kodegjennomgang. Støtteverktøyet samsvarstesting bli brukt for å sikre at klienten samsvarer med sikkerhetsprofilen i HelseID. En forutsetning for at kodegjennomgangen blir gjennomført er at alle testene blir godkjent. 
+Denne leveransen innebærer at samsvarstesten et eget steg i prosessflyten som vises for leverandørene.

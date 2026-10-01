@@ -1,17 +1,22 @@
 TjenesteID: 40023
 created: 20240128165646604
-modified: 20260330102419931
+modified: 20260915125730840
 revision: 0
-tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] [[Team Kollektivet]] [[Team Innrapportering]] Innrapportering 2026
+tags: [[Divisjon Helsepersonell]] [[Team Kollektivet]] [[Team Innrapportering]] Innrapportering 2026 [[Ekstern tjeneste]]
 title: Melde.no
+tjenesteeier: Kristin Rønneberg
 type: text/vnd.tiddlywiki
 
 ! Beskrivelse av tjenesten
 Det finnes en rekke meldeordninger for helsetjenesten som skal bidra til god lærings- og meldekultur og bedre pasientsikkerhet. Meldeordningene forvaltes av seks ulike etater.
 Melde.no er et felles elektronisk meldesystem som skal forenkle innrapporteringen til meldeordningene, og med det bidra til å oppnå hensikten med meldeordningene.
 
+Backend på Melde.no består av ''Innrapportering av uønskede hendelser''. Her mottas og sendes meldinger videre til rett mottaker på rett format. Løsningen er flyttet til privat sky på Kubernetes plattform.
+
 <a href="https://confluence.nhn.no/display/EVI/Melde">Melde (Confluence)</a>
 
 ! Målsettinger
 !! 2026
 <<list-links filter:"[tag[Målsetting]tag[2026]tag<currentTiddler>]">>
+
+! Målsettinger for backend Melde.no:

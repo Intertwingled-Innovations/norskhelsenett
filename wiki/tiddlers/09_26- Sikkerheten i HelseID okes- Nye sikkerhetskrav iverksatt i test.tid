@@ -1,0 +1,8 @@
+created: 20260918114920969
+modified: 20260918115612178
+revision: 0
+tags: 2026 [[Autentisering og autorisasjon]] September Leveranse [[Tjenesten HelseID skal lukke alle risikoelementer med risikonivå alvorlig]]
+title: 09/26- Sikkerheten i HelseID økes- Nye sikkerhetskrav iverksatt i test
+type: text/vnd.tiddlywiki
+
+Gjenbruk av Client Assertions ('jti'-claim) vil bli avvist i køyretid. Kravet ble innført i testmiljøet 1. september

@@ -1,9 +1,10 @@
 TjenesteID: 40040
 created: 20240317143136913
-modified: 20260409111134327
+modified: 20260915112534233
 revision: 0
-tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] [[Team Kollektivet]] [[Team Innrapportering]] [[Innrapportering av fødselsmelding]] 2026
+tags: [[Divisjon Helsepersonell]] [[Team Kollektivet]] [[Team Innrapportering]] 2026 [[Ekstern tjeneste]]
 title: Innrapportering av fødselsmelding
+tjenesteeier: Kristin Rønneberg
 type: text/vnd.tiddlywiki
 
 ! Beskrivelse av tjenesten

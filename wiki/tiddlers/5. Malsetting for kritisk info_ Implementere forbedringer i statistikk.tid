@@ -1,0 +1,19 @@
+TjenesteID: 40168
+created: 20260412115215871
+modified: 20260902120307040
+revision: 0
+tags: [[Kjernejournal Pasientens kritiske informasjon]] Målsetting 2026
+title: 5. Målsetting for kritisk info: Implementere forbedringer i statistikk
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+
+NHN etablere en tjeneste for å hente ut rådata fra NHN sine tjenester som aktørene i sektoren kan bruke i oppfølging av sitt ansvar. NHN ønsker å lage en tjeneste som trekker ut data fra alle tjenestene og tilgjengeliggjør denne dataen for alle på en måte som gjør det umulig å kunne spore dette tilbake til enkelt individer. Dette gjøres ved at alle tjenestene implementerer ett uttrekk og som da samles i en felles tjeneste for å håndtere dette og la aktørene hente ut rådata. Kritisk informasjon må avlevere denne informasjonen. 
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

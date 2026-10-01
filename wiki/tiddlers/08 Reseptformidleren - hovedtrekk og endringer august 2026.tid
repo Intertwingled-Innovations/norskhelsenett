@@ -1,0 +1,46 @@
+TjenesteID: 40034
+created: 20260905133331318
+modified: 20260905135302232
+revision: 0
+tags: Reseptformidleren [[Styring Ekstern tjeneste]] 2026 [[Forretningsmessig endring:1]] [[Divisjon Helsepersonell]] Styring August
+title: 08 Reseptformidleren - hovedtrekk og endringer august 2026
+type: text/vnd.tiddlywiki
+
+!Hovedtrekk og endringer
+
+Fortsatt ingen tilbakemeldinger fra Datatilsynet om saken der vi har delt opplysninger som ikke skulle vært delt i perioden 30.04.25 - 15.11.25.
+
+En innbygger berørt av feilen har søkt erstatning, juridisk og PVO jobber sammen med Hdir om dette.
+
+Hdir har fått tilbud om en les bruker til vår beredskapdatabase slik at de kan hente data til sitt datavarehus. Nødvendig endring i databehandler avtalen er utarbeidet og oversendt. Det er en forutsetning at Hdir tar alt ansvar for håndtering av opplysningene de henter fra reseptformidleren sin database før tilgangen etableres.
+
+!Modernisering
+* Implementasjon for å ta i bruk Etterkontroll tjenesten er ferdig. Funksjonaliteten ligger bak en toggle og vi vil aktivere logging til etterkontroll tjenesten innen utgangen av september.
+*Data til sekundærbruk. Vi har fått et oppdrag fra HOD om å etablere en løsning der vi deler anonyme data. Ressurser er på plass og dette arbeidet har høy prioritet fremover. Samarbeider med Statistikk og måling teamet.
+*Vi har en PoC av M1 (resept) på samhandlingsplattformens løsningsmønster. En M1 kan "flyte helt gjennom" fra skriv til les på nytt løsningsmønster. Kjører i Kubernetes. 
+*Vi har avtalt workshop med Difa den 10.september med tema målbilde samhandling NHN og Difa sine løsninger.
+*EHDS - videre detaljering av forretningsregler for oversetting av en resept i samarbeid med Hdir, dette er arbeidsstrøm som følges opp av team EHDS. Regler for oversetting til/fra MyHealth er i stor grad klar og arbeid med detaljering av løsning og implementasjon har startet.
+
+
+!Sikkerhet
+
+*Vi vil etablere rf applikasjon i OSL ila august/september slik at vi raskere kan gjøre failover til OSL enn idag. 
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 1''
+
+Konsekvens av forretningsmessig endring:
+
+
+!Prognose på penger og ressurser
+
+Finansiering: Forskriftsfestet pasientjournal E-resept, ramme 2026 92,9 MNOK.
+
+Årsprognose 2026 78 MNOK, under tildelt ramme.
+
+*Vi har onboardet 4 konsulenter i juni samt at vi etablerer eget testmiljø for utlevering i apotek (Eik og Orion). Dette gir et høyere pådrag i andre halvår enn i første.
+*Det vil etableres flere testmiljøer ifm arbeidet med å skrive om til shp løsningsmønster, dette vil øke driftskosten i andre halvår.
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmarkab9171eafbc4217a5bac">Oversikt Reseptformidleren</a>
+
+

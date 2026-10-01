@@ -1,0 +1,13 @@
+created: 20260831081100942
+modified: 20260831081937189
+revision: 0
+tags: 2026 Målsetting Legemiddelgrunndata
+title: Etablere tjeneste i NHN for distribuering av nasjonale legemiddelgrunndata.
+type: text/vnd.tiddlywiki
+
+Etablere nasjonal legemiddelgrunndata som distibusjontjeneste i NHN sin Samhandlingsplattform.
+
+Resultat (flytter disse ut i egen tiddly)
+- Mvp1: Rest
+- Mvp2: FHIR (Leser FEST fil)
+

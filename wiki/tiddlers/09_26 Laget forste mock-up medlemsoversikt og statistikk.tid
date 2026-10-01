@@ -1,0 +1,16 @@
+TjenesteID: 40173
+created: 20260923100708346
+modified: 20260928060827035
+revision: 1
+tags: Leveranse 2026 [[Forvaltning av Helsenettet - Medlemskap i 2026]] [[Resultat: Masteroversikt over medlemmer og samarbeidspartnere]] September
+title: 09/26 Laget første mock-up medlemsoversikt og statistikk
+type: text/vnd.tiddlywiki
+
+!Beskrivelse av leveranse
+En tidlig mockup-versjon av medlemsoversikt og statistikk - utført av team Innsiktsplattform. Team MF er behovsstiller og bistår i kvalitetssikring ved sammenstilling av datakilder og presentasjon. 
+
+*Tilgang og integrasjon med datakilder eksternt (Enhetsregister) og internt (kafka-hendelser m.fl. )
+*Kvalitetssikring og sammenstilling av datakilder
+*Enkel visning av medlemmer i en mock-up basert på pri 1 behov.
+
+Nytteverdi for NHN er innsikt og oversikt over hvem som har signert nye vilkår, og bidrar til nødvendig informasjon i rydding og oppfølging av medlemsmassen. Reduserer manuelle uttrekk og sammenstilling av data, og gir oss oppdaterte helhetlig medlemsoversikt i sanntid.

@@ -1,9 +1,10 @@
 TjenesteID: 40065
 created: 20250515071450761
-modified: 20260417121307374
+modified: 20260917111627323
 revision: 0
-tags: [[Divisjon Helsepersonell]] 2026 [[Relatert tjeneste]]
+tags: [[Divisjon Helsepersonell]] 2026 [[Relatert tjeneste]] [[Ekstern tjeneste]]
 title: Statistikk & måling
+tjenesteeier: Ketil Parow
 type: text/vnd.tiddlywiki
 
 Produksjon og publisering av bruksstatistikk, til internt og eksternt bruk.

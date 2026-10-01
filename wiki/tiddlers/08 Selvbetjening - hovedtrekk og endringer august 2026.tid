@@ -1,0 +1,30 @@
+TjenesteID: 40032
+created: 20260910140627916
+modified: 20260910141420449
+period: 2026-08
+revision: 0
+tags: Styring [[Styring Intern tjeneste]] [[Divisjon Helsepersonell]] 2026 August Selvbetjening [[Forretningsmessig endring:1]]
+title: 08 Selvbetjening - hovedtrekk og endringer august 2026
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer
+
+*Selvbetjening fokuserer på å understøtte målet om riktig medlemsmasse. Dette gjøres både i form av kjøretidssjekk og tilrettelegging for leverandører og API-eiere. 
+*Selvbetjening er divisjonens pilot på Vitistack, og er nå fullt over på Vitistack inkludert i produksjon. Dette fungerer godt. 
+*Tjenesten er fullt over på devops
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 1''
+
+Konsekvens av forretningsmessig endring: Ingen vesentilg endring.
+
+! Prognose på penger og ressurser
+
+* Finansiering: Intern tjeneste som fordeles ut på de eksterne tjenestene i divisjon Helsepersonell.
+* Budsjett helår 7,6 MNOK
+* Hvordan ligger vi an i prognose for året opp i mot finansieringsrammer for året? Prognose ligger noe over budsjett pga økte platformkostnader og en del økt timepådrag. Det er gjort justeringer på bemanning for å håndtere dette.
+* Hvordan er runrate for året opp i mot prognose og finansieringsramme for året? Hva er årsak til avvik? Runrate ligger på 8,2 MNOK mot prognose på 9,4. Prognosen tar høyde for avsluttet pappaperm. 
+* Status ressursbehov/kapasitet: Kapasiteten er nå i tråd med ressursbehovet.
+
+
+Link til økonomirapport i powerbi 
+

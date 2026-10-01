@@ -1,0 +1,32 @@
+TjenesteID: 40171
+created: 20260911072809915
+modified: 20260911110200083
+revision: 0
+tags: 2026 [[Styring Ekstern tjeneste]] [[Divisjon Helsepersonell]] [[Kjernejournal Pasientens journaldokumenter]] [[Forretningsmessig endring:2]] August
+title: 08 KJ Pasientens journaldokumenter - hovedtrekk og endringer august 2026
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer
+* NHN dokumentlager er produksjonssatt som intern dokumentkilde. Oslo kommune har signert bruksvilkår og startet produksjon i juni 2026, men ønsker ikke å bredde videre foreløpig pga kapasitetsproblemer internt i Oslo kommune, men også delvis pga ustabil tjenesteleveranse fra NHN. Vi har hatt gjennomgang med Oslo vedr ustabilitetene og har lagt en plan for å bedre det.
+* Det er besluttet at NHN gjennomfører en anskaffelse av funksjonalitet hos avtalespesialistleverandørene slik at de støtter deling av journaldokumenter via NHN Dokumentlager. Det allokeres 16 mnok av ubrukte midler fra Digital Samhandling (avklart med HOD). Anskaffelsen er satt i gang med mål om signering i november. Leverandørene gir inntrykk av at de ikke har kapasitet for oppstart før i 2027.
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 2''
+
+Konsekvens av forretningsmessig endring: Det er besluttet å bruke 16 mnok av ubrukte midler i Digital Samhandling til å kjøpe funksjonalitet hos EPJ-leverandørene til avtalespesialistene.
+
+
+! Prognose på penger og ressurser
+
+* Tjenesten er en del av den nasjonale e-helseløsningen under Kjernejournal og  finansieres over forskriftsfestede midler.
+* DHG har brukt 13.9 mnok av en total inntektsramme for 2026 på 20,5 mnok
+* Budsjett 2026: 19,4 mnok
+* Prognose for året: 22.5 mnok
+* Runrate for året (11 mnd): 19.1 mnok. 
+* Framdrift er stort sett ihht plan
+* Teamet har nødvendig kapasitet. 
+
+! Leveranser
+<<list-links filter:"[tag[Leveranse]tag[KJ Pasientens journaldokumenter]tag[2026]tag[August]]">>
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=56573aa0b28de9e08460">Oversikt KJ Pasientens journaldokumenter (Power BI)</a>
+

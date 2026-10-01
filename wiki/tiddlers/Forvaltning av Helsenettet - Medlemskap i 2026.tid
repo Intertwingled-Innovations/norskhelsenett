@@ -1,9 +1,10 @@
 TjenesteID: 40173
 created: 20240128165451578
-modified: 20260417124417698
+modified: 20260918132001100
 revision: 0
-tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] [[Team Medlemsforvaltning]] 2026
+tags: [[Divisjon Helsepersonell]] [[Team Medlemsforvaltning]] 2026 [[Ekstern tjeneste]]
 title: Forvaltning av Helsenettet - Medlemskap i 2026
+tjenesteeier: Janne Kvernland
 type: text/vnd.tiddlywiki
 
 ! Beskrivelse av tjenesten
@@ -35,9 +36,9 @@ Dette forutsetter nødvendig kunnskap og oversikt over medlemskap i Helsenettet 
 
 
 !Leveranser
+!!2026
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>
 
-!! 2026
-<<list-links filter:"[tag[Leveranse]tag[Ekstern tjeneste]tag[2026]tag<currentTiddler>]">>
 
 
 ! Styring

@@ -1,0 +1,31 @@
+TjenesteID: 40031
+created: 20260910094649673
+modified: 20260910135116912
+period: 2026-08
+revision: 0
+tags: Styring [[Styring Ekstern tjeneste]] [[Divisjon Helsepersonell]] 2026 August [[Autentisering og autorisasjon]] [[Forretningsmessig endring:2]]
+title: 08 Autentisering og autorisasjon - hovedtrekk og endringer august 2026
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer
+Hovedfokus er på georedundans med fire regioner og robustifisering av tjenesten. 
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 2''
+
+Konsekvens av forretningsmessig endring: Sommerens og høstens DDoS-angrep mot Digdir, Sikt og Helsenorge gjør det naturlig å foreta de tiltak som er mulig å gjøre med tanke  på HelseID og forberedelse på eventuelle DDoS-angrep. En del av tiltakene vil også kunne få økonomiske konsekvenser. 
+
+
+! Prognose på penger og ressurser
+
+* Finansiering:  Forskriftsfestet pasientjournal HelseID Autentisering & autorisasjon. 
+* Ramme 2026 34 MNOK.
+* Hvordan ligger vi an i prognose for året opp i mot finansieringsrammer for året: Prognosen ligger på 36,9 MNOK, knapt 3 MNOK over finansieringramme. Dette er avklart og har bakgrunn i den geololitiske situasjonen og arbeidet med georedundans og robustifisering av tjenesten. Det er også noe overlapp i forbindelse med bytte av konsulenter. 
+* Hvordan er runrate for året opp i mot prognose og finansieringsramme for året? Hva er årsak til avvik? Runrate  ligger på 32,8 MNOK mot prognose på 36,9 MNOK. Bakgrunnen for det er økt bemanning og overlapp av konsulenter. 
+* Status ressursbehov/kapasitet: Ressursbehov er nå dekket og i tråd med oppgavene. Når overgangen til fire regioner er gjennoført kan det finnes rom for å redusere bemanningen. 
+
+
+Link til økonomirapport i powerbi 
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=Bookmark19f8e267b312397c330d">Oversikt Autentisering og autorisasjon</a>
+
+

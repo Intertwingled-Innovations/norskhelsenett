@@ -1,9 +1,10 @@
 TjenesteID: 40030
 created: 20240128165322248
-modified: 20260409145050461
+modified: 20260915113940587
 revision: 0
-tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] [[Domene Samhandlingsplattform]] 2026
+tags: [[Divisjon Helsepersonell]] [[Domene Samhandlingsplattform]] 2026 [[Ekstern tjeneste]]
 title: Person
+tjenesteeier: Hanne Mari Kjærem Hindklev
 type: text/vnd.tiddlywiki
 
 Person består av følgende områder:

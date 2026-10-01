@@ -1,11 +1,12 @@
 created: 20241004130026605
-modified: 20241015083826525
+modified: 20260915105416518
 revision: 0
 tags: [[Forbedre kvaliteten på data i e-resept verdikjeden]] Resultat 2024 November
 title: Validere pasient mot Folkeregisteret
 type: text/vnd.tiddlywiki
 
 Det er idag ikke validering av navn og fødselsnummer mot Folkeregisteret. Dette medfører at:
+
 * anslagsvis 190 personer hver måned får uriktige reseptopplysninger knyttet til seg både i reseptformidleren og i sin kjernejournal.
 * det kan sendes inn testresepter i produksjon
 * det kan rekvireres legemidler til personer som er døde og dette kan potensielt være en kilde til misbruk

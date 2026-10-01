@@ -1,8 +1,8 @@
 TjenesteID: 40035
 created: 20260408095107395
-modified: 20260416095148954
+modified: 20260831105415017
 revision: 0
-tags: 2026 Forskrivningsmodulen [[All bruk av FM i produksjon er avviklet]] Resultat
+tags: 2026 Forskrivningsmodulen [[Avvikle all bruk av FM i produksjon]] Resultat
 title: Ingen helsevirksomheter bruker FM i produksjon
 type: text/vnd.tiddlywiki
 
@@ -17,7 +17,7 @@ De aktuelle EPJ-ene med FM er:
 * Metodika (Carasent)
 * Opus Dental (Opus)
 * Profil (Visma)
-* Psykbase og Physica (Aspit)
+* ~~Psykbase og Physica (Aspit)~~ - Avviklet august 2026
 * Velferd (Vitec HK Data)
 * Vision (CGM)
 

@@ -1,0 +1,22 @@
+TjenesteID: 40055
+created: 20260910081721880
+modified: 20260910083831150
+revision: 0
+tags: [[Divisjon Helsepersonell]] 2026 Utviklerportalen [[Styring Intern tjeneste]] [[Forretningsmessig endring:1]] August
+title: 08 Utviklerportalen - hovedtrekk og endringer august 2026
+type: text/vnd.tiddlywiki
+
+<<list-links filter:"[tag[]tag[Tiltak]]">>
+
+! Hovedtrekk og endringer
+
+* Nytt team for utviklerportalen etablert, med en myk oppstart der tre av fem teammedlemmer var på plass fra 1. august. De øvrige teammedlemmene kom på plass mot slutten av måneden.
+* Gjennomført en rekke tekniske og administrative oppgaver knyttet til etableringen av det nye teamet og overtakelsen av utviklerportalen fra Team plattform. Dette omfatter blant annet flytting av eierskap og tilganger, etablering av nødvendige team- og samhandlingsflater og tilpasninger i utviklings- og forvaltningsverktøy. Arbeidet med å overføre løsningen og tilhørende støttesystemer fortsetter.
+* Teamet har brukt tid på å bli kjent med dagens løsning, blant annet arkitektur, teknologi, konfigurasjon, arbeidsprosesser, struktur og innhold. Dette danner grunnlaget for videre forvaltning og utvikling av utviklerportalen.
+* Påbegynt arbeid med å etablere teamets arbeidsform, ansvarsområder og prioriteringer for den første perioden.
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 1''
+
+Konsekvens av forretningsmessig endring: Ingen.
+
+

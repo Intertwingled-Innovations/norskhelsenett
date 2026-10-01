@@ -1,6 +1,6 @@
 created: 20240123120011667
-modified: 20260811080608399
-revision: 1
+modified: 20260917111930199
+revision: 0
 tags: [[Norsk Helsenett SF]] Divisjon
 title: Divisjon Helsepersonell
 type: text/vnd.tiddlywiki
@@ -17,26 +17,29 @@ Divisjon helsepersonell skal:
 
 <<list-links filter:"[tag<currentTiddler>tag[Policy]]">>
 
-! Satsning for fart
-
-<<list-links filter:"[tag[Satsning for fart 2026]tag[2026]]">>
-
-
-
-
-! Mandater
-
-
-<<list-links filter:"[tag[Tiltak]tag[2026]]">>
-
 ! Eksterne tjenester
 
-<<list-links filter:"[tag<currentTiddler>tag[Ekstern Tjeneste]tag[2026]]">>
+!!!Satsing for fart finansiert av NHN
 
 
-! Relaterte tjenester
+<<list-links filter:"[tag<currentTiddler>tag[Ekstern tjeneste]tag[2026]tag[Satsing for fart]]">>
 
-<<list-links filter:"[tag<currentTiddler>tag[Relatert tjeneste]tag[2026]]">>
+!!!Oppgaver finansiert av HOD
+
+<<list-links filter:"[tag<currentTiddler>tag[Ekstern tjeneste]tag[2026]tag[Oppgaver finansiert av HOD]]">>
+
+
+!!! Eksterne tjenester finansiert over forskrift og tjenestepris
+
+
+
+<<list-links filter:"[tag<currentTiddler>tag[Ekstern tjeneste]tag[2026]!tag[Satsing for fart]!tag[Oppgaver finansiert av HOD]]">>
+
+
+
+!!! Relaterte tjenester finansiert over forskrift
+
+<<list-links filter:"[tag<currentTiddler>tag[Ekstern tjeneste]tag[Relatert tjeneste]tag[2026]]">>
 
 
 ! Interne tjenester

@@ -1,0 +1,19 @@
+TjenesteID: 40168
+created: 20260412114825559
+modified: 20260902115906609
+revision: 0
+tags: [[Kjernejournal Pasientens kritiske informasjon]] Målsetting 2026
+title: 4. Målsetting for kritisk info: Implementere endringer for HLR minus og behandlingsavklaringer
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+
+I kritisk informasjon er det behov for en mer egnet delingsløsning som sikrer at behandlingsavklaringer deles og er tilgjengelig for relevante aktører i pasientforløpet. I dagens kritiske informasjon finnes en funksjonalitet for at pasienten selv kan reservere seg mot livsforlengende behandling. Det er et behov for å skille mellom pasientens personlige reservasjon mot livsforlengende behandling og de kliniske beslutninger som gjøres i konkrete situasjoner. Dagens oppsett i kritisk informasjon må derfor endres da det må tilrettelegges for en annen type dokumentasjon og deling. Behovet for en bedre løsning er etterspurt fra Helse- og omsorgstjenestene. H.dir. har våren 2026 kommet med en veileder, som må gjenspeiles og harmoniseres med dagens løsning i kritisk informasjon. 
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

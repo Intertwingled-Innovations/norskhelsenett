@@ -1,9 +1,10 @@
 TjenesteID: 40039
 created: 20260504113721811
-modified: 20260511074354749
+modified: 20260915120455571
 revision: 0
-tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] [[Domene Samhandlingsplattform]] 2026
+tags: [[Divisjon Helsepersonell]] [[Domene Samhandlingsplattform]] 2026 [[Ekstern tjeneste]]
 title: Verdikjede e-resept
+tjenesteeier: Kari Jørgensen
 type: text/vnd.tiddlywiki
 
 ! Beskrivelse av tjenesten 

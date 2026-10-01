@@ -1,5 +1,5 @@
 created: 20240704135132262
-modified: 20260330070944493
+modified: 20260915105550257
 revision: 0
 tags: Resultat [[Kjernejournal Pasientens kritiske informasjon]] [[Målsetting for kritisk info: Det er etablert egen mikrotjeneste for pasientens kritiske informasjon]]
 title: Resultat pasientens kritiske informasjon: Det er etablert egen mikrotjeneste for pasientens kritiske informasjon
@@ -14,6 +14,7 @@ Levert:
 * Det er verifisert at ny og gammel tjeneste gir samme data
 
 Ikke levert:
+
 * Gammelt API er terminert
 * Kritisk informasjon i kjernejournal databasen er slettet
 

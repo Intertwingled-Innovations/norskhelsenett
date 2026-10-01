@@ -1,0 +1,19 @@
+TjenesteID: 40168
+created: 20260412115112999
+modified: 20260902113155250
+revision: 0
+tags: [[Kjernejournal Pasientens kritiske informasjon]] Målsetting 2026
+title: 1. Målsetting for kritisk info: Avgi data til EHDS Patient Summary
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+
+Avgi data til EHDS Patient Summary når formatet er klartlagt. Dette er en del av MyHealth@EU. MyHealth legger til rette for to hovedtyper informasjon, hvorav den ene er Pasientoppsummering (Patient Summary). Kritisk informasjon er en del av Pasientoppsummeringen, som blir en digital oversikt over pasientens sentrale helseinformasjon fra hjemlandet. Den inneholder viktige detaljer som kjente allergier, overfølsomhetsreaksjoner, og viktige diagnoser som er relevante for behandling.
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

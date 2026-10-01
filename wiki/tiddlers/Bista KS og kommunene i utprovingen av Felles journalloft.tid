@@ -1,9 +1,10 @@
 TjenesteID: 40047
 created: 20240128094201995
-modified: 20260326175624295
+modified: 20260917120822843
 revision: 0
-tags: [[Norsk Helsenett SF]] 2024 [[Team Kommune]] Kommune KS 2025 2026 [[Satsning for fart 2026]]
+tags: 2024 [[Team Kommune]] Kommune KS 2025 2026 [[Satsing for fart]] [[Divisjon Helsepersonell]] [[Ekstern tjeneste]]
 title: Bistå KS og kommunene i utprøvingen av Felles journalløft
+tjenesteeier: Sigurd Ringbakken
 type: text/vnd.tiddlywiki
 
 Bistand til kommunene og KS rundt satsningen på Felles journalløft er ikke eksplisitt nevnt i oppdragsbrevet for 2024, men det var nevnt i 2023. NHN fortsetter med denne bistanden.
@@ -22,4 +23,4 @@ Bistand til kommunene og KS rundt satsningen på Felles journalløft er ikke eks
 <<list-links filter:"[tag[Styring Tiltak]tag[2025]tag<currentTiddler>]">>
 
 !! 2026
-<<list-links filter:"[tag[Styring Tiltak]tag[2026]tag<currentTiddler>]">>
+<<list-links filter:"[tag[Styring Satsning for fart]tag[2026]tag<currentTiddler>]">>

@@ -1,13 +1,13 @@
 TjenesteID: 40033
 created: 20260803124317023
-modified: 20260803124342985
+modified: 20260908055024140
 revision: 0
 tags: [[Divisjon Helsepersonell]] [[Styring Ekstern tjeneste]] 2026 Kjernejournal [[Kjernejournal portal]] [[Forretningsmessig endring:1]] August
 title: 08 Kjernejournal portal - hovedtrekk og endringer august 2026
 type: text/vnd.tiddlywiki
 
 ! Hovedtrekk og endringer
-*Fokus i juni har vært arbeid med å gjøre PVK til master og implementere HelseId sitt krav om DPoP-støtte i API
+*Fokus i det siste har vært arbeid med å gjøre PVK til master og implementere HelseId sitt krav om DPoP-støtte i API
 *Et par utviklere har bidratt med overføring av legemidler ifm PLM (Pasientens Legemiddel)
 *En driftsressurs har bidratt med nesten 40% av sine timer i april i arbeidet med en POC for alternativ arbeidsflate
 *Vi jobber jevnt og trutt med å modernisere løsningen, og løsrive oss fra "Classic"
@@ -25,9 +25,9 @@ Konsekvens av forretningsmessig endring:
 ** Drift: 37,5 MNOK
 * Hvordan ligger vi an hittil i år opp i mot prognoser og planlagte oppgaver?
 ** Portal har mange mål for 2026, og har så langt fremdrift ift planlagte oppgaver
-* Årsprognose: 62,4 MNOK, Runrate 56 MNOK
-**Portal forvaltning: Årsprognose 32,1 MNOK, Runrate 28,5 MNOK
-**Drift Årsprognose: 30,3 MNOK, Runrate 27,5 MNOK.
+* Årsprognose: 63 MNOK, Runrate 56 MNOK
+**Portal forvaltning: Årsprognose 32 MNOK, Runrate 28,5 MNOK
+**Drift Årsprognose: 31 MNOK, Runrate 27,5 MNOK.
 * Hva er runrate for året opp i mot prognose og finansieringsramme for året? Hva er årsak til avvik?
 **Det har vært noe lavere timeforbruk enn antatt pga ferie-avvikling og sykdom. Det er også påløpt lavere plattform-kostnader og felleskostnader.
 * Status ressursbehov/kapasitet

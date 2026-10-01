@@ -1,0 +1,54 @@
+TjenesteID: 40055
+created: 20260831054914812
+modified: 20260831090456827
+revision: 0
+tags: [[Divisjon Helsepersonell]] 2026 [[Styring Satsning for fart]] Legemiddelgrunndata [[Team Sats]] [[Forretningsmessig endring:1]] August
+title: 08 Legemiddelgrunndata - hovedtrekk og endringer august 2026
+type: text/vnd.tiddlywiki
+
+<<list-links filter:"[tag[]tag[Tiltak]]">>
+
+! Hovedtrekk og endringer
+
+Strategisk: 
+
+NHN finansierer gjennom "tiltak for fart" investeringen for utvikling og etablering av en nasjonal grunndatatjeneste i NHN sin samhandlingsplattform for distribusjon av legemiddeldata for konsumenter av tjenesten. Aktørene i sektoren finansierer drift og forvaltning av tjenesten når den er i produksjon.
+Det ble først avtalt med NHN, DMP og RHFene å starte med utvikling av en MVP i 2026 ved å tilgjengeliggjøre H-reseptdata som første tjeneste fra en ny legemiddelgrunndatatjeneste i NHN. Når vi har jobbet med første versjon av disse tjenestene har vi avdekket at vi kan levere dette raskere enn antatt. NHN tenker derfor å avvike prinsippet med å ikke lage «software for hylla», og sette fart på å ferdigstille mest mulig av tjenestene raskest mulig. Dette er forankret med sektoren i IKT direktørmøtet 28.4.
+
+Direktoratet for medisinske produkter (DMP) er den sentrale kilden til legemiddelgrunndata til helsesektoren, men de mangler finansiering for nødvendig oppgradering av DMPs interne systemer/infrastruktur for å saksbehandle/produsere legemiddelgrunndata. NHN bistår nå en felles prosess med DMP, HDIR og RHFene for å be HOD om å finansiere videre satsninger for at DMP skal kunne opprettholde forsvarlig fremdrift for realisering av en nasjonal legemiddelgrunndatatjeneste
+
+
+! Operativt august:
+
+* Onboarding av to konsulenter, teamet er nå komplett. Jobbet med interne prosesser i teamet.
+* Forbredelser for to dagers workshop med teamet for fart og retning.
+* Dialog og avklaringer med h-resept prosjektet om FHIR grensesnitt. 
+* Videre jobb med Ros, Personvern og BiA.
+* Videre jobb på API, testdekning, og infrastruktur.
+
+! Målsettinger
+
+<<list-links filter:"[tag[Målsetting]tag[2026]tag[Legemiddelgrunndata]]">>
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag[2026]tag[Legemiddelgrunndata]]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag[2026]tag[Legemiddelgrunndata]]">>
+
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 1''
+
+Konsekvens av forretningsmessig endring: 1 - Dette er en ny tjeneste. Tatt denne ned til 1 pga etableringen er i godt i gang.
+
+! Prognose på penger og ressurser
+* Finansiering: Satsing for fart og finansiert over NHN sin egenkapital.
+* Den totale årsprognosen ligger på 8,4 mnok og består i hovedsak av interne timer samt påslag interne tjenester og felleskostnader
+
+
+
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=f600785091dac1c0030e">Oversikt satsning Legemiddel grunndata (DMP) (Power BI)</a>
+

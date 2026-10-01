@@ -1,5 +1,5 @@
 created: 20250515074745908
-modified: 20260409111126727
+modified: 20260908065125768
 revision: 0
 tags: Ketil
 title: Ketiddler ٩(̾●̮̮̃̾•̃̾)۶
@@ -36,7 +36,7 @@ type: text/vnd.tiddlywiki
 
 *[[Statistikk & måling]] <<list-links  filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag[Statistikk & måling]!limit[1]] ">>
 
-*[[Fjernhjelp]] <<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag[Fjernhjelp]!limit[1]]">>
+*[[Fjernhjelp]] (Avviklet!)<<list-links filter:"[tag[Styring Ekstern tjeneste]tag[2026]tag[Fjernhjelp]!limit[1]]">>
 
 <!-- * [[Navet]] <<list-links  filter:"[tag[Styring Intern tjeneste]tag[2026]tag[Navet]!limit[1]] ">> -->
 <!--

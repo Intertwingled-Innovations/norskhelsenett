@@ -1,0 +1,12 @@
+created: 20260905140247757
+modified: 20260915084051945
+revision: 0
+tags: [[Tilby nytt API for lesing av legemiddel informasjon]] 2026 [[Kjernejournal Pasientens legemidler]] Leveranse August
+title: Design av nytt API steg 1 er klart
+type: text/vnd.tiddlywiki
+
+Det finnes idag et eksternt API og et internt API. Dette bør være samme API i fremtiden.
+
+API'et skal være beskyttet av HelseID med DPoP.
+
+Steg 1 er å tilby tilsvarende som dagens API, men beskyttet av HelseID med DPoP. Målet er minst mulig endring for dagens konsumenter og at kilden er ny backend.

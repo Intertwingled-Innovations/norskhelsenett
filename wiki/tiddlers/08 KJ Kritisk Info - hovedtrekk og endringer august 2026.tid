@@ -1,0 +1,31 @@
+TjenesteID: 40168
+created: 20260911071757514
+modified: 20260911072514367
+revision: 0
+tags: 2026 [[Styring Ekstern tjeneste]] [[Divisjon Helsepersonell]] [[Forretningsmessig endring:1]] [[Kjernejournal Pasientens kritiske informasjon]] August
+title: 08 KJ Kritisk Info - hovedtrekk og endringer august 2026
+type: text/vnd.tiddlywiki
+
+! Hovedtrekk og endringer
+* Ingen vesentlige endringer siste periode.
+* Arbeid med overgang til ICD-11 er igangsatt. Helsedirektoratet driver arbeidet med nasjonal innføring av ICD-11 med mål om at dette skal være innført i 2028/2029.
+
+''Forretningsmessig endring (1=ingen, 2=liten, 3=større) 1''
+
+Konsekvens av forretningsmessig endring: Ingen
+
+
+! Prognose på penger og ressurser
+
+* Tjenesten er en del av den nasjonale e-helseløsningen under Kjernejournal og  finansieres over forskriftsfestede midler.
+* DHP har brukt 4.7 mnok av en total inntektsramme for 2026 på 10.6 mnok
+* Budsjett 2026: 10.3 mnok
+* Prognose for året: 8.5 mnok
+* Runrate for året (11 mnd): 6.4 mnok. Årsaken er større pådrag på Kjernejournal pasientens info, samt at en ressurs en leid ut til Pasientens planer
+* Framdrift er stort sett ihht plan.
+* Teamet har nødvendige ressurser
+
+! Leveranser
+<<list-links filter:"[tag[Leveranse]tag[KJ Kritisk Info]tag[2026]tag[August]]">>
+
+<a href="https://app.powerbi.com/groups/0d04e379-dd22-4155-979b-3348f02f6b16/reports/de501646-c0e9-48e7-916b-ff043719dc2e/ReportSection3a0b83bb708988e3d152?experience=power-bi&bookmarkGuid=84fd609ab6392d71d0d4">Oversikt KJ Kritisk Info (Power BI)</a>

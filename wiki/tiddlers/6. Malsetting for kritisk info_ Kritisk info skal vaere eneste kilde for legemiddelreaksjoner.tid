@@ -1,0 +1,19 @@
+TjenesteID: 40168
+created: 20260412115259414
+modified: 20260902120859175
+revision: 0
+tags: [[Kjernejournal Pasientens kritiske informasjon]] Målsetting 2026
+title: 6. Målsetting for kritisk info: Kritisk info skal være eneste kilde for legemiddelreaksjoner
+type: text/vnd.tiddlywiki
+
+! Beskrivelse
+
+I 2024 ble det besluttet at  Kritisk info skal være den primære kilden til legemiddelreaksjoner nasjonalt. I 2025 ble endringer som må til for å realisere det kartlagt. For å få dette til må M25.1 legemiddelreaksjonene i RF migreres inn til kritisk informasjon databasen. 
+
+! Resultat
+
+<<list-links filter:"[tag[Resultat]tag<currentTiddler>]">>
+
+! Leveranser
+
+<<list-links filter:"[tag[Leveranse]tag<currentTiddler>]">>

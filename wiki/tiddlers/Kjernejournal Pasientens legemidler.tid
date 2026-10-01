@@ -1,9 +1,10 @@
 TjenesteID: 40169
 created: 20260223113110897
-modified: 20260504132050589
+modified: 20260915112947603
 revision: 0
-tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] 2026 [[Kjernejournal Pasientens legemidler]]
+tags: [[Divisjon Helsepersonell]] 2026 [[Ekstern tjeneste]]
 title: Kjernejournal Pasientens legemidler
+tjenesteeier: Kari Gjerde
 type: text/vnd.tiddlywiki
 
 Pasientens legemidler (PLM) er en tjeneste som skal tilby lesing av legemiddelinformasjon, foreløpig under kjernejournalforskriften. Tjenesten erstatter KJ infotjenester legemiddel API samt et internt API som benyttes av Kjernejournal portal og Helsenorge (Prescription drug API).

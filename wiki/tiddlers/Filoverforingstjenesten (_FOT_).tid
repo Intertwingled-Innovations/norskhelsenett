@@ -1,8 +1,9 @@
 created: 20240128165620607
-modified: 20250515043053287
+modified: 20260915084328534
 revision: 0
-tags: [[Divisjon Helsepersonell]] [[Ekstern Tjeneste]] FOT Avvikles
+tags: [[Divisjon Helsepersonell]] FOT Avvikles [[Ekstern tjeneste]]
 title: Filoverføringstjenesten ("FOT")
+tjenesteeier: Ketil Parow
 type: text/vnd.tiddlywiki
 
 Opprinnelig satt opp som en tjeneste som skulle muliggjøre overføring av registerdata (sensitiv informasjon)

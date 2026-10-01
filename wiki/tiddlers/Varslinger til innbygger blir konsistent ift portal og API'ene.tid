@@ -1,7 +1,7 @@
 TjenesteID: 40033
 created: 20260316125051409
 modified: 20260805060507039
-revision: 2
+revision: 0
 tags: [[Varslinger til innbygger håndteres ikke i kjernejournal portal]] 2026 [[Kjernejournal portal]] Resultat
 title: Varslinger til innbygger blir konsistent ift portal og API'ene
 type: text/vnd.tiddlywiki

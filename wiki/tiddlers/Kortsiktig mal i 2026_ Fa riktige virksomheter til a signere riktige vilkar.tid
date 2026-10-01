@@ -1,0 +1,15 @@
+created: 20260326140109736
+modified: 20260923102352910
+revision: 1
+tags: [[Forvaltning av Helsenettet - Medlemskap i 2026]] Målsetting 2026 [[Team Medlemsforvaltning]]
+title: Kortsiktig mål i 2026: Få riktige virksomheter til å signere riktige vilkår
+type: text/vnd.tiddlywiki
+
+! Beskrivelse av målsetning
+Kortsiktig mål: Få riktige virksomheter til å signere riktige vilkår
+
+! Resultat
+<<list-links filter:"[tag[Resultat]tag[2026]tag<currentTiddler>]">>
+
+! Leveranser
+<<list-links filter:"[tag[Leveranse]tag[2026]tag<currentTiddler>]">>

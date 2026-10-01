@@ -1,0 +1,8 @@
+created: 20260918125709664
+modified: 20260918130352110
+revision: 0
+tags: [[Sikre god kvalitet på data som tilbys virksomhetene på Helsenettet.no]] September 2026 Leveranse Selvbetjening
+title: 09/26- Kafka-meldinger for systemer som skal brukes på helsenettet.no. Første delleveranse
+type: text/vnd.tiddlywiki
+
+Kafka-meldingen for systemer inneholder nå hvilke organisasjoner som kan velge systemet, slik at konsumenter kan bygge søk på dette. Behovene identifiseres av team helsenettet. Selvbetjening leverer på identifiserte behov.
