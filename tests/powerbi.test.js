@@ -404,7 +404,10 @@ h.test("a review that is only a retired template is listed, a written one is not
 		current = addReview(w, "11 " + SERVICE + " - hovedtrekk og endringer november 2031", SERVICE, templateText(w));
 	try {
 		assert.ok(retired && retired.indexOf("Hvordan finansieres tjenesten?") !== -1, "the retired template is not the old wording");
-		assert.deepEqual(w.filter("[function[nhn-reviews-retired-template]]"), [untouched]);
+		var listed = w.filter("[function[nhn-reviews-retired-template]]");
+		assert.ok(listed.indexOf(untouched) !== -1, "the untouched copy of the retired template is not listed");
+		assert.ok(listed.indexOf(written) === -1, "a written review is listed");
+		assert.ok(listed.indexOf(current) === -1, "a review on the current template is listed");
 		// the title turns up in other sections' lists too, so look only at this one's
 		var html = w.render("{{Anomalier}}"),
 			section = html.slice(html.indexOf("Gjennomganger som fortsatt er en tidligere mal"));
@@ -415,9 +418,26 @@ h.test("a review that is only a retired template is listed, a written one is not
 	}
 });
 
-/* The claim the template swap rests on: the snapshot has no such review. */
-h.test("no review in the snapshot is still the retired template", function() {
-	assert.deepEqual(h.wiki().filter("[function[nhn-reviews-retired-template]]"), []);
+/*
+What the template swap rests on: everything this lists is genuinely an untouched
+copy of the old wording, and nothing else is. The August 2026 snapshot listed
+nothing; the September one lists "12 Autentisering og autorisasjon - hovedtrekk
+og endringer desember 2026", created on the live wiki from the old template and
+never written — exactly the review Anomalier section 11 exists to show before
+the live template is swapped.
+*/
+h.test("every review listed as a retired template is an untouched copy of it", function() {
+	var w = h.wiki(),
+		retired = w.$tw.wiki.getTiddlerText(NHN + "/retired-templates/review-2026-01").trim(),
+		listed = w.filter("[function[nhn-reviews-retired-template]]");
+	listed.forEach(function(title) {
+		assert.equal(w.$tw.wiki.getTiddlerText(title).trim(), retired, title + " is listed but is not the retired wording");
+	});
+	w.filter("[function[nhn-reviews-all]]").forEach(function(title) {
+		if(w.$tw.wiki.getTiddlerText(title).trim() === retired) {
+			assert.ok(listed.indexOf(title) !== -1, title + " is the retired wording but is not listed");
+		}
+	});
 });
 
 h.suite("Page speed bindings");
@@ -455,30 +475,45 @@ Tjenesteeiere finds every service's source review once, as a JSON map, instead
 of once for the count and again per row. The map must say what the per-service
 function says, for every service, including titles with quotes and parentheses.
 */
+/* The map of service -> source review, as Tjenesteeiere computes it. */
+function sourceMap(w) {
+	var reviews = w.$tw.utils.stringifyList(w.filter("[function[nhn-reviews-all]]"));
+	return {
+		reviews: reviews,
+		map: JSON.parse(w.first("[function[nhn-powerbi-sources],<r>]", {r: reviews}))
+	};
+}
+
+/* How many services the map finds a suggestion for. */
+function suggested(map) {
+	return Object.keys(map).filter(function(s) { return map[s]; }).length;
+}
+
 h.test("the source map agrees with the per-service source for every service", function() {
 	var w = h.wiki(),
-		reviews = w.$tw.utils.stringifyList(w.filter("[function[nhn-reviews-all]]")),
-		map = JSON.parse(w.first("[function[nhn-powerbi-sources],<r>]", {r: reviews})),
-		services = w.filter("[function[nhn-services]]"),
-		found = 0;
-	assert.deepEqual(Object.keys(map).sort(), services.slice().sort());
+		sm = sourceMap(w),
+		services = w.filter("[function[nhn-services]]");
+	assert.deepEqual(Object.keys(sm.map).sort(), services.slice().sort());
 	services.forEach(function(s) {
-		var one = w.first("[function[nhn-powerbi-source],<s>,<r>]", {s: s, r: reviews});
-		assert.equal(map[s], one, s);
-		if(one) { found++; }
+		assert.equal(sm.map[s], w.first("[function[nhn-powerbi-source],<s>,<r>]", {s: s, r: sm.reviews}), s);
 	});
-	assert.equal(found, 44, "the snapshot's suggestion count moved");
+	// 44 of 60 in the August 2026 snapshot, 51 in September's; the number moves
+	// with the content, so what is pinned is that the map finds some and not all
+	var found = suggested(sm.map);
+	assert.ok(found > 0 && found < services.length, "the map suggests a link for " + found + " of " + services.length + " services");
 });
 
 h.test("Tjenesteeiere counts and lists the suggestions from the map", function() {
 	var w = h.wiki(),
+		found = suggested(sourceMap(w).map),
+		services = w.filter("[function[nhn-services]count[]]")[0] | 0,
 		html = w.render("{{Tjenesteeiere}}"),
 		rows = html.split("<tr").filter(function(r) { return r.indexOf("nhn-powerbi-input") !== -1; });
-	assert.ok(/44(&#32;|\s)*tjenester uten lenke har et forslag/.test(html.replace(/<[^>]+>/g, "")),
-		"the bulk button does not count 44 suggestions");
-	assert.equal(rows.length, 60);
-	assert.equal(rows.filter(function(r) { return /nhn-powerbi-source/.test(r); }).length, 44,
-		"the rows do not show 44 suggestions");
+	assert.ok(new RegExp(found + "(&#32;|\\s)*tjenester uten lenke har et forslag").test(html.replace(/<[^>]+>/g, "")),
+		"the bulk button does not count " + found + " suggestions");
+	assert.equal(rows.length, services, "the page does not show one row per service");
+	assert.equal(rows.filter(function(r) { return /nhn-powerbi-source/.test(r); }).length, found,
+		"the rows do not show " + found + " suggestions");
 });
 
 h.suite("Power BI link on the service");
@@ -533,6 +568,14 @@ h.test("the header shows nothing without a link or a suggestion, and nothing on 
 });
 
 h.test("a snapshot service with no stored link shows its suggestion", function() {
-	var html = header(h.wiki(), "Autentisering og autorisasjon");
-	assert.ok(/forslag fra/.test(html) && html.indexOf("juni 2026") !== -1, html.replace(/<[^>]+>/g, " "));
+	var w = h.wiki(),
+		service = "Autentisering og autorisasjon",
+		sm = sourceMap(w),
+		source = sm.map[service],
+		html = header(w, service);
+	assert.ok(source, service + " has no suggestion in the snapshot, so pick another service");
+	assert.ok(!w.$tw.wiki.getTiddler(service).fields.powerbi, service + " now has a stored link, so pick another service");
+	var period = w.project("nhn-month", source)[0].toLowerCase() + " " + w.project("nhn-year", source)[0];
+	assert.ok(/forslag fra/.test(html) && html.indexOf(period) !== -1,
+		"expected a suggestion from " + period + ": " + html.replace(/<[^>]+>/g, " "));
 });

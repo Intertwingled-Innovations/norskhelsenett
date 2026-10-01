@@ -184,9 +184,10 @@ h.test("a created review is recognised by the rest of the system", function() {
 
 h.test("the body is seeded from the template", function() {
 	var w = h.fixtureWiki(),
-		made = "08 Autentisering og autorisasjon - hovedtrekk og endringer august 2026";
-	create(w, REVIEW, {service: "Autentisering og autorisasjon", year: "2026",
-		month: "August", severity: "1"});
+		p = freePeriod(w, "Autentisering og autorisasjon", "2026"),
+		made = p.title;
+	create(w, REVIEW, {service: "Autentisering og autorisasjon", year: p.year,
+		month: p.month, severity: "1"});
 	try {
 		var text = w.$tw.wiki.getTiddlerText(made),
 			// the definition finds the template by its `mal` tag, not by title,
@@ -409,13 +410,20 @@ h.test("tags the form knows nothing about are preserved", function() {
 /* Build a review through the create path, so an editing test owns its target
    rather than mutating one of the snapshot's own tiddlers. Refuses to hand back a
    tiddler that already existed — silently editing real content would make the
-   test's outcome depend on whatever that tiddler happens to contain. */
+   test's outcome depend on whatever that tiddler happens to contain.
+
+   The targets live in EDIT_YEAR, not the current year: every snapshot refresh
+   brings the months NHN have filed since, and the September 2026 refresh took
+   August and December. 2031 is also the fixtures' isolated year, so it is a
+   year in use and the form offers it. */
+var EDIT_YEAR = "2031";
+
 function reviewFor(wiki, month) {
 	var made = wiki.filter("[<m>lowercase[]] :map[[" + NHN + "/months]getindex<currentTiddler>]",
 			{m: month})[0] + " Autentisering og autorisasjon - hovedtrekk og endringer " +
-			month.toLowerCase() + " 2026";
+			month.toLowerCase() + " " + EDIT_YEAR;
 	assert.ok(!wiki.exists(made), "pick a month the snapshot does not already use: " + made);
-	create(wiki, REVIEW, {service: "Autentisering og autorisasjon", year: "2026",
+	create(wiki, REVIEW, {service: "Autentisering og autorisasjon", year: EDIT_YEAR,
 		month: month, severity: "1"});
 	assert.ok(wiki.exists(made), "could not build the review this test needs: " + made);
 	return made;
@@ -424,7 +432,7 @@ function reviewFor(wiki, month) {
 h.test("changing an input that feeds the title renames and relinks", function() {
 	var w = h.fixtureWiki(),
 		target = reviewFor(w, "Juli"),
-		renamed = "10 Autentisering og autorisasjon - hovedtrekk og endringer oktober 2026";
+		renamed = "10 Autentisering og autorisasjon - hovedtrekk og endringer oktober " + EDIT_YEAR;
 	// Something that points at the review by tagging its title
 	w.addTiddler({title: "Test Barn Av Gjennomgang", tags: "[[" + target + "]]", text: "child"});
 	try {
@@ -471,7 +479,7 @@ h.test("editing updates the fields a form manages", function() {
 		form.save();
 		assert.deepEqual(w.project("nhn-severity", target), ["Forretningsmessig endring:3"]);
 		// and the period stamp follows the inputs
-		assert.equal(w.$tw.wiki.getTiddler(target).fields.period, "2026-11");
+		assert.equal(w.$tw.wiki.getTiddler(target).fields.period, EDIT_YEAR + "-11");
 	} finally {
 		discard(w, target);
 	}
@@ -521,7 +529,7 @@ h.test("an optional input left blank is simply not applied", function() {
 		form.save();
 		assert.deepEqual(w.project("nhn-severity", target), [],
 			"clearing severity did not remove the tag");
-		assert.ok(tagsOf(w, target).indexOf("2026") !== -1, "unrelated tags were disturbed");
+		assert.ok(tagsOf(w, target).indexOf(EDIT_YEAR) !== -1, "unrelated tags were disturbed");
 	} finally {
 		discard(w, target);
 	}

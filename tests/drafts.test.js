@@ -100,15 +100,19 @@ Clicking the page's own button in a private wiki is the only thing that notices
 the page passing `nhn-drafts` where it means `nhn-drafts-disposable`.
 */
 h.test("clicking the page's button deletes the disposable drafts and no others", function() {
-	var w = h.scratchWiki(),
-		disposable = w.filter("[function[nhn-drafts-disposable]]"),
+	var w = h.scratchWiki();
+	// The August 2026 snapshot held one unsaved draft (of a tiddler never saved);
+	// the September one holds none, and the held-back half of the button needs one
+	w.addTiddler({title: "Draft of 'Test Ulagret'", "draft.of": "Test Ulagret", "draft.title": "Test Ulagret",
+		text: "Tekst som ikke finnes noe annet sted"});
+	var disposable = w.filter("[function[nhn-drafts-disposable]]"),
 		unsaved = w.filter("[function[nhn-drafts-unsaved]]"),
 		origins = disposable.map(function(title) {
 			return w.first("[<t>get[draft.of]]", {t: title});
 		}).filter(function(origin) { return origin && w.exists(origin); });
 
 	assert.ok(disposable.length > 0, "the snapshot has no disposable drafts, so this proves nothing");
-	assert.ok(unsaved.length > 0, "the snapshot has no unsaved draft, so the held-back half is untested");
+	assert.ok(unsaved.indexOf("Draft of 'Test Ulagret'") !== -1, "the synthetic unsaved draft was not classed as unsaved");
 	assert.ok(origins.length > 0, "no disposable draft has a live original, so nothing pins them surviving");
 
 	var clicked = w.clickButtons("{{Anomalier}}", "Slett");

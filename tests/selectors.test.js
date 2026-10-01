@@ -238,8 +238,10 @@ h.test("nhn-glued-lists reports only lists glued to paragraph text", function() 
 		assert.ok(found.indexOf(t) === -1, t + " should not be reported");
 	});
 	assert.ok(found.indexOf("$:/temp/test/glued") === -1, "system tiddlers must be ignored");
-	assert.ok(found.indexOf("02 Styringsrapport DHP februar 2025") >= 0,
-		"the known glued list in the February 2025 report was not detected");
+	// The February 2025 report used to be the snapshot's known case. NHN fixed
+	// every glued list in September 2026 (the only `*` lines left after prose
+	// are inside HTML comments, which the detector rightly ignores), so the
+	// fixtures above are what pin the behaviour now.
 });
 
 /*
