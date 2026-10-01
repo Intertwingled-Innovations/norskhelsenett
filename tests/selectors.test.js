@@ -135,6 +135,77 @@ h.test("no governance node is its own child", function() {
 	});
 });
 
+/*
+NHN's September 2026 clean-up replaced the service types `Tiltak` and `Satsning
+for fart` with `Oppgaver fra HOD` and `Satsing for fart`, carried alongside
+`Ekstern tjeneste`, and introduced the matching `Styring …` tags. Both lists are
+configuration, and a tag missing from one fails silently: a review tagged it
+simply never appears anywhere. So each new tag is checked end to end.
+*/
+h.test("the governance and service-type tags introduced in September 2026 are recognised", function() {
+	var w = h.fixtureWiki(),
+		made = [],
+		reviewOf = {
+			"Styring Ekstern tjeneste": "Test Gjennomgang Ekstern",
+			"Styring Intern tjeneste": "Test Gjennomgang Intern",
+			"Styring Relatert tjeneste": "Test Gjennomgang Relatert",
+			"Styring Satsing for fart": "Test Gjennomgang Satsing",
+			"Styring Oppgaver fra HOD": "Test Gjennomgang HOD"
+		},
+		serviceOf = {
+			"Relatert tjeneste": "Test Tjeneste Relatert",
+			"Satsing for fart": "Test Tjeneste Satsing",
+			"Oppgaver fra HOD": "Test Tjeneste HOD"
+		};
+	Object.keys(reviewOf).forEach(function(tag) {
+		made.push(reviewOf[tag]);
+		w.addTiddler({title: reviewOf[tag], tags: "[[" + tag + "]] 2031 Mars", text: "Fixture review"});
+	});
+	Object.keys(serviceOf).forEach(function(tag) {
+		made.push(serviceOf[tag]);
+		w.addTiddler({title: serviceOf[tag], tags: "[[Ekstern tjeneste]] [[" + tag + "]] [[Test Divisjon]] 2031",
+			TjenesteID: "99100", text: "Fixture service with a secondary classification"});
+	});
+	try {
+		var reviews = w.filter("[function[nhn-reviews]]"),
+			extract1 = w.filter("[function[nhn-extract-governance-set]]", {"extract-year": "2031", "extract-month": "Mars"}),
+			extract2 = w.filter("[function[nhn-extract-services-set]]", {"extract-year": "2031"});
+		Object.keys(reviewOf).forEach(function(tag) {
+			assert.ok(reviews.indexOf(reviewOf[tag]) !== -1, "a review tagged " + tag + " is not a review");
+			assert.ok(extract1.indexOf(reviewOf[tag]) !== -1, "a review tagged " + tag + " is missing from Extract 1");
+			assert.deepEqual(w.project("nhn-kind", reviewOf[tag]), ["review"], tag);
+		});
+		Object.keys(serviceOf).forEach(function(tag) {
+			assert.ok(extract2.indexOf(serviceOf[tag]) !== -1, "a service tagged " + tag + " is missing from Extract 2");
+			assert.ok(w.project("nhn-service-type", serviceOf[tag]).indexOf(tag) !== -1,
+				"nhn-service-type does not report " + tag);
+			assert.ok(w.filter("[function[nhn-services]]").indexOf(serviceOf[tag]) !== -1,
+				"a service tagged Ekstern tjeneste + " + tag + " is not a service");
+		});
+	} finally {
+		made.forEach(function(t) { w.$tw.wiki.deleteTiddler(t); });
+	}
+});
+
+/*
+The clean-up renamed the service types but left the reviews written under the
+old names as they were: 167 tiddlers still carry `Styring Tiltak` and 24 the old
+spelling `Styring Satsning for fart`. Dropping either from the recognised list
+would silently remove those reviews from the review tree, both extracts, the
+ToDo history and archiving.
+*/
+h.test("reviews tagged a retired governance spelling stay recognised", function() {
+	var w = h.wiki(),
+		all = w.filter("[function[nhn-reviews-all]]");
+	["Styring Tiltak", "Styring Satsning for fart"].forEach(function(tag) {
+		var tagged = w.filter("[[" + tag + "]tagging[]] :filter[function[nhn-has-month]] -[function[nhn-excluded]]");
+		assert.ok(tagged.length > 0, "no review carries " + tag + " any more; once NHN have retagged them the entry can go");
+		tagged.forEach(function(title) {
+			assert.ok(all.indexOf(title) !== -1, title + " carries " + tag + " but is no longer a review");
+		});
+	});
+});
+
 h.suite("Extract filtering");
 
 h.test("blank year and month place no constraint", function() {

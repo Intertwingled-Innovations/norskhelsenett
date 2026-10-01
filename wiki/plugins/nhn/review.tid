@@ -2,7 +2,7 @@ title: $:/plugins/intertwingled-innovations/nhn/review
 tags: $:/tags/Global
 
 \whitespace trim
-\define nhn-governance-tags() [[Styring Ekstern tjeneste]] [[Styring Intern tjeneste]] [[Styring Tiltak]] [[Styring Relatert tjeneste]] [[Styring Satsning for fart]]
+\define nhn-governance-tags() [[Styring Ekstern tjeneste]] [[Styring Intern tjeneste]] [[Styring Relatert tjeneste]] [[Styring Satsing for fart]] [[Styring Oppgaver fra HOD]] [[Styring Tiltak]] [[Styring Satsning for fart]]
 \define nhn-month-keys() [[januar]] [[februar]] [[mars]] [[april]] [[mai]] [[juni]] [[juli]] [[august]] [[september]] [[oktober]] [[november]] [[desember]]
 \function nhn-has-month() [<currentTiddler>tags[]lowercase[]] :intersection[enlist<nhn-month-keys>] +[limit[1]]
 \function nhn-reviews-all() [enlist<nhn-governance-tags>tagging[]unique[]] :filter[function[nhn-has-month]] -[function[nhn-templates]] -[function[nhn-drafts]]
@@ -16,7 +16,7 @@ tags: $:/tags/Global
 
 Configuration for the business-review (Forretningsgjennomgang) group-by tree.
 
-* `nhn-governance-tags` — the five `Styring …` governance tags (also the Extract-1 selector).
+* `nhn-governance-tags` — the `Styring …` governance tags (also the Extract-1 selector): the five current ones (Ekstern tjeneste, Intern tjeneste, Relatert tjeneste, Satsing for fart, Oppgaver fra HOD), plus two retired ones — `Styring Tiltak` and the old spelling `Styring Satsning for fart`. NHN's September 2026 clean-up renamed the service types but left the reviews written under the old names tagged as they were (167 and 24 tiddlers in the September snapshot), so both stay //recognised// here. Whether the forms may //apply// them is a separate question, decided by the form rules, not by this list.
 * `nhn-reviews` — monthly business-review tiddlers: tagged a governance tag and carrying a month tag. `nhn-reviews-all` is the same set with archived reviews still in it — what the ToDo lists read, so archiving a year cannot falsify its history.
 * `nhn-year` / `nhn-month` — group projections (month normalised to canonical casing, merging `mars`/`Mars`).
 * `nhn-year-sortkey` (newest first) / `nhn-month-ord` (chronological) — sort keys for the group levels.

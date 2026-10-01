@@ -17,7 +17,7 @@ tags: $:/tags/Global
 Global functions forNHN governance configuration.
 
 * `nhn-canonical-tjeneste-types` — the three service types in their canonical casing; what the Tjeneste form offers, so guided creation never mints a drift variant.
-* `nhn-tjeneste-types` — service-type tag set used by the governance tree: the canonical three //plus// their casing-drift variants, because the snapshot uses both. Distinct from the full Extract-2 service-type set, which also includes `Tiltak`/`Satsning for fart` (NHN-level initiatives).
+* `nhn-tjeneste-types` — service-type tag set used by the governance tree: the canonical three //plus// their casing-drift variants (none in use since NHN's September 2026 clean-up, kept against future drift). Deliberately distinct from the full Extract-2 service-type set, which also includes `Satsing for fart` and `Oppgaver fra HOD`: since the clean-up a service carries one of those //alongside// `Ekstern tjeneste`, while a tiddler carrying one //alone// is a year-versioned NHN-level initiative from 2024–25, not a service.
 * `nhn-gov-root-filter` — root of the Styringsstruktur.
 * `nhn-is-service` / `nhn-is-division` — kind tests used to dispatch children (a division is tagged `Divisjon` but not `Domene`).
 * `nhn-structural-children` — sub-divisions + services tagged the current node (NHN → divisions → services).

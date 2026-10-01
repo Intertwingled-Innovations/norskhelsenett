@@ -3,7 +3,7 @@ tags: $:/tags/Global
 
 \whitespace trim
 \define nhn-permalink-prefix() https://tiddlywiki.plattform.nhn.no/#
-\define nhn-extract-service-types() [[Ekstern tjeneste]] [[Ekstern Tjeneste]] [[Intern tjeneste]] [[Intern Tjeneste]] [[Relatert tjeneste]] [[Relatert Tjeneste]] [[Tiltak]] [[Satsning for fart]]
+\define nhn-extract-service-types() [[Ekstern tjeneste]] [[Intern tjeneste]] [[Relatert tjeneste]] [[Satsing for fart]] [[Oppgaver fra HOD]] [[Ekstern Tjeneste]] [[Intern Tjeneste]] [[Relatert Tjeneste]] [[Tiltak]] [[Satsning for fart]]
 \function nhn-serviceid() [<currentTiddler>get[TjenesteID]]
 \function nhn-url() [<currentTiddler>encodeuricomponent[]addprefix<nhn-permalink-prefix>]
 \function nhn-division() [<currentTiddler>tags[]] :filter[tag[Divisjon]!tag[Domene]]
@@ -22,7 +22,7 @@ Projection functions (tiddler → value) for the §3.3 extracts and reused by §
 * `nhn-servicename` — the service this tiddler is about: its service-entity tag, or its own title if it is itself a service.
 * `nhn-severity` — the `Forretningsmessig endring:N` tag (business change).
 * `nhn-governance-type` — the `Styring …` governance tag.
-* `nhn-service-type` — the bare service-type tag (Ekstern/Intern/Relatert tjeneste, Tiltak, Satsning for fart).
+* `nhn-service-type` — the bare service-type tags: the current five (`Ekstern tjeneste`, `Intern tjeneste`, `Relatert tjeneste`, `Satsing for fart`, `Oppgaver fra HOD`), plus the casing variants and the retired `Tiltak` / `Satsning for fart`, which no tiddler carries after the September 2026 clean-up but which cost nothing to keep recognising. Since that clean-up a service carries `Ekstern tjeneste` //and// at most one of the last three, so this projection can return two values; the extract takes the first.
 * `nhn-years` / `nhn-months` — //every// year or month the tiddler is tagged with, as one comma-separated cell.
 
 (`nhn-year` / `nhn-month` live in [[$:/plugins/intertwingled-innovations/nhn/review]].)
