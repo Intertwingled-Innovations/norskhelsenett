@@ -81,14 +81,14 @@ Månedlige forretningsgjennomganger (med tittel `NN <tjeneste> - hovedtrekk og e
 <$list filter="[enlist<nhn-tjeneste-types>tagging[]unique[]] +[regexp[^\d\d ]sort[title]]"><$transclude $variable="forms-tag-or-link" title=<<currentTiddler>>/><br></$list>
 </div>
 
-!! 4. `Tiltak` og `Satsning for fart` tagget direkte på NHN
+!! 4. `Oppgaver fra HOD` og `Satsing for fart` tagget direkte på NHN
 
-Nasjonale tiltak er tagget direkte på `Norsk Helsenett SF` med tjenestetype-taggene `Tiltak` og `Satsning for fart`, noe som oversvømmer rotnivået. Navigasjonstreet bruker derfor et snevrere tjenesteutvalg (de tre `tjeneste`-variantene).
+Nasjonale tiltak er tagget direkte på `Norsk Helsenett SF`. De som har `Oppgaver fra HOD` eller `Satsing for fart` uten også å ha `Ekstern tjeneste`, regnes ikke som tjenester: de vises ikke i navigasjonstreet, og reglene for styringstagg gir dem ingen tagg. Det gjelder i hovedsak de årsversjonerte tiltakene fra 2024 og 2025.
 
-''Tjenestetype-tiddlere tagget direkte på NHN:'' <$count filter="[[Norsk Helsenett SF]tagging[]] :filter[tag[Tiltak]] [[Norsk Helsenett SF]tagging[]] :filter[tag[Satsning for fart]] +[unique[]]"/>
+''Tiddlere med kategori, men uten tjenestetype, tagget direkte på NHN:'' <$count filter="[[Norsk Helsenett SF]tagging[]] :filter[tags[]] :filter[function[nhn-canonical-of],<currentTiddler>,<nhn-secondary-tjeneste-types>] :filter[function[nhn-is-service]count[]match[0]]"/>
 
 <div class="nhn-anomaly-list">
-<$list filter="[[Norsk Helsenett SF]tagging[]] :filter[tag[Tiltak]] [[Norsk Helsenett SF]tagging[]] :filter[tag[Satsning for fart]] +[unique[]sort[title]]"><$transclude $variable="forms-tag-or-link" title=<<currentTiddler>>/><br></$list>
+<$list filter="[[Norsk Helsenett SF]tagging[]] :filter[function[nhn-canonical-of],<currentTiddler>,<nhn-secondary-tjeneste-types>] :filter[function[nhn-is-service]count[]match[0]] +[sort[title]]"><$transclude $variable="forms-tag-or-link" title=<<currentTiddler>>/><br></$list>
 </div>
 
 !! 5. Målsettinger og resultater med flere foreldre
@@ -167,4 +167,65 @@ Listen er også sjekken før malen byttes: så lenge den gamle malen fortsatt er
 
 <div class="nhn-anomaly-list">
 <$list filter="[function[nhn-reviews-retired-template]]"><$link/><br></$list>
+</div>
+
+!! 12. Gjennomganger med utgått styringstagg
+
+Tjenestetypene ble ryddet i september 2026: `Tiltak` og `Satsning for fart` ble erstattet av `Oppgaver fra HOD` og `Satsing for fart`, som settes i tillegg til `Ekstern tjeneste`. Gjennomgangene som alt var skrevet, ble ikke endret, og har fortsatt styringstaggene `Styring Tiltak` og `Styring Satsning for fart`. De telles fortsatt med i lister og uttrekk, men under en tagg ingen nye gjennomganger får.
+
+Tabellene viser hvilken styringstagg hver gjennomgang får ut fra taggene tjenesten har i dag — de samme reglene som skjemaet for ny forretningsgjennomgang bruker. Knappen bytter styringstaggen for ett år om gangen. Ingen andre tagger og ingen tekst endres.
+
+<$let nhn-services-list={{{ [function[nhn-services]format:titlelist[]join[ ]] }}}>
+<$let retaggable={{{ [function[nhn-reviews-retaggable]] +[format:titlelist[]join[ ]] }}}
+	unretaggable={{{ [function[nhn-reviews-unretaggable]] +[format:titlelist[]join[ ]] }}}>
+''Gjennomganger som kan få ny styringstagg:''&#32;<$text text={{{ [enlist<retaggable>count[]] }}}/>
+
+<$list filter="[enlist<retaggable>] :map:flat[function[nhn-year]] +[unique[]sort[]reverse[]]" variable="year">
+<$let set={{{ [enlist<retaggable>] :filter[function[nhn-year]match<year>] +[format:titlelist[]join[ ]] }}}>
+<$let n={{{ [enlist<set>count[]] }}}>
+<div class="nhn-retag">
+<table class="nhn-anomaly-table">
+<thead>
+<tr><th>Gjennomgang (<$text text=<<year>>/>)</th><th>Har</th><th>Får</th></tr>
+</thead>
+<tbody>
+<$list filter="[enlist<set>]" variable="review">
+<tr>
+<td><$link to=<<review>>/></td>
+<td><$list filter="[<review>tags[]] :intersection[enlist<nhn-retired-governance-tags>]" variable="old"><$transclude $variable="forms-tag-or-link" title=<<old>>/></$list></td>
+<td><$transclude $variable="forms-tag-or-link" title={{{ [<review>] :map:flat[function[nhn-review-governance-expected]] }}}/></td>
+</tr>
+</$list>
+</tbody>
+</table>
+
+<p class="nhn-tag-merge-warning">Dette endrer styringstaggen på&#32;<$text text=<<n>>/>&#32;<% if [<n>match[1]] %>tiddler<% else %>tiddlere<% endif %>. På en server betyr det like mange filskrivinger. Handlingen kan ikke angres automatisk.</p>
+
+<$button class="tc-btn-big-green">
+<$transclude $variable="nhn-retag-governance-actions" reviews=<<set>>/>
+Oppdater styringstagg for&#32;<$text text=<<n>>/>&#32;<% if [<n>match[1]] %>gjennomgang<% else %>gjennomganger<% endif %>&#32;(<$text text=<<year>>/>)
+</$button>
+</div>
+</$let>
+</$let>
+</$list>
+
+<% if [enlist<unretaggable>limit[1]] %>
+''Kan ikke plasseres automatisk:''&#32;<$text text={{{ [enlist<unretaggable>count[]] }}}/>&#32;— enten finner vi ikke hvilken tjeneste gjennomgangen gjelder, eller så har tjenesten ingen tjenestetype som gir en styringstagg (det gjelder tiltakene fra 2024 og 2025 som har `Oppgaver fra HOD` uten `Ekstern tjeneste`). Knappene rører ikke disse.
+
+<div class="nhn-anomaly-list">
+<$list filter="[enlist<unretaggable>limit[200]]"><$link/><br></$list>
+</div>
+<% endif %>
+</$let>
+</$let>
+
+!! 13. Tjenester uten årstagg
+
+Periodevelgeren i sidemenyen skjuler aldri innhold uten årstagg. Disse tjenestene vises derfor under alle år, både i //Tjenester// og i //Styringsstruktur//. Åpne tjenesten og bruk «Rediger strukturert» for å sette år.
+
+''Tjenester uten årstagg:'' <$count filter="[function[nhn-services-undated]]"/>
+
+<div class="nhn-anomaly-list">
+<$list filter="[function[nhn-services-undated]]"><$transclude $variable="forms-tag-or-link" title=<<currentTiddler>>/><br></$list>
 </div>

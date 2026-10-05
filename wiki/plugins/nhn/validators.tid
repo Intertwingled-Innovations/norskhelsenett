@@ -21,6 +21,20 @@ tags: $:/tags/Global
 \function nhn-tag-merge-state() [[$:/state/nhn/anomalier/behold/]addsuffix<currentTiddler>]
 \function nhn-tag-merge-target() [function[nhn-tag-merge-state]get[text]] :intersection[function[nhn-tag-casing-variants]] :else[function[nhn-tag-casing-canonical]]
 \function nhn-tag-merge-losers() [function[nhn-tag-casing-variants]] -[function[nhn-tag-merge-target]]
+\function nhn-review-governance-expected() [function[nhn-review-service]first[]] :map:flat[function[nhn-governance-for],<currentTiddler>] +[!is[blank]]
+\function nhn-reviews-retired-governance() [enlist<nhn-retired-governance-tags>tagging[]unique[]] -[function[nhn-templates]] -[function[nhn-drafts]]
+\function nhn-reviews-retaggable() [function[nhn-reviews-retired-governance]] :filter[function[nhn-review-governance-expected]] +[sort[title]]
+\function nhn-reviews-unretaggable() [function[nhn-reviews-retired-governance]] :filter[function[nhn-review-governance-expected]count[]match[0]] +[sort[title]]
+
+\procedure nhn-retag-governance-actions(reviews)
+<$list filter="[enlist<reviews>]" variable="review">
+<$let expected={{{ [<review>] :map:flat[function[nhn-review-governance-expected]] }}}>
+<% if [<expected>!is[blank]] %>
+<$action-listops $tiddler=<<review>> $field="tags" $subfilter="-[enlist<nhn-retired-governance-tags>] [<expected>]"/>
+<% endif %>
+</$let>
+</$list>
+\end
 
 Attribution for the ToDo lists (brief §3.5 and §3.6). The status machinery itself is generic and lives in [[$:/plugins/tiddlywiki/forms/todo]]; what is NHN-specific is deciding which service an item belongs to.
 
@@ -73,3 +87,15 @@ Its `drift` parameter is an optimisation, not configuration: `nhn-tag-casing-dri
 `nhn-tag-casing-variants` — every spelling of the family the current tiddler belongs to, most-used first. Called with the family as `currentTiddler`, but any variant of the family gives the same answer: membership is case-insensitive equality, which is symmetric.
 
 `nhn-tag-merge-target` is the variant the merge will keep, and `nhn-tag-merge-losers` the ones it will remove. The target defaults to `nhn-tag-casing-canonical` — the most-used spelling — but the page lets it be chosen, because most-used is a heuristic and not always the correct one: `Ekstern Tjeneste` outnumbers `Ekstern tjeneste` more than four to one while the `Styring …` tags and the rest of the taxonomy spell it in lower case. The choice is held in `nhn-tag-merge-state`, a `$:/state` tiddler per family, and is intersected back against the variants actually in use so that a stale choice falls back to the canonical rather than merging onto a tag that no longer exists.
+
+!! Reviews carrying a retired governance tag
+
+NHN's September 2026 clean-up reclassified the services but left the reviews already written under `Styring Tiltak` and `Styring Satsning for fart` as they were. They are still recognised (see `nhn-governance-tags`), so nothing is lost from view, but they group and export under a tag nothing new will ever carry.
+
+* `nhn-review-governance-expected` — the tag a review //would// get today: its service (`nhn-review-service`: the service tag, else an exact title match) run through the same rules table the review form uses (`nhn-governance-for`). Empty when the service cannot be found, or when the rules give it nothing.
+* `nhn-reviews-retired-governance` — everything carrying a retired governance tag, less templates and drafts. Archived reviews are kept in: they are history, and should end up under the same tag as the rest of it.
+* `nhn-reviews-retaggable` / `nhn-reviews-unretaggable` — that set split by whether there is an expected tag. The second half is mostly reviews of the year-versioned 2024–25 initiatives, which carry `Oppgaver fra HOD` without `Ekstern tjeneste`, so the rules place them nowhere. Nothing is guessed for them.
+* `nhn-retag-governance-actions(reviews)` — replaces the retired tag(s) on each listed review with its expected tag, recomputed at the moment of the click, and skips any review that no longer has one. It touches no other tag. Shared with the page's buttons so the tests click the real thing.
+
+The Anomalier section shows every proposed change — review, tag it has, tag it would get — before the button, one year at a time (D7: propose, don't decide).
+
