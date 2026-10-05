@@ -5,5 +5,5 @@ caption: Tjenester
 \whitespace trim
 
 <div class="forms-tree">
-<$transclude $variable="forms-group" set={{{ [function[nhn-services]] +[format:titlelist[]join[ ]] }}} groups="nhn-business-unit nhn-owner" sorts="nhn-bu-sortkey nhn-owner-sortkey"/>
+<$transclude $variable="forms-group" set={{{ [function[nhn-services-in-scope]] +[format:titlelist[]join[ ]] }}} groups="nhn-business-unit nhn-owner" sorts="nhn-bu-sortkey nhn-owner-sortkey"/>
 </div>

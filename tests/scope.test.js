@@ -166,13 +166,73 @@ h.test("undated content stays visible under every scope", function() {
 	});
 });
 
-h.test("services are never narrowed by the period scope", function() {
+/*
+`nhn-services` is the population behind the service pickers on the forms, both
+ToDo lists and the extracts. Each of those has a year control of its own, so the
+sidebar's period must not reach them — a second, invisible filter narrowing a
+picker is the same trap as one narrowing an export.
+*/
+h.test("the service pickers and the ToDo population are never narrowed by the period scope", function() {
 	var w = h.wiki(),
 		all = withScope(w, "alle", function() { return w.filter("[function[nhn-services]count[]]")[0]; });
 	["2024", "2026"].forEach(function(y) {
 		assert.equal(withScope(w, y, function() { return w.filter("[function[nhn-services]count[]]")[0]; }), all,
-			"the " + y + " scope removed services from the governance tree");
+			"the " + y + " scope changed nhn-services");
 	});
+});
+
+/*
+The two navigation views of services do follow it — NHN asked for that in
+September 2026, reversing the first design, in which a service was structural
+and belonged to no year. A service with no year tag stays visible under every
+year, as undated content does in the other trees.
+*/
+var NAV_SERVICES = "$:/plugins/intertwingled-innovations/nhn/ui/nav/services";
+
+h.test("the Tjenester tab and the governance tree follow the period scope", function() {
+	var w = h.fixtureWiki(),
+		made = {
+			old: "Test Periode Tjeneste 2025",
+			now: "Test Periode Tjeneste 2026",
+			both: "Test Periode Tjeneste Begge",
+			undated: "Test Periode Tjeneste Udatert"
+		},
+		years = {old: "2025", now: "2026", both: "2025 2026", undated: ""};
+	Object.keys(made).forEach(function(k) {
+		w.addTiddler({title: made[k], text: "Fixture service",
+			tags: "[[Ekstern tjeneste]] [[Test Divisjon]] " + years[k]});
+	});
+	function under(year) {
+		return withScope(w, year, function() {
+			return {
+				tab: w.filter("[function[nhn-services-in-scope]]"),
+				tree: w.filter("[function[nhn-structural-children]]", {currentTiddler: "Test Divisjon"})
+			};
+		});
+	}
+	function check(year, visible, hidden) {
+		var seen = under(year);
+		["tab", "tree"].forEach(function(view) {
+			visible.forEach(function(k) {
+				assert.ok(seen[view].indexOf(made[k]) !== -1, made[k] + " is missing from the " + view + " under " + year);
+			});
+			hidden.forEach(function(k) {
+				assert.ok(seen[view].indexOf(made[k]) === -1, made[k] + " is still in the " + view + " under " + year);
+			});
+		});
+	}
+	try {
+		check("alle", ["old", "now", "both", "undated"], []);
+		check("2026", ["now", "both", "undated"], ["old"]);
+		check("2025", ["old", "both", "undated"], ["now"]);
+		// and the tab is built on the scoped selector, not the unscoped one beside it
+		assert.ok(w.$tw.wiki.getTiddlerText(NAV_SERVICES).indexOf("[function[nhn-services-in-scope]]") !== -1,
+			"the Tjenester tab does not read nhn-services-in-scope");
+		var html = withScope(w, "2026", function() { return w.render("{{" + NAV_SERVICES + "}}"); });
+		assert.ok(html.indexOf("Test Divisjon") !== -1, "the Tjenester tab did not render its business units");
+	} finally {
+		Object.keys(made).forEach(function(k) { w.$tw.wiki.deleteTiddler(made[k]); });
+	}
 });
 
 /*

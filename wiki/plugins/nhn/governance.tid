@@ -12,7 +12,7 @@ tags: $:/tags/Global
 \function nhn-is-service() [<currentTiddler>tags[]] :intersection[enlist<nhn-tjeneste-types>] +[limit[1]]
 \function nhn-is-division() [<currentTiddler>tag[Divisjon]!tag[Domene]]
 \function nhn-divisions-of() [<currentTiddler>tagging[]] :filter[function[nhn-is-division]]
-\function nhn-services-of() [<currentTiddler>tagging[]] :filter[function[nhn-is-service]] -[function[nhn-archived]]
+\function nhn-services-of() [<currentTiddler>tagging[]] :filter[function[nhn-is-service]] -[function[nhn-archived]] :filter[function[nhn-in-year-scope]]
 \function nhn-structural-children() [function[nhn-divisions-of]] [function[nhn-services-of]] +[unique[]]
 \function nhn-objective-children() [<currentTiddler>!tag[Målsetting]!tag[Resultat]] :map:flat[<currentTiddler>tagging[]] :filter[tag[Målsetting]] -[function[nhn-archived]] :filter[function[nhn-in-year-scope]]
 \function nhn-result-children() [<currentTiddler>tag[Målsetting]] :map:flat[<currentTiddler>tagging[]] :filter[tag[Resultat]] -[function[nhn-archived]] :filter[function[nhn-in-year-scope]]
@@ -27,7 +27,7 @@ Global functions forNHN governance configuration.
 * `nhn-tjeneste-types` — service-type tag set used by the governance tree: the canonical three //plus// their casing-drift variants (none in use since NHN's September 2026 clean-up, kept against future drift). Deliberately distinct from the full Extract-2 service-type set, which also includes `Satsing for fart` and `Oppgaver fra HOD`: since the clean-up a service carries one of those //alongside// `Ekstern tjeneste`, while a tiddler carrying one //alone// is a year-versioned NHN-level initiative from 2024–25, not a service.
 * `nhn-gov-root-filter` — root of the Styringsstruktur.
 * `nhn-is-service` / `nhn-is-division` — kind tests used to dispatch children (a division is tagged `Divisjon` but not `Domene`).
-* `nhn-structural-children` — sub-divisions + services tagged the current node (NHN → divisions → services).
+* `nhn-structural-children` — sub-divisions + services tagged the current node (NHN → divisions → services). The services honour the period scope (`nhn-in-year-scope`), at NHN's request: with a year chosen in the sidebar, a service tagged only other years leaves the tree, and its objectives with it. A service with no year tag stays, as undated content does everywhere.
 * `nhn-objective-children` — objectives (Målsetting) attached to a structural node; suppressed under OKR nodes so results are not duplicated.
 * `nhn-result-children` — key results (Resultat) attached under their Målsetting only.
 * `nhn-gov-children` — the governance + intentions tree relation, used by the navigation sidebar.
