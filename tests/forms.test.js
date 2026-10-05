@@ -625,3 +625,198 @@ h.test("editing an existing tiddler keeps the input too", function() {
 		discard(w, r.state);
 	}
 });
+
+h.suite("Governance tag on a review");
+
+var TJENESTE = NHN + "/forms/tjeneste";
+
+/* A fixture service with a given classification. `Test Divisjon` is what makes
+   it a service; 2031 keeps it clear of the snapshot's own years. */
+function classified(wiki, title, tags) {
+	wiki.addTiddler({title: title, TjenesteID: "99200", text: "Fixture service",
+		tags: wiki.$tw.utils.stringifyList(tags.concat(["Test Divisjon", EDIT_YEAR]))});
+	return title;
+}
+
+function marchReview(service) {
+	return "03 " + service + " - hovedtrekk og endringer mars " + EDIT_YEAR;
+}
+
+/*
+NHN's rule, from their action items of 18 September 2026: the governance tag on a
+review follows from the tags on its service. The rule table itself is checked in
+rules.test.js; this is the form actually applying it to what it creates.
+*/
+h.test("a new review takes the governance tag its service's classification implies", function() {
+	var w = h.fixtureWiki(),
+		cases = [
+			["Test Styring Intern", ["Intern tjeneste"], "Styring Intern tjeneste"],
+			["Test Styring Relatert", ["Ekstern tjeneste", "Relatert tjeneste"], "Styring Relatert tjeneste"],
+			["Test Styring Satsing", ["Ekstern tjeneste", "Satsing for fart"], "Styring Satsing for fart"],
+			["Test Styring HOD", ["Oppgaver fra HOD", "Ekstern tjeneste"], "Styring Oppgaver fra HOD"],
+			["Test Styring Ekstern", ["Ekstern tjeneste"], "Styring Ekstern tjeneste"]
+		],
+		made = [];
+	try {
+		cases.forEach(function(c) {
+			var service = classified(w, c[0], c[1]),
+				review = marchReview(service);
+			made.push(service, review);
+			create(w, REVIEW, {service: service, year: EDIT_YEAR, month: "Mars"});
+			assert.ok(w.exists(review), "no review was created for " + service);
+			assert.deepEqual(w.project("nhn-governance-type", review), [c[2]], service);
+			assert.ok(w.filter("[function[nhn-reviews]]").indexOf(review) !== -1,
+				"the review for " + service + " is not selected as a review");
+		});
+	} finally {
+		made.forEach(function(t) { discard(w, t); });
+	}
+});
+
+/*
+A review with no governance tag is not merely mis-filed: every selector starts
+from the governance tags, so it would be in no tree, no extract and no ToDo list.
+The form therefore refuses, and says what to fix, rather than create it.
+*/
+h.test("no review is created for a service the rules cannot place, and the form says why", function() {
+	var w = h.fixtureWiki(),
+		unplaced = classified(w, "Test Styring Uplassert", ["Relatert tjeneste"]),
+		placed = classified(w, "Test Styring Plassert", ["Ekstern tjeneste", "Relatert tjeneste"]),
+		state = create(w, REVIEW, {service: unplaced, year: EDIT_YEAR, month: "Mars"}),
+		form = '<$transclude $variable="forms-form" def="' + REVIEW + '" state="' + state + '"/>';
+	try {
+		assert.ok(!w.exists(marchReview(unplaced)), "a review with no governance tag was created");
+		var html = w.render(form);
+		assert.ok(html.indexOf("Sett tjenestetype") !== -1, "the form does not explain why it cannot create the review");
+		assert.ok(html.indexOf("tc-btn-big-green") === -1, "the form still offers its create button");
+		// The same form, pointed at a service the rules do place
+		w.$tw.wiki.setText(state, null, "service", placed);
+		html = w.render(form);
+		assert.ok(html.indexOf("Styringstagg") !== -1 && html.indexOf("Styring Relatert tjeneste") !== -1,
+			"the form does not show the governance tag it is about to apply");
+		assert.ok(html.indexOf("tc-btn-big-green") !== -1, "the form offers no create button for a placeable service");
+		assert.ok(html.indexOf("Sett tjenestetype") === -1, "the warning shows for a placeable service");
+	} finally {
+		[unplaced, placed, state, marchReview(unplaced), marchReview(placed)].forEach(function(t) { discard(w, t); });
+	}
+});
+
+/*
+Saving removes the tags the form would have produced when it loaded — but a
+review written before its service was reclassified carries a tag the form no
+longer produces, so without the definition's `owns` list a save would leave it
+with two governance tags.
+*/
+h.test("reopening a review that carries a retired governance tag replaces it", function() {
+	var w = h.fixtureWiki(),
+		service = classified(w, "Test Styring Omklassifisert", ["Ekstern tjeneste", "Oppgaver fra HOD"]),
+		target = marchReview(service);
+	w.addTiddler({title: target, text: "Skrevet for lenge siden",
+		tags: w.$tw.utils.stringifyList(["Styring", "Styring Tiltak", "Test Divisjon", EDIT_YEAR, "Mars", service, "Levert"])});
+	try {
+		var form = open(w, REVIEW, target);
+		form.save();
+		assert.ok(!w.exists(form.state), "the save was refused");
+		var tags = tagsOf(w, target);
+		assert.ok(tags.indexOf("Styring Oppgaver fra HOD") !== -1, "the review did not get its service's governance tag: " + tags.join(", "));
+		assert.ok(tags.indexOf("Styring Tiltak") === -1, "the retired governance tag survived the save");
+		assert.ok(tags.indexOf("Levert") !== -1, "a tag the form does not manage was dropped");
+	} finally {
+		discard(w, target);
+		discard(w, service);
+	}
+});
+
+/* The same refusal on the way back in: an edit must not strip a review's
+   governance tag because its service has since lost its type. */
+h.test("an edit is refused while the service gives no governance tag", function() {
+	var w = h.fixtureWiki(),
+		service = classified(w, "Test Styring Mistet Type", ["Relatert tjeneste"]),
+		target = marchReview(service);
+	w.addTiddler({title: target, text: "Skrevet",
+		tags: w.$tw.utils.stringifyList(["Styring", "Styring Ekstern tjeneste", "Test Divisjon", EDIT_YEAR, "Mars", service])});
+	var before = tagsOf(w, target),
+		form = open(w, REVIEW, target);
+	try {
+		form.set("severity", "2");
+		form.save();
+		assert.deepEqual(tagsOf(w, target), before, "the review was saved without a governance tag to give it");
+		assert.ok(w.exists(form.state), "the form was cleared even though nothing was saved");
+		var html = w.render('<$transclude $variable="forms-edit" def="' + REVIEW + '" state="' + form.state + '"/>');
+		assert.ok(html.indexOf("Sett tjenestetype") !== -1, "the edit form does not explain why it cannot save");
+	} finally {
+		form.cancel();
+		discard(w, target);
+		discard(w, service);
+	}
+});
+
+h.suite("Service type and category");
+
+h.test("the service form offers two types and three categories", function() {
+	var w = h.wiki(),
+		inputs = {};
+	w.data(TJENESTE).inputs.forEach(function(input) { inputs[input.name] = input; });
+	assert.deepEqual(w.filter(inputs.servicetype.options), ["Ekstern tjeneste", "Intern tjeneste"]);
+	assert.deepEqual(w.filter(inputs.category.options), ["Relatert tjeneste", "Satsing for fart", "Oppgaver fra HOD"]);
+	assert.equal(inputs.servicetype.required, "yes");
+	assert.ok(!inputs.category.required, "the category must stay optional: most services have none");
+});
+
+h.test("a service is created with its type and its category", function() {
+	var w = h.fixtureWiki(),
+		made = "Test Tjeneste Fra Skjema";
+	create(w, TJENESTE, {title: made, unit: "Test Divisjon", servicetype: "Ekstern tjeneste",
+		category: "Satsing for fart", year: EDIT_YEAR});
+	try {
+		assert.deepEqual(tagsOf(w, made), [EDIT_YEAR, "Ekstern tjeneste", "Satsing for fart", "Test Divisjon"].sort());
+		assert.deepEqual(w.filter("[function[nhn-governance-for],<s>]", {s: made}), ["Styring Satsing for fart"]);
+	} finally {
+		discard(w, made);
+	}
+});
+
+/*
+The form used to read "the first service-type tag" back as the type. With two
+tags on a service that is whichever was stored first, so a service tagged
+Relatert before Ekstern opened as type Relatert — not an option any more — and
+saving it would have stripped a tag.
+*/
+h.test("editing reads type and category back whatever order the tags are in", function() {
+	var w = h.fixtureWiki(),
+		target = "Test Tjeneste Rekkefolge";
+	w.addTiddler({title: target, text: "Fixture service",
+		tags: "[[Relatert tjeneste]] [[Ekstern tjeneste]] [[Test Divisjon]] " + EDIT_YEAR + " [[Test Egen Tagg]]"});
+	try {
+		var before = tagsOf(w, target),
+			form = open(w, TJENESTE, target);
+		assert.equal(w.data(form.state).servicetype, "Ekstern tjeneste");
+		assert.equal(w.data(form.state).category, "Relatert tjeneste");
+		form.save();
+		assert.deepEqual(tagsOf(w, target), before, "opening and saving unchanged altered the tags");
+		// Clearing the category removes that tag and nothing else
+		form = open(w, TJENESTE, target);
+		form.set("category", "");
+		form.save();
+		assert.deepEqual(tagsOf(w, target), before.filter(function(t) { return t !== "Relatert tjeneste"; }));
+	} finally {
+		discard(w, target);
+	}
+});
+
+h.test("saving a service through the form retires an old type tag", function() {
+	var w = h.fixtureWiki(),
+		target = "Test Tjeneste Gammel Type";
+	w.addTiddler({title: target, text: "Fixture service",
+		tags: "Tiltak [[Ekstern Tjeneste]] [[Test Divisjon]] " + EDIT_YEAR});
+	try {
+		var form = open(w, TJENESTE, target);
+		assert.equal(w.data(form.state).servicetype, "Ekstern tjeneste", "the type was not read back in canonical casing");
+		assert.equal(w.data(form.state).category, "");
+		form.set("category", "Oppgaver fra HOD");
+		form.save();
+		assert.deepEqual(tagsOf(w, target), [EDIT_YEAR, "Ekstern tjeneste", "Oppgaver fra HOD", "Test Divisjon"].sort());
+	} finally {
+		discard(w, target);
+	}
+});

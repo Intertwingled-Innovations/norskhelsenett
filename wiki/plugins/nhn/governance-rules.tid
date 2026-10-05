@@ -1,0 +1,12 @@
+title: $:/plugins/intertwingled-innovations/nhn/governance-rules
+type: application/json
+
+{
+"rules": [
+	{"all": ["Intern tjeneste"], "result": "Styring Intern tjeneste"},
+	{"all": ["Ekstern tjeneste", "Relatert tjeneste"], "result": "Styring Relatert tjeneste"},
+	{"all": ["Ekstern tjeneste", "Satsing for fart"], "result": "Styring Satsing for fart"},
+	{"all": ["Ekstern tjeneste", "Oppgaver fra HOD"], "result": "Styring Oppgaver fra HOD"},
+	{"all": ["Ekstern tjeneste"], "none": ["Relatert tjeneste", "Satsing for fart", "Oppgaver fra HOD"], "result": "Styring Ekstern tjeneste"}
+]
+}

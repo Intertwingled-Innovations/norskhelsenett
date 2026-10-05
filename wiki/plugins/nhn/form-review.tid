@@ -56,5 +56,16 @@ caption: Forretningsgjennomgang
 			"filter": "[function[nhn-form-period]]"
 		}
 	],
-	"body": "[function[nhn-form-review-body]]"
+	"body": "[function[nhn-form-review-body]]",
+	"derived": [
+		{
+			"name": "governance",
+			"label": "Styringstagg",
+			"type": "tag",
+			"filter": "[function[nhn-form-governance-tag]]",
+			"required": "yes",
+			"hint": "Tjenesten har ingen tjenestetype som gir en styringstagg. Sett tjenestetype (Ekstern eller Intern) på tjenesten først."
+		}
+	],
+	"owns": "[enlist<nhn-governance-tags>]"
 }

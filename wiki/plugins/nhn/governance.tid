@@ -2,7 +2,11 @@ title: $:/plugins/intertwingled-innovations/nhn/governance
 tags: $:/tags/Global
 
 \whitespace trim
-\define nhn-canonical-tjeneste-types() [[Ekstern tjeneste]] [[Intern tjeneste]] [[Relatert tjeneste]]
+\define nhn-canonical-tjeneste-types() [[Ekstern tjeneste]] [[Intern tjeneste]]
+\define nhn-secondary-tjeneste-types() [[Relatert tjeneste]] [[Satsing for fart]] [[Oppgaver fra HOD]]
+\define nhn-governance-rules() $:/plugins/intertwingled-innovations/nhn/governance-rules
+\function nhn-canonical-of(target,types) [enlist<types>] :filter[<target>tags[]match:caseinsensitive<currentTiddler>]
+\function nhn-governance-for(service) [<service>tags[]format:titlelist[]join[ ]] :map:flat[function[forms-rule-result],<nhn-governance-rules>,<currentTiddler>] +[!is[blank]]
 \define nhn-tjeneste-types() [[Ekstern Tjeneste]] [[Ekstern tjeneste]] [[Intern tjeneste]] [[Intern Tjeneste]] [[Relatert tjeneste]] [[Relatert Tjeneste]]
 \define nhn-gov-root-filter() [[Norsk Helsenett SF]]
 \function nhn-is-service() [<currentTiddler>tags[]] :intersection[enlist<nhn-tjeneste-types>] +[limit[1]]
@@ -16,7 +20,10 @@ tags: $:/tags/Global
 
 Global functions forNHN governance configuration.
 
-* `nhn-canonical-tjeneste-types` — the three service types in their canonical casing; what the Tjeneste form offers, so guided creation never mints a drift variant.
+* `nhn-canonical-tjeneste-types` — the two service types a service is one of, `Ekstern tjeneste` or `Intern tjeneste`, in their canonical casing; what the Tjeneste form's //Tjenestetype// offers, so guided creation never mints a drift variant.
+* `nhn-secondary-tjeneste-types` — the optional second classification, `Relatert tjeneste`, `Satsing for fart` or `Oppgaver fra HOD`; what the form's //Kategori// offers. NHN settled on this two-level shape in September 2026: a service carries one tag from the first list and at most one from the second.
+* `nhn-canonical-of(target,types)` — which of a list of canonical tags a tiddler carries, compared without regard to case and returned in canonical casing. It is how the form reads a service's type and category back: by //which list// a tag belongs to, not by the order the tags happen to be stored in.
+* `nhn-governance-for(service)` — the `Styring …` tag a review of this service should carry, from the rules table [[$:/plugins/intertwingled-innovations/nhn/governance-rules]] through the engine's `forms-rule-result`. The table is NHN's own (their action items of 18 September 2026), in their order: `Intern tjeneste` first, then `Ekstern tjeneste` with each category, then `Ekstern tjeneste` on its own. Empty for a service that is neither Ekstern nor Intern — the review form refuses to create a review then, because one with no governance tag is invisible to every selector.
 * `nhn-tjeneste-types` — service-type tag set used by the governance tree: the canonical three //plus// their casing-drift variants (none in use since NHN's September 2026 clean-up, kept against future drift). Deliberately distinct from the full Extract-2 service-type set, which also includes `Satsing for fart` and `Oppgaver fra HOD`: since the clean-up a service carries one of those //alongside// `Ekstern tjeneste`, while a tiddler carrying one //alone// is a year-versioned NHN-level initiative from 2024–25, not a service.
 * `nhn-gov-root-filter` — root of the Styringsstruktur.
 * `nhn-is-service` / `nhn-is-division` — kind tests used to dispatch children (a division is tagged `Divisjon` but not `Domene`).

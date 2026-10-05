@@ -8,8 +8,7 @@ tags: $:/tags/Global
 \function nhn-form-service() [<forms-state>getindex[service]]
 \function nhn-form-serviceid() [function[nhn-form-service]get[TjenesteID]]
 \function nhn-form-division() [function[nhn-form-service]] :map[function[nhn-division]]
-\function nhn-form-service-type() [function[nhn-form-service]] :map[function[nhn-service-type]]
-\function nhn-form-governance-tag() [function[nhn-form-service-type]lowercase[]] :map[[$:/plugins/intertwingled-innovations/nhn/governance-tags]getindex<currentTiddler>]
+\function nhn-form-governance-tag() [function[nhn-form-service]!is[blank]] :map:flat[function[nhn-governance-for],<currentTiddler>] +[!is[blank]]
 \function nhn-form-review-body() [function[nhn-form-service]] :map[function[nhn-review-seed],<currentTiddler>]
 \function nhn-form-severity-tag() [<forms-state>getindex[severity]!is[blank]addprefix[Forretningsmessig endring:]]
 \function nhn-form-month-ord() [<forms-state>getindex[month]lowercase[]] :map[[$:/plugins/intertwingled-innovations/nhn/months]getindex<currentTiddler>]
@@ -25,7 +24,7 @@ Choosing a service settles most of a monthly review:
 
 * `nhn-form-serviceid` — the service's `TjenesteID`.
 * `nhn-form-division` — its `Divisjon …` tag.
-* `nhn-form-governance-tag` — its `Styring …` tag, via [[$:/plugins/intertwingled-innovations/nhn/governance-tags]]. A lookup table rather than string concatenation, because the two families disagree on casing: a service is tagged `Ekstern Tjeneste` while its reviews are tagged `Styring Ekstern tjeneste`.
+* `nhn-form-governance-tag` — its `Styring …` tag, from the service's own tags through the rules table (`nhn-governance-for`, in [[$:/plugins/intertwingled-innovations/nhn/governance]]). The review form lists it as a //required derived value//: it is shown on the form before anything is created, and a service the rules give no tag for cannot be reviewed until its type is set. The tag is worked out when the review is created and not kept in step afterwards — reclassifying a service does not rewrite its history — though reopening a review in the form recomputes it.
 
 The rest:
 

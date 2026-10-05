@@ -5,7 +5,7 @@ caption: Tjeneste
 
 {
 	"caption": "Tjeneste",
-	"description": "En tjeneste i styringsstrukturen. Tjenesteeier brukes til gruppering og til ToDo-listene. År er valgfritt: flere eksisterende tjenester mangler årstag, og et påkrevd felt som dataene selv bryter ville blokkert redigering av dem.",
+	"description": "En tjeneste i styringsstrukturen. Tjenestetype er Ekstern eller Intern; Kategori er valgfri og brukes for relaterte tjenester, satsinger for fart og oppgaver fra HOD. Sammen avgjør de hvilken styringstagg tjenestens forretningsgjennomganger får. Tjenesteeier brukes til gruppering og til ToDo-listene. År er valgfritt: flere eksisterende tjenester mangler årstag, og et påkrevd felt som dataene selv bryter ville blokkert redigering av dem.",
 	"inputs": [
 		{
 			"name": "title",
@@ -28,7 +28,14 @@ caption: Tjeneste
 			"type": "select",
 			"options": "[enlist<nhn-canonical-tjeneste-types>]",
 			"required": "yes",
-			"from": "[<forms-target>] :map:flat[function[nhn-service-type]] +[first[]]"
+			"from": "[function[nhn-canonical-of],<forms-target>,<nhn-canonical-tjeneste-types>first[]]"
+		},
+		{
+			"name": "category",
+			"label": "Kategori",
+			"type": "select",
+			"options": "[enlist<nhn-secondary-tjeneste-types>]",
+			"from": "[function[nhn-canonical-of],<forms-target>,<nhn-secondary-tjeneste-types>first[]]"
 		},
 		{
 			"name": "serviceid",
@@ -52,7 +59,8 @@ caption: Tjeneste
 		}
 	],
 	"title": "$:/plugins/intertwingled-innovations/nhn/forms/title-plain",
-	"tags": "[<forms-state>getindex[unit]] [<forms-state>getindex[servicetype]] [<forms-state>getindex[year]]",
+	"tags": "[<forms-state>getindex[unit]] [<forms-state>getindex[servicetype]] [<forms-state>getindex[category]] [<forms-state>getindex[year]]",
+	"owns": "[enlist<nhn-extract-service-types>]",
 	"fields": [
 		{
 			"name": "type",
