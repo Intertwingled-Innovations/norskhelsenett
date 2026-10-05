@@ -6,9 +6,9 @@ Sizes are relative (S / M / L), not estimates in days.
 
 ## Where we are
 
-**Every deliverable in the brief is built except the optional §3.8**, which is a deployment concern rather than a plugin task. Two things NHN added after the brief — normalised search (D2) and the Leveranserapport — are built too. What remains is mostly not code: cleanup that needs NHN's approval, a deployment write-up, the owner data only NHN can supply, and three follow-ups from the September demo.
+**Every deliverable in the brief is built except the optional §3.8**, which is a deployment concern rather than a plugin task. Two things NHN added after the brief — normalised search (D2) and the Leveranserapport — are built too. So are NHN's action items of 18 September 2026 (Phase 12). What remains is mostly not code: cleanup that is now a matter of NHN pressing buttons, a deployment write-up, and three follow-ups from the September demo.
 
-The snapshot refreshed on 3 September holds **867 reviews, 637 deliveries, 285 objectives, 433 results and 60 services** (2209 periodic tiddlers in all). Counts quoted inside the phase write-ups below are as measured when that phase was built and have not been chased; where a number still governs a decision it is restated in [What is left](#what-is-left) or in the phase's own section.
+The snapshot refreshed on 28 September — after NHN's own clean-up — holds **912 reviews, 654 deliveries, 283 objectives, 432 results and 63 services** (2275 periodic tiddlers in all). Counts quoted inside the phase write-ups below are as measured when that phase was built and have not been chased; where a number still governs a decision it is restated in [What is left](#what-is-left) or in the phase's own section.
 
 **The `forms` engine** — generic, no domain strings, enforced by a test:
 
@@ -36,7 +36,7 @@ Reviewed 4 September 2026, after the second client demo. Three lists, because th
 
 | Item | Size | Where |
 |---|---|---|
-| Bulk actions for the remaining mechanical anomaly classes — self-tags (87 tiddlers), service-type tags on monthly reviews (2), lists glued to the paragraph above (31) | M | Phase 7 |
+| Redraw the governance chips in the Datamodell diagram — it still shows `Styring Tiltak` and the old `Styring Satsning for fart`, which is honest while 191 reviews carry them. Do it once NHN have run the retag; the config test will fail on the next refresh if the old spelling has gone, which is the reminder | S | Phase 12 |
 | Compute the classes that are still prose only: results with several parents (class 5) and duplicate year-versioned tiddlers (class 6) | S | Phase 7 |
 | `docs/deployment.md` — the auth-proxy pattern, the reader/editor split, and how the build and Pages deploy work | S | Phase 8 |
 | Popup state qualifiers for tag pills rendered through `forms-tag-or-link` — Sammendrag renders 336 pills sharing 81 states, Anomalier 104 sharing 103 | S | Phase 10 |
@@ -46,21 +46,24 @@ Reviewed 4 September 2026, after the second client demo. Three lists, because th
 
 ### Blocked on NHN
 
-All eleven live in **Spørsmål til NHN** in the wiki, which is the single list to walk in a meeting; this is what each one blocks.
+All fourteen live in **Spørsmål til NHN** in the wiki, which is the single list to walk in a meeting; this is what each one blocks.
 
 | Question | Blocks |
 |---|---|
-| 1 Owner data | Both ToDo lists and the owner grouping are empty until it arrives. 0 of 60 services carry `tjenesteeier`. |
-| 2 Data cleanup — casing, and the other classes | Phase 7. The casing tool is built and waiting on a decision per family; the other classes wait on approval per class. |
+| 1 Owner data | Answered: 59 of 63 services carry `tjenesteeier`, so both ToDo lists and the owner grouping are live. Four have none; the question is now whether that is intended. |
+| 2 Data cleanup | Phase 7. NHN cleared four classes themselves in September and merged `Ekstern Tjeneste`. Left: four casing families, 15 drafts, and the retag of reviews under a retired governance tag — all built, all waiting on a click. Whether 2024–25 reviews should be retagged at all is the one decision in it. |
 | 3 Archiving semantics | Whether Phase 5's reversible tag is the whole answer. |
 | 4 Business-review rules | Whether near-copies should be flagged, and whether severity should be required. |
-| 5 Which services should report | Whether the ToDo population stays "reported at least once this year" (43 of 60). |
+| 5 Which services should report | Whether the ToDo population stays "reported at least once this year" (49 of 63). |
 | 6 Permalink base | Every URL column and every link in the standalone report. |
 | 7 Authorisation | §3.8, and therefore Phase 8's shape. |
 | 8 Deliveries with no service link | Whether Phase 10 changes the report or NHN change the tags. |
 | 9 Reporting period, and their script's output | Item-by-item parity, and whether ranges must cross a year boundary. |
-| 10 Backfill `period` | Nothing carries the field yet — 0 of 2209 periodic tiddlers — so every period filter still reads tags. |
+| 10 Backfill `period` | 6 of 2275 periodic tiddlers carry the field — the reviews NHN have created through the form — so every period filter still reads tags. |
 | 11 Deployment | Who operates the wiki, which decides what Phase 8 documents. |
+| 12 A stray copy of Tjenesteeiere | NHN's wiki holds an ordinary tiddler of that name that overrides the plugin's page and hides every later version of it. Theirs to delete. |
+| 13 Swapping the review template | The live wiki still has the old wording. One unwritten December 2026 review holds it and would read as written after the swap. |
+| 14 Tag tiddlers after the clean-up | An orphaned `Ekstern Tjeneste` tiddler holding the colour, no `Styring Oppgaver fra HOD` tiddler yet, no colours on the new tags. Cosmetic. |
 
 ### Not blocked, not worth doing yet
 
@@ -77,11 +80,12 @@ Phase 3  §3.5 ToDo: business review      ✓ done
 Phase 4  §3.6 ToDo: OKRs                 ✓ done
 Phase 5  §3.7 Periodisation & archiving  ✓ done
 Phase 6  D2 Normalised search            ✓ done
-Phase 7  Data-quality cleanup           ◐ 2 of 10 classes fixed, rest needs sign-off
+Phase 7  Data-quality cleanup           ◐ 3 classes fixable from the page, 4 cleared by NHN, rest needs sign-off
 Phase 8  §3.8 Access control            ─ documentation, not code
 Phase 9  Leveranserapport (post-brief)   ✓ done
 Phase 10 Demo follow-ups (post-brief)    ─ three small items, one needs an answer
 Phase 11 New review template + Power BI link (post-brief)  ✓ done
+Phase 12 Service categories, governance rules, period filter on services (post-brief)  ✓ done
 ```
 
 Phases 6–8 are independent of the 1→5 spine and can be interleaved when the spine is blocked on client input.
@@ -264,7 +268,7 @@ Two mechanisms, kept deliberately separate because they fail differently. [scope
 
 **Archiving** — the non-destructive form, as planned. An `Arkiv` tag applied in bulk from the new **Arkiv** page, and a `-[function[nhn-archived]]` chokepoint in every base selector. Untagging restores; nothing is deleted and no second wiki is needed. Archiving up to 2024 takes the wiki from 784 reviews to 497, 576 deliveries to 380, and leaves services untouched.
 
-**Period scope** — a year selector in the NHN sidebar that narrows the **navigation trees only**. Under 2026 the deliveries tree drops from 615 leaves to 179 and the governance tree from 564 to 371, while the services tab is unchanged. The extracts, ToDo lists and summaries all have their own period controls and are deliberately left alone: a second, invisible filter quietly narrowing an export is a trap, not a convenience. A test pins that.
+**Period scope** — a year selector in the NHN sidebar that narrows the **navigation trees only**. Under 2026 the deliveries tree drops from 615 leaves to 179 and the governance tree from 564 to 371, while the services tab is unchanged. (**Reversed for services in October 2026**, at NHN's request: the two service views now follow the period too. See Phase 12.) The extracts, ToDo lists and summaries all have their own period controls and are deliberately left alone: a second, invisible filter quietly narrowing an export is a trap, not a convenience. A test pins that.
 
 ### Two rules that stop tidying becoming losing
 
@@ -307,6 +311,8 @@ Three other mutations are covered: dropping the map entirely (the NFD-only trap)
 ---
 
 ## Phase 7 — Data-quality cleanup (M, 2 of 10 classes fixed)
+
+> **Update, 28 September 2026 snapshot.** NHN did much of this by hand before the refresh: classes 1, 3, 8 and 9 below are all at **zero**, `Ekstern Tjeneste` is merged into `Ekstern tjeneste`, and the one unsaved draft is gone (15 drafts remain, all disposable). Four casing families are left — `April`, `Juni`, `Resultat`, `MyHealth@EU`. So the buttons proposed below for classes 1, 3 and 9 are no longer worth building. Two classes were added in Phase 12 — 12, reviews under a retired governance tag (fixable from the page), and 13, services with no year tag (a list). The table and text below are as written in early September.
 
 The Anomalier page diagnoses ten classes of problem and fixes two. What is left, with the counts in the current snapshot:
 
@@ -411,8 +417,42 @@ The review ToDo decides a review is "Kun mal" [only the template] by comparing i
 
 **A bug on the way:** the guard for a blank `todo-seed` was first written inline as `[<todo-template>…] [<todo-seed>!is[blank]] :then[function<todo-seed>]`. A `:then` acts on everything accumulated before it, so it replaced the template's text instead of adding to it. The existing ToDo test caught it. The guarded call now lives in its own function, and a test pins it.
 
+## Phase 12 — Service categories, governance rules, and the period filter on services (M, post-brief) — ✓ done
+
+NHN's action items of 18 September 2026 (`Tiddliwiki Action Items for Jeremy 18092026.docx`), written after their own clean-up of the service-type tags. Three requests; the snapshot refreshed on 28 September turned most of the questions they raised into facts, and Randi answered the four that were left on 5 October.
+
+**1 — The service type is Ekstern or Intern.** NHN's clean-up had already moved the data to a two-level shape: every service carries `Ekstern tjeneste` or `Intern tjeneste`, and 14 Ekstern services carry one more tag — `Relatert tjeneste`, `Satsing for fart` (new spelling) or `Oppgaver fra HOD` (which replaced `Tiltak`). Cutting the dropdown to two, as asked, would have left the form unable to set that second tag — and structured editing would have *stripped* it, since a save replaces what the form produces. So the form gained an optional **Kategori** beside **Tjenestetype**, which NHN confirmed.
+
+**2 — A review's governance tag follows from its service's tags.** Half built already, as a one-to-one lookup. NHN's rules are combinations with a precedence, so the lookup became a **rules table** — [governance-rules.tid](../wiki/plugins/nhn/governance-rules.tid), theirs row for row — evaluated by a generic `forms-rule-result` in the engine: first rule whose `all` values are present and whose `none` values are absent, ignoring case.
+
+**3 — The period filter narrows the services.** The opposite of what Phase 5 decided, and one filter in each of two places. `nhn-services` itself stays unscoped because the form pickers and ToDo lists read it; the Tjenester tab reads a new `nhn-services-in-scope`. Under 2026 the list goes from 63 services to 60.
+
+### Decisions
+
+- **The engine shows what it derives, and can refuse.** A definition may list `derived` values — a label and a filter — which the form displays under its inputs; one marked `required` blocks creation and saving while its filter gives nothing, and shows a hint instead of the button. The review form lists its governance tag this way. A review with no governance tag is not mis-filed but *invisible* — every selector starts from those tags — so the old behaviour, quietly creating one, was the worst available.
+- **Precedence where NHN's table is silent**: `Intern tjeneste` wins whatever else a service carries; a category without `Ekstern tjeneste` places nothing. No service in the snapshot is in either position, so this is a default, not a finding.
+- **`owns`, for tags the form derives.** Saving removes the tags the form *would have produced* when it loaded. For a derived tag that is the wrong set once the thing it derives from has changed: a review written under `Styring Tiltak`, whose service is now `Oppgaver fra HOD`, would have come out of a save with both. A definition can now name a tag family it owns outright; the review form owns the governance tags and the service form the service types.
+- **Type and category are read back by list, not by position.** The form used to take "the first service-type tag", which for a service tagged Relatert before Ekstern is not an option any more.
+- **Recognised is not the same as applied.** `Styring Tiltak` (167 tiddlers) and the old spelling `Styring Satsning for fart` (24) stay in `nhn-governance-tags`, because NHN's clean-up retagged the services and not the reviews. Dropping them would have removed 191 reviews from every list, silently. They are named separately as `nhn-retired-governance-tags`, and a test fails if the rules table ever hands one out.
+- **Retagging is proposed per year.** Anomalier section 12 lists each review with the tag it has and the tag its service implies today: 153 can be placed (48 from 2026, 56 from 2025, 49 from 2024) and 38 cannot — reviews of the year-versioned `Tiltaket …` tiddlers, which carry `Oppgaver fra HOD` without `Ekstern tjeneste`. NHN agreed to the 2026 ones. Whether older reviews should be rewritten to today's classification is a real question — the tag was meant to be set once, at creation — so each year has its own button.
+- **Undated services stay visible**, like undated content everywhere, and section 13 lists the six. NHN will tag them.
+
+### A bug on the way
+
+`:map:flat` returns an empty string, not nothing, for an item whose run produces no results. `nhn-governance-for` ended in one, so a service the rules could not place appeared to have a governance tag — an empty one — and everything downstream that asked "is there a tag?" would have said yes. A test asserting `[]` caught it before anything was built on it; it is now in the mechanics list in [architecture.md](architecture.md).
+
+### What the refresh itself turned up
+
+- **The on-disk snapshot is regenerated, not copied**, and the reworded review template is a fourth thing that must survive it: the live wiki still has the old wording. The README now gives the commands.
+- **NHN's wiki holds a saved copy of the plugin's own Tjenesteeiere page**, which overrides the shadow there and hides every later version. It is left out of the repo's snapshot and is question 12.
+- **Eight tests had pinned titles or counts the refresh moved.** They now derive their expectations from the content, and the editing tests build their targets in 2031.
+
+### Left alone
+
+The Datamodell diagram still draws the two retired governance tags — accurate while 191 reviews carry them. And three tag tiddlers want tidying on the live wiki (question 14); that is NHN's content, not configuration.
+
 ## Open questions for NHN
 
-The list lives in **Spørsmål til NHN** in the wiki — eleven questions, written for NHN to answer in the tiddler itself, and the thing to walk in a meeting. [What is left](#what-is-left) above maps each one to the work it blocks.
+The list lives in **Spørsmål til NHN** in the wiki — fourteen questions, written for NHN to answer in the tiddler itself, and the thing to walk in a meeting. [What is left](#what-is-left) above maps each one to the work it blocks.
 
 Two questions this file used to carry are settled and are not in that list: **OKR levels** ("at which governance levels is a missing objective a real gap") was answered from the data in Phase 4 — of the 165 objectives for 2026 all but one attach to a service — and the **`Ekstern tjeneste` spelling** is now part of question 2 rather than a question of its own, because the tool that acts on the answer exists.

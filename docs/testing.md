@@ -1,7 +1,7 @@
 # Testing
 
 ```sh
-npm test              # run everything (248 tests, ~30s)
+npm test              # run everything (273 tests, ~30s)
 npm test -- export    # run only tests matching "export" (file, suite or test name)
 ```
 
@@ -28,12 +28,14 @@ So the suite leans towards the failure modes that are invisible at runtime: does
 | `tests/dates.test.js` | The date model (D1): month ordinals, sort keys, undated buckets |
 | `tests/projections.test.js` | The projection catalogue and kind classification |
 | `tests/selectors.test.js` | The sets behind the trees and extracts, and extract filtering |
+| `tests/rules.test.js` | The engine's rule tables, and NHN's governance table checked row by row against what they specified |
+| `tests/retag.test.js` | Anomalier's retag of reviews under a retired governance tag (the page's own buttons, clicked), and the undated-services list |
 | `tests/export.test.js` | The keystone: `(set, columns)` → CSV, and D4's UTF-8 BOM |
 | `tests/summaries.test.js` | The §3.4 view catalogue, its projections, and the grouped-view picker |
 | `tests/forms.test.js` | The §3.2 form definitions, creation and editing driven end to end, and that typing in a field does not rebuild the input |
 | `tests/todo.test.js` | §3.5/§3.6 attribution, status, both ToDo populations, and the owner importer |
 | `tests/powerbi.test.js` | The business-review template's wording, the Power BI link a new review is seeded with, the ToDo list still recognising such a review as unwritten, the suggestions read out of earlier reviews, the link on the service tiddler, the warning for a bad address, and the Anomalier list of reviews still holding the retired template |
-| `tests/scope.test.js` | §3.7 archiving, its reversibility, and what the period scope must never hide |
+| `tests/scope.test.js` | §3.7 archiving, its reversibility, what the period scope must never hide, and that it narrows the service views but not the service pickers |
 | `tests/search.test.js` | D2 folding, the symmetry of query and text, and the search tab wiring |
 | `tests/merge.test.js` | Merging tag casing variants: the generic action, the family and target functions, and the Anomalier buttons that drive them |
 | `tests/drafts.test.js` | Which leftover drafts may be deleted, and the Anomalier button that deletes them |

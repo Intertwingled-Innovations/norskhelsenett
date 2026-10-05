@@ -50,18 +50,21 @@ Bound by the caller: `todo-items`, `todo-prior-items`, `todo-member`, `todo-attr
 | `[<string>fold[]]` | Lower-case, map, NFD-strip (D2) |
 | `[<titles>forms-search:<fields>[<query>]]` | Diacritic-insensitive search; `!` inverts |
 | `[<body-html>] +[forms-htmldoc<title>,<css-tiddler>,<lang>]` | Wraps rendered HTML in a complete standalone document (doctype, charset, `<title>`, inline CSS) for `forms-datauri[text/html]` |
+| `[function[forms-rule-result],<rules>,<values>]` | The `result` of the first rule in a JSON table whose `all` values are all present and whose `none` values are all absent, ignoring case; empty when no rule applies |
 
 ## Configuration — `nhn`
 
 ### Constants
 
-`nhn-governance-tags` · `nhn-tjeneste-types` · `nhn-extract-service-types` · `nhn-month-keys` · `nhn-gov-root-filter` · `nhn-permalink-prefix` · `nhn-owner-field` · `nhn-archive-tag`
+`nhn-governance-tags` · `nhn-retired-governance-tags` · `nhn-governance-rules` · `nhn-tjeneste-types` · `nhn-canonical-tjeneste-types` · `nhn-secondary-tjeneste-types` · `nhn-extract-service-types` · `nhn-month-keys` · `nhn-gov-root-filter` · `nhn-permalink-prefix` · `nhn-owner-field` · `nhn-archive-tag`
 
 ### Selectors
 
 | Operation | Yields |
 |---|---|
-| `nhn-services` | Service entities: a service-type tag plus a business unit, excluding month-prefixed reviews |
+| `nhn-services` | Service entities: a service-type tag plus a business unit, excluding month-prefixed reviews. The population behind the form pickers, the ToDo lists and the extracts — never narrowed by the sidebar's period |
+| `nhn-services-in-scope` / `nhn-services-undated` | The same narrowed by the sidebar's period, which is what the *Tjenester* tab shows; and the services with no year tag, which that period can never hide |
+| `nhn-reviews-retaggable` / `nhn-reviews-unretaggable` | Reviews carrying a retired governance tag, split by whether their service implies a current one (`nhn-review-governance-expected`) |
 | `nhn-reviews` | Monthly business reviews: a governance tag plus a month tag |
 | `nhn-deliveries` / `nhn-objectives` / `nhn-results` | `Leveranse` / `Målsetting` / `Resultat` |
 | `nhn-extract-governance-set` / `nhn-extract-services-set` | The two §3.3 extracts, narrowed by `extract-year` / `extract-month` |
@@ -94,9 +97,9 @@ The Leveranserapport adds `nhn-report-prefix` — the `MM/ÅÅ` display prefix f
 
 ### Attribution, scope and forms
 
-- `nhn-in-year-scope` — the navigation period filter. True for `alle`, for the active year, **and for anything undated**.
+- `nhn-in-year-scope` — the navigation period filter. True for `alle`, for the active year, **and for anything undated**. Applied to the four navigation trees, services included since October 2026.
 - `nhn-max-year` — the latest year tag, which is what stops archiving hiding something still current.
-- `nhn-form-*` — what the guided forms derive rather than ask for: a chosen service settles `TjenesteID`, the division tag and the `Styring …` tag (through a lookup table, because the two families disagree on casing).
+- `nhn-form-*` — what the guided forms derive rather than ask for: a chosen service settles `TjenesteID`, the division tag and the `Styring …` tag. The last comes from `nhn-governance-for(service)`, which runs the service's tags through the rules table; `nhn-canonical-of(target,types)` reads a service's type and category back by which list a tag belongs to.
 - `nhn-template-text` — the `mal` tiddler, which the review to-do list passes as `todo-template`.
 - `nhn-review-seed(service)` — a new review's text: the template, then the service's Power BI link (`nhn-powerbi-anchor`). Both the review form's body and the review to-do list use it; the list passes `nhn-review-seed-of`, the same seed for an existing review, as `todo-seed`.
 - `nhn-known-services` — `nhn-services`, read from the page-bound `nhn-services-list` when there is one. Used by `nhn-review-title-service`; pages that attribute many reviews bind the list once.

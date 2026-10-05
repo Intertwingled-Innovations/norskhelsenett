@@ -44,8 +44,9 @@ Both plugins are flat folders of small tiddlers. Nothing is generated; every fil
 | `tree.tid` | `forms-tree`: cycle-safe collapsible tree over a relation function; `forms-tag-or-link`: the one way to display a tag (see D6) |
 | `group.tid` | `forms-group`: group-by tree over projection functions and parallel sort keys |
 | `grouped-view.tid` | `forms-grouped-view`: set picker plus ordering picker over a JSON catalogue |
-| `form.tid` | `forms-form` and `forms-create-actions`: guided creation from a definition |
-| `edit.tid` | `forms-edit`, `forms-load-actions`, `forms-save-actions`: the definition run backwards |
+| `form.tid` | `forms-form` and `forms-create-actions`: guided creation from a definition, including the *derived* values a form shows rather than asks for and may require before it will create anything |
+| `edit.tid` | `forms-edit`, `forms-load-actions`, `forms-save-actions`: the definition run backwards. A definition's `owns` filter names a tag family the form replaces outright on save |
+| `rules.tid` | `forms-rule-result`: the first rule of a JSON table that a set of values satisfies — a mapping kept as data |
 | `todo.tid` | `forms-todo-*`: who owes what this period, and whether it is real |
 | `export.tid` | `forms-export`: preview table and download link |
 | `csv.js` | `forms-csv`, `forms-datauri`: CSV with a UTF-8 BOM (D4) |
@@ -62,7 +63,8 @@ Both plugins are flat folders of small tiddlers. Nothing is generated; every fil
 | `governance.tid`, `services.tid`, `review.tid`, `deliveries.tid`, `summaries.tid` | The selectors and relations: what counts as a service, a review, a delivery, an objective, a result |
 | `projections.tid` | The shared column and group-key vocabulary |
 | `kinds.tid`, `kind-colours.tid`, `kind-forms.tid` | Tag→kind classification, its colours, and which kind opens which form |
-| `months.tid`, `month-names.tid`, `governance-tags.tid` | Lookup tables, including the one that maps a service type to its `Styring …` tag despite the casing drift |
+| `months.tid`, `month-names.tid` | Lookup tables for month names and ordinals |
+| `governance-rules.tid` | NHN's own table (action items of 18 September 2026) from the tags on a service to the `Styring …` tag its reviews get, evaluated first-match by the engine's `forms-rule-result`. Replaced a one-to-one lookup when NHN moved to a type plus an optional category |
 | `form-*.tid` | Six form definitions, the values they derive (`form-functions.tid`), the title templates, and the Norwegian label overrides |
 | `extracts.tid`, `extract-columns-*.tid`, `eksport.tid` | The two §3.3 extracts: selectors, column specs, UI |
 | `summary-views.tid`, `sammendrag.tid` | The §3.4 view catalogue and its page |
@@ -75,7 +77,7 @@ Both plugins are flat folders of small tiddlers. Nothing is generated; every fil
 | `ui-powerbi.tid` | The Power BI link under a service's title: the stored link, or failing that the latest review's link marked as a suggestion, with *Bruk* to store it |
 | `ui-owner.tid`, `ui-edit.tid`, `ui-typebar.tid`, `manage-owners.tid` | View-template additions (owner and Power BI fields on a service) and the Tjenesteeiere page, which also sets the Power BI links |
 | `datamodell.tid`, `datamodell-strings.tid` | The schema diagram: an inline SVG of the tag/field model whose nodes are `$link` widgets, so every tag pill opens its tag. Kind colours are read from `kind-colours.tid` and a chip is dashed when no tiddler backs the tag. The geometry is generated and language-independent — every label is a key looked up in the strings tiddler, which a radio switches between Norwegian and English. The pills are never translated: they are the literal tags |
-| `anomalier.tid`, `ny.tid` | The data-quality page — including the per-family control that merges the tag casing variants it reports, and the button that deletes the leftover drafts — and the guided-creation page |
+| `anomalier.tid`, `ny.tid` | The data-quality page — including the per-family control that merges the tag casing variants it reports, the button that deletes the leftover drafts, and the per-year buttons that move reviews off a retired governance tag — and the guided-creation page |
 | `sitetitle.tid`, `sitesubtitle.tid`, `theme-default.tid`, `palette-default.tid`, `default-sidebar-tab.tid` | Branding and the pointers that activate the theme |
 | `styles.tid`, `readme.tid`, `plugin.info` | Stylesheet, plugin documentation, manifest |
 
@@ -146,7 +148,7 @@ Anywhere the UI displays a tag, or a link to something that acts as a tag — tr
 
 ### D7 — Bulk data-quality fixes propose first, and never delete content
 
-[[Anomalier]] reports ten classes of problem; the mechanical ones it also offers to fix — the tag casing drift (class 2) and the leftover edit drafts (class 10). Three rules hold for any such action.
+[[Anomalier]] reports thirteen classes of problem; the mechanical ones it also offers to fix — the tag casing drift (class 2), the leftover edit drafts (class 10) and reviews still carrying a retired governance tag (class 12). The same rules hold for any such action. Class 12 shows every row it would change — the review, the tag it has, the tag its service implies today — and has one button per year, because whether 2024's history should be rewritten to 2026's classification is NHN's call, not a default.
 
 **Propose, don't decide.** The page shows the whole family — every spelling, how many tiddlers carry each, which one would be kept — and the count of writes a click costs, before there is anything to click. The kept spelling is a *choice* with the most-used variant preselected, not a verdict: `Ekstern Tjeneste` outnumbers `Ekstern tjeneste` more than four to one, while the `Styring …` tags and the rest of the taxonomy spell it in lower case. A merge that always trusted the count would normalise the corpus onto the spelling NHN's own vocabulary disagrees with. The data is NHN's, so the direction is theirs.
 
@@ -167,6 +169,7 @@ Gotchas that have already cost time in this project:
 - **To get "tiddlers tagged X" use `[<X>tagging[]]`, not `[tag<X>]`.** The `tag` operator filters its *input*, and only enumerates everything tagged X when the source carries a `byTag` index — true for the live wiki source, **false inside `:map` or a filtered transclusion**, where `[tag<X>]` silently returns blanks. `tagging[]` is source-independent.
 - **A `$button`'s actions do not propagate.** `invokeActions` walks a widget tree firing the action widgets it finds, but `ButtonWidget.allowActionPropagation()` returns false, so it never descends into a button — the button fires its own actions on click. A headless test therefore cannot exercise a page's button by rendering the page and invoking it; it has to find the button widget and invoke *that*. `harness.clickButtons()` does this, and is the difference between testing the shipped page and testing a copy of the wikitext behind it.
 - **`$wikify` re-renders its children whenever its text changes.** The form engine wikifies the title template to preview the title, and the title of most forms is built from what was typed. With the inputs inside that `$wikify`, every keystroke destroyed and rebuilt the input, so the caret jumped out of the field after each character — the *Tjenestenavn* field could not be typed into at all. Keep an input outside any `$wikify` whose text it feeds; only the preview and the buttons belong inside. Nothing in the markup differs between the two arrangements, so only a test that compares widget and DOM identity across a refresh can see it.
+- **`:map:flat` yields an empty string, not nothing, for an item whose run returns no results.** Plain `:map` documents this; `:flat` reads as though it would simply contribute nothing, and it does not. A function ending in `:map:flat[…]` therefore returns `[""]` where it looks as if it returns `[]`, and that is *truthy*: a `:filter[function[f]]` built on it keeps everything, and a count of its results is 1. End such a function with `+[!is[blank]]`. This reached the governance-tag lookup — a service the rules could not place appeared to have a tag, an empty one — and was caught by a test asserting `[]`.
 - **`:and` is not logical AND.** It pipes the accumulated results into the next run and replaces them with that run's output. A run that ignores its input — one starting with a constant, or with `function[…]` — therefore *resurrects* an empty accumulator, turning a false condition true. Chain conditions inside a single run (`[<x>!is[blank]!is[tiddler]]`) or use `:filter`, which really does keep only what survives. This bug reached the duplicate-tiddler guard in the form engine and was caught by a test, not by reading the code.
 
 The TiddlyWiki5 source is available in a sibling working directory (`../TiddlyWiki5`) for checking core behaviour.
