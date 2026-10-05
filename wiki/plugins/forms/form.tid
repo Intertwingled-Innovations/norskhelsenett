@@ -7,13 +7,15 @@ tags: $:/tags/Global
 \function forms-required-names() [<forms-def-json>jsonindexes[inputs]] :filter[<forms-def-json>jsonget[inputs],<currentTiddler>,[required]match[yes]] :map[<forms-def-json>jsonget[inputs],<currentTiddler>,[name]]
 \function forms-filled-names() [function[forms-required-names]] :filter[<forms-state>getindex<currentTiddler>!is[blank]]
 \function forms-missing-names() [function[forms-required-names]] -[function[forms-filled-names]]
+\function forms-derived-value(index) [<forms-def-json>jsonget[derived],<index>,[filter]] :map:flat[subfilter<currentTiddler>] +[!is[blank]]
+\function forms-derived-missing() [<forms-def-json>jsonindexes[derived]] :filter[<forms-def-json>jsonget[derived],<currentTiddler>,[required]match[yes]] :filter[function[forms-derived-value],<currentTiddler>count[]match[0]]
 \function forms-label(key) [<forms-def-json>jsonget[labels],<key>] :else[[$:/config/forms/labels]get[text]jsonget<key>]
 
 \procedure forms-create-actions(def,state)
 <$let forms-def=<<def>> forms-state=<<state>> forms-def-json={{{ [<def>get[text]] }}}>
 <$wikify name="forms-raw-title" text={{{ [<forms-def-json>jsonget[title]get[text]] }}} mode="inline" output="text">
 <$let newtitle={{{ [<forms-raw-title>trim[]] }}} stamp=<<now "[UTC]YYYY0MM0DD0hh0mm0ss0XXX">>>
-<% if [<newtitle>!is[blank]!is[tiddler]] :filter[function[forms-missing-names]count[]match[0]] %>
+<% if [<newtitle>!is[blank]!is[tiddler]] :filter[function[forms-missing-names]count[]match[0]] :filter[function[forms-derived-missing]count[]match[0]] %>
 <$action-setfield $tiddler=<<newtitle>> $field="text" $value={{{ [<forms-def-json>jsonget[body]] :map:flat[subfilter<currentTiddler>] }}}/>
 <$action-setfield $tiddler=<<newtitle>> $field="tags" $value={{{ [<forms-def-json>jsonget[tags]] :map:flat[subfilter<currentTiddler>] +[format:titlelist[]join[ ]] }}}/>
 <$action-setfield $tiddler=<<newtitle>> $field="created" $value=<<stamp>>/>
@@ -56,10 +58,36 @@ tags: $:/tags/Global
 </$let>
 \end
 
+\procedure forms-derived()
+<$list filter="[<forms-def-json>jsonindexes[derived]]" variable="di">
+<$let label={{{ [<forms-def-json>jsonget[derived],<di>,[label]] }}}
+	type={{{ [<forms-def-json>jsonget[derived],<di>,[type]] }}}
+	value={{{ [function[forms-derived-value],<di>] }}}>
+<div class="forms-field forms-derived">
+<span class="forms-field-label"><$text text=<<label>>/></span>
+<span class="forms-derived-value">
+<% if [<value>is[blank]] %>
+…
+<% elseif [<type>match[tag]] %>
+<$transclude $variable="forms-tag-or-link" title=<<value>>/>
+<% else %>
+<$text text=<<value>>/>
+<% endif %>
+</span>
+</div>
+</$let>
+</$list>
+\end
+
+\procedure forms-derived-warning()
+<span class="forms-form-warning"><$list filter="[function[forms-derived-missing]]" variable="di"><$text text={{{ [<forms-def-json>jsonget[derived],<di>,[hint]] :else[function[forms-label],[underived]] }}}/>&#32;</$list></span>
+\end
+
 \procedure forms-form(def,state)
 <$let forms-def=<<def>> forms-state=<<state>> forms-def-json={{{ [<def>get[text]] }}}>
 <div class="forms-form">
 <$list filter="[<forms-def-json>jsonindexes[inputs]]" variable="ii"><$transclude $variable="forms-field" index=<<ii>>/></$list>
+<<forms-derived>>
 <$wikify name="forms-raw-title" text={{{ [<forms-def-json>jsonget[title]get[text]] }}} mode="inline" output="text">
 <$let newtitle={{{ [<forms-raw-title>trim[]] }}} missing={{{ [function[forms-missing-names]count[]] }}}>
 <div class="forms-form-preview"><span class="forms-form-preview-label"><$text text={{{ [function[forms-label],[preview]] }}}/></span>&#32;<code><$text text={{{ [<newtitle>!is[blank]then<newtitle>else[…]] }}}/></code></div>
@@ -68,6 +96,8 @@ tags: $:/tags/Global
 <span class="forms-form-warning"><$text text={{{ [function[forms-label],[missing]] }}}/></span>
 <% elseif [<newtitle>is[blank]] %>
 <span class="forms-form-warning"><$text text={{{ [function[forms-label],[missing]] }}}/></span>
+<% elseif [function[forms-derived-missing]count[]!match[0]] %>
+<<forms-derived-warning>>
 <% elseif [<newtitle>is[tiddler]] %>
 <span class="forms-form-warning"><$text text={{{ [function[forms-label],[exists]] }}}/></span>&#32;<$link to=<<newtitle>>><$text text={{{ [function[forms-label],[open]] }}}/></$link>
 <% else %>
@@ -110,7 +140,13 @@ Values are held as //indexes// rather than fields so that an input may be called
   "title": "<tiddler>",          // wikitext template rendered to produce the title
   "tags": "<filter>",            // produces the tag list
   "fields": [{"name": "…", "filter": "<filter>"}],
-  "body": "<filter>"             // produces the text that seeds the new tiddler
+  "body": "<filter>",            // produces the text that seeds the new tiddler
+  "derived": [{"label": "…",     // optional: values the form works out and shows
+               "filter": "<filter>",
+               "type": "tag",          // optional: show the value as a tag pill
+               "required": "yes",      // block creation while the filter gives nothing
+               "hint": "…"}],          // what to tell the user when it does
+  "owns": "<filter>"             // optional, editing only: see forms-edit
 }
 ```
 
@@ -119,6 +155,7 @@ The title template, the tags filter and the field filters are all evaluated with
 !! What it guarantees
 
 * **Required inputs** are marked, and creation is blocked until they are filled.
+* **A derived value is shown, not asked for.** Some of what a new tiddler carries follows from what was picked — a tag settled by the chosen parent, say. Listing it under `derived` puts it on the form where the user can see it before committing. A derived value marked `required` blocks creation while its filter produces nothing, and the form shows its `hint` in place of the button: a tiddler quietly created //without// the tag every selector looks for would not be wrong so much as invisible.
 * **The title is shown before you commit**, computed by the same template that will be used.
 * **An existing title is never overwritten and never silently renamed.** `$action-createtiddler` would quietly create "X 1"; this refuses and offers to open the existing tiddler instead, because a duplicate monthly review is worse than a rejected click.
 * Creation stamps `created` and `modified`, and clears the form.

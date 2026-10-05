@@ -1,0 +1,32 @@
+title: $:/plugins/tiddlywiki/forms/rules
+tags: $:/tags/Global
+
+\whitespace trim
+
+\function forms-rule-unmet(index) [<rules>get[text]jsonget[rules],<index>,[all]lowercase[]] -[enlist<values>lowercase[]]
+\function forms-rule-barred(index) [<rules>get[text]jsonget[rules],<index>,[none]lowercase[]] :intersection[enlist<values>lowercase[]]
+\function forms-rule-applies(index) [function[forms-rule-unmet],<index>count[]match[0]] :filter[function[forms-rule-barred],<index>count[]match[0]]
+\function forms-rule-result(rules,values) [<rules>get[text]jsonindexes[rules]] :filter[function[forms-rule-applies],<currentTiddler>] +[first[]] :map:flat[<rules>get[text]jsonget[rules],<currentTiddler>,[result]]
+
+! forms-rule-result
+
+`[function[forms-rule-result],<rules>,<values>]` — the result of the //first// rule in a table that a set of values satisfies, or nothing when none does.
+
+* `rules` — title of a JSON data tiddler holding the table (below).
+* `values` — a title list: the values to test, typically the tags of some tiddler.
+
+```
+{"rules": [
+  {"all": ["round", "red"], "result": "tomato"},
+  {"all": ["round"], "none": ["red", "orange"], "result": "ball"},
+  {"result": "something else"}
+]}
+```
+
+A rule applies when every value in its `all` is present and no value in its `none` is. Either may be left out, so a rule with neither always applies and makes a default when it comes last. Rules are tried in order and the first that applies wins, which is what lets a specific rule sit above the general one it refines. Comparison ignores case, so a table need not list every spelling of a value.
+
+The point of a table is that the mapping is data: adding a case, or reordering two, is an edit to a tiddler that a configuration layer ships and a user may override, not a change to a filter.
+
+When nothing applies the result is empty. A caller that needs a value should say so — a form does it by marking a derived value `required` (see [[$:/plugins/tiddlywiki/forms/form]]) — rather than assume one.
+
+The helper functions read the outer call's `rules` and `values` parameters, so they are not meant to be called on their own.

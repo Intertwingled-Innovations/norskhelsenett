@@ -36,9 +36,10 @@ tags: $:/tags/Global
 <$wikify name="forms-raw-title" text={{{ [<forms-def-json>jsonget[title]get[text]] }}} mode="inline" output="text">
 <$let newtitle={{{ [<forms-raw-title>trim[]] }}}
 	newtags={{{ [<forms-def-json>jsonget[tags]] :map:flat[subfilter<currentTiddler>] +[format:titlelist[]join[ ]] }}}>
-<$let mergedtags={{{ [<target>tags[]] :filter[function[forms-tag-loaded],<oldtags>count[]match[0]] [enlist<newtags>] +[unique[]format:titlelist[]join[ ]] }}}
+<$let owned={{{ [<forms-def-json>jsonget[owns]] :map:flat[subfilter<currentTiddler>] +[format:titlelist[]join[ ]] }}}>
+<$let mergedtags={{{ [<target>tags[]] :filter[function[forms-tag-loaded],<oldtags>count[]match[0]] :filter[function[forms-tag-loaded],<owned>count[]match[0]] [enlist<newtags>] +[unique[]format:titlelist[]join[ ]] }}}
 	titleok={{{ [<newtitle>!is[blank]match<target>] [<newtitle>!is[blank]!is[tiddler]] +[first[]] }}}>
-<% if [<target>is[tiddler]] :filter[<titleok>!is[blank]] :filter[function[forms-missing-names]count[]match[0]] %>
+<% if [<target>is[tiddler]] :filter[<titleok>!is[blank]] :filter[function[forms-missing-names]count[]match[0]] :filter[function[forms-derived-missing]count[]match[0]] %>
 <$action-setfield $tiddler=<<target>> $field="tags" $value=<<mergedtags>>/>
 <$action-setfield $tiddler=<<target>> $field="modified" $value=<<stamp>>/>
 <$list filter="[<forms-def-json>jsonindexes[fields]]" variable="fi">
@@ -55,6 +56,7 @@ tags: $:/tags/Global
 <% endif %>
 </$let>
 </$let>
+</$let>
 </$wikify>
 </$let>
 </$let>
@@ -67,6 +69,7 @@ tags: $:/tags/Global
 	target={{{ [<state>get[forms-target]] }}}>
 <div class="forms-form forms-form-edit">
 <$list filter="[<forms-def-json>jsonindexes[inputs]]" variable="ii"><$transclude $variable="forms-field" index=<<ii>>/></$list>
+<<forms-derived>>
 <$wikify name="forms-raw-title" text={{{ [<forms-def-json>jsonget[title]get[text]] }}} mode="inline" output="text">
 <$let newtitle={{{ [<forms-raw-title>trim[]] }}} missing={{{ [function[forms-missing-names]count[]] }}}>
 <% if [<newtitle>!is[blank]!match<target>] %>
@@ -83,6 +86,8 @@ tags: $:/tags/Global
 <span class="forms-form-warning"><$text text={{{ [function[forms-label],[missing]] }}}/></span>
 <% elseif [<newtitle>is[blank]] %>
 <span class="forms-form-warning"><$text text={{{ [function[forms-label],[missing]] }}}/></span>
+<% elseif [function[forms-derived-missing]count[]!match[0]] %>
+<<forms-derived-warning>>
 <% elseif [<newtitle>!match<target>] :filter[<newtitle>is[tiddler]] %>
 <span class="forms-form-warning"><$text text={{{ [function[forms-label],[clash]] }}}/></span>
 <% else %>
@@ -125,6 +130,8 @@ An input with no `from` simply starts blank.
 > new tags = (the tiddler's tags − the tags the form would have produced when it loaded) + the tags it produces now
 
 which replaces only what the form is actually responsible for.
+
+**A family of tags the form owns outright** can be named with the definition's optional `owns` filter. The rule above removes what the form //would have produced// when it loaded, which is not always what the tiddler //carries//: when a tag is derived from something else — a parent's classification, say — and that something has since changed, the tiddler still holds the old derived tag, the form computes the new one, and a save would leave both. Every tag the `owns` filter lists is therefore removed on save as well, case-insensitively, before the form's current tags go on. So `owns` should list the whole family the derived tag is drawn from, retired members included. Leave it out and nothing changes.
 
 The subtraction is case-insensitive. The `from` filters read values back in canonical casing, so on a tiddler whose stored tag has drifted (`budget` where the canonical tag is `Budget`) an exact subtraction would miss the stored variant and saving would add the canonical tag //alongside// it — manufacturing precisely the casing drift structured editing exists to prevent. Removing case variants of the loaded tags means a save through the form replaces the drifted tag with its canonical form instead.
 

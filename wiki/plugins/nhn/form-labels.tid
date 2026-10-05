@@ -12,5 +12,6 @@ type: application/json
 "save": "Lagre",
 "cancel": "Avbryt",
 "rename": "Lagring gir tiddleren nytt navn:",
-"clash": "Tittelen er allerede i bruk:"
+"clash": "Tittelen er allerede i bruk:",
+"underived": "Kan ikke lagres ennå: en verdi skjemaet utleder, mangler."
 }

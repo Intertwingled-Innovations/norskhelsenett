@@ -96,3 +96,6 @@ code-body: yes
 }
 .forms-json-doc p:first-child { margin-top: 0; }
 .forms-json-doc p:last-child { margin-bottom: 0; }
+
+.forms-derived { display: flex; align-items: baseline; gap: 0.5em; }
+.forms-derived .forms-field-label { margin: 0; }

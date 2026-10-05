@@ -14,6 +14,7 @@ An //operation// is a named function from a tiddler to a value or a list. Export
 |`forms-grouped-view` |`<<forms-grouped-view views state setlabel orderlabel rowlabel>>` — one picker chooses //what// to look at, a second chooses //how// it is grouped, both from a JSON catalogue |
 |`forms-form` |`<<forms-form def state>>` — guided creation from a definition: which inputs to ask for, a template for the title, filters for the tags and fields, a tiddler to seed the body |
 |`forms-edit` |`<<forms-edit def state>>` — the same definition run backwards over an existing tiddler, keeping tags the form does not manage and renaming with relink when the title changes |
+|`forms-rule-result` |`[function[forms-rule-result],<rules>,<values>]` — the result of the first rule in a JSON table that a set of values satisfies; a mapping kept as data, for a form to derive a value from |
 |`forms-todo-*` |Which members of a population still owe an item for a period, and whether what they filed is real |
 |`forms-export` |`<<forms-export set columns filename limit caption rowlabel>>` — a download link plus a preview table |
 |`forms-merge-tags` |`<$transclude $variable="forms-merge-tags" from="<tags>" to="<tag>"/>` — merges a set of tags into one across the whole wiki, renaming the tag's own tiddler where that completes the merge and deleting nothing |
